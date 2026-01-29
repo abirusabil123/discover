@@ -165,7 +165,7 @@ async function saveToFile(data) {
                 errorsData = {
                     count: errors.length,
                     unresolved: errors.filter(e => !e.resolved).length,
-                    allUnresolvedErrors: errors.filter(e => !e.resolved).sort((a, b) => a.id - b.id)
+                    allUnresolvedErrors: errors.filter(e => !e.resolved).sort((a, b) => a.id - b.id).filter(e => e.message != "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)")
                 };
             }
         } catch (error) {
