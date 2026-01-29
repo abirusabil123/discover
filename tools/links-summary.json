@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-01-29T14:33:15.895Z",
+    "generatedAt": "2026-01-29T14:36:02.119Z",
     "apiUrl": "https://backend.discoverall.space",
     "totalLinks": 84
   },
@@ -89,7 +89,7 @@
       },
       {
         "country": "IN",
-        "count": 204
+        "count": 205
       },
       {
         "country": "NL",
@@ -111,13 +111,13 @@
     "byMonth": [
       {
         "month": "202601",
-        "count": 233
+        "count": 234
       }
     ],
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 77
+        "count": 78
       },
       {
         "platform": "mobile",
@@ -139,7 +139,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 149
+        "count": 150
       },
       {
         "product": "test",
@@ -161,7 +161,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 71
+        "count": 72
       }
     ],
     "byPath": [
@@ -175,7 +175,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 149
+        "count": 150
       },
       {
         "path": "/index.html",
