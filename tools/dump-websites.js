@@ -157,7 +157,7 @@ async function saveToFile(data) {
         console.log(`💾 Raw data saved to: ${OUTPUT_FILE}`);
 
         // Get errors from API
-        let errorsData = { count: 0, unresolved: 0, recent: [] };
+        let errorsData = { count: 0, unresolved: 0, allUnresolvedErrors: [] };
         try {
             const response = await fetch(`${API_BASE_URL}/errors?limit=1000`);
             if (response.ok) {
@@ -165,7 +165,7 @@ async function saveToFile(data) {
                 errorsData = {
                     count: errors.length,
                     unresolved: errors.filter(e => !e.resolved).length,
-                    recent: errors.slice(0, 10)
+                    allUnresolvedErrors: errors.filter(e => !e.resolved).sort((a, b) => a.id - b.id)
                 };
             }
         } catch (error) {
