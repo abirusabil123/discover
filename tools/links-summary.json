@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-01-29T14:21:10.732Z",
+    "generatedAt": "2026-01-29T14:22:17.699Z",
     "apiUrl": "https://backend.discoverall.space",
     "totalLinks": 84
   },
@@ -210,6 +210,367 @@
   "errors": {
     "count": 37,
     "unresolved": 36,
-    "allUnresolvedErrors": []
+    "allUnresolvedErrors": [
+      {
+        "id": 2,
+        "timestamp": "2026-01-06T01:40:55.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 3,
+        "timestamp": "2026-01-07T01:27:42.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "fasthttp",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 4,
+        "timestamp": "2026-01-07T01:28:03.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "fasthttp",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 5,
+        "timestamp": "2026-01-07T01:29:18.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "fasthttp",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 6,
+        "timestamp": "2026-01-07T01:29:18.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "fasthttp",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 7,
+        "timestamp": "2026-01-07T01:29:37.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "fasthttp",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 8,
+        "timestamp": "2026-01-07T11:42:05.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Linux; Android 13; CPH2263; Build/TQ2B.231120.143) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.220 Mobile Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 9,
+        "timestamp": "2026-01-07T11:42:25.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Android 15; Mobile; rv:138.0.1) Gecko/138.0.1 Firefox/138.0.1",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 10,
+        "timestamp": "2026-01-07T11:58:01.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) CriOS/101.0.4951.55 Mobile/15E148 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 11,
+        "timestamp": "2026-01-07T11:58:01.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) CriOS/101.0.4951.55 Mobile/15E148 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 12,
+        "timestamp": "2026-01-07T18:30:51.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Linux; Android 8; Pixel 8 Pro; Build/OPR5.170821.72) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.3351.37 Mobile Safari/537.36 EdgA/138.0.3351.37",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 13,
+        "timestamp": "2026-01-07T18:30:57.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0_1 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) CriOS/127.0.6533.99 Mobile/15E148 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 14,
+        "timestamp": "2026-01-07T23:39:05.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_1 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/15.0 EdgiOS/109.0.1518.64 Mobile/15E148 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 15,
+        "timestamp": "2026-01-07T23:39:11.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Android 9; Mobile; rv:109.0.0) Gecko/109.0.0 Firefox/109.0.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 16,
+        "timestamp": "2026-01-07T23:39:18.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/605.1.15",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 17,
+        "timestamp": "2026-01-08T01:49:47.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Linux; Android 9; SM-G8870; Build/PQ1A.170407.17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.1210.22 Mobile Safari/537.36 EdgA/101.0.1210.22",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 18,
+        "timestamp": "2026-01-08T01:49:47.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Linux; Android 9; SM-G8870; Build/PQ1A.170407.17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.1210.22 Mobile Safari/537.36 EdgA/101.0.1210.22",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 19,
+        "timestamp": "2026-01-08T01:49:53.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Linux; Android 11; Redmi K70E; Build/RQ1A.250504.26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.142 Mobile Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 20,
+        "timestamp": "2026-01-08T01:49:54.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Linux; Android 12; CPH2089; Build/SD2A.250324.168) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.104 Mobile Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 21,
+        "timestamp": "2026-01-08T01:49:59.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G920FQ; Build/RD1A.241027.74) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.29 Mobile Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 22,
+        "timestamp": "2026-01-08T01:50:00.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/15.0 EdgiOS/135.0.3179.4 Mobile/15E148 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 23,
+        "timestamp": "2026-01-08T16:16:22.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Android 9; Mobile; rv:109.0.0) Gecko/109.0.0 Firefox/109.0.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 24,
+        "timestamp": "2026-01-08T16:16:30.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/15.0 EdgiOS/123.0.2420.25 Mobile/15E148 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 25,
+        "timestamp": "2026-01-20T09:50:57.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:142.0) Gecko/20100101 Firefox/142.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 26,
+        "timestamp": "2026-01-20T16:54:21.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 27,
+        "timestamp": "2026-01-20T16:54:29.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 28,
+        "timestamp": "2026-01-20T17:02:40.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 29,
+        "timestamp": "2026-01-20T17:03:00.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 30,
+        "timestamp": "2026-01-20T17:06:45.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 31,
+        "timestamp": "2026-01-20T17:06:57.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 32,
+        "timestamp": "2026-01-20T17:16:02.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 33,
+        "timestamp": "2026-01-20T17:17:22.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 34,
+        "timestamp": "2026-01-20T17:18:08.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 35,
+        "timestamp": "2026-01-20T17:24:20.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 36,
+        "timestamp": "2026-01-20T17:29:25.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 37,
+        "timestamp": "2026-01-20T17:29:31.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "404: ENOENT: no such file or directory, stat '/favicon.ico' (GET /favicon.ico)",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      }
+    ]
   }
 }
