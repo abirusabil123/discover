@@ -1,7 +1,7 @@
 # 🌏 Discover - Open source no implicit personalized recommendation algorithm social media
 A modern web application that helps you discover amazing links.  
 Features include random link loading, view tracking, likes/dislikes functionality, and the ability to add new links.  
-We host the backend locally using reproducible containers.
+We host the backend locally using reproducible containers. We also have a frontend only fallback to maintain availability.
 
 <img src="image.png" alt="drawing" width="200rem"/>
 
