@@ -7,10 +7,10 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Bitmap
 import android.view.View
-import android.webkit.WebChromeClient // Required for onProgressChanged
+import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
-import android.webkit.WebViewClient // Required for onPageStarted, onPageFinished
+import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Box
@@ -35,6 +35,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.discover.ui.theme.PrimaryGreen
 import com.example.discover.ui.theme.SurfaceDark
@@ -56,6 +57,17 @@ fun WebViewArea(
 
     LaunchedEffect(webView, url) {
         val targetUrl = url ?: "about:blank"
+        if (targetUrl.lowercase().endsWith(".pdf")) {
+            try {
+                val intent = Intent(Intent.ACTION_VIEW, targetUrl.toUri())
+                intent.setDataAndType(targetUrl.toUri(), "application/pdf")
+                context.startActivity(intent)
+                // Stop here so the WebView doesn't try to load it
+                return@LaunchedEffect
+            } catch (e: ActivityNotFoundException) {
+                Toast.makeText(context, "No PDF app found." + e.message, Toast.LENGTH_SHORT).show()
+            }
+        }
         if (webView.url != targetUrl) {
             webView.loadUrl(targetUrl)
         }
