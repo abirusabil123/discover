@@ -7,7 +7,7 @@ We host the backend locally using reproducible containers. We also have a fronte
 
 ## Avoid Implicit Personalized Recommendation Algorithms
 
-A social media link with no personalized recommendation algorithms. So no more echo chamber radicalization.
+A social media with no personalized recommendation algorithms. So no more echo chamber radicalization.
 
 There are two ways to end personalized recommendation algorithms:
 
