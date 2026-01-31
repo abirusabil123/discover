@@ -1,6 +1,6 @@
 # 🌏 Discover - Open source no implicit personalized recommendation algorithm social media
 A modern web application that helps you discover amazing links.  
-Features include random link loading, view tracking, likes/dislikes functionality, and the ability to add new links.  
+Features include random link loading, app usage tracking, likes/dislikes functionality, and the ability to add new links.  
 We host the backend locally using reproducible containers. We also have a frontend only fallback to maintain availability.
 
 <img src="image.png" alt="drawing" width="200rem"/>
@@ -22,7 +22,7 @@ Discover something new everyday. Good mood and learning ahead!
 
 It is like tiktok for web links.
 
-Completely self reliant and you can share links with the whole world, upvote them, downvote them, and it shows all counts including visits. To prevent abuse, bad links are automatically removed if they get many downvotes that are more than 80% of total votes.
+Completely self reliant and you can share links with the whole world, upvote them, downvote them, and it shows these counts including visits. To prevent abuse, bad links are automatically removed if they get many downvotes that are more than 80% of total votes.
 
 This is my contribution so you don't use personalized recommendation algorithms social media. They cause echo chamber radicalization.
 
