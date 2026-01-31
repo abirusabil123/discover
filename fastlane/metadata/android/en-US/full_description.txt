@@ -1,0 +1,25 @@
+Features include random link loading, view tracking, likes/dislikes functionality, and the ability to add new links.
+We host the backend locally using reproducible containers. We also have a frontend only fallback to maintain availability.
+
+<h1>Avoid Implicit Personalized Recommendation Algorithms</h1>
+
+A social media app with no personalized recommendation algorithms. So no more echo chamber radicalization.
+
+There are two ways to end personalized recommendation algorithms:
+
+1. Block user data. No user data means no user personalization.
+2. No recommendation algorithm. User data is not used for implicit (without user choice like in subscriptions) personalization.
+
+Any of the two is sufficient. My discover link does both.
+
+Discover something new everyday. Good mood and learning ahead!
+
+<h1>Background</h1>
+
+It is like tiktok for web links.
+
+Completely self reliant and you can share links with the whole world, upvote them, downvote them, and it shows all counts including visits. To prevent abuse, bad links are automatically removed if they get many downvotes that are more than 80% of total votes.
+
+This is my contribution so you don't use personalized recommendation algorithms social media. They cause echo chamber radicalization.
+
+Let's go back to before 2005, before EdgeRank was released.
