@@ -59,12 +59,16 @@ fun WebViewArea(
         val targetUrl = url ?: "about:blank"
         if (targetUrl.lowercase().endsWith(".pdf")) {
             try {
+                // Clear the WebView content first
+                webView.loadUrl("about:blank")
+
                 val intent = Intent(Intent.ACTION_VIEW, targetUrl.toUri())
                 intent.setDataAndType(targetUrl.toUri(), "application/pdf")
                 context.startActivity(intent)
-                // Stop here so the WebView doesn't try to load it
+
                 return@LaunchedEffect
             } catch (e: ActivityNotFoundException) {
+                e.printStackTrace()
                 Toast.makeText(context, "No PDF app found." + e.message, Toast.LENGTH_SHORT).show()
             }
         }
