@@ -52,7 +52,10 @@ function generateInitSQL(links) {
     const sqlPath = path.join(PROJECT_ROOT, 'backend', 'db', 'init.sql');
     console.log(`🧱 Writing SQL init file to ${sqlPath}...`);
 
-    const header = `CREATE TABLE IF NOT EXISTS visitors (
+    const header = `-- Copyright (c) 2025 Mohammad Sheraj
+-- Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details.
+
+CREATE TABLE IF NOT EXISTS visitors (
     id INT PRIMARY KEY AUTO_INCREMENT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     country VARCHAR(10),
@@ -154,7 +157,10 @@ function generateConfigJS(links) {
         .split('\n')
         .map((line, index) => (index < 1 ? line : '    ' + line)) // Skip first 4
         .join('\n');
-    const js = `// static.js
+    const js = `/* Copyright (c) 2025 Mohammad Sheraj */
+/* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
+
+// static.js
 const STATIC = {
     // Auto-generated sample links
     SAMPLE_LINKS: ${jsonIndented}
@@ -208,7 +214,10 @@ function generateKotlin(links) {
         )`;
         }).join(',\n\n');
 
-    const kotlinCode = `package com.example.discover.data
+    const kotlinCode = `/* Copyright (c) 2025 Mohammad Sheraj */
+/* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
+
+package com.example.discover.data
 
 object StaticLinks {
     val links = listOf(

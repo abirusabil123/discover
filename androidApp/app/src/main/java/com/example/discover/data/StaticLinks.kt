@@ -10,7 +10,7 @@ object StaticLinks {
             url = "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
             description = "The bridge between European ideas and Islam. Beyond Order: 12 More Rules for Life is also a required read after this book. Jordan Bernt Peterson almost reached Islam with pure logic which is remarkable. The difference can be seen in his Rule 8 of \"tell the truth, or atleast don't lie\" and the holy Quran's 'do not mix truth with falsehood, nor knowingly conceal the truth' - Surah Al-Baqarah (2:42). The Quran is much more strict and rewarding.",
             tags = listOf("book", "learning", "12rulesforlife"),
-            views = 22,
+            views = 50,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -20,7 +20,7 @@ object StaticLinks {
             url = "https://4chan.org/",
             description = "Free speech social media platform.",
             tags = listOf("user-submitted"),
-            views = 46,
+            views = 66,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://abirusabil123.github.io/",
             description = "The personal link of the creator of this project",
             tags = listOf("curated", "sample"),
-            views = 87,
+            views = 111,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -40,7 +40,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("curated", "sample"),
-            views = 122,
+            views = 142,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -50,8 +50,8 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386599316112",
             description = "Short clips from Aljazeera.",
             tags = listOf("aljazeera", "flips", "learning"),
-            views = 17,
-            likesMobile = 1,
+            views = 38,
+            likesMobile = 2,
             dislikesMobile = 0
         ),
 
@@ -60,9 +60,9 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386609485112",
             description = "Short clips from Aljazeera.",
             tags = listOf("aljazeera", "flips", "learning"),
-            views = 9,
+            views = 33,
             likesMobile = 1,
-            dislikesMobile = 0
+            dislikesMobile = 1
         ),
 
         Link(
@@ -70,7 +70,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips",
             description = "Aljazeera flips",
             tags = listOf("aljazeeraflips", "aljazeera", "flips", "learning"),
-            views = 30,
+            views = 43,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -80,28 +80,8 @@ object StaticLinks {
             url = "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
             description = "Short play on the British rule in India",
             tags = listOf("user-submitted"),
-            views = 49,
+            views = 72,
             likesMobile = 2,
-            dislikesMobile = 0
-        ),
-
-        Link(
-            name = "Anna's archive",
-            url = "https://annas-archive.se/",
-            description = "Open library.",
-            tags = listOf("open", "library", "books"),
-            views = 27,
-            likesMobile = 1,
-            dislikesMobile = 0
-        ),
-
-        Link(
-            name = "Anna's Archive",
-            url = "https://annas-archive.org/",
-            description = "Open library",
-            tags = listOf("open", "library", "learning"),
-            views = 7,
-            likesMobile = 0,
             dislikesMobile = 0
         ),
 
@@ -110,7 +90,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("social", "media"),
-            views = 40,
+            views = 63,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -120,7 +100,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("social", "media"),
-            views = 45,
+            views = 68,
             likesMobile = 3,
             dislikesMobile = 0
         ),
@@ -130,7 +110,7 @@ object StaticLinks {
             url = "https://www.byd.com/",
             description = "Electric car company.",
             tags = listOf("car", "electric", "company"),
-            views = 46,
+            views = 62,
             likesMobile = 5,
             dislikesMobile = 0
         ),
@@ -140,7 +120,7 @@ object StaticLinks {
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
             tags = listOf("code", "learning", "fun", "poetic"),
-            views = 61,
+            views = 77,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -150,7 +130,7 @@ object StaticLinks {
             url = "https://namazein.com/fatiha-ka-tarika/",
             description = "How to do fatiha follow through guide.",
             tags = listOf("user-submitted"),
-            views = 39,
+            views = 54,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -160,7 +140,7 @@ object StaticLinks {
             url = "https://www.geeksforgeeks.org/",
             description = "Computer Science learning platform.",
             tags = listOf("user-submitted"),
-            views = 35,
+            views = 51,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -170,7 +150,7 @@ object StaticLinks {
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship",
             tags = listOf("curated", "sample"),
-            views = 184,
+            views = 203,
             likesMobile = 41,
             dislikesMobile = 3
         ),
@@ -180,7 +160,7 @@ object StaticLinks {
             url = "https://hashnode.com/featured",
             description = "Developer blog platform.",
             tags = listOf("user-submitted"),
-            views = 35,
+            views = 52,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -190,7 +170,7 @@ object StaticLinks {
             url = "https://hashnode.com/recent",
             description = "Blogging platform.",
             tags = listOf("tech", "blog", "learning"),
-            views = 20,
+            views = 41,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -200,7 +180,7 @@ object StaticLinks {
             url = "https://highscalability.com/",
             description = "System Design Blogs",
             tags = listOf("user-submitted"),
-            views = 40,
+            views = 56,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -210,7 +190,7 @@ object StaticLinks {
             url = "https://honda.com/",
             description = "Hardware company.",
             tags = listOf("brilliant", "good", "pretty", "poetic"),
-            views = 56,
+            views = 76,
             likesMobile = 5,
             dislikesMobile = 0
         ),
@@ -220,8 +200,8 @@ object StaticLinks {
             url = "https://www.newslaundry.com/2025/11/10/how-hate-drove-a-muslim-flower-seller-to-death-in-a-maharashtra-village",
             description = "Intolerance news.",
             tags = listOf("learning", "news"),
-            views = 0,
-            likesMobile = 0,
+            views = 19,
+            likesMobile = 3,
             dislikesMobile = 0
         ),
 
@@ -230,7 +210,7 @@ object StaticLinks {
             url = "https://lg.com/",
             description = "lg",
             tags = listOf("wesome", "wesome,gorgeous"),
-            views = 57,
+            views = 71,
             likesMobile = 3,
             dislikesMobile = 0
         ),
@@ -240,7 +220,7 @@ object StaticLinks {
             url = "https://littlealchemy2.com/",
             description = "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
             tags = listOf("curated", "sample"),
-            views = 121,
+            views = 140,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -250,7 +230,7 @@ object StaticLinks {
             url = "https://www.mediatek.com/",
             description = "Silicon chips company.",
             tags = listOf("silicon", "chips", "company"),
-            views = 41,
+            views = 59,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -260,7 +240,7 @@ object StaticLinks {
             url = "https://msi.com/",
             description = "Computer motherboard company.",
             tags = listOf("computer", "motherboard", "company"),
-            views = 47,
+            views = 66,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -270,8 +250,18 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=jxLsiOflofk",
             description = "Muslim Prayer - How to perform 2 Raka'at (2 Units) of prayer to help in praying Jumma farz namaz.",
             tags = listOf("user-submitted"),
-            views = 45,
+            views = 65,
             likesMobile = 7,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Muslim rickshaw puller assaulted, partially buried in sand, set on fire by Hindutva men in Agartala",
+            url = "https://maktoobmedia.com/india/muslim-rickshaw-puller-assaulted-partially-buried-in-sand-set-on-fire-by-hindutva-men-in-agartala/",
+            description = "Intolerance and hate crime.",
+            tags = listOf("learning", "intolerance"),
+            views = 0,
+            likesMobile = 0,
             dislikesMobile = 0
         ),
 
@@ -280,7 +270,7 @@ object StaticLinks {
             url = "https://ncase.me/",
             description = "Interactive simulations about trust and human behavior",
             tags = listOf("curated", "sample"),
-            views = 113,
+            views = 133,
             likesMobile = 3,
             dislikesMobile = 0
         ),
@@ -290,7 +280,7 @@ object StaticLinks {
             url = "https://www.nissan-global.com/EN/",
             description = "Car company",
             tags = listOf("car", "company"),
-            views = 50,
+            views = 64,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -300,7 +290,7 @@ object StaticLinks {
             url = "https://www.oneplus.com/",
             description = "Phone company",
             tags = listOf("phone", "phonecompany", "mobilephonecompany", "poetic"),
-            views = 36,
+            views = 52,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -310,7 +300,7 @@ object StaticLinks {
             url = "https://www.oppo.com/",
             description = "Mobile phone company.",
             tags = listOf("mobile", "mobile phone", "company", "mobilephonecompany", "poetic"),
-            views = 37,
+            views = 52,
             likesMobile = 0,
             dislikesMobile = 2
         ),
@@ -320,9 +310,9 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=8of5w7RgcTc",
             description = "Contemplative popular music in Urdu.",
             tags = listOf("urdu", "music"),
-            views = 26,
+            views = 48,
             likesMobile = 1,
-            dislikesMobile = 0
+            dislikesMobile = 2
         ),
 
         Link(
@@ -330,7 +320,7 @@ object StaticLinks {
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
             tags = listOf("curated", "sample"),
-            views = 112,
+            views = 129,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -340,7 +330,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("curated", "sample"),
-            views = 106,
+            views = 126,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -350,8 +340,8 @@ object StaticLinks {
             url = "https://www.producthunt.com/",
             description = "Platform for sharing and discovering new products",
             tags = listOf("curated", "sample"),
-            views = 157,
-            likesMobile = 30,
+            views = 176,
+            likesMobile = 31,
             dislikesMobile = 3
         ),
 
@@ -360,7 +350,7 @@ object StaticLinks {
             url = "https://projecteuler.net/",
             description = "Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.",
             tags = listOf("math", "cs", "coding"),
-            views = 46,
+            views = 63,
             likesMobile = 5,
             dislikesMobile = 0
         ),
@@ -370,7 +360,7 @@ object StaticLinks {
             url = "https://www.rekhta.org/tags/famous-shayari/couplets",
             description = "Ponder and it might help clear blockers in the mind.",
             tags = listOf("shayaris", "cool", "poetic", "beautiful"),
-            views = 54,
+            views = 74,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -380,7 +370,7 @@ object StaticLinks {
             url = "https://bazel.build/basics",
             description = "The best guide on how software build systems work and their evolution. Bazel is the best build system by Google offering 0.5 second incremental build times using functional programming concepts.",
             tags = listOf("curated", "sample"),
-            views = 119,
+            views = 136,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -390,7 +380,7 @@ object StaticLinks {
             url = "https://pudding.cool/",
             description = "Visual essays that explain ideas with data and visuals",
             tags = listOf("curated", "sample"),
-            views = 109,
+            views = 131,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -400,8 +390,8 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers",
             tags = listOf("curated", "sample"),
-            views = 235,
-            likesMobile = 54,
+            views = 262,
+            likesMobile = 55,
             dislikesMobile = 4
         ),
 
@@ -410,7 +400,7 @@ object StaticLinks {
             url = "https://m.youtube.com/feed/subscriptions",
             description = "The subscriptions feed does not have implicit personalized recommendations.",
             tags = listOf("video", "social", "good", "dynamic", "regular", "repeat"),
-            views = 41,
+            views = 69,
             likesMobile = 2,
             dislikesMobile = 0
         )
