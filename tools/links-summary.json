@@ -1,16 +1,17 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-05T16:37:45.691Z",
+    "generatedAt": "2026-02-12T15:18:04.091Z",
     "apiUrl": "https://backend.discoverall.space",
     "totalLinks": 84
   },
   "analysis": {
     "total": 84,
-    "filteredMobile": 44,
-    "filteredDesktop": 4,
+    "filteredMobile": 45,
+    "filteredDesktop": 5,
     "blockedMobileUrls": [
       "http://radio.garden/",
       "https://10minutemail.com/",
+      "https://abirusabil123.github.io/",
       "https://annas-archive.org/",
       "https://annas-archive.se/",
       "https://app.diagrams.net/",
@@ -55,6 +56,7 @@
       "https://xkcd.com/"
     ],
     "blockedDesktopUrls": [
+      "https://abirusabil123.github.io/",
       "https://canon.com/",
       "https://mojapp.in/",
       "https://twitter.com/",
@@ -62,19 +64,19 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 34,
-      "1-25%": 3,
+      "0%": 32,
+      "1-25%": 4,
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 45
+      "80-100%": 46
     },
     "byVoteCount": {
       "0 votes": 5,
-      "1-3 votes": 23,
+      "1-3 votes": 22,
       "4-10 votes": 9,
       "11-50 votes": 2,
-      "50+ votes": 45
+      "50+ votes": 46
     }
   },
   "visitors": {
@@ -89,7 +91,7 @@
       },
       {
         "country": "CN",
-        "count": 8
+        "count": 9
       },
       {
         "country": "DE",
@@ -97,7 +99,7 @@
       },
       {
         "country": "IN",
-        "count": 235
+        "count": 288
       },
       {
         "country": "NL",
@@ -112,18 +114,22 @@
         "count": 1
       },
       {
+        "country": "SG",
+        "count": 4
+      },
+      {
         "country": "TW",
-        "count": 1
+        "count": 3
       },
       {
         "country": "US",
-        "count": 31
+        "count": 37
       }
     ],
     "byMonth": [
       {
         "month": "202602",
-        "count": 28
+        "count": 94
       },
       {
         "month": "202601",
@@ -133,11 +139,11 @@
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 96
+        "count": 117
       },
       {
         "platform": "mobile",
-        "count": 89
+        "count": 114
       },
       {
         "platform": "unknown",
@@ -145,17 +151,17 @@
       },
       {
         "platform": "web",
-        "count": 88
+        "count": 108
       }
     ],
     "byProduct": [
       {
         "product": "abirusabil123.github.io",
-        "count": 87
+        "count": 107
       },
       {
         "product": "discover-backend",
-        "count": 199
+        "count": 245
       },
       {
         "product": "test",
@@ -169,33 +175,33 @@
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 110
+        "count": 135
       },
       {
         "origin": "https://abirusabil123.github.io",
-        "count": 88
+        "count": 108
       },
       {
         "origin": "https://discoverall.space",
-        "count": 88
+        "count": 108
       },
       {
         "origin": "null",
-        "count": 2
+        "count": 3
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 31
+        "count": 40
       },
       {
         "path": "/art.html",
-        "count": 15
+        "count": 16
       },
       {
         "path": "/getLinks",
-        "count": 199
+        "count": 245
       },
       {
         "path": "/index.html",
@@ -203,15 +209,15 @@
       },
       {
         "path": "/products.html",
-        "count": 8
+        "count": 10
       },
       {
         "path": "/shayaris.html",
-        "count": 9
+        "count": 12
       },
       {
         "path": "/sketches.html",
-        "count": 11
+        "count": 14
       },
       {
         "path": "/test.html",
@@ -219,7 +225,7 @@
       },
       {
         "path": "/work-life.html",
-        "count": 9
+        "count": 11
       },
       {
         "path": "unknown",
@@ -228,8 +234,19 @@
     ]
   },
   "errors": {
-    "count": 37,
-    "unresolved": 0,
-    "allUnresolvedErrors": []
+    "count": 38,
+    "unresolved": 1,
+    "allUnresolvedErrors": [
+      {
+        "id": 38,
+        "timestamp": "2026-02-10T02:47:43.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: Failed to fetch<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0; 360Spider",
+        "resolved": 0,
+        "resolved_at": null
+      }
+    ]
   }
 }
