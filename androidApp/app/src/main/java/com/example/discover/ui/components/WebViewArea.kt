@@ -59,8 +59,16 @@ fun WebViewArea(
         val targetUrl = url ?: "about:blank"
         if (targetUrl.lowercase().endsWith(".pdf")) {
             try {
-                // Clear the WebView content first
-                webView.loadUrl("about:blank")
+                // Show a message in WebView instead of a blank screen
+                val fileName = targetUrl.substringAfterLast("/")
+                val htmlData = """
+<html>
+<body style='background:black;color:white;margin:0;text-align:center;'>
+    <h1>Opening PDF...</h1>
+    <p>$fileName</p>
+</body>
+</html>""".trimIndent()
+                webView.loadData(htmlData, "text/html", "UTF-8")
 
                 val intent = Intent(Intent.ACTION_VIEW, targetUrl.toUri())
                 intent.setDataAndType(targetUrl.toUri(), "application/pdf")
