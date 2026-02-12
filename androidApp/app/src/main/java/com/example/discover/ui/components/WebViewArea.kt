@@ -63,7 +63,7 @@ fun WebViewArea(
                 val fileName = targetUrl.substringAfterLast("/")
                 val htmlData = """
 <html>
-<body style='background:black;color:white;margin:0;text-align:center;'>
+<body style='background:black;color:white;margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;'>
     <h1>Opening PDF...</h1>
     <p>$fileName</p>
 </body>
