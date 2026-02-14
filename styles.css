@@ -642,7 +642,6 @@ body {
     height: 100%;
     background: #0f0f0f;
     color: #fff;
-    display: none;  /* Hidden by default */
     flex-direction: column;
     /* Remove justify-content: center */
     align-items: center;
