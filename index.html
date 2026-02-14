@@ -22,10 +22,10 @@
     
     <!-- Settings Screen -->
     <div id="settings-screen" class="settings-screen" style="display: none;">
-        <h1 style="text-align: center;">⚙️ Settings</h1>
+        <h1 style="text-align: center;padding: 3rem;">⚙️ Settings</h1>
         <div class="settings-section">
             <div class="filter-row">
-                <div>
+                <div class="filter-column">
                     <label for="filter-tags" style="display: block; text-align: center;">Filter by Tags<br>(comma separated):</label>
                     <br>
                     <span>Allowlist: <input type="text" id="filter-tags-allowlist" placeholder="e.g. ai, tools, productivity"
@@ -38,7 +38,7 @@
                     <button id="apply-filter-btn" class="btn" onclick="applyTagFilter()">Apply Tags Filter</button>
                 </div>
                 
-                <div>
+                <div class="filter-column">
                     <label for="filter-tags" style="display: block; text-align: center;">TODO: Filter by URLs<br>(space separated):</label>
                     <br>
                     <span>Allowlist: <input type="text" id="filter-urls-allowlist" placeholder="e.g. www.google.com www.example.com"
