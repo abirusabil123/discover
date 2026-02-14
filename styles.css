@@ -646,10 +646,17 @@ body {
     flex-direction: column;
     /* Remove justify-content: center */
     align-items: center;
-    z-index: 999;
     overflow-y: auto;  /* Move scrollbar here */
     padding: 20px;
     box-sizing: border-box;
+}
+
+.filter-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Delete the entire .settings-content block */
