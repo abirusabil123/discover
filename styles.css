@@ -648,20 +648,15 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* centers the content wrapper */
+    /* Remove justify-content: center */
     align-items: center;
     z-index: 999;
-    overflow: hidden;         /* prevent screen scrolling */
-}
-
-.settings-content {
-    max-height: 100%;         /* ensures wrapper doesn’t exceed viewport */
-    width: 100%;
-    overflow-y: auto;         /* scrolling happens inside the wrapper */
-    padding: 20px;            /* optional, for spacing */
+    overflow-y: auto;  /* Move scrollbar here */
+    padding: 20px;
     box-sizing: border-box;
 }
 
+/* Delete the entire .settings-content block */
 .settings-section {
     text-align: center;
     /* Center button and input */
