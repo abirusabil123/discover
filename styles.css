@@ -89,7 +89,7 @@ body {
 
 .current-site {
     background: #0f0f0f;
-    padding: 1.25rem;
+    padding: 1rem;
     width: 100%;
     max-width: 50rem;
     text-align: center;
@@ -305,7 +305,7 @@ body {
     border: 1px solid #333;
     border-radius: 0.5rem;
     width: 90%;
-    max-width: 31.25rem;
+    max-width: 30rem;
     max-height: 90vh;
     overflow-y: auto;
     animation: modalSlideIn 0.3s ease-out;
@@ -673,8 +673,6 @@ body {
 
 .settings-section input {
     display: block;
-    width: 90%;
-    max-width: 400px;
     margin: 0 auto 10px auto;
     padding: 8px;
     border-radius: 8px;
