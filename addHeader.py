@@ -61,6 +61,7 @@ def add_header():
                     path = os.path.join(root, f)
                     header = format.format(license_text_1)
                     header += format.format(license_text_2)
+                    header += "\n"
                     
                     try:
                         with open(path, 'r+', encoding='utf-8') as file:
