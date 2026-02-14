@@ -597,8 +597,8 @@ body {
     position: fixed;
     top: 0.5rem;
     right: 0.5rem;
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-color: yellow;
     /* Default - API failed */
@@ -623,7 +623,7 @@ body {
     left: 0.5rem;
     background: none;
     border: none;
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
     z-index: 1000;
 }
