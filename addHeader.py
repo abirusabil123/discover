@@ -60,7 +60,7 @@ def add_header():
                 if f.endswith(ext):
                     path = os.path.join(root, f)
                     header = format.format(license_text_1)
-                    if ext == '.kt':
+                    if ext == '.kt' or ext == '.kts':
                         header += format.format(license_text_2)
                         header += "\n"
                     else:
