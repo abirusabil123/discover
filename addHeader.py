@@ -7,32 +7,32 @@ import os
 def add_header():
     # Source file extensions with their comment formats
     comment_formats = {
-        '.html': '<!-- {} -->\n',
-        '.js': '/* {} */\n',
-        '.css': '/* {} */\n',
-        '.py': '# {}\n',
-        '.java': '/* {} */\n',
-        '.cpp': '/* {} */\n',
-        '.c': '/* {} */\n',
-        '.h': '/* {} */\n',
-        '.hpp': '/* {} */\n',
-        '.kt': '/* {} */\n',
-        '.kts': '/* {} */\n',
-        '.properties': '# {}\n',
-        '.sql': '-- {}\n',
-        '.toml': '# {}\n',
-        '.yml': '# {}\n',
-        '.yaml': '# {}\n',
-        '.pro': '# {}\n',
-        '.sh': '# {}\n',
-        '.bash': '# {}\n',
-        '.zsh': '# {}\n',
-        '.rs': '// {}\n',
-        '.go': '/* {} */\n',
-        '.rb': '# {}\n',
-        '.php': '/* {} */\n',
-        '.swift': '// {}\n',
-        '.scala': '/* {} */\n',
+        '.html': '<!-- {} -->',
+        '.js': '/* {} */',
+        '.css': '/* {} */',
+        '.py': '# {}',
+        '.java': '/* {} */',
+        '.cpp': '/* {} */',
+        '.c': '/* {} */',
+        '.h': '/* {} */',
+        '.hpp': '/* {} */',
+        '.kt': '/* {} */',
+        '.kts': '/* {} */',
+        '.properties': '# {}',
+        '.sql': '-- {}',
+        '.toml': '# {}',
+        '.yml': '# {}',
+        '.yaml': '# {}',
+        '.pro': '# {}',
+        '.sh': '# {}',
+        '.bash': '# {}',
+        '.zsh': '# {}',
+        '.rs': '// {}',
+        '.go': '/* {} */',
+        '.rb': '# {}',
+        '.php': '/* {} */',
+        '.swift': '// {}',
+        '.scala': '/* {} */',
     }
     
     # Skip these non-source file extensions
@@ -60,7 +60,13 @@ def add_header():
                 if f.endswith(ext):
                     path = os.path.join(root, f)
                     header = format.format(license_text_1)
-                    header += format.format(license_text_2)
+                    if ext == '.kt':
+                        header += format.format(license_text_2)
+                        header += "\n"
+                    else:
+                        header += "\n"
+                        header += format.format(license_text_2)
+                        header += "\n"
                     header += "\n"
                     
                     try:
