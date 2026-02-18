@@ -44,9 +44,9 @@ import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.discover.ui.components.AddLinkDialog
 import com.example.discover.ui.components.ControlButtons
+import com.example.discover.ui.components.LinkCard
 import com.example.discover.ui.components.TopDiscoverBar
 import com.example.discover.ui.components.WebViewArea
-import com.example.discover.ui.components.LinkCard
 import com.example.discover.ui.theme.BackgroundDark
 import com.example.discover.ui.theme.Spacing
 import com.example.discover.ui.theme.TextPrimary
@@ -59,6 +59,7 @@ fun formatTime(ms: Long): String {
     return if (ms < 3600000) "${ms / 60000}m"
     else "${ms / 3600000}h ${(ms % 3600000) / 60000}m"
 }
+
 @SuppressLint("SetJavaScriptEnabled")
 @Composable
 fun DiscoverScreen(
@@ -89,19 +90,40 @@ fun DiscoverScreen(
         WebView(context).apply {
             // Apply all settings here. They will persist for the lifetime of the WebView.
             settings.apply {
-//                            setLayerType(View.LAYER_TYPE_SOFTWARE, null)
+//                setLayerType(View.LAYER_TYPE_SOFTWARE, null)
                 setBackgroundColor(Color.Transparent.toArgb())
                 visibility = View.GONE
                 javaScriptEnabled = true
-                domStorageEnabled = true
                 loadWithOverviewMode = true
                 useWideViewPort = true
                 setSupportZoom(true)
                 builtInZoomControls = true
                 displayZoomControls = false
-                allowFileAccess = false
                 javaScriptCanOpenWindowsAutomatically = false
                 mediaPlaybackRequiresUserGesture = true
+
+                // Disable all storage and persistence
+                // We don't want to disable cache to make our app faster.
+//                cacheMode = WebSettings.LOAD_NO_CACHE
+
+                // Modern Android uses these settings
+                domStorageEnabled = false  // Disable DOM storage (localStorage, sessionStorage)
+                databaseEnabled = false     // Disable WebSQL
+                savePassword = false
+                saveFormData = false
+
+                // Privacy settings
+                allowFileAccess = false
+                allowContentAccess = false
+                allowFileAccessFromFileURLs = false
+                allowUniversalAccessFromFileURLs = false
+
+                // Disable location
+                setGeolocationEnabled(false)
+
+                // Use a generic user agent to avoid fingerprinting
+                userAgentString =
+                    "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.210 Mobile Safari/537.36"
 
                 // Load static HTML with CURRENT stats
                 val initialHtml = """
@@ -179,13 +201,12 @@ fun DiscoverScreen(
         """.trimIndent()
 
                 loadDataWithBaseURL(
-                    null,
-                    initialHtml,
-                    "text/html",
-                    "UTF-8",
-                    null
+                    null, initialHtml, "text/html", "UTF-8", null
                 )
             }
+            // Disable JavaScript interfaces that could be used for tracking
+            removeJavascriptInterface("accessibility")
+            removeJavascriptInterface("accessibilityTraversal")
         }
     }
 
