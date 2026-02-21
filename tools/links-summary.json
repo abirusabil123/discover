@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-12T15:18:04.091Z",
+    "generatedAt": "2026-02-21T13:33:18.734Z",
     "apiUrl": "https://backend.discoverall.space",
-    "totalLinks": 84
+    "totalLinks": 85
   },
   "analysis": {
-    "total": 84,
-    "filteredMobile": 45,
+    "total": 85,
+    "filteredMobile": 46,
     "filteredDesktop": 5,
     "blockedMobileUrls": [
       "http://radio.garden/",
@@ -30,6 +30,7 @@
       "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
       "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
       "https://libgen.li/",
+      "https://littlealchemy2.com/",
       "https://martinfowler.com/articles/deepseek-papers.html",
       "https://mojapp.in/",
       "https://neal.fun/deep-sea",
@@ -64,19 +65,19 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 32,
-      "1-25%": 4,
+      "0%": 31,
+      "1-25%": 5,
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 46
+      "80-100%": 47
     },
     "byVoteCount": {
-      "0 votes": 5,
-      "1-3 votes": 22,
+      "0 votes": 6,
+      "1-3 votes": 21,
       "4-10 votes": 9,
       "11-50 votes": 2,
-      "50+ votes": 46
+      "50+ votes": 47
     }
   },
   "visitors": {
@@ -87,11 +88,11 @@
       },
       {
         "country": "CA",
-        "count": 1
+        "count": 2
       },
       {
         "country": "CN",
-        "count": 9
+        "count": 17
       },
       {
         "country": "DE",
@@ -99,7 +100,7 @@
       },
       {
         "country": "IN",
-        "count": 288
+        "count": 458
       },
       {
         "country": "NL",
@@ -123,13 +124,13 @@
       },
       {
         "country": "US",
-        "count": 37
+        "count": 45
       }
     ],
     "byMonth": [
       {
         "month": "202602",
-        "count": 94
+        "count": 281
       },
       {
         "month": "202601",
@@ -139,11 +140,11 @@
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 117
+        "count": 269
       },
       {
         "platform": "mobile",
-        "count": 114
+        "count": 144
       },
       {
         "platform": "unknown",
@@ -151,17 +152,17 @@
       },
       {
         "platform": "web",
-        "count": 108
+        "count": 113
       }
     ],
     "byProduct": [
       {
         "product": "abirusabil123.github.io",
-        "count": 107
+        "count": 112
       },
       {
         "product": "discover-backend",
-        "count": 245
+        "count": 427
       },
       {
         "product": "test",
@@ -175,15 +176,19 @@
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 135
+        "count": 166
+      },
+      {
+        "origin": "http://localhost:44631",
+        "count": 120
       },
       {
         "origin": "https://abirusabil123.github.io",
-        "count": 108
+        "count": 113
       },
       {
         "origin": "https://discoverall.space",
-        "count": 108
+        "count": 139
       },
       {
         "origin": "null",
@@ -193,7 +198,7 @@
     "byPath": [
       {
         "path": "/",
-        "count": 40
+        "count": 41
       },
       {
         "path": "/art.html",
@@ -201,15 +206,15 @@
       },
       {
         "path": "/getLinks",
-        "count": 245
+        "count": 427
       },
       {
         "path": "/index.html",
-        "count": 4
+        "count": 5
       },
       {
         "path": "/products.html",
-        "count": 10
+        "count": 12
       },
       {
         "path": "/shayaris.html",
@@ -225,7 +230,7 @@
       },
       {
         "path": "/work-life.html",
-        "count": 11
+        "count": 12
       },
       {
         "path": "unknown",
@@ -234,8 +239,8 @@
     ]
   },
   "errors": {
-    "count": 38,
-    "unresolved": 1,
+    "count": 44,
+    "unresolved": 7,
     "allUnresolvedErrors": [
       {
         "id": 38,
@@ -244,6 +249,66 @@
         "level": "error",
         "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: Failed to fetch<br>Fallback to static list.",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0; 360Spider",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 39,
+        "timestamp": "2026-02-14T17:05:45.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "ReferenceError: applyUrlFilter is not defined at http://localhost:44631/:1",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 40,
+        "timestamp": "2026-02-14T17:12:49.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "ReferenceError: applyUrlFilter is not defined at http://localhost:44631/:1",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 41,
+        "timestamp": "2026-02-14T17:13:27.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "ReferenceError: applyUrlFilter is not defined at https://discoverall.space/:1",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 42,
+        "timestamp": "2026-02-14T18:20:39.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "ReferenceError: applyUrlFilter is not defined at https://discoverall.space/:1",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 43,
+        "timestamp": "2026-02-14T18:20:50.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "ReferenceError: applyUrlFilter is not defined at https://discoverall.space/:1",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 44,
+        "timestamp": "2026-02-18T13:49:44.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 (Android 16; Mobile; rv:147.0) Gecko/147.0 Firefox/147.0",
         "resolved": 0,
         "resolved_at": null
       }
