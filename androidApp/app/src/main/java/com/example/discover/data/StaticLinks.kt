@@ -56,16 +56,6 @@ object StaticLinks {
         ),
 
         Link(
-            name = "Aljazeera flips",
-            url = "https://www.aljazeera.com/#flips",
-            description = "Aljazeera flips",
-            tags = listOf("aljazeeraflips", "aljazeera", "flips", "learning"),
-            views = 51,
-            likesMobile = 1,
-            dislikesMobile = 0
-        ),
-
-        Link(
             name = "Andher Nagri Chaupat Raja : Bharatendu Harishchandra",
             url = "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
             description = "Short play on the British rule in India",
@@ -120,7 +110,7 @@ object StaticLinks {
             url = "https://namazein.com/fatiha-ka-tarika/",
             description = "How to do fatiha follow through guide.",
             tags = listOf("user-submitted"),
-            views = 64,
+            views = 65,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -360,7 +350,7 @@ object StaticLinks {
             url = "https://pudding.cool/",
             description = "Visual essays that explain ideas with data and visuals",
             tags = listOf("curated", "sample"),
-            views = 141,
+            views = 142,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -392,6 +382,16 @@ object StaticLinks {
             tags = listOf("video", "social", "good", "dynamic", "regular", "repeat"),
             views = 77,
             likesMobile = 2,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "YouTube shorts",
+            url = "https://www.youtube.com/shorts/",
+            description = "Short form YouTube videos in TikTok style.",
+            tags = listOf("tiktok", "videos"),
+            views = 0,
+            likesMobile = 0,
             dislikesMobile = 0
         )
     )

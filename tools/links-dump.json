@@ -106,22 +106,6 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.aljazeera.com/#flips-6386609485112",
-    "name": "Aljazeera flips",
-    "description": "Short clips from Aljazeera.",
-    "tags": [
-      "aljazeera",
-      "flips",
-      "learning"
-    ],
-    "views": 44,
-    "likesMobile": 1,
-    "dislikesMobile": 1,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
     "url": "https://www.aljazeera.com/#flips",
     "name": "Aljazeera flips",
     "description": "Aljazeera flips",
@@ -134,6 +118,22 @@
     "views": 51,
     "likesMobile": 1,
     "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.aljazeera.com/#flips-6386609485112",
+    "name": "Aljazeera flips",
+    "description": "Short clips from Aljazeera.",
+    "tags": [
+      "aljazeera",
+      "flips",
+      "learning"
+    ],
+    "views": 44,
+    "likesMobile": 1,
+    "dislikesMobile": 1,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -403,7 +403,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 64,
+    "views": 65,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -973,7 +973,7 @@
       "curated",
       "sample"
     ],
-    "views": 52,
+    "views": 53,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -1006,11 +1006,11 @@
       "research",
       "cool"
     ],
-    "views": 42,
+    "views": 43,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
-    "dislikesDesktop": 0,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -1021,11 +1021,11 @@
       "curated",
       "sample"
     ],
-    "views": 45,
+    "views": 46,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
-    "dislikesDesktop": 0,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -1168,7 +1168,7 @@
       "curated",
       "sample"
     ],
-    "views": 141,
+    "views": 142,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1274,7 +1274,7 @@
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
-    "reviewStatus": 0
+    "reviewStatus": 1
   },
   {
     "url": "https://m.youtube.com/feed/subscriptions",
@@ -1294,5 +1294,20 @@
     "likesDesktop": 4,
     "dislikesDesktop": 1,
     "reviewStatus": 1
+  },
+  {
+    "url": "https://www.youtube.com/shorts/",
+    "name": "YouTube shorts",
+    "description": "Short form YouTube videos in TikTok style.",
+    "tags": [
+      "tiktok",
+      "videos"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 0
   }
 ]

@@ -106,22 +106,6 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
-            "name": "Aljazeera flips",
-            "url": "https://www.aljazeera.com/#flips",
-            "description": "Aljazeera flips",
-            "tags": [
-                "aljazeeraflips",
-                "aljazeera",
-                "flips",
-                "learning"
-            ],
-            "views": 51,
-            "likesMobile": 1,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
             "name": "Andher Nagri Chaupat Raja : Bharatendu Harishchandra",
             "url": "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
             "description": "Short play on the British rule in India",
@@ -339,7 +323,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 64,
+            "views": 65,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -854,7 +838,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 52,
+            "views": 53,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -885,11 +869,11 @@ const STATIC = {
                 "research",
                 "cool"
             ],
-            "views": 42,
+            "views": 43,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
             "name": "Sci-Hub",
@@ -899,11 +883,11 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 45,
+            "views": 46,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
             "name": "Scream Into the Void",
@@ -1036,7 +1020,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 141,
+            "views": 142,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1142,6 +1126,20 @@ const STATIC = {
             "dislikesMobile": 0,
             "likesDesktop": 4,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "YouTube shorts",
+            "url": "https://www.youtube.com/shorts/",
+            "description": "Short form YouTube videos in TikTok style.",
+            "tags": [
+                "tiktok",
+                "videos"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         }
     ]
 };

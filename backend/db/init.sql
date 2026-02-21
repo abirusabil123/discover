@@ -143,18 +143,6 @@ VALUES (
         1
     ),
     (
-        'Aljazeera flips',
-        'https://www.aljazeera.com/#flips',
-        'Aljazeera flips',
-        JSON_ARRAY('aljazeeraflips', 'aljazeera', 'flips', 'learning'),
-        51,
-        1,
-        0,
-        0,
-        0,
-        1
-    ),
-    (
         'Andher Nagri Chaupat Raja : Bharatendu Harishchandra',
         'https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php',
         'Short play on the British rule in India',
@@ -363,7 +351,7 @@ VALUES (
         'https://namazein.com/fatiha-ka-tarika/',
         'How to do fatiha follow through guide.',
         JSON_ARRAY('user-submitted'),
-        64,
+        65,
         2,
         0,
         2,
@@ -807,7 +795,7 @@ VALUES (
         'http://radio.garden/',
         'Listen to live radio stations across the globe',
         JSON_ARRAY('curated', 'sample'),
-        52,
+        53,
         2,
         1000,
         4,
@@ -831,11 +819,11 @@ VALUES (
         'https://sci-net.xyz/',
         'Open scientific papers submitted by paper authors.',
         JSON_ARRAY('science', 'research', 'cool'),
-        42,
+        43,
         2,
         1000,
         1,
-        0,
+        1,
         1
     ),
     (
@@ -843,11 +831,11 @@ VALUES (
         'https://sci-hub.se/',
         'Removing barriers in the way of science by providing free access to research papers',
         JSON_ARRAY('curated', 'sample'),
-        45,
+        46,
         2,
         1000,
         1,
-        0,
+        1,
         1
     ),
     (
@@ -963,7 +951,7 @@ VALUES (
         'https://pudding.cool/',
         'Visual essays that explain ideas with data and visuals',
         JSON_ARRAY('curated', 'sample'),
-        141,
+        142,
         2,
         0,
         3,
@@ -1064,6 +1052,18 @@ VALUES (
         0,
         4,
         1,
+        1
+    ),
+    (
+        'YouTube shorts',
+        'https://www.youtube.com/shorts/',
+        'Short form YouTube videos in TikTok style.',
+        JSON_ARRAY('tiktok', 'videos'),
+        0,
+        0,
+        0,
+        0,
+        0,
         1
     ) ON DUPLICATE KEY
 UPDATE url = url;
