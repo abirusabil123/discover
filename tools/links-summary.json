@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-21T13:45:59.465Z",
+    "generatedAt": "2026-02-21T13:55:41.135Z",
     "apiUrl": "https://backend.discoverall.space",
-    "totalLinks": 86
+    "totalLinks": 85
   },
   "analysis": {
-    "total": 86,
+    "total": 85,
     "filteredMobile": 46,
     "filteredDesktop": 5,
     "blockedMobileUrls": [
@@ -65,7 +65,7 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 32,
+      "0%": 31,
       "1-25%": 5,
       "26-50%": 1,
       "51-75%": 1,
@@ -74,7 +74,7 @@
     },
     "byVoteCount": {
       "0 votes": 7,
-      "1-3 votes": 21,
+      "1-3 votes": 20,
       "4-10 votes": 9,
       "11-50 votes": 2,
       "50+ votes": 47

@@ -1,5 +1,20 @@
 [
   {
+    "url": "http://radio.garden/",
+    "name": "Radio Garden",
+    "description": "Listen to live radio stations across the globe",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 53,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 4,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://10minutemail.com/",
     "name": "10 Minute Mail",
     "description": "Disposable email for spam-free signups",
@@ -15,22 +30,6 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
-    "name": "12 Rules for Life - Jordan Bernt Peterson",
-    "description": "The bridge between European ideas and Islam. Beyond Order: 12 More Rules for Life is also a required read after this book. Jordan Bernt Peterson almost reached Islam with pure logic which is remarkable. The difference can be seen in his Rule 8 of \"tell the truth, or atleast don't lie\" and the holy Quran's 'do not mix truth with falsehood, nor knowingly conceal the truth' - Surah Al-Baqarah (2:42). The Quran is much more strict and rewarding.",
-    "tags": [
-      "book",
-      "learning",
-      "12rulesforlife"
-    ],
-    "views": 60,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
     "url": "https://4chan.org/",
     "name": "4chan",
     "description": "Free speech social media platform.",
@@ -40,21 +39,6 @@
     "views": 77,
     "likesMobile": 1,
     "dislikesMobile": 0,
-    "likesDesktop": 2,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://asoftmurmur.com/",
-    "name": "A Soft Murmur",
-    "description": "Mix ambient sounds (rain, waves) for focus",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 67,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
     "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -75,81 +59,19 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.aljazeera.com/",
-    "name": "Al Jazeera",
-    "description": "International news and current affairs network",
+    "url": "https://annas-archive.org/",
+    "name": "Anna's Archive",
+    "description": "Open library",
     "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 151,
-    "likesMobile": 8,
-    "dislikesMobile": 0,
-    "likesDesktop": 4,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.aljazeera.com/#flips-6386599316112",
-    "name": "Aljazeera flips",
-    "description": "Short clips from Aljazeera.",
-    "tags": [
-      "aljazeera",
-      "flips",
+      "open",
+      "library",
       "learning"
     ],
-    "views": 47,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
+    "views": 11,
+    "likesMobile": 0,
+    "dislikesMobile": 1000,
     "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.aljazeera.com/#flips",
-    "name": "Aljazeera flips",
-    "description": "Aljazeera flips",
-    "tags": [
-      "aljazeeraflips",
-      "aljazeera",
-      "flips",
-      "learning"
-    ],
-    "views": 51,
-    "likesMobile": 1,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.aljazeera.com/#flips-6386609485112",
-    "name": "Aljazeera flips",
-    "description": "Short clips from Aljazeera.",
-    "tags": [
-      "aljazeera",
-      "flips",
-      "learning"
-    ],
-    "views": 44,
-    "likesMobile": 1,
-    "dislikesMobile": 1,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
-    "name": "Andher Nagri Chaupat Raja : Bharatendu Harishchandra",
-    "description": "Short play on the British rule in India",
-    "tags": [
-      "user-submitted"
-    ],
-    "views": 82,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 3,
-    "dislikesDesktop": 0,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -169,80 +91,62 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://annas-archive.org/",
-    "name": "Anna's Archive",
-    "description": "Open library",
+    "url": "https://app.diagrams.net/",
+    "name": "draw.io",
+    "description": "Diagram making software which includes UML diagrams in software engineering.",
     "tags": [
-      "open",
-      "library",
-      "learning"
+      "user-submitted"
     ],
     "views": 11,
     "likesMobile": 0,
     "dislikesMobile": 1000,
-    "likesDesktop": 0,
-    "dislikesDesktop": 1,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.teamblind.com/",
-    "name": "Blind",
-    "description": "Social media.",
-    "tags": [
-      "social",
-      "media"
-    ],
-    "views": 72,
-    "likesMobile": 0,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 7,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
-    "url": "https://www.teamblind.com/?sort=id",
-    "name": "Blind recent sort",
-    "description": "Social media.",
-    "tags": [
-      "social",
-      "media"
-    ],
-    "views": 78,
-    "likesMobile": 3,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.boredbutton.com/",
-    "name": "Bored Button",
-    "description": "Collection of random fun links and games",
+    "url": "https://archive.org/",
+    "name": "Internet Archive",
+    "description": "Digital library of free & borrowable books, movies, music & Wayback Machine",
     "tags": [
       "curated",
       "sample"
     ],
-    "views": 50,
-    "likesMobile": 2,
+    "views": 64,
+    "likesMobile": 4,
     "dislikesMobile": 1000,
-    "likesDesktop": 1,
+    "likesDesktop": 5,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
-    "url": "https://www.byd.com/",
-    "name": "BYD",
-    "description": "Electric car company.",
+    "url": "https://asoftmurmur.com/",
+    "name": "A Soft Murmur",
+    "description": "Mix ambient sounds (rain, waves) for focus",
     "tags": [
-      "car",
-      "electric",
-      "company"
+      "curated",
+      "sample"
     ],
-    "views": 74,
-    "likesMobile": 5,
-    "dislikesMobile": 0,
+    "views": 67,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
     "likesDesktop": 2,
     "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://bazel.build/basics",
+    "name": "Software build systems",
+    "description": "The best guide on how software build systems work and their evolution. Bazel is the best build system by Google offering 0.5 second incremental build times using functional programming concepts.",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 147,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 5,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -263,66 +167,6 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://codeforces.com/problemset",
-    "name": "Codeforces",
-    "description": "The top competitive programming platform.",
-    "tags": [
-      "code",
-      "learning",
-      "fun",
-      "poetic"
-    ],
-    "views": 86,
-    "likesMobile": 0,
-    "dislikesMobile": 0,
-    "likesDesktop": 2,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://github.com/pllk/cphb/",
-    "name": "Competitive Programmer's Handbook",
-    "description": "Best competitive programming book.",
-    "tags": [
-      "user-submitted"
-    ],
-    "views": 13,
-    "likesMobile": 0,
-    "dislikesMobile": 1000,
-    "likesDesktop": 2,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://godbolt.org/",
-    "name": "Compiler Explorer",
-    "description": "Test different computer programming language compilers.",
-    "tags": [
-      "user-submitted"
-    ],
-    "views": 17,
-    "likesMobile": 0,
-    "dislikesMobile": 1000,
-    "likesDesktop": 4,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.connectedpapers.com/",
-    "name": "Connected Papers",
-    "description": "Visual tool to explore academic research connections",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 80,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 10,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
     "url": "https://chat.deepseek.com/",
     "name": "DeepSeek",
     "description": "Cutting edge open weight open research LLM.",
@@ -338,89 +182,19 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.deepseek.com/en",
-    "name": "DeepSeek",
-    "description": "AI research and development company",
+    "url": "https://codeforces.com/problemset",
+    "name": "Codeforces",
+    "description": "The top competitive programming platform.",
     "tags": [
-      "curated",
-      "sample"
+      "code",
+      "learning",
+      "fun",
+      "poetic"
     ],
-    "views": 75,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 1,
-    "dislikesDesktop": 1,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://dontevenreply.com/",
-    "name": "Don't Even Reply",
-    "description": "Hilarious fictional email exchanges",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 90,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 9,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://app.diagrams.net/",
-    "name": "draw.io",
-    "description": "Diagram making software which includes UML diagrams in software engineering.",
-    "tags": [
-      "user-submitted"
-    ],
-    "views": 11,
+    "views": 86,
     "likesMobile": 0,
-    "dislikesMobile": 1000,
-    "likesDesktop": 7,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.example.com/",
-    "name": "Examples link",
-    "description": "Example link",
-    "tags": [
-      "beautiful",
-      "gorgeous"
-    ],
-    "views": 25,
-    "likesMobile": 0,
-    "dislikesMobile": 2000,
-    "likesDesktop": 6,
-    "dislikesDesktop": 1004,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://namazein.com/fatiha-ka-tarika/",
-    "name": "Fatiha ka tarika",
-    "description": "How to do fatiha follow through guide.",
-    "tags": [
-      "user-submitted"
-    ],
-    "views": 65,
-    "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 2,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.geeksforgeeks.org/",
-    "name": "GeeksforGeeks",
-    "description": "Computer Science learning platform.",
-    "tags": [
-      "user-submitted"
-    ],
-    "views": 65,
-    "likesMobile": 0,
-    "dislikesMobile": 0,
-    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -453,17 +227,75 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://news.ycombinator.com/",
-    "name": "Hacker News",
-    "description": "Social news link focusing on computer science and entrepreneurship",
+    "url": "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
+    "name": "The Longest Blockchain",
+    "description": "Interesting perspective on blockchain strength",
     "tags": [
       "curated",
       "sample"
     ],
-    "views": 215,
-    "likesMobile": 41,
-    "dislikesMobile": 3,
-    "likesDesktop": 18,
+    "views": 68,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 3,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://dontevenreply.com/",
+    "name": "Don't Even Reply",
+    "description": "Hilarious fictional email exchanges",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 90,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 9,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://github.com/alex/what-happens-when",
+    "name": "In depth flow of computers",
+    "description": "An attempt to answer the age old interview question - What happens when you type google.com into your browser and press enter? This page explains how the computer systems work together.",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 95,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 5,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://github.com/pllk/cphb/",
+    "name": "Competitive Programmer's Handbook",
+    "description": "Best competitive programming book.",
+    "tags": [
+      "user-submitted"
+    ],
+    "views": 13,
+    "likesMobile": 0,
+    "dislikesMobile": 1000,
+    "likesDesktop": 2,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://godbolt.org/",
+    "name": "Compiler Explorer",
+    "description": "Test different computer programming language compilers.",
+    "tags": [
+      "user-submitted"
+    ],
+    "views": 17,
+    "likesMobile": 0,
+    "dislikesMobile": 1000,
+    "likesDesktop": 4,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -512,6 +344,20 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
+    "name": "Andher Nagri Chaupat Raja : Bharatendu Harishchandra",
+    "description": "Short play on the British rule in India",
+    "tags": [
+      "user-submitted"
+    ],
+    "views": 82,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 3,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://honda.com/",
     "name": "Honda",
     "description": "Hardware company.",
@@ -529,47 +375,18 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.newslaundry.com/2025/11/10/how-hate-drove-a-muslim-flower-seller-to-death-in-a-maharashtra-village",
-    "name": "How hate drove a Muslim flower-seller to death in a Maharashtra village",
-    "description": "Intolerance news.",
+    "url": "https://huggingface.co/spaces/hesamation/primer-llm-embedding",
+    "name": "LLM Embeddings Explained",
+    "description": "LLM Embeddings Explained: A Visual and Intuitive Guide",
     "tags": [
-      "learning",
-      "news"
+      "llm",
+      "ai",
+      "explained"
     ],
-    "views": 27,
-    "likesMobile": 3,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://github.com/alex/what-happens-when",
-    "name": "In depth flow of computers",
-    "description": "An attempt to answer the age old interview question - What happens when you type google.com into your browser and press enter? This page explains how the computer systems work together.",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 95,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 5,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://archive.org/",
-    "name": "Internet Archive",
-    "description": "Digital library of free & borrowable books, movies, music & Wayback Machine",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 64,
-    "likesMobile": 4,
-    "dislikesMobile": 1000,
-    "likesDesktop": 5,
+    "views": 9,
+    "likesMobile": 0,
+    "dislikesMobile": 1001,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -607,23 +424,6 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.kaggle.com/",
-    "name": "Kaggle",
-    "description": "Participate in AI competitions.",
-    "tags": [
-      "ai",
-      "participate",
-      "compete",
-      "learning"
-    ],
-    "views": 14,
-    "likesMobile": 0,
-    "dislikesMobile": 2002,
-    "likesDesktop": 1,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
     "url": "https://lg.com/",
     "name": "lg",
     "description": "lg",
@@ -654,21 +454,6 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://reverser.dev/linux-kernel-explorer",
-    "name": "Linux Kernel Explorer",
-    "description": "A portal to study the Linux Kernel.",
-    "tags": [
-      "linux",
-      "kernel"
-    ],
-    "views": 4,
-    "likesMobile": 0,
-    "dislikesMobile": 1001,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
     "url": "https://littlealchemy2.com/",
     "name": "Little Alchemy 2",
     "description": "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
@@ -684,34 +469,50 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://huggingface.co/spaces/hesamation/primer-llm-embedding",
-    "name": "LLM Embeddings Explained",
-    "description": "LLM Embeddings Explained: A Visual and Intuitive Guide",
+    "url": "https://m.youtube.com/feed/subscriptions",
+    "name": "YouTube",
+    "description": "The subscriptions feed does not have implicit personalized recommendations.",
     "tags": [
-      "llm",
-      "ai",
-      "explained"
+      "video",
+      "social",
+      "good",
+      "dynamic",
+      "regular",
+      "repeat"
     ],
-    "views": 9,
+    "views": 77,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 4,
+    "dislikesDesktop": 1,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://maktoobmedia.com/india/muslim-rickshaw-puller-assaulted-partially-buried-in-sand-set-on-fire-by-hindutva-men-in-agartala/",
+    "name": "Muslim rickshaw puller assaulted, partially buried in sand, set on fire by Hindutva men in Agartala",
+    "description": "Intolerance and hate crime.",
+    "tags": [
+      "learning",
+      "intolerance"
+    ],
+    "views": 11,
     "likesMobile": 0,
-    "dislikesMobile": 1001,
-    "likesDesktop": 1,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
-    "url": "https://www.mediatek.com/",
-    "name": "MediaTek",
-    "description": "Silicon chips company.",
+    "url": "https://martinfowler.com/articles/deepseek-papers.html",
+    "name": "The DeepSeek Series: A Technical Overview",
+    "description": "This article provides an overview of the DeepSeek papers, highlighting three main arcs in this research: a focus on improving cost and memory efficiency, the use of HPC Co-Design to train large models on limited hardware, and the development of emergent reasoning from large-scale reinforcement learning.",
     "tags": [
-      "silicon",
-      "chips",
-      "company"
+      "user-submitted"
     ],
-    "views": 67,
+    "views": 32,
     "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 4,
+    "dislikesMobile": 1000,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -751,31 +552,16 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.youtube.com/watch?v=jxLsiOflofk",
-    "name": "Muslim Prayer - How to perform 2 Raka'at (2 Units) of prayer",
-    "description": "Muslim Prayer - How to perform 2 Raka'at (2 Units) of prayer to help in praying Jumma farz namaz.",
+    "url": "https://namazein.com/fatiha-ka-tarika/",
+    "name": "Fatiha ka tarika",
+    "description": "How to do fatiha follow through guide.",
     "tags": [
       "user-submitted"
     ],
-    "views": 76,
-    "likesMobile": 7,
+    "views": 65,
+    "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 2,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://maktoobmedia.com/india/muslim-rickshaw-puller-assaulted-partially-buried-in-sand-set-on-fire-by-hindutva-men-in-agartala/",
-    "name": "Muslim rickshaw puller assaulted, partially buried in sand, set on fire by Hindutva men in Agartala",
-    "description": "Intolerance and hate crime.",
-    "tags": [
-      "learning",
-      "intolerance"
-    ],
-    "views": 11,
-    "likesMobile": 0,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -795,64 +581,14 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.nissan-global.com/EN/",
-    "name": "Nissan",
-    "description": "Car company",
-    "tags": [
-      "car",
-      "company"
-    ],
-    "views": 74,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 1,
-    "dislikesDesktop": 1,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.oneplus.com/",
-    "name": "OnePlus",
-    "description": "Phone company",
-    "tags": [
-      "phone",
-      "phonecompany",
-      "mobilephonecompany",
-      "poetic"
-    ],
-    "views": 60,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.oppo.com/",
-    "name": "Oppo",
-    "description": "Mobile phone company.",
-    "tags": [
-      "mobile",
-      "mobile phone",
-      "company",
-      "mobilephonecompany",
-      "poetic"
-    ],
-    "views": 61,
-    "likesMobile": 0,
-    "dislikesMobile": 2,
-    "likesDesktop": 2,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://www.overleaf.com/",
-    "name": "Overleaf",
-    "description": "Online LaTeX editor with real-time collaboration",
+    "url": "https://neal.fun/deep-sea",
+    "name": "The Deep Sea",
+    "description": "Interactive dive into ocean depths with fascinating facts",
     "tags": [
       "curated",
       "sample"
     ],
-    "views": 49,
+    "views": 73,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 2,
@@ -860,17 +596,17 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.youtube.com/watch?v=8of5w7RgcTc",
-    "name": "Pal Pal",
-    "description": "Contemplative popular music in Urdu.",
+    "url": "https://news.ycombinator.com/",
+    "name": "Hacker News",
+    "description": "Social news link focusing on computer science and entrepreneurship",
     "tags": [
-      "urdu",
-      "music"
+      "curated",
+      "sample"
     ],
-    "views": 55,
-    "likesMobile": 1,
-    "dislikesMobile": 2,
-    "likesDesktop": 0,
+    "views": 215,
+    "likesMobile": 41,
+    "dislikesMobile": 3,
+    "likesDesktop": 18,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -920,21 +656,6 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://www.producthunt.com/",
-    "name": "Product Hunt",
-    "description": "Platform for sharing and discovering new products",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 186,
-    "likesMobile": 31,
-    "dislikesMobile": 3,
-    "likesDesktop": 16,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
     "url": "https://projecteuler.net/",
     "name": "Project Euler",
     "description": "Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.",
@@ -947,6 +668,21 @@
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://pudding.cool/",
+    "name": "The Pudding",
+    "description": "Visual essays that explain ideas with data and visuals",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 142,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 3,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -966,35 +702,33 @@
     "reviewStatus": 1
   },
   {
-    "url": "http://radio.garden/",
-    "name": "Radio Garden",
-    "description": "Listen to live radio stations across the globe",
+    "url": "https://reverser.dev/linux-kernel-explorer",
+    "name": "Linux Kernel Explorer",
+    "description": "A portal to study the Linux Kernel.",
     "tags": [
-      "curated",
-      "sample"
+      "linux",
+      "kernel"
     ],
-    "views": 53,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 4,
+    "views": 4,
+    "likesMobile": 0,
+    "dislikesMobile": 1001,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
-    "url": "https://www.rekhta.org/tags/famous-shayari/couplets",
-    "name": "Rekhta famous shayaris",
-    "description": "Ponder and it might help clear blockers in the mind.",
+    "url": "https://sci-hub.se/",
+    "name": "Sci-Hub",
+    "description": "Removing barriers in the way of science by providing free access to research papers",
     "tags": [
-      "shayaris",
-      "cool",
-      "poetic",
-      "beautiful"
+      "curated",
+      "sample"
     ],
-    "views": 86,
-    "likesMobile": 1,
-    "dislikesMobile": 0,
-    "likesDesktop": 3,
-    "dislikesDesktop": 0,
+    "views": 46,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 1,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -1007,21 +741,6 @@
       "cool"
     ],
     "views": 43,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 1,
-    "dislikesDesktop": 1,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://sci-hub.se/",
-    "name": "Sci-Hub",
-    "description": "Removing barriers in the way of science by providing free access to research papers",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 46,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -1056,21 +775,6 @@
     "dislikesMobile": 1000,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://bazel.build/basics",
-    "name": "Software build systems",
-    "description": "The best guide on how software build systems work and their evolution. Bazel is the best build system by Google offering 0.5 second incremental build times using functional programming concepts.",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 147,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 5,
-    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -1113,65 +817,6 @@
     "likesMobile": 3,
     "dislikesMobile": 1002,
     "likesDesktop": 7,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://neal.fun/deep-sea",
-    "name": "The Deep Sea",
-    "description": "Interactive dive into ocean depths with fascinating facts",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 73,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 2,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://martinfowler.com/articles/deepseek-papers.html",
-    "name": "The DeepSeek Series: A Technical Overview",
-    "description": "This article provides an overview of the DeepSeek papers, highlighting three main arcs in this research: a focus on improving cost and memory efficiency, the use of HPC Co-Design to train large models on limited hardware, and the development of emergent reasoning from large-scale reinforcement learning.",
-    "tags": [
-      "user-submitted"
-    ],
-    "views": 32,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 1,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
-    "name": "The Longest Blockchain",
-    "description": "Interesting perspective on blockchain strength",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 68,
-    "likesMobile": 2,
-    "dislikesMobile": 1000,
-    "likesDesktop": 3,
-    "dislikesDesktop": 0,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://pudding.cool/",
-    "name": "The Pudding",
-    "description": "Visual essays that explain ideas with data and visuals",
-    "tags": [
-      "curated",
-      "sample"
-    ],
-    "views": 142,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 3,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1248,17 +893,330 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://xkcd.com/",
-    "name": "xkcd",
-    "description": "A webcomic of romance, sarcasm, math, and language",
+    "url": "https://www.aljazeera.com/",
+    "name": "Al Jazeera",
+    "description": "International news and current affairs network",
     "tags": [
       "curated",
       "sample"
     ],
-    "views": 63,
-    "likesMobile": 12,
-    "dislikesMobile": 7000,
+    "views": 151,
+    "likesMobile": 8,
+    "dislikesMobile": 0,
+    "likesDesktop": 4,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.aljazeera.com/#flips-6386599316112",
+    "name": "Aljazeera flips",
+    "description": "Short clips from Aljazeera.",
+    "tags": [
+      "aljazeera",
+      "flips",
+      "learning"
+    ],
+    "views": 47,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.aljazeera.com/#flips-6386609485112",
+    "name": "Aljazeera flips",
+    "description": "Short clips from Aljazeera.",
+    "tags": [
+      "aljazeera",
+      "flips",
+      "learning"
+    ],
+    "views": 44,
+    "likesMobile": 1,
+    "dislikesMobile": 1,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.boredbutton.com/",
+    "name": "Bored Button",
+    "description": "Collection of random fun links and games",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 50,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.byd.com/",
+    "name": "BYD",
+    "description": "Electric car company.",
+    "tags": [
+      "car",
+      "electric",
+      "company"
+    ],
+    "views": 74,
+    "likesMobile": 5,
+    "dislikesMobile": 0,
+    "likesDesktop": 2,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.connectedpapers.com/",
+    "name": "Connected Papers",
+    "description": "Visual tool to explore academic research connections",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 80,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 10,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.deepseek.com/en",
+    "name": "DeepSeek",
+    "description": "AI research and development company",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 75,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 1,
+    "dislikesDesktop": 1,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.example.com/",
+    "name": "Examples link",
+    "description": "Example link",
+    "tags": [
+      "beautiful",
+      "gorgeous"
+    ],
+    "views": 25,
+    "likesMobile": 0,
+    "dislikesMobile": 2000,
+    "likesDesktop": 6,
+    "dislikesDesktop": 1004,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/",
+    "name": "GeeksforGeeks",
+    "description": "Computer Science learning platform.",
+    "tags": [
+      "user-submitted"
+    ],
+    "views": 65,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.kaggle.com/",
+    "name": "Kaggle",
+    "description": "Participate in AI competitions.",
+    "tags": [
+      "ai",
+      "participate",
+      "compete",
+      "learning"
+    ],
+    "views": 14,
+    "likesMobile": 0,
+    "dislikesMobile": 2002,
+    "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.mediatek.com/",
+    "name": "MediaTek",
+    "description": "Silicon chips company.",
+    "tags": [
+      "silicon",
+      "chips",
+      "company"
+    ],
+    "views": 67,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 4,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.newslaundry.com/2025/11/10/how-hate-drove-a-muslim-flower-seller-to-death-in-a-maharashtra-village",
+    "name": "How hate drove a Muslim flower-seller to death in a Maharashtra village",
+    "description": "Intolerance news.",
+    "tags": [
+      "learning",
+      "news"
+    ],
+    "views": 27,
+    "likesMobile": 3,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.nissan-global.com/EN/",
+    "name": "Nissan",
+    "description": "Car company",
+    "tags": [
+      "car",
+      "company"
+    ],
+    "views": 74,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 1,
+    "dislikesDesktop": 1,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.oneplus.com/",
+    "name": "OnePlus",
+    "description": "Phone company",
+    "tags": [
+      "phone",
+      "phonecompany",
+      "mobilephonecompany",
+      "poetic"
+    ],
+    "views": 60,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.oppo.com/",
+    "name": "Oppo",
+    "description": "Mobile phone company.",
+    "tags": [
+      "mobile",
+      "mobile phone",
+      "company",
+      "mobilephonecompany",
+      "poetic"
+    ],
+    "views": 61,
+    "likesMobile": 0,
+    "dislikesMobile": 2,
+    "likesDesktop": 2,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.overleaf.com/",
+    "name": "Overleaf",
+    "description": "Online LaTeX editor with real-time collaboration",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 49,
+    "likesMobile": 2,
+    "dislikesMobile": 1000,
+    "likesDesktop": 2,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
+    "name": "12 Rules for Life - Jordan Bernt Peterson",
+    "description": "The bridge between European ideas and Islam. Beyond Order: 12 More Rules for Life is also a required read after this book. Jordan Bernt Peterson almost reached Islam with pure logic which is remarkable. The difference can be seen in his Rule 8 of \"tell the truth, or atleast don't lie\" and the holy Quran's 'do not mix truth with falsehood, nor knowingly conceal the truth' - Surah Al-Baqarah (2:42). The Quran is much more strict and rewarding.",
+    "tags": [
+      "book",
+      "learning",
+      "12rulesforlife"
+    ],
+    "views": 60,
+    "likesMobile": 2,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.producthunt.com/",
+    "name": "Product Hunt",
+    "description": "Platform for sharing and discovering new products",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 186,
+    "likesMobile": 31,
+    "dislikesMobile": 3,
+    "likesDesktop": 16,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.rekhta.org/tags/famous-shayari/couplets",
+    "name": "Rekhta famous shayaris",
+    "description": "Ponder and it might help clear blockers in the mind.",
+    "tags": [
+      "shayaris",
+      "cool",
+      "poetic",
+      "beautiful"
+    ],
+    "views": 86,
+    "likesMobile": 1,
+    "dislikesMobile": 0,
     "likesDesktop": 3,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.teamblind.com/",
+    "name": "Blind",
+    "description": "Social media.",
+    "tags": [
+      "social",
+      "media"
+    ],
+    "views": 72,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.teamblind.com/?sort=id",
+    "name": "Blind recent sort",
+    "description": "Social media.",
+    "tags": [
+      "social",
+      "media"
+    ],
+    "views": 78,
+    "likesMobile": 3,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1277,25 +1235,6 @@
     "reviewStatus": 1
   },
   {
-    "url": "https://m.youtube.com/feed/subscriptions",
-    "name": "YouTube",
-    "description": "The subscriptions feed does not have implicit personalized recommendations.",
-    "tags": [
-      "video",
-      "social",
-      "good",
-      "dynamic",
-      "regular",
-      "repeat"
-    ],
-    "views": 77,
-    "likesMobile": 2,
-    "dislikesMobile": 0,
-    "likesDesktop": 4,
-    "dislikesDesktop": 1,
-    "reviewStatus": 1
-  },
-  {
     "url": "https://www.youtube.com/shorts/",
     "name": "YouTube shorts",
     "description": "Short form YouTube videos in TikTok style.",
@@ -1308,6 +1247,50 @@
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
-    "reviewStatus": 0
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=8of5w7RgcTc",
+    "name": "Pal Pal",
+    "description": "Contemplative popular music in Urdu.",
+    "tags": [
+      "urdu",
+      "music"
+    ],
+    "views": 55,
+    "likesMobile": 1,
+    "dislikesMobile": 2,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=jxLsiOflofk",
+    "name": "Muslim Prayer - How to perform 2 Raka'at (2 Units) of prayer",
+    "description": "Muslim Prayer - How to perform 2 Raka'at (2 Units) of prayer to help in praying Jumma farz namaz.",
+    "tags": [
+      "user-submitted"
+    ],
+    "views": 76,
+    "likesMobile": 7,
+    "dislikesMobile": 0,
+    "likesDesktop": 2,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://xkcd.com/",
+    "name": "xkcd",
+    "description": "A webcomic of romance, sarcasm, math, and language",
+    "tags": [
+      "curated",
+      "sample"
+    ],
+    "views": 63,
+    "likesMobile": 12,
+    "dislikesMobile": 7000,
+    "likesDesktop": 3,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
   }
 ]
