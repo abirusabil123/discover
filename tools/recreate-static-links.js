@@ -241,6 +241,7 @@ function main() {
 
     console.log(`📦 Found ${LINKS_TO_KEEP.length} links in static-links.js`);
     const approvedLinks = LINKS_TO_KEEP.filter(site => site.reviewStatus === 1);
+    approvedLinks.sort((a, b) => (a.url || '').localeCompare(b.url || ''));
     console.log(`📦 Found ${approvedLinks.length} approved links in static-links.js`);
 
     generateInitSQL(approvedLinks);

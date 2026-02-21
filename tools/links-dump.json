@@ -97,7 +97,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 11,
+    "views": 12,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 7,
@@ -142,7 +142,7 @@
       "curated",
       "sample"
     ],
-    "views": 147,
+    "views": 148,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -174,7 +174,7 @@
       "curated",
       "sample"
     ],
-    "views": 71,
+    "views": 72,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 2,
@@ -205,7 +205,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 3,
+    "views": 4,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 0,
@@ -257,6 +257,22 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://easywaytoquran.com/4-qul-in-islam-2/",
+    "name": "4 Quls in Quran",
+    "description": "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
+    "tags": [
+      "quran",
+      "islam",
+      "learning"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://github.com/alex/what-happens-when",
     "name": "In depth flow of computers",
     "description": "An attempt to answer the age old interview question - What happens when you type google.com into your browser and press enter? This page explains how the computer systems work together.",
@@ -278,10 +294,10 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 13,
+    "views": 14,
     "likesMobile": 0,
     "dislikesMobile": 1000,
-    "likesDesktop": 2,
+    "likesDesktop": 3,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -393,14 +409,14 @@
   {
     "url": "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
     "name": "Interview Ready",
-    "description": "Best backend engineering course.",
+    "description": "Artificial Intelligence (AI) engineering course.",
     "tags": [
       "learning",
       "code",
-      "backend",
+      "ai",
       "course"
     ],
-    "views": 28,
+    "views": 29,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 5,
@@ -558,7 +574,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 65,
+    "views": 67,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -885,7 +901,7 @@
       "curated",
       "sample"
     ],
-    "views": 53,
+    "views": 54,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -1213,7 +1229,7 @@
       "social",
       "media"
     ],
-    "views": 78,
+    "views": 79,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 0,
