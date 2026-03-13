@@ -3,7 +3,9 @@ A modern web application that helps you discover amazing links.
 Features include random link loading, app usage tracking, likes/dislikes functionality, and the ability to add new links.  
 We host the backend locally using reproducible containers. We also have a frontend only fallback to maintain availability.
 
-<img src="image.png" alt="drawing" width="200rem"/>
+<img src="image1.png" alt="drawing" width="200rem"/>
+<img src="image2.png" alt="drawing" width="200rem"/>
+<img src="image3.png" alt="drawing" width="200rem"/>
 
 ## Avoid Implicit Personalized Recommendation Algorithms
 
