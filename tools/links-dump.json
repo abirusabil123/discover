@@ -503,7 +503,7 @@
   {
     "url": "https://loops.video/",
     "name": "Alternative tiktok",
-    "description": "Short videos. Loops.video is the flagship instance of Loops â€” an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
+    "description": "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
     "tags": [
       "videos",
       "socialmedia"
@@ -574,6 +574,21 @@
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://mastodon.social/explore",
+    "name": "Mastodon",
+    "description": "Decentralized social media",
+    "tags": [
+      "twitteralternative",
+      "socialmedia"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1352,20 +1367,6 @@
     "dislikesMobile": 9000,
     "likesDesktop": 3,
     "dislikesDesktop": 1,
-    "reviewStatus": 1
-  },
-  {
-    "url": "https://https//loops.video/v/d-yMIAIWj9",
-    "name": "Come On Go to alternatif Tiktok",
-    "description": "Alternatif tiktok fediverse open source",
-    "tags": [
-      "tiktok"
-    ],
-    "views": 0,
-    "likesMobile": 0,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
     "reviewStatus": 1
   }
 ]

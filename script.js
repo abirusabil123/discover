@@ -625,7 +625,7 @@ async function submitLink(event) {
 
         if (response.ok) {
             // Success
-            showSuccessMessage('Link submitted for spam review successfully! The link will be live globally after review approval 🎉');
+            showSuccessMessage('Link submitted for spam review successfully! The link will be live globally after review and approval 🎉');
             hideAddLinkForm();
 
             // Reset tags

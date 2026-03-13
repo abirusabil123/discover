@@ -445,7 +445,7 @@ VALUES (
     (
         'Alternative tiktok',
         'https://loops.video/',
-        'Short videos. Loops.video is the flagship instance of Loops — an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.',
+        'Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.',
         JSON_ARRAY('videos', 'socialmedia'),
         0,
         0,
@@ -499,6 +499,18 @@ VALUES (
         2,
         1000,
         1,
+        0,
+        1
+    ),
+    (
+        'Mastodon',
+        'https://mastodon.social/explore',
+        'Decentralized social media',
+        JSON_ARRAY('twitteralternative', 'socialmedia'),
+        0,
+        0,
+        0,
+        0,
         0,
         1
     ),
@@ -1112,18 +1124,6 @@ VALUES (
         9000,
         3,
         1,
-        1
-    ),
-    (
-        'Come On Go to alternatif Tiktok',
-        'https//loops.video/v/d-yMIAIWj9',
-        'Alternatif tiktok fediverse open source',
-        JSON_ARRAY('tiktok'),
-        0,
-        0,
-        0,
-        0,
-        0,
         1
     ) ON DUPLICATE KEY
 UPDATE url = url;

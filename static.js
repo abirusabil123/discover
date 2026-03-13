@@ -446,7 +446,7 @@ const STATIC = {
         {
             "name": "Alternative tiktok",
             "url": "https://loops.video/",
-            "description": "Short videos. Loops.video is the flagship instance of Loops — an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
+            "description": "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
             "tags": [
                 "videos",
                 "socialmedia"
@@ -513,6 +513,20 @@ const STATIC = {
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Mastodon",
+            "url": "https://mastodon.social/explore",
+            "description": "Decentralized social media",
+            "tags": [
+                "twitteralternative",
+                "socialmedia"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -1197,19 +1211,6 @@ const STATIC = {
             "dislikesMobile": 9000,
             "likesDesktop": 3,
             "dislikesDesktop": 1
-        },
-        {
-            "name": "Come On Go to alternatif Tiktok",
-            "url": "https//loops.video/v/d-yMIAIWj9",
-            "description": "Alternatif tiktok fediverse open source",
-            "tags": [
-                "tiktok"
-            ],
-            "views": 0,
-            "likesMobile": 0,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
         }
     ]
 };

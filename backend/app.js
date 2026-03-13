@@ -540,7 +540,7 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
     await connection.end();
 
     res.json({
-      message: 'Link submitted for spam review successfully! The link will be live globally after review approval 🎉',
+      message: 'Link submitted for spam review successfully! The link will be live globally after review and approval 🎉',
       name,
       url,
       description,

@@ -321,7 +321,7 @@ class DiscoverViewModel(
             val message = when (result) {
                 is AddLinkResult.Success -> {
                     hideAddLinkDialog() // Hide dialog on success
-                    "Link submitted for spam review successfully! The link will be live globally after review approval 🎉"
+                    "Link submitted for spam review successfully! The link will be live globally after review and approval 🎉"
                 }
 
                 is AddLinkResult.Duplicate -> "This link already exists."

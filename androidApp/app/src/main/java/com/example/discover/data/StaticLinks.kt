@@ -98,7 +98,7 @@ object StaticLinks {
         Link(
             name = "Alternative tiktok",
             url = "https://loops.video/",
-            description = "Short videos. Loops.video is the flagship instance of Loops — an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
+            description = "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
             tags = listOf("videos", "socialmedia"),
             views = 0,
             likesMobile = 0,
@@ -120,6 +120,16 @@ object StaticLinks {
             url = "https://maktoobmedia.com/india/muslim-woman-dies-after-mob-violence-led-by-village-heads-son-in-bihars-madhubani/",
             description = "Hate crime",
             tags = listOf("news"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Mastodon",
+            url = "https://mastodon.social/explore",
+            description = "Decentralized social media",
+            tags = listOf("twitteralternative", "socialmedia"),
             views = 0,
             likesMobile = 0,
             dislikesMobile = 0
@@ -402,16 +412,6 @@ object StaticLinks {
             tags = listOf("user-submitted"),
             views = 94,
             likesMobile = 7,
-            dislikesMobile = 0
-        ),
-
-        Link(
-            name = "Come On Go to alternatif Tiktok",
-            url = "https//loops.video/v/d-yMIAIWj9",
-            description = "Alternatif tiktok fediverse open source",
-            tags = listOf("tiktok"),
-            views = 0,
-            likesMobile = 0,
             dislikesMobile = 0
         )
     )
