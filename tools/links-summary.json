@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-03-13T14:03:06.403Z",
+    "generatedAt": "2026-03-13T23:31:09.319Z",
     "apiUrl": "https://backend.discoverall.space",
-    "totalLinks": 88
+    "totalLinks": 90
   },
   "analysis": {
-    "total": 88,
+    "total": 90,
     "filteredMobile": 49,
     "filteredDesktop": 5,
     "blockedMobileUrls": [
@@ -68,7 +68,7 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 31,
+      "0%": 33,
       "1-25%": 5,
       "26-50%": 1,
       "51-75%": 1,
@@ -76,7 +76,7 @@
       "80-100%": 50
     },
     "byVoteCount": {
-      "0 votes": 8,
+      "0 votes": 10,
       "1-3 votes": 19,
       "4-10 votes": 9,
       "11-50 votes": 2,
@@ -107,7 +107,7 @@
       },
       {
         "country": "IN",
-        "count": 513
+        "count": 522
       },
       {
         "country": "NL",
@@ -137,7 +137,7 @@
     "byMonth": [
       {
         "month": "202603",
-        "count": 53
+        "count": 62
       },
       {
         "month": "202602",
@@ -151,11 +151,11 @@
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 308
+        "count": 313
       },
       {
         "platform": "mobile",
-        "count": 169
+        "count": 173
       },
       {
         "platform": "unknown",
@@ -173,7 +173,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 491
+        "count": 500
       },
       {
         "product": "test",
@@ -187,7 +187,7 @@
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 192
+        "count": 196
       },
       {
         "origin": "http://localhost:44631",
@@ -199,7 +199,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 177
+        "count": 182
       },
       {
         "origin": "null",
@@ -217,7 +217,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 491
+        "count": 500
       },
       {
         "path": "/index.html",
@@ -250,8 +250,8 @@
     ]
   },
   "errors": {
-    "count": 45,
-    "unresolved": 8,
+    "count": 46,
+    "unresolved": 9,
     "allUnresolvedErrors": [
       {
         "id": 38,
@@ -330,6 +330,16 @@
         "level": "error",
         "message": "This link already exists in the database. Please try a different URL.",
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 46,
+        "timestamp": "2026-03-13T18:31:16.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "This link already exists in the database. Please try a different URL.",
+        "user_agent": "Mozilla/5.0 (Android 16; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0",
         "resolved": 0,
         "resolved_at": null
       }
