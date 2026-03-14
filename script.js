@@ -54,11 +54,11 @@ function initializeApp() {
     loadLinksFromAPI();
 }
 
-async function loadLinksFromAPI(tagsAllowlist = [], tagsBlocklist = []) {
+async function loadLinksFromAPI(tagsAllowlist = [], tagsBlocklist = [], urlsAllowlist = [], urlsBlocklist = []) {
     try {
         isLoading = true;
 
-        const query = `&tagsAllowlist=${encodeURIComponent(tagsAllowlist.join(','))}&tagsBlocklist=${encodeURIComponent(tagsBlocklist.join(','))}`;
+        const query = `&tagsAllowlist=${encodeURIComponent(tagsAllowlist.join(','))}&tagsBlocklist=${encodeURIComponent(tagsBlocklist.join(','))}&urlsAllowlist=${encodeURIComponent(urlsAllowlist.join(' '))}&urlsBlocklist=${encodeURIComponent(urlsBlocklist.join(' '))}`;
         const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop${query}`);
 
         if (!response.ok) {
@@ -741,26 +741,37 @@ document.getElementById('settings-toggle').addEventListener('click', () => {
     }
 });
 
-async function applyTagFilter() {
-    const tagInputAllowlist = document.getElementById('filter-tags-allowlist');
-    const tagInputBlocklist = document.getElementById('filter-tags-blocklist');
+async function applyTagsUrlsFilter() {
+    const tagsInputAllowlist = document.getElementById('filter-tags-allowlist');
+    const tagsInputBlocklist = document.getElementById('filter-tags-blocklist');
+    const urlsInputAllowlist = document.getElementById('filter-urls-allowlist');
+    const urlsInputBlocklist = document.getElementById('filter-urls-blocklist');
     const successBox = document.getElementById('filter-success');
 
-    const tagsAllowlist = tagInputAllowlist.value
+    const tagsAllowlist = tagsInputAllowlist.value
         .split(',')
         .map(t => t.trim())
         .filter(t => t.length > 0);
-    const tagsBlocklist = tagInputBlocklist.value
+    const tagsBlocklist = tagsInputBlocklist.value
         .split(',')
         .map(t => t.trim())
         .filter(t => t.length > 0);
 
-    console.log('Applying tag filter:', tagsAllowlist, tagsBlocklist);
+    const urlsAllowlist = urlsInputAllowlist.value
+        .split(' ')
+        .map(t => t.trim())
+        .filter(t => t.length > 0);
+    const urlsBlocklist = urlsInputBlocklist.value
+        .split(' ')
+        .map(t => t.trim())
+        .filter(t => t.length > 0);
+
+    console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
 
     // ✅ Wait for API and get link count
-    const linkCount = await loadLinksFromAPI(tagsAllowlist, tagsBlocklist);
+    const linkCount = await loadLinksFromAPI(tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist);
 
-    if (tagsAllowlist.length > 0 || tagsBlocklist.length > 0) {
+    if (tagsAllowlist.length > 0 || tagsBlocklist.length > 0 || urlsAllowlist.length > 0 || urlsBlocklist.length > 0) {
         successBox.textContent = `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`;
     } else {
         successBox.textContent = `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;

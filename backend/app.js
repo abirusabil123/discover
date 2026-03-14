@@ -290,7 +290,7 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 
 // Get all links
 app.get('/getLinks', async (req, res, next) => {
-  const { platform, reviewStatusEnable, tagsAllowlist, tagsBlocklist } = req.query;
+  const { platform, reviewStatusEnable, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
   const country = req.headers['cf-ipcountry'] || req.headers['x-country'] || 'Unknown';
   const userAgent = req.headers['user-agent'] || 'Unknown';
   const origin = req.headers.origin || 'direct';
@@ -307,14 +307,20 @@ app.get('/getLinks', async (req, res, next) => {
   }
 
   try {
-
     const tagsAllowlistArray = (tagsAllowlist || "")
       .split(",")
       .map(t => t.trim())
       .filter(Boolean);
-
     const tagsBlocklistArray = (tagsBlocklist || "")
       .split(",")
+      .map(t => t.trim())
+      .filter(Boolean);
+    const urlsAllowlistArray = (urlsAllowlist || "")
+      .split(" ")
+      .map(t => t.trim())
+      .filter(Boolean);
+    const urlsBlocklistArray = (urlsBlocklist || "")
+      .split(" ")
       .map(t => t.trim())
       .filter(Boolean);
 
@@ -335,11 +341,24 @@ app.get('/getLinks', async (req, res, next) => {
     });
 
     let filtered = parsed.filter(w => {
-      const hasAllow = tagsAllowlistArray.length === 0 || w.tags.some(t => tagsAllowlistArray.includes(t));
-      const hasBlock = tagsBlocklistArray.length > 0 && w.tags.some(t => tagsBlocklistArray.includes(t));
-
-      if (!hasAllow) return false;
-      if (hasBlock) return false;
+      if (tagsAllowlistArray.length > 0) {
+        const hasAllowedTag = w.tags.some(t => tagsAllowlistArray.includes(t));
+        if (!hasAllowedTag) return false;
+      }
+      if (tagsBlocklistArray.length > 0) {
+        const hasBlockedTag = w.tags.some(t => tagsBlocklistArray.includes(t));
+        if (hasBlockedTag) return false;
+      }
+      if (urlsBlocklistArray.length > 0) {
+        if (urlsBlocklistArray.includes(w.url)) {
+          return false;
+        }
+      }
+      if (urlsAllowlistArray.length > 0) {
+        if (!urlsAllowlistArray.includes(w.url)) {
+          return false;
+        }
+      }
 
       if (reviewStatusEnable != "1" && w.reviewStatus === 0) return false;
 

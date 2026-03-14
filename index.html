@@ -31,30 +31,32 @@
                     <br>
                     <span>Allowlist: <input type="text" id="filter-tags-allowlist"
                             placeholder="e.g. ai, tools, productivity"
-                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyTagFilter(); }">
+                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyTagsUrlsFilter(); }">
                     </span>
                     <span>Blocklist: <input type="text" id="filter-tags-blocklist"
                             placeholder="e.g. ai, tools, productivity"
-                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyTagFilter(); }">
+                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyTagsUrlsFilter(); }">
                     </span>
                     <br>
-                    <button id="apply-tag-filter-btn" class="btn" onclick="applyTagFilter()">Apply Tags Filter</button>
+                    <button id="apply-tag-filter-btn" class="btn" onclick="applyTagsUrlsFilter()">Apply Tags
+                        Filter</button>
                 </div>
 
                 <div class="filter-column">
-                    <label for="filter-tags" style="display: block; text-align: center;">TODO: Filter by URLs<br>(space
+                    <label for="filter-tags" style="display: block; text-align: center;">Filter by URLs<br>(space
                         separated):</label>
                     <br>
                     <span>Allowlist: <input type="text" id="filter-urls-allowlist"
                             placeholder="e.g. www.google.com www.example.com"
-                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyUrlFilter(); }">
+                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyTagsUrlsFilter(); }">
                     </span>
                     <span>Blocklist: <input type="text" id="filter-urls-blocklist"
                             placeholder="e.g. www.google.com www.example.com"
-                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyUrlFilter(); }">
+                            onkeydown="if (event.key === 'Enter') { event.preventDefault(); applyTagsUrlsFilter(); }">
                     </span>
                     <br>
-                    <button id="apply-url-filter-btn" class="btn" onclick="applyUrlFilter()">Apply URL Filter</button>
+                    <button id="apply-url-filter-btn" class="btn" onclick="applyTagsUrlsFilter()">Apply URL
+                        Filter</button>
                 </div>
             </div>
         </div>
