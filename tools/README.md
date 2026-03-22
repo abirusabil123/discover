@@ -20,7 +20,7 @@ to
 ## Mark errors as resolved
 Run the following curl command.
 ```
-curl -X PUT http://localhost:3000/errors/<error id>/resolve
+curl -X PUT http://localhost:8090/errors/<error id>/resolve
 ```
 
 ## Update static links

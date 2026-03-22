@@ -1,7 +1,7 @@
 # 🌏 Local Backend Setup
 A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically creating the database and inserting sample data on first run.
 
-Publicly exposed at https://backend.discoverall.space via Cloudflare Tunnel to forward requests to the local Node.js app on port 3000.
+Publicly exposed at https://backend.discoverall.space to forward requests to the local Node.js app on port 8090.
 
 ## ⚙️ Prerequisites
 - Docker
@@ -42,13 +42,15 @@ mysql> SELECT * FROM visitors WHERE country NOT IN ('IN') ORDER BY timestamp DES
 # View logs
 docker compose logs app
 docker compose logs db
-docker compose logs cloudflared
 
 # Stop containers
 docker compose down
 
 # Delete all SQL data
 docker volume rm $(basename $(pwd))_mysql_data
+
+# Build changes to app
+docker compose build app
 
 # Rebuild after code changes
 docker compose up -d --build

@@ -6,10 +6,10 @@ const mysql = require('mysql2/promise');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 const path = require('path');
 
-// Configure Express to trust proxies (important for Docker + Cloudflare)
+// Configure Express to trust proxies
 app.set('trust proxy', 1);
 
 // IP based rate limiting
@@ -612,6 +612,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal Server Error' });
 });
 
-app.listen(3000, '0.0.0.0', () => {
-  console.log('Server running on port 3000');
+app.listen(process.env.PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${process.env.PORT}`);
 });
