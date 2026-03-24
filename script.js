@@ -17,7 +17,7 @@ const FOCUS_DELAY = 100;
 const RESET_DELAY = 2000;
 const RESET_DELAY_LONG = 10000;
 
-const API_BASE_URL = 'https://backend.discoverall.space';
+const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
 const API_TIMEOUT = 3000;
 const ENABLE_FALLBACK = true;
 const ENABLE_VIEW_TRACKING = true;

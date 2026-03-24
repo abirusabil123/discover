@@ -4,8 +4,8 @@
 services:
   app:
     build: ./
-    ports:
-      - "8090:8090"
+    # ports:
+    #   - "8090:8090"  # HTTP endpoint
     environment:
       - DB_HOST=db
       - DB_USER=root
@@ -32,9 +32,21 @@ services:
       interval: 5s
       retries: 10
     networks:
-      - backend-network  # Add this
+      - backend-network
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - /home/zeitgeist/.acme.sh/backenddiscover.duckdns.org_ecc:/etc/nginx/ssl:ro
+    networks:
+      - backend-network
+    depends_on:
+      - app
+    restart: unless-stopped
 networks:
-  backend-network:  # Add this section
+  backend-network:
     driver: bridge
 volumes:
   mysql_data:

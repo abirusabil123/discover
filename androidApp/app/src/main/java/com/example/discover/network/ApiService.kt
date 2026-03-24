@@ -44,7 +44,7 @@ class ApiService {
     }
 
     private val gson = Gson()
-    private val baseUrl = "https://backend.discoverall.space"
+    private val baseUrl = "https://backenddiscover.duckdns.org:8443"
     private val jsonMediaType = "application/json; charset=utf-8".toMediaType() // Specify charset
 
     suspend fun getLinks(): List<Link> = withContext(Dispatchers.IO) {

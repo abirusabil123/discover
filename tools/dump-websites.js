@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const API_BASE_URL = 'https://backend.discoverall.space';
+const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
 const OUTPUT_FILE = path.join(__dirname, 'links-dump.json');
 
 async function fetchLinks() {

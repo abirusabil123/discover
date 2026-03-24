@@ -1,7 +1,7 @@
 # 🌏 Local Backend Setup
 A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically creating the database and inserting sample data on first run.
 
-Publicly exposed at https://backend.discoverall.space to forward requests to the local Node.js app on port 8090.
+Publicly exposed at https://backenddiscover.duckdns.org:8443 to forward requests to the local Node.js app on port 8090.
 
 ## ⚙️ Prerequisites
 - Docker
@@ -17,8 +17,8 @@ docker compose up -d --build
 
 ### 2. Verify it's working
 ```bash
-curl http://backend.discoverall.space/getLinksDesktop
-curl http://backend.discoverall.space/health
+curl http://https://backenddiscover.duckdns.org:8443/getLinksDesktop
+curl http://https://backenddiscover.duckdns.org:8443/health
 ```
 
 ### 3. Reinitialize the links database
