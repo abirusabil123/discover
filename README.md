@@ -1,4 +1,4 @@
-# 🌏 Discover - Open source no implicit personalized recommendation algorithm social media
+# 🌏 Discover - Open source no personalized recommendation algorithm social media
 A modern web application that helps you discover amazing links.  
 Features include random link loading, app usage tracking, likes/dislikes functionality, and the ability to add new links.  
 We host the backend locally using reproducible containers. We also have a frontend only fallback to maintain availability.
@@ -14,7 +14,7 @@ A social media with no personalized recommendation algorithms. So no more echo c
 There are two ways to end personalized recommendation algorithms:
 
 1. Block user data. No user data means no user personalization.
-2. No recommendation algorithm. User data is not used for implicit (without user choice like in subscriptions) personalization.
+2. No recommendation algorithm. User data is not used for personalization.
 
 Any of the two is sufficient. My discover link does both.
 
