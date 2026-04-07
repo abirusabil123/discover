@@ -59,7 +59,7 @@ async function loadLinksFromAPI(tagsAllowlist = [], tagsBlocklist = [], urlsAllo
         isLoading = true;
 
         const query = `&tagsAllowlist=${encodeURIComponent(tagsAllowlist.join(','))}&tagsBlocklist=${encodeURIComponent(tagsBlocklist.join(','))}&urlsAllowlist=${encodeURIComponent(urlsAllowlist.join(' '))}&urlsBlocklist=${encodeURIComponent(urlsBlocklist.join(' '))}`;
-        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop${query}`);
+        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop${query}`, { signal: AbortSignal.timeout(API_TIMEOUT) });
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
