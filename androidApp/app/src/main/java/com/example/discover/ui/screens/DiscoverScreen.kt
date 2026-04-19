@@ -89,33 +89,40 @@ fun DiscoverScreen(
     val webView = remember {
         WebView(context).apply {
             // Apply all settings here. They will persist for the lifetime of the WebView.
+
+            // Disable JavaScript interfaces that could be used for tracking
+            removeJavascriptInterface("accessibility")
+            removeJavascriptInterface("accessibilityTraversal")
+            // 🔒 Privacy: Block third-party cookies
+            android.webkit.CookieManager.getInstance().setAcceptThirdPartyCookies(this, false)
             settings.apply {
+                // Clear state
+                clearHistory()
+                clearFormData()
+                // 🔒 Clear any existing data on creation
+                android.webkit.CookieManager.getInstance().removeAllCookies(null)
+                android.webkit.WebStorage.getInstance().deleteAllData()
+                // Privacy settings
+                allowFileAccess = false
+                allowContentAccess = false
+                // Disable location
+                setGeolocationEnabled(false)
+                // Disable all storage and persistence
+                // We don't want to disable cache to make our app faster.
+//                cacheMode = WebSettings.LOAD_NO_CACHE
+
 //                setLayerType(View.LAYER_TYPE_SOFTWARE, null)
                 setBackgroundColor(Color.Transparent.toArgb())
                 visibility = View.GONE
                 javaScriptEnabled = true
                 loadWithOverviewMode = true
                 useWideViewPort = true
-                setSupportZoom(true)
                 builtInZoomControls = true
                 displayZoomControls = false
                 javaScriptCanOpenWindowsAutomatically = false
                 mediaPlaybackRequiresUserGesture = true
-
-                // Disable all storage and persistence
-                // We don't want to disable cache to make our app faster.
-//                cacheMode = WebSettings.LOAD_NO_CACHE
-
-                // Modern Android uses these settings
-                domStorageEnabled = true  // DOM storage (localStorage, sessionStorage) needed for some websites to load
-
-                // Privacy settings
-                allowFileAccess = false
-                allowContentAccess = false
-
-                // Disable location
-                setGeolocationEnabled(false)
-
+                domStorageEnabled =
+                    true  // DOM storage (localStorage, sessionStorage) needed for some websites to load
                 // Use a generic user agent to avoid fingerprinting
                 userAgentString =
                     "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.210 Mobile Safari/537.36"
@@ -199,9 +206,6 @@ fun DiscoverScreen(
                     null, initialHtml, "text/html", "UTF-8", null
                 )
             }
-            // Disable JavaScript interfaces that could be used for tracking
-            removeJavascriptInterface("accessibility")
-            removeJavascriptInterface("accessibilityTraversal")
         }
     }
 
