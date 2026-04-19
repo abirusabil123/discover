@@ -107,16 +107,11 @@ fun DiscoverScreen(
 //                cacheMode = WebSettings.LOAD_NO_CACHE
 
                 // Modern Android uses these settings
-                domStorageEnabled = false  // Disable DOM storage (localStorage, sessionStorage)
-                databaseEnabled = false     // Disable WebSQL
-                savePassword = false
-                saveFormData = false
+                domStorageEnabled = true  // DOM storage (localStorage, sessionStorage) needed for some websites to load
 
                 // Privacy settings
                 allowFileAccess = false
                 allowContentAccess = false
-                allowFileAccessFromFileURLs = false
-                allowUniversalAccessFromFileURLs = false
 
                 // Disable location
                 setGeolocationEnabled(false)
