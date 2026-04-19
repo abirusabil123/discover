@@ -1,20 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-04-19T07:50:13.872Z",
+    "generatedAt": "2026-04-19T08:22:56.343Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 92
+    "totalLinks": 93
   },
   "analysis": {
-    "total": 92,
-    "filteredMobile": 42,
+    "total": 93,
+    "filteredMobile": 52,
     "filteredDesktop": 6,
     "blockedMobileUrls": [
+      "http://radio.garden/",
       "https://10minutemail.com/",
       "https://abirusabil123.github.io/",
       "https://annas-archive.org/",
       "https://annas-archive.se/",
       "https://app.diagrams.net/",
       "https://archive.org/",
+      "https://asoftmurmur.com/",
       "https://canon.com/",
       "https://chat.deepseek.com/",
       "https://codenames.game/",
@@ -24,12 +26,14 @@
       "https://github.com/alex/what-happens-when",
       "https://github.com/pllk/cphb/",
       "https://godbolt.org/",
+      "https://hashnode.com/",
       "https://hashnode.com/recent",
       "https://huggingface.co/spaces/hesamation/primer-llm-embedding",
       "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
       "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
       "https://libgen.li/",
       "https://littlealchemy2.com/",
+      "https://loops.video/",
       "https://m.youtube.com/feed/subscriptions",
       "https://martinfowler.com/articles/deepseek-papers.html",
       "https://mojapp.in/",
@@ -39,17 +43,23 @@
       "https://reverser.dev/linux-kernel-explorer",
       "https://sci-hub.se/",
       "https://sci-net.xyz/",
+      "https://screamintothevoid.com/",
       "https://skribbl.io/",
       "https://sony.com/",
       "https://stellarium-web.org/",
       "https://tails.net/",
+      "https://theuselessweb.com/",
+      "https://thisissand.com/",
       "https://twitter.com/",
+      "https://window-swap.com/",
+      "https://www.boredbutton.com/",
       "https://www.connectedpapers.com/",
       "https://www.deepseek.com/en",
       "https://www.example.com/",
       "https://www.kaggle.com/",
       "https://www.overleaf.com/",
       "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
+      "https://www.youtube.com/",
       "https://xkcd.com/"
     ],
     "blockedDesktopUrls": [
@@ -62,19 +72,19 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 42,
+      "0%": 33,
       "1-25%": 5,
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 43
+      "80-100%": 53
     },
     "byVoteCount": {
-      "0 votes": 12,
-      "1-3 votes": 25,
+      "0 votes": 9,
+      "1-3 votes": 19,
       "4-10 votes": 10,
       "11-50 votes": 2,
-      "50+ votes": 43
+      "50+ votes": 53
     }
   },
   "visitors": {
@@ -129,7 +139,7 @@
       },
       {
         "country": "Unknown",
-        "count": 89
+        "count": 92
       },
       {
         "country": "US",
@@ -139,7 +149,7 @@
     "byMonth": [
       {
         "month": "202604",
-        "count": 35
+        "count": 38
       },
       {
         "month": "202603",
@@ -161,7 +171,7 @@
       },
       {
         "platform": "mobile",
-        "count": 223
+        "count": 226
       },
       {
         "platform": "unknown",
@@ -179,7 +189,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 641
+        "count": 644
       },
       {
         "product": "test",
@@ -193,7 +203,7 @@
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 245
+        "count": 248
       },
       {
         "origin": "http://discoverall.space",
@@ -227,7 +237,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 641
+        "count": 644
       },
       {
         "path": "/index.html",
