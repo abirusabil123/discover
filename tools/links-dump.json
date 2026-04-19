@@ -9,7 +9,7 @@
     ],
     "views": 56,
     "likesMobile": 2,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 4,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -129,7 +129,7 @@
     ],
     "views": 72,
     "likesMobile": 2,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -340,7 +340,7 @@
     ],
     "views": 3,
     "likesMobile": 0,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -354,7 +354,7 @@
     ],
     "views": 67,
     "likesMobile": 4,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -524,7 +524,7 @@
     ],
     "views": 4,
     "likesMobile": 0,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -861,7 +861,7 @@
     ],
     "views": 69,
     "likesMobile": 2,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 1,
     "dislikesDesktop": 1,
     "reviewStatus": 1
@@ -934,7 +934,7 @@
     ],
     "views": 102,
     "likesMobile": 3,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 3,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -949,7 +949,7 @@
     ],
     "views": 74,
     "likesMobile": 2,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 3,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -991,7 +991,7 @@
     ],
     "views": 56,
     "likesMobile": 2,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 4,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -1053,7 +1053,7 @@
     ],
     "views": 51,
     "likesMobile": 2,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -1323,20 +1323,6 @@
     "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
-  },
-  {
-    "url": "https://www.wsws.org/",
-    "name": "World Socialist Web Site",
-    "description": "News site.",
-    "tags": [
-      "news"
-    ],
-    "views": 0,
-    "likesMobile": 0,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 0
   },
   {
     "url": "https://www.youtube.com/",
