@@ -2,10 +2,10 @@
 
 package com.example.discover.viewmodel
 
-// import android.content.Context // No longer directly needed in constructor
-// import android.widget.Toast // Remove this, ViewModel won't show Toasts directly
 import android.app.Application
+import android.content.Context
 import android.util.Log
+import androidx.core.content.edit
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.discover.data.Link
@@ -28,11 +28,11 @@ enum class UserInteractionState {
 }
 
 class DiscoverViewModel(
-    application: Application // Change to Application
-) : AndroidViewModel(application) { // Extend AndroidViewModel
+    application: Application
+) : AndroidViewModel(application) {
     private val apiService = ApiService()
+    private val prefs = application.getSharedPreferences("settings_prefs", Context.MODE_PRIVATE)
 
-    // ... (all your existing StateFlows for UI data remain the same)
     private val _links = MutableStateFlow<List<Link>>(emptyList())
     val links: StateFlow<List<Link>> = _links.asStateFlow()
 
@@ -65,11 +65,11 @@ class DiscoverViewModel(
     private val _timeStats = MutableStateFlow(TimeStats(0, 0, 0, 0, 0, 0, 0))
     val timeStats: StateFlow<TimeStats> = _timeStats.asStateFlow()
 
-    // Settings Filter State
-    val tagsAllowlist = MutableStateFlow("")
-    val tagsBlocklist = MutableStateFlow("")
-    val urlsAllowlist = MutableStateFlow("")
-    val urlsBlocklist = MutableStateFlow("")
+    // Persistent Settings Filter State
+    val tagsAllowlist = MutableStateFlow(prefs.getString("tags_allow", "") ?: "")
+    val tagsBlocklist = MutableStateFlow(prefs.getString("tags_block", "") ?: "")
+    val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
+    val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
 
     init {
         loadTimeStats()
@@ -102,6 +102,12 @@ class DiscoverViewModel(
     }
 
     fun applyFilters() {
+        prefs.edit {
+            putString("tags_allow", tagsAllowlist.value)
+            putString("tags_block", tagsBlocklist.value)
+            putString("urls_allow", urlsAllowlist.value)
+            putString("urls_block", urlsBlocklist.value)
+        }
         updateLinksInBackground()
     }
 
