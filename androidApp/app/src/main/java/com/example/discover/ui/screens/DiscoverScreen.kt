@@ -364,7 +364,9 @@ fun DiscoverScreen(
                 // Settings Screen Overlay
                 if (showSettings) {
                     SettingsScreen(
-                        onBack = { showSettings = false }, statusBarPadding = statusBarPadding
+                        onBack = { showSettings = false },
+                        viewModel = viewModel,
+                        statusBarPadding = statusBarPadding
                     )
                 }
             }

@@ -12,6 +12,7 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.IOException
+import java.net.URLEncoder
 import java.util.concurrent.TimeUnit
 
 // Define possible outcomes for the addLink operation (keep your existing one)
@@ -26,6 +27,7 @@ sealed class AddLinkResult {
 
 private const val TAG = "ApiService"
 private const val RETRY_INITIAL_DELAY_MS = 1500L
+
 class ApiService {
     // Configure OkHttpClient with the RetryInterceptor and logging
     private val client: OkHttpClient by lazy {
@@ -44,8 +46,43 @@ class ApiService {
     private val baseUrl = "https://backenddiscover.duckdns.org:8443"
     private val jsonMediaType = "application/json; charset=utf-8".toMediaType() // Specify charset
 
-    suspend fun getLinks(): List<Link> = withContext(Dispatchers.IO) {
-        val endpointUrl = "$baseUrl/getLinks?platform=mobile"
+    suspend fun getLinks(
+        tagsAllowlist: List<String> = emptyList(),
+        tagsBlocklist: List<String> = emptyList(),
+        urlsAllowlist: List<String> = emptyList(),
+        urlsBlocklist: List<String> = emptyList()
+    ): List<Link> = withContext(Dispatchers.IO) {
+        val queryParams = StringBuilder("&platform=mobile")
+        if (tagsAllowlist.isNotEmpty()) queryParams.append(
+            "&tagsAllowlist=${
+                URLEncoder.encode(
+                    tagsAllowlist.joinToString(","), "UTF-8"
+                )
+            }"
+        )
+        if (tagsBlocklist.isNotEmpty()) queryParams.append(
+            "&tagsBlocklist=${
+                URLEncoder.encode(
+                    tagsBlocklist.joinToString(","), "UTF-8"
+                )
+            }"
+        )
+        if (urlsAllowlist.isNotEmpty()) queryParams.append(
+            "&urlsAllowlist=${
+                URLEncoder.encode(
+                    urlsAllowlist.joinToString(" "), "UTF-8"
+                )
+            }"
+        )
+        if (urlsBlocklist.isNotEmpty()) queryParams.append(
+            "&urlsBlocklist=${
+                URLEncoder.encode(
+                    urlsBlocklist.joinToString(" "), "UTF-8"
+                )
+            }"
+        )
+
+        val endpointUrl = "$baseUrl/getLinks?$queryParams"
         Log.d(TAG, "Attempting to fetch links from: $endpointUrl")
 
         val request = Request.Builder().url(endpointUrl).get().build()
@@ -89,8 +126,7 @@ class ApiService {
     suspend fun incrementView(linkUrl: String?, action: String): Boolean =
         withContext(Dispatchers.IO) {
             Log.d(
-                TAG,
-                "incrementView | Called with url: '$linkUrl', action: '$action'"
+                TAG, "incrementView | Called with url: '$linkUrl', action: '$action'"
             )
             if (linkUrl == null) {
                 Log.e(TAG, "incrementView | Failed: linkUrl is null")
@@ -100,7 +136,7 @@ class ApiService {
             }
 
             val encodedUrl = try {
-                java.net.URLEncoder.encode(linkUrl, "UTF-8")
+                URLEncoder.encode(linkUrl, "UTF-8")
             } catch (e: Exception) {
                 Log.e(TAG, "incrementView | Failed to URL encode: $linkUrl", e)
                 return@withContext false

@@ -65,6 +65,12 @@ class DiscoverViewModel(
     private val _timeStats = MutableStateFlow(TimeStats(0, 0, 0, 0, 0, 0, 0))
     val timeStats: StateFlow<TimeStats> = _timeStats.asStateFlow()
 
+    // Settings Filter State
+    val tagsAllowlist = MutableStateFlow("")
+    val tagsBlocklist = MutableStateFlow("")
+    val urlsAllowlist = MutableStateFlow("")
+    val urlsBlocklist = MutableStateFlow("")
+
     init {
         loadTimeStats()
     }
@@ -95,24 +101,36 @@ class DiscoverViewModel(
         Log.d(TAG, "End Start with fastest data")
     }
 
+    fun applyFilters() {
+        updateLinksInBackground()
+    }
+
     private fun updateLinksInBackground() {
         viewModelScope.launch {
             try {
-                val linksList = apiService.getLinks()
+                val tagsAllow =
+                    tagsAllowlist.value.split(",").map { it.trim() }.filter { it.isNotEmpty() }
+                val tagsBlock =
+                    tagsBlocklist.value.split(",").map { it.trim() }.filter { it.isNotEmpty() }
+                val urlsAllow =
+                    urlsAllowlist.value.split(" ").map { it.trim() }.filter { it.isNotEmpty() }
+                val urlsBlock =
+                    urlsBlocklist.value.split(" ").map { it.trim() }.filter { it.isNotEmpty() }
+
+                val linksList = apiService.getLinks(tagsAllow, tagsBlock, urlsAllow, urlsBlock)
                 if (linksList.isNotEmpty()) {
                     _isApiAvailable.value = 1
-                    Log.d(
-                        TAG,
-                        "API returned ${linksList.size} items. First item from API before assigning: URL=${linksList.firstOrNull()?.url}, Name=${linksList.firstOrNull()?.name}"
-                    )
-                    // Update the main list of links
                     _links.value = linksList
-                    Log.d(
-                        TAG,
-                        "_links.value updated. Size: ${_links.value.size}. First item URL: ${_links.value.firstOrNull()?.url}, Name: ${_links.value.firstOrNull()?.name}"
-                    )
+
+                    if (tagsAllow.isNotEmpty() || tagsBlock.isNotEmpty() || urlsAllow.isNotEmpty() || urlsBlock.isNotEmpty()) {
+                        _toastMessage.value = "✅ Filter applied: ${linksList.size} links found"
+                    }
                 } else {
                     _isApiAvailable.value = -1
+                    if (tagsAllow.isNotEmpty() || tagsBlock.isNotEmpty() || urlsAllow.isNotEmpty() || urlsBlock.isNotEmpty()) {
+                        _toastMessage.value = "No links found for the applied filters"
+                        _links.value = emptyList()
+                    }
                 }
             } catch (e: Exception) {
                 _isApiAvailable.value = -1

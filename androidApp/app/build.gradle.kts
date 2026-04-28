@@ -82,6 +82,7 @@ dependencies {
 
     // WebView support
     implementation(libs.androidx.webkit)
+    implementation(libs.androidx.compose.ui.text)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
