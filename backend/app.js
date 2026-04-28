@@ -55,15 +55,15 @@ const dbConfig = {
 app.use(express.json());
 app.use(apiLimiter);
 
-// // Cors
-// app.use(cors({
-//   origin: [
-//     'https://discoverall.space',
-//     // 'http://localhost:44631', // Local testing endpoint might not be required.
-//     'https://abirusabil123.github.io',
-//     'https://backenddiscover.duckdns.org:8443'
-//   ]
-// }));
+// Cors
+app.use(cors({
+  origin: [
+    'https://discoverall.space',
+    // 'http://localhost:44631', // Local testing endpoint might not be required.
+    'https://abirusabil123.github.io',
+    'https://backenddiscover.duckdns.org:8443'
+  ]
+}));
 
 async function logErrorToDB(errorData) {
   try {
