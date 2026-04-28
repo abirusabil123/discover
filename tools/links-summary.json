@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generatedAt": "2026-04-19T08:22:56.343Z",
+    "generatedAt": "2026-04-28T14:46:20.979Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 93
+    "totalLinks": 94
   },
   "analysis": {
-    "total": 93,
-    "filteredMobile": 52,
+    "total": 94,
+    "filteredMobile": 53,
     "filteredDesktop": 6,
     "blockedMobileUrls": [
       "http://radio.garden/",
@@ -27,6 +27,7 @@
       "https://github.com/pllk/cphb/",
       "https://godbolt.org/",
       "https://hashnode.com/",
+      "https://hashnode.com/featured",
       "https://hashnode.com/recent",
       "https://huggingface.co/spaces/hesamation/primer-llm-embedding",
       "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
@@ -77,14 +78,14 @@
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 53
+      "80-100%": 54
     },
     "byVoteCount": {
-      "0 votes": 9,
+      "0 votes": 10,
       "1-3 votes": 19,
-      "4-10 votes": 10,
+      "4-10 votes": 9,
       "11-50 votes": 2,
-      "50+ votes": 53
+      "50+ votes": 54
     }
   },
   "visitors": {
@@ -139,7 +140,7 @@
       },
       {
         "country": "Unknown",
-        "count": 92
+        "count": 143
       },
       {
         "country": "US",
@@ -149,7 +150,7 @@
     "byMonth": [
       {
         "month": "202604",
-        "count": 38
+        "count": 89
       },
       {
         "month": "202603",
@@ -167,11 +168,11 @@
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 404
+        "count": 419
       },
       {
         "platform": "mobile",
-        "count": 226
+        "count": 262
       },
       {
         "platform": "unknown",
@@ -189,7 +190,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 644
+        "count": 695
       },
       {
         "product": "test",
@@ -203,11 +204,11 @@
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 248
+        "count": 285
       },
       {
         "origin": "http://discoverall.space",
-        "count": 13
+        "count": 16
       },
       {
         "origin": "http://localhost:44631",
@@ -219,7 +220,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 233
+        "count": 244
       },
       {
         "origin": "null",
@@ -237,7 +238,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 644
+        "count": 695
       },
       {
         "path": "/index.html",
@@ -270,8 +271,8 @@
     ]
   },
   "errors": {
-    "count": 50,
-    "unresolved": 13,
+    "count": 51,
+    "unresolved": 14,
     "allUnresolvedErrors": [
       {
         "id": 38,
@@ -400,6 +401,16 @@
         "level": "error",
         "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
         "user_agent": "Mozilla/5.0 (Android 16; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 51,
+        "timestamp": "2026-04-20T04:09:27.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0",
         "resolved": 0,
         "resolved_at": null
       }

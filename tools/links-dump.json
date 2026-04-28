@@ -4,6 +4,7 @@
     "name": "Radio Garden",
     "description": "Listen to live radio stations across the globe",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
@@ -22,7 +23,7 @@
       "curated",
       "sample"
     ],
-    "views": 69,
+    "views": 70,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -36,7 +37,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 101,
+    "views": 106,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -112,7 +113,7 @@
       "curated",
       "sample"
     ],
-    "views": 67,
+    "views": 68,
     "likesMobile": 4,
     "dislikesMobile": 1000,
     "likesDesktop": 5,
@@ -124,10 +125,11 @@
     "name": "A Soft Murmur",
     "description": "Mix ambient sounds (rain, waves) for focus",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 73,
+    "views": 74,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 2,
@@ -142,11 +144,25 @@
       "curated",
       "sample"
     ],
-    "views": 173,
+    "views": 180,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 5,
     "dislikesDesktop": 2,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://bsky.app/",
+    "name": "Bluesky",
+    "description": "Social media",
+    "tags": [
+      "positive"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
@@ -186,12 +202,13 @@
     "name": "Codeforces",
     "description": "The top competitive programming platform.",
     "tags": [
+      "positive",
       "code",
       "learning",
       "fun",
       "poetic"
     ],
-    "views": 107,
+    "views": 114,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -234,7 +251,7 @@
       "curated",
       "sample"
     ],
-    "views": 70,
+    "views": 71,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -248,7 +265,7 @@
     "tags": [
       "book"
     ],
-    "views": 6,
+    "views": 12,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -275,11 +292,12 @@
     "name": "4 Quls in Quran",
     "description": "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
     "tags": [
+      "positive",
       "quran",
       "islam",
       "learning"
     ],
-    "views": 28,
+    "views": 36,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -334,15 +352,16 @@
     "name": "Hashnode",
     "description": "Developer blog platform.",
     "tags": [
+      "positive",
       "learning",
       "blog",
       "platform"
     ],
-    "views": 4,
+    "views": 5,
     "likesMobile": 0,
     "dislikesMobile": 2000,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
+    "likesDesktop": 1,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -350,11 +369,12 @@
     "name": "hashnode",
     "description": "Developer blog platform.",
     "tags": [
+      "positive",
       "user-submitted"
     ],
-    "views": 68,
+    "views": 69,
     "likesMobile": 4,
-    "dislikesMobile": 0,
+    "dislikesMobile": 1000,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -364,6 +384,7 @@
     "name": "Hashnode recent",
     "description": "Blogging platform.",
     "tags": [
+      "positive",
       "tech",
       "blog",
       "learning"
@@ -380,9 +401,10 @@
     "name": "High Scalability",
     "description": "System Design Blogs",
     "tags": [
+      "positive",
       "user-submitted"
     ],
-    "views": 95,
+    "views": 103,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -396,7 +418,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 109,
+    "views": 117,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -413,7 +435,7 @@
       "pretty",
       "poetic"
     ],
-    "views": 121,
+    "views": 129,
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -462,7 +484,7 @@
       "course",
       "learning"
     ],
-    "views": 11,
+    "views": 12,
     "likesMobile": 0,
     "dislikesMobile": 1001,
     "likesDesktop": 1,
@@ -477,7 +499,7 @@
       "wesome",
       "wesome,gorgeous"
     ],
-    "views": 108,
+    "views": 115,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -504,6 +526,7 @@
     "name": "Little Alchemy 2",
     "description": "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
@@ -519,6 +542,7 @@
     "name": "Alternative tiktok",
     "description": "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
     "tags": [
+      "positive",
       "videos",
       "socialmedia"
     ],
@@ -534,6 +558,7 @@
     "name": "YouTube",
     "description": "The subscriptions feed does not have implicit personalized recommendations.",
     "tags": [
+      "positive",
       "video",
       "social",
       "good",
@@ -541,7 +566,7 @@
       "regular",
       "repeat"
     ],
-    "views": 81,
+    "views": 82,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -553,9 +578,10 @@
     "name": "maktoobmedia",
     "description": "News website",
     "tags": [
+      "positive",
       "news"
     ],
-    "views": 8,
+    "views": 15,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -570,7 +596,7 @@
       "learning",
       "intolerance"
     ],
-    "views": 41,
+    "views": 49,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -584,7 +610,7 @@
     "tags": [
       "news"
     ],
-    "views": 12,
+    "views": 18,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -598,7 +624,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 34,
+    "views": 35,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -610,10 +636,11 @@
     "name": "Mastodon",
     "description": "Decentralized social media",
     "tags": [
+      "positive",
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 14,
+    "views": 22,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -625,6 +652,7 @@
     "name": "Moj",
     "description": "TikTok alternative.",
     "tags": [
+      "positive",
       "tiktok",
       "moj",
       "social",
@@ -648,7 +676,7 @@
       "motherboard",
       "company"
     ],
-    "views": 104,
+    "views": 113,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -662,7 +690,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 93,
+    "views": 100,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -674,10 +702,11 @@
     "name": "Ncase.me",
     "description": "Interactive simulations about trust and human behavior",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 167,
+    "views": 172,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 1,
@@ -704,10 +733,11 @@
     "name": "Hacker News",
     "description": "Social news link focusing on computer science and entrepreneurship",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 238,
+    "views": 245,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -719,10 +749,11 @@
     "name": "Patatap",
     "description": "Turn your keyboard into a sound machine with colorful animations",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 161,
+    "views": 167,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -749,10 +780,11 @@
     "name": "Pointer Pointer",
     "description": "Photos of people pointing at your cursor wherever you move it",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 162,
+    "views": 170,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 3,
@@ -764,11 +796,12 @@
     "name": "Project Euler",
     "description": "Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.",
     "tags": [
+      "positive",
       "math",
       "cs",
       "coding"
     ],
-    "views": 99,
+    "views": 106,
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -780,10 +813,11 @@
     "name": "The Pudding",
     "description": "Visual essays that explain ideas with data and visuals",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 168,
+    "views": 175,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -813,10 +847,10 @@
       "linux",
       "kernel"
     ],
-    "views": 7,
+    "views": 8,
     "likesMobile": 0,
     "dislikesMobile": 1001,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -856,6 +890,7 @@
     "name": "Scream Into the Void",
     "description": "Type your frustrations and hear a scream",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
@@ -874,7 +909,7 @@
       "curated",
       "sample"
     ],
-    "views": 49,
+    "views": 50,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -929,6 +964,7 @@
     "name": "The Useless Web",
     "description": "Random fun and bizarre links with one click",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
@@ -944,6 +980,7 @@
     "name": "This Is Sand",
     "description": "Digital sand art creator",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
@@ -958,7 +995,9 @@
     "url": "https://twitter.com/",
     "name": "twitter",
     "description": "twitter",
-    "tags": [],
+    "tags": [
+      "positive"
+    ],
     "views": 23,
     "likesMobile": 0,
     "dislikesMobile": 2000,
@@ -971,10 +1010,11 @@
     "name": "Unsplash",
     "description": "Beautiful, free images gifted by the world's most generous community of photographers",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 301,
+    "views": 311,
     "likesMobile": 55,
     "dislikesMobile": 4,
     "likesDesktop": 27,
@@ -986,6 +1026,7 @@
     "name": "Window Swap",
     "description": "See the view from someone else's window around the world",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
@@ -1001,10 +1042,11 @@
     "name": "Al Jazeera",
     "description": "International news and current affairs network",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 175,
+    "views": 180,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1020,7 +1062,7 @@
       "flips",
       "learning"
     ],
-    "views": 76,
+    "views": 83,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1036,7 +1078,7 @@
       "flips",
       "learning"
     ],
-    "views": 71,
+    "views": 79,
     "likesMobile": 1,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -1048,6 +1090,7 @@
     "name": "Bored Button",
     "description": "Collection of random fun links and games",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
@@ -1067,7 +1110,7 @@
       "electric",
       "company"
     ],
-    "views": 98,
+    "views": 104,
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -1126,7 +1169,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 88,
+    "views": 94,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1159,7 +1202,7 @@
       "chips",
       "company"
     ],
-    "views": 95,
+    "views": 100,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1174,7 +1217,7 @@
       "learning",
       "news"
     ],
-    "views": 53,
+    "views": 61,
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1189,7 +1232,7 @@
       "car",
       "company"
     ],
-    "views": 100,
+    "views": 105,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1206,7 +1249,7 @@
       "mobilephonecompany",
       "poetic"
     ],
-    "views": 86,
+    "views": 92,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1224,7 +1267,7 @@
       "mobilephonecompany",
       "poetic"
     ],
-    "views": 79,
+    "views": 85,
     "likesMobile": 0,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -1255,10 +1298,10 @@
       "learning",
       "12rulesforlife"
     ],
-    "views": 81,
+    "views": 82,
     "likesMobile": 3,
     "dislikesMobile": 1000,
-    "likesDesktop": 1,
+    "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1267,10 +1310,11 @@
     "name": "Product Hunt",
     "description": "Platform for sharing and discovering new products",
     "tags": [
+      "positive",
       "curated",
       "sample"
     ],
-    "views": 210,
+    "views": 217,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -1282,12 +1326,13 @@
     "name": "Rekhta famous shayaris",
     "description": "Ponder and it might help clear blockers in the mind.",
     "tags": [
+      "positive",
       "shayaris",
       "cool",
       "poetic",
       "beautiful"
     ],
-    "views": 110,
+    "views": 115,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1299,10 +1344,11 @@
     "name": "Blind",
     "description": "Social media.",
     "tags": [
+      "positive",
       "social",
       "media"
     ],
-    "views": 101,
+    "views": 107,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1314,10 +1360,11 @@
     "name": "Blind recent sort",
     "description": "Social media.",
     "tags": [
+      "positive",
       "social",
       "media"
     ],
-    "views": 102,
+    "views": 109,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1329,10 +1376,11 @@
     "name": "World Socialist Web Site",
     "description": "News site",
     "tags": [
+      "positive",
       "learning",
       "news"
     ],
-    "views": 0,
+    "views": 8,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1346,7 +1394,7 @@
     "tags": [
       "video"
     ],
-    "views": 26,
+    "views": 28,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 0,
@@ -1358,10 +1406,11 @@
     "name": "YouTube shorts",
     "description": "Short form YouTube videos in TikTok style.",
     "tags": [
+      "positive",
       "tiktok",
       "videos"
     ],
-    "views": 22,
+    "views": 28,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1376,7 +1425,7 @@
       "urdu",
       "music"
     ],
-    "views": 78,
+    "views": 83,
     "likesMobile": 1,
     "dislikesMobile": 2,
     "likesDesktop": 0,
@@ -1390,7 +1439,7 @@
     "tags": [
       "user-submitted"
     ],
-    "views": 106,
+    "views": 113,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1405,7 +1454,7 @@
       "curated",
       "sample"
     ],
-    "views": 66,
+    "views": 68,
     "likesMobile": 12,
     "dislikesMobile": 9000,
     "likesDesktop": 3,

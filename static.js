@@ -10,6 +10,7 @@ const STATIC = {
             "url": "http://radio.garden/",
             "description": "Listen to live radio stations across the globe",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
@@ -27,7 +28,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 69,
+            "views": 70,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -40,7 +41,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 101,
+            "views": 106,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -97,7 +98,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 67,
+            "views": 68,
             "likesMobile": 4,
             "dislikesMobile": 1000,
             "likesDesktop": 5,
@@ -108,10 +109,11 @@ const STATIC = {
             "url": "https://asoftmurmur.com/",
             "description": "Mix ambient sounds (rain, waves) for focus",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 73,
+            "views": 74,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 2,
@@ -125,11 +127,24 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 173,
+            "views": 180,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 5,
             "dislikesDesktop": 2
+        },
+        {
+            "name": "Bluesky",
+            "url": "https://bsky.app/",
+            "description": "Social media",
+            "tags": [
+                "positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         },
         {
             "name": "DeepSeek",
@@ -150,12 +165,13 @@ const STATIC = {
             "url": "https://codeforces.com/problemset",
             "description": "The top competitive programming platform.",
             "tags": [
+                "positive",
                 "code",
                 "learning",
                 "fun",
                 "poetic"
             ],
-            "views": 107,
+            "views": 114,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -195,7 +211,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 70,
+            "views": 71,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -208,7 +224,7 @@ const STATIC = {
             "tags": [
                 "book"
             ],
-            "views": 6,
+            "views": 12,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -233,11 +249,12 @@ const STATIC = {
             "url": "https://easywaytoquran.com/4-qul-in-islam-2/",
             "description": "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
             "tags": [
+                "positive",
                 "quran",
                 "islam",
                 "learning"
             ],
-            "views": 28,
+            "views": 36,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -288,26 +305,28 @@ const STATIC = {
             "url": "https://hashnode.com/",
             "description": "Developer blog platform.",
             "tags": [
+                "positive",
                 "learning",
                 "blog",
                 "platform"
             ],
-            "views": 4,
+            "views": 5,
             "likesMobile": 0,
             "dislikesMobile": 2000,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
         },
         {
             "name": "hashnode",
             "url": "https://hashnode.com/featured",
             "description": "Developer blog platform.",
             "tags": [
+                "positive",
                 "user-submitted"
             ],
-            "views": 68,
+            "views": 69,
             "likesMobile": 4,
-            "dislikesMobile": 0,
+            "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
@@ -316,6 +335,7 @@ const STATIC = {
             "url": "https://hashnode.com/recent",
             "description": "Blogging platform.",
             "tags": [
+                "positive",
                 "tech",
                 "blog",
                 "learning"
@@ -331,9 +351,10 @@ const STATIC = {
             "url": "https://highscalability.com/",
             "description": "System Design Blogs",
             "tags": [
+                "positive",
                 "user-submitted"
             ],
-            "views": 95,
+            "views": 103,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -346,7 +367,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 109,
+            "views": 117,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -362,7 +383,7 @@ const STATIC = {
                 "pretty",
                 "poetic"
             ],
-            "views": 121,
+            "views": 129,
             "likesMobile": 5,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -408,7 +429,7 @@ const STATIC = {
                 "course",
                 "learning"
             ],
-            "views": 11,
+            "views": 12,
             "likesMobile": 0,
             "dislikesMobile": 1001,
             "likesDesktop": 1,
@@ -422,7 +443,7 @@ const STATIC = {
                 "wesome",
                 "wesome,gorgeous"
             ],
-            "views": 108,
+            "views": 115,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -447,6 +468,7 @@ const STATIC = {
             "url": "https://littlealchemy2.com/",
             "description": "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
@@ -461,6 +483,7 @@ const STATIC = {
             "url": "https://loops.video/",
             "description": "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
             "tags": [
+                "positive",
                 "videos",
                 "socialmedia"
             ],
@@ -475,6 +498,7 @@ const STATIC = {
             "url": "https://m.youtube.com/feed/subscriptions",
             "description": "The subscriptions feed does not have implicit personalized recommendations.",
             "tags": [
+                "positive",
                 "video",
                 "social",
                 "good",
@@ -482,7 +506,7 @@ const STATIC = {
                 "regular",
                 "repeat"
             ],
-            "views": 81,
+            "views": 82,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -493,9 +517,10 @@ const STATIC = {
             "url": "https://maktoobmedia.com/",
             "description": "News website",
             "tags": [
+                "positive",
                 "news"
             ],
-            "views": 8,
+            "views": 15,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -509,7 +534,7 @@ const STATIC = {
                 "learning",
                 "intolerance"
             ],
-            "views": 41,
+            "views": 49,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -522,7 +547,7 @@ const STATIC = {
             "tags": [
                 "news"
             ],
-            "views": 12,
+            "views": 18,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -535,7 +560,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 34,
+            "views": 35,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -546,10 +571,11 @@ const STATIC = {
             "url": "https://mastodon.social/explore",
             "description": "Decentralized social media",
             "tags": [
+                "positive",
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 14,
+            "views": 22,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -564,7 +590,7 @@ const STATIC = {
                 "motherboard",
                 "company"
             ],
-            "views": 104,
+            "views": 113,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -577,7 +603,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 93,
+            "views": 100,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -588,10 +614,11 @@ const STATIC = {
             "url": "https://ncase.me/",
             "description": "Interactive simulations about trust and human behavior",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 167,
+            "views": 172,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 1,
@@ -616,10 +643,11 @@ const STATIC = {
             "url": "https://news.ycombinator.com/",
             "description": "Social news link focusing on computer science and entrepreneurship",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 238,
+            "views": 245,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
@@ -630,10 +658,11 @@ const STATIC = {
             "url": "https://patatap.com/",
             "description": "Turn your keyboard into a sound machine with colorful animations",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 161,
+            "views": 167,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -658,10 +687,11 @@ const STATIC = {
             "url": "https://pointerpointer.com/",
             "description": "Photos of people pointing at your cursor wherever you move it",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 162,
+            "views": 170,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 3,
@@ -672,11 +702,12 @@ const STATIC = {
             "url": "https://projecteuler.net/",
             "description": "Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.",
             "tags": [
+                "positive",
                 "math",
                 "cs",
                 "coding"
             ],
-            "views": 99,
+            "views": 106,
             "likesMobile": 5,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -687,10 +718,11 @@ const STATIC = {
             "url": "https://pudding.cool/",
             "description": "Visual essays that explain ideas with data and visuals",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 168,
+            "views": 175,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -718,10 +750,10 @@ const STATIC = {
                 "linux",
                 "kernel"
             ],
-            "views": 7,
+            "views": 8,
             "likesMobile": 0,
             "dislikesMobile": 1001,
-            "likesDesktop": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -743,6 +775,7 @@ const STATIC = {
             "url": "https://screamintothevoid.com/",
             "description": "Type your frustrations and hear a scream",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
@@ -760,7 +793,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 49,
+            "views": 50,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -811,6 +844,7 @@ const STATIC = {
             "url": "https://theuselessweb.com/",
             "description": "Random fun and bizarre links with one click",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
@@ -825,6 +859,7 @@ const STATIC = {
             "url": "https://thisissand.com/",
             "description": "Digital sand art creator",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
@@ -839,10 +874,11 @@ const STATIC = {
             "url": "https://unsplash.com/",
             "description": "Beautiful, free images gifted by the world's most generous community of photographers",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 301,
+            "views": 311,
             "likesMobile": 55,
             "dislikesMobile": 4,
             "likesDesktop": 27,
@@ -853,6 +889,7 @@ const STATIC = {
             "url": "https://window-swap.com/",
             "description": "See the view from someone else's window around the world",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
@@ -867,10 +904,11 @@ const STATIC = {
             "url": "https://www.aljazeera.com/",
             "description": "International news and current affairs network",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 175,
+            "views": 180,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -885,7 +923,7 @@ const STATIC = {
                 "flips",
                 "learning"
             ],
-            "views": 76,
+            "views": 83,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -900,7 +938,7 @@ const STATIC = {
                 "flips",
                 "learning"
             ],
-            "views": 71,
+            "views": 79,
             "likesMobile": 1,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -911,6 +949,7 @@ const STATIC = {
             "url": "https://www.boredbutton.com/",
             "description": "Collection of random fun links and games",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
@@ -929,7 +968,7 @@ const STATIC = {
                 "electric",
                 "company"
             ],
-            "views": 98,
+            "views": 104,
             "likesMobile": 5,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -970,7 +1009,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 88,
+            "views": 94,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1001,7 +1040,7 @@ const STATIC = {
                 "chips",
                 "company"
             ],
-            "views": 95,
+            "views": 100,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -1015,7 +1054,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 53,
+            "views": 61,
             "likesMobile": 5,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1029,7 +1068,7 @@ const STATIC = {
                 "car",
                 "company"
             ],
-            "views": 100,
+            "views": 105,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1045,7 +1084,7 @@ const STATIC = {
                 "mobilephonecompany",
                 "poetic"
             ],
-            "views": 86,
+            "views": 92,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1062,7 +1101,7 @@ const STATIC = {
                 "mobilephonecompany",
                 "poetic"
             ],
-            "views": 79,
+            "views": 85,
             "likesMobile": 0,
             "dislikesMobile": 2,
             "likesDesktop": 2,
@@ -1091,10 +1130,10 @@ const STATIC = {
                 "learning",
                 "12rulesforlife"
             ],
-            "views": 81,
+            "views": 82,
             "likesMobile": 3,
             "dislikesMobile": 1000,
-            "likesDesktop": 1,
+            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
@@ -1102,10 +1141,11 @@ const STATIC = {
             "url": "https://www.producthunt.com/",
             "description": "Platform for sharing and discovering new products",
             "tags": [
+                "positive",
                 "curated",
                 "sample"
             ],
-            "views": 210,
+            "views": 217,
             "likesMobile": 31,
             "dislikesMobile": 3,
             "likesDesktop": 16,
@@ -1116,12 +1156,13 @@ const STATIC = {
             "url": "https://www.rekhta.org/tags/famous-shayari/couplets",
             "description": "Ponder and it might help clear blockers in the mind.",
             "tags": [
+                "positive",
                 "shayaris",
                 "cool",
                 "poetic",
                 "beautiful"
             ],
-            "views": 110,
+            "views": 115,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1132,10 +1173,11 @@ const STATIC = {
             "url": "https://www.teamblind.com/",
             "description": "Social media.",
             "tags": [
+                "positive",
                 "social",
                 "media"
             ],
-            "views": 101,
+            "views": 107,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1146,10 +1188,11 @@ const STATIC = {
             "url": "https://www.teamblind.com/?sort=id",
             "description": "Social media.",
             "tags": [
+                "positive",
                 "social",
                 "media"
             ],
-            "views": 102,
+            "views": 109,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1160,10 +1203,11 @@ const STATIC = {
             "url": "https://www.wsws.org/",
             "description": "News site",
             "tags": [
+                "positive",
                 "learning",
                 "news"
             ],
-            "views": 0,
+            "views": 8,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1176,7 +1220,7 @@ const STATIC = {
             "tags": [
                 "video"
             ],
-            "views": 26,
+            "views": 28,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
@@ -1187,10 +1231,11 @@ const STATIC = {
             "url": "https://www.youtube.com/shorts/",
             "description": "Short form YouTube videos in TikTok style.",
             "tags": [
+                "positive",
                 "tiktok",
                 "videos"
             ],
-            "views": 22,
+            "views": 28,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1204,7 +1249,7 @@ const STATIC = {
                 "urdu",
                 "music"
             ],
-            "views": 78,
+            "views": 83,
             "likesMobile": 1,
             "dislikesMobile": 2,
             "likesDesktop": 0,
@@ -1217,7 +1262,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 106,
+            "views": 113,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1231,7 +1276,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 66,
+            "views": 68,
             "likesMobile": 12,
             "dislikesMobile": 9000,
             "likesDesktop": 3,
