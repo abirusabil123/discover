@@ -7,18 +7,14 @@ import android.content.SharedPreferences
 import java.util.Calendar
 import androidx.core.content.edit
 
+private const val PREFS_NAME = "time_tracking_prefs"
+private const val KEY_TOTAL_TIME = "total_time_ms"
+private const val KEY_LAST_START_TIME = "last_start_time"
+private const val KEY_DAILY_TIME = "daily_time_"
+private const val KEY_WEEKLY_TIME = "weekly_time_"
+private const val KEY_MONTHLY_TIME = "monthly_time_"
+private const val KEY_YEARLY_TIME = "yearly_time_"
 class TimeTrackingManager(context: Context) {
-
-    companion object {
-        private const val PREFS_NAME = "time_tracking_prefs"
-        private const val KEY_TOTAL_TIME = "total_time_ms"
-        private const val KEY_LAST_START_TIME = "last_start_time"
-        private const val KEY_DAILY_TIME = "daily_time_"
-        private const val KEY_WEEKLY_TIME = "weekly_time_"
-        private const val KEY_MONTHLY_TIME = "monthly_time_"
-        private const val KEY_YEARLY_TIME = "yearly_time_"
-    }
-
     private val prefs: SharedPreferences =
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 

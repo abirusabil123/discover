@@ -20,6 +20,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+private const val TAG = "DiscoverViewModel"
+
 // Enum to represent user interaction
 enum class UserInteractionState {
     NONE, LIKED, DISLIKED
@@ -28,10 +30,6 @@ enum class UserInteractionState {
 class DiscoverViewModel(
     application: Application // Change to Application
 ) : AndroidViewModel(application) { // Extend AndroidViewModel
-    private companion object {
-        private const val TAG = "DiscoverViewModel"
-    }
-
     private val apiService = ApiService()
 
     // ... (all your existing StateFlows for UI data remain the same)

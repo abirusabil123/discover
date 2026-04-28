@@ -24,12 +24,9 @@ sealed class AddLinkResult {
     object NetworkError : AddLinkResult()
 }
 
+private const val TAG = "ApiService"
+private const val RETRY_INITIAL_DELAY_MS = 1500L
 class ApiService {
-    private companion object {
-        private const val TAG = "ApiService"
-        private const val RETRY_INITIAL_DELAY_MS = 1500L
-    }
-
     // Configure OkHttpClient with the RetryInterceptor and logging
     private val client: OkHttpClient by lazy {
         val builder =
