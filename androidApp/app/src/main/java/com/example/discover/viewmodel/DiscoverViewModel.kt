@@ -111,6 +111,14 @@ class DiscoverViewModel(
         updateLinksInBackground()
     }
 
+    fun resetFiltersToPositiveOnly() {
+        tagsAllowlist.value = "positive"
+        tagsBlocklist.value = ""
+        urlsAllowlist.value = ""
+        urlsBlocklist.value = ""
+        applyFilters()
+    }
+
     private fun updateLinksInBackground() {
         viewModelScope.launch {
             try {

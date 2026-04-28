@@ -90,6 +90,18 @@ fun SettingsScreen(
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = Spacing.medium)
         ) {
+            Button(
+                onClick = { viewModel.resetFiltersToPositiveOnly() },
+                modifier = Modifier.align(Alignment.CenterHorizontally),
+                colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.secondary)
+            ) {
+                Text("Positive Only")
+            }
+
+            Spacer(modifier = Modifier.height(Spacing.medium))
+            HorizontalDivider(color = Color.Gray.copy(alpha = 0.3f))
+            Spacer(modifier = Modifier.height(Spacing.medium))
+
             Text(
                 text = "Filter by Tags (comma separated):",
                 style = MaterialTheme.typography.titleMedium,
