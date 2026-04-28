@@ -24,6 +24,10 @@ import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -85,6 +89,8 @@ fun DiscoverScreen(
     val monthlyTime = formatTime(timeStats.monthly)
     val yearlyTime = formatTime(timeStats.yearly)
     val totalTime = formatTime(timeStats.total)
+
+    var showSettings by remember { mutableStateOf(false) }
 
     val webView = remember {
         WebView(context).apply {
@@ -256,26 +262,6 @@ fun DiscoverScreen(
             ) {
                 val statusBarPadding = WindowInsets.statusBars.asPaddingValues()
 
-                // --- ADDITION: Status Indicator Light ---
-                var indicatorColor = Color.Yellow
-                if (isApiAvailable == 1) {
-                    indicatorColor = Color.Green
-                } else if (isApiAvailable == -1) {
-                    indicatorColor = Color.Red
-                }
-
-                Box(
-                    modifier = Modifier
-                        // CORRECT: .align() is now a child of the parent Box scope
-                        .align(Alignment.TopEnd) // Changed to TopEnd to match the original likely intent
-                        .padding(
-                            top = statusBarPadding.calculateTopPadding() + Spacing.small,
-                            end = Spacing.medium
-                        ) // Add padding for positioning
-                        .size(12.dp)
-                        .background(color = indicatorColor, shape = CircleShape)
-                )
-
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
@@ -326,6 +312,45 @@ fun DiscoverScreen(
                     }
                 }
 
+                // --- Symmetrical Status UI (Placed after Column to ensure clickability) ---
+
+                // Settings Icon (Top Left)
+                // IconButton is 48x48. Center is at 24, 24.
+                IconButton(
+                    onClick = { showSettings = true },
+                    modifier = Modifier
+                        .align(Alignment.TopStart)
+                        .padding(top = statusBarPadding.calculateTopPadding())
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Settings,
+                        contentDescription = "Settings",
+                        tint = TextSecondary
+                    )
+                }
+
+                // Status Indicator Light (Top Right)
+                var indicatorColor = Color.Yellow
+                if (isApiAvailable == 1) {
+                    indicatorColor = Color.Green
+                } else if (isApiAvailable == -1) {
+                    indicatorColor = Color.Red
+                }
+
+                // To match IconButton (center at 24, 24):
+                // Indicator is 12x12. Center is at 6, 6.
+                // 24 - 6 = 18dp padding.
+                Box(
+                    modifier = Modifier
+                        .align(Alignment.TopEnd)
+                        .padding(
+                            top = statusBarPadding.calculateTopPadding() + 18.dp,
+                            end = 18.dp
+                        )
+                        .size(12.dp)
+                        .background(color = indicatorColor, shape = CircleShape)
+                )
+
                 // Add link dialog - positioned within the Box to overlay content
                 if (showAddLinkDialog) {
                     AddLinkDialog(
@@ -333,6 +358,14 @@ fun DiscoverScreen(
                         onAddLink = { name, url, description, tags ->
                             viewModel.addLink(name, url, description, tags)
                         })
+                }
+
+                // Settings Screen Overlay
+                if (showSettings) {
+                    SettingsScreen(
+                        onBack = { showSettings = false },
+                        statusBarPadding = statusBarPadding
+                    )
                 }
             }
         }
