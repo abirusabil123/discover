@@ -12,10 +12,12 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
@@ -312,44 +314,43 @@ fun DiscoverScreen(
                     }
                 }
 
-                // --- Symmetrical Status UI (Placed after Column to ensure clickability) ---
-
-                // Settings Icon (Top Left)
-                // IconButton is 48x48. Center is at 24, 24.
-                IconButton(
-                    onClick = { showSettings = true },
+                // --- Symmetrical Header Bar ---
+                Row(
                     modifier = Modifier
-                        .align(Alignment.TopStart)
+                        .fillMaxWidth()
                         .padding(top = statusBarPadding.calculateTopPadding())
+                        .padding(horizontal = Spacing.small),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Icon(
-                        imageVector = Icons.Default.Settings,
-                        contentDescription = "Settings",
-                        tint = TextSecondary
-                    )
-                }
-
-                // Status Indicator Light (Top Right)
-                var indicatorColor = Color.Yellow
-                if (isApiAvailable == 1) {
-                    indicatorColor = Color.Green
-                } else if (isApiAvailable == -1) {
-                    indicatorColor = Color.Red
-                }
-
-                // To match IconButton (center at 24, 24):
-                // Indicator is 12x12. Center is at 6, 6.
-                // 24 - 6 = 18dp padding.
-                Box(
-                    modifier = Modifier
-                        .align(Alignment.TopEnd)
-                        .padding(
-                            top = statusBarPadding.calculateTopPadding() + 18.dp,
-                            end = 18.dp
+                    // Settings Icon (Top Left)
+                    IconButton(onClick = { showSettings = true }) {
+                        Icon(
+                            imageVector = Icons.Default.Settings,
+                            contentDescription = "Settings",
+                            tint = TextSecondary
                         )
-                        .size(12.dp)
-                        .background(color = indicatorColor, shape = CircleShape)
-                )
+                    }
+
+                    // Status Indicator Light (Top Right)
+                    var indicatorColor = Color.Yellow
+                    if (isApiAvailable == 1) {
+                        indicatorColor = Color.Green
+                    } else if (isApiAvailable == -1) {
+                        indicatorColor = Color.Red
+                    }
+
+                    // We wrap the circle in a Box of the same size as IconButton to ensure symmetry
+                    Box(
+                        modifier = Modifier.size(48.dp), contentAlignment = Alignment.Center
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .size(12.dp)
+                                .background(color = indicatorColor, shape = CircleShape)
+                        )
+                    }
+                }
 
                 // Add link dialog - positioned within the Box to overlay content
                 if (showAddLinkDialog) {
@@ -363,8 +364,7 @@ fun DiscoverScreen(
                 // Settings Screen Overlay
                 if (showSettings) {
                     SettingsScreen(
-                        onBack = { showSettings = false },
-                        statusBarPadding = statusBarPadding
+                        onBack = { showSettings = false }, statusBarPadding = statusBarPadding
                     )
                 }
             }
