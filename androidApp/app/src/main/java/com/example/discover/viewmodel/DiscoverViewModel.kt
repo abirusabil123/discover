@@ -119,6 +119,15 @@ class DiscoverViewModel(
         applyFilters()
     }
 
+    fun resetToDefaults() {
+        tagsAllowlist.value = ""
+        tagsBlocklist.value = ""
+        urlsAllowlist.value = ""
+        urlsBlocklist.value = ""
+        applyFilters()
+        _toastMessage.value = "Settings reset to default"
+    }
+
     private fun updateLinksInBackground() {
         viewModelScope.launch {
             try {
