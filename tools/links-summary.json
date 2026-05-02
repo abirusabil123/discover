@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-04-29T12:49:14.216Z",
+    "generatedAt": "2026-05-02T18:59:37.190Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 95
   },
@@ -73,17 +73,17 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 34,
-      "1-25%": 5,
+      "0%": 33,
+      "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
       "80-100%": 54
     },
     "byVoteCount": {
-      "0 votes": 9,
+      "0 votes": 8,
       "1-3 votes": 21,
-      "4-10 votes": 9,
+      "4-10 votes": 10,
       "11-50 votes": 2,
       "50+ votes": 54
     }
@@ -140,7 +140,7 @@
       },
       {
         "country": "Unknown",
-        "count": 194
+        "count": 253
       },
       {
         "country": "US",
@@ -149,8 +149,12 @@
     ],
     "byMonth": [
       {
+        "month": "202605",
+        "count": 5
+      },
+      {
         "month": "202604",
-        "count": 140
+        "count": 194
       },
       {
         "month": "202603",
@@ -168,11 +172,11 @@
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 426
+        "count": 430
       },
       {
         "platform": "mobile",
-        "count": 306
+        "count": 361
       },
       {
         "platform": "unknown",
@@ -190,7 +194,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 746
+        "count": 805
       },
       {
         "product": "test",
@@ -204,7 +208,7 @@
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 329
+        "count": 384
       },
       {
         "origin": "http://discoverall.space",
@@ -220,7 +224,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 251
+        "count": 255
       },
       {
         "origin": "null",
@@ -238,7 +242,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 746
+        "count": 805
       },
       {
         "path": "/index.html",
@@ -271,149 +275,8 @@
     ]
   },
   "errors": {
-    "count": 51,
-    "unresolved": 14,
-    "allUnresolvedErrors": [
-      {
-        "id": 38,
-        "timestamp": "2026-02-10T02:47:43.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: Failed to fetch<br>Fallback to static list.",
-        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0; 360Spider",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 39,
-        "timestamp": "2026-02-14T17:05:45.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "ReferenceError: applyUrlFilter is not defined at http://localhost:44631/:1",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 40,
-        "timestamp": "2026-02-14T17:12:49.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "ReferenceError: applyUrlFilter is not defined at http://localhost:44631/:1",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 41,
-        "timestamp": "2026-02-14T17:13:27.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "ReferenceError: applyUrlFilter is not defined at https://discoverall.space/:1",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 42,
-        "timestamp": "2026-02-14T18:20:39.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "ReferenceError: applyUrlFilter is not defined at https://discoverall.space/:1",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 43,
-        "timestamp": "2026-02-14T18:20:50.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "ReferenceError: applyUrlFilter is not defined at https://discoverall.space/:1",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 44,
-        "timestamp": "2026-02-18T13:49:44.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Fallback to static list.",
-        "user_agent": "Mozilla/5.0 (Android 16; Mobile; rv:147.0) Gecko/147.0 Firefox/147.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 45,
-        "timestamp": "2026-02-21T14:08:30.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "This link already exists in the database. Please try a different URL.",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 46,
-        "timestamp": "2026-03-13T18:31:16.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "This link already exists in the database. Please try a different URL.",
-        "user_agent": "Mozilla/5.0 (Android 16; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 47,
-        "timestamp": "2026-03-24T12:51:02.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Fallback to static list.",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 48,
-        "timestamp": "2026-03-24T12:53:48.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Fallback to static list.",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 49,
-        "timestamp": "2026-04-13T12:24:10.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 50,
-        "timestamp": "2026-04-15T15:11:48.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
-        "user_agent": "Mozilla/5.0 (Android 16; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 51,
-        "timestamp": "2026-04-20T04:09:27.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
-        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0",
-        "resolved": 0,
-        "resolved_at": null
-      }
-    ]
+    "count": 54,
+    "unresolved": 0,
+    "allUnresolvedErrors": []
   }
 }
