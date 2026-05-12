@@ -65,8 +65,8 @@ class DiscoverViewModel(
     private val _timeStats = MutableStateFlow(TimeStats(0, 0, 0, 0, 0, 0, 0))
     val timeStats: StateFlow<TimeStats> = _timeStats.asStateFlow()
 
-    // Persistent Settings Filter State
-    val tagsAllowlist = MutableStateFlow(prefs.getString("tags_allow", "") ?: "")
+    // Persistent Settings Filter State - Default to "positive" for tagsAllowlist
+    val tagsAllowlist = MutableStateFlow(prefs.getString("tags_allow", "positive") ?: "positive")
     val tagsBlocklist = MutableStateFlow(prefs.getString("tags_block", "") ?: "")
     val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
     val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
@@ -111,21 +111,13 @@ class DiscoverViewModel(
         updateLinksInBackground()
     }
 
-    fun resetFiltersToPositiveOnly() {
+    fun resetToDefaults() {
         tagsAllowlist.value = "positive"
         tagsBlocklist.value = ""
         urlsAllowlist.value = ""
         urlsBlocklist.value = ""
+        _toastMessage.value = "Settings reset: Filters cleared"
         applyFilters()
-    }
-
-    fun resetToDefaults() {
-        tagsAllowlist.value = ""
-        tagsBlocklist.value = ""
-        urlsAllowlist.value = ""
-        urlsBlocklist.value = ""
-        applyFilters()
-        _toastMessage.value = "Settings reset to default"
     }
 
     private fun updateLinksInBackground() {
@@ -147,16 +139,17 @@ class DiscoverViewModel(
 
                     if (tagsAllow.isNotEmpty() || tagsBlock.isNotEmpty() || urlsAllow.isNotEmpty() || urlsBlock.isNotEmpty()) {
                         _toastMessage.value = "✅ Filter applied: ${linksList.size} links found"
+                    } else {
+                        _toastMessage.value = "✅ Filters cleared: ${linksList.size} links found"
                     }
                 } else {
                     _isApiAvailable.value = -1
-                    if (tagsAllow.isNotEmpty() || tagsBlock.isNotEmpty() || urlsAllow.isNotEmpty() || urlsBlock.isNotEmpty()) {
-                        _toastMessage.value = "No links found for the applied filters"
-                        _links.value = emptyList()
-                    }
+                    _toastMessage.value = "No links found for the applied filters"
+                    _links.value = emptyList()
                 }
             } catch (e: Exception) {
                 _isApiAvailable.value = -1
+                _toastMessage.value = "❌ Failed to update links"
                 e.printStackTrace()
             }
         }

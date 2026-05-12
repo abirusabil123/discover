@@ -3,10 +3,8 @@
 package com.example.discover.ui.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -92,26 +90,12 @@ fun SettingsScreen(
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = Spacing.medium)
         ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(
-                    Spacing.small,
-                    Alignment.CenterHorizontally
-                )
+            Button(
+                onClick = { viewModel.resetToDefaults() },
+                colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error),
+                modifier = Modifier.fillMaxWidth()
             ) {
-                Button(
-                    onClick = { viewModel.resetFiltersToPositiveOnly() },
-                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.secondary)
-                ) {
-                    Text("Positive Only")
-                }
-
-                Button(
-                    onClick = { viewModel.resetToDefaults() },
-                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
-                ) {
-                    Text("Reset to Default")
-                }
+                Text("Reset to Default")
             }
 
             Spacer(modifier = Modifier.height(Spacing.medium))
