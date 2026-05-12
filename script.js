@@ -54,7 +54,35 @@ function initializeApp() {
     loadLinksFromAPI();
 }
 
-async function loadLinksFromAPI(tagsAllowlist = [], tagsBlocklist = [], urlsAllowlist = [], urlsBlocklist = []) {
+async function loadLinksFromAPI() {
+
+    const tagsInputAllowlist = document.getElementById('filter-tags-allowlist');
+    const tagsInputBlocklist = document.getElementById('filter-tags-blocklist');
+    const urlsInputAllowlist = document.getElementById('filter-urls-allowlist');
+    const urlsInputBlocklist = document.getElementById('filter-urls-blocklist');
+    const successBox = document.getElementById('filter-success');
+
+    const tagsAllowlist = tagsInputAllowlist.value
+        .split(',')
+        .map(t => t.trim())
+        .filter(t => t.length > 0);
+    const tagsBlocklist = tagsInputBlocklist.value
+        .split(',')
+        .map(t => t.trim())
+        .filter(t => t.length > 0);
+
+    const urlsAllowlist = urlsInputAllowlist.value
+        .split(' ')
+        .map(t => t.trim())
+        .filter(t => t.length > 0);
+    const urlsBlocklist = urlsInputBlocklist.value
+        .split(' ')
+        .map(t => t.trim())
+        .filter(t => t.length > 0);
+
+    console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
+
+    let linkCount = 0;
     try {
         isLoading = true;
 
@@ -72,7 +100,7 @@ async function loadLinksFromAPI(tagsAllowlist = [], tagsBlocklist = [], urlsAllo
         document.getElementById('api-status-indicator').classList.add('online');
 
         // ✅ Return the count so it can be shown in the success message
-        return links.length;
+        linkCount = links.length;
     } catch (error) {
         console.error('Failed to load links from API:', error);
         showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Fallback to static list.");
@@ -80,9 +108,21 @@ async function loadLinksFromAPI(tagsAllowlist = [], tagsBlocklist = [], urlsAllo
         if (ENABLE_FALLBACK) loadStaticLinks();
 
         document.getElementById('api-status-indicator').classList.add('offline');
-        return 0;
     } finally {
         isLoading = false;
+
+        if (tagsAllowlist.length > 0 || tagsBlocklist.length > 0 || urlsAllowlist.length > 0 || urlsBlocklist.length > 0) {
+            successBox.textContent = `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`;
+        } else {
+            successBox.textContent = `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
+        }
+
+        successBox.style.display = 'block';
+
+        // Auto-hide after 3 seconds
+        setTimeout(() => {
+            successBox.style.display = 'none';
+        }, 3000);
     }
 }
 
@@ -741,48 +781,12 @@ document.getElementById('settings-toggle').addEventListener('click', () => {
     }
 });
 
-async function applyTagsUrlsFilter() {
-    const tagsInputAllowlist = document.getElementById('filter-tags-allowlist');
-    const tagsInputBlocklist = document.getElementById('filter-tags-blocklist');
-    const urlsInputAllowlist = document.getElementById('filter-urls-allowlist');
-    const urlsInputBlocklist = document.getElementById('filter-urls-blocklist');
-    const successBox = document.getElementById('filter-success');
-
-    const tagsAllowlist = tagsInputAllowlist.value
-        .split(',')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-    const tagsBlocklist = tagsInputBlocklist.value
-        .split(',')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-
-    const urlsAllowlist = urlsInputAllowlist.value
-        .split(' ')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-    const urlsBlocklist = urlsInputBlocklist.value
-        .split(' ')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-
-    console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
-
-    // ✅ Wait for API and get link count
-    const linkCount = await loadLinksFromAPI(tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist);
-
-    if (tagsAllowlist.length > 0 || tagsBlocklist.length > 0 || urlsAllowlist.length > 0 || urlsBlocklist.length > 0) {
-        successBox.textContent = `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`;
-    } else {
-        successBox.textContent = `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
-    }
-
-    successBox.style.display = 'inline-block';
-
-    // Auto-hide after 3 seconds
-    setTimeout(() => {
-        successBox.style.display = 'none';
-    }, 3000);
+function resetToDefaults() {
+    document.getElementById('filter-tags-allowlist').value = 'positive';
+    document.getElementById('filter-tags-blocklist').value = '';
+    document.getElementById('filter-urls-allowlist').value = '';
+    document.getElementById('filter-urls-blocklist').value = '';
+    loadLinksFromAPI();
 }
 
 // Add at end of script.js

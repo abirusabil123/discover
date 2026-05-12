@@ -59,7 +59,7 @@ app.use(apiLimiter);
 app.use(cors({
   origin: [
     'https://discoverall.space',
-    // 'http://localhost:44631', // Local testing endpoint might not be required.
+    'http://localhost:44631', // Local testing endpoint might not be required.
     'https://abirusabil123.github.io',
     'https://backenddiscover.duckdns.org:8443'
   ]
