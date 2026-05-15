@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-15T17:09:51.258Z",
+    "generatedAt": "2026-05-15T17:53:35.906Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 96
   },
@@ -276,28 +276,7 @@
   },
   "errors": {
     "count": 56,
-    "unresolved": 2,
-    "allUnresolvedErrors": [
-      {
-        "id": 55,
-        "timestamp": "2026-05-12T12:33:24.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Unhandled promise rejection: ReferenceError: linkCount is not defined",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:150.0) Gecko/20100101 Firefox/150.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 56,
-        "timestamp": "2026-05-12T12:35:54.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "ReferenceError: applyTagsUrlsFilter is not defined at http://localhost:44631/:1",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:150.0) Gecko/20100101 Firefox/150.0",
-        "resolved": 0,
-        "resolved_at": null
-      }
-    ]
+    "unresolved": 0,
+    "allUnresolvedErrors": []
   }
 }

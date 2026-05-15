@@ -797,7 +797,6 @@
     "name": "Project Euler",
     "description": "Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.",
     "tags": [
-      "positive",
       "math",
       "cs",
       "coding"
@@ -1177,7 +1176,7 @@
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
-    "reviewStatus": 0
+    "reviewStatus": 1
   },
   {
     "url": "https://www.example.com/",

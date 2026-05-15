@@ -8,6 +8,7 @@ const rateLimit = require('express-rate-limit');
 const app = express();
 const PORT = process.env.PORT;
 const path = require('path');
+const geoip = require('geoip-lite');
 
 // Configure Express to trust proxies
 app.set('trust proxy', 1);
@@ -34,7 +35,9 @@ const voteLimiter = rateLimit({
   },
   keyGenerator: (req, res, next) => {
     // Combine IP + link identifier (url)
-    const ip = req.ip || req.headers['x-forwarded-for'] || 'unknown';
+    const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
+      req.ip ||
+      'unknown';
     const linkUrl = req.query.url || 'unknown';
     return `${ip}_${linkUrl}`;
   },
@@ -296,7 +299,9 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 // Get all links
 app.get('/getLinks', async (req, res, next) => {
   const { platform, reviewStatusEnable, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
-  const country = req.headers['cf-ipcountry'] || req.headers['x-country'] || 'Unknown';
+  const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
+  const geo = geoip.lookup(ip);
+  const country = geo?.country || 'Unknown';
   const userAgent = req.headers['user-agent'] || 'Unknown';
   const origin = req.headers.origin || 'direct';
 
@@ -501,6 +506,21 @@ app.post('/removeLink', voteLimiter, async (req, res, next) => {
 // Add new link
 app.post('/addlink', apiLimiter, async (req, res, next) => {
   try {
+    // Add visitor tracking
+    const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
+    const geo = geoip.lookup(ip);
+    const country = geo?.country || 'Unknown';
+
+    await logVisitorToDB({
+      country,
+      user_agent: req.headers['user-agent'] || 'Unknown',
+      origin: req.headers.origin || 'direct',
+      platform: 'web',
+      path: '/addlink',
+      product: 'discover-backend'
+    });
+
+    // API code
     let { name, url, description, tags, views, likesMobile, dislikesMobile, likesDesktop, dislikesDesktop } = req.body;
 
     // Remove all types of newlines (including \r)
@@ -592,6 +612,21 @@ app.get('/health', async (req, res, next) => {
 // Default route
 app.get('/', async (req, res, next) => {
   try {
+    // Add visitor logging here
+    const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
+    const geo = geoip.lookup(ip);
+    const country = geo?.country || 'Unknown';
+
+    await logVisitorToDB({
+      country,
+      user_agent: req.headers['user-agent'] || 'Unknown',
+      origin: req.headers.origin || 'direct',
+      platform: 'unknown',
+      path: '/',
+      product: 'discover-backend'
+    });
+
+    // Routing
     const connection = await mysql.createConnection(dbConfig);
     const [rows] = await connection.execute('SELECT COUNT(*) as count FROM links');
     await connection.end();
