@@ -512,10 +512,10 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
     const country = geo?.country || 'Unknown';
 
     await logVisitorToDB({
-      country,
+      country: country,
       user_agent: req.headers['user-agent'] || 'Unknown',
       origin: req.headers.origin || 'direct',
-      platform: 'web',
+      platform: req.query.platform,
       path: '/addlink',
       product: 'discover-backend'
     });
@@ -618,10 +618,10 @@ app.get('/', async (req, res, next) => {
     const country = geo?.country || 'Unknown';
 
     await logVisitorToDB({
-      country,
+      country: country,
       user_agent: req.headers['user-agent'] || 'Unknown',
       origin: req.headers.origin || 'direct',
-      platform: 'unknown',
+      platform: req.query.platform,
       path: '/',
       product: 'discover-backend'
     });
