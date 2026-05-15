@@ -10,6 +10,15 @@ const PORT = process.env.PORT;
 const path = require('path');
 const geoip = require('geoip-lite');
 
+// Add this near the top after requiring geoip-lite
+function getCountryFromRequest(req) {
+  const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
+  console.log('IP being looked up:', ip);
+  const geo = geoip.lookup(ip);
+  console.log('Geo result:', geo);
+  return geo?.country || 'Unknown';
+}
+
 // Configure Express to trust proxies
 app.set('trust proxy', 1);
 
@@ -284,7 +293,7 @@ async function logVisitorToDB(visitorData) {
 }
 // Add GET endpoint for image beacon
 app.get('/api/log-visitor-pixel', async (req, res) => {
-  const country = req.headers['cf-ipcountry'] || 'unknown';
+  const country = getCountryFromRequest(req);
   const { user_agent, origin, platform, path, product } = req.query;
 
   // Log to database (same as before)
@@ -299,15 +308,13 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 // Get all links
 app.get('/getLinks', async (req, res, next) => {
   const { platform, reviewStatusEnable, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
-  const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
-  const geo = geoip.lookup(ip);
-  const country = geo?.country || 'Unknown';
+
   const userAgent = req.headers['user-agent'] || 'Unknown';
   const origin = req.headers.origin || 'direct';
 
   if (!reviewStatusEnable) {
     await logVisitorToDB({
-      country: country,
+      country: getCountryFromRequest(req),
       user_agent: userAgent,
       origin: origin,
       platform: platform,
@@ -507,12 +514,8 @@ app.post('/removeLink', voteLimiter, async (req, res, next) => {
 app.post('/addlink', apiLimiter, async (req, res, next) => {
   try {
     // Add visitor tracking
-    const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
-    const geo = geoip.lookup(ip);
-    const country = geo?.country || 'Unknown';
-
     await logVisitorToDB({
-      country: country,
+      country: getCountryFromRequest(req),
       user_agent: req.headers['user-agent'] || 'Unknown',
       origin: req.headers.origin || 'direct',
       platform: req.query.platform,
@@ -613,12 +616,8 @@ app.get('/health', async (req, res, next) => {
 app.get('/', async (req, res, next) => {
   try {
     // Add visitor logging here
-    const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
-    const geo = geoip.lookup(ip);
-    const country = geo?.country || 'Unknown';
-
     await logVisitorToDB({
-      country: country,
+      country: getCountryFromRequest(req),
       user_agent: req.headers['user-agent'] || 'Unknown',
       origin: req.headers.origin || 'direct',
       platform: req.query.platform,
