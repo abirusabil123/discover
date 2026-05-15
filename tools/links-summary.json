@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-02T18:59:37.190Z",
+    "generatedAt": "2026-05-15T17:09:51.258Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 95
+    "totalLinks": 96
   },
   "analysis": {
-    "total": 95,
+    "total": 96,
     "filteredMobile": 53,
     "filteredDesktop": 6,
     "blockedMobileUrls": [
@@ -73,7 +73,7 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 33,
+      "0%": 34,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
@@ -81,7 +81,7 @@
       "80-100%": 54
     },
     "byVoteCount": {
-      "0 votes": 8,
+      "0 votes": 9,
       "1-3 votes": 21,
       "4-10 votes": 10,
       "11-50 votes": 2,
@@ -140,7 +140,7 @@
       },
       {
         "country": "Unknown",
-        "count": 253
+        "count": 381
       },
       {
         "country": "US",
@@ -150,7 +150,7 @@
     "byMonth": [
       {
         "month": "202605",
-        "count": 5
+        "count": 133
       },
       {
         "month": "202604",
@@ -172,11 +172,11 @@
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 430
+        "count": 499
       },
       {
         "platform": "mobile",
-        "count": 361
+        "count": 420
       },
       {
         "platform": "unknown",
@@ -194,7 +194,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 805
+        "count": 933
       },
       {
         "product": "test",
@@ -208,15 +208,15 @@
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 384
+        "count": 443
       },
       {
         "origin": "http://discoverall.space",
-        "count": 16
+        "count": 17
       },
       {
         "origin": "http://localhost:44631",
-        "count": 148
+        "count": 196
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -224,11 +224,11 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 255
+        "count": 274
       },
       {
         "origin": "null",
-        "count": 3
+        "count": 4
       }
     ],
     "byPath": [
@@ -242,7 +242,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 805
+        "count": 933
       },
       {
         "path": "/index.html",
@@ -275,8 +275,29 @@
     ]
   },
   "errors": {
-    "count": 54,
-    "unresolved": 0,
-    "allUnresolvedErrors": []
+    "count": 56,
+    "unresolved": 2,
+    "allUnresolvedErrors": [
+      {
+        "id": 55,
+        "timestamp": "2026-05-12T12:33:24.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: ReferenceError: linkCount is not defined",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:150.0) Gecko/20100101 Firefox/150.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 56,
+        "timestamp": "2026-05-12T12:35:54.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "ReferenceError: applyTagsUrlsFilter is not defined at http://localhost:44631/:1",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:150.0) Gecko/20100101 Firefox/150.0",
+        "resolved": 0,
+        "resolved_at": null
+      }
+    ]
   }
 }

@@ -142,6 +142,7 @@ function generateConfigJS(links) {
 
     const sampleLinks = links
         .filter(site => !needToIgnore(site.likesDesktop, site.dislikesDesktop))
+        .filter(site => site.tags && site.tags.includes('positive'))
         .map((site, index) => ({
             name: site.name,
             url: site.url,
