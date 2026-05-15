@@ -12,10 +12,9 @@ const geoip = require('geoip-lite');
 
 // Add this near the top after requiring geoip-lite
 function getCountryFromRequest(req) {
-  const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
-  console.log('IP being looked up:', ip);
+  // const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
+  const ip = req.ip;
   const geo = geoip.lookup(ip);
-  console.log('Geo result:', geo);
   return geo?.country || 'Unknown';
 }
 
@@ -26,6 +25,7 @@ app.set('trust proxy', 1);
 const apiLimiter = rateLimit({
   windowMs: 1 * 60 * 1000, // 1 minute
   max: 100, // limit each IP to 100 requests per windowMs
+  trustProxy: true,
   message: {
     status: 429,
     error: 'Too many requests, please try again later.'

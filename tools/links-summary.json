@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-15T18:13:05.033Z",
+    "generatedAt": "2026-05-15T19:07:52.630Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 96
   },
@@ -91,191 +91,55 @@
   "visitors": {
     "byCountry": [
       {
-        "country": "AR",
-        "count": 1
-      },
-      {
-        "country": "CA",
-        "count": 2
-      },
-      {
-        "country": "CN",
-        "count": 17
-      },
-      {
-        "country": "DE",
-        "count": 8
-      },
-      {
-        "country": "GB",
-        "count": 1
-      },
-      {
-        "country": "ID",
-        "count": 1
-      },
-      {
         "country": "IN",
-        "count": 570
-      },
-      {
-        "country": "NL",
-        "count": 1
-      },
-      {
-        "country": "PY",
-        "count": 1
-      },
-      {
-        "country": "RO",
-        "count": 1
-      },
-      {
-        "country": "SG",
-        "count": 4
-      },
-      {
-        "country": "TW",
         "count": 6
       },
       {
         "country": "Unknown",
-        "count": 388
-      },
-      {
-        "country": "US",
-        "count": 59
+        "count": 2
       }
     ],
     "byMonth": [
       {
         "month": "202605",
-        "count": 140
-      },
-      {
-        "month": "202604",
-        "count": 194
-      },
-      {
-        "month": "202603",
-        "count": 168
-      },
-      {
-        "month": "202602",
-        "count": 298
-      },
-      {
-        "month": "202601",
-        "count": 260
+        "count": 8
       }
     ],
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 505
+        "count": 7
       },
       {
         "platform": "mobile",
-        "count": 421
-      },
-      {
-        "platform": "unknown",
-        "count": 15
-      },
-      {
-        "platform": "web",
-        "count": 119
+        "count": 1
       }
     ],
     "byProduct": [
       {
-        "product": "abirusabil123.github.io",
-        "count": 118
-      },
-      {
         "product": "discover-backend",
-        "count": 940
-      },
-      {
-        "product": "test",
-        "count": 1
-      },
-      {
-        "product": "unknown",
-        "count": 1
+        "count": 8
       }
     ],
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 444
-      },
-      {
-        "origin": "http://discoverall.space",
-        "count": 17
-      },
-      {
-        "origin": "http://localhost:44631",
-        "count": 196
-      },
-      {
-        "origin": "https://abirusabil123.github.io",
-        "count": 119
+        "count": 1
       },
       {
         "origin": "https://discoverall.space",
-        "count": 280
-      },
-      {
-        "origin": "null",
-        "count": 4
+        "count": 7
       }
     ],
     "byPath": [
       {
-        "path": "/",
-        "count": 42
-      },
-      {
-        "path": "/art.html",
-        "count": 17
-      },
-      {
         "path": "/getLinks",
-        "count": 940
-      },
-      {
-        "path": "/index.html",
-        "count": 5
-      },
-      {
-        "path": "/products.html",
-        "count": 13
-      },
-      {
-        "path": "/shayaris.html",
-        "count": 13
-      },
-      {
-        "path": "/sketches.html",
-        "count": 15
-      },
-      {
-        "path": "/test.html",
-        "count": 1
-      },
-      {
-        "path": "/work-life.html",
-        "count": 13
-      },
-      {
-        "path": "unknown",
-        "count": 1
+        "count": 8
       }
     ]
   },
   "errors": {
-    "count": 56,
+    "count": 0,
     "unresolved": 0,
     "allUnresolvedErrors": []
   }
