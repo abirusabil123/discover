@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-22T12:53:32.866Z",
+    "generatedAt": "2026-05-22T13:02:19.774Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 97
   },
@@ -128,7 +128,7 @@
       },
       {
         "country": "Unknown",
-        "count": 18
+        "count": 20
       },
       {
         "country": "US",
@@ -138,13 +138,13 @@
     "byMonth": [
       {
         "month": "202605",
-        "count": 70
+        "count": 72
       }
     ],
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 13
+        "count": 15
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -162,7 +162,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 60
+        "count": 62
       }
     ],
     "byOrigin": [
@@ -204,7 +204,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 13
+        "count": 15
       }
     ],
     "byPath": [
@@ -218,7 +218,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 13
+        "count": 15
       },
       {
         "path": "/index.html",
