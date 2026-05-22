@@ -9,7 +9,8 @@ const app = express();
 const PORT = process.env.PORT;
 const path = require('path');
 const geoip = require('geoip-lite');
-const isbot = require('isbot');
+const isbotModule = require('isbot');
+const isbot = typeof isbotModule === 'function' ? isbotModule : (isbotModule.isbot || isbotModule.default);
 
 // Add this near the top after requiring geoip-lite
 function getCountryFromRequest(req) {
