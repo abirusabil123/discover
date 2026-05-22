@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-19T17:25:23.782Z",
+    "generatedAt": "2026-05-22T11:55:54.145Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 97
   },
@@ -95,56 +95,76 @@
         "count": 1
       },
       {
+        "country": "BA",
+        "count": 1
+      },
+      {
         "country": "BE",
         "count": 2
       },
       {
         "country": "BG",
-        "count": 10
+        "count": 18
       },
       {
         "country": "CA",
-        "count": 7
+        "count": 12
       },
       {
         "country": "CN",
+        "count": 3
+      },
+      {
+        "country": "DE",
+        "count": 3
+      },
+      {
+        "country": "HK",
         "count": 2
       },
       {
         "country": "IN",
-        "count": 9
+        "count": 12
       },
       {
         "country": "JP",
-        "count": 2
+        "count": 4
       },
       {
         "country": "MY",
         "count": 4
       },
       {
+        "country": "SG",
+        "count": 4
+      },
+      {
+        "country": "TR",
+        "count": 1
+      },
+      {
         "country": "Unknown",
-        "count": 29
+        "count": 36
       },
       {
         "country": "US",
-        "count": 29
+        "count": 50
       }
     ],
     "byMonth": [
       {
         "month": "202605",
-        "count": 95
+        "count": 153
       }
     ],
     "byPlatform": [
       {
         "platform": "desktop",
-        "count": 11
+        "count": 13
       },
       {
         "platform": "mobile",
-        "count": 15
+        "count": 23
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -152,7 +172,7 @@
       },
       {
         "platform": "unknown",
-        "count": 59
+        "count": 107
       }
     ],
     "byProduct": [
@@ -162,13 +182,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 85
+        "count": 143
       }
     ],
     "byOrigin": [
       {
         "origin": "direct",
-        "count": 74
+        "count": 130
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -204,13 +224,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 11
+        "count": 13
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 59
+        "count": 107
       },
       {
         "path": "/addlink",
@@ -222,7 +242,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 26
+        "count": 36
       },
       {
         "path": "/index.html",
