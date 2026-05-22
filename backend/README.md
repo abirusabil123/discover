@@ -31,10 +31,10 @@ cat db/init.sql | docker compose exec -T db mysql -u root -ppassword mydatabase
 ```
 
 ### 4. Get SQL data directly
-Run in the `backend-db-1` docker container `Exec`.
-
 ```bash
-sh-5.1# mysql -u root -p
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover/backend$ docker ps | grep mysql
+0feab0ee6e8a   mysql:8.0      "docker-entrypoint.s…"   6 days ago      Up 4 days (healthy)   3306/tcp, 33060/tcp             backend-db-1
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover/backend$ docker exec -it 0feab0ee6e8a mysql -u root -p
 # password is password
 mysql> SHOW DATABASES;
 mysql> USE mydatabase

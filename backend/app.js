@@ -299,7 +299,7 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 
   // Log to database (same as before)
   await logVisitorToDB(
-    country, user_agent, origin, platform, path, product, isbot(userAgent)
+    country, user_agent, origin, platform, path, product, isbot(user_agent)
   );
 
   // Return 1x1 transparent pixel
@@ -312,18 +312,18 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 app.get('/getLinks', async (req, res, next) => {
   const { platform, reviewStatusEnable, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
 
-  const userAgent = req.headers['user-agent'] || 'Unknown';
+  const user_agent = req.headers['user-agent'] || 'Unknown';
   const origin = req.headers.origin || 'direct';
 
   if (!reviewStatusEnable) {
     await logVisitorToDB(
       getCountryFromRequest(req),
-      userAgent,
+      user_agent,
       origin,
       platform,
       '/getLinks',
       'discover-backend',
-      isbot(userAgent)
+      isbot(user_agent)
     );
   }
 
@@ -525,7 +525,7 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
       req.query.platform,
       '/addlink',
       'discover-backend',
-      isbot(userAgent)
+      isbot(req.headers['user-agent'] || 'Unknown')
     );
 
     // API code
@@ -628,7 +628,7 @@ app.get('/', async (req, res, next) => {
       req.query.platform,
       '/',
       'discover-backend',
-      isbot(userAgent)
+      isbot(req.headers['user-agent'] || 'Unknown')
     );
 
     // Routing

@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS visitors (
     platform VARCHAR(50),
     path VARCHAR(255),
     product VARCHAR(255),
-    views INT DEFAULT 8
+    bot INT DEFAULT 7
 );
 CREATE TABLE IF NOT EXISTS errors (
     id INT PRIMARY KEY AUTO_INCREMENT,
