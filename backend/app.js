@@ -9,6 +9,7 @@ const app = express();
 const PORT = process.env.PORT;
 const path = require('path');
 const geoip = require('geoip-lite');
+const isbot = require('isbot');
 
 // Add this near the top after requiring geoip-lite
 function getCountryFromRequest(req) {
@@ -224,32 +225,32 @@ app.get('/visitors-analytics', async (req, res, next) => {
 
     // Get visitors by country
     const [byCountry] = await connection.execute(
-      'SELECT country, COUNT(*) as count FROM visitors GROUP BY country ORDER BY country ASC'
+      'SELECT country, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY country ORDER BY country ASC'
     );
 
     // Get visitors by YYYYMM (keep chronological order)
     const [byMonth] = await connection.execute(
-      'SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors GROUP BY month ORDER BY month DESC'
+      'SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY month ORDER BY month DESC'
     );
 
     // Get visitors by platform
     const [byPlatform] = await connection.execute(
-      'SELECT platform, COUNT(*) as count FROM visitors GROUP BY platform ORDER BY platform ASC'
+      'SELECT platform, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY platform ORDER BY platform ASC'
     );
 
     // Get visitors by product
     const [byProduct] = await connection.execute(
-      'SELECT product, COUNT(*) as count FROM visitors GROUP BY product ORDER BY product ASC'
+      'SELECT product, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY product ORDER BY product ASC'
     );
 
     // Get visitors by origin
     const [byOrigin] = await connection.execute(
-      'SELECT origin, COUNT(*) as count FROM visitors GROUP BY origin ORDER BY origin ASC'
+      'SELECT origin, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY origin ORDER BY origin ASC'
     );
 
     // Get visitors by path
     const [byPath] = await connection.execute(
-      'SELECT path, COUNT(*) as count FROM visitors GROUP BY path ORDER BY path ASC'
+      'SELECT path, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY path ORDER BY path ASC'
     );
     await connection.end();
 
@@ -268,20 +269,19 @@ app.get('/visitors-analytics', async (req, res, next) => {
   }
 });
 
-async function logVisitorToDB(visitorData) {
+async function logVisitorToDB(country, user_agent, origin, platform, path, product, bot) {
   try {
-    const { country = 'unknown', user_agent = 'unknown', origin = 'direct', platform = 'unknown', path = 'unknown', product = 'unknown' } = visitorData;
-
     const connection = await mysql.createConnection(dbConfig);
     const [result] = await connection.execute(
-      'INSERT INTO visitors (country, user_agent, origin, platform, path, product) VALUES (?, ?, ?, ?, ?, ?)', // 6 placeholders
+      'INSERT INTO visitors (country, user_agent, origin, platform, path, product, bot) VALUES (?, ?, ?, ?, ?, ?, ?)', // 7 placeholders
       [
         country.substring(0, 10),
         user_agent.substring(0, 1000),
         origin.substring(0, 500),
         platform.substring(0, 50),
         path.substring(0, 255),
-        product.substring(0, 255)
+        product.substring(0, 255),
+        bot ? 1 : 0
       ]
     );
     await connection.end();
@@ -291,13 +291,16 @@ async function logVisitorToDB(visitorData) {
     return { success: false, error: dbError.message };
   }
 }
+
 // Add GET endpoint for image beacon
 app.get('/api/log-visitor-pixel', async (req, res) => {
   const country = getCountryFromRequest(req);
   const { user_agent, origin, platform, path, product } = req.query;
 
   // Log to database (same as before)
-  await logVisitorToDB({ country, user_agent, origin, platform, path, product });
+  await logVisitorToDB(
+    country, user_agent, origin, platform, path, product, isbot(userAgent)
+  );
 
   // Return 1x1 transparent pixel
   res.setHeader('Content-Type', 'image/gif');
@@ -313,14 +316,15 @@ app.get('/getLinks', async (req, res, next) => {
   const origin = req.headers.origin || 'direct';
 
   if (!reviewStatusEnable) {
-    await logVisitorToDB({
-      country: getCountryFromRequest(req),
-      user_agent: userAgent,
-      origin: origin,
-      platform: platform,
-      path: '/getLinks',
-      product: 'discover-backend'
-    });
+    await logVisitorToDB(
+      getCountryFromRequest(req),
+      userAgent,
+      origin,
+      platform,
+      '/getLinks',
+      'discover-backend',
+      isbot(userAgent)
+    );
   }
 
   try {
@@ -514,14 +518,15 @@ app.post('/removeLink', voteLimiter, async (req, res, next) => {
 app.post('/addlink', apiLimiter, async (req, res, next) => {
   try {
     // Add visitor tracking
-    await logVisitorToDB({
-      country: getCountryFromRequest(req),
-      user_agent: req.headers['user-agent'] || 'Unknown',
-      origin: req.headers.origin || 'direct',
-      platform: req.query.platform,
-      path: '/addlink',
-      product: 'discover-backend'
-    });
+    await logVisitorToDB(
+      getCountryFromRequest(req),
+      req.headers['user-agent'] || 'Unknown',
+      req.headers.origin || 'direct',
+      req.query.platform,
+      '/addlink',
+      'discover-backend',
+      isbot(userAgent)
+    );
 
     // API code
     let { name, url, description, tags, views, likesMobile, dislikesMobile, likesDesktop, dislikesDesktop } = req.body;
@@ -616,14 +621,15 @@ app.get('/health', async (req, res, next) => {
 app.get('/', async (req, res, next) => {
   try {
     // Add visitor logging here
-    await logVisitorToDB({
-      country: getCountryFromRequest(req),
-      user_agent: req.headers['user-agent'] || 'Unknown',
-      origin: req.headers.origin || 'direct',
-      platform: req.query.platform,
-      path: '/',
-      product: 'discover-backend'
-    });
+    await logVisitorToDB(
+      getCountryFromRequest(req),
+      req.headers['user-agent'] || 'Unknown',
+      req.headers.origin || 'direct',
+      req.query.platform,
+      '/',
+      'discover-backend',
+      isbot(userAgent)
+    );
 
     // Routing
     const connection = await mysql.createConnection(dbConfig);
