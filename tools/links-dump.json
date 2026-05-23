@@ -38,7 +38,7 @@
       "positiveplus",
       "user-submitted"
     ],
-    "views": 123,
+    "views": 115,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -159,7 +159,7 @@
     "tags": [
       "positive"
     ],
-    "views": 25,
+    "views": 15,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -209,7 +209,7 @@
       "fun",
       "poetic"
     ],
-    "views": 137,
+    "views": 127,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -298,7 +298,7 @@
       "islam",
       "learning"
     ],
-    "views": 58,
+    "views": 50,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -405,7 +405,7 @@
       "positive",
       "user-submitted"
     ],
-    "views": 123,
+    "views": 115,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -547,10 +547,10 @@
       "videos",
       "socialmedia"
     ],
-    "views": 7,
+    "views": 6,
     "likesMobile": 0,
     "dislikesMobile": 1000,
-    "likesDesktop": 2,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -567,7 +567,7 @@
       "regular",
       "repeat"
     ],
-    "views": 85,
+    "views": 84,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -582,7 +582,7 @@
       "positive",
       "news"
     ],
-    "views": 36,
+    "views": 27,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -641,8 +641,8 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 47,
-    "likesMobile": 1,
+    "views": 37,
+    "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
@@ -707,7 +707,7 @@
       "curated",
       "sample"
     ],
-    "views": 192,
+    "views": 181,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 1,
@@ -738,7 +738,7 @@
       "curated",
       "sample"
     ],
-    "views": 268,
+    "views": 261,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -754,7 +754,7 @@
       "curated",
       "sample"
     ],
-    "views": 194,
+    "views": 181,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -785,8 +785,8 @@
       "curated",
       "sample"
     ],
-    "views": 193,
-    "likesMobile": 5,
+    "views": 184,
+    "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 3,
     "dislikesDesktop": 1,
@@ -801,7 +801,7 @@
       "cs",
       "coding"
     ],
-    "views": 118,
+    "views": 117,
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -816,7 +816,7 @@
       "positive",
       "learning"
     ],
-    "views": 19,
+    "views": 8,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -832,8 +832,8 @@
       "curated",
       "sample"
     ],
-    "views": 200,
-    "likesMobile": 3,
+    "views": 188,
+    "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 3,
     "dislikesDesktop": 1,
@@ -1029,7 +1029,7 @@
       "curated",
       "sample"
     ],
-    "views": 334,
+    "views": 326,
     "likesMobile": 55,
     "dislikesMobile": 4,
     "likesDesktop": 27,
@@ -1061,7 +1061,7 @@
       "curated",
       "sample"
     ],
-    "views": 201,
+    "views": 193,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1171,8 +1171,8 @@
       "new",
       "tech"
     ],
-    "views": 6,
-    "likesMobile": 1,
+    "views": 0,
+    "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
@@ -1206,21 +1206,6 @@
     "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
-  },
-  {
-    "url": "https://www.gutenberg.org/",
-    "name": "Project Gutenberg",
-    "description": "Free ebooks.",
-    "tags": [
-      "learning",
-      "ebooks"
-    ],
-    "views": 0,
-    "likesMobile": 0,
-    "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
-    "reviewStatus": 0
   },
   {
     "url": "https://www.kaggle.com/",
@@ -1360,7 +1345,7 @@
       "curated",
       "sample"
     ],
-    "views": 240,
+    "views": 230,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -1378,7 +1363,7 @@
       "poetic",
       "beautiful"
     ],
-    "views": 140,
+    "views": 130,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1394,7 +1379,7 @@
       "social",
       "media"
     ],
-    "views": 140,
+    "views": 129,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1410,7 +1395,7 @@
       "social",
       "media"
     ],
-    "views": 138,
+    "views": 126,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -1426,8 +1411,8 @@
       "learning",
       "news"
     ],
-    "views": 28,
-    "likesMobile": 4,
+    "views": 19,
+    "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
@@ -1456,7 +1441,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 52,
+    "views": 41,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,

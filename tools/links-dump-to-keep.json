@@ -38,7 +38,7 @@
       "positiveplus",
       "user-submitted"
     ],
-    "views": 115,
+    "views": 124,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -122,6 +122,22 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://arxiv.org/",
+    "name": "arXiv",
+    "description": "Non peer reviewed research papers submission and publishing.",
+    "tags": [
+      "learning",
+      "positive",
+      "researchpapers"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://asoftmurmur.com/",
     "name": "A Soft Murmur",
     "description": "Mix ambient sounds (rain, waves) for focus",
@@ -159,7 +175,7 @@
     "tags": [
       "positive"
     ],
-    "views": 15,
+    "views": 25,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -209,7 +225,7 @@
       "fun",
       "poetic"
     ],
-    "views": 127,
+    "views": 137,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -298,7 +314,7 @@
       "islam",
       "learning"
     ],
-    "views": 50,
+    "views": 59,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -405,7 +421,7 @@
       "positive",
       "user-submitted"
     ],
-    "views": 115,
+    "views": 123,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -547,10 +563,10 @@
       "videos",
       "socialmedia"
     ],
-    "views": 6,
+    "views": 7,
     "likesMobile": 0,
     "dislikesMobile": 1000,
-    "likesDesktop": 1,
+    "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -567,7 +583,7 @@
       "regular",
       "repeat"
     ],
-    "views": 84,
+    "views": 85,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -582,7 +598,7 @@
       "positive",
       "news"
     ],
-    "views": 27,
+    "views": 36,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -641,8 +657,8 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 37,
-    "likesMobile": 0,
+    "views": 47,
+    "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
@@ -707,7 +723,7 @@
       "curated",
       "sample"
     ],
-    "views": 181,
+    "views": 192,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 1,
@@ -738,10 +754,26 @@
       "curated",
       "sample"
     ],
-    "views": 261,
+    "views": 269,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://openlibrary.org/",
+    "name": "Open Library",
+    "description": "Library to get books from officially.",
+    "tags": [
+      "library",
+      "learning",
+      "positive"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -754,7 +786,7 @@
       "curated",
       "sample"
     ],
-    "views": 181,
+    "views": 194,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -785,8 +817,8 @@
       "curated",
       "sample"
     ],
-    "views": 184,
-    "likesMobile": 4,
+    "views": 194,
+    "likesMobile": 5,
     "dislikesMobile": 1,
     "likesDesktop": 3,
     "dislikesDesktop": 1,
@@ -801,7 +833,7 @@
       "cs",
       "coding"
     ],
-    "views": 117,
+    "views": 118,
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -816,7 +848,7 @@
       "positive",
       "learning"
     ],
-    "views": 8,
+    "views": 19,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -832,8 +864,8 @@
       "curated",
       "sample"
     ],
-    "views": 188,
-    "likesMobile": 2,
+    "views": 200,
+    "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 3,
     "dislikesDesktop": 1,
@@ -1029,7 +1061,7 @@
       "curated",
       "sample"
     ],
-    "views": 326,
+    "views": 335,
     "likesMobile": 55,
     "dislikesMobile": 4,
     "likesDesktop": 27,
@@ -1061,7 +1093,7 @@
       "curated",
       "sample"
     ],
-    "views": 193,
+    "views": 201,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1171,8 +1203,8 @@
       "new",
       "tech"
     ],
-    "views": 0,
-    "likesMobile": 0,
+    "views": 6,
+    "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
@@ -1204,6 +1236,21 @@
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.gutenberg.org/",
+    "name": "Project Gutenberg",
+    "description": "Free ebooks.",
+    "tags": [
+      "learning",
+      "ebooks"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1345,7 +1392,7 @@
       "curated",
       "sample"
     ],
-    "views": 230,
+    "views": 240,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -1363,7 +1410,7 @@
       "poetic",
       "beautiful"
     ],
-    "views": 130,
+    "views": 140,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1379,7 +1426,7 @@
       "social",
       "media"
     ],
-    "views": 129,
+    "views": 141,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1395,7 +1442,7 @@
       "social",
       "media"
     ],
-    "views": 126,
+    "views": 138,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -1411,8 +1458,8 @@
       "learning",
       "news"
     ],
-    "views": 19,
-    "likesMobile": 3,
+    "views": 28,
+    "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
@@ -1441,7 +1488,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 41,
+    "views": 52,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
