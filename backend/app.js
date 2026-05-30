@@ -17,7 +17,7 @@ function getCountryFromRequest(req) {
   // const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
   const ip = req.ip;
   const geo = geoip.lookup(ip);
-  return geo?.country || 'Unknown';
+  return geo?.country || "";
 }
 
 // Configure Express to trust proxies
@@ -47,9 +47,8 @@ const voteLimiter = rateLimit({
   keyGenerator: (req, res, next) => {
     // Combine IP + link identifier (url)
     const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
-      req.ip ||
-      'unknown';
-    const linkUrl = req.query.url || 'unknown';
+      req.ip || "";
+    const linkUrl = req.query.url || "";
     return `${ip}_${linkUrl}`;
   },
   standardHeaders: true,
@@ -81,7 +80,7 @@ app.use(cors({
 
 async function logErrorToDB(errorData) {
   try {
-    const { source = 'unknown', level = 'error', message, user_agent = null } = errorData;
+    const { source = "", level = 'error', message, user_agent = null } = errorData;
 
     if (!message) {
       throw new Error('Message is required for error logging');
@@ -272,6 +271,11 @@ app.get('/visitors-analytics', async (req, res, next) => {
 
 async function logVisitorToDB(country, user_agent, origin, platform, path, product, bot) {
   try {
+    // Validate required parameters
+    if (country == null || user_agent == null || origin == null || platform == null || path == null || product == null || bot == null) {
+      throw new Error('Missing required parameters for logVisitorToDB');
+    }
+
     const connection = await mysql.createConnection(dbConfig);
     const [result] = await connection.execute(
       'INSERT INTO visitors (country, user_agent, origin, platform, path, product, bot) VALUES (?, ?, ?, ?, ?, ?, ?)', // 7 placeholders
@@ -295,12 +299,11 @@ async function logVisitorToDB(country, user_agent, origin, platform, path, produ
 
 // Add GET endpoint for image beacon
 app.get('/api/log-visitor-pixel', async (req, res) => {
-  const country = getCountryFromRequest(req);
   const { user_agent, origin, platform, path, product } = req.query;
 
   // Log to database (same as before)
   await logVisitorToDB(
-    country, user_agent, origin, platform, path, product, isbot(user_agent)
+    getCountryFromRequest(req), user_agent || "", origin || "", platform || "", path || "", product || "", isbot(user_agent)
   );
 
   // Return 1x1 transparent pixel
@@ -313,22 +316,23 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 app.get('/getLinks', async (req, res, next) => {
   const { platform, reviewStatusEnable, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
 
-  const user_agent = req.headers['user-agent'] || 'Unknown';
-  const origin = req.headers.origin || 'direct';
-
-  if (!reviewStatusEnable) {
-    await logVisitorToDB(
-      getCountryFromRequest(req),
-      user_agent,
-      origin,
-      platform,
-      '/getLinks',
-      'discover-backend',
-      isbot(user_agent)
-    );
-  }
+  const user_agent = req.headers['user-agent'] || "";
+  const origin = req.headers.origin || "";
 
   try {
+
+    if (!reviewStatusEnable) {
+      await logVisitorToDB(
+        getCountryFromRequest(req),
+        user_agent || "",
+        origin || "",
+        platform || "",
+        '/getLinks',
+        'discover-backend',
+        isbot(user_agent)
+      );
+    }
+
     const tagsAllowlistArray = (tagsAllowlist || "")
       .split(",")
       .map(t => t.trim())
@@ -521,12 +525,12 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
     // Add visitor tracking
     await logVisitorToDB(
       getCountryFromRequest(req),
-      req.headers['user-agent'] || 'Unknown',
-      req.headers.origin || 'direct',
-      req.query.platform,
+      req.headers['user-agent'] || "",
+      req.headers.origin || "",
+      req.query.platform || "",
       '/addlink',
       'discover-backend',
-      isbot(req.headers['user-agent'] || 'Unknown')
+      isbot(req.headers['user-agent'] || "")
     );
 
     // API code
@@ -624,12 +628,12 @@ app.get('/', async (req, res, next) => {
     // Add visitor logging here
     await logVisitorToDB(
       getCountryFromRequest(req),
-      req.headers['user-agent'] || 'Unknown',
-      req.headers.origin || 'direct',
-      req.query.platform,
+      req.headers['user-agent'] || "",
+      req.headers.origin || "",
+      req.query.platform || "",
       '/',
       'discover-backend',
-      isbot(req.headers['user-agent'] || 'Unknown')
+      isbot(req.headers['user-agent'] || "")
     );
 
     // Routing
