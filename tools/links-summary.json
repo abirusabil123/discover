@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-31T06:53:58.093Z",
+    "generatedAt": "2026-05-31T07:00:28.160Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 96
   },
@@ -247,6 +247,16 @@
       {
         "path": "/work-life.html",
         "count": 1
+      }
+    ],
+    "byBotStatus": [
+      {
+        "status": "Human",
+        "count": 97
+      },
+      {
+        "status": "Bot",
+        "count": 115
       }
     ]
   },

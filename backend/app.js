@@ -227,31 +227,31 @@ app.get('/visitors-analytics', async (req, res, next) => {
     const [byCountry] = await connection.execute(
       'SELECT country, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY country ORDER BY country ASC'
     );
-
     // Get visitors by YYYYMM (keep chronological order)
     const [byMonth] = await connection.execute(
       'SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY month ORDER BY month DESC'
     );
-
     // Get visitors by platform
     const [byPlatform] = await connection.execute(
       'SELECT platform, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY platform ORDER BY platform ASC'
     );
-
     // Get visitors by product
     const [byProduct] = await connection.execute(
       'SELECT product, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY product ORDER BY product ASC'
     );
-
     // Get visitors by origin
     const [byOrigin] = await connection.execute(
       'SELECT origin, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY origin ORDER BY origin ASC'
     );
-
     // Get visitors by path
     const [byPath] = await connection.execute(
       'SELECT path, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY path ORDER BY path ASC'
     );
+    // Get visitors by bot status
+    const [byBotStatus] = await connection.execute(
+      "SELECT CASE WHEN bot = 1 THEN 'Bot' ELSE 'Human' END AS status, COUNT(*) as count FROM visitors GROUP BY bot ORDER BY bot"
+    );
+
     await connection.end();
 
     res.json({
@@ -260,7 +260,8 @@ app.get('/visitors-analytics', async (req, res, next) => {
       byPlatform,
       byProduct,
       byOrigin,
-      byPath
+      byPath,
+      byBotStatus
     });
 
   } catch (error) {
