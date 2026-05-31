@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-26T01:54:08.773Z",
+    "generatedAt": "2026-05-31T06:53:58.093Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 96
   },
@@ -91,6 +91,10 @@
   "visitors": {
     "byCountry": [
       {
+        "country": "",
+        "count": 32
+      },
+      {
         "country": "AT",
         "count": 1
       },
@@ -100,7 +104,7 @@
       },
       {
         "country": "BG",
-        "count": 16
+        "count": 22
       },
       {
         "country": "CA",
@@ -131,32 +135,32 @@
         "count": 1
       },
       {
-        "country": "Unknown",
-        "count": 25
+        "country": "SG",
+        "count": 1
       },
       {
         "country": "US",
-        "count": 21
+        "count": 26
       }
     ],
     "byMonth": [
       {
         "month": "202605",
-        "count": 78
+        "count": 97
       }
     ],
     "byPlatform": [
       {
+        "platform": "",
+        "count": 61
+      },
+      {
         "platform": "desktop",
-        "count": 21
+        "count": 26
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
         "count": 10
-      },
-      {
-        "platform": "unknown",
-        "count": 47
       }
     ],
     "byProduct": [
@@ -166,13 +170,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 68
+        "count": 87
       }
     ],
     "byOrigin": [
       {
-        "origin": "direct",
-        "count": 47
+        "origin": "",
+        "count": 61
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -208,13 +212,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 21
+        "count": 26
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 48
+        "count": 62
       },
       {
         "path": "/art.html",
@@ -222,7 +226,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 21
+        "count": 26
       },
       {
         "path": "/index.html",
@@ -247,7 +251,7 @@
     ]
   },
   "errors": {
-    "count": 1,
+    "count": 3,
     "unresolved": 0,
     "allUnresolvedErrors": []
   }
