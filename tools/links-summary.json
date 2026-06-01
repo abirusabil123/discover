@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-31T07:00:28.160Z",
+    "generatedAt": "2026-06-01T16:57:19.971Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 96
   },
@@ -92,7 +92,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 32
+        "count": 34
       },
       {
         "country": "AT",
@@ -100,11 +100,11 @@
       },
       {
         "country": "BA",
-        "count": 1
+        "count": 2
       },
       {
         "country": "BG",
-        "count": 22
+        "count": 24
       },
       {
         "country": "CA",
@@ -124,7 +124,7 @@
       },
       {
         "country": "HK",
-        "count": 1
+        "count": 3
       },
       {
         "country": "IN",
@@ -132,7 +132,7 @@
       },
       {
         "country": "JP",
-        "count": 1
+        "count": 5
       },
       {
         "country": "SG",
@@ -140,19 +140,23 @@
       },
       {
         "country": "US",
-        "count": 26
+        "count": 34
       }
     ],
     "byMonth": [
       {
+        "month": "202606",
+        "count": 8
+      },
+      {
         "month": "202605",
-        "count": 97
+        "count": 108
       }
     ],
     "byPlatform": [
       {
         "platform": "",
-        "count": 61
+        "count": 80
       },
       {
         "platform": "desktop",
@@ -170,13 +174,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 87
+        "count": 106
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 61
+        "count": 80
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -218,7 +222,7 @@
     "byPath": [
       {
         "path": "/",
-        "count": 62
+        "count": 81
       },
       {
         "path": "/art.html",
@@ -252,11 +256,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 97
+        "count": 116
       },
       {
         "status": "Bot",
-        "count": 115
+        "count": 127
       }
     ]
   },
