@@ -746,6 +746,22 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://palestine.com/",
+    "name": "palestine.com",
+    "description": "The website https://palestine.com/.",
+    "tags": [
+      "positive",
+      "palestine",
+      "free"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://patatap.com/",
     "name": "Patatap",
     "description": "Turn your keyboard into a sound machine with colorful animations",

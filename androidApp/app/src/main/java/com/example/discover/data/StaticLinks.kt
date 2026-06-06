@@ -10,7 +10,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("positive"),
-            views = 15,
+            views = 22,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -20,7 +20,7 @@ object StaticLinks {
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
             tags = listOf("positive", "code", "learning", "fun", "poetic"),
-            views = 127,
+            views = 136,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://easywaytoquran.com/4-qul-in-islam-2/",
             description = "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
             tags = listOf("positive", "quran", "islam", "learning"),
-            views = 50,
+            views = 56,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -40,7 +40,7 @@ object StaticLinks {
             url = "https://highscalability.com/",
             description = "System Design Blogs",
             tags = listOf("positive", "user-submitted"),
-            views = 115,
+            views = 121,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -50,8 +50,8 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("positive", "news"),
-            views = 27,
-            likesMobile = 3,
+            views = 35,
+            likesMobile = 4,
             dislikesMobile = 0
         ),
 
@@ -60,7 +60,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media",
             tags = listOf("positive", "twitteralternative", "socialmedia"),
-            views = 37,
+            views = 44,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -70,7 +70,7 @@ object StaticLinks {
             url = "https://ncase.me/",
             description = "Interactive simulations about trust and human behavior",
             tags = listOf("positive", "curated", "sample"),
-            views = 181,
+            views = 189,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -80,9 +80,19 @@ object StaticLinks {
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship",
             tags = listOf("positive", "curated", "sample"),
-            views = 261,
+            views = 267,
             likesMobile = 41,
             dislikesMobile = 3
+        ),
+
+        Link(
+            name = "palestine.com",
+            url = "https://palestine.com/",
+            description = "The website https://palestine.com/.",
+            tags = listOf("positive", "palestine", "free"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
         ),
 
         Link(
@@ -90,7 +100,7 @@ object StaticLinks {
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
             tags = listOf("positive", "curated", "sample"),
-            views = 181,
+            views = 188,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -100,7 +110,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("positive", "curated", "sample"),
-            views = 184,
+            views = 193,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -110,7 +120,7 @@ object StaticLinks {
             url = "https://projecteuler.net/archives",
             description = "Math and Computer Science puzzles.",
             tags = listOf("positive", "learning"),
-            views = 8,
+            views = 13,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -120,7 +130,7 @@ object StaticLinks {
             url = "https://pudding.cool/",
             description = "Visual essays that explain ideas with data and visuals",
             tags = listOf("positive", "curated", "sample"),
-            views = 188,
+            views = 195,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -130,7 +140,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers",
             tags = listOf("positive", "curated", "sample"),
-            views = 326,
+            views = 331,
             likesMobile = 55,
             dislikesMobile = 4
         ),
@@ -140,7 +150,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("positive", "curated", "sample"),
-            views = 193,
+            views = 198,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -150,7 +160,7 @@ object StaticLinks {
             url = "https://www.digit.in/",
             description = "Technology magazine.",
             tags = listOf("positive", "new", "tech"),
-            views = 0,
+            views = 6,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -160,7 +170,7 @@ object StaticLinks {
             url = "https://www.producthunt.com/",
             description = "Platform for sharing and discovering new products",
             tags = listOf("positive", "curated", "sample"),
-            views = 230,
+            views = 236,
             likesMobile = 31,
             dislikesMobile = 3
         ),
@@ -170,7 +180,7 @@ object StaticLinks {
             url = "https://www.rekhta.org/tags/famous-shayari/couplets",
             description = "Ponder and it might help clear blockers in the mind.",
             tags = listOf("positive", "shayaris", "cool", "poetic", "beautiful"),
-            views = 130,
+            views = 141,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -180,7 +190,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("positive", "social", "media"),
-            views = 129,
+            views = 137,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -190,7 +200,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("positive", "social", "media"),
-            views = 126,
+            views = 133,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -200,8 +210,8 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("positive", "learning", "news"),
-            views = 19,
-            likesMobile = 3,
+            views = 26,
+            likesMobile = 4,
             dislikesMobile = 0
         ),
 
@@ -210,7 +220,7 @@ object StaticLinks {
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
             tags = listOf("positive", "tiktok", "videos"),
-            views = 41,
+            views = 49,
             likesMobile = 0,
             dislikesMobile = 0
         )
