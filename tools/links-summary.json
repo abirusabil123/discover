@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-06T14:08:18.599Z",
+    "generatedAt": "2026-06-07T14:58:10.166Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 97
   },
@@ -92,7 +92,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 47
+        "count": 48
       },
       {
         "country": "AT",
@@ -104,7 +104,7 @@
       },
       {
         "country": "BG",
-        "count": 38
+        "count": 44
       },
       {
         "country": "CA",
@@ -152,13 +152,13 @@
       },
       {
         "country": "US",
-        "count": 60
+        "count": 65
       }
     ],
     "byMonth": [
       {
         "month": "202606",
-        "count": 74
+        "count": 86
       },
       {
         "month": "202605",
@@ -168,11 +168,11 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 136
+        "count": 147
       },
       {
         "platform": "desktop",
-        "count": 30
+        "count": 31
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -186,13 +186,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 166
+        "count": 178
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 136
+        "count": 147
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -228,13 +228,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 30
+        "count": 31
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 138
+        "count": 149
       },
       {
         "path": "/addlink",
@@ -246,7 +246,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 30
+        "count": 31
       },
       {
         "path": "/index.html",
@@ -272,11 +272,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 182
+        "count": 194
       },
       {
         "status": "Bot",
-        "count": 171
+        "count": 182
       }
     ]
   },
