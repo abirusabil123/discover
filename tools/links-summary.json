@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-07T14:58:10.166Z",
+    "generatedAt": "2026-06-13T04:48:43.797Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 97
   },
@@ -92,7 +92,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 48
+        "count": 50
       },
       {
         "country": "AT",
@@ -100,35 +100,39 @@
       },
       {
         "country": "BA",
-        "count": 2
+        "count": 3
       },
       {
         "country": "BG",
-        "count": 44
+        "count": 54
       },
       {
         "country": "CA",
-        "count": 1
+        "count": 2
       },
       {
         "country": "CN",
-        "count": 3
+        "count": 5
       },
       {
         "country": "DE",
-        "count": 3
+        "count": 5
       },
       {
         "country": "EE",
         "count": 1
       },
       {
+        "country": "FI",
+        "count": 2
+      },
+      {
         "country": "GB",
-        "count": 4
+        "count": 6
       },
       {
         "country": "HK",
-        "count": 3
+        "count": 6
       },
       {
         "country": "IN",
@@ -140,11 +144,11 @@
       },
       {
         "country": "NL",
-        "count": 3
+        "count": 4
       },
       {
         "country": "RU",
-        "count": 1
+        "count": 3
       },
       {
         "country": "SG",
@@ -152,13 +156,13 @@
       },
       {
         "country": "US",
-        "count": 65
+        "count": 85
       }
     ],
     "byMonth": [
       {
         "month": "202606",
-        "count": 86
+        "count": 134
       },
       {
         "month": "202605",
@@ -168,11 +172,11 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 147
+        "count": 193
       },
       {
         "platform": "desktop",
-        "count": 31
+        "count": 33
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -186,13 +190,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 178
+        "count": 226
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 147
+        "count": 193
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -228,13 +232,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 31
+        "count": 33
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 149
+        "count": 195
       },
       {
         "path": "/addlink",
@@ -246,7 +250,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 31
+        "count": 33
       },
       {
         "path": "/index.html",
@@ -272,17 +276,17 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 194
+        "count": 242
       },
       {
         "status": "Bot",
-        "count": 182
+        "count": 230
       }
     ]
   },
   "errors": {
-    "count": 4,
-    "unresolved": 1,
+    "count": 5,
+    "unresolved": 2,
     "allUnresolvedErrors": [
       {
         "id": 4,
@@ -291,6 +295,16 @@
         "level": "error",
         "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 5,
+        "timestamp": "2026-06-11T16:50:44.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: Failed to fetch<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/136.0.0.0 Safari/537.36",
         "resolved": 0,
         "resolved_at": null
       }
