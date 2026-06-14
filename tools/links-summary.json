@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-13T04:48:43.797Z",
+    "generatedAt": "2026-06-14T15:18:18.468Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 97
   },
@@ -92,11 +92,11 @@
     "byCountry": [
       {
         "country": "",
-        "count": 50
+        "count": 54
       },
       {
         "country": "AT",
-        "count": 1
+        "count": 2
       },
       {
         "country": "BA",
@@ -104,7 +104,7 @@
       },
       {
         "country": "BG",
-        "count": 54
+        "count": 60
       },
       {
         "country": "CA",
@@ -112,7 +112,7 @@
       },
       {
         "country": "CN",
-        "count": 5
+        "count": 6
       },
       {
         "country": "DE",
@@ -156,13 +156,13 @@
       },
       {
         "country": "US",
-        "count": 85
+        "count": 93
       }
     ],
     "byMonth": [
       {
         "month": "202606",
-        "count": 134
+        "count": 154
       },
       {
         "month": "202605",
@@ -172,11 +172,11 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 193
+        "count": 208
       },
       {
         "platform": "desktop",
-        "count": 33
+        "count": 38
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -190,13 +190,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 226
+        "count": 246
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 193
+        "count": 209
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -232,13 +232,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 33
+        "count": 37
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 195
+        "count": 210
       },
       {
         "path": "/addlink",
@@ -250,7 +250,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 33
+        "count": 38
       },
       {
         "path": "/index.html",
@@ -276,11 +276,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 242
+        "count": 262
       },
       {
         "status": "Bot",
-        "count": 230
+        "count": 245
       }
     ]
   },
