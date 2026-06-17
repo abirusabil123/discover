@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-14T15:18:18.468Z",
+    "generatedAt": "2026-06-17T08:09:08.739Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 97
   },
@@ -92,7 +92,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 54
+        "count": 59
       },
       {
         "country": "AT",
@@ -104,7 +104,7 @@
       },
       {
         "country": "BG",
-        "count": 60
+        "count": 61
       },
       {
         "country": "CA",
@@ -112,7 +112,7 @@
       },
       {
         "country": "CN",
-        "count": 6
+        "count": 12
       },
       {
         "country": "DE",
@@ -127,8 +127,12 @@
         "count": 2
       },
       {
+        "country": "FR",
+        "count": 1
+      },
+      {
         "country": "GB",
-        "count": 6
+        "count": 7
       },
       {
         "country": "HK",
@@ -136,7 +140,7 @@
       },
       {
         "country": "IN",
-        "count": 9
+        "count": 12
       },
       {
         "country": "JP",
@@ -144,11 +148,15 @@
       },
       {
         "country": "NL",
-        "count": 4
+        "count": 5
       },
       {
         "country": "RU",
         "count": 3
+      },
+      {
+        "country": "SC",
+        "count": 1
       },
       {
         "country": "SG",
@@ -156,13 +164,13 @@
       },
       {
         "country": "US",
-        "count": 93
+        "count": 107
       }
     ],
     "byMonth": [
       {
         "month": "202606",
-        "count": 154
+        "count": 187
       },
       {
         "month": "202605",
@@ -172,39 +180,51 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 208
+        "count": 235
       },
       {
         "platform": "desktop",
-        "count": 38
+        "count": 40
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
         "count": 16
+      },
+      {
+        "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0",
+        "count": 2
+      },
+      {
+        "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb",
+        "count": 1
+      },
+      {
+        "platform": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+        "count": 1
       }
     ],
     "byProduct": [
       {
         "product": "abirusabil123.github.io",
-        "count": 16
+        "count": 20
       },
       {
         "product": "discover-backend",
-        "count": 246
+        "count": 275
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 209
+        "count": 236
       },
       {
         "origin": "https://abirusabil123.github.io",
-        "count": 3
+        "count": 5
       },
       {
         "origin": "https://abirusabil123.github.io/",
-        "count": 2
+        "count": 3
       },
       {
         "origin": "https://abirusabil123.github.io/art.html",
@@ -231,14 +251,18 @@
         "count": 2
       },
       {
+        "origin": "https://bing.com/",
+        "count": 1
+      },
+      {
         "origin": "https://discoverall.space",
-        "count": 37
+        "count": 39
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 210
+        "count": 240
       },
       {
         "path": "/addlink",
@@ -250,7 +274,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 38
+        "count": 40
       },
       {
         "path": "/index.html",
@@ -270,17 +294,17 @@
       },
       {
         "path": "/work-life.html",
-        "count": 2
+        "count": 3
       }
     ],
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 262
+        "count": 295
       },
       {
         "status": "Bot",
-        "count": 245
+        "count": 263
       }
     ]
   },
