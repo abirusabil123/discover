@@ -14,7 +14,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 59,
+            "views": 60,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -29,7 +29,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 75,
+            "views": 76,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 2,
@@ -42,7 +42,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 22,
+            "views": 31,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -59,7 +59,7 @@ const STATIC = {
                 "fun",
                 "poetic"
             ],
-            "views": 136,
+            "views": 145,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -75,7 +75,7 @@ const STATIC = {
                 "islam",
                 "learning"
             ],
-            "views": 56,
+            "views": 66,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -91,7 +91,7 @@ const STATIC = {
                 "blog",
                 "platform"
             ],
-            "views": 6,
+            "views": 7,
             "likesMobile": 0,
             "dislikesMobile": 2000,
             "likesDesktop": 1,
@@ -105,7 +105,7 @@ const STATIC = {
                 "positive",
                 "user-submitted"
             ],
-            "views": 69,
+            "views": 70,
             "likesMobile": 4,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -121,11 +121,11 @@ const STATIC = {
                 "blog",
                 "learning"
             ],
-            "views": 58,
+            "views": 59,
             "likesMobile": 0,
             "dislikesMobile": 3000,
             "likesDesktop": 0,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
             "name": "High Scalability",
@@ -135,7 +135,7 @@ const STATIC = {
                 "positive",
                 "user-submitted"
             ],
-            "views": 121,
+            "views": 130,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -165,10 +165,10 @@ const STATIC = {
                 "videos",
                 "socialmedia"
             ],
-            "views": 6,
+            "views": 8,
             "likesMobile": 0,
             "dislikesMobile": 1000,
-            "likesDesktop": 1,
+            "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
@@ -184,7 +184,7 @@ const STATIC = {
                 "regular",
                 "repeat"
             ],
-            "views": 84,
+            "views": 85,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -198,7 +198,7 @@ const STATIC = {
                 "positive",
                 "news"
             ],
-            "views": 35,
+            "views": 45,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -213,7 +213,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 44,
+            "views": 52,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -228,7 +228,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 189,
+            "views": 197,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 1,
@@ -243,7 +243,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 267,
+            "views": 278,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
@@ -258,10 +258,10 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 0,
+            "views": 10,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -273,7 +273,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 188,
+            "views": 198,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -288,11 +288,11 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 193,
+            "views": 201,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 3,
-            "dislikesDesktop": 1
+            "dislikesDesktop": 2
         },
         {
             "name": "Project Euler Archives",
@@ -302,7 +302,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 13,
+            "views": 22,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -317,7 +317,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 195,
+            "views": 204,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -332,7 +332,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 73,
+            "views": 74,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -347,11 +347,11 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 106,
+            "views": 107,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
             "name": "This Is Sand",
@@ -362,7 +362,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 78,
+            "views": 79,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -377,7 +377,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 331,
+            "views": 343,
             "likesMobile": 55,
             "dislikesMobile": 4,
             "likesDesktop": 27,
@@ -392,7 +392,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 58,
+            "views": 59,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -407,7 +407,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 198,
+            "views": 205,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -422,7 +422,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 56,
+            "views": 57,
             "likesMobile": 2,
             "dislikesMobile": 2000,
             "likesDesktop": 1,
@@ -437,7 +437,23 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 6,
+            "views": 15,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "FIFA world cup 2026",
+            "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+            "description": "Live match updates and post match highlights for FIFA world cup 2026.",
+            "tags": [
+                "fifa",
+                "worldcup",
+                "sports",
+                "positive"
+            ],
+            "views": 0,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -452,7 +468,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 236,
+            "views": 244,
             "likesMobile": 31,
             "dislikesMobile": 3,
             "likesDesktop": 16,
@@ -469,7 +485,7 @@ const STATIC = {
                 "poetic",
                 "beautiful"
             ],
-            "views": 141,
+            "views": 150,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -484,7 +500,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 137,
+            "views": 147,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -499,7 +515,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 133,
+            "views": 142,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -514,7 +530,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 26,
+            "views": 38,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -529,11 +545,11 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 49,
+            "views": 57,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         }
     ]
 };

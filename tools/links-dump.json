@@ -38,7 +38,7 @@
       "positiveplus",
       "user-submitted"
     ],
-    "views": 130,
+    "views": 132,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -159,7 +159,7 @@
     "tags": [
       "positive"
     ],
-    "views": 29,
+    "views": 31,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -209,7 +209,7 @@
       "fun",
       "poetic"
     ],
-    "views": 143,
+    "views": 145,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -298,7 +298,7 @@
       "islam",
       "learning"
     ],
-    "views": 64,
+    "views": 66,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -405,7 +405,7 @@
       "positive",
       "user-submitted"
     ],
-    "views": 128,
+    "views": 130,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -582,7 +582,7 @@
       "positive",
       "news"
     ],
-    "views": 43,
+    "views": 45,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -641,7 +641,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 49,
+    "views": 52,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -707,7 +707,7 @@
       "curated",
       "sample"
     ],
-    "views": 195,
+    "views": 197,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 1,
@@ -738,7 +738,7 @@
       "curated",
       "sample"
     ],
-    "views": 276,
+    "views": 278,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -754,7 +754,7 @@
       "palestine",
       "free"
     ],
-    "views": 8,
+    "views": 10,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -770,7 +770,7 @@
       "curated",
       "sample"
     ],
-    "views": 196,
+    "views": 198,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -801,7 +801,7 @@
       "curated",
       "sample"
     ],
-    "views": 199,
+    "views": 201,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 3,
@@ -832,7 +832,7 @@
       "positive",
       "learning"
     ],
-    "views": 20,
+    "views": 22,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -848,7 +848,7 @@
       "curated",
       "sample"
     ],
-    "views": 202,
+    "views": 204,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1045,7 +1045,7 @@
       "curated",
       "sample"
     ],
-    "views": 341,
+    "views": 343,
     "likesMobile": 55,
     "dislikesMobile": 4,
     "likesDesktop": 27,
@@ -1077,7 +1077,7 @@
       "curated",
       "sample"
     ],
-    "views": 203,
+    "views": 205,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1187,7 +1187,7 @@
       "new",
       "tech"
     ],
-    "views": 13,
+    "views": 15,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1207,6 +1207,23 @@
     "dislikesMobile": 2000,
     "likesDesktop": 6,
     "dislikesDesktop": 1004,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+    "name": "FIFA world cup 2026",
+    "description": "Live match updates and post match highlights for FIFA world cup 2026.",
+    "tags": [
+      "fifa",
+      "worldcup",
+      "sports",
+      "positive"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
@@ -1361,7 +1378,7 @@
       "curated",
       "sample"
     ],
-    "views": 242,
+    "views": 244,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -1379,7 +1396,7 @@
       "poetic",
       "beautiful"
     ],
-    "views": 148,
+    "views": 150,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1395,7 +1412,7 @@
       "social",
       "media"
     ],
-    "views": 145,
+    "views": 147,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1411,7 +1428,7 @@
       "social",
       "media"
     ],
-    "views": 140,
+    "views": 142,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -1427,7 +1444,7 @@
       "learning",
       "news"
     ],
-    "views": 36,
+    "views": 38,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1457,7 +1474,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 55,
+    "views": 57,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,

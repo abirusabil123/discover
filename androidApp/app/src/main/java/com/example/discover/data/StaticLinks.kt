@@ -10,7 +10,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("positive"),
-            views = 22,
+            views = 31,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -20,7 +20,7 @@ object StaticLinks {
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
             tags = listOf("positive", "code", "learning", "fun", "poetic"),
-            views = 136,
+            views = 145,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://easywaytoquran.com/4-qul-in-islam-2/",
             description = "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
             tags = listOf("positive", "quran", "islam", "learning"),
-            views = 56,
+            views = 66,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -40,7 +40,7 @@ object StaticLinks {
             url = "https://highscalability.com/",
             description = "System Design Blogs",
             tags = listOf("positive", "user-submitted"),
-            views = 121,
+            views = 130,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -50,7 +50,7 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("positive", "news"),
-            views = 35,
+            views = 45,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -60,7 +60,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media",
             tags = listOf("positive", "twitteralternative", "socialmedia"),
-            views = 44,
+            views = 52,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -70,7 +70,7 @@ object StaticLinks {
             url = "https://ncase.me/",
             description = "Interactive simulations about trust and human behavior",
             tags = listOf("positive", "curated", "sample"),
-            views = 189,
+            views = 197,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -80,7 +80,7 @@ object StaticLinks {
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship",
             tags = listOf("positive", "curated", "sample"),
-            views = 267,
+            views = 278,
             likesMobile = 41,
             dislikesMobile = 3
         ),
@@ -90,7 +90,7 @@ object StaticLinks {
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
             tags = listOf("positive", "palestine", "free"),
-            views = 0,
+            views = 10,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -100,7 +100,7 @@ object StaticLinks {
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
             tags = listOf("positive", "curated", "sample"),
-            views = 188,
+            views = 198,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -110,7 +110,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("positive", "curated", "sample"),
-            views = 193,
+            views = 201,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -120,7 +120,7 @@ object StaticLinks {
             url = "https://projecteuler.net/archives",
             description = "Math and Computer Science puzzles.",
             tags = listOf("positive", "learning"),
-            views = 13,
+            views = 22,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -130,7 +130,7 @@ object StaticLinks {
             url = "https://pudding.cool/",
             description = "Visual essays that explain ideas with data and visuals",
             tags = listOf("positive", "curated", "sample"),
-            views = 195,
+            views = 204,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -140,7 +140,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers",
             tags = listOf("positive", "curated", "sample"),
-            views = 331,
+            views = 343,
             likesMobile = 55,
             dislikesMobile = 4
         ),
@@ -150,7 +150,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("positive", "curated", "sample"),
-            views = 198,
+            views = 205,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -160,7 +160,17 @@ object StaticLinks {
             url = "https://www.digit.in/",
             description = "Technology magazine.",
             tags = listOf("positive", "new", "tech"),
-            views = 6,
+            views = 15,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "FIFA world cup 2026",
+            url = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+            description = "Live match updates and post match highlights for FIFA world cup 2026.",
+            tags = listOf("fifa", "worldcup", "sports", "positive"),
+            views = 0,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -170,7 +180,7 @@ object StaticLinks {
             url = "https://www.producthunt.com/",
             description = "Platform for sharing and discovering new products",
             tags = listOf("positive", "curated", "sample"),
-            views = 236,
+            views = 244,
             likesMobile = 31,
             dislikesMobile = 3
         ),
@@ -180,7 +190,7 @@ object StaticLinks {
             url = "https://www.rekhta.org/tags/famous-shayari/couplets",
             description = "Ponder and it might help clear blockers in the mind.",
             tags = listOf("positive", "shayaris", "cool", "poetic", "beautiful"),
-            views = 141,
+            views = 150,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -190,7 +200,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("positive", "social", "media"),
-            views = 137,
+            views = 147,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -200,7 +210,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("positive", "social", "media"),
-            views = 133,
+            views = 142,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -210,7 +220,7 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("positive", "learning", "news"),
-            views = 26,
+            views = 38,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -220,7 +230,7 @@ object StaticLinks {
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
             tags = listOf("positive", "tiktok", "videos"),
-            views = 49,
+            views = 57,
             likesMobile = 0,
             dislikesMobile = 0
         )
