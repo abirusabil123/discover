@@ -16,31 +16,11 @@ object StaticLinks {
         ),
 
         Link(
-            name = "Codeforces",
-            url = "https://codeforces.com/problemset",
-            description = "The top competitive programming platform.",
-            tags = listOf("positive", "dailyplus", "code", "learning", "fun", "poetic"),
-            views = 146,
-            likesMobile = 0,
-            dislikesMobile = 0
-        ),
-
-        Link(
             name = "4 Quls in Quran",
             url = "https://easywaytoquran.com/4-qul-in-islam-2/",
             description = "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
             tags = listOf("positive", "daily", "quran", "islam", "learning"),
             views = 69,
-            likesMobile = 1,
-            dislikesMobile = 0
-        ),
-
-        Link(
-            name = "High Scalability",
-            url = "https://highscalability.com/",
-            description = "System Design Blogs",
-            tags = listOf("positive", "user-submitted"),
-            views = 132,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -66,16 +46,6 @@ object StaticLinks {
         ),
 
         Link(
-            name = "Ncase.me",
-            url = "https://ncase.me/",
-            description = "Interactive simulations about trust and human behavior",
-            tags = listOf("positive", "curated", "sample"),
-            views = 198,
-            likesMobile = 3,
-            dislikesMobile = 1
-        ),
-
-        Link(
             name = "Hacker News",
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship",
@@ -83,16 +53,6 @@ object StaticLinks {
             views = 280,
             likesMobile = 41,
             dislikesMobile = 3
-        ),
-
-        Link(
-            name = "Islamic lunar calendar 12 months",
-            url = "https://ocmic.org.uk/12-islamic-months/",
-            description = "The Islamic calendar is moon based compared to the sun based Gregorian calendar.The lunar year is approximately 354 days long which is shorter than the solar year of approximately 365 days.",
-            tags = listOf("positive", "good", "calendar", "lunar", "islam"),
-            views = 0,
-            likesMobile = 0,
-            dislikesMobile = 0
         ),
 
         Link(
@@ -123,26 +83,6 @@ object StaticLinks {
             views = 204,
             likesMobile = 4,
             dislikesMobile = 1
-        ),
-
-        Link(
-            name = "Project Euler Archives",
-            url = "https://projecteuler.net/archives",
-            description = "Math and Computer Science puzzles.",
-            tags = listOf("positive", "dailyplus", "learning"),
-            views = 26,
-            likesMobile = 1,
-            dislikesMobile = 0
-        ),
-
-        Link(
-            name = "The Pudding",
-            url = "https://pudding.cool/",
-            description = "Visual essays that explain ideas with data and visuals",
-            tags = listOf("positive", "curated", "sample"),
-            views = 206,
-            likesMobile = 2,
-            dislikesMobile = 0
         ),
 
         Link(
@@ -192,26 +132,6 @@ object StaticLinks {
             tags = listOf("fifa", "worldcup", "sports", "positive", "daily"),
             views = 2,
             likesMobile = 0,
-            dislikesMobile = 0
-        ),
-
-        Link(
-            name = "Product Hunt",
-            url = "https://www.producthunt.com/",
-            description = "Platform for sharing and discovering new products",
-            tags = listOf("positive", "dailyplus", "curated", "sample"),
-            views = 247,
-            likesMobile = 31,
-            dislikesMobile = 3
-        ),
-
-        Link(
-            name = "Rekhta famous shayaris",
-            url = "https://www.rekhta.org/tags/famous-shayari/couplets",
-            description = "Ponder and it might help clear blockers in the mind.",
-            tags = listOf("positive", "dailyplus", "shayaris", "cool", "poetic", "beautiful"),
-            views = 152,
-            likesMobile = 1,
             dislikesMobile = 0
         ),
 
