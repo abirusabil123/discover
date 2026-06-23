@@ -157,7 +157,8 @@
     "name": "Bluesky",
     "description": "Social media",
     "tags": [
-      "positive"
+      "positive",
+      "daily"
     ],
     "views": 32,
     "likesMobile": 1,
@@ -204,6 +205,7 @@
     "description": "The top competitive programming platform.",
     "tags": [
       "positive",
+      "dailyplus",
       "code",
       "learning",
       "fun",
@@ -294,6 +296,7 @@
     "description": "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
     "tags": [
       "positive",
+      "daily",
       "quran",
       "islam",
       "learning"
@@ -580,6 +583,7 @@
     "description": "News website",
     "tags": [
       "positive",
+      "daily",
       "news"
     ],
     "views": 46,
@@ -638,6 +642,7 @@
     "description": "Decentralized social media",
     "tags": [
       "positive",
+      "daily",
       "twitteralternative",
       "socialmedia"
     ],
@@ -735,6 +740,7 @@
     "description": "Social news link focusing on computer science and entrepreneurship",
     "tags": [
       "positive",
+      "daily",
       "curated",
       "sample"
     ],
@@ -769,6 +775,7 @@
     "description": "The website https://palestine.com/.",
     "tags": [
       "positive",
+      "daily",
       "palestine",
       "free"
     ],
@@ -785,6 +792,7 @@
     "description": "Turn your keyboard into a sound machine with colorful animations",
     "tags": [
       "positive",
+      "daily",
       "curated",
       "sample"
     ],
@@ -816,6 +824,7 @@
     "description": "Photos of people pointing at your cursor wherever you move it",
     "tags": [
       "positive",
+      "daily",
       "curated",
       "sample"
     ],
@@ -848,6 +857,7 @@
     "description": "Math and Computer Science puzzles.",
     "tags": [
       "positive",
+      "dailyplus",
       "learning"
     ],
     "views": 26,
@@ -1076,6 +1086,7 @@
     "description": "Beautiful, free images gifted by the world's most generous community of photographers",
     "tags": [
       "positive",
+      "daily",
       "curated",
       "sample"
     ],
@@ -1108,6 +1119,7 @@
     "description": "International news and current affairs network",
     "tags": [
       "positive",
+      "daily",
       "curated",
       "sample"
     ],
@@ -1218,6 +1230,7 @@
     "description": "Technology magazine.",
     "tags": [
       "positive",
+      "daily",
       "new",
       "tech"
     ],
@@ -1267,7 +1280,8 @@
       "fifa",
       "worldcup",
       "sports",
-      "positive"
+      "positive",
+      "daily"
     ],
     "views": 2,
     "likesMobile": 0,
@@ -1441,6 +1455,7 @@
     "description": "Platform for sharing and discovering new products",
     "tags": [
       "positive",
+      "dailyplus",
       "curated",
       "sample"
     ],
@@ -1457,6 +1472,7 @@
     "description": "Ponder and it might help clear blockers in the mind.",
     "tags": [
       "positive",
+      "dailyplus",
       "shayaris",
       "cool",
       "poetic",
@@ -1475,6 +1491,7 @@
     "description": "Social media.",
     "tags": [
       "positive",
+      "daily",
       "social",
       "media"
     ],
@@ -1491,6 +1508,7 @@
     "description": "Social media.",
     "tags": [
       "positive",
+      "daily",
       "social",
       "media"
     ],
@@ -1507,6 +1525,7 @@
     "description": "News site",
     "tags": [
       "positive",
+      "daily",
       "learning",
       "news"
     ],
@@ -1537,6 +1556,7 @@
     "description": "Short form YouTube videos in TikTok style.",
     "tags": [
       "positive",
+      "daily",
       "tiktok",
       "videos"
     ],

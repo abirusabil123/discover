@@ -9,7 +9,7 @@ object StaticLinks {
             name = "Bluesky",
             url = "https://bsky.app/",
             description = "Social media",
-            tags = listOf("positive"),
+            tags = listOf("positive", "daily"),
             views = 32,
             likesMobile = 1,
             dislikesMobile = 0
@@ -19,7 +19,7 @@ object StaticLinks {
             name = "Codeforces",
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
-            tags = listOf("positive", "code", "learning", "fun", "poetic"),
+            tags = listOf("positive", "dailyplus", "code", "learning", "fun", "poetic"),
             views = 146,
             likesMobile = 0,
             dislikesMobile = 0
@@ -29,7 +29,7 @@ object StaticLinks {
             name = "4 Quls in Quran",
             url = "https://easywaytoquran.com/4-qul-in-islam-2/",
             description = "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
-            tags = listOf("positive", "quran", "islam", "learning"),
+            tags = listOf("positive", "daily", "quran", "islam", "learning"),
             views = 69,
             likesMobile = 1,
             dislikesMobile = 0
@@ -49,7 +49,7 @@ object StaticLinks {
             name = "maktoobmedia",
             url = "https://maktoobmedia.com/",
             description = "News website",
-            tags = listOf("positive", "news"),
+            tags = listOf("positive", "daily", "news"),
             views = 46,
             likesMobile = 4,
             dislikesMobile = 0
@@ -59,7 +59,7 @@ object StaticLinks {
             name = "Mastodon",
             url = "https://mastodon.social/explore",
             description = "Decentralized social media",
-            tags = listOf("positive", "twitteralternative", "socialmedia"),
+            tags = listOf("positive", "daily", "twitteralternative", "socialmedia"),
             views = 54,
             likesMobile = 0,
             dislikesMobile = 0
@@ -79,7 +79,7 @@ object StaticLinks {
             name = "Hacker News",
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship",
-            tags = listOf("positive", "curated", "sample"),
+            tags = listOf("positive", "daily", "curated", "sample"),
             views = 280,
             likesMobile = 41,
             dislikesMobile = 3
@@ -99,7 +99,7 @@ object StaticLinks {
             name = "palestine.com",
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
-            tags = listOf("positive", "palestine", "free"),
+            tags = listOf("positive", "daily", "palestine", "free"),
             views = 12,
             likesMobile = 0,
             dislikesMobile = 0
@@ -109,7 +109,7 @@ object StaticLinks {
             name = "Patatap",
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
-            tags = listOf("positive", "curated", "sample"),
+            tags = listOf("positive", "daily", "curated", "sample"),
             views = 199,
             likesMobile = 4,
             dislikesMobile = 0
@@ -119,7 +119,7 @@ object StaticLinks {
             name = "Pointer Pointer",
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
-            tags = listOf("positive", "curated", "sample"),
+            tags = listOf("positive", "daily", "curated", "sample"),
             views = 204,
             likesMobile = 4,
             dislikesMobile = 1
@@ -129,7 +129,7 @@ object StaticLinks {
             name = "Project Euler Archives",
             url = "https://projecteuler.net/archives",
             description = "Math and Computer Science puzzles.",
-            tags = listOf("positive", "learning"),
+            tags = listOf("positive", "dailyplus", "learning"),
             views = 26,
             likesMobile = 1,
             dislikesMobile = 0
@@ -159,7 +159,7 @@ object StaticLinks {
             name = "Unsplash",
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers",
-            tags = listOf("positive", "curated", "sample"),
+            tags = listOf("positive", "daily", "curated", "sample"),
             views = 345,
             likesMobile = 55,
             dislikesMobile = 4
@@ -169,7 +169,7 @@ object StaticLinks {
             name = "Al Jazeera",
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
-            tags = listOf("positive", "curated", "sample"),
+            tags = listOf("positive", "daily", "curated", "sample"),
             views = 208,
             likesMobile = 8,
             dislikesMobile = 0
@@ -179,7 +179,7 @@ object StaticLinks {
             name = "Digit",
             url = "https://www.digit.in/",
             description = "Technology magazine.",
-            tags = listOf("positive", "new", "tech"),
+            tags = listOf("positive", "daily", "new", "tech"),
             views = 19,
             likesMobile = 0,
             dislikesMobile = 0
@@ -189,7 +189,7 @@ object StaticLinks {
             name = "FIFA world cup 2026",
             url = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
             description = "Live match updates and post match highlights for FIFA world cup 2026.",
-            tags = listOf("fifa", "worldcup", "sports", "positive"),
+            tags = listOf("fifa", "worldcup", "sports", "positive", "daily"),
             views = 2,
             likesMobile = 0,
             dislikesMobile = 0
@@ -199,7 +199,7 @@ object StaticLinks {
             name = "Product Hunt",
             url = "https://www.producthunt.com/",
             description = "Platform for sharing and discovering new products",
-            tags = listOf("positive", "curated", "sample"),
+            tags = listOf("positive", "dailyplus", "curated", "sample"),
             views = 247,
             likesMobile = 31,
             dislikesMobile = 3
@@ -209,7 +209,7 @@ object StaticLinks {
             name = "Rekhta famous shayaris",
             url = "https://www.rekhta.org/tags/famous-shayari/couplets",
             description = "Ponder and it might help clear blockers in the mind.",
-            tags = listOf("positive", "shayaris", "cool", "poetic", "beautiful"),
+            tags = listOf("positive", "dailyplus", "shayaris", "cool", "poetic", "beautiful"),
             views = 152,
             likesMobile = 1,
             dislikesMobile = 0
@@ -219,7 +219,7 @@ object StaticLinks {
             name = "Blind",
             url = "https://www.teamblind.com/",
             description = "Social media.",
-            tags = listOf("positive", "social", "media"),
+            tags = listOf("positive", "daily", "social", "media"),
             views = 150,
             likesMobile = 0,
             dislikesMobile = 0
@@ -229,7 +229,7 @@ object StaticLinks {
             name = "Blind recent sort",
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
-            tags = listOf("positive", "social", "media"),
+            tags = listOf("positive", "daily", "social", "media"),
             views = 143,
             likesMobile = 3,
             dislikesMobile = 1
@@ -239,7 +239,7 @@ object StaticLinks {
             name = "World Socialist Web Site",
             url = "https://www.wsws.org/",
             description = "News site",
-            tags = listOf("positive", "learning", "news"),
+            tags = listOf("positive", "daily", "learning", "news"),
             views = 40,
             likesMobile = 4,
             dislikesMobile = 0
@@ -249,7 +249,7 @@ object StaticLinks {
             name = "YouTube shorts",
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
-            tags = listOf("positive", "tiktok", "videos"),
+            tags = listOf("positive", "daily", "tiktok", "videos"),
             views = 60,
             likesMobile = 0,
             dislikesMobile = 0

@@ -40,7 +40,8 @@ const STATIC = {
             "url": "https://bsky.app/",
             "description": "Social media",
             "tags": [
-                "positive"
+                "positive",
+                "daily"
             ],
             "views": 32,
             "likesMobile": 1,
@@ -54,6 +55,7 @@ const STATIC = {
             "description": "The top competitive programming platform.",
             "tags": [
                 "positive",
+                "dailyplus",
                 "code",
                 "learning",
                 "fun",
@@ -71,6 +73,7 @@ const STATIC = {
             "description": "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
             "tags": [
                 "positive",
+                "daily",
                 "quran",
                 "islam",
                 "learning"
@@ -196,6 +199,7 @@ const STATIC = {
             "description": "News website",
             "tags": [
                 "positive",
+                "daily",
                 "news"
             ],
             "views": 46,
@@ -210,6 +214,7 @@ const STATIC = {
             "description": "Decentralized social media",
             "tags": [
                 "positive",
+                "daily",
                 "twitteralternative",
                 "socialmedia"
             ],
@@ -240,6 +245,7 @@ const STATIC = {
             "description": "Social news link focusing on computer science and entrepreneurship",
             "tags": [
                 "positive",
+                "daily",
                 "curated",
                 "sample"
             ],
@@ -272,6 +278,7 @@ const STATIC = {
             "description": "The website https://palestine.com/.",
             "tags": [
                 "positive",
+                "daily",
                 "palestine",
                 "free"
             ],
@@ -287,6 +294,7 @@ const STATIC = {
             "description": "Turn your keyboard into a sound machine with colorful animations",
             "tags": [
                 "positive",
+                "daily",
                 "curated",
                 "sample"
             ],
@@ -302,6 +310,7 @@ const STATIC = {
             "description": "Photos of people pointing at your cursor wherever you move it",
             "tags": [
                 "positive",
+                "daily",
                 "curated",
                 "sample"
             ],
@@ -317,6 +326,7 @@ const STATIC = {
             "description": "Math and Computer Science puzzles.",
             "tags": [
                 "positive",
+                "dailyplus",
                 "learning"
             ],
             "views": 26,
@@ -406,6 +416,7 @@ const STATIC = {
             "description": "Beautiful, free images gifted by the world's most generous community of photographers",
             "tags": [
                 "positive",
+                "daily",
                 "curated",
                 "sample"
             ],
@@ -436,6 +447,7 @@ const STATIC = {
             "description": "International news and current affairs network",
             "tags": [
                 "positive",
+                "daily",
                 "curated",
                 "sample"
             ],
@@ -466,6 +478,7 @@ const STATIC = {
             "description": "Technology magazine.",
             "tags": [
                 "positive",
+                "daily",
                 "new",
                 "tech"
             ],
@@ -483,7 +496,8 @@ const STATIC = {
                 "fifa",
                 "worldcup",
                 "sports",
-                "positive"
+                "positive",
+                "daily"
             ],
             "views": 2,
             "likesMobile": 0,
@@ -497,6 +511,7 @@ const STATIC = {
             "description": "Platform for sharing and discovering new products",
             "tags": [
                 "positive",
+                "dailyplus",
                 "curated",
                 "sample"
             ],
@@ -512,6 +527,7 @@ const STATIC = {
             "description": "Ponder and it might help clear blockers in the mind.",
             "tags": [
                 "positive",
+                "dailyplus",
                 "shayaris",
                 "cool",
                 "poetic",
@@ -529,6 +545,7 @@ const STATIC = {
             "description": "Social media.",
             "tags": [
                 "positive",
+                "daily",
                 "social",
                 "media"
             ],
@@ -544,6 +561,7 @@ const STATIC = {
             "description": "Social media.",
             "tags": [
                 "positive",
+                "daily",
                 "social",
                 "media"
             ],
@@ -559,6 +577,7 @@ const STATIC = {
             "description": "News site",
             "tags": [
                 "positive",
+                "daily",
                 "learning",
                 "news"
             ],
@@ -574,6 +593,7 @@ const STATIC = {
             "description": "Short form YouTube videos in TikTok style.",
             "tags": [
                 "positive",
+                "daily",
                 "tiktok",
                 "videos"
             ],
