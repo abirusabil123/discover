@@ -369,11 +369,11 @@ app.get('/getLinks', async (req, res, next) => {
 
     let filtered = parsed.filter(w => {
       if (tagsAllowlistArray.length > 0) {
-        const hasAllowedTag = w.tags.some(t => tagsAllowlistArray.includes(t));
+        const hasAllowedTag = tagsAllowlistArray.every(t => w.tags.includes(t));
         if (!hasAllowedTag) return false;
       }
       if (tagsBlocklistArray.length > 0) {
-        const hasBlockedTag = w.tags.some(t => tagsBlocklistArray.includes(t));
+        const hasBlockedTag = tagsBlocklistArray.some(t => w.tags.includes(t));
         if (hasBlockedTag) return false;
       }
       if (urlsBlocklistArray.length > 0) {
