@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-23T12:18:01.610Z",
+    "generatedAt": "2026-06-23T14:15:08.637Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 102
   },
@@ -92,7 +92,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 81
+        "count": 86
       },
       {
         "country": "AT",
@@ -164,13 +164,13 @@
       },
       {
         "country": "US",
-        "count": 133
+        "count": 135
       }
     ],
     "byMonth": [
       {
         "month": "202606",
-        "count": 247
+        "count": 254
       },
       {
         "month": "202605",
@@ -180,11 +180,11 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 274
+        "count": 276
       },
       {
         "platform": "desktop",
-        "count": 54
+        "count": 59
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -210,13 +210,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 328
+        "count": 335
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 274
+        "count": 276
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -256,13 +256,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 54
+        "count": 59
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 278
+        "count": 280
       },
       {
         "path": "/addlink",
@@ -274,7 +274,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 54
+        "count": 59
       },
       {
         "path": "/index.html",
@@ -300,17 +300,17 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 355
+        "count": 362
       },
       {
         "status": "Bot",
-        "count": 314
+        "count": 324
       }
     ]
   },
   "errors": {
-    "count": 6,
-    "unresolved": 3,
+    "count": 7,
+    "unresolved": 4,
     "allUnresolvedErrors": [
       {
         "id": 4,
@@ -339,6 +339,16 @@
         "level": "error",
         "message": "Failed to load links from API.<br>Cannot reach backend server: Error: HTTP error! status: 500<br>Fallback to static list.",
         "user_agent": "Mozilla/5.0 (Android 16; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 7,
+        "timestamp": "2026-06-23T14:12:07.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
         "resolved": 0,
         "resolved_at": null
       }
