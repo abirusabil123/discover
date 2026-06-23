@@ -42,7 +42,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 31,
+            "views": 32,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -59,7 +59,7 @@ const STATIC = {
                 "fun",
                 "poetic"
             ],
-            "views": 145,
+            "views": 146,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -75,7 +75,7 @@ const STATIC = {
                 "islam",
                 "learning"
             ],
-            "views": 66,
+            "views": 69,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -135,7 +135,7 @@ const STATIC = {
                 "positive",
                 "user-submitted"
             ],
-            "views": 130,
+            "views": 132,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -198,7 +198,7 @@ const STATIC = {
                 "positive",
                 "news"
             ],
-            "views": 45,
+            "views": 46,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -213,7 +213,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 52,
+            "views": 54,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -228,7 +228,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 197,
+            "views": 198,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 1,
@@ -243,10 +243,27 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 278,
+            "views": 280,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Islamic lunar calendar 12 months",
+            "url": "https://ocmic.org.uk/12-islamic-months/",
+            "description": "The Islamic calendar is moon based compared to the sun based Gregorian calendar.The lunar year is approximately 354 days long which is shorter than the solar year of approximately 365 days.",
+            "tags": [
+                "positive",
+                "good",
+                "calendar",
+                "lunar",
+                "islam"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -258,7 +275,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 10,
+            "views": 12,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -273,7 +290,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 198,
+            "views": 199,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -288,7 +305,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 201,
+            "views": 204,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 3,
@@ -302,7 +319,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 22,
+            "views": 26,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -317,11 +334,26 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 204,
+            "views": 206,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 3,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "safirnews",
+            "url": "https://safirnews.in/",
+            "description": "Indian news website.",
+            "tags": [
+                "news",
+                "positive",
+                "daily"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         },
         {
             "name": "Scream Into the Void",
@@ -377,7 +409,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 343,
+            "views": 345,
             "likesMobile": 55,
             "dislikesMobile": 4,
             "likesDesktop": 27,
@@ -407,7 +439,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 205,
+            "views": 208,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -437,7 +469,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 15,
+            "views": 19,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -453,7 +485,7 @@ const STATIC = {
                 "sports",
                 "positive"
             ],
-            "views": 0,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -468,7 +500,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 244,
+            "views": 247,
             "likesMobile": 31,
             "dislikesMobile": 3,
             "likesDesktop": 16,
@@ -485,7 +517,7 @@ const STATIC = {
                 "poetic",
                 "beautiful"
             ],
-            "views": 150,
+            "views": 152,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -500,7 +532,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 147,
+            "views": 150,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -515,7 +547,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 142,
+            "views": 143,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -530,7 +562,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 38,
+            "views": 40,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -545,7 +577,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 57,
+            "views": 60,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,

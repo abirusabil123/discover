@@ -71,7 +71,7 @@ curl https://backenddiscover.duckdns.org:8443/health
 
 ### 3. Reinitialize the links database
 ```bash
-docker compose exec db mysql -u root -ppassword mydatabase -e "DROP TABLE links;"
+docker compose exec db mysql -u root -ppassword mydatabase -e "DROP TABLE IF EXISTS linksBackup; RENAME TABLE links TO linksBackup;"
 cat db/init.sql | docker compose exec -T db mysql -u root -ppassword mydatabase
 ```
 

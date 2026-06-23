@@ -38,7 +38,7 @@
       "positiveplus",
       "user-submitted"
     ],
-    "views": 132,
+    "views": 133,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -159,7 +159,7 @@
     "tags": [
       "positive"
     ],
-    "views": 31,
+    "views": 32,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -209,7 +209,7 @@
       "fun",
       "poetic"
     ],
-    "views": 145,
+    "views": 146,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -298,7 +298,7 @@
       "islam",
       "learning"
     ],
-    "views": 66,
+    "views": 69,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -405,7 +405,7 @@
       "positive",
       "user-submitted"
     ],
-    "views": 130,
+    "views": 132,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -582,7 +582,7 @@
       "positive",
       "news"
     ],
-    "views": 45,
+    "views": 46,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -641,7 +641,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 52,
+    "views": 54,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -707,7 +707,7 @@
       "curated",
       "sample"
     ],
-    "views": 197,
+    "views": 198,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 1,
@@ -738,10 +738,28 @@
       "curated",
       "sample"
     ],
-    "views": 278,
+    "views": 280,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://ocmic.org.uk/12-islamic-months/",
+    "name": "Islamic lunar calendar 12 months",
+    "description": "The Islamic calendar is moon based compared to the sun based Gregorian calendar.The lunar year is approximately 354 days long which is shorter than the solar year of approximately 365 days.",
+    "tags": [
+      "positive",
+      "good",
+      "calendar",
+      "lunar",
+      "islam"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -754,7 +772,7 @@
       "palestine",
       "free"
     ],
-    "views": 10,
+    "views": 12,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -770,7 +788,7 @@
       "curated",
       "sample"
     ],
-    "views": 198,
+    "views": 199,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -801,7 +819,7 @@
       "curated",
       "sample"
     ],
-    "views": 201,
+    "views": 204,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 3,
@@ -817,7 +835,7 @@
       "cs",
       "coding"
     ],
-    "views": 117,
+    "views": 118,
     "likesMobile": 5,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -832,7 +850,7 @@
       "positive",
       "learning"
     ],
-    "views": 22,
+    "views": 26,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -848,7 +866,7 @@
       "curated",
       "sample"
     ],
-    "views": 204,
+    "views": 206,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -882,6 +900,22 @@
     "likesMobile": 0,
     "dislikesMobile": 1001,
     "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://safirnews.in/",
+    "name": "safirnews",
+    "description": "Indian news website.",
+    "tags": [
+      "news",
+      "positive",
+      "daily"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1045,7 +1079,7 @@
       "curated",
       "sample"
     ],
-    "views": 343,
+    "views": 345,
     "likesMobile": 55,
     "dislikesMobile": 4,
     "likesDesktop": 27,
@@ -1077,7 +1111,7 @@
       "curated",
       "sample"
     ],
-    "views": 205,
+    "views": 208,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1187,7 +1221,23 @@
       "new",
       "tech"
     ],
-    "views": 15,
+    "views": 19,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.ethicalconsumer.org/",
+    "name": "ethicalconsumer",
+    "description": "Learn more about the global brands.",
+    "tags": [
+      "buy",
+      "brands",
+      "ethics"
+    ],
+    "views": 0,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1218,6 +1268,22 @@
       "worldcup",
       "sports",
       "positive"
+    ],
+    "views": 2,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+    "name": "FIFA World Cup 2026 standings",
+    "description": "The results from all FIFA World Cup 2026 matches.",
+    "tags": [
+      "fifa",
+      "worldcup",
+      "canadamexicousa2026"
     ],
     "views": 0,
     "likesMobile": 0,
@@ -1378,7 +1444,7 @@
       "curated",
       "sample"
     ],
-    "views": 244,
+    "views": 247,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -1396,7 +1462,7 @@
       "poetic",
       "beautiful"
     ],
-    "views": 150,
+    "views": 152,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1412,7 +1478,7 @@
       "social",
       "media"
     ],
-    "views": 147,
+    "views": 150,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1428,7 +1494,7 @@
       "social",
       "media"
     ],
-    "views": 142,
+    "views": 143,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -1444,7 +1510,7 @@
       "learning",
       "news"
     ],
-    "views": 38,
+    "views": 40,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1474,7 +1540,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 57,
+    "views": 60,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
