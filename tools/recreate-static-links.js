@@ -196,6 +196,7 @@ function generateKotlin(links) {
     const kotlinEntries = links
         .filter(site => !needToIgnore(site.likesMobile, site.dislikesMobile))
         .filter(site => site.tags && site.tags.includes('positive') && site.tags.includes('daily'))
+        .filter(site => site.tags && !site.tags.includes('optional'))
         .map((site, i) => {
             const name = escapeKotlin(site.name || '');
             const url = escapeKotlin(site.url || '');
