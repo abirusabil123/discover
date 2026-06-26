@@ -3,6 +3,7 @@
 package com.example.discover.ui.screens
 
 // Import your new components
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.view.View
 import android.webkit.WebView
@@ -66,6 +67,7 @@ fun formatTime(ms: Long): String {
     else "${ms / 3600000}h ${(ms % 3600000) / 60000}m"
 }
 
+@SuppressLint("JavascriptInterface", "SetJavaScriptEnabled")
 @Composable
 fun DiscoverScreen(
     viewModel: DiscoverViewModel

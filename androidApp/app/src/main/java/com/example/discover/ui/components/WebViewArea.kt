@@ -2,6 +2,7 @@
 
 package com.example.discover.ui.components
 
+import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Bitmap
@@ -58,6 +59,7 @@ class MediaExtractor {
     }
 }
 
+@SuppressLint("ClickableViewAccessibility")
 @Composable
 fun WebViewArea(
     viewModel: DiscoverViewModel,
