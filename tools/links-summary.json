@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-24T23:40:03.033Z",
+    "generatedAt": "2026-06-26T14:01:36.643Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 103
   },
@@ -91,7 +91,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 89
+        "count": 90
       },
       {
         "country": "AT",
@@ -99,7 +99,7 @@
       },
       {
         "country": "BA",
-        "count": 3
+        "count": 4
       },
       {
         "country": "BG",
@@ -131,7 +131,7 @@
       },
       {
         "country": "GB",
-        "count": 8
+        "count": 9
       },
       {
         "country": "HK",
@@ -144,6 +144,10 @@
       {
         "country": "JP",
         "count": 5
+      },
+      {
+        "country": "KR",
+        "count": 1
       },
       {
         "country": "NL",
@@ -162,14 +166,18 @@
         "count": 1
       },
       {
+        "country": "TR",
+        "count": 1
+      },
+      {
         "country": "US",
-        "count": 143
+        "count": 150
       }
     ],
     "byMonth": [
       {
         "month": "202606",
-        "count": 265
+        "count": 277
       },
       {
         "month": "202605",
@@ -179,11 +187,11 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 284
+        "count": 295
       },
       {
         "platform": "desktop",
-        "count": 62
+        "count": 63
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -209,13 +217,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 346
+        "count": 358
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 284
+        "count": 295
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -255,13 +263,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 62
+        "count": 63
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 288
+        "count": 299
       },
       {
         "path": "/addlink",
@@ -273,7 +281,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 62
+        "count": 63
       },
       {
         "path": "/index.html",
@@ -299,11 +307,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 373
+        "count": 385
       },
       {
         "status": "Bot",
-        "count": 344
+        "count": 371
       }
     ]
   },
