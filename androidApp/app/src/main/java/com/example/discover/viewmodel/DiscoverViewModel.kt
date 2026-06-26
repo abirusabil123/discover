@@ -3,9 +3,15 @@
 package com.example.discover.viewmodel
 
 import android.app.Application
+import android.app.DownloadManager
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Context
+import android.os.Environment
 import android.util.Log
+import android.webkit.MimeTypeMap
 import androidx.core.content.edit
+import androidx.core.net.toUri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.discover.data.Link
@@ -66,7 +72,8 @@ class DiscoverViewModel(
     val timeStats: StateFlow<TimeStats> = _timeStats.asStateFlow()
 
     // Persistent Settings Filter State - Default to "positive, daily" for tagsAllowlist
-    val tagsAllowlist = MutableStateFlow(prefs.getString("tags_allow", "positive, daily") ?: "positive, daily")
+    val tagsAllowlist =
+        MutableStateFlow(prefs.getString("tags_allow", "positive, daily") ?: "positive, daily")
     val tagsBlocklist = MutableStateFlow(prefs.getString("tags_block", "optional") ?: "optional")
     val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
     val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
@@ -349,8 +356,7 @@ class DiscoverViewModel(
     fun addLink(name: String, url: String, description: String, tags: List<String>) {
         viewModelScope.launch {
             val request = Link(name = name, url = url, description = description, tags = tags)
-            val result = apiService.addLink(request)
-            val message = when (result) {
+            val message = when (val result = apiService.addLink(request)) {
                 is AddLinkResult.Success -> {
                     hideAddLinkDialog() // Hide dialog on success
                     "Link submitted for spam review successfully! The link will be live globally after review and approval 🎉"
@@ -367,5 +373,43 @@ class DiscoverViewModel(
     // Call this from the UI after the toast is shown
     fun toastMessageShown() {
         _toastMessage.value = null
+    }
+
+    fun copyToClipboard(text: String) {
+        val clipboard =
+            getApplication<Application>().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clip = ClipData.newPlainText("Discover Link", text)
+        clipboard.setPrimaryClip(clip)
+        _toastMessage.value = "Link copied to clipboard"
+    }
+
+    fun downloadMedia(url: String, userAgent: String) {
+        try {
+            val request = DownloadManager.Request(url.toUri())
+            request.addRequestHeader("User-Agent", userAgent)
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+
+            // Extract file name from URL or use a default
+            var fileName =
+                url.substringAfterLast("/").substringBefore("?").ifEmpty { "downloaded_file" }
+
+            // Ensure file has an extension
+            if (!fileName.contains(".")) {
+                val ext = MimeTypeMap.getFileExtensionFromUrl(url)
+                if (ext.isNotEmpty()) {
+                    fileName = "$fileName.$ext"
+                }
+            }
+
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName)
+
+            val downloadManager =
+                getApplication<Application>().getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+            downloadManager.enqueue(request)
+            _toastMessage.value = "Download started..."
+        } catch (e: Exception) {
+            _toastMessage.value = "Download failed: ${e.message}"
+            e.printStackTrace()
+        }
     }
 }

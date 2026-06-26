@@ -3,7 +3,6 @@
 package com.example.discover.ui.screens
 
 // Import your new components
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.view.View
 import android.webkit.WebView
@@ -51,6 +50,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.discover.ui.components.AddLinkDialog
 import com.example.discover.ui.components.ControlButtons
 import com.example.discover.ui.components.LinkCard
+import com.example.discover.ui.components.MediaExtractor
 import com.example.discover.ui.components.TopDiscoverBar
 import com.example.discover.ui.components.WebViewArea
 import com.example.discover.ui.theme.BackgroundDark
@@ -66,7 +66,6 @@ fun formatTime(ms: Long): String {
     else "${ms / 3600000}h ${(ms % 3600000) / 60000}m"
 }
 
-@SuppressLint("SetJavaScriptEnabled")
 @Composable
 fun DiscoverScreen(
     viewModel: DiscoverViewModel
@@ -93,6 +92,7 @@ fun DiscoverScreen(
     val totalTime = formatTime(timeStats.total)
 
     var showSettings by remember { mutableStateOf(false) }
+    val mediaExtractor = remember { MediaExtractor() }
 
     val webView = remember {
         WebView(context).apply {
@@ -101,6 +101,7 @@ fun DiscoverScreen(
             // Disable JavaScript interfaces that could be used for tracking
             removeJavascriptInterface("accessibility")
             removeJavascriptInterface("accessibilityTraversal")
+            addJavascriptInterface(mediaExtractor, "MediaExtractor")
             // 🔒 Privacy: Block third-party cookies
             android.webkit.CookieManager.getInstance().setAcceptThirdPartyCookies(this, false)
             settings.apply {
@@ -247,6 +248,7 @@ fun DiscoverScreen(
             WebViewArea(
                 viewModel = viewModel,
                 webView = webView,
+                mediaExtractor = mediaExtractor,
                 url = initialWebViewUrl,
                 onUrlChanged = { newUrl ->
                     liveWebViewUrl = newUrl
