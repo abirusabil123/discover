@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-26T14:01:36.643Z",
+    "generatedAt": "2026-07-02T12:32:46.642Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 103
   },
@@ -91,7 +91,11 @@
     "byCountry": [
       {
         "country": "",
-        "count": 90
+        "count": 96
+      },
+      {
+        "country": "AE",
+        "count": 1
       },
       {
         "country": "AT",
@@ -111,11 +115,11 @@
       },
       {
         "country": "CN",
-        "count": 16
+        "count": 25
       },
       {
         "country": "DE",
-        "count": 9
+        "count": 10
       },
       {
         "country": "EE",
@@ -131,11 +135,11 @@
       },
       {
         "country": "GB",
-        "count": 9
+        "count": 10
       },
       {
         "country": "HK",
-        "count": 6
+        "count": 7
       },
       {
         "country": "IN",
@@ -151,7 +155,7 @@
       },
       {
         "country": "NL",
-        "count": 5
+        "count": 6
       },
       {
         "country": "RU",
@@ -167,17 +171,21 @@
       },
       {
         "country": "TR",
-        "count": 1
+        "count": 2
       },
       {
         "country": "US",
-        "count": 150
+        "count": 176
       }
     ],
     "byMonth": [
       {
+        "month": "202607",
+        "count": 11
+      },
+      {
         "month": "202606",
-        "count": 277
+        "count": 313
       },
       {
         "month": "202605",
@@ -187,15 +195,15 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 295
+        "count": 339
       },
       {
         "platform": "desktop",
-        "count": 63
+        "count": 64
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
-        "count": 16
+        "count": 18
       },
       {
         "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0",
@@ -213,17 +221,17 @@
     "byProduct": [
       {
         "product": "abirusabil123.github.io",
-        "count": 27
+        "count": 29
       },
       {
         "product": "discover-backend",
-        "count": 358
+        "count": 403
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 295
+        "count": 339
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -247,11 +255,11 @@
       },
       {
         "origin": "https://abirusabil123.github.io/shayaris.html",
-        "count": 2
+        "count": 3
       },
       {
         "origin": "https://abirusabil123.github.io/sketches.html",
-        "count": 4
+        "count": 5
       },
       {
         "origin": "https://abirusabil123.github.io/work-life.html",
@@ -263,13 +271,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 63
+        "count": 64
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 299
+        "count": 343
       },
       {
         "path": "/addlink",
@@ -281,7 +289,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 63
+        "count": 64
       },
       {
         "path": "/index.html",
@@ -289,11 +297,11 @@
       },
       {
         "path": "/products.html",
-        "count": 4
+        "count": 5
       },
       {
         "path": "/shayaris.html",
-        "count": 4
+        "count": 5
       },
       {
         "path": "/sketches.html",
@@ -307,17 +315,17 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 385
+        "count": 432
       },
       {
         "status": "Bot",
-        "count": 371
+        "count": 431
       }
     ]
   },
   "errors": {
-    "count": 8,
-    "unresolved": 5,
+    "count": 9,
+    "unresolved": 6,
     "allUnresolvedErrors": [
       {
         "id": 4,
@@ -366,6 +374,16 @@
         "level": "error",
         "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 9,
+        "timestamp": "2026-06-26T14:22:20.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: AbortSignal.timeout is not a function<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4178.0 Safari/537.36",
         "resolved": 0,
         "resolved_at": null
       }

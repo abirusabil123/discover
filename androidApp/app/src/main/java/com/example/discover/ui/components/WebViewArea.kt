@@ -188,6 +188,38 @@ fun WebViewArea(
                             webView.visibility = View.VISIBLE
                             webView.setBackgroundColor(Color.White.toArgb())
                         }
+
+                        // Apply read‑only mode if enabled
+                        if (viewModel.readOnlyModeEnabled.value) {
+                            view?.evaluateJavascript(
+                                """(function() {
+            var inputs = document.querySelectorAll('input, textarea, select');
+            for (var i = 0; i < inputs.length; i++) {
+                var el = inputs[i];
+                if (el.type === 'file') {
+                    el.disabled = true;
+                } else if (el.type === 'checkbox' || el.type === 'radio') {
+                    el.addEventListener('click', function(e){ e.preventDefault(); });
+                } else {
+                    el.setAttribute('readonly', 'readonly');
+                    el.addEventListener('focus', function(){ this.blur(); });
+                }
+            }
+            var editables = document.querySelectorAll('[contenteditable="true"]');
+            for (var j = 0; j < editables.length; j++) {
+                editables[j].setAttribute('contenteditable', 'false');
+            }
+            var forms = document.querySelectorAll('form');
+            for (var k = 0; k < forms.length; k++) {
+                forms[k].addEventListener('submit', function(e){
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                }, true);
+            }
+        })();""", null
+                            )
+                        }
                     }
 
                     override fun shouldOverrideUrlLoading(

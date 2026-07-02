@@ -78,8 +78,16 @@ class DiscoverViewModel(
     val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
     val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
 
+    // Persistent read‑only mode (default ON)
+    val readOnlyModeEnabled = MutableStateFlow(prefs.getBoolean("read_only_mode", true))
+
     init {
         loadTimeStats()
+    }
+
+    fun setReadOnlyMode(enabled: Boolean) {
+        readOnlyModeEnabled.value = enabled
+        prefs.edit { putBoolean("read_only_mode", enabled) }
     }
 
     // Call when app becomes visible

@@ -22,6 +22,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -52,12 +53,10 @@ fun SettingsScreen(
     val tagsBlock by viewModel.tagsBlocklist.collectAsState()
     val urlsAllow by viewModel.urlsAllowlist.collectAsState()
     val urlsBlock by viewModel.urlsBlocklist.collectAsState()
+    val readOnlyEnabled by viewModel.readOnlyModeEnabled.collectAsState()
 
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(BackgroundDark)
-            .padding(statusBarPadding)
+        modifier = Modifier.fillMaxSize().background(BackgroundDark).padding(statusBarPadding)
     ) {
         // Header
         Column(modifier = Modifier.fillMaxWidth()) {
@@ -72,9 +71,7 @@ fun SettingsScreen(
             }
             Text(
                 text = "⚙️ Settings",
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = Spacing.medium),
+                modifier = Modifier.fillMaxWidth().padding(bottom = Spacing.medium),
                 style = MaterialTheme.typography.headlineMedium,
                 color = TextPrimary,
                 fontWeight = FontWeight.Bold,
@@ -84,10 +81,7 @@ fun SettingsScreen(
 
         // Scrollable content area
         Column(
-            modifier = Modifier
-                .weight(1f)
-                .fillMaxWidth()
-                .verticalScroll(rememberScrollState())
+            modifier = Modifier.weight(1f).fillMaxWidth().verticalScroll(rememberScrollState())
                 .padding(horizontal = Spacing.medium)
         ) {
             Button(
@@ -155,6 +149,23 @@ fun SettingsScreen(
             ) {
                 Text("Apply URL Filter")
             }
+            Spacer(modifier = Modifier.height(Spacing.large))
+            HorizontalDivider(color = Color.Gray.copy(alpha = 0.3f))
+            Spacer(modifier = Modifier.height(Spacing.large))
+
+            Text(
+                text = "Read-only Mode:",
+                style = MaterialTheme.typography.titleMedium,
+                color = TextPrimary,
+                modifier = Modifier.fillMaxWidth(),
+                textAlign = TextAlign.Center
+            )
+            Spacer(modifier = Modifier.height(Spacing.small))
+
+            Switch(
+                checked = readOnlyEnabled,
+                modifier = Modifier.align(Alignment.CenterHorizontally),
+                onCheckedChange = { viewModel.setReadOnlyMode(it) })
 
             Spacer(modifier = Modifier.height(Spacing.large))
             HorizontalDivider(color = Color.Gray.copy(alpha = 0.3f))
@@ -195,9 +206,7 @@ fun FilterTextField(value: String, label: String, onValueChange: (String) -> Uni
         value = value,
         onValueChange = onValueChange,
         label = { Text(label) },
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(vertical = Spacing.small),
+        modifier = Modifier.fillMaxWidth().padding(vertical = Spacing.small),
         colors = OutlinedTextFieldDefaults.colors(
             focusedTextColor = TextPrimary,
             unfocusedTextColor = TextPrimary,
