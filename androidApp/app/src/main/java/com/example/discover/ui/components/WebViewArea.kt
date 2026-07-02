@@ -193,31 +193,64 @@ fun WebViewArea(
                         if (viewModel.readOnlyModeEnabled.value) {
                             view?.evaluateJavascript(
                                 """(function() {
-            var inputs = document.querySelectorAll('input, textarea, select');
-            for (var i = 0; i < inputs.length; i++) {
-                var el = inputs[i];
-                if (el.type === 'file') {
-                    el.disabled = true;
-                } else if (el.type === 'checkbox' || el.type === 'radio') {
-                    el.addEventListener('click', function(e){ e.preventDefault(); });
-                } else {
-                    el.setAttribute('readonly', 'readonly');
-                    el.addEventListener('focus', function(){ this.blur(); });
+    function makeReadOnly(root) {
+        var inputs = root.querySelectorAll('input, textarea, select');
+        for (var i = 0; i < inputs.length; i++) {
+            var el = inputs[i];
+            if (el.type === 'search') continue;
+            if (el.type === 'file') {
+                el.disabled = true;
+            } else if (el.type === 'checkbox' || el.type === 'radio') {
+                el.addEventListener('click', function(e){ e.preventDefault(); });
+            } else {
+                el.setAttribute('readonly', 'readonly');
+                el.addEventListener('focus', function(){ this.blur(); });
+            }
+        }
+        var editables = root.querySelectorAll('[contenteditable="true"]');
+        for (var j = 0; j < editables.length; j++) {
+            editables[j].setAttribute('contenteditable', 'false');
+        }
+        var forms = root.querySelectorAll('form');
+        for (var k = 0; k < forms.length; k++) {
+            var form = forms[k];
+            var hasSearch = form.querySelector('input[type="search"]');
+            if (hasSearch) continue;
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }, true);
+        }
+    }
+
+    // Apply to main document immediately
+    makeReadOnly(document);
+
+    // Watch for dynamically added elements
+    new MutationObserver(function(mutations) {
+        for (var m = 0; m < mutations.length; m++) {
+            var addedNodes = mutations[m].addedNodes;
+            for (var n = 0; n < addedNodes.length; n++) {
+                var node = addedNodes[n];
+                if (node.nodeType === 1) {
+                    makeReadOnly(node);         // the element itself
+                    // also process its children
+                    makeReadOnly(node.querySelectorAll ? node : document.createDocumentFragment());
                 }
             }
-            var editables = document.querySelectorAll('[contenteditable="true"]');
-            for (var j = 0; j < editables.length; j++) {
-                editables[j].setAttribute('contenteditable', 'false');
-            }
-            var forms = document.querySelectorAll('form');
-            for (var k = 0; k < forms.length; k++) {
-                forms[k].addEventListener('submit', function(e){
-                    e.preventDefault();
-                    e.stopPropagation();
-                    return false;
-                }, true);
-            }
-        })();""", null
+        }
+    }).observe(document.documentElement, { childList: true, subtree: true });
+
+    // Attempt to apply to same‑origin iframes (won't work for cross‑origin)
+    var iframes = document.querySelectorAll('iframe');
+    for (var f = 0; f < iframes.length; f++) {
+        try {
+            var iframeDoc = iframes[f].contentDocument || iframes[f].contentWindow.document;
+            if (iframeDoc) makeReadOnly(iframeDoc);
+        } catch (e) { /* cross‑origin, ignore */ }
+    }
+})();""", null
                             )
                         }
                     }
