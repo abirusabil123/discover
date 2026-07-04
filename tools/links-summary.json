@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-02T12:32:46.642Z",
+    "generatedAt": "2026-07-04T18:48:44.410Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 103
   },
@@ -91,7 +91,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 96
+        "count": 102
       },
       {
         "country": "AE",
@@ -115,11 +115,11 @@
       },
       {
         "country": "CN",
-        "count": 25
+        "count": 26
       },
       {
         "country": "DE",
-        "count": 10
+        "count": 12
       },
       {
         "country": "EE",
@@ -139,7 +139,7 @@
       },
       {
         "country": "HK",
-        "count": 7
+        "count": 8
       },
       {
         "country": "IN",
@@ -170,18 +170,22 @@
         "count": 1
       },
       {
+        "country": "SK",
+        "count": 1
+      },
+      {
         "country": "TR",
         "count": 2
       },
       {
         "country": "US",
-        "count": 176
+        "count": 184
       }
     ],
     "byMonth": [
       {
         "month": "202607",
-        "count": 11
+        "count": 30
       },
       {
         "month": "202606",
@@ -195,15 +199,15 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 339
+        "count": 352
       },
       {
         "platform": "desktop",
-        "count": 64
+        "count": 66
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
-        "count": 18
+        "count": 22
       },
       {
         "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0",
@@ -221,25 +225,25 @@
     "byProduct": [
       {
         "product": "abirusabil123.github.io",
-        "count": 29
+        "count": 33
       },
       {
         "product": "discover-backend",
-        "count": 403
+        "count": 418
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 339
+        "count": 352
       },
       {
         "origin": "https://abirusabil123.github.io",
-        "count": 6
+        "count": 7
       },
       {
         "origin": "https://abirusabil123.github.io/",
-        "count": 4
+        "count": 5
       },
       {
         "origin": "https://abirusabil123.github.io/art.html",
@@ -247,11 +251,11 @@
       },
       {
         "origin": "https://abirusabil123.github.io/index.html",
-        "count": 1
+        "count": 2
       },
       {
         "origin": "https://abirusabil123.github.io/products.html",
-        "count": 3
+        "count": 4
       },
       {
         "origin": "https://abirusabil123.github.io/shayaris.html",
@@ -271,13 +275,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 64
+        "count": 66
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 343
+        "count": 357
       },
       {
         "path": "/addlink",
@@ -289,15 +293,15 @@
       },
       {
         "path": "/getLinks",
-        "count": 64
+        "count": 66
       },
       {
         "path": "/index.html",
-        "count": 3
+        "count": 4
       },
       {
         "path": "/products.html",
-        "count": 5
+        "count": 7
       },
       {
         "path": "/shayaris.html",
@@ -315,17 +319,17 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 432
+        "count": 451
       },
       {
         "status": "Bot",
-        "count": 431
+        "count": 470
       }
     ]
   },
   "errors": {
-    "count": 9,
-    "unresolved": 6,
+    "count": 10,
+    "unresolved": 7,
     "allUnresolvedErrors": [
       {
         "id": 4,
@@ -384,6 +388,16 @@
         "level": "error",
         "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: AbortSignal.timeout is not a function<br>Fallback to static list.",
         "user_agent": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4178.0 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 10,
+        "timestamp": "2026-07-02T12:34:14.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TimeoutError: The operation timed out.<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0",
         "resolved": 0,
         "resolved_at": null
       }
