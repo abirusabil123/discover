@@ -6,32 +6,14 @@ Publicly exposed at https://backenddiscover.duckdns.org:8443 to forward requests
 ## 🌐 DNS and TLS
 
 This deployment uses:
-
-* DuckDNS (`backenddiscover.duckdns.org`) for dynamic DNS updates.
-* `acme.sh` with ZeroSSL for automatic TLS certificate issuance and renewal.
-* Nginx as a reverse proxy exposing HTTPS on port `8443` and forwarding requests to the Node.js application on port `8090`.
-
-Certificate files are stored on the host:
-
-```text
-/home/zeitgeist/.acme.sh/backenddiscover.duckdns.org_ecc
-```
-
-and mounted read-only into the Nginx container:
-
-```text
-/etc/nginx/ssl
-```
+- DuckDNS (`backenddiscover.duckdns.org`) for dynamic DNS updates.
+- `acme.sh` with ZeroSSL for automatic TLS certificates.
+- Nginx reverse proxy (HTTPS port `8443` → Node.js `8090`).
+- **IP‑change auto‑restart**: `scripts/check-ip-restart-docker.sh` (runs via cron) restarts Docker when the WAN IP changes, fixing iptables rules automatically.
 
 ### Cron jobs
 
-```cron
-# Update DuckDNS every 5 minutes
-*/5 * * * * curl -ks "https://www.duckdns.org/update?domains=backenddiscover&token=<TOKEN>&ip=" >> /home/zeitgeist/duckdns.log 2>&1
-
-# Check certificate renewal daily at 18:35
-35 18 * * * "/home/zeitgeist/.acme.sh"/acme.sh --cron --home "/home/zeitgeist/.acme.sh" >> /home/zeitgeist/.acme.sh/acme-renew.log 2>&1
-```
+The full cron setup and sudoers backup are in `scripts/` (`crontab.txt` and `sudoers-docker-restart.txt`).
 
 ### Certificate renewal hook
 
