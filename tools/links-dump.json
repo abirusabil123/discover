@@ -163,7 +163,7 @@
       "positive",
       "daily"
     ],
-    "views": 51,
+    "views": 53,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -600,7 +600,7 @@
       "daily",
       "news"
     ],
-    "views": 65,
+    "views": 66,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -812,7 +812,7 @@
       "curated",
       "sample"
     ],
-    "views": 212,
+    "views": 213,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -844,7 +844,7 @@
       "curated",
       "sample"
     ],
-    "views": 221,
+    "views": 222,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 3,
@@ -1112,7 +1112,7 @@
       "curated",
       "sample"
     ],
-    "views": 361,
+    "views": 362,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 27,
@@ -1145,7 +1145,7 @@
       "curated",
       "sample"
     ],
-    "views": 226,
+    "views": 228,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1163,7 +1163,7 @@
       "positive",
       "daily"
     ],
-    "views": 101,
+    "views": 102,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1327,7 +1327,7 @@
       "fifa",
       "sports"
     ],
-    "views": 13,
+    "views": 14,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1345,7 +1345,7 @@
       "positive",
       "daily"
     ],
-    "views": 13,
+    "views": 14,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1517,6 +1517,25 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://www.propublica.org/article/louisiana-judges-ignored-prisoners-petitions-without-review-fifth-circuit?utm_campaign=propublica-sprout&utm_content=1783206006",
+    "name": "The Scandal That Never HappenedNever Happened ",
+    "description": "Years ago, the all-white judges of a Louisiana appellate court decided, in secret, to systematically ignore petitions filed by prisoners, most of them Black, who claimed they had been unjustly convicted.This is the story of a horrendous injustice and the three people who tried to expose it. It begins with a suicide note.",
+    "tags": [
+      "positive",
+      "law",
+      "usa",
+      "injustice",
+      "incompetence",
+      "evil"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://www.rekhta.org/tags/famous-shayari/couplets",
     "name": "Rekhta famous shayaris",
     "description": "Ponder and it might help clear blockers in the mind.",
@@ -1546,7 +1565,7 @@
       "social",
       "media"
     ],
-    "views": 164,
+    "views": 165,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1563,7 +1582,7 @@
       "social",
       "media"
     ],
-    "views": 163,
+    "views": 164,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,

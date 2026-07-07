@@ -30,7 +30,7 @@ const STATIC = {
                 "optional",
                 "user-submitted"
             ],
-            "views": 133,
+            "views": 137,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -74,7 +74,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 44,
+            "views": 53,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -196,7 +196,7 @@ const STATIC = {
                 "islam",
                 "learning"
             ],
-            "views": 75,
+            "views": 86,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -285,7 +285,7 @@ const STATIC = {
                 "blog",
                 "learning"
             ],
-            "views": 60,
+            "views": 61,
             "likesMobile": 0,
             "dislikesMobile": 3000,
             "likesDesktop": 0,
@@ -393,7 +393,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 56,
+            "views": 66,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -423,7 +423,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 62,
+            "views": 70,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -469,7 +469,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 285,
+            "views": 292,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
@@ -502,7 +502,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 22,
+            "views": 29,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -518,7 +518,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 206,
+            "views": 213,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -534,7 +534,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 211,
+            "views": 222,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 3,
@@ -625,7 +625,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 4,
+            "views": 11,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -732,7 +732,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 353,
+            "views": 362,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 27,
@@ -763,7 +763,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 217,
+            "views": 228,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -780,7 +780,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 92,
+            "views": 102,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -796,7 +796,7 @@ const STATIC = {
                 "learning",
                 "positive"
             ],
-            "views": 80,
+            "views": 81,
             "likesMobile": 1,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -842,7 +842,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 26,
+            "views": 34,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -875,7 +875,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 6,
+            "views": 18,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -891,7 +891,7 @@ const STATIC = {
                 "fifa",
                 "sports"
             ],
-            "views": 5,
+            "views": 14,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -908,7 +908,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 7,
+            "views": 14,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -993,6 +993,24 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "The Scandal That Never HappenedNever Happened ",
+            "url": "https://www.propublica.org/article/louisiana-judges-ignored-prisoners-petitions-without-review-fifth-circuit?utm_campaign=propublica-sprout&utm_content=1783206006",
+            "description": "Years ago, the all-white judges of a Louisiana appellate court decided, in secret, to systematically ignore petitions filed by prisoners, most of them Black, who claimed they had been unjustly convicted.This is the story of a horrendous injustice and the three people who tried to expose it. It begins with a suicide note.",
+            "tags": [
+                "positive",
+                "law",
+                "usa",
+                "injustice",
+                "incompetence",
+                "evil"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "Rekhta famous shayaris",
             "url": "https://www.rekhta.org/tags/famous-shayari/couplets",
             "description": "Ponder and it might help clear blockers in the mind.",
@@ -1005,7 +1023,7 @@ const STATIC = {
                 "beautiful",
                 "optional"
             ],
-            "views": 157,
+            "views": 160,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1021,7 +1039,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 156,
+            "views": 165,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1037,7 +1055,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 151,
+            "views": 164,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1053,7 +1071,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 49,
+            "views": 56,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1083,7 +1101,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 71,
+            "views": 81,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1100,7 +1118,7 @@ const STATIC = {
                 "daily",
                 "optional"
             ],
-            "views": 86,
+            "views": 87,
             "likesMobile": 1,
             "dislikesMobile": 2,
             "likesDesktop": 0,
@@ -1116,7 +1134,7 @@ const STATIC = {
                 "daily",
                 "optional"
             ],
-            "views": 117,
+            "views": 121,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 3,
