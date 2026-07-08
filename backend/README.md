@@ -3,7 +3,7 @@ A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically crea
 
 Publicly exposed at https://backenddiscover.duckdns.org:8443 to forward requests to the local Node.js app on port 8090.
 
-The full cron setup and sudoers backup are in `scripts/`.
+The full cron setup and sudoers backup are in `discover/backend/scripts`.
 
 ## ⚙️ Prerequisites
 - Linux
