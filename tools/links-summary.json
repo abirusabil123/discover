@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-07T15:13:42.532Z",
+    "generatedAt": "2026-07-08T02:17:45.925Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 104
   },
@@ -179,13 +179,13 @@
       },
       {
         "country": "US",
-        "count": 186
+        "count": 192
       }
     ],
     "byMonth": [
       {
         "month": "202607",
-        "count": 40
+        "count": 46
       },
       {
         "month": "202606",
@@ -199,7 +199,7 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 359
+        "count": 365
       },
       {
         "platform": "desktop",
@@ -229,13 +229,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 428
+        "count": 434
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 359
+        "count": 365
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -281,7 +281,7 @@
     "byPath": [
       {
         "path": "/",
-        "count": 364
+        "count": 370
       },
       {
         "path": "/addlink",
@@ -319,11 +319,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 461
+        "count": 467
       },
       {
         "status": "Bot",
-        "count": 480
+        "count": 482
       }
     ]
   },
