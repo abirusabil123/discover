@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-08T02:17:45.925Z",
+    "generatedAt": "2026-07-13T07:57:37.990Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 104
+    "totalLinks": 105
   },
   "analysis": {
-    "total": 104,
+    "total": 105,
     "filteredMobile": 53,
     "filteredDesktop": 5,
     "blockedMobileUrls": [
@@ -72,7 +72,7 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 42,
+      "0%": 43,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
@@ -80,7 +80,7 @@
       "80-100%": 54
     },
     "byVoteCount": {
-      "0 votes": 17,
+      "0 votes": 18,
       "1-3 votes": 19,
       "4-10 votes": 12,
       "11-50 votes": 2,
@@ -91,7 +91,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 104
+        "count": 114
       },
       {
         "country": "AE",
@@ -99,7 +99,7 @@
       },
       {
         "country": "AT",
-        "count": 2
+        "count": 3
       },
       {
         "country": "BA",
@@ -115,11 +115,11 @@
       },
       {
         "country": "CN",
-        "count": 26
+        "count": 29
       },
       {
         "country": "DE",
-        "count": 12
+        "count": 13
       },
       {
         "country": "EE",
@@ -135,11 +135,11 @@
       },
       {
         "country": "GB",
-        "count": 10
+        "count": 12
       },
       {
         "country": "HK",
-        "count": 8
+        "count": 11
       },
       {
         "country": "IN",
@@ -154,12 +154,16 @@
         "count": 1
       },
       {
+        "country": "MN",
+        "count": 1
+      },
+      {
         "country": "NL",
-        "count": 6
+        "count": 7
       },
       {
         "country": "RU",
-        "count": 4
+        "count": 5
       },
       {
         "country": "SC",
@@ -167,7 +171,7 @@
       },
       {
         "country": "SG",
-        "count": 1
+        "count": 4
       },
       {
         "country": "SK",
@@ -179,13 +183,13 @@
       },
       {
         "country": "US",
-        "count": 192
+        "count": 207
       }
     ],
     "byMonth": [
       {
         "month": "202607",
-        "count": 46
+        "count": 87
       },
       {
         "month": "202606",
@@ -199,11 +203,11 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 365
+        "count": 402
       },
       {
         "platform": "desktop",
-        "count": 69
+        "count": 73
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
@@ -229,13 +233,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 434
+        "count": 475
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 365
+        "count": 401
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -275,17 +279,17 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 69
+        "count": 74
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 370
+        "count": 406
       },
       {
         "path": "/addlink",
-        "count": 3
+        "count": 4
       },
       {
         "path": "/art.html",
@@ -293,7 +297,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 69
+        "count": 73
       },
       {
         "path": "/index.html",
@@ -319,11 +323,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 467
+        "count": 508
       },
       {
         "status": "Bot",
-        "count": 482
+        "count": 546
       }
     ]
   },

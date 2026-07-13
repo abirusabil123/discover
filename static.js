@@ -30,10 +30,10 @@ const STATIC = {
                 "optional",
                 "user-submitted"
             ],
-            "views": 137,
+            "views": 139,
             "likesMobile": 1,
             "dislikesMobile": 0,
-            "likesDesktop": 2,
+            "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
@@ -45,7 +45,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 77,
+            "views": 78,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 2,
@@ -74,7 +74,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 53,
+            "views": 56,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -196,7 +196,7 @@ const STATIC = {
                 "islam",
                 "learning"
             ],
-            "views": 86,
+            "views": 89,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -255,10 +255,10 @@ const STATIC = {
                 "blog",
                 "platform"
             ],
-            "views": 7,
+            "views": 8,
             "likesMobile": 0,
             "dislikesMobile": 2000,
-            "likesDesktop": 1,
+            "likesDesktop": 2,
             "dislikesDesktop": 1
         },
         {
@@ -269,10 +269,10 @@ const STATIC = {
                 "positive",
                 "user-submitted"
             ],
-            "views": 71,
+            "views": 72,
             "likesMobile": 4,
             "dislikesMobile": 1000,
-            "likesDesktop": 1,
+            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
@@ -318,6 +318,21 @@ const STATIC = {
             "dislikesMobile": 0,
             "likesDesktop": 3,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "History can't hide",
+            "url": "https://historycanthide.substack.com/",
+            "description": "I’m Kahlil Greene, better known as the Gen Z Historian. My work uncovering hidden histories has earned me recognition as a Peabody Award winner, a TIME100 content creator, a two-time Emmy nominee, a Forbes 30 Under 30 honoree, and a member of Variety’s Power of Young Hollywood list. Across TikTok, Instagram, and LinkedIn, I’ve built a platform of ~1 million followers and 50 million views, using digital media to make history engaging, accessible, and relevant.",
+            "tags": [
+                "history",
+                "learning",
+                "positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         },
         {
             "name": "LLM Embeddings Explained",
@@ -393,7 +408,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 66,
+            "views": 69,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -423,7 +438,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 70,
+            "views": 72,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -469,7 +484,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 292,
+            "views": 294,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
@@ -502,7 +517,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 29,
+            "views": 32,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -518,7 +533,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 213,
+            "views": 215,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -534,7 +549,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 222,
+            "views": 226,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 3,
@@ -565,7 +580,7 @@ const STATIC = {
                 "dailyplus",
                 "learning"
             ],
-            "views": 30,
+            "views": 31,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -625,7 +640,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 11,
+            "views": 14,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -732,7 +747,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 362,
+            "views": 364,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 27,
@@ -763,7 +778,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 228,
+            "views": 230,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -780,7 +795,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 102,
+            "views": 104,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -842,7 +857,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 34,
+            "views": 38,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -872,10 +887,9 @@ const STATIC = {
                 "fifa",
                 "worldcup",
                 "sports",
-                "positive",
-                "daily"
+                "positive"
             ],
-            "views": 18,
+            "views": 19,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -887,11 +901,10 @@ const STATIC = {
             "description": "List of all FIFA world cup 2026 completed and ongoing matches.",
             "tags": [
                 "positive",
-                "daily",
                 "fifa",
                 "sports"
             ],
-            "views": 14,
+            "views": 18,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -905,10 +918,9 @@ const STATIC = {
                 "fifa",
                 "worldcup",
                 "canadamexicousa2026",
-                "positive",
-                "daily"
+                "positive"
             ],
-            "views": 14,
+            "views": 17,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -970,11 +982,11 @@ const STATIC = {
                 "12rulesforlife",
                 "positive"
             ],
-            "views": 82,
+            "views": 83,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 2,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
             "name": "Product Hunt",
@@ -1039,7 +1051,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 165,
+            "views": 167,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1055,7 +1067,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 164,
+            "views": 168,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1071,7 +1083,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 56,
+            "views": 60,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1101,7 +1113,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 81,
+            "views": 82,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1118,7 +1130,7 @@ const STATIC = {
                 "daily",
                 "optional"
             ],
-            "views": 87,
+            "views": 88,
             "likesMobile": 1,
             "dislikesMobile": 2,
             "likesDesktop": 0,
