@@ -322,7 +322,7 @@ const STATIC = {
         {
             "name": "History can't hide",
             "url": "https://historycanthide.substack.com/",
-            "description": "I’m Kahlil Greene, better known as the Gen Z Historian. My work uncovering hidden histories has earned me recognition as a Peabody Award winner, a TIME100 content creator, a two-time Emmy nominee, a Forbes 30 Under 30 honoree, and a member of Variety’s Power of Young Hollywood list. Across TikTok, Instagram, and LinkedIn, I’ve built a platform of ~1 million followers and 50 million views, using digital media to make history engaging, accessible, and relevant.",
+            "description": "I'm Kahlil Greene, better known as the Gen Z Historian. My work uncovering hidden histories has earned me recognition as a Peabody Award winner, a TIME100 content creator, a two-time Emmy nominee, a Forbes 30 Under 30 honoree, and a member of Variety's Power of Young Hollywood list. Across TikTok, Instagram, and LinkedIn, I've built a platform of ~1 million followers and 50 million views, using digital media to make history engaging, accessible, and relevant.",
             "tags": [
                 "history",
                 "learning",
