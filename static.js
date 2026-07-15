@@ -74,7 +74,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 56,
+            "views": 60,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -89,7 +89,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 75,
+            "views": 76,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -196,7 +196,7 @@ const STATIC = {
                 "islam",
                 "learning"
             ],
-            "views": 89,
+            "views": 93,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -285,11 +285,11 @@ const STATIC = {
                 "blog",
                 "learning"
             ],
-            "views": 61,
+            "views": 62,
             "likesMobile": 0,
             "dislikesMobile": 3000,
             "likesDesktop": 0,
-            "dislikesDesktop": 1
+            "dislikesDesktop": 2
         },
         {
             "name": "High Scalability",
@@ -351,6 +351,20 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "learnislam4free",
+            "url": "https://learnislam4free.org/",
+            "description": "Free Islamic books and ebooks.",
+            "tags": [
+                "learning",
+                "positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "Little Alchemy 2",
             "url": "https://littlealchemy2.com/",
             "description": "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
@@ -408,7 +422,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 69,
+            "views": 72,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -438,7 +452,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 72,
+            "views": 76,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -484,7 +498,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 294,
+            "views": 297,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
@@ -517,7 +531,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 32,
+            "views": 36,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -533,7 +547,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 215,
+            "views": 219,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -549,7 +563,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 226,
+            "views": 229,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 3,
@@ -640,7 +654,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 14,
+            "views": 19,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -747,7 +761,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 364,
+            "views": 366,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 27,
@@ -778,7 +792,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 230,
+            "views": 234,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -795,7 +809,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 104,
+            "views": 109,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -857,7 +871,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 38,
+            "views": 43,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -920,7 +934,7 @@ const STATIC = {
                 "canadamexicousa2026",
                 "positive"
             ],
-            "views": 17,
+            "views": 18,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1051,7 +1065,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 167,
+            "views": 172,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1067,7 +1081,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 168,
+            "views": 172,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1083,7 +1097,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 60,
+            "views": 64,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1113,7 +1127,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 82,
+            "views": 85,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,

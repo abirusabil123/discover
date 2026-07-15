@@ -163,7 +163,7 @@
       "positive",
       "daily"
     ],
-    "views": 56,
+    "views": 60,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -196,7 +196,7 @@
       "curated",
       "sample"
     ],
-    "views": 75,
+    "views": 76,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -310,7 +310,7 @@
       "islam",
       "learning"
     ],
-    "views": 89,
+    "views": 93,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -405,11 +405,11 @@
       "blog",
       "learning"
     ],
-    "views": 61,
+    "views": 62,
     "likesMobile": 0,
     "dislikesMobile": 3000,
     "likesDesktop": 0,
-    "dislikesDesktop": 1,
+    "dislikesDesktop": 2,
     "reviewStatus": 1
   },
   {
@@ -526,6 +526,20 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://learnislam4free.org/",
+    "name": "learnislam4free",
+    "description": "Free Islamic books and ebooks.",
+    "tags": [
+      "learning"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 0
+  },
+  {
     "url": "https://lg.com/",
     "name": "lg",
     "description": "lg",
@@ -616,7 +630,7 @@
       "daily",
       "news"
     ],
-    "views": 69,
+    "views": 72,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -677,7 +691,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 72,
+    "views": 76,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -776,7 +790,7 @@
       "curated",
       "sample"
     ],
-    "views": 294,
+    "views": 297,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -811,7 +825,7 @@
       "palestine",
       "free"
     ],
-    "views": 32,
+    "views": 36,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -828,7 +842,7 @@
       "curated",
       "sample"
     ],
-    "views": 215,
+    "views": 219,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -860,7 +874,7 @@
       "curated",
       "sample"
     ],
-    "views": 226,
+    "views": 229,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 3,
@@ -957,7 +971,7 @@
       "positive",
       "daily"
     ],
-    "views": 14,
+    "views": 19,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1128,7 +1142,7 @@
       "curated",
       "sample"
     ],
-    "views": 364,
+    "views": 366,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 27,
@@ -1161,7 +1175,7 @@
       "curated",
       "sample"
     ],
-    "views": 230,
+    "views": 234,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1179,7 +1193,7 @@
       "positive",
       "daily"
     ],
-    "views": 104,
+    "views": 109,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1276,7 +1290,7 @@
       "new",
       "tech"
     ],
-    "views": 38,
+    "views": 43,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1358,7 +1372,7 @@
       "canadamexicousa2026",
       "positive"
     ],
-    "views": 17,
+    "views": 18,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1578,7 +1592,7 @@
       "social",
       "media"
     ],
-    "views": 167,
+    "views": 172,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1595,7 +1609,7 @@
       "social",
       "media"
     ],
-    "views": 168,
+    "views": 172,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -1612,7 +1626,7 @@
       "learning",
       "news"
     ],
-    "views": 60,
+    "views": 64,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1644,7 +1658,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 82,
+    "views": 85,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
