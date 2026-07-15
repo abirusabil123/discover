@@ -530,14 +530,15 @@
     "name": "learnislam4free",
     "description": "Free Islamic books and ebooks.",
     "tags": [
-      "learning"
+      "learning",
+      "positive"
     ],
     "views": 0,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
-    "reviewStatus": 0
+    "reviewStatus": 1
   },
   {
     "url": "https://lg.com/",
