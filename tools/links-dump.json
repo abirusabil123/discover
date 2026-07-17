@@ -163,7 +163,7 @@
       "positive",
       "daily"
     ],
-    "views": 60,
+    "views": 61,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -196,7 +196,7 @@
       "curated",
       "sample"
     ],
-    "views": 76,
+    "views": 77,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -373,7 +373,7 @@
       "blog",
       "platform"
     ],
-    "views": 8,
+    "views": 9,
     "likesMobile": 0,
     "dislikesMobile": 2000,
     "likesDesktop": 2,
@@ -631,7 +631,7 @@
       "daily",
       "news"
     ],
-    "views": 72,
+    "views": 74,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -692,7 +692,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 76,
+    "views": 77,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -791,7 +791,7 @@
       "curated",
       "sample"
     ],
-    "views": 297,
+    "views": 298,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -843,7 +843,7 @@
       "curated",
       "sample"
     ],
-    "views": 219,
+    "views": 220,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -875,7 +875,7 @@
       "curated",
       "sample"
     ],
-    "views": 229,
+    "views": 230,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 3,
@@ -972,7 +972,7 @@
       "positive",
       "daily"
     ],
-    "views": 19,
+    "views": 20,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1096,7 +1096,7 @@
       "curated",
       "sample"
     ],
-    "views": 108,
+    "views": 109,
     "likesMobile": 3,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -1176,7 +1176,7 @@
       "curated",
       "sample"
     ],
-    "views": 234,
+    "views": 235,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1291,7 +1291,7 @@
       "new",
       "tech"
     ],
-    "views": 43,
+    "views": 44,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1340,10 +1340,10 @@
       "sports",
       "positive"
     ],
-    "views": 19,
+    "views": 20,
     "likesMobile": 0,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1593,7 +1593,7 @@
       "social",
       "media"
     ],
-    "views": 172,
+    "views": 174,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1610,7 +1610,7 @@
       "social",
       "media"
     ],
-    "views": 172,
+    "views": 173,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -1627,7 +1627,7 @@
       "learning",
       "news"
     ],
-    "views": 64,
+    "views": 65,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1659,7 +1659,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 85,
+    "views": 86,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1694,10 +1694,10 @@
       "daily",
       "optional"
     ],
-    "views": 121,
+    "views": 122,
     "likesMobile": 7,
     "dislikesMobile": 0,
-    "likesDesktop": 3,
+    "likesDesktop": 4,
     "dislikesDesktop": 1,
     "reviewStatus": 1
   },

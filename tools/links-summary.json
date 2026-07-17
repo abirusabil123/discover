@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-15T18:27:35.841Z",
+    "generatedAt": "2026-07-17T12:55:46.809Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 106
   },
@@ -91,7 +91,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 164
+        "count": 165
       },
       {
         "country": "AE",
@@ -135,7 +135,7 @@
       },
       {
         "country": "GB",
-        "count": 12
+        "count": 13
       },
       {
         "country": "HK",
@@ -148,6 +148,10 @@
       {
         "country": "JP",
         "count": 11
+      },
+      {
+        "country": "KG",
+        "count": 1
       },
       {
         "country": "KR",
@@ -187,13 +191,13 @@
       },
       {
         "country": "US",
-        "count": 222
+        "count": 232
       }
     ],
     "byMonth": [
       {
         "month": "202607",
-        "count": 174
+        "count": 187
       },
       {
         "month": "202606",
@@ -207,11 +211,11 @@
     "byPlatform": [
       {
         "platform": "",
-        "count": 424
+        "count": 436
       },
       {
         "platform": "desktop",
-        "count": 137
+        "count": 138
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -241,13 +245,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 561
+        "count": 574
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 423
+        "count": 435
       },
       {
         "origin": "http://discoverall.space",
@@ -291,13 +295,13 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 80
+        "count": 81
       }
     ],
     "byPath": [
       {
         "path": "/",
-        "count": 429
+        "count": 441
       },
       {
         "path": "/addlink",
@@ -309,7 +313,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 137
+        "count": 138
       },
       {
         "path": "/index.html",
@@ -335,11 +339,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 595
+        "count": 608
       },
       {
         "status": "Bot",
-        "count": 589
+        "count": 604
       }
     ]
   },
