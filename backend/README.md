@@ -1,9 +1,17 @@
 # 🌏 Local Backend Setup
-A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically creating the database and inserting sample data on first run.
+A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically creating the database and inserting sample data on first run. Uses host networking (no Docker bridge) for maximum reliability.
 
 Publicly exposed at https://backenddiscover.duckdns.org:8443 to forward requests to the local Node.js app on port 8090.
 
-The full cron setup and sudoers backup are in `discover/backend/scripts`.
+The full cron setup and sudoers backup are in `../scripts`.
+
+## 🌐 How it works
+- The Node app listens on 0.0.0.0:8090.
+- MySQL listens on 0.0.0.0:3306.
+- Nginx terminates HTTPS on port 8443 and proxies to http://localhost:8090.
+- Because of network_mode: host, all services share the host network – no Docker bridge, no veth bugs.
+
+DNS and TLS are handled by a DuckDNS cron job and acme.sh, both documented in ../scripts/crontab.txt.
 
 ## ⚙️ Prerequisites
 - Linux
