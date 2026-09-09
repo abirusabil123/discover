@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-09T17:53:53.359Z",
+    "generatedAt": "2026-09-09T18:19:00.508Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 140
   },
@@ -98,7 +98,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 2896
+        "count": 2931
       },
       {
         "country": "AE",
@@ -182,7 +182,7 @@
       },
       {
         "country": "NL",
-        "count": 21
+        "count": 27
       },
       {
         "country": "PL",
@@ -220,7 +220,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 1671
+        "count": 1712
       },
       {
         "month": "202608",
@@ -246,7 +246,7 @@
       },
       {
         "platform": "desktop",
-        "count": 2871
+        "count": 2912
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -280,7 +280,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 3810
+        "count": 3851
       }
     ],
     "byOrigin": [
@@ -298,7 +298,7 @@
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2135
+        "count": 2152
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -338,7 +338,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 673
+        "count": 697
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -364,7 +364,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 2871
+        "count": 2912
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -394,7 +394,7 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 3860
+        "count": 3901
       },
       {
         "status": "Bot",
@@ -403,7 +403,7 @@
     ]
   },
   "errors": {
-    "count": 70,
+    "count": 71,
     "unresolved": 0,
     "allUnresolvedErrors": []
   }
