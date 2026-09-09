@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-09T13:09:18.660Z",
+    "generatedAt": "2026-09-09T16:53:07.257Z",
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
     "totalLinks": 140
   },
@@ -98,7 +98,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 2837
+        "count": 2845
       },
       {
         "country": "AE",
@@ -214,13 +214,13 @@
       },
       {
         "country": "US",
-        "count": 590
+        "count": 591
       }
     ],
     "byMonth": [
       {
         "month": "202609",
-        "count": 1609
+        "count": 1618
       },
       {
         "month": "202608",
@@ -246,7 +246,7 @@
       },
       {
         "platform": "desktop",
-        "count": 2809
+        "count": 2818
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -280,7 +280,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 3748
+        "count": 3757
       }
     ],
     "byOrigin": [
@@ -294,7 +294,7 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 60
+        "count": 61
       },
       {
         "origin": "http://localhost:44631",
@@ -338,7 +338,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 660
+        "count": 668
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -364,7 +364,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 2809
+        "count": 2818
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -394,7 +394,7 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 3798
+        "count": 3807
       },
       {
         "status": "Bot",
@@ -403,8 +403,19 @@
     ]
   },
   "errors": {
-    "count": 56,
-    "unresolved": 0,
-    "allUnresolvedErrors": []
+    "count": 57,
+    "unresolved": 1,
+    "allUnresolvedErrors": [
+      {
+        "id": 57,
+        "timestamp": "2026-09-09T16:28:24.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: Failed to fetch<br>Fallback to static list.",
+        "user_agent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36",
+        "resolved": 0,
+        "resolved_at": null
+      }
+    ]
   }
 }
