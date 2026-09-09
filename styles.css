@@ -150,11 +150,10 @@ body {
     word-break: break-word;
 }
 
-/* Link Stats Styles */
 .link-stats {
-    margin-top: 0.9375rem;
-    padding-top: 0.9375rem;
-    border-top: 1px solid rgba(74, 222, 128, 0.2);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 0.125rem solid rgba(74, 222, 128, 0.2);
 }
 
 .stats-row {
@@ -317,8 +316,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem;
-    border-bottom: 1px solid #333;
+    padding: 1rem;
+    border-bottom: 0.125rem solid #333;
 }
 
 .modal-header h3 {
@@ -566,26 +565,25 @@ body {
 .settings-section input {
     display: block;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-size: 1rem;
 }
 
 .settings-section button {
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
 }
 
 .success-message {
-    margin: 16px 0;
+    margin: 1rem 0;
     animation: fadeIn 0.3s ease;
 }
 
 .link-box.success-box {
-    padding: 16px 20px;
-    border-radius: 8px;
-    margin-top: 8px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .success-text {
@@ -621,7 +619,7 @@ body {
 .filter-mode-option {
     position: relative;
     flex: 1;
-    max-width: 200px;
+    max-width: 15rem;
     cursor: pointer;
 }
 
@@ -676,7 +674,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 4px;
+    height: 0.25rem;
     background-color: green;
     width: 0%;
     z-index: 9999;

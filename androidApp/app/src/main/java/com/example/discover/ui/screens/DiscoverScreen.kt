@@ -146,7 +146,7 @@ fun DiscoverScreen(
                 <meta name="viewport" content="width=device-width">
                 <style>
                     body {
-                        padding: 20px;
+                        padding: 1rem;
                         background: #0F0F0F;
                     }
                     .container {
