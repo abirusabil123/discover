@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 1,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -456,7 +456,7 @@
       "user-submitted",
       "positive"
     ],
-    "views": 19,
+    "views": 20,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -550,11 +550,11 @@
       "user-submitted",
       "positive"
     ],
-    "views": 121,
+    "views": 122,
     "likesMobile": 2,
     "dislikesMobile": 0,
-    "likesDesktop": 3,
-    "dislikesDesktop": 1,
+    "likesDesktop": 4,
+    "dislikesDesktop": 2,
     "reviewStatus": 1
   },
   {
@@ -676,7 +676,7 @@
       "learning",
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1159,11 +1159,11 @@
       "kernel",
       "positive"
     ],
-    "views": 9,
+    "views": 10,
     "likesMobile": 0,
     "dislikesMobile": 1001,
-    "likesDesktop": 1,
-    "dislikesDesktop": 0,
+    "likesDesktop": 2,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -1343,7 +1343,7 @@
       "curated",
       "sample"
     ],
-    "views": 80,
+    "views": 81,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -1357,7 +1357,7 @@
     "tags": [
       "positive"
     ],
-    "views": 1,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1557,7 +1557,7 @@
       "curated",
       "sample"
     ],
-    "views": 58,
+    "views": 59,
     "likesMobile": 2,
     "dislikesMobile": 2000,
     "likesDesktop": 1,
