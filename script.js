@@ -16,7 +16,6 @@ const FOCUS_DELAY = 100;
 const LOADING_WAIT = 1000;
 const RESET_DELAY = 2000;
 const RESET_DELAY_LONG = 10000;
-const API_TIMEOUT = 3600000; // 1 hour
 const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
 const MAX_HISTORY_LENGTH = 1024;
 const ENABLE_VIEW_TRACKING = true;
@@ -86,11 +85,9 @@ async function loadLinksFromAPI(logUser) {
     console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
 
     let linkCount = 0;
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), API_TIMEOUT);
     try {
         const query = `&tagsAllowlist=${encodeURIComponent(tagsAllowlist.join(','))}&tagsBlocklist=${encodeURIComponent(tagsBlocklist.join(','))}&urlsAllowlist=${encodeURIComponent(urlsAllowlist.join(' '))}&urlsBlocklist=${encodeURIComponent(urlsBlocklist.join(' '))}`;
-        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop&logUser=${logUser}${query}`, { signal: controller.signal });
+        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop&logUser=${logUser}${query}`);
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
