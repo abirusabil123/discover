@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -162,10 +162,10 @@
       "curated",
       "sample"
     ],
-    "views": 80,
+    "views": 81,
     "likesMobile": 2,
     "dislikesMobile": 1000,
-    "likesDesktop": 2,
+    "likesDesktop": 3,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -193,7 +193,7 @@
       "positive",
       "daily"
     ],
-    "views": 74,
+    "views": 76,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -411,10 +411,10 @@
       "islam",
       "learning"
     ],
-    "views": 115,
+    "views": 118,
     "likesMobile": 1,
     "dislikesMobile": 0,
-    "likesDesktop": 1,
+    "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -535,7 +535,7 @@
       "positive",
       "user-submitted"
     ],
-    "views": 135,
+    "views": 137,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -550,7 +550,7 @@
       "user-submitted",
       "positive"
     ],
-    "views": 120,
+    "views": 121,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -566,10 +566,10 @@
       "learning",
       "positive"
     ],
-    "views": 1,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -773,7 +773,7 @@
       "regular",
       "repeat"
     ],
-    "views": 85,
+    "views": 86,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -789,7 +789,7 @@
       "daily",
       "news"
     ],
-    "views": 89,
+    "views": 90,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -850,7 +850,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 94,
+    "views": 96,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -932,7 +932,7 @@
       "sample",
       "positive"
     ],
-    "views": 76,
+    "views": 77,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 2,
@@ -949,7 +949,7 @@
       "curated",
       "sample"
     ],
-    "views": 319,
+    "views": 321,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -964,7 +964,7 @@
       "daily",
       "positive"
     ],
-    "views": 1,
+    "views": 3,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -999,7 +999,7 @@
       "palestine",
       "free"
     ],
-    "views": 58,
+    "views": 59,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1016,7 +1016,7 @@
       "curated",
       "sample"
     ],
-    "views": 241,
+    "views": 243,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1048,7 +1048,7 @@
       "curated",
       "sample"
     ],
-    "views": 247,
+    "views": 250,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1175,7 +1175,7 @@
       "positive",
       "daily"
     ],
-    "views": 40,
+    "views": 42,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1264,7 +1264,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1278,7 +1278,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1294,7 +1294,7 @@
       "sample",
       "positive"
     ],
-    "views": 61,
+    "views": 62,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -1357,7 +1357,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1371,7 +1371,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1402,7 +1402,7 @@
       "curated",
       "sample"
     ],
-    "views": 384,
+    "views": 385,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1417,7 +1417,7 @@
       "daily",
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1445,7 +1445,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1475,7 +1475,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1489,7 +1489,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1506,7 +1506,7 @@
       "curated",
       "sample"
     ],
-    "views": 262,
+    "views": 264,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -1524,7 +1524,7 @@
       "positive",
       "daily"
     ],
-    "views": 130,
+    "views": 131,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1618,7 +1618,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1635,7 +1635,7 @@
       "new",
       "tech"
     ],
-    "views": 65,
+    "views": 69,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1765,7 +1765,7 @@
       "user-submitted",
       "positive"
     ],
-    "views": 97,
+    "views": 98,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1780,7 +1780,7 @@
       "daily",
       "positive"
     ],
-    "views": 2,
+    "views": 3,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1871,7 +1871,7 @@
       "chips",
       "company"
     ],
-    "views": 101,
+    "views": 102,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1936,7 +1936,7 @@
       "mobilephonecompany",
       "poetic"
     ],
-    "views": 87,
+    "views": 88,
     "likesMobile": 0,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -1952,7 +1952,7 @@
       "sample",
       "positive"
     ],
-    "views": 52,
+    "views": 53,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 2,
@@ -1987,7 +1987,7 @@
       "curated",
       "sample"
     ],
-    "views": 250,
+    "views": 252,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -2021,7 +2021,7 @@
       "daily",
       "positive"
     ],
-    "views": 0,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2041,7 +2041,7 @@
       "beautiful",
       "optional"
     ],
-    "views": 176,
+    "views": 177,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -2058,7 +2058,7 @@
       "social",
       "media"
     ],
-    "views": 189,
+    "views": 191,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2075,7 +2075,7 @@
       "social",
       "media"
     ],
-    "views": 193,
+    "views": 194,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -2106,10 +2106,10 @@
       "learning",
       "news"
     ],
-    "views": 81,
+    "views": 83,
     "likesMobile": 4,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -2138,7 +2138,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 106,
+    "views": 107,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2152,7 +2152,7 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2170,10 +2170,10 @@
       "daily",
       "optional"
     ],
-    "views": 101,
+    "views": 102,
     "likesMobile": 1,
     "dislikesMobile": 2,
-    "likesDesktop": 1,
+    "likesDesktop": 2,
     "dislikesDesktop": 1,
     "reviewStatus": 1
   },
