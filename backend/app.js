@@ -320,6 +320,9 @@ app.get('/getLinks', async (req, res, next) => {
   const user_agent = req.headers['user-agent'] || "";
   const origin = req.headers.origin || "";
 
+  // Test loading animation
+  // await new Promise(resolve => setTimeout(resolve, 6000));
+
   try {
 
     if (logUser && !reviewStatusEnable) {

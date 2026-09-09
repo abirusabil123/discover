@@ -465,6 +465,7 @@ body {
 .loading-spinner {
     width: 2rem;
     height: 2rem;
+    border: 0.5rem solid #333;
     border-top: 0.5rem solid white;
     border-radius: 50%;
     animation: spin 1s linear infinite;
