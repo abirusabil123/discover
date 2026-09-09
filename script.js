@@ -10,17 +10,15 @@ let visitedLinks = new Set(); // URLs of links already visited this session (Set
 let currentLinkUrl = null; // URL of the currently displayed link (used for stats actions)
 let selectedTags = []; // Tags selected in the add-link form
 const userActions = new Map(); // Tracks user actions in session per link URL to prevent duplicate server calls
-let controlsEnabled = false;
 
 const UI_ANIMATION_DELAY = 10;
 const FOCUS_DELAY = 100;
 const LOADING_WAIT = 1000;
 const RESET_DELAY = 2000;
 const RESET_DELAY_LONG = 10000;
-const API_TIMEOUT = 64000;
+const API_TIMEOUT = 3600000; // 1 hour
 const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
 const MAX_HISTORY_LENGTH = 1024;
-const ENABLE_FALLBACK = true;
 const ENABLE_VIEW_TRACKING = true;
 const ERROR_MESSAGE = 'Unable to connect to the server. Please make sure your local backend is running.';
 
@@ -52,22 +50,35 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeApp() {
     console.log('Initializing app...');
     loadSettings();
-    console.log('Using API mode');
+    enableControls();
 
-    // Show loading animation
-    const loadingAnimation = document.getElementById('loading-animation');
-    const controlButtons = document.getElementById('control-buttons');
-    if (loadingAnimation) {
-        // Trigger animation after a brief delay
-        setTimeout(() => {
-            if (!controlsEnabled) {
-                controlButtons.style.display = 'none';
-                loadingAnimation.style.display = 'flex';
-                console.log('Loading links animation triggered');
-            }
-        }, LOADING_WAIT);
-    }
+    loadStaticLinks();
     loadLinksFromAPI(1);
+}
+
+
+
+function enableControls() {
+    console.log('enableControls called');
+
+    const controlButtons = document.getElementById('control-buttons');
+    // Show control buttons with animation
+    if (controlButtons) {
+        controlButtons.style.display = 'flex';
+        controlButtons.style.visibility = 'visible';
+        // Trigger animation after a brief delay
+        controlButtons.classList.add('show');
+        console.log('Control buttons animation triggered');
+    }
+}
+
+async function loadStaticLinks() {
+    if (STATIC.SAMPLE_LINKS && STATIC.SAMPLE_LINKS.length > 0) {
+        links = STATIC.SAMPLE_LINKS;
+        console.log(`Loaded ${links.length} links from static.js fallback`);
+    } else {
+        showErrorMessage('No static links available. Please check your static.js file.');
+    }
 }
 
 async function loadLinksFromAPI(logUser) {
@@ -88,16 +99,13 @@ async function loadLinksFromAPI(logUser) {
         links = await response.json();
         console.log(`Loaded ${links.length} links from API.`);
 
-        enableControls();
         document.getElementById('api-status-indicator').classList.add('online');
 
         // ✅ Return the count so it can be shown in the success message
         linkCount = links.length;
     } catch (error) {
         console.error('Failed to load links from API:', error);
-        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Fallback to static list.");
-
-        if (ENABLE_FALLBACK) loadStaticLinks();
+        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
 
         document.getElementById('api-status-indicator').classList.add('offline');
     } finally {
@@ -109,40 +117,6 @@ async function loadLinksFromAPI(logUser) {
                 successBox.textContent = `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
             }
         }
-        updateProgressBar();
-    }
-}
-
-async function loadStaticLinks() {
-    if (STATIC.SAMPLE_LINKS && STATIC.SAMPLE_LINKS.length > 0) {
-        links = STATIC.SAMPLE_LINKS;
-        console.log(`Loaded ${links.length} links from static.js fallback`);
-        enableControls();
-    } else {
-        showErrorMessage('No static links available. Please check your static.js file.');
-    }
-}
-
-function enableControls() {
-    console.log('enableControls called');
-    controlsEnabled = true;
-
-    // Hide loading animation
-    const loadingAnimation = document.getElementById('loading-animation');
-    const controlButtons = document.getElementById('control-buttons');
-
-    if (loadingAnimation) {
-        loadingAnimation.style.display = 'none';
-        console.log('Loading animation hidden');
-    }
-
-    // Show control buttons with animation
-    if (controlButtons) {
-        controlButtons.style.display = 'flex';
-        controlButtons.style.visibility = 'visible';
-        // Trigger animation after a brief delay
-        controlButtons.classList.add('show');
-        console.log('Control buttons animation triggered');
     }
 }
 
@@ -652,7 +626,7 @@ window.addEventListener('load', updateProgressBar);
 
 // Add some fun Easter eggs
 let clickCount = 0;
-document.querySelector('.header h1').addEventListener('click', function () {
+document.querySelector('.header h1')?.addEventListener('click', function () {
     clickCount++;
     if (clickCount === 5) {
         this.textContent = '🎉 You found the secret! 🎉';

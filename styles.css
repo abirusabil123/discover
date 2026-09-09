@@ -452,30 +452,6 @@ body {
     line-height: 1.5;
 }
 
-/* Loading Animation Styles */
-.loading-animation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 7.475rem;
-}
-
-.loading-spinner {
-    width: 2rem;
-    height: 2rem;
-    border: 0.5rem solid #333;
-    border-top: 0.5rem solid white;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-.loading-text {
-    color: #888;
-    text-align: center;
-    padding-left: 1rem;
-}
-
 .control-buttons {
     display: flex;
     gap: 0.625rem;
@@ -691,14 +667,6 @@ body {
 }
 
 @media (max-width: 48rem) {
-    .loading-animation {
-        height: 15.475rem;
-    }
-
-    .loading-text {
-        font-size: 1rem;
-    }
-
     body {
         padding: 1rem;
     }
