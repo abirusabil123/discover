@@ -459,7 +459,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 119.6px;
+    height: 7.475rem;
 }
 
 .loading-spinner {
@@ -694,7 +694,7 @@ body {
 
 @media (max-width: 48rem) {
     .loading-animation {
-        height: 247.6px;
+        height: 15.475rem;
     }
 
     .loading-text {
