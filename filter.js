@@ -80,10 +80,7 @@ async function loadIndividualFilter() {
     if (!container) return;
 
     try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), API_TIMEOUT);
-        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop&logUser=0`, { signal: controller.signal });
-        clearTimeout(timeoutId);
+        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop&logUser=0`);
 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
