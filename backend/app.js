@@ -320,7 +320,7 @@ app.get('/getLinks', async (req, res, next) => {
   const user_agent = req.headers['user-agent'] || "";
   const origin = req.headers.origin || "";
 
-  // Test loading animation
+  // Test delay
   // await new Promise(resolve => setTimeout(resolve, 6000));
 
   try {
@@ -408,6 +408,9 @@ app.get('/getLinks', async (req, res, next) => {
 app.post('/incrementView', voteLimiter, async (req, res, next) => {
   try {
     const { url, action } = req.query;
+
+    // Test delay
+    // await new Promise(resolve => setTimeout(resolve, 6000));
 
     if (!url) {
       return res.status(400).json({ error: 'URL parameter is required' });
