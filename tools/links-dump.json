@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 2,
+    "views": 5,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -193,7 +193,7 @@
       "positive",
       "daily"
     ],
-    "views": 76,
+    "views": 79,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -289,9 +289,9 @@
     "tags": [
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
-    "dislikesMobile": 0,
+    "dislikesMobile": 1000,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -411,7 +411,7 @@
       "islam",
       "learning"
     ],
-    "views": 118,
+    "views": 122,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -611,7 +611,7 @@
     "tags": [
       "reset"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -630,7 +630,7 @@
     ],
     "views": 13,
     "likesMobile": 0,
-    "dislikesMobile": 1001,
+    "dislikesMobile": 1000,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -663,7 +663,7 @@
     ],
     "views": 12,
     "likesMobile": 0,
-    "dislikesMobile": 1001,
+    "dislikesMobile": 1000,
     "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -706,7 +706,7 @@
       "wesome",
       "wesome,gorgeous"
     ],
-    "views": 116,
+    "views": 117,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -789,7 +789,7 @@
       "daily",
       "news"
     ],
-    "views": 90,
+    "views": 93,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -850,7 +850,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 96,
+    "views": 99,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -874,7 +874,7 @@
     "likesMobile": 0,
     "dislikesMobile": 2000,
     "likesDesktop": 1,
-    "dislikesDesktop": 1001,
+    "dislikesDesktop": 1000,
     "reviewStatus": 1
   },
   {
@@ -949,7 +949,7 @@
       "curated",
       "sample"
     ],
-    "views": 321,
+    "views": 323,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -961,14 +961,13 @@
     "name": "nitter",
     "description": "Browse twitter without logging in for a no personalized recommendation algorithm experience.",
     "tags": [
-      "daily",
       "positive"
     ],
-    "views": 3,
+    "views": 5,
     "likesMobile": 0,
-    "dislikesMobile": 0,
+    "dislikesMobile": 1000,
     "likesDesktop": 0,
-    "dislikesDesktop": 0,
+    "dislikesDesktop": 1000,
     "reviewStatus": 1
   },
   {
@@ -999,7 +998,7 @@
       "palestine",
       "free"
     ],
-    "views": 59,
+    "views": 61,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1016,7 +1015,7 @@
       "curated",
       "sample"
     ],
-    "views": 243,
+    "views": 244,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1048,7 +1047,7 @@
       "curated",
       "sample"
     ],
-    "views": 250,
+    "views": 253,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1143,7 +1142,7 @@
       "learning",
       "positive"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1161,7 +1160,7 @@
     ],
     "views": 10,
     "likesMobile": 0,
-    "dislikesMobile": 1001,
+    "dislikesMobile": 1000,
     "likesDesktop": 2,
     "dislikesDesktop": 1,
     "reviewStatus": 1
@@ -1175,7 +1174,7 @@
       "positive",
       "daily"
     ],
-    "views": 43,
+    "views": 45,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1278,7 +1277,7 @@
     "tags": [
       "positive"
     ],
-    "views": 1,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1313,7 +1312,7 @@
     ],
     "views": 11,
     "likesMobile": 3,
-    "dislikesMobile": 1002,
+    "dislikesMobile": 1000,
     "likesDesktop": 7,
     "dislikesDesktop": 1,
     "reviewStatus": 1
@@ -1402,7 +1401,7 @@
       "curated",
       "sample"
     ],
-    "views": 385,
+    "views": 389,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1417,7 +1416,7 @@
       "daily",
       "positive"
     ],
-    "views": 1,
+    "views": 5,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1506,7 +1505,7 @@
       "curated",
       "sample"
     ],
-    "views": 264,
+    "views": 268,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -1524,7 +1523,7 @@
       "positive",
       "daily"
     ],
-    "views": 131,
+    "views": 134,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1635,7 +1634,7 @@
       "new",
       "tech"
     ],
-    "views": 69,
+    "views": 71,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1686,7 +1685,7 @@
     "likesMobile": 0,
     "dislikesMobile": 2000,
     "likesDesktop": 6,
-    "dislikesDesktop": 1004,
+    "dislikesDesktop": 1000,
     "reviewStatus": 1
   },
   {
@@ -1780,7 +1779,7 @@
       "daily",
       "positive"
     ],
-    "views": 3,
+    "views": 5,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1871,7 +1870,7 @@
       "chips",
       "company"
     ],
-    "views": 102,
+    "views": 103,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1936,7 +1935,7 @@
       "mobilephonecompany",
       "poetic"
     ],
-    "views": 88,
+    "views": 89,
     "likesMobile": 0,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -2021,9 +2020,9 @@
       "daily",
       "positive"
     ],
-    "views": 2,
+    "views": 4,
     "likesMobile": 0,
-    "dislikesMobile": 0,
+    "dislikesMobile": 1,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
@@ -2041,7 +2040,7 @@
       "beautiful",
       "optional"
     ],
-    "views": 177,
+    "views": 178,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -2058,7 +2057,7 @@
       "social",
       "media"
     ],
-    "views": 191,
+    "views": 194,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2075,7 +2074,7 @@
       "social",
       "media"
     ],
-    "views": 194,
+    "views": 196,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -2106,7 +2105,7 @@
       "learning",
       "news"
     ],
-    "views": 83,
+    "views": 85,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2138,7 +2137,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 107,
+    "views": 108,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
