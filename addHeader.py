@@ -39,7 +39,7 @@ def add_header():
     skip_extensions = {'.ico', '.png', '.webp', '.jar', '.jpg', '.jpeg', '.gif', 
                       '.svg', '.pdf', '.zip', '.tar', '.gz', '.exe', '.dll', 
                       '.so', '.dylib', '.class', '.o', '.a', '.idx', '.pack', 
-                      '.rev', '.sample', '.name', '.md', '.xml'}
+                      '.rev', '.sample', '.name', '.md', '.xml', '.sh', '.properties'}
     
     # License text
     license_text_1 = """Copyright (c) 2025 Mohammad Sheraj"""

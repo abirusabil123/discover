@@ -37,11 +37,6 @@ Let's go back to before 2005, before EdgeRank was released.
 npx serve . -l 44631
 ```
 
-## Format code in VS Codium  
-```
-Ctrl+Shift+I
-```
-
 ## Add LICENSE header to new file
 ```
 python addHeader.py
