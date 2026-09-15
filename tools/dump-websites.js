@@ -11,16 +11,16 @@ const OUTPUT_FILE = path.join(__dirname, 'links-dump.json');
 async function fetchLinks() {
     try {
         console.log('🔍 Fetching links from API...');
-        
+
         const response = await fetch(`${API_BASE_URL}/getLinks?reviewStatusEnable=1`);
-        
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const links = await response.json();
         console.log(`✅ Fetched ${links.length} links from API`);
-        
+
         return links;
     } catch (error) {
         console.error('❌ Error fetching links:', error.message);
@@ -36,13 +36,13 @@ function needToIgnore(likesMobile, dislikesMobile) {
         return false;
     }
     const undesirable_score = dislikesMobile / Math.max(total, 1);
-    
+
     return undesirable_score > 0.8;
 }
 
 function analyzeLinks(links) {
     console.log('📊 Analyzing links...');
-    
+
     const analysis = {
         total: links.length,
         filteredMobile: 0,
@@ -66,16 +66,16 @@ function analyzeLinks(links) {
             '50+ votes': 0
         }
     };
-    
+
     links.forEach(link => {
         const likesMobile = link.likesMobile || 0;
         const dislikesMobile = link.dislikesMobile || 0;
         const likesDesktop = link.likesDesktop || 0;
         const dislikesDesktop = link.dislikesDesktop || 0;
-        
+
         const total = likesMobile + dislikesMobile;
         const score = total > 0 ? (dislikesMobile / total) * 100 : 0;
-        
+
         // Apply filtering logic
         if (needToIgnore(likesMobile, dislikesMobile)) {
             analysis.filteredMobile++;
@@ -85,7 +85,7 @@ function analyzeLinks(links) {
             analysis.filteredDesktop++;
             analysis.blockedDesktopUrls.push(link.url);
         }
-        
+
         // Count by score
         if (score === 0) analysis.byScore['0%']++;
         else if (score <= 25) analysis.byScore['1-25%']++;
@@ -93,7 +93,7 @@ function analyzeLinks(links) {
         else if (score <= 75) analysis.byScore['51-75%']++;
         else if (score < 80) analysis.byScore['76-79%']++;
         else analysis.byScore['80-100%']++;
-        
+
         // Count by vote count
         if (total === 0) analysis.byVoteCount['0 votes']++;
         else if (total <= 3) analysis.byVoteCount['1-3 votes']++;
@@ -101,7 +101,7 @@ function analyzeLinks(links) {
         else if (total <= 50) analysis.byVoteCount['11-50 votes']++;
         else analysis.byVoteCount['50+ votes']++;
     });
-    
+
     return analysis;
 }
 
@@ -114,16 +114,16 @@ function fixUrl(url) {
     if (!fixedUrl.match(/^https?:\/\//i)) {
         fixedUrl = 'https://' + fixedUrl;
     }
-    
+
     try {
         // Use URL constructor to validate
         const urlObj = new URL(fixedUrl);
-        
+
         // Ensure it's a valid web URL (http or https)
         if (!['http:', 'https:'].includes(urlObj.protocol)) {
             throw new Error('Invalid protocol');
         }
-        
+
         return urlObj.href;
     } catch (error) {
         throw new Error('Invalid URL format');
@@ -150,11 +150,11 @@ async function saveToFile(data) {
             ...rest,
             url: fixUrl(rest.url) // Fix the URL here
         }));
-        
+
         // Save raw link data only
         fs.writeFileSync(OUTPUT_FILE, JSON.stringify(cleanedLinks, null, 2));
         console.log(`💾 Raw data saved to: ${OUTPUT_FILE}`);
-        
+
         // Get errors from API
         let errorsData = { count: 0, unresolved: 0, allUnresolvedErrors: [] };
         try {
@@ -170,15 +170,14 @@ async function saveToFile(data) {
         } catch (error) {
             console.warn('⚠️ Could not fetch errors:', error.message);
         }
-        
+
         // Get visitors analytics
         const visitorsAnalytics = await fetchVisitorsAnalytics();
-        
+
         // Save summary WITH errors data
         const summaryFile = path.join(__dirname, 'links-summary.json');
         fs.writeFileSync(summaryFile, JSON.stringify({
             metadata: {
-                generatedAt: new Date().toISOString(),
                 apiUrl: API_BASE_URL,
                 totalLinks: data.links.length
             },
@@ -187,7 +186,7 @@ async function saveToFile(data) {
             errors: errorsData
         }, null, 2));
         console.log(`📋 Summary saved to: ${summaryFile}`);
-        
+
     } catch (error) {
         console.error('❌ Error saving to file:', error.message);
         throw error;
@@ -197,23 +196,23 @@ async function saveToFile(data) {
 async function main() {
     try {
         console.log('🚀 Starting link data dump...\n');
-        
+
         // First, try to get all links (including filtered ones)
         let allLinks = await fetchLinks();
         allLinks.sort((a, b) => (a.url || '').localeCompare(b.url || ''));
-        
+
         // Analyze the links
         const analysis = analyzeLinks(allLinks);
-        
+
         // 🔥 Sort blocked lists alphabetically by URL
         analysis.blockedMobileUrls.sort();
         analysis.blockedDesktopUrls.sort();
-        
+
         // Save to file
         await saveToFile({ links: allLinks, analysis });
-        
+
         console.log('\n✅ Link data dump completed successfully!');
-        
+
     } catch (error) {
         console.error('\n❌ Error in main process:', error.message);
         process.exit(1);
