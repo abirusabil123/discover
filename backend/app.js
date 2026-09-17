@@ -14,10 +14,13 @@ const isbot = typeof isbotModule === 'function' ? isbotModule : (isbotModule.isb
 
 // Add this near the top after requiring geoip-lite
 function getCountryFromRequest(req) {
-  // const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
-  const ip = req.ip;
-  const geo = geoip.lookup(ip);
-  return geo?.country || "";
+  const ip1 = req.ip;
+  const ip2 = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
+  const geo = geoip.lookup(ip1 || ip2);
+  const country = geo?.country;
+  console.log(`ip1 ${ip1} ip2 ${ip2} geo ${geo} country ${country}`);
+
+  return country;
 }
 
 // Configure Express to trust proxies
@@ -303,8 +306,11 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
   const { user_agent, origin, platform, path, product } = req.query;
 
   // Log to database (same as before)
+  var tempCountry = getCountryFromRequest(req);
+  var tempIsBot = isbot(user_agent);
+  console.log(`tempIsBot ${tempIsBot}`);
   await logVisitorToDB(
-    getCountryFromRequest(req), user_agent || "", origin || "", platform || "", path || "", product || "", isbot(user_agent)
+    tempCountry || "", user_agent || "", origin || "", platform || "", path || "", product || "", tempIsBot || false
   );
 
   // Return 1x1 transparent pixel
@@ -326,14 +332,17 @@ app.get('/getLinks', async (req, res, next) => {
   try {
 
     if (logUser && !reviewStatusEnable) {
+      var tempCountry = getCountryFromRequest(req);
+      var tempIsBot = isbot(user_agent);
+      console.log(`tempIsBot ${tempIsBot}`);
       await logVisitorToDB(
-        getCountryFromRequest(req),
+        tempCountry || "",
         user_agent || "",
         origin || "",
         platform || "",
         '/getLinks',
         'discover-backend',
-        isbot(user_agent)
+        tempIsBot || false
       );
     }
 

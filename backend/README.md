@@ -62,6 +62,13 @@ docker compose logs -f app
 docker compose logs db
 ```
 
+### 6. Update packages
+```bash
+npm outdated
+npm update
+docker compose up -d --build
+```
+
 ## 🔧 Management Commands
 ```bash
 # Stop containers
