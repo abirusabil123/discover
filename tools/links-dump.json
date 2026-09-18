@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 8,
+    "views": 10,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -193,7 +193,7 @@
       "positive",
       "daily"
     ],
-    "views": 84,
+    "views": 86,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -411,7 +411,7 @@
       "islam",
       "learning"
     ],
-    "views": 126,
+    "views": 128,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -789,7 +789,7 @@
       "daily",
       "news"
     ],
-    "views": 98,
+    "views": 100,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -850,7 +850,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 105,
+    "views": 107,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -949,7 +949,7 @@
       "curated",
       "sample"
     ],
-    "views": 328,
+    "views": 329,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -998,7 +998,7 @@
       "palestine",
       "free"
     ],
-    "views": 68,
+    "views": 70,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1015,7 +1015,7 @@
       "curated",
       "sample"
     ],
-    "views": 249,
+    "views": 251,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1047,7 +1047,7 @@
       "curated",
       "sample"
     ],
-    "views": 259,
+    "views": 261,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1174,7 +1174,7 @@
       "positive",
       "daily"
     ],
-    "views": 49,
+    "views": 51,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1237,7 +1237,7 @@
       "sample",
       "positive"
     ],
-    "views": 51,
+    "views": 52,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -1401,7 +1401,7 @@
       "curated",
       "sample"
     ],
-    "views": 393,
+    "views": 395,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1416,7 +1416,7 @@
       "daily",
       "positive"
     ],
-    "views": 9,
+    "views": 11,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1505,7 +1505,7 @@
       "curated",
       "sample"
     ],
-    "views": 272,
+    "views": 275,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -1523,7 +1523,7 @@
       "positive",
       "daily"
     ],
-    "views": 139,
+    "views": 142,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1634,7 +1634,7 @@
       "new",
       "tech"
     ],
-    "views": 76,
+    "views": 78,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1779,7 +1779,7 @@
       "daily",
       "positive"
     ],
-    "views": 9,
+    "views": 11,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2005,11 +2005,11 @@
       "incompetence",
       "evil"
     ],
-    "views": 1,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
-    "dislikesDesktop": 0,
+    "likesDesktop": 1,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -2056,7 +2056,7 @@
       "social",
       "media"
     ],
-    "views": 199,
+    "views": 200,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2073,7 +2073,7 @@
       "social",
       "media"
     ],
-    "views": 201,
+    "views": 203,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -2104,7 +2104,7 @@
       "learning",
       "news"
     ],
-    "views": 90,
+    "views": 92,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2136,7 +2136,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 112,
+    "views": 114,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,

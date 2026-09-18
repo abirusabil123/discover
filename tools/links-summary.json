@@ -129,7 +129,7 @@
       },
       {
         "country": "CN",
-        "count": 67
+        "count": 68
       },
       {
         "country": "DE",
@@ -161,7 +161,7 @@
       },
       {
         "country": "IN",
-        "count": 45
+        "count": 46
       },
       {
         "country": "JP",
@@ -223,7 +223,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 1754
+        "count": 1756
       },
       {
         "month": "202608",
@@ -249,7 +249,7 @@
       },
       {
         "platform": "desktop",
-        "count": 2954
+        "count": 2956
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -283,13 +283,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 3893
+        "count": 3895
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 940
+        "count": 941
       },
       {
         "origin": "file://",
@@ -341,7 +341,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 738
+        "count": 739
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -367,7 +367,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 2954
+        "count": 2956
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -397,58 +397,17 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 3943
+        "count": 3945
       },
       {
         "status": "Bot",
-        "count": 1506
+        "count": 1508
       }
     ]
   },
   "errors": {
     "count": 75,
-    "unresolved": 4,
-    "allUnresolvedErrors": [
-      {
-        "id": 72,
-        "timestamp": "2026-09-17T12:08:56.000Z",
-        "source": "backend",
-        "level": "error",
-        "message": "200: ip is not defined (GET /getLinks)",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 73,
-        "timestamp": "2026-09-17T12:08:56.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: Error: HTTP error! status: 500<br>Using static list as fallback.",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 74,
-        "timestamp": "2026-09-17T12:09:01.000Z",
-        "source": "backend",
-        "level": "error",
-        "message": "200: ip is not defined (GET /getLinks)",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
-        "resolved": 0,
-        "resolved_at": null
-      },
-      {
-        "id": 75,
-        "timestamp": "2026-09-17T12:09:01.000Z",
-        "source": "frontend",
-        "level": "error",
-        "message": "Failed to load links from API.<br>Cannot reach backend server: Error: HTTP error! status: 500<br>Using static list as fallback.",
-        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
-        "resolved": 0,
-        "resolved_at": null
-      }
-    ]
+    "unresolved": 0,
+    "allUnresolvedErrors": []
   }
 }
