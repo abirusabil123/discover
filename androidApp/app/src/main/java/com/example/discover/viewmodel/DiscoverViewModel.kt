@@ -74,7 +74,7 @@ class DiscoverViewModel(
     // Persistent Settings Filter State - Default to "positive, daily" for tagsAllowlist
     val tagsAllowlist =
         MutableStateFlow(prefs.getString("tags_allow", "positive, daily") ?: "positive, daily")
-    val tagsBlocklist = MutableStateFlow(prefs.getString("tags_block", "optional") ?: "optional")
+    val tagsBlocklist = MutableStateFlow(prefs.getString("tags_block", "optional, daily-desktop") ?: "optional, daily-desktop")
     val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
     val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
 
@@ -128,7 +128,7 @@ class DiscoverViewModel(
 
     fun resetToDefaults() {
         tagsAllowlist.value = "positive, daily"
-        tagsBlocklist.value = "optional"
+        tagsBlocklist.value = "optional, daily-desktop"
         urlsAllowlist.value = ""
         urlsBlocklist.value = ""
         _toastMessage.value = "Settings reset: Filters cleared"

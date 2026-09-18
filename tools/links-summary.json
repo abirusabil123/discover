@@ -6,7 +6,7 @@
   "analysis": {
     "total": 140,
     "filteredMobile": 59,
-    "filteredDesktop": 10,
+    "filteredDesktop": 11,
     "blockedMobileUrls": [
       "http://radio.garden/",
       "https://10minutemail.com/",
@@ -74,6 +74,7 @@
       "https://mojapp.in/",
       "https://nitter.net/",
       "https://sci-net.xyz/",
+      "https://twitter.com/",
       "https://www.example.com/",
       "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
       "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
@@ -101,7 +102,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 2971
+        "count": 2980
       },
       {
         "country": "AE",
@@ -223,7 +224,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 1756
+        "count": 1765
       },
       {
         "month": "202608",
@@ -249,7 +250,7 @@
       },
       {
         "platform": "desktop",
-        "count": 2956
+        "count": 2965
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -283,7 +284,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 3895
+        "count": 3904
       }
     ],
     "byOrigin": [
@@ -301,7 +302,7 @@
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2152
+        "count": 2156
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -341,7 +342,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 739
+        "count": 744
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -367,7 +368,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 2956
+        "count": 2965
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -397,7 +398,7 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 3945
+        "count": 3954
       },
       {
         "status": "Bot",

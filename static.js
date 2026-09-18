@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 6,
+            "views": 10,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -173,7 +173,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 81,
+            "views": 86,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -287,7 +287,7 @@ const STATIC = {
                 "user-submitted",
                 "positive"
             ],
-            "views": 12,
+            "views": 14,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -331,7 +331,7 @@ const STATIC = {
                 "sample",
                 "positive"
             ],
-            "views": 94,
+            "views": 95,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 9,
@@ -361,7 +361,7 @@ const STATIC = {
                 "islam",
                 "learning"
             ],
-            "views": 123,
+            "views": 128,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -374,7 +374,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -444,6 +444,8 @@ const STATIC = {
             "url": "https://hashnode.com/featured",
             "description": "Developer blog platform.",
             "tags": [
+                "daily",
+                "daily-desktop",
                 "positive",
                 "user-submitted"
             ],
@@ -491,7 +493,7 @@ const STATIC = {
                 "user-submitted",
                 "positive"
             ],
-            "views": 122,
+            "views": 123,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -662,6 +664,8 @@ const STATIC = {
             "url": "https://littlealchemy2.com/",
             "description": "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
             "tags": [
+                "daily",
+                "daily-desktop",
                 "positive",
                 "curated",
                 "sample"
@@ -677,6 +681,8 @@ const STATIC = {
             "url": "https://loops.video/",
             "description": "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
             "tags": [
+                "daily",
+                "daily-desktop",
                 "positive",
                 "videos",
                 "socialmedia"
@@ -692,6 +698,8 @@ const STATIC = {
             "url": "https://m.youtube.com/feed/subscriptions",
             "description": "The subscriptions feed does not have implicit personalized recommendations.",
             "tags": [
+                "daily",
+                "daily-desktop",
                 "positive",
                 "video",
                 "social",
@@ -715,7 +723,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 94,
+            "views": 100,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -772,7 +780,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 101,
+            "views": 107,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -846,7 +854,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 324,
+            "views": 329,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
@@ -879,7 +887,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 63,
+            "views": 70,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -895,7 +903,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 245,
+            "views": 251,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -925,7 +933,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 255,
+            "views": 261,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1044,7 +1052,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 46,
+            "views": 51,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1088,7 +1096,7 @@ const STATIC = {
                 "sample",
                 "positive"
             ],
-            "views": 51,
+            "views": 52,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -1167,6 +1175,8 @@ const STATIC = {
             "url": "https://theuselessweb.com/",
             "description": "Random fun and bizarre links with one click",
             "tags": [
+                "daily",
+                "daily-desktop",
                 "positive",
                 "curated",
                 "sample"
@@ -1219,19 +1229,6 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/",
-            "description": "twitter",
-            "tags": [
-                "optional"
-            ],
-            "views": 23,
-            "likesMobile": 0,
-            "dislikesMobile": 1000,
-            "likesDesktop": 10,
-            "dislikesDesktop": 0
-        },
-        {
             "name": "Unsplash",
             "url": "https://unsplash.com/",
             "description": "Beautiful, free images gifted by the world's most generous community of photographers",
@@ -1241,7 +1238,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 390,
+            "views": 395,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1255,7 +1252,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 6,
+            "views": 12,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1268,7 +1265,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1292,6 +1289,8 @@ const STATIC = {
             "url": "https://window-swap.com/",
             "description": "See the view from someone else's window around the world",
             "tags": [
+                "daily",
+                "daily-desktop",
                 "positive",
                 "curated",
                 "sample"
@@ -1338,7 +1337,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 269,
+            "views": 275,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1355,7 +1354,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 136,
+            "views": 142,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1459,7 +1458,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 73,
+            "views": 78,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1534,7 +1533,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 6,
+            "views": 11,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1730,17 +1729,19 @@ const STATIC = {
                 "incompetence",
                 "evil"
             ],
-            "views": 1,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
         },
         {
             "name": "reddit",
             "url": "https://www.reddit.com/",
-            "description": "Online forum.",
+            "description": "Online forum which allows read only use on desktop without logging in.",
             "tags": [
+                "daily",
+                "daily-desktop",
                 "socialMedia"
             ],
             "views": 6,
@@ -1778,7 +1779,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 196,
+            "views": 200,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1794,7 +1795,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 197,
+            "views": 203,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1823,7 +1824,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 86,
+            "views": 92,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1853,7 +1854,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 109,
+            "views": 114,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1915,7 +1916,7 @@ const STATIC = {
             ],
             "views": 68,
             "likesMobile": 12,
-            "dislikesMobile": 9000,
+            "dislikesMobile": 1000,
             "likesDesktop": 3,
             "dislikesDesktop": 1
         }

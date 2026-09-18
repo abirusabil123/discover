@@ -1,4 +1,5 @@
-/* Copyright (c) 2025 Mohammad Sheraj *//* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
+/* Copyright (c) 2025 Mohammad Sheraj */
+/* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
 
 package com.example.discover.data
 
@@ -29,7 +30,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("daily", "positive", "learning"),
-            views = 6,
+            views = 10,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -49,7 +50,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("positive", "daily"),
-            views = 81,
+            views = 86,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -119,7 +120,7 @@ object StaticLinks {
             url = "https://easywaytoquran.com/4-qul-in-islam-2/",
             description = "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
             tags = listOf("positive", "daily", "quran", "islam", "learning"),
-            views = 123,
+            views = 128,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -129,7 +130,7 @@ object StaticLinks {
             url = "https://excalidraw.com/",
             description = "Make design diagrams in your browser.",
             tags = listOf("positive"),
-            views = 0,
+            views = 1,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -149,7 +150,7 @@ object StaticLinks {
             url = "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
             description = "Short play on the British rule in India",
             tags = listOf("user-submitted", "positive"),
-            views = 122,
+            views = 123,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -229,7 +230,7 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("positive", "daily", "news"),
-            views = 94,
+            views = 100,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -259,7 +260,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media",
             tags = listOf("positive", "daily", "twitteralternative", "socialmedia"),
-            views = 101,
+            views = 107,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -299,7 +300,7 @@ object StaticLinks {
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 324,
+            views = 329,
             likesMobile = 41,
             dislikesMobile = 3
         ),
@@ -319,7 +320,7 @@ object StaticLinks {
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
             tags = listOf("positive", "daily", "palestine", "free"),
-            views = 63,
+            views = 70,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -329,7 +330,7 @@ object StaticLinks {
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 245,
+            views = 251,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -339,7 +340,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 255,
+            views = 261,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -399,7 +400,7 @@ object StaticLinks {
             url = "https://safirnews.in/",
             description = "Indian news website.",
             tags = listOf("news", "positive", "daily"),
-            views = 46,
+            views = 51,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -449,7 +450,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 390,
+            views = 395,
             likesMobile = 56,
             dislikesMobile = 4
         ),
@@ -459,7 +460,7 @@ object StaticLinks {
             url = "https://unsplash.com/illustrations",
             description = "Free stock vector illustrations. Powered by creators everywhere.",
             tags = listOf("daily", "positive"),
-            views = 6,
+            views = 12,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -469,7 +470,7 @@ object StaticLinks {
             url = "https://web.archive.org/",
             description = "Explore more than 1 trillion web pages saved over time.",
             tags = listOf("positive"),
-            views = 0,
+            views = 1,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -509,7 +510,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 269,
+            views = 275,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -519,7 +520,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386599316112",
             description = "Short clips from Aljazeera.",
             tags = listOf("aljazeera", "flips", "learning", "positive", "daily"),
-            views = 136,
+            views = 142,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -559,7 +560,7 @@ object StaticLinks {
             url = "https://www.digit.in/",
             description = "Technology magazine.",
             tags = listOf("positive", "daily", "new", "tech"),
-            views = 73,
+            views = 78,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -609,7 +610,7 @@ object StaticLinks {
             url = "https://www.justwatch.com/",
             description = "What's trending in streaming OTT (over the top) entertainment.",
             tags = listOf("daily", "positive"),
-            views = 6,
+            views = 11,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -719,7 +720,7 @@ object StaticLinks {
             url = "https://www.propublica.org/article/louisiana-judges-ignored-prisoners-petitions-without-review-fifth-circuit?utm_campaign=propublica-sprout&utm_content=1783206006",
             description = "Years ago, the all-white judges of a Louisiana appellate court decided, in secret, to systematically ignore petitions filed by prisoners, most of them Black, who claimed they had been unjustly convicted.This is the story of a horrendous injustice and the three people who tried to expose it. It begins with a suicide note.",
             tags = listOf("positive", "law", "usa", "injustice", "incompetence", "evil"),
-            views = 1,
+            views = 2,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -739,7 +740,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 196,
+            views = 200,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -749,7 +750,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 197,
+            views = 203,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -769,7 +770,7 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("positive", "daily", "learning", "news"),
-            views = 86,
+            views = 92,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -779,7 +780,7 @@ object StaticLinks {
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
             tags = listOf("positive", "daily", "tiktok", "videos"),
-            views = 109,
+            views = 114,
             likesMobile = 0,
             dislikesMobile = 0
         ),

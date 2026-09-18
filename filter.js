@@ -7,7 +7,7 @@ function getStoredSettings() {
     const defaults = {
         filterMode: 'lists',
         lists: {
-            tagsAllowlist: 'positive',
+            tagsAllowlist: 'daily',
             tagsBlocklist: '',
             urlsAllowlist: '',
             urlsBlocklist: ''
@@ -229,7 +229,7 @@ function onFilterModeChange() {
 
 function resetFilterToDefaults() {
     // Reset lists fields
-    document.getElementById('filter-tags-allowlist').value = 'positive';
+    document.getElementById('filter-tags-allowlist').value = 'daily';
     document.getElementById('filter-tags-blocklist').value = '';
     document.getElementById('filter-urls-allowlist').value = '';
     document.getElementById('filter-urls-blocklist').value = '';
@@ -266,25 +266,23 @@ function saveSettings() {
 
 function loadSettings() {
     try {
-        const saved = localStorage.getItem('discover-settings');
-        if (!saved) return;
-        const settings = JSON.parse(saved);
+        const settings = getStoredSettings();
 
         // set radio
-        const mode = settings.filterMode || 'lists';
+        const mode = settings.filterMode;
         const modeRadio = document.querySelector(`input[name="filter-mode"][value="${mode}"]`);
         if (modeRadio) modeRadio.checked = true;
 
         // set individual blocked urls
-        individualBlockedUrls = settings.individual?.blockedUrls || [];
+        individualBlockedUrls = settings.individual?.blockedUrls;
 
         // set lists fields
-        const lists = settings.lists || {};
+        const lists = settings.lists;
         if (document.getElementById('filter-tags-allowlist')) {
-            document.getElementById('filter-tags-allowlist').value = lists.tagsAllowlist || 'positive';
-            document.getElementById('filter-tags-blocklist').value = lists.tagsBlocklist || '';
-            document.getElementById('filter-urls-allowlist').value = lists.urlsAllowlist || '';
-            document.getElementById('filter-urls-blocklist').value = lists.urlsBlocklist || '';
+            document.getElementById('filter-tags-allowlist').value = lists.tagsAllowlist;
+            document.getElementById('filter-tags-blocklist').value = lists.tagsBlocklist;
+            document.getElementById('filter-urls-allowlist').value = lists.urlsAllowlist;
+            document.getElementById('filter-urls-blocklist').value = lists.urlsBlocklist;
 
             onFilterModeChange();   // show/hide sections and load individual if needed
         }
