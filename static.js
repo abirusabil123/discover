@@ -213,8 +213,6 @@ const STATIC = {
             "description": "The top competitive programming platform.",
             "tags": [
                 "positive",
-                "daily",
-                "optional",
                 "code",
                 "learning",
                 "fun",
@@ -444,8 +442,6 @@ const STATIC = {
             "url": "https://hashnode.com/featured",
             "description": "Developer blog platform.",
             "tags": [
-                "daily",
-                "daily-desktop",
                 "positive",
                 "user-submitted"
             ],
@@ -961,7 +957,6 @@ const STATIC = {
             "description": "Math and Computer Science puzzles.",
             "tags": [
                 "positive",
-                "daily",
                 "optional",
                 "learning"
             ],

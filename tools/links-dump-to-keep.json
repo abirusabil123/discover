@@ -253,8 +253,6 @@
     "description": "The top competitive programming platform.",
     "tags": [
       "positive",
-      "daily",
-      "optional",
       "code",
       "learning",
       "fun",
@@ -500,8 +498,6 @@
     "name": "hashnode",
     "description": "Developer blog platform.",
     "tags": [
-      "daily",
-      "daily-desktop",
       "positive",
       "user-submitted"
     ],
@@ -1085,7 +1081,6 @@
     "description": "Math and Computer Science puzzles.",
     "tags": [
       "positive",
-      "daily",
       "optional",
       "learning"
     ],

@@ -69,7 +69,7 @@ object StaticLinks {
             name = "Codeforces",
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
-            tags = listOf("positive", "daily", "optional", "code", "learning", "fun", "poetic"),
+            tags = listOf("positive", "code", "learning", "fun", "poetic"),
             views = 148,
             likesMobile = 0,
             dislikesMobile = 0
@@ -359,7 +359,7 @@ object StaticLinks {
             name = "Project Euler Archives",
             url = "https://projecteuler.net/archives",
             description = "Math and Computer Science puzzles.",
-            tags = listOf("positive", "daily", "optional", "learning"),
+            tags = listOf("positive", "optional", "learning"),
             views = 31,
             likesMobile = 1,
             dislikesMobile = 0
