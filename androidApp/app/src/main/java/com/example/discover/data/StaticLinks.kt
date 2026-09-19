@@ -589,7 +589,7 @@ object StaticLinks {
             name = "FIFA 12 songs",
             url = "https://www.fifplay.com/fifa-12/soundtrack/",
             description = "The great FIFA 12 soundtrack for those who love nostalgia.",
-            tags = listOf("songs", "fifa", "positive", "daily", "optional"),
+            tags = listOf("songs", "fifa", "positive"),
             views = 15,
             likesMobile = 1,
             dislikesMobile = 0
@@ -779,7 +779,7 @@ object StaticLinks {
             name = "YouTube shorts",
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
-            tags = listOf("positive", "daily", "tiktok", "videos"),
+            tags = listOf("positive", "daily", "daily-mobile", "tiktok", "videos"),
             views = 114,
             likesMobile = 0,
             dislikesMobile = 0

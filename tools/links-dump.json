@@ -747,10 +747,8 @@
   {
     "url": "https://loops.video/",
     "name": "Alternative tiktok",
-    "description": "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
+    "description": "Short videos but just 4 videos in unlogged in mode. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
     "tags": [
-      "daily",
-      "daily-desktop",
       "positive",
       "videos",
       "socialmedia"
@@ -759,7 +757,7 @@
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
-    "dislikesDesktop": 0,
+    "dislikesDesktop": 1000,
     "reviewStatus": 1
   },
   {
@@ -1752,9 +1750,7 @@
     "tags": [
       "songs",
       "fifa",
-      "positive",
-      "daily",
-      "optional"
+      "positive"
     ],
     "views": 15,
     "likesMobile": 1,
@@ -2142,6 +2138,7 @@
     "tags": [
       "positive",
       "daily",
+      "daily-mobile",
       "tiktok",
       "videos"
     ],

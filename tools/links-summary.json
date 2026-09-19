@@ -6,7 +6,7 @@
   "analysis": {
     "total": 140,
     "filteredMobile": 59,
-    "filteredDesktop": 11,
+    "filteredDesktop": 12,
     "blockedMobileUrls": [
       "http://radio.garden/",
       "https://10minutemail.com/",
@@ -71,6 +71,7 @@
     "blockedDesktopUrls": [
       "https://abirusabil123.github.io/",
       "https://canon.com/",
+      "https://loops.video/",
       "https://mojapp.in/",
       "https://nitter.net/",
       "https://sci-net.xyz/",
@@ -102,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 2985
+        "count": 2992
       },
       {
         "country": "AE",
@@ -224,7 +225,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 1770
+        "count": 1777
       },
       {
         "month": "202608",
@@ -250,7 +251,7 @@
       },
       {
         "platform": "desktop",
-        "count": 2970
+        "count": 2977
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -284,7 +285,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 3909
+        "count": 3916
       }
     ],
     "byOrigin": [
@@ -342,7 +343,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 744
+        "count": 751
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -368,7 +369,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 2970
+        "count": 2977
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -398,7 +399,7 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 3959
+        "count": 3966
       },
       {
         "status": "Bot",

@@ -673,23 +673,6 @@ const STATIC = {
             "dislikesDesktop": 1
         },
         {
-            "name": "Alternative tiktok",
-            "url": "https://loops.video/",
-            "description": "Short videos. Loops.video is the flagship instance of Loops - an open-source, federated alternative to commercial short-video platforms, created by the team behind Pixelfed.",
-            "tags": [
-                "daily",
-                "daily-desktop",
-                "positive",
-                "videos",
-                "socialmedia"
-            ],
-            "views": 9,
-            "likesMobile": 0,
-            "dislikesMobile": 1000,
-            "likesDesktop": 3,
-            "dislikesDesktop": 0
-        },
-        {
             "name": "YouTube",
             "url": "https://m.youtube.com/feed/subscriptions",
             "description": "The subscriptions feed does not have implicit personalized recommendations.",
@@ -1496,9 +1479,7 @@ const STATIC = {
             "tags": [
                 "songs",
                 "fifa",
-                "positive",
-                "daily",
-                "optional"
+                "positive"
             ],
             "views": 15,
             "likesMobile": 1,
@@ -1846,6 +1827,7 @@ const STATIC = {
             "tags": [
                 "positive",
                 "daily",
+                "daily-mobile",
                 "tiktok",
                 "videos"
             ],
