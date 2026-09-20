@@ -103,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 2996
+        "count": 3022
       },
       {
         "country": "AE",
@@ -225,7 +225,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 1781
+        "count": 1807
       },
       {
         "month": "202608",
@@ -251,7 +251,7 @@
       },
       {
         "platform": "desktop",
-        "count": 2981
+        "count": 3007
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -285,7 +285,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 3920
+        "count": 3946
       }
     ],
     "byOrigin": [
@@ -343,7 +343,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 755
+        "count": 781
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -369,7 +369,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 2981
+        "count": 3007
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -399,7 +399,7 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 3970
+        "count": 3996
       },
       {
         "status": "Bot",
