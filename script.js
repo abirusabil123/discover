@@ -594,11 +594,6 @@ document.addEventListener('keydown', function (event) {
             event.preventDefault();
             loadPreviousLink();
             break;
-        case 'Escape':
-            const modal = document.getElementById('add-link-modal');
-            if (modal.style.display === 'flex') {
-                hideAddLinkForm();
-            }
     }
 });
 
