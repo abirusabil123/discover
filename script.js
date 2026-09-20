@@ -578,6 +578,13 @@ document.addEventListener('keydown', function (event) {
         return;
     }
 
+    // Ctrl+Space → I'm Feeling Lucky
+    if (event.ctrlKey && event.code === 'Space') {
+        event.preventDefault();
+        loadRandomLink();
+        return;
+    }
+
     switch (event.key) {
         case 'ArrowRight':
             event.preventDefault();
@@ -586,10 +593,6 @@ document.addEventListener('keydown', function (event) {
         case 'ArrowLeft':
             event.preventDefault();
             loadPreviousLink();
-            break;
-        case ' ':
-            event.preventDefault();
-            loadRandomLink();
             break;
         case 'Escape':
             const modal = document.getElementById('add-link-modal');
