@@ -216,7 +216,10 @@ const STATIC = {
                 "code",
                 "learning",
                 "fun",
-                "poetic"
+                "poetic",
+                "daily",
+                "daily-desktop",
+                "optional"
             ],
             "views": 148,
             "likesMobile": 0,
@@ -304,6 +307,21 @@ const STATIC = {
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Android training courses from Google",
+            "url": "https://developer.android.com/courses",
+            "description": "Whether a new developer, just new to Android, or an experienced professional, grow your skills with training created by Google's Android development experts.",
+            "tags": [
+                "daily",
+                "daily-desktop",
+                "optional"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -433,7 +451,7 @@ const STATIC = {
             ],
             "views": 12,
             "likesMobile": 0,
-            "dislikesMobile": 2000,
+            "dislikesMobile": 1000,
             "likesDesktop": 2,
             "dislikesDesktop": 1
         },
@@ -857,6 +875,21 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "MIT -  Mathematics for Computer Science",
+            "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/syllabus/",
+            "description": "Welcome to MIT 6.042! In this course, we'll teach you some mathematics that we think you'll find useful in your study of computer science.",
+            "tags": [
+                "daily",
+                "daily-desktop",
+                "optional"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "palestine.com",
             "url": "https://palestine.com/",
             "description": "The website https://palestine.com/.",
@@ -940,7 +973,6 @@ const STATIC = {
             "description": "Math and Computer Science puzzles.",
             "tags": [
                 "positive",
-                "optional",
                 "learning"
             ],
             "views": 31,
@@ -1365,7 +1397,7 @@ const STATIC = {
             ],
             "views": 59,
             "likesMobile": 2,
-            "dislikesMobile": 2000,
+            "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
@@ -1538,11 +1570,14 @@ const STATIC = {
                 "participate",
                 "compete",
                 "learning",
-                "positive"
+                "positive",
+                "daily",
+                "daily-desktop",
+                "optional"
             ],
             "views": 16,
             "likesMobile": 0,
-            "dislikesMobile": 2002,
+            "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 1
         },
@@ -1732,11 +1767,11 @@ const STATIC = {
             "description": "Ponder and it might help clear blockers in the mind.",
             "tags": [
                 "positive",
-                "daily",
                 "shayaris",
                 "cool",
                 "poetic",
                 "beautiful",
+                "daily",
                 "optional"
             ],
             "views": 178,

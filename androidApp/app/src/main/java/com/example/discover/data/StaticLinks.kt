@@ -69,7 +69,7 @@ object StaticLinks {
             name = "Codeforces",
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
-            tags = listOf("positive", "code", "learning", "fun", "poetic"),
+            tags = listOf("positive", "code", "learning", "fun", "poetic", "daily", "daily-desktop", "optional"),
             views = 148,
             likesMobile = 0,
             dislikesMobile = 0
@@ -90,6 +90,16 @@ object StaticLinks {
             url = "https://crontab.guru/",
             description = "The quick and simple editor for cron schedule expressions by Cronitor.",
             tags = listOf("positive"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Android training courses from Google",
+            url = "https://developer.android.com/courses",
+            description = "Whether a new developer, just new to Android, or an experienced professional, grow your skills with training created by Google's Android development experts.",
+            tags = listOf("daily", "daily-desktop", "optional"),
             views = 0,
             likesMobile = 0,
             dislikesMobile = 0
@@ -316,6 +326,16 @@ object StaticLinks {
         ),
 
         Link(
+            name = "MIT -  Mathematics for Computer Science",
+            url = "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/syllabus/",
+            description = "Welcome to MIT 6.042! In this course, we'll teach you some mathematics that we think you'll find useful in your study of computer science.",
+            tags = listOf("daily", "daily-desktop", "optional"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "palestine.com",
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
@@ -359,7 +379,7 @@ object StaticLinks {
             name = "Project Euler Archives",
             url = "https://projecteuler.net/archives",
             description = "Math and Computer Science puzzles.",
-            tags = listOf("positive", "optional", "learning"),
+            tags = listOf("positive", "learning"),
             views = 31,
             likesMobile = 1,
             dislikesMobile = 0
@@ -729,7 +749,7 @@ object StaticLinks {
             name = "Rekhta famous shayaris",
             url = "https://www.rekhta.org/tags/famous-shayari/couplets",
             description = "Ponder and it might help clear blockers in the mind.",
-            tags = listOf("positive", "daily", "shayaris", "cool", "poetic", "beautiful", "optional"),
+            tags = listOf("positive", "shayaris", "cool", "poetic", "beautiful", "daily", "optional"),
             views = 178,
             likesMobile = 1,
             dislikesMobile = 0
