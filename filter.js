@@ -8,7 +8,7 @@ function getStoredSettings() {
         filterMode: 'lists',
         lists: {
             tagsAllowlist: 'daily',
-            tagsBlocklist: 'daily-mobile',
+            tagsBlocklist: 'daily-mobile,optional',
             urlsAllowlist: '',
             urlsBlocklist: ''
         },
@@ -230,7 +230,7 @@ function onFilterModeChange() {
 function resetFilterToDefaults() {
     // Reset lists fields
     document.getElementById('filter-tags-allowlist').value = 'daily';
-    document.getElementById('filter-tags-blocklist').value = 'daily-mobile';
+    document.getElementById('filter-tags-blocklist').value = 'daily-mobile,optional';
     document.getElementById('filter-urls-allowlist').value = '';
     document.getElementById('filter-urls-blocklist').value = '';
 
