@@ -358,15 +358,6 @@ function loadLink(link, addToHistory = true) {
     if (link.url && ENABLE_VIEW_TRACKING) {
         updateLinkStats(link.url, 'view');
     }
-
-    // Open the link in a new window/tab
-    let urlToOpen = link.url;
-    if (!/^https?:\/\//i.test(urlToOpen)) {
-        urlToOpen = 'https://' + urlToOpen;
-    }
-
-    console.log('Opening link:', urlToOpen);
-    window.open(urlToOpen, '_blank');
 }
 
 function updateCurrentSiteInfo(link) {
@@ -560,6 +551,11 @@ function showSuccessMessage(message) {
     }, RESET_DELAY_LONG);
 }
 
+function openCurrentLinkInNewTab() {
+    console.log('Opening link:', currentLinkUrl);
+    window.open(currentLinkUrl, '_blank');
+}
+
 // Close modal when clicking outside
 document.addEventListener('click', function (event) {
     const modal = document.getElementById('add-link-modal');
@@ -578,14 +574,15 @@ document.addEventListener('keydown', function (event) {
         return;
     }
 
-    // Ctrl+Space → I'm Feeling Lucky
-    if (event.ctrlKey && event.code === 'Space') {
-        event.preventDefault();
-        loadRandomLink();
-        return;
-    }
-
     switch (event.key) {
+        case 'l':
+            event.preventDefault();
+            loadRandomLink();
+            openCurrentLinkInNewTab();
+            break;
+        case ' ':
+            openCurrentLinkInNewTab();
+            break;
         case 'ArrowRight':
             event.preventDefault();
             loadNextLink();
