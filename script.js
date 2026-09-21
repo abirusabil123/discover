@@ -591,6 +591,12 @@ document.addEventListener('keydown', function (event) {
             event.preventDefault();
             loadPreviousLink();
             break;
+        case 's':
+            event.preventDefault();
+            location.href = location.pathname.endsWith('settings')
+                ? 'index.html'
+                : 'settings.html';
+            break;
     }
 });
 
