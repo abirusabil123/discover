@@ -40,7 +40,7 @@
       "optional",
       "user-submitted"
     ],
-    "views": 159,
+    "views": 164,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 12,
+    "views": 17,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -117,7 +117,7 @@
       "library",
       "books"
     ],
-    "views": 38,
+    "views": 39,
     "likesMobile": 1,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -193,7 +193,7 @@
       "positive",
       "daily"
     ],
-    "views": 88,
+    "views": 93,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -261,7 +261,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 148,
+    "views": 152,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -365,7 +365,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 0,
+    "views": 4,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -428,7 +428,7 @@
       "islam",
       "learning"
     ],
-    "views": 129,
+    "views": 135,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -756,7 +756,7 @@
       "curated",
       "sample"
     ],
-    "views": 157,
+    "views": 164,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -794,7 +794,7 @@
       "regular",
       "repeat"
     ],
-    "views": 86,
+    "views": 91,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -810,7 +810,7 @@
       "daily",
       "news"
     ],
-    "views": 101,
+    "views": 107,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -871,7 +871,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 108,
+    "views": 113,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -970,7 +970,7 @@
       "curated",
       "sample"
     ],
-    "views": 330,
+    "views": 335,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -1018,7 +1018,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 0,
+    "views": 5,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1035,7 +1035,7 @@
       "palestine",
       "free"
     ],
-    "views": 71,
+    "views": 76,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1052,12 +1052,27 @@
       "curated",
       "sample"
     ],
-    "views": 252,
+    "views": 258,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
     "dislikesDesktop": 0,
     "reviewStatus": 1
+  },
+  {
+    "url": "https://pirateface.co/",
+    "name": "pirateface",
+    "description": "Turn AI into torrents that live forever.Open models - LLMs, image, audio, datasets - as 🧲 magnet links that can never be taken down. No single owner or point of failure.",
+    "tags": [
+      "llm",
+      "download"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 0
   },
   {
     "url": "https://play-cs.com/",
@@ -1084,7 +1099,7 @@
       "curated",
       "sample"
     ],
-    "views": 262,
+    "views": 267,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1209,7 +1224,7 @@
       "positive",
       "daily"
     ],
-    "views": 54,
+    "views": 58,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1336,6 +1351,20 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/",
+    "name": "The senior engineer death spiral",
+    "description": "A blog post on how being senior is more about helping others.",
+    "tags": [
+      "positive"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 0
+  },
+  {
     "url": "https://tails.net/",
     "name": "Tails",
     "description": "Secure OS.",
@@ -1363,7 +1392,7 @@
       "curated",
       "sample"
     ],
-    "views": 110,
+    "views": 114,
     "likesMobile": 3,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -1438,7 +1467,7 @@
       "curated",
       "sample"
     ],
-    "views": 396,
+    "views": 403,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1453,7 +1482,7 @@
       "daily",
       "positive"
     ],
-    "views": 13,
+    "views": 15,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1499,7 +1528,7 @@
       "curated",
       "sample"
     ],
-    "views": 59,
+    "views": 63,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -1544,7 +1573,7 @@
       "curated",
       "sample"
     ],
-    "views": 276,
+    "views": 281,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -1562,7 +1591,7 @@
       "positive",
       "daily"
     ],
-    "views": 144,
+    "views": 147,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1673,7 +1702,7 @@
       "new",
       "tech"
     ],
-    "views": 80,
+    "views": 84,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1816,7 +1845,7 @@
       "daily",
       "positive"
     ],
-    "views": 12,
+    "views": 15,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1852,7 +1881,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 16,
+    "views": 22,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -2026,7 +2055,7 @@
       "curated",
       "sample"
     ],
-    "views": 252,
+    "views": 258,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -2061,7 +2090,7 @@
       "daily-desktop",
       "socialMedia"
     ],
-    "views": 6,
+    "views": 10,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 0,
@@ -2081,7 +2110,7 @@
       "daily",
       "optional"
     ],
-    "views": 178,
+    "views": 183,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -2098,7 +2127,7 @@
       "social",
       "media"
     ],
-    "views": 202,
+    "views": 208,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2115,7 +2144,7 @@
       "social",
       "media"
     ],
-    "views": 205,
+    "views": 208,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -2146,7 +2175,7 @@
       "learning",
       "news"
     ],
-    "views": 93,
+    "views": 96,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2179,7 +2208,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 115,
+    "views": 118,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2211,7 +2240,7 @@
       "daily",
       "optional"
     ],
-    "views": 103,
+    "views": 107,
     "likesMobile": 1,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -2228,7 +2257,7 @@
       "daily",
       "optional"
     ],
-    "views": 138,
+    "views": 142,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 5,

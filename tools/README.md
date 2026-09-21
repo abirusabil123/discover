@@ -17,16 +17,6 @@ to
 "reviewStatus": 1
 ```
 
-## Mark errors as resolved
-Run the following curl command.
-```
-curl -X PUT http://localhost:8090/errors/<error id>/resolve
-```
-Or run in backend folder.
-```
-docker exec -it backend-db-1 mysql -u root -ppassword mydatabase -e "UPDATE errors SET resolved = 1, resolved_at = NOW() WHERE resolved = 0;"
-```
-
 ## Update static links
 The static links to update are
 ```  
