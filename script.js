@@ -574,6 +574,13 @@ document.addEventListener('keydown', function (event) {
         return;
     }
 
+    if (location.pathname.endsWith('settings')) {
+        if (event.key == 's') {
+            location.href = 'index.html';
+        }
+        return;
+    }
+
     switch (event.key) {
         case 'l':
             event.preventDefault();
@@ -593,9 +600,7 @@ document.addEventListener('keydown', function (event) {
             break;
         case 's':
             event.preventDefault();
-            location.href = location.pathname.endsWith('settings')
-                ? 'index.html'
-                : 'settings.html';
+            location.href = 'settings.html';
             break;
     }
 });
