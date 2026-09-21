@@ -574,7 +574,7 @@ document.addEventListener('keydown', function (event) {
         return;
     }
 
-    if (location.pathname.endsWith('settings')) {
+    if (location.pathname.endsWith('settings') || location.pathname.endsWith('settings.html')) {
         if (event.key == 's') {
             location.href = 'index.html';
         }
