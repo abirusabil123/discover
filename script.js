@@ -367,7 +367,7 @@ function updateCurrentSiteInfo(link) {
     const dislikesDesktopBtn = document.getElementById('dislikesDesktop-btn');
 
     linkElement.href = link.url;
-    linkElement.textContent = `${link.name} - ${link.url}`;
+    linkElement.textContent = `${link.name} - ${link.url} - (Space)`;
 
     // Add description as a separate element
     const description = document.getElementById('link-description');
