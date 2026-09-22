@@ -11,6 +11,7 @@ const path = require('path');
 const geoip = require('geoip-lite');
 const isbotModule = require('isbot');
 const isbot = typeof isbotModule === 'function' ? isbotModule : (isbotModule.isbot || isbotModule.default);
+const { buildVisitorWhere } = require('./utils/visitorFilter');
 
 // Add this near the top after requiring geoip-lite
 function getCountryFromRequest(req) {
@@ -224,49 +225,43 @@ app.put('/errors/:id/resolve', async (req, res, next) => {
 // GET visitors analytics
 app.get('/visitors-analytics', async (req, res, next) => {
   try {
+    const { whereClause, params } = buildVisitorWhere(req.query);
+    console.log(`[visitors-analytics] where="${whereClause}" params=${JSON.stringify(params)}`);
+
     const connection = await mysql.createConnection(dbConfig);
 
-    // Get visitors by country
     const [byCountry] = await connection.execute(
-      'SELECT country, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY country ORDER BY country ASC'
+      `SELECT country, COUNT(*) as count FROM visitors ${whereClause} GROUP BY country ORDER BY country ASC`,
+      params
     );
-    // Get visitors by YYYYMM (keep chronological order)
     const [byMonth] = await connection.execute(
-      'SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY month ORDER BY month DESC'
+      `SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors ${whereClause} GROUP BY month ORDER BY month DESC`,
+      params
     );
-    // Get visitors by platform
     const [byPlatform] = await connection.execute(
-      'SELECT platform, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY platform ORDER BY platform ASC'
+      `SELECT platform, COUNT(*) as count FROM visitors ${whereClause} GROUP BY platform ORDER BY platform ASC`,
+      params
     );
-    // Get visitors by product
     const [byProduct] = await connection.execute(
-      'SELECT product, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY product ORDER BY product ASC'
+      `SELECT product, COUNT(*) as count FROM visitors ${whereClause} GROUP BY product ORDER BY product ASC`,
+      params
     );
-    // Get visitors by origin
     const [byOrigin] = await connection.execute(
-      'SELECT origin, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY origin ORDER BY origin ASC'
+      `SELECT origin, COUNT(*) as count FROM visitors ${whereClause} GROUP BY origin ORDER BY origin ASC`,
+      params
     );
-    // Get visitors by path
     const [byPath] = await connection.execute(
-      'SELECT path, COUNT(*) as count FROM visitors WHERE bot = 0 GROUP BY path ORDER BY path ASC'
+      `SELECT path, COUNT(*) as count FROM visitors ${whereClause} GROUP BY path ORDER BY path ASC`,
+      params
     );
-    // Get visitors by bot status
     const [byBotStatus] = await connection.execute(
-      "SELECT CASE WHEN bot = 1 THEN 'Bot' ELSE 'Human' END AS status, COUNT(*) as count FROM visitors GROUP BY bot ORDER BY bot"
+      `SELECT CASE WHEN bot = 1 THEN 'Bot' ELSE 'Human' END AS status, COUNT(*) as count FROM visitors ${whereClause} GROUP BY bot ORDER BY bot`,
+      params
     );
 
     await connection.end();
 
-    res.json({
-      byCountry,
-      byMonth,
-      byPlatform,
-      byProduct,
-      byOrigin,
-      byPath,
-      byBotStatus
-    });
-
+    res.json({ byCountry, byMonth, byPlatform, byProduct, byOrigin, byPath, byBotStatus });
   } catch (error) {
     console.error('Get visitors analytics error:', error);
     res.status(500).json({ error: 'Failed to fetch analytics' });

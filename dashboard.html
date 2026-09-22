@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <h1>📊 Discover Dashboard</h1>
+    <div class="filters">
+        <label>Country <select id="f-country">
+                <option value="all">All</option>
+            </select></label>
+        <label>Month <select id="f-month">
+                <option value="all">All</option>
+            </select></label>
+        <label>Platform <select id="f-platform">
+                <option value="all">All</option>
+            </select></label>
+        <label>Bot <select id="f-bot">
+                <option value="all">All</option>
+                <option value="0">Human</option>
+                <option value="1">Bot</option>
+            </select></label>
+        <span id="status">Loading…</span>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <h2>By Country</h2><canvas id="c-country"></canvas>
+        </div>
+        <div class="card">
+            <h2>By Month</h2><canvas id="c-month"></canvas>
+        </div>
+        <div class="card">
+            <h2>By Platform</h2><canvas id="c-platform"></canvas>
+        </div>
+        <div class="card">
+            <h2>Bot vs Human</h2><canvas id="c-bot"></canvas>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

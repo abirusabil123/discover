@@ -103,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 3299
+        "count": 3306
       },
       {
         "country": "AE",
@@ -219,13 +219,13 @@
       },
       {
         "country": "US",
-        "count": 592
+        "count": 597
       }
     ],
     "byMonth": [
       {
         "month": "202609",
-        "count": 2097
+        "count": 2109
       },
       {
         "month": "202608",
@@ -251,7 +251,7 @@
       },
       {
         "platform": "desktop",
-        "count": 3297
+        "count": 3309
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -285,7 +285,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 4236
+        "count": 4248
       }
     ],
     "byOrigin": [
@@ -303,7 +303,7 @@
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2286
+        "count": 2287
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -343,7 +343,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 946
+        "count": 957
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -369,7 +369,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 3297
+        "count": 3309
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -399,11 +399,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 4286
+        "count": 4298
       },
       {
         "status": "Bot",
-        "count": 1510
+        "count": 1511
       }
     ]
   },

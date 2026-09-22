@@ -79,6 +79,11 @@ Or run in backend folder.
 docker exec -it backend-db-1 mysql -u root -ppassword mydatabase -e "UPDATE errors SET resolved = 1, resolved_at = NOW() WHERE resolved = 0;"
 ```
 
+## 8. How to run tests
+```bash
+docker compose exec app node --test test/
+```
+
 ## 🔧 Management Commands
 ```bash
 # Stop containers
