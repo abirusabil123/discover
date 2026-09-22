@@ -9,7 +9,6 @@ body {
     background: #0f0f0f;
     color: #fff;
     padding: 1.5rem;
-    min-height: 100vh;
 }
 
 h1 {
@@ -37,7 +36,7 @@ h1 {
 .filters select {
     background: #1a1a1a;
     color: #fff;
-    border: 1px solid #333;
+    border: 0.125rem solid #333;
     padding: .5rem .75rem;
     border-radius: .5rem;
     max-width: 14rem;
@@ -58,7 +57,7 @@ h1 {
 
 .card {
     background: #1a1a1a;
-    border: 1px solid #333;
+    border: 0.125rem solid #333;
     border-radius: .75rem;
     padding: 1rem;
 }
