@@ -38,7 +38,9 @@ function buildVisitorWhere(query) {
     }
 
     // Country handling
-    if (country && country !== 'all') {
+    if (country === '(unknown)') {
+        conditions.push("country = ''");
+    } else if (country && country !== 'all') {
         conditions.push('country = ?');
         params.push(country);
     } else if (!isRaw) {
@@ -52,7 +54,9 @@ function buildVisitorWhere(query) {
     }
 
     // Platform handling
-    if (platform && platform !== 'all') {
+    if (platform === '(unknown)') {
+        conditions.push("platform = ''");
+    } else if (platform && platform !== 'all') {
         conditions.push('platform = ?');
         params.push(platform);
     }

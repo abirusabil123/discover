@@ -25,10 +25,10 @@ function fillSelect(select, values, keepCurrent) {
     const current = keepCurrent ? select.value : 'all';
     select.innerHTML = '<option value="all">All</option>';
     values.forEach(v => {
-        if (v === '' || v == null) return;
+        if (v == null) return;
         const opt = document.createElement('option');
-        opt.value = v;
-        opt.textContent = v;
+        opt.value = v === '' ? '(unknown)' : v;
+        opt.textContent = v === '' ? '(unknown)' : v;
         select.appendChild(opt);
     });
     if ([...select.options].some(o => o.value === current)) {
