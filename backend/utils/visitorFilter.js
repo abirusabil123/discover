@@ -8,7 +8,7 @@
  *   bot      – "0" humans, "1" bots, "all" both, undefined → legacy default (humans only)
  *   from     – YYYY-MM-DD inclusive lower bound on timestamp (not yet wired)
  *   to       – YYYY-MM-DD inclusive upper bound on timestamp (not yet wired)
- *   raw      – "1" disables all *implicit* default guards (legacy bot=0, country<>'', platform<>'', origin<>'').
+ *   raw      – "1" disables all *implicit* default guards (legacy bot=0, country<>'').
  *              Explicit filters (country, month, platform, bot=0/1) are still honoured.
  *
  * Returns { whereClause, params }
@@ -52,13 +52,6 @@ function buildVisitorWhere(query) {
     if (platform && platform !== 'all') {
         conditions.push('platform = ?');
         params.push(platform);
-    } else if (!isRaw) {
-        conditions.push("platform <> ''");
-    }
-
-    // Origin handling (no UI filter; always excluded unless raw)
-    if (!isRaw) {
-        conditions.push("origin <> ''");
     }
 
     const whereClause = conditions.length > 0 ? 'WHERE ' + conditions.join(' AND ') : '';
