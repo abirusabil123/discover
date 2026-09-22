@@ -553,7 +553,9 @@ function showSuccessMessage(message) {
 
 function openCurrentLinkInNewTab() {
     console.log('Opening link:', currentLinkUrl);
-    window.open(currentLinkUrl, '_blank');
+    if (currentLinkUrl != null) {
+        window.open(currentLinkUrl, '_blank');
+    }
 }
 
 // Close modal when clicking outside
