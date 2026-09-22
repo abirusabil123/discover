@@ -103,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 3618
+        "count": 3619
       },
       {
         "country": "AE",
@@ -245,7 +245,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 2158
+        "count": 2159
       },
       {
         "month": "202608",
@@ -271,7 +271,7 @@
       },
       {
         "platform": "desktop",
-        "count": 3346
+        "count": 3347
       },
       {
         "platform": "mobile",
@@ -309,7 +309,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 5762
+        "count": 5763
       }
     ],
     "byOrigin": [
@@ -367,7 +367,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 980
+        "count": 981
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -393,7 +393,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 3667
+        "count": 3668
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -423,11 +423,109 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 4301
+        "count": 4302
       },
       {
         "status": "Bot",
         "count": 1511
+      }
+    ],
+    "byHourOfDay": [
+      {
+        "hour": 0,
+        "count": 127
+      },
+      {
+        "hour": 1,
+        "count": 102
+      },
+      {
+        "hour": 2,
+        "count": 103
+      },
+      {
+        "hour": 3,
+        "count": 138
+      },
+      {
+        "hour": 4,
+        "count": 178
+      },
+      {
+        "hour": 5,
+        "count": 1005
+      },
+      {
+        "hour": 6,
+        "count": 453
+      },
+      {
+        "hour": 7,
+        "count": 306
+      },
+      {
+        "hour": 8,
+        "count": 335
+      },
+      {
+        "hour": 9,
+        "count": 256
+      },
+      {
+        "hour": 10,
+        "count": 188
+      },
+      {
+        "hour": 11,
+        "count": 142
+      },
+      {
+        "hour": 12,
+        "count": 265
+      },
+      {
+        "hour": 13,
+        "count": 262
+      },
+      {
+        "hour": 14,
+        "count": 147
+      },
+      {
+        "hour": 15,
+        "count": 266
+      },
+      {
+        "hour": 16,
+        "count": 479
+      },
+      {
+        "hour": 17,
+        "count": 279
+      },
+      {
+        "hour": 18,
+        "count": 361
+      },
+      {
+        "hour": 19,
+        "count": 113
+      },
+      {
+        "hour": 20,
+        "count": 92
+      },
+      {
+        "hour": 21,
+        "count": 79
+      },
+      {
+        "hour": 22,
+        "count": 68
+      },
+      {
+        "hour": 23,
+        "count": 69
       }
     ]
   },
