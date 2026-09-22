@@ -258,10 +258,13 @@ app.get('/visitors-analytics', async (req, res, next) => {
       `SELECT CASE WHEN bot = 1 THEN 'Bot' ELSE 'Human' END AS status, COUNT(*) as count FROM visitors ${whereClause} GROUP BY bot ORDER BY bot`,
       params
     );
+    const [byHourOfDay] = await connection.execute(
+      `SELECT HOUR(timestamp) as hour, COUNT(*) as count FROM visitors ${whereClause} GROUP BY hour ORDER BY hour ASC`,
+      params
+    );
 
     await connection.end();
-
-    res.json({ byCountry, byMonth, byPlatform, byProduct, byOrigin, byPath, byBotStatus });
+    res.json({ byCountry, byMonth, byPlatform, byProduct, byOrigin, byPath, byBotStatus, byHourOfDay });
   } catch (error) {
     console.error('Get visitors analytics error:', error);
     res.status(500).json({ error: 'Failed to fetch analytics' });

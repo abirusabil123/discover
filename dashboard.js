@@ -110,6 +110,12 @@ async function refresh(initial = false) {
         data.byBotStatus.map(r => r.status),
         data.byBotStatus.map(r => r.count),
         { color: ['rgba(74,222,128,0.7)', 'rgba(239,68,68,0.7)'] });
+
+    // Visitors per hour of day (0-23), with empty hours filled as 0
+    const hourMap = new Map(data.byHourOfDay.map(r => [Number(r.hour), r.count]));
+    const hourLabels = Array.from({ length: 24 }, (_, i) => String(i).padStart(2, '0'));
+    const hourData = hourLabels.map((_, i) => hourMap.get(i) || 0);
+    makeOrUpdate('c-hour', 'bar', hourLabels, hourData);
 }
 
 [els.country, els.month, els.platform, els.bot].forEach(el =>
