@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background: #0f0f0f;
     color: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 h1 {
@@ -49,8 +49,8 @@ h1 {
 
 .grid {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(24rem, 100%), 1fr));
     max-width: 90rem;
     margin: 0 auto;
 }
@@ -71,7 +71,16 @@ h1 {
 }
 
 @media (max-width: 48rem) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
     .grid {
         grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 }
