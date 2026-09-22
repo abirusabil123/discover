@@ -84,15 +84,15 @@ async function fetchData() {
     }
 }
 
-async function refresh(initial = false) {
+async function refresh() {
     const data = await fetchData();
     if (!data) return;
 
-    if (initial) {
-        fillSelect(els.country, data.byCountry.map(r => r.country));
-        fillSelect(els.month, data.byMonth.map(r => r.month));
-        fillSelect(els.platform, data.byPlatform.map(r => r.platform));
-    }
+    // Always rebuild the option lists so they only contain populated categories.
+    // keepCurrent=true preserves the user's selection when it is still present.
+    fillSelect(els.country, data.byCountry.map(r => r.country), true);
+    fillSelect(els.month, data.byMonth.map(r => r.month), true);
+    fillSelect(els.platform, data.byPlatform.map(r => r.platform), true);
 
     const topCountries = topN(data.byCountry, r => r.country, r => r.count, 15);
     makeOrUpdate('c-country', 'bar',
@@ -122,6 +122,6 @@ async function refresh(initial = false) {
 }
 
 [els.country, els.month, els.platform, els.bot].forEach(el =>
-    el.addEventListener('change', () => refresh(false)));
+    el.addEventListener('change', () => refresh()));
 
-refresh(true);
+refresh();
