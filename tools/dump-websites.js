@@ -132,7 +132,7 @@ function fixUrl(url) {
 
 async function fetchVisitorsAnalytics() {
     try {
-        const response = await fetch(`${API_BASE_URL}/visitors-analytics`);
+        const response = await fetch(`${API_BASE_URL}/visitors-analytics?raw=1`);
         if (response.ok) {
             return await response.json();
         }
