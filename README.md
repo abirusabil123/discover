@@ -8,6 +8,8 @@ We host the backend locally using reproducible containers. We also have a fronte
 <img src="image3.png" alt="drawing" width="200rem"/>
 <img src="image4.jpg" alt="drawing" width="200rem"/>
 <img src="image5.jpg" alt="drawing" width="200rem"/>
+<img src="image5.jpg" alt="drawing" width="200rem"/>
+<img src="image6.png" alt="drawing"/>
 
 ## Avoid Implicit Personalized Recommendation Algorithms
 
