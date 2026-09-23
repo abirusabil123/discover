@@ -1,10 +1,10 @@
 {
   "metadata": {
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 144
+    "totalLinks": 145
   },
   "analysis": {
-    "total": 144,
+    "total": 145,
     "filteredMobile": 59,
     "filteredDesktop": 12,
     "blockedMobileUrls": [
@@ -84,7 +84,7 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 76,
+      "0%": 77,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
@@ -92,7 +92,7 @@
       "80-100%": 60
     },
     "byVoteCount": {
-      "0 votes": 50,
+      "0 votes": 51,
       "1-3 votes": 20,
       "4-10 votes": 12,
       "11-50 votes": 2,
@@ -103,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 3629
+        "count": 3695
       },
       {
         "country": "AE",
@@ -167,7 +167,7 @@
       },
       {
         "country": "IN",
-        "count": 97
+        "count": 107
       },
       {
         "country": "IR",
@@ -245,7 +245,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 2169
+        "count": 2245
       },
       {
         "month": "202608",
@@ -271,11 +271,11 @@
       },
       {
         "platform": "desktop",
-        "count": 3357
+        "count": 3432
       },
       {
         "platform": "mobile",
-        "count": 321
+        "count": 322
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -309,13 +309,13 @@
       },
       {
         "product": "discover-backend",
-        "count": 5773
+        "count": 5849
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 2421
+        "count": 2422
       },
       {
         "origin": "file://",
@@ -323,11 +323,11 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 72
+        "count": 92
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2292
+        "count": 2297
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -367,7 +367,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 987
+        "count": 1037
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -393,7 +393,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 3678
+        "count": 3754
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -423,11 +423,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 4312
+        "count": 4387
       },
       {
         "status": "Bot",
-        "count": 1511
+        "count": 1512
       }
     ],
     "byHourOfDay": [
@@ -441,11 +441,11 @@
       },
       {
         "hour": 2,
-        "count": 103
+        "count": 109
       },
       {
         "hour": 3,
-        "count": 138
+        "count": 150
       },
       {
         "hour": 4,
@@ -457,15 +457,15 @@
       },
       {
         "hour": 6,
-        "count": 453
+        "count": 454
       },
       {
         "hour": 7,
-        "count": 306
+        "count": 310
       },
       {
         "hour": 8,
-        "count": 335
+        "count": 369
       },
       {
         "hour": 9,
@@ -493,15 +493,15 @@
       },
       {
         "hour": 15,
-        "count": 276
+        "count": 282
       },
       {
         "hour": 16,
-        "count": 479
+        "count": 489
       },
       {
         "hour": 17,
-        "count": 279
+        "count": 282
       },
       {
         "hour": 18,
@@ -526,6 +526,36 @@
       {
         "hour": 23,
         "count": 69
+      }
+    ],
+    "byDayOfWeek": [
+      {
+        "dow": 0,
+        "count": 1078
+      },
+      {
+        "dow": 1,
+        "count": 625
+      },
+      {
+        "dow": 2,
+        "count": 648
+      },
+      {
+        "dow": 3,
+        "count": 421
+      },
+      {
+        "dow": 4,
+        "count": 446
+      },
+      {
+        "dow": 5,
+        "count": 464
+      },
+      {
+        "dow": 6,
+        "count": 2217
       }
     ]
   },

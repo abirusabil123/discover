@@ -65,7 +65,8 @@ const dbConfig = {
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || 'password',
   database: process.env.DB_NAME || 'mydatabase',
-  multipleStatements: true // Allow multiple SQL statements
+  multipleStatements: true,
+  charset: 'utf8mb4'
 };
 
 // Middleware
@@ -262,9 +263,13 @@ app.get('/visitors-analytics', async (req, res, next) => {
       `SELECT HOUR(timestamp) as hour, COUNT(*) as count FROM visitors ${whereClause} GROUP BY hour ORDER BY hour ASC`,
       params
     );
+    const [byDayOfWeek] = await connection.execute(
+      `SELECT WEEKDAY(timestamp) as dow, COUNT(*) as count FROM visitors ${whereClause} GROUP BY dow ORDER BY dow ASC`,
+      params
+    );
 
     await connection.end();
-    res.json({ byCountry, byMonth, byPlatform, byProduct, byOrigin, byPath, byBotStatus, byHourOfDay });
+    res.json({ byCountry, byMonth, byPlatform, byProduct, byOrigin, byPath, byBotStatus, byHourOfDay, byDayOfWeek });
   } catch (error) {
     console.error('Get visitors analytics error:', error);
     res.status(500).json({ error: 'Failed to fetch analytics' });

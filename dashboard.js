@@ -53,8 +53,8 @@ function makeOrUpdate(id, type, labels, data, extra = {}) {
                 labels,
                 datasets: [{
                     data,
-                    backgroundColor: extra.color || 'rgba(74,222,128,0.6)',
-                    borderColor: '#4ade80',
+                    backgroundColor: extra.color || 'green',
+                    borderColor: 'white',
                     borderWidth: 1,
                 }],
             },
@@ -94,7 +94,7 @@ async function refresh() {
     fillSelect(els.month, data.byMonth.map(r => r.month), true);
     fillSelect(els.platform, data.byPlatform.map(r => r.platform), true);
 
-    const topCountries = topN(data.byCountry, r => r.country, r => r.count, 15);
+    const topCountries = topN(data.byCountry, r => r.country, r => r.count, 16);
     makeOrUpdate('c-country', 'bar',
         topCountries.map(r => r.country || '(unknown)'),
         topCountries.map(r => r.count));
@@ -104,21 +104,25 @@ async function refresh() {
         months.map(r => r.month),
         months.map(r => r.count));
 
-    const topPlat = topN(data.byPlatform, r => r.platform, r => r.count, 10);
+    const topPlat = topN(data.byPlatform, r => r.platform, r => r.count, 8);
     makeOrUpdate('c-platform', 'bar',
-        topPlat.map(r => (r.platform || '(unknown)').slice(0, 24)),
+        topPlat.map(r => (r.platform || '(unknown)').slice(0, 32)),
         topPlat.map(r => r.count));
 
     makeOrUpdate('c-bot', 'pie',
         data.byBotStatus.map(r => r.status),
         data.byBotStatus.map(r => r.count),
-        { color: ['rgba(74,222,128,0.7)', 'rgba(239,68,68,0.7)'] });
+        { color: ['green', 'rgba(239,68,68,0.7)'] });
 
     // Visitors per hour of day (0-23), with empty hours filled as 0
     const hourMap = new Map(data.byHourOfDay.map(r => [Number(r.hour), r.count]));
     const hourLabels = Array.from({ length: 24 }, (_, i) => String(i).padStart(2, '0'));
     const hourData = hourLabels.map((_, i) => hourMap.get(i) || 0);
     makeOrUpdate('c-hour', 'bar', hourLabels, hourData);
+
+    const dayLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    const dayMap = new Map(data.byDayOfWeek.map(r => [Number(r.dow), r.count]));
+    makeOrUpdate('c-day', 'bar', dayLabels, dayLabels.map((_, i) => dayMap.get(i) || 0));
 }
 
 [els.country, els.month, els.platform, els.bot].forEach(el =>
