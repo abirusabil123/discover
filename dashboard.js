@@ -6,7 +6,7 @@ const CHARTS = {};
 
 const els = {
     country: document.getElementById('f-country'),
-    month: document.getElementById('f-month'),
+    date: document.getElementById('f-date'),
     platform: document.getElementById('f-platform'),
     bot: document.getElementById('f-bot'),
     status: document.getElementById('status'),
@@ -16,7 +16,7 @@ function buildQuery() {
     const p = new URLSearchParams();
     p.set('bot', els.bot.value);
     if (els.country.value !== 'all') p.set('country', els.country.value);
-    if (els.month.value !== 'all') p.set('month', els.month.value);
+    if (els.date.value) p.set('date', els.date.value);
     if (els.platform.value !== 'all') p.set('platform', els.platform.value);
     return p.toString();
 }
@@ -91,7 +91,6 @@ async function refresh() {
     // Always rebuild the option lists so they only contain populated categories.
     // keepCurrent=true preserves the user's selection when it is still present.
     fillSelect(els.country, data.byCountry.map(r => r.country), true);
-    fillSelect(els.month, data.byMonth.map(r => r.month), true);
     fillSelect(els.platform, data.byPlatform.map(r => r.platform), true);
 
     const topCountries = topN(data.byCountry, r => r.country, r => r.count, 16);
@@ -125,7 +124,7 @@ async function refresh() {
     makeOrUpdate('c-day', 'bar', dayLabels, dayLabels.map((_, i) => dayMap.get(i) || 0));
 }
 
-[els.country, els.month, els.platform, els.bot].forEach(el =>
+[els.country, els.date, els.platform, els.bot].forEach(el =>
     el.addEventListener('change', () => refresh()));
 
 refresh();

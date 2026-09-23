@@ -152,3 +152,15 @@ test('raw=1 + all four → stable order, params in order', () => {
     );
     assert.deepEqual(params, [0, 'IN', '202601', 'desktop']);
 });
+
+test('date filter', () => {
+    const { whereClause, params } = buildVisitorWhere({ bot: 'all', date: '2026-09-23' });
+    assert.match(whereClause, /DATE\(timestamp\) = \?/);
+    assert.deepEqual(params, ['2026-09-23']);
+});
+
+test('malformed date ignored', () => {
+    const { whereClause, params } = buildVisitorWhere({ bot: 'all', date: 'not-a-date' });
+    assert.equal(whereClause, "WHERE country <> ''");
+    assert.deepEqual(params, []);
+});

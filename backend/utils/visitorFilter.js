@@ -19,7 +19,7 @@
  *   params      is an array matching the ? placeholders in order
  */
 function buildVisitorWhere(query) {
-    const { country, month, platform, bot, raw } = query || {};
+    const { country, month, platform, bot, date, raw } = query || {};
     const isRaw = raw === '1';
     const conditions = [];
     const params = [];
@@ -51,6 +51,11 @@ function buildVisitorWhere(query) {
     if (month && month !== 'all') {
         conditions.push('DATE_FORMAT(timestamp, "%Y%m") = ?');
         params.push(month);
+    }
+
+    if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        conditions.push('DATE(timestamp) = ?');
+        params.push(date);
     }
 
     // Platform handling
