@@ -4,4 +4,6 @@
 try {
     const s = JSON.parse(localStorage.getItem('discover-settings') || '{}');
     if (s.splashEnabled !== true) document.getElementById('splash').classList.add('splash-off');
-} catch (e) { }
+} catch (e) {
+    console.log(e);
+}
