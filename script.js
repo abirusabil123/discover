@@ -13,8 +13,10 @@ const userActions = new Map(); // Tracks user actions in session per link URL to
 
 const UI_ANIMATION_DELAY = 10;
 const FOCUS_DELAY = 100;
+const SPLASH_WAIT = 800;
 const LOADING_WAIT = 1000;
 const RESET_DELAY = 2000;
+const SPLASH_DELAY = 8000;
 const RESET_DELAY_LONG = 10000;
 const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
 const MAX_HISTORY_LENGTH = 1024;
@@ -47,6 +49,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initializeApp() {
+    console.log('Initializing app splash...');
+    const splash = document.getElementById('splash');
+    if (splash && !splash.classList.contains('splash-off')) {
+        let splashTimer;
+        const hideSplash = () => {
+            clearTimeout(splashTimer);
+            splash.removeEventListener('click', hideSplash);
+            splash.classList.add('splash-hide');
+            setTimeout(() => splash.classList.add('splash-off'), SPLASH_WAIT);
+        };
+        splashTimer = setTimeout(hideSplash, SPLASH_DELAY);
+        splash.addEventListener('click', hideSplash);
+    }
     console.log('Initializing app...');
     loadSettings();
     enableControls();

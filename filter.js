@@ -2,30 +2,30 @@
 /* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
 
 let individualBlockedUrls = [];
+const DEFAULT_SETTINGS = {
+    filterMode: 'lists',
+    lists: {
+        tagsAllowlist: 'daily',
+        tagsBlocklist: 'daily-mobile,optional',
+        urlsAllowlist: '',
+        urlsBlocklist: ''
+    },
+    individual: {
+        blockedUrls: []
+    },
+    splashEnabled: false,
+};
 
 function getStoredSettings() {
-    const defaults = {
-        filterMode: 'lists',
-        lists: {
-            tagsAllowlist: 'daily',
-            tagsBlocklist: 'daily-mobile,optional',
-            urlsAllowlist: '',
-            urlsBlocklist: ''
-        },
-        individual: {
-            blockedUrls: []
-        }
-    };
-
     try {
         const saved = localStorage.getItem('discover-settings');
         if (!saved) {
             console.log("No persisted settings found.");
-            return defaults;
+            return { ...DEFAULT_SETTINGS };
         }
-        return { ...defaults, ...JSON.parse(saved) };
+        return { ...DEFAULT_SETTINGS, ...JSON.parse(saved) };
     } catch (e) {
-        return defaults;
+        return { ...DEFAULT_SETTINGS };
     }
 }
 
@@ -227,26 +227,26 @@ function onFilterModeChange() {
     updateProgressBar();
 }
 
-function resetFilterToDefaults() {
-    // Reset lists fields
-    document.getElementById('filter-tags-allowlist').value = 'daily';
-    document.getElementById('filter-tags-blocklist').value = 'daily-mobile,optional';
-    document.getElementById('filter-urls-allowlist').value = '';
-    document.getElementById('filter-urls-blocklist').value = '';
+function resetToDefaults() {
+    document.getElementById('filter-tags-allowlist').value = DEFAULT_SETTINGS.lists.tagsAllowlist;
+    document.getElementById('filter-tags-blocklist').value = DEFAULT_SETTINGS.lists.tagsBlocklist;
+    document.getElementById('filter-urls-allowlist').value = DEFAULT_SETTINGS.lists.urlsAllowlist;
+    document.getElementById('filter-urls-blocklist').value = DEFAULT_SETTINGS.lists.urlsBlocklist;
 
-    // Reset mode to lists
     const listsRadio = document.querySelector('input[name="filter-mode"][value="lists"]');
     if (listsRadio) listsRadio.checked = true;
 
-    // Reset individual blocked URLs (in‑memory and storage)
-    individualBlockedUrls = [];
+    individualBlockedUrls = [...DEFAULT_SETTINGS.individual.blockedUrls];
+
+    const splashToggle = document.getElementById('splash-toggle');
+    if (splashToggle) splashToggle.checked = DEFAULT_SETTINGS.splashEnabled;
 
     onFilterModeChange();
 }
 
 function saveSettings() {
     try {
-        const mode = document.querySelector('input[name="filter-mode"]:checked')?.value || 'lists';
+        const mode = document.querySelector('input[name="filter-mode"]:checked').value;
         localStorage.setItem('discover-settings', JSON.stringify({
             filterMode: mode,
             lists: {
@@ -257,7 +257,8 @@ function saveSettings() {
             },
             individual: {
                 blockedUrls: individualBlockedUrls
-            }
+            },
+            splashEnabled: document.getElementById('splash-toggle').checked,
         }));
     } catch (e) {
         console.warn('Could not save settings', e);
@@ -274,7 +275,7 @@ function loadSettings() {
         if (modeRadio) modeRadio.checked = true;
 
         // set individual blocked urls
-        individualBlockedUrls = settings.individual?.blockedUrls;
+        individualBlockedUrls = settings.individual.blockedUrls;
 
         // set lists fields
         const lists = settings.lists;
@@ -286,6 +287,9 @@ function loadSettings() {
 
             onFilterModeChange();   // show/hide sections and load individual if needed
         }
+
+        const splashToggle = document.getElementById('splash-toggle');
+        if (splashToggle) splashToggle.checked = settings.splashEnabled;
     } catch (e) {
         console.warn('Could not load settings', e);
     }

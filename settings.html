@@ -23,12 +23,13 @@
 
     <!-- Settings Screen -->
     <div class="settings-page">
-        <h1 style="text-align: center;padding: 3rem;">⚙️ Settings</h1>
+        <h1 style="text-align: center;padding: 3rem;">⚙️ SETTINGS</h1>
         <div class="settings-section">
-            <button id="reset-defaults-btn" class="btn" onclick="resetFilterToDefaults()"
-                style="display:block;margin:1rem auto;background:green;color:white;">Reset to
+            <button id="reset-defaults-btn" class="btn" onclick="resetToDefaults()"
+                style="display:block;margin:2rem auto;background:green;color:white;">Reset to
                 Default</button>
 
+            <h2 style="text-align: center; margin: 1rem;">🔽 Filters</h2>
             <div id="filter-success" class="success-message" style="text-align: center;">🔄 Applying filter.</div>
 
             <div class="filter-mode-selector" style="text-align:center; margin:1rem 0;">
@@ -49,11 +50,11 @@
                             separated):</label>
                         <br>
                         <span>Allowlist: <input type="text" id="filter-tags-allowlist"
-                                placeholder="e.g. ai, tools, productivity" value="daily"
+                                placeholder="e.g. ai, tools, productivity"
                                 onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(0); }">
                         </span>
                         <span>Blocklist: <input type="text" id="filter-tags-blocklist"
-                                placeholder="e.g. ai, tools, productivity" value="daily-mobile,optional"
+                                placeholder="e.g. ai, tools, productivity"
                                 onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(0); }">
                         </span>
                     </div>
@@ -83,51 +84,67 @@
 
 
 
+            <h2 style="text-align: center; margin: 1rem;">🎚️ Preferences</h2>
+            <div style="margin: 2rem; text-align: center;">
+                <label style="color: #fff; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <input type="checkbox" id="splash-toggle" onchange="saveSettings()">
+                    Show splash screen
+                </label>
+            </div>
 
 
 
-            <div style="margin: 2rem auto; max-width: 32rem;">
-                <h3 style="text-align: center; margin: 1rem;">⌨️ Keyboard Shortcuts</h3>
+            <h1 style="text-align: center;padding: 3rem;">📦 MORE</h1>
+
+            <div style="margin: 2rem auto; max-width: 19rem;">
+                <h2 style="text-align: center; margin: 1rem;">⌨️ Keyboard Shortcuts</h2>
                 <table style="width: 100%; border-collapse: collapse; color: #fff;">
                     <tbody>
                         <tr style="border-bottom: 1px solid #333;">
-                            <td style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace;">l</td>
+                            <td
+                                style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace; text-align: right;">
+                                l</td>
                             <td style="padding: 0.5rem 1rem;">I'm Feeling Lucky</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #333;">
-                            <td style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace;">Space</td>
+                            <td
+                                style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace; text-align: right;">
+                                Space</td>
                             <td style="padding: 0.5rem 1rem;">Open current link</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #333;">
-                            <td style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace;">← / →</td>
+                            <td
+                                style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace; text-align: right;">
+                                ← / →</td>
                             <td style="padding: 0.5rem 1rem;">Previous / Next link</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #333;">
-                            <td style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace;">s</td>
+                            <td
+                                style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace; text-align: right;">
+                                s</td>
                             <td style="padding: 0.5rem 1rem;">Toggle Settings</td>
                         </tr>
                         <tr>
-                            <td style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace;">Ctrl+w</td>
+                            <td
+                                style="padding: 0.5rem 1rem; color: #4ade80; font-family: monospace; text-align: right;">
+                                Ctrl+w</td>
                             <td style="padding: 0.5rem 1rem;">Close current browser tab</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+
             <div>
-                <h3 style="text-align: center;margin: 1rem;">Feedback:</h3>
+                <h2 style="text-align: center;margin: 1rem;">Feedback:</h2>
                 <p style="text-align: center;margin: 1rem;"><a href="https://github.com/abirusabil123/discover/issues"
                         target="_blank">https://github.com/abirusabil123/discover/issues</a>
                 </p>
-                <h3 style="text-align: center;margin: 1rem;">Try out our Android app:
-                </h3>
+                <h2 style="text-align: center;margin: 1rem;">Try out our Android app:</h2>
                 <p style="text-align: center;margin: 1rem;"><a href="https://github.com/abirusabil123/discover/releases"
                         target="_blank">https://github.com/abirusabil123/discover/releases</a>
                 </p>
             </div>
-
-
-
-
 
         </div>
     </div>
