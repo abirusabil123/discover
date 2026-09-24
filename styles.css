@@ -510,6 +510,10 @@ body {
     z-index: 1000;
 }
 
+.dashboard-btn {
+    left: 3.5rem;
+}
+
 .settings-screen {
     position: fixed;
     top: 0;

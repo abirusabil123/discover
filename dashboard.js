@@ -127,4 +127,10 @@ async function refresh() {
 [els.country, els.date, els.platform, els.bot].forEach(el =>
     el.addEventListener('change', () => refresh()));
 
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'd' && !['INPUT', 'SELECT', 'TEXTAREA'].includes(e.target.tagName)) {
+        location.href = 'index.html';
+    }
+});
+
 refresh();
