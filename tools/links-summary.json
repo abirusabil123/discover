@@ -1,12 +1,12 @@
 {
   "metadata": {
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 145
+    "totalLinks": 146
   },
   "analysis": {
-    "total": 145,
-    "filteredMobile": 59,
-    "filteredDesktop": 12,
+    "total": 146,
+    "filteredMobile": 60,
+    "filteredDesktop": 13,
     "blockedMobileUrls": [
       "http://radio.garden/",
       "https://10minutemail.com/",
@@ -43,6 +43,7 @@
       "https://play-cs.com/",
       "https://quickdraw.withgoogle.com/",
       "https://reverser.dev/linux-kernel-explorer",
+      "https://rubberduckdebugging.com/",
       "https://sci-hub.se/",
       "https://sci-net.xyz/",
       "https://screamintothevoid.com/",
@@ -74,6 +75,7 @@
       "https://loops.video/",
       "https://mojapp.in/",
       "https://nitter.net/",
+      "https://rubberduckdebugging.com/",
       "https://sci-net.xyz/",
       "https://twitter.com/",
       "https://www.example.com/",
@@ -89,21 +91,21 @@
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 60
+      "80-100%": 61
     },
     "byVoteCount": {
       "0 votes": 51,
       "1-3 votes": 20,
       "4-10 votes": 12,
       "11-50 votes": 2,
-      "50+ votes": 60
+      "50+ votes": 61
     }
   },
   "visitors": {
     "byCountry": [
       {
         "country": "",
-        "count": 3718
+        "count": 4125
       },
       {
         "country": "AE",
@@ -167,7 +169,7 @@
       },
       {
         "country": "IN",
-        "count": 124
+        "count": 137
       },
       {
         "country": "IR",
@@ -203,7 +205,7 @@
       },
       {
         "country": "NL",
-        "count": 41
+        "count": 54
       },
       {
         "country": "PL",
@@ -235,7 +237,7 @@
       },
       {
         "country": "US",
-        "count": 1212
+        "count": 1226
       },
       {
         "country": "ZA",
@@ -245,7 +247,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 2285
+        "count": 2732
       },
       {
         "month": "202608",
@@ -271,11 +273,11 @@
       },
       {
         "platform": "desktop",
-        "count": 3463
+        "count": 3899
       },
       {
         "platform": "Linux armv81",
-        "count": 7
+        "count": 14
       },
       {
         "platform": "Linux x86_64",
@@ -283,7 +285,7 @@
       },
       {
         "platform": "mobile",
-        "count": 322
+        "count": 326
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -313,17 +315,21 @@
     "byProduct": [
       {
         "product": "abirusabil123.github.io",
-        "count": 59
+        "count": 60
       },
       {
         "product": "discover-backend",
-        "count": 5880
+        "count": 6320
+      },
+      {
+        "product": "personal website",
+        "count": 6
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 2422
+        "count": 2426
       },
       {
         "origin": "file://",
@@ -331,23 +337,23 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 92
+        "count": 102
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2300
+        "count": 2581
       },
       {
         "origin": "https://abirusabil123.github.io",
-        "count": 19
+        "count": 21
       },
       {
         "origin": "https://abirusabil123.github.io/",
-        "count": 8
+        "count": 9
       },
       {
         "origin": "https://abirusabil123.github.io/art.html",
-        "count": 4
+        "count": 5
       },
       {
         "origin": "https://abirusabil123.github.io/index.html",
@@ -359,15 +365,15 @@
       },
       {
         "origin": "https://abirusabil123.github.io/shayaris.html",
-        "count": 4
+        "count": 5
       },
       {
         "origin": "https://abirusabil123.github.io/sketches.html",
-        "count": 6
+        "count": 7
       },
       {
         "origin": "https://abirusabil123.github.io/work-life.html",
-        "count": 6
+        "count": 7
       },
       {
         "origin": "https://bing.com/",
@@ -375,7 +381,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1065
+        "count": 1210
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -389,7 +395,7 @@
     "byPath": [
       {
         "path": "/",
-        "count": 2105
+        "count": 2107
       },
       {
         "path": "/addlink",
@@ -397,11 +403,11 @@
       },
       {
         "path": "/art.html",
-        "count": 3
+        "count": 4
       },
       {
         "path": "/getLinks",
-        "count": 3785
+        "count": 4225
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -413,29 +419,29 @@
       },
       {
         "path": "/products.html",
-        "count": 9
+        "count": 10
       },
       {
         "path": "/shayaris.html",
-        "count": 7
+        "count": 8
       },
       {
         "path": "/sketches.html",
-        "count": 5
+        "count": 6
       },
       {
         "path": "/work-life.html",
-        "count": 6
+        "count": 7
       }
     ],
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 4427
+        "count": 4869
       },
       {
         "status": "Bot",
-        "count": 1512
+        "count": 1517
       }
     ],
     "byHourOfDay": [
@@ -465,11 +471,11 @@
       },
       {
         "hour": 6,
-        "count": 454
+        "count": 463
       },
       {
         "hour": 7,
-        "count": 310
+        "count": 311
       },
       {
         "hour": 8,
@@ -477,7 +483,7 @@
       },
       {
         "hour": 9,
-        "count": 266
+        "count": 267
       },
       {
         "hour": 10,
@@ -493,27 +499,27 @@
       },
       {
         "hour": 13,
-        "count": 273
+        "count": 309
       },
       {
         "hour": 14,
-        "count": 147
+        "count": 266
       },
       {
         "hour": 15,
-        "count": 282
+        "count": 452
       },
       {
         "hour": 16,
-        "count": 489
+        "count": 560
       },
       {
         "hour": 17,
-        "count": 282
+        "count": 294
       },
       {
         "hour": 18,
-        "count": 361
+        "count": 389
       },
       {
         "hour": 19,
@@ -547,15 +553,15 @@
       },
       {
         "dow": 2,
-        "count": 688
+        "count": 717
       },
       {
         "dow": 3,
-        "count": 421
+        "count": 828
       },
       {
         "dow": 4,
-        "count": 446
+        "count": 457
       },
       {
         "dow": 5,
@@ -568,8 +574,39 @@
     ]
   },
   "errors": {
-    "count": 88,
-    "unresolved": 0,
-    "allUnresolvedErrors": []
+    "count": 91,
+    "unresolved": 3,
+    "allUnresolvedErrors": [
+      {
+        "id": 89,
+        "timestamp": "2026-09-24T06:22:02.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 90,
+        "timestamp": "2026-09-24T18:17:41.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 91,
+        "timestamp": "2026-09-25T06:45:47.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "view action failed due to backend server unreachable: NetworkError when attempting to fetch resource.",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0",
+        "resolved": 0,
+        "resolved_at": null
+      }
+    ]
   }
 }

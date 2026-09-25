@@ -40,7 +40,7 @@
       "optional",
       "user-submitted"
     ],
-    "views": 171,
+    "views": 172,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 24,
+    "views": 27,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -193,7 +193,7 @@
       "positive",
       "daily"
     ],
-    "views": 101,
+    "views": 103,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -261,7 +261,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 157,
+    "views": 158,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -365,7 +365,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 10,
+    "views": 12,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -428,7 +428,7 @@
       "islam",
       "learning"
     ],
-    "views": 145,
+    "views": 146,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -756,7 +756,7 @@
       "curated",
       "sample"
     ],
-    "views": 172,
+    "views": 174,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -794,7 +794,7 @@
       "regular",
       "repeat"
     ],
-    "views": 98,
+    "views": 99,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -810,7 +810,7 @@
       "daily",
       "news"
     ],
-    "views": 115,
+    "views": 118,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -871,7 +871,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 121,
+    "views": 123,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -970,7 +970,7 @@
       "curated",
       "sample"
     ],
-    "views": 343,
+    "views": 346,
     "likesMobile": 41,
     "dislikesMobile": 3,
     "likesDesktop": 18,
@@ -1018,7 +1018,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 11,
+    "views": 13,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1035,7 +1035,7 @@
       "palestine",
       "free"
     ],
-    "views": 84,
+    "views": 88,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1052,7 +1052,7 @@
       "curated",
       "sample"
     ],
-    "views": 268,
+    "views": 269,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1099,7 +1099,7 @@
       "curated",
       "sample"
     ],
-    "views": 275,
+    "views": 277,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1216,6 +1216,20 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://rubberduckdebugging.com/",
+    "name": "Rubber Duck Debugging 🦆",
+    "description": "In a pinch a coworker might be able to substitute for the duck, however, it is often preferred to confide mistakes to the duck instead of your coworker.Well, we have LLMs now. Anyways better to talk to ourselves in the head or pray to Allah directly. We need to be careful of talking to a rubber duck as it might look crazy or shirk.",
+    "tags": [
+      "coding"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 1000,
+    "likesDesktop": 0,
+    "dislikesDesktop": 1000,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://safirnews.in/",
     "name": "safirnews",
     "description": "Indian news website.",
@@ -1224,7 +1238,7 @@
       "positive",
       "daily"
     ],
-    "views": 65,
+    "views": 69,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1406,7 +1420,7 @@
       "curated",
       "sample"
     ],
-    "views": 122,
+    "views": 124,
     "likesMobile": 3,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -1481,7 +1495,7 @@
       "curated",
       "sample"
     ],
-    "views": 413,
+    "views": 416,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1496,7 +1510,7 @@
       "daily",
       "positive"
     ],
-    "views": 26,
+    "views": 29,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1542,7 +1556,7 @@
       "curated",
       "sample"
     ],
-    "views": 71,
+    "views": 73,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 4,
@@ -1587,7 +1601,7 @@
       "curated",
       "sample"
     ],
-    "views": 289,
+    "views": 291,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -1605,7 +1619,7 @@
       "positive",
       "daily"
     ],
-    "views": 157,
+    "views": 159,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1716,7 +1730,7 @@
       "new",
       "tech"
     ],
-    "views": 92,
+    "views": 96,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1859,10 +1873,10 @@
       "daily",
       "positive"
     ],
-    "views": 23,
+    "views": 25,
     "likesMobile": 0,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1895,7 +1909,7 @@
       "daily-desktop",
       "optional"
     ],
-    "views": 29,
+    "views": 31,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -2069,7 +2083,7 @@
       "curated",
       "sample"
     ],
-    "views": 262,
+    "views": 263,
     "likesMobile": 31,
     "dislikesMobile": 3,
     "likesDesktop": 16,
@@ -2104,7 +2118,7 @@
       "daily-desktop",
       "socialMedia"
     ],
-    "views": 18,
+    "views": 19,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 0,
@@ -2124,7 +2138,7 @@
       "daily",
       "optional"
     ],
-    "views": 190,
+    "views": 192,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -2141,7 +2155,7 @@
       "social",
       "media"
     ],
-    "views": 216,
+    "views": 219,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2158,7 +2172,7 @@
       "social",
       "media"
     ],
-    "views": 216,
+    "views": 217,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -2189,7 +2203,7 @@
       "learning",
       "news"
     ],
-    "views": 103,
+    "views": 108,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2254,7 +2268,7 @@
       "daily",
       "optional"
     ],
-    "views": 112,
+    "views": 113,
     "likesMobile": 1,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -2271,7 +2285,7 @@
       "daily",
       "optional"
     ],
-    "views": 147,
+    "views": 148,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 5,

@@ -10,7 +10,7 @@ object StaticLinks {
             url = "https://4chan.org/",
             description = "Free speech social media platform.",
             tags = listOf("positive", "daily", "optional", "user-submitted"),
-            views = 171,
+            views = 172,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("daily", "positive", "learning"),
-            views = 24,
+            views = 27,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -50,7 +50,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("positive", "daily"),
-            views = 101,
+            views = 103,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -70,7 +70,7 @@ object StaticLinks {
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
             tags = listOf("positive", "code", "learning", "fun", "poetic", "daily", "daily-desktop", "optional"),
-            views = 157,
+            views = 158,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -100,7 +100,7 @@ object StaticLinks {
             url = "https://developer.android.com/courses",
             description = "Whether a new developer, just new to Android, or an experienced professional, grow your skills with training created by Google's Android development experts.",
             tags = listOf("daily", "daily-desktop", "optional"),
-            views = 10,
+            views = 12,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -130,7 +130,7 @@ object StaticLinks {
             url = "https://easywaytoquran.com/4-qul-in-islam-2/",
             description = "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
             tags = listOf("positive", "daily", "quran", "islam", "learning"),
-            views = 145,
+            views = 146,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -240,7 +240,7 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("positive", "daily", "news"),
-            views = 115,
+            views = 118,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -270,7 +270,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media",
             tags = listOf("positive", "daily", "twitteralternative", "socialmedia"),
-            views = 121,
+            views = 123,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -310,7 +310,7 @@ object StaticLinks {
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 343,
+            views = 346,
             likesMobile = 41,
             dislikesMobile = 3
         ),
@@ -330,7 +330,7 @@ object StaticLinks {
             url = "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/syllabus/",
             description = "Welcome to MIT 6.042! In this course, we'll teach you some mathematics that we think you'll find useful in your study of computer science.",
             tags = listOf("daily", "daily-desktop", "optional"),
-            views = 11,
+            views = 13,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -340,7 +340,7 @@ object StaticLinks {
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
             tags = listOf("positive", "daily", "palestine", "free"),
-            views = 84,
+            views = 88,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -350,7 +350,7 @@ object StaticLinks {
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 268,
+            views = 269,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -370,7 +370,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 275,
+            views = 277,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -430,7 +430,7 @@ object StaticLinks {
             url = "https://safirnews.in/",
             description = "Indian news website.",
             tags = listOf("news", "positive", "daily"),
-            views = 65,
+            views = 69,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -500,7 +500,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 413,
+            views = 416,
             likesMobile = 56,
             dislikesMobile = 4
         ),
@@ -510,7 +510,7 @@ object StaticLinks {
             url = "https://unsplash.com/illustrations",
             description = "Free stock vector illustrations. Powered by creators everywhere.",
             tags = listOf("daily", "positive"),
-            views = 26,
+            views = 29,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -560,7 +560,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 289,
+            views = 291,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -570,7 +570,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386599316112",
             description = "Short clips from Aljazeera.",
             tags = listOf("aljazeera", "flips", "learning", "positive", "daily"),
-            views = 157,
+            views = 159,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -610,7 +610,7 @@ object StaticLinks {
             url = "https://www.digit.in/",
             description = "Technology magazine.",
             tags = listOf("positive", "daily", "new", "tech"),
-            views = 92,
+            views = 96,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -660,7 +660,7 @@ object StaticLinks {
             url = "https://www.justwatch.com/",
             description = "What's trending in streaming OTT (over the top) entertainment.",
             tags = listOf("daily", "positive"),
-            views = 23,
+            views = 25,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -760,7 +760,7 @@ object StaticLinks {
             url = "https://www.producthunt.com/",
             description = "Platform for sharing and discovering new products",
             tags = listOf("positive", "daily", "optional", "curated", "sample"),
-            views = 262,
+            views = 263,
             likesMobile = 31,
             dislikesMobile = 3
         ),
@@ -780,7 +780,7 @@ object StaticLinks {
             url = "https://www.rekhta.org/tags/famous-shayari/couplets",
             description = "Ponder and it might help clear blockers in the mind.",
             tags = listOf("positive", "shayaris", "cool", "poetic", "beautiful", "daily", "optional"),
-            views = 190,
+            views = 192,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -790,7 +790,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 216,
+            views = 219,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -800,7 +800,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 216,
+            views = 217,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -820,7 +820,7 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("positive", "daily", "learning", "news"),
-            views = 103,
+            views = 108,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -850,7 +850,7 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=8of5w7RgcTc",
             description = "Contemplative popular music in Urdu.",
             tags = listOf("urdu", "music", "positive", "daily", "optional"),
-            views = 112,
+            views = 113,
             likesMobile = 1,
             dislikesMobile = 2
         ),
@@ -860,7 +860,7 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=jxLsiOflofk",
             description = "How to perform 2 Raka'at (2 Unit) namaz to help in praying Jumma farz namaz.",
             tags = listOf("user-submitted", "positive", "daily", "optional"),
-            views = 147,
+            views = 148,
             likesMobile = 7,
             dislikesMobile = 0
         )
