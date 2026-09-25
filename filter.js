@@ -83,11 +83,9 @@ async function loadIndividualFilter() {
     if (!container) return;
 
     try {
-        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop&logUser=0`);
-
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
-        const allLinks = await response.json();
+        const allLinks = await apiCall('/getLinks', {
+            params: { platform: 'desktop', logUser: 0 }
+        });
         allLinks.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
 
         const blockedSet = new Set(individualBlockedUrls);

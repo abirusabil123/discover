@@ -23,18 +23,32 @@ const MAX_HISTORY_LENGTH = 1024;
 const ENABLE_VIEW_TRACKING = true;
 const ERROR_MESSAGE = 'Unable to connect to the server. Please make sure your local backend is running.';
 
-// Add at top of script.js after constants
+async function apiCall(path, { method = 'GET', params = null, body = null } = {}) {
+    let url = API_BASE_URL + path;
+    if (params) {
+        const qs = new URLSearchParams(params).toString();
+        if (qs) url += '?' + qs;
+    }
+    const init = { method };
+    if (body !== null) {
+        init.headers = { 'Content-Type': 'application/json' };
+        init.body = JSON.stringify(body);
+    }
+    const res = await fetch(url, init);
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    return res.json();
+}
+
 async function logFrontendError(message, level = 'error') {
     try {
-        await fetch(`${API_BASE_URL}/log-error`, {
+        await apiCall('/log-error', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
+            body: {
                 source: 'frontend',
                 level: level,
                 message: message,
                 user_agent: navigator.userAgent
-            })
+            }
         });
         console.error('Successfully logged frontend error:', message);
     } catch (error) {
@@ -101,19 +115,18 @@ async function loadLinksFromAPI(logUser) {
 
     let linkCount = 0;
     try {
-        const query = `&tagsAllowlist=${encodeURIComponent(tagsAllowlist.join(','))}&tagsBlocklist=${encodeURIComponent(tagsBlocklist.join(','))}&urlsAllowlist=${encodeURIComponent(urlsAllowlist.join(' '))}&urlsBlocklist=${encodeURIComponent(urlsBlocklist.join(' '))}`;
-        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop&logUser=${logUser}${query}`);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        links = await response.json();
+        links = await apiCall('/getLinks', {
+            params: {
+                platform: 'desktop',
+                logUser: logUser,
+                tagsAllowlist: tagsAllowlist.join(','),
+                tagsBlocklist: tagsBlocklist.join(','),
+                urlsAllowlist: urlsAllowlist.join(' '),
+                urlsBlocklist: urlsBlocklist.join(' ')
+            }
+        });
         console.log(`Loaded ${links.length} links from API.`);
-
         document.getElementById('api-status-indicator').classList.add('online');
-
-        // ✅ Return the count so it can be shown in the success message
         linkCount = links.length;
     } catch (error) {
         console.error('Failed to load links from API:', error);
@@ -204,27 +217,15 @@ async function updateLinkStats(linkUrl, action) {
 
     // Sync with server in the background
     try {
-        const response = await fetch(`${API_BASE_URL}/incrementView?url=${encodeURIComponent(link.url)}&action=${action}`, {
-            method: 'POST'
+        const result = await apiCall('/incrementView', {
+            method: 'POST',
+            params: { url: link.url, action: action }
         });
-
-        if (response.ok) {
-            const result = await response.json();
-            console.log(`Synced ${action} for ${linkUrl}:`, result);
-
-            // Update UI with actual server response (in case there were any server-side adjustments)
-            updateStatsDisplay(result);
-
-        } else {
-            console.error(`Failed to sync ${action} for ${linkUrl}:`, response.status);
-            // Optionally revert the optimistic update on error
-            // For now, we'll keep the optimistic update for better UX
-        }
+        console.log(`Synced ${action} for ${linkUrl}:`, result);
+        updateStatsDisplay(result);
     } catch (error) {
         console.error(`Failed to sync ${action} for ${linkUrl}:`, error);
         showErrorMessage(action + " action failed due to backend server unreachable: " + error.message);
-        // Optionally revert the optimistic update on error
-        // For now, we'll keep the optimistic update for better UX
     }
 }
 
