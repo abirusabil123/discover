@@ -16,7 +16,7 @@ const FOCUS_DELAY = 100;
 const SPLASH_WAIT = 800;
 const LOADING_WAIT = 1000;
 const RESET_DELAY = 2000;
-const SPLASH_DELAY = 8000;
+const SPLASH_DELAY = 60000;
 const RESET_DELAY_LONG = 10000;
 const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
 const MAX_HISTORY_LENGTH = 1024;
@@ -66,9 +66,20 @@ function initializeApp() {
     console.log('Initializing app splash...');
     const splash = document.getElementById('splash');
     if (splash && !splash.classList.contains('splash-off')) {
+        const countdownEl = document.getElementById('splash-countdown');
+        let remaining = Math.round(SPLASH_DELAY / 1000);
+        if (countdownEl) countdownEl.textContent = remaining;
+
+        const countdownInterval = setInterval(() => {
+            remaining--;
+            if (countdownEl) countdownEl.textContent = remaining;
+            if (remaining <= 0) clearInterval(countdownInterval);
+        }, 1000);
+
         let splashTimer;
         const hideSplash = () => {
             clearTimeout(splashTimer);
+            clearInterval(countdownInterval);
             splash.removeEventListener('click', hideSplash);
             splash.classList.add('splash-hide');
             setTimeout(() => splash.classList.add('splash-off'), SPLASH_WAIT);
