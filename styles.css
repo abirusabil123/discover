@@ -740,6 +740,8 @@ body {
     cursor: pointer;
     opacity: 1;
     transition: opacity 0.6s ease;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .splash-hide {
@@ -911,6 +913,10 @@ body {
         gap: 0.5rem;
     }
 
+    .splash {
+        align-items: flex-start;
+    }
+
     .splash-verse {
         grid-template-columns: 1fr;
         gap: 0.25rem;
@@ -939,6 +945,5 @@ body {
     .splash-title-mid,
     .splash-title-en {
         text-align: center;
-        font-size: 1rem;
     }
 }
