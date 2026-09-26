@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 27,
+            "views": 30,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -159,7 +159,7 @@ const STATIC = {
                 "sample",
                 "positive"
             ],
-            "views": 185,
+            "views": 186,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -188,7 +188,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 78,
+            "views": 79,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -221,7 +221,7 @@ const STATIC = {
                 "daily-desktop",
                 "optional"
             ],
-            "views": 158,
+            "views": 159,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -347,7 +347,7 @@ const STATIC = {
                 "sample",
                 "positive"
             ],
-            "views": 95,
+            "views": 96,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 9,
@@ -364,23 +364,6 @@ const STATIC = {
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "4 Quls in Quran",
-            "url": "https://easywaytoquran.com/4-qul-in-islam-2/",
-            "description": "Prophet Muhammad (SAW) recommended these surahs for their spiritual benefits, including protection against black magic, the evil eye, whispers of Shaitaan (Satan), and shirk (associating partners with Allah). Muslims often recite them before sleeping and during daily prayers to seek blessings and divine protection.",
-            "tags": [
-                "positive",
-                "daily",
-                "quran",
-                "islam",
-                "learning"
-            ],
-            "views": 146,
-            "likesMobile": 1,
-            "dislikesMobile": 0,
-            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
@@ -684,7 +667,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 174,
+            "views": 176,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -705,7 +688,7 @@ const STATIC = {
                 "regular",
                 "repeat"
             ],
-            "views": 99,
+            "views": 100,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -720,7 +703,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 118,
+            "views": 119,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -792,7 +775,7 @@ const STATIC = {
                 "motherboard",
                 "company"
             ],
-            "views": 115,
+            "views": 116,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -851,7 +834,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 346,
+            "views": 348,
             "likesMobile": 41,
             "dislikesMobile": 3,
             "likesDesktop": 18,
@@ -883,7 +866,7 @@ const STATIC = {
                 "daily-desktop",
                 "optional"
             ],
-            "views": 13,
+            "views": 14,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -899,7 +882,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 88,
+            "views": 90,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -915,7 +898,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 269,
+            "views": 272,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -959,7 +942,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 277,
+            "views": 278,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -975,7 +958,7 @@ const STATIC = {
                 "coding",
                 "positive"
             ],
-            "views": 120,
+            "views": 121,
             "likesMobile": 5,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1004,7 +987,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 207,
+            "views": 208,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1076,7 +1059,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 69,
+            "views": 70,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1144,7 +1127,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 1,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1185,7 +1168,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1231,7 +1214,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 124,
+            "views": 126,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -1272,7 +1255,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 1,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1288,7 +1271,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 416,
+            "views": 420,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1302,7 +1285,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 29,
+            "views": 30,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1387,7 +1370,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 291,
+            "views": 293,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1404,7 +1387,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 159,
+            "views": 160,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1508,7 +1491,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 96,
+            "views": 101,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1581,7 +1564,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 25,
+            "views": 29,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1595,7 +1578,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1628,7 +1611,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1762,7 +1745,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 263,
+            "views": 264,
             "likesMobile": 31,
             "dislikesMobile": 3,
             "likesDesktop": 16,
@@ -1795,11 +1778,11 @@ const STATIC = {
                 "daily-desktop",
                 "socialMedia"
             ],
-            "views": 19,
+            "views": 21,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
-            "dislikesDesktop": 1
+            "dislikesDesktop": 2
         },
         {
             "name": "Rekhta famous shayaris",
@@ -1846,7 +1829,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 217,
+            "views": 218,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1875,7 +1858,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 108,
+            "views": 109,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,

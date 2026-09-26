@@ -5,8 +5,8 @@
   },
   "analysis": {
     "total": 146,
-    "filteredMobile": 60,
-    "filteredDesktop": 13,
+    "filteredMobile": 61,
+    "filteredDesktop": 14,
     "blockedMobileUrls": [
       "http://radio.garden/",
       "https://10minutemail.com/",
@@ -23,6 +23,7 @@
       "https://crowdparty.app/",
       "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
       "https://dontevenreply.com/",
+      "https://easywaytoquran.com/4-qul-in-islam-2/",
       "https://github.com/alex/what-happens-when",
       "https://github.com/pllk/cphb/",
       "https://godbolt.org/",
@@ -72,6 +73,7 @@
     "blockedDesktopUrls": [
       "https://abirusabil123.github.io/",
       "https://canon.com/",
+      "https://easywaytoquran.com/4-qul-in-islam-2/",
       "https://loops.video/",
       "https://mojapp.in/",
       "https://nitter.net/",
@@ -86,26 +88,26 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 77,
+      "0%": 76,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 61
+      "80-100%": 62
     },
     "byVoteCount": {
       "0 votes": 51,
-      "1-3 votes": 20,
+      "1-3 votes": 19,
       "4-10 votes": 12,
       "11-50 votes": 2,
-      "50+ votes": 61
+      "50+ votes": 62
     }
   },
   "visitors": {
     "byCountry": [
       {
         "country": "",
-        "count": 4125
+        "count": 4216
       },
       {
         "country": "AE",
@@ -177,7 +179,7 @@
       },
       {
         "country": "JP",
-        "count": 29
+        "count": 30
       },
       {
         "country": "KG",
@@ -237,7 +239,7 @@
       },
       {
         "country": "US",
-        "count": 1226
+        "count": 1228
       },
       {
         "country": "ZA",
@@ -247,7 +249,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 2732
+        "count": 2826
       },
       {
         "month": "202608",
@@ -273,7 +275,7 @@
       },
       {
         "platform": "desktop",
-        "count": 3899
+        "count": 3990
       },
       {
         "platform": "Linux armv81",
@@ -285,7 +287,7 @@
       },
       {
         "platform": "mobile",
-        "count": 326
+        "count": 329
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -319,7 +321,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 6320
+        "count": 6414
       },
       {
         "product": "personal website",
@@ -329,7 +331,7 @@
     "byOrigin": [
       {
         "origin": "",
-        "count": 2426
+        "count": 2429
       },
       {
         "origin": "file://",
@@ -337,11 +339,11 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 102
+        "count": 103
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2581
+        "count": 2621
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -381,7 +383,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1210
+        "count": 1260
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -407,7 +409,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4225
+        "count": 4319
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -437,11 +439,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 4869
+        "count": 4960
       },
       {
         "status": "Bot",
-        "count": 1517
+        "count": 1520
       }
     ],
     "byHourOfDay": [
@@ -463,15 +465,15 @@
       },
       {
         "hour": 4,
-        "count": 178
+        "count": 179
       },
       {
         "hour": 5,
-        "count": 1005
+        "count": 1007
       },
       {
         "hour": 6,
-        "count": 463
+        "count": 464
       },
       {
         "hour": 7,
@@ -491,7 +493,7 @@
       },
       {
         "hour": 11,
-        "count": 143
+        "count": 144
       },
       {
         "hour": 12,
@@ -499,15 +501,15 @@
       },
       {
         "hour": 13,
-        "count": 309
+        "count": 355
       },
       {
         "hour": 14,
-        "count": 266
+        "count": 308
       },
       {
         "hour": 15,
-        "count": 452
+        "count": 453
       },
       {
         "hour": 16,
@@ -561,11 +563,11 @@
       },
       {
         "dow": 4,
-        "count": 457
+        "count": 545
       },
       {
         "dow": 5,
-        "count": 464
+        "count": 470
       },
       {
         "dow": 6,
@@ -574,8 +576,8 @@
     ]
   },
   "errors": {
-    "count": 91,
-    "unresolved": 3,
+    "count": 99,
+    "unresolved": 11,
     "allUnresolvedErrors": [
       {
         "id": 89,
@@ -603,6 +605,86 @@
         "source": "frontend",
         "level": "error",
         "message": "view action failed due to backend server unreachable: NetworkError when attempting to fetch resource.",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 92,
+        "timestamp": "2026-09-25T13:42:21.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 93,
+        "timestamp": "2026-09-25T13:42:31.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 94,
+        "timestamp": "2026-09-25T13:42:38.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 95,
+        "timestamp": "2026-09-25T13:42:48.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 96,
+        "timestamp": "2026-09-25T13:42:52.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 97,
+        "timestamp": "2026-09-25T13:43:03.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 98,
+        "timestamp": "2026-09-25T13:43:26.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:155.0) Gecko/20100101 Firefox/155.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 99,
+        "timestamp": "2026-09-26T11:14:42.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0",
         "resolved": 0,
         "resolved_at": null
