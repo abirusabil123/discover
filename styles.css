@@ -706,6 +706,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(min(24rem, 100%), 1fr));
     max-width: 90rem;
     margin: 0 auto;
+    width: 100%;
 }
 
 .card {
