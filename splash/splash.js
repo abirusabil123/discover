@@ -18,10 +18,10 @@
         '07-kafirun.html',
     ];
 
-    // Day boundary at 06:00 local
-    const SIX_HOURS = 6 * 60 * 60 * 1000;
+    // Day boundary at 04:00 local
+    const DAY_START = 4 * 60 * 60 * 1000;
     const DAY = 24 * 60 * 60 * 1000;
-    const dayIndex = Math.floor((Date.now() - SIX_HOURS) / DAY);
+    const dayIndex = Math.floor((Date.now() - DAY_START) / DAY);
     const idx = ((dayIndex % SURAHS.length) + SURAHS.length) % SURAHS.length;
 
     try {
