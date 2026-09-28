@@ -253,6 +253,93 @@ fun WebViewArea(
 })();""", null
                             )
                         }
+                        // Auto-dismiss cookie consent banners (deny preferred, accept as last resort)
+                        view?.evaluateJavascript(
+                            """(function() {
+    if (window.__discoverCookieDenier) return;
+    window.__discoverCookieDenier = true;
+
+    var denySelectors = [
+        '#onetrust-reject-all-handler',
+        '#CybotCookiebotDialogBodyButtonDecline',
+        '.qc-cmp2-summary-buttons button[mode="secondary"]',
+        '.cmplz-deny',
+        '.cc-deny',
+        '[data-testid="reject-all"]',
+        '[aria-label*="reject" i]',
+        '[aria-label*="decline" i]',
+        '[id*="reject" i]',
+        '[class*="reject" i]'
+    ];
+
+    var acceptSelectors = [
+        '#onetrust-accept-btn-handler',
+        '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll',
+        '.qc-cmp2-summary-buttons button[mode="primary"]',
+        '.cmplz-accept',
+        '.cc-allow',
+        '[data-testid="accept-all"]',
+        '[aria-label*="accept" i]',
+        '[id*="accept" i]'
+    ];
+
+    var denyWords = /^(reject(\s+all)?|decline(\s+all)?|deny(\s+all)?|refuse|disagree|no,?\s*thanks|not\s+now|only\s+necessary(\s+cookies)?|necessary\s+only|essential\s+only|i\s+do\s+not\s+accept)$/i;
+    var acceptWords = /^(accept(\s+all)?|allow(\s+all)?|agree|ok(ay)?|got\s+it|i\s+understand|understood|continue|yes,?\s*i\s*agree)$/i;
+
+    function isVisible(el) {
+        var r = el.getBoundingClientRect();
+        return r.width > 0 && r.height > 0;
+    }
+
+    // Collect all roots: document + every open shadow root (recursively)
+    function collectRoots(root, out) {
+        out.push(root);
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT, null);
+        while (walker.nextNode()) {
+            var n = walker.currentNode;
+            if (n.shadowRoot) collectRoots(n.shadowRoot, out);
+        }
+    }
+
+    function clickFirst(roots, selectors) {
+        for (var r = 0; r < roots.length; r++) {
+            for (var i = 0; i < selectors.length; i++) {
+                var el = roots[r].querySelector(selectors[i]);
+                if (el && isVisible(el)) { el.click(); return true; }
+            }
+        }
+        return false;
+    }
+
+    function clickByText(roots, re) {
+        for (var r = 0; r < roots.length; r++) {
+            var buttons = roots[r].querySelectorAll('button, a[role="button"], [role="button"]');
+            for (var j = 0; j < buttons.length; j++) {
+                var b = buttons[j];
+                if (!isVisible(b)) continue;
+                var text = (b.innerText || b.textContent || '').trim();
+                if (re.test(text)) { b.click(); return true; }
+            }
+        }
+        return false;
+    }
+
+    function tryClick() {
+        var roots = [];
+        collectRoots(document, roots);
+        if (clickFirst(roots, denySelectors)) return true;
+        if (clickByText(roots, denyWords)) return true;
+        if (clickFirst(roots, acceptSelectors)) return true;
+        if (clickByText(roots, acceptWords)) return true;
+        return false;
+    }
+
+    // Run once now, then again on every DOM mutation (no timeout).
+    tryClick();
+    new MutationObserver(function() { tryClick(); })
+        .observe(document.documentElement, { childList: true, subtree: true });
+})();""", null
+                        )
                     }
 
                     override fun shouldOverrideUrlLoading(
