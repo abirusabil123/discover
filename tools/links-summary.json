@@ -96,8 +96,8 @@
       "80-100%": 62
     },
     "byVoteCount": {
-      "0 votes": 52,
-      "1-3 votes": 19,
+      "0 votes": 51,
+      "1-3 votes": 20,
       "4-10 votes": 12,
       "11-50 votes": 2,
       "50+ votes": 62
@@ -107,7 +107,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 4250
+        "count": 4279
       },
       {
         "country": "AE",
@@ -249,7 +249,7 @@
     "byMonth": [
       {
         "month": "202609",
-        "count": 2869
+        "count": 2898
       },
       {
         "month": "202608",
@@ -275,7 +275,7 @@
       },
       {
         "platform": "desktop",
-        "count": 4013
+        "count": 4032
       },
       {
         "platform": "Linux armv81",
@@ -287,7 +287,7 @@
       },
       {
         "platform": "mobile",
-        "count": 349
+        "count": 359
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -321,7 +321,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 6457
+        "count": 6486
       },
       {
         "product": "personal website",
@@ -331,7 +331,7 @@
     "byOrigin": [
       {
         "origin": "",
-        "count": 2450
+        "count": 2460
       },
       {
         "origin": "file://",
@@ -339,7 +339,7 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 105
+        "count": 108
       },
       {
         "origin": "http://localhost:44631",
@@ -383,7 +383,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1279
+        "count": 1295
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -409,7 +409,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4362
+        "count": 4391
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -439,11 +439,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 4982
+        "count": 5001
       },
       {
         "status": "Bot",
-        "count": 1541
+        "count": 1551
       }
     ],
     "byHourOfDay": [
@@ -477,7 +477,7 @@
       },
       {
         "hour": 7,
-        "count": 311
+        "count": 319
       },
       {
         "hour": 8,
@@ -493,11 +493,11 @@
       },
       {
         "hour": 11,
-        "count": 144
+        "count": 145
       },
       {
         "hour": 12,
-        "count": 265
+        "count": 267
       },
       {
         "hour": 13,
@@ -505,7 +505,7 @@
       },
       {
         "hour": 14,
-        "count": 309
+        "count": 312
       },
       {
         "hour": 15,
@@ -513,7 +513,7 @@
       },
       {
         "hour": 16,
-        "count": 574
+        "count": 584
       },
       {
         "hour": 17,
@@ -521,7 +521,7 @@
       },
       {
         "hour": 18,
-        "count": 389
+        "count": 394
       },
       {
         "hour": 19,
@@ -551,11 +551,11 @@
       },
       {
         "dow": 1,
-        "count": 629
+        "count": 644
       },
       {
         "dow": 2,
-        "count": 717
+        "count": 731
       },
       {
         "dow": 3,
