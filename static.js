@@ -687,7 +687,7 @@ const STATIC = {
                 "regular",
                 "repeat"
             ],
-            "views": 102,
+            "views": 103,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,

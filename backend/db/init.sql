@@ -652,7 +652,7 @@ VALUES (
         'https://m.youtube.com/feed/subscriptions',
         'The subscriptions feed does not have implicit personalized recommendations.',
         JSON_ARRAY('daily', 'daily-desktop', 'positive', 'video', 'social', 'good', 'dynamic', 'regular', 'repeat'),
-        102,
+        103,
         2,
         1000,
         4,
@@ -1042,6 +1042,18 @@ VALUES (
         1,
         1,
         1
+    ),
+    (
+        'Who really wrote the lines ‘If there is Paradise on earth, it is this, it is this, it is this’?',
+        'https://scroll.in/article/942273/who-really-wrote-the-lines-if-there-is-paradise-on-earth-it-is-this-it-is-this-it-is-this',
+        'Paradise on Earth - Delhi.',
+        JSON_ARRAY('positive', 'book', 'learning'),
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
     ),
     (
         'skribbl.io',
@@ -1811,4 +1823,8 @@ VALUES (
         1,
         1
     ) ON DUPLICATE KEY
-UPDATE url = url;
+UPDATE
+    name = VALUES(name),
+    description = VALUES(description),
+    tags = VALUES(tags),
+    reviewStatus = VALUES(reviewStatus);
