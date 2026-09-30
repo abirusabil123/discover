@@ -130,7 +130,11 @@ VALUES `;
     }).join(',\n    ');
 
     const content = `${header}${values} ON DUPLICATE KEY
-UPDATE url = url;`;
+UPDATE
+    name = VALUES(name),
+    description = VALUES(description),
+    tags = VALUES(tags),
+    reviewStatus = VALUES(reviewStatus);`;
     fs.mkdirSync(path.dirname(sqlPath), { recursive: true });
     fs.writeFileSync(sqlPath, content);
     console.log(`✅ init.sql regenerated (${links.length} entries)\n`);
@@ -243,12 +247,12 @@ function main() {
         process.exit(1);
     }
 
-    console.log(`📦 Found ${LINKS_TO_KEEP.length} links in static-links.js`);
+    console.log(`📦 Found ${LINKS_TO_KEEP.length} links in links-dump-to-keep.json (incl. reviewStatus 0)`);
     const approvedLinks = LINKS_TO_KEEP.filter(site => site.reviewStatus === 1);
     approvedLinks.sort((a, b) => (a.url || '').localeCompare(b.url || ''));
     console.log(`📦 Found ${approvedLinks.length} approved links in static-links.js`);
 
-    generateInitSQL(approvedLinks);
+    generateInitSQL(LINKS_TO_KEEP);
     generateConfigJS(approvedLinks);
     generateKotlin(approvedLinks);
     console.log('🎉 All files successfully regenerated!\n');
