@@ -436,6 +436,16 @@ object StaticLinks {
         ),
 
         Link(
+            name = "Who really wrote the lines ‘If there is Paradise on earth, it is this, it is this, it is this’?",
+            url = "https://scroll.in/article/942273/who-really-wrote-the-lines-if-there-is-paradise-on-earth-it-is-this-it-is-this-it-is-this",
+            description = "Paradise on Earth - Delhi.",
+            tags = listOf("positive", "book", "learning"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "stackedit",
             url = "https://stackedit.io/app#",
             description = "Online markdown editor.",

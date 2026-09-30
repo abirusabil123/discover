@@ -1108,6 +1108,21 @@ const STATIC = {
             "dislikesDesktop": 1
         },
         {
+            "name": "Who really wrote the lines ‘If there is Paradise on earth, it is this, it is this, it is this’?",
+            "url": "https://scroll.in/article/942273/who-really-wrote-the-lines-if-there-is-paradise-on-earth-it-is-this-it-is-this-it-is-this",
+            "description": "Paradise on Earth - Delhi.",
+            "tags": [
+                "positive",
+                "book",
+                "learning"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "skribbl.io",
             "url": "https://skribbl.io/",
             "description": "Free multiplayer drawing and guessing game",
