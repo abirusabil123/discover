@@ -18,11 +18,11 @@
         '07-kafirun.html',
     ];
 
-    // Day boundary at 04:00 local
-    const DAY_START = 4 * 60 * 60 * 1000;
-    const DAY = 24 * 60 * 60 * 1000;
-    const dayIndex = Math.floor((Date.now() - DAY_START) / DAY);
-    const idx = ((dayIndex % SURAHS.length) + SURAHS.length) % SURAHS.length;
+    // Monday 04:00 local as the anchor
+    const anchor = new Date(1970, 0, 5, 4, 0, 0).getTime(); // Jan 5 1970 was a Monday
+    const WEEK = 7 * 24 * 60 * 60 * 1000;
+    const weekIndex = Math.floor((Date.now() - anchor) / WEEK);
+    const idx = ((weekIndex % SURAHS.length) + SURAHS.length) % SURAHS.length;
 
     try {
         const res = await fetch('splash/' + SURAHS[idx]);
