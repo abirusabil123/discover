@@ -10,7 +10,7 @@ object StaticLinks {
             url = "https://4chan.org/",
             description = "Free speech social media platform. NSFW.",
             tags = listOf("positive", "daily", "optional", "user-submitted"),
-            views = 179,
+            views = 181,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("daily", "positive", "learning"),
-            views = 43,
+            views = 45,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -50,7 +50,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("positive", "daily"),
-            views = 116,
+            views = 117,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -300,7 +300,7 @@ object StaticLinks {
             url = "https://ncase.me/",
             description = "Interactive simulations about trust and human behavior",
             tags = listOf("positive", "curated", "sample"),
-            views = 200,
+            views = 201,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -310,7 +310,7 @@ object StaticLinks {
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship. Kind of weird comments probably lots of bots.",
             tags = listOf("positive", "daily", "optional", "curated", "sample"),
-            views = 360,
+            views = 361,
             likesMobile = 41,
             dislikesMobile = 4
         ),
@@ -330,7 +330,7 @@ object StaticLinks {
             url = "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/syllabus/",
             description = "Welcome to MIT 6.042! In this course, we'll teach you some mathematics that we think you'll find useful in your study of computer science.",
             tags = listOf("daily", "daily-desktop", "optional"),
-            views = 14,
+            views = 15,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -340,7 +340,7 @@ object StaticLinks {
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
             tags = listOf("positive", "daily", "palestine", "free"),
-            views = 101,
+            views = 102,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -370,7 +370,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 293,
+            views = 294,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -430,7 +430,7 @@ object StaticLinks {
             url = "https://safirnews.in/",
             description = "Indian news website.",
             tags = listOf("news", "positive", "daily"),
-            views = 84,
+            views = 85,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -450,7 +450,7 @@ object StaticLinks {
             url = "https://stackedit.io/app#",
             description = "Online markdown editor.",
             tags = listOf("positive"),
-            views = 2,
+            views = 3,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -510,7 +510,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers.",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 431,
+            views = 432,
             likesMobile = 56,
             dislikesMobile = 4
         ),
@@ -520,7 +520,7 @@ object StaticLinks {
             url = "https://unsplash.com/illustrations",
             description = "Free stock vector illustrations. Powered by creators everywhere.",
             tags = listOf("daily", "positive"),
-            views = 46,
+            views = 47,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -570,7 +570,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 303,
+            views = 304,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -580,7 +580,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386599316112",
             description = "Short clips from Aljazeera.",
             tags = listOf("aljazeera", "flips", "learning", "positive", "daily"),
-            views = 174,
+            views = 175,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -600,7 +600,7 @@ object StaticLinks {
             url = "https://www.byd.com/",
             description = "Electric car company.",
             tags = listOf("car", "electric", "company"),
-            views = 105,
+            views = 106,
             likesMobile = 5,
             dislikesMobile = 0
         ),
@@ -620,7 +620,7 @@ object StaticLinks {
             url = "https://www.digit.in/",
             description = "Technology magazine.",
             tags = listOf("positive", "daily", "new", "tech"),
-            views = 116,
+            views = 117,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -650,7 +650,7 @@ object StaticLinks {
             url = "https://www.fifplay.com/fifa-12/soundtrack/",
             description = "The great FIFA 12 soundtrack for those who love nostalgia.",
             tags = listOf("songs", "fifa", "positive"),
-            views = 16,
+            views = 17,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -800,7 +800,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 232,
+            views = 233,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -830,7 +830,7 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("positive", "daily", "learning", "news"),
-            views = 121,
+            views = 123,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -851,6 +851,16 @@ object StaticLinks {
             description = "Physics trivia videos.",
             tags = listOf("positive"),
             views = 1,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Sammy Obeid YouTube",
+            url = "https://www.youtube.com/user/SammyKObeid",
+            description = "Palestinian comedian.",
+            tags = listOf("youtube", "daily", "optional"),
+            views = 0,
             likesMobile = 0,
             dislikesMobile = 0
         ),

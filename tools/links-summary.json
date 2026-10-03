@@ -1,10 +1,10 @@
 {
   "metadata": {
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 148
+    "totalLinks": 149
   },
   "analysis": {
-    "total": 148,
+    "total": 149,
     "filteredMobile": 61,
     "filteredDesktop": 14,
     "blockedMobileUrls": [
@@ -88,7 +88,7 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 78,
+      "0%": 79,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
@@ -96,7 +96,7 @@
       "80-100%": 62
     },
     "byVoteCount": {
-      "0 votes": 52,
+      "0 votes": 53,
       "1-3 votes": 20,
       "4-10 votes": 12,
       "11-50 votes": 2,
@@ -107,7 +107,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 4280
+        "count": 4447
       },
       {
         "country": "AE",
@@ -239,7 +239,7 @@
       },
       {
         "country": "US",
-        "count": 1233
+        "count": 1234
       },
       {
         "country": "ZA",
@@ -248,8 +248,12 @@
     ],
     "byMonth": [
       {
+        "month": "202610",
+        "count": 159
+      },
+      {
         "month": "202609",
-        "count": 2899
+        "count": 2908
       },
       {
         "month": "202608",
@@ -275,7 +279,7 @@
       },
       {
         "platform": "desktop",
-        "count": 4033
+        "count": 4194
       },
       {
         "platform": "Linux armv81",
@@ -283,11 +287,11 @@
       },
       {
         "platform": "Linux x86_64",
-        "count": 2
+        "count": 3
       },
       {
         "platform": "mobile",
-        "count": 359
+        "count": 365
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -321,29 +325,29 @@
       },
       {
         "product": "discover-backend",
-        "count": 6487
+        "count": 6654
       },
       {
         "product": "personal website",
-        "count": 6
+        "count": 7
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 2460
+        "count": 2466
       },
       {
         "origin": "file://",
-        "count": 3
+        "count": 4
       },
       {
         "origin": "http://discoverall.space",
-        "count": 108
+        "count": 110
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2622
+        "count": 2730
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -383,7 +387,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1296
+        "count": 1347
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -409,11 +413,15 @@
       },
       {
         "path": "/getLinks",
-        "count": 4392
+        "count": 4559
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
         "count": 3
+      },
+      {
+        "path": "/home/zeitgeist/Documents/github/abirusabil123.github.io/index.html",
+        "count": 1
       },
       {
         "path": "/index.html",
@@ -439,11 +447,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5002
+        "count": 5163
       },
       {
         "status": "Bot",
-        "count": 1551
+        "count": 1558
       }
     ],
     "byHourOfDay": [
@@ -461,15 +469,15 @@
       },
       {
         "hour": 3,
-        "count": 150
+        "count": 152
       },
       {
         "hour": 4,
-        "count": 179
+        "count": 232
       },
       {
         "hour": 5,
-        "count": 1008
+        "count": 1098
       },
       {
         "hour": 6,
@@ -477,7 +485,7 @@
       },
       {
         "hour": 7,
-        "count": 319
+        "count": 322
       },
       {
         "hour": 8,
@@ -485,7 +493,7 @@
       },
       {
         "hour": 9,
-        "count": 267
+        "count": 268
       },
       {
         "hour": 10,
@@ -493,11 +501,11 @@
       },
       {
         "hour": 11,
-        "count": 145
+        "count": 146
       },
       {
         "hour": 12,
-        "count": 267
+        "count": 268
       },
       {
         "hour": 13,
@@ -505,15 +513,15 @@
       },
       {
         "hour": 14,
-        "count": 312
+        "count": 313
       },
       {
         "hour": 15,
-        "count": 470
+        "count": 479
       },
       {
         "hour": 16,
-        "count": 584
+        "count": 587
       },
       {
         "hour": 17,
@@ -521,7 +529,7 @@
       },
       {
         "hour": 18,
-        "count": 394
+        "count": 398
       },
       {
         "hour": 19,
@@ -555,19 +563,19 @@
       },
       {
         "dow": 2,
-        "count": 732
+        "count": 741
       },
       {
         "dow": 3,
-        "count": 828
+        "count": 834
       },
       {
         "dow": 4,
-        "count": 545
+        "count": 551
       },
       {
         "dow": 5,
-        "count": 480
+        "count": 627
       },
       {
         "dow": 6,
@@ -576,8 +584,8 @@
     ]
   },
   "errors": {
-    "count": 100,
-    "unresolved": 12,
+    "count": 157,
+    "unresolved": 69,
     "allUnresolvedErrors": [
       {
         "id": 89,
@@ -696,6 +704,576 @@
         "level": "error",
         "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
         "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 101,
+        "timestamp": "2026-10-03T04:05:13.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 102,
+        "timestamp": "2026-10-03T04:05:18.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 103,
+        "timestamp": "2026-10-03T04:05:20.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 104,
+        "timestamp": "2026-10-03T04:05:24.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 105,
+        "timestamp": "2026-10-03T04:05:51.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 106,
+        "timestamp": "2026-10-03T04:06:08.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 107,
+        "timestamp": "2026-10-03T04:18:31.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 108,
+        "timestamp": "2026-10-03T04:19:32.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 109,
+        "timestamp": "2026-10-03T04:21:16.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 110,
+        "timestamp": "2026-10-03T04:21:19.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 111,
+        "timestamp": "2026-10-03T04:24:08.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 112,
+        "timestamp": "2026-10-03T04:24:09.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 113,
+        "timestamp": "2026-10-03T04:24:11.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 114,
+        "timestamp": "2026-10-03T04:34:29.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load apiLinks from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 115,
+        "timestamp": "2026-10-03T04:34:30.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load apiLinks from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 116,
+        "timestamp": "2026-10-03T04:34:35.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load apiLinks from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 117,
+        "timestamp": "2026-10-03T04:34:36.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load apiLinks from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 118,
+        "timestamp": "2026-10-03T04:34:47.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load apiLinks from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 119,
+        "timestamp": "2026-10-03T04:35:25.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load apiLinks from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 120,
+        "timestamp": "2026-10-03T04:56:07.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 121,
+        "timestamp": "2026-10-03T04:56:07.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: ReferenceError: apiLinks is not defined",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 122,
+        "timestamp": "2026-10-03T04:56:10.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 123,
+        "timestamp": "2026-10-03T04:56:10.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: ReferenceError: apiLinks is not defined",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 124,
+        "timestamp": "2026-10-03T04:56:10.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: ReferenceError: apiLinks is not defined",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 125,
+        "timestamp": "2026-10-03T04:56:14.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 126,
+        "timestamp": "2026-10-03T04:56:14.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: ReferenceError: apiLinks is not defined",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 127,
+        "timestamp": "2026-10-03T04:56:18.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 128,
+        "timestamp": "2026-10-03T04:56:18.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: ReferenceError: apiLinks is not defined",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 129,
+        "timestamp": "2026-10-03T04:56:50.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: ReferenceError: apiLinks is not defined",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 130,
+        "timestamp": "2026-10-03T04:58:41.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 131,
+        "timestamp": "2026-10-03T05:00:39.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 132,
+        "timestamp": "2026-10-03T05:00:42.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 133,
+        "timestamp": "2026-10-03T05:00:46.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 134,
+        "timestamp": "2026-10-03T05:00:48.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 135,
+        "timestamp": "2026-10-03T05:01:16.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 136,
+        "timestamp": "2026-10-03T05:02:27.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 137,
+        "timestamp": "2026-10-03T05:02:29.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 138,
+        "timestamp": "2026-10-03T05:02:40.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 139,
+        "timestamp": "2026-10-03T05:02:42.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 140,
+        "timestamp": "2026-10-03T05:02:51.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 141,
+        "timestamp": "2026-10-03T05:03:00.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 142,
+        "timestamp": "2026-10-03T05:03:02.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 143,
+        "timestamp": "2026-10-03T05:03:03.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 144,
+        "timestamp": "2026-10-03T05:03:08.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 145,
+        "timestamp": "2026-10-03T05:03:10.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 146,
+        "timestamp": "2026-10-03T05:03:11.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 147,
+        "timestamp": "2026-10-03T05:03:13.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 148,
+        "timestamp": "2026-10-03T05:12:34.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 149,
+        "timestamp": "2026-10-03T05:14:15.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 150,
+        "timestamp": "2026-10-03T05:14:23.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 151,
+        "timestamp": "2026-10-03T05:16:12.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 152,
+        "timestamp": "2026-10-03T05:16:40.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 153,
+        "timestamp": "2026-10-03T05:17:11.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 154,
+        "timestamp": "2026-10-03T05:22:44.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 155,
+        "timestamp": "2026-10-03T05:32:01.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: NetworkError when attempting to fetch resource.<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 156,
+        "timestamp": "2026-10-03T05:44:17.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Failed to load links from API.<br>Cannot reach backend server: TypeError: can't access property \"classList\", document.getElementById(...) is null<br>Using static list as fallback.",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 157,
+        "timestamp": "2026-10-03T05:44:17.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "Unhandled promise rejection: TypeError: can't access property \"classList\", document.getElementById(...) is null",
+        "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
         "resolved": 0,
         "resolved_at": null
       }
