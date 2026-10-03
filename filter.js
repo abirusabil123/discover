@@ -136,6 +136,7 @@ async function loadIndividualFilter() {
                     }
                 }
                 saveSettings();
+                loadLinksFromAPI(false);
                 updateSelectAllState();
             });
 
@@ -197,6 +198,7 @@ async function loadIndividualFilter() {
             }
 
             saveSettings();
+            loadLinksFromAPI(false);
             updateSelectAllState();
         });
 
@@ -208,7 +210,7 @@ async function loadIndividualFilter() {
     }
 }
 
-function onFilterModeChange() {
+function populateFilterModePage() {
     const mode = document.querySelector('input[name="filter-mode"]:checked')?.value || 'lists';
     document.getElementById('lists-filter-section').style.display = mode === 'lists' ? 'block' : 'none';
     document.getElementById('individual-filter-section').style.display = mode === 'individual' ? 'block' : 'none';
@@ -216,6 +218,7 @@ function onFilterModeChange() {
     if (mode === 'individual') {
         loadIndividualFilter();
     }
+    loadLinksFromAPI(false);
     updateProgressBar();
 }
 
@@ -233,7 +236,7 @@ function resetToDefaults() {
     const splashToggle = document.getElementById('splash-toggle');
     if (splashToggle) splashToggle.checked = DEFAULT_SETTINGS.splashEnabled;
 
-    onFilterModeChange();
+    populateFilterModePage();
 }
 
 function saveSettings() {
@@ -271,13 +274,13 @@ function loadSettings() {
 
         // set lists fields
         const lists = settings.lists;
-        if (document.getElementById('filter-tags-allowlist')) {
+        if (document.getElementById('filter-tags-allowlist')) { // On settings page
             document.getElementById('filter-tags-allowlist').value = lists.tagsAllowlist;
             document.getElementById('filter-tags-blocklist').value = lists.tagsBlocklist;
             document.getElementById('filter-urls-allowlist').value = lists.urlsAllowlist;
             document.getElementById('filter-urls-blocklist').value = lists.urlsBlocklist;
 
-            onFilterModeChange();   // show/hide sections and load individual if needed
+            populateFilterModePage();
         }
 
         const splashToggle = document.getElementById('splash-toggle');

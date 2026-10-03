@@ -151,7 +151,6 @@ async function loadLinksFromAPI(logUser) {
             }
         });
         console.log(`Loaded ${apiLinks.length} apiLinks from API.`);
-        document.getElementById('api-status-indicator').classList.add('online');
         linkCount = apiLinks.length;
 
         apiAllLinks = await apiCall('/getLinks', {
@@ -162,8 +161,6 @@ async function loadLinksFromAPI(logUser) {
             }
         });
         console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
-        document.getElementById('api-status-indicator').classList.add('online');
-        linkCount = apiAllLinks.length;
     } catch (error) {
         if (error.name === 'AbortError') {
             // Page is navigating away; not a real failure. Don't log or show UI.
@@ -174,8 +171,15 @@ async function loadLinksFromAPI(logUser) {
         console.trace('here 2');   // prints "here" + full stack at the call site
         showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
 
-        document.getElementById('api-status-indicator').classList.add('offline');
+        const apiStatus = document.getElementById('api-status-indicator');
+        if (apiStatus) {
+            apiStatus.classList.add('offline');
+        }
     } finally {
+        const apiStatus = document.getElementById('api-status-indicator');
+        if (apiStatus) {
+            apiStatus.classList.add('online');
+        }
         window.removeEventListener('beforeunload', onUnload);
         links = apiLinks;
         allLinks = apiAllLinks;
