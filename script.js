@@ -100,8 +100,6 @@ function initializeApp() {
     }
 }
 
-
-
 function enableControls() {
     console.log('enableControls called');
 
@@ -148,6 +146,7 @@ async function loadLinksFromAPI(logUser) {
         linkCount = apiAllLinks.length;
     } catch (error) {
         console.error('Failed to load links from API:', error);
+        console.trace('here');   // prints "here" + full stack at the call site
         showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
 
         document.getElementById('api-status-indicator').classList.add('offline');
