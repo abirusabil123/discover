@@ -26,19 +26,32 @@ const MAX_HISTORY_LENGTH = 1024;
 const ENABLE_VIEW_TRACKING = true;
 const ERROR_MESSAGE = 'Unable to connect to the server. Please make sure your local backend is running.';
 
-async function apiCall(path, { method = 'GET', params = null, body = null } = {}) {
+async function apiCall(path, { method = 'GET', params = null, body = null, signal = null } = {}) {
     let url = API_BASE_URL + path;
     if (params) {
         const qs = new URLSearchParams(params).toString();
         if (qs) url += '?' + qs;
     }
     const init = { method };
+    if (signal) init.signal = signal;
     if (body !== null) {
         init.headers = { 'Content-Type': 'application/json' };
         init.body = JSON.stringify(body);
     }
-    const res = await fetch(url, init);
-    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+
+    let res;
+    try {
+        res = await fetch(url, init);
+    } catch (err) {
+        // Preserve the original stack; just add request context.
+        err.message = `${method} ${path} failed: ${err.message}`;
+        throw err;
+    }
+    if (!res.ok) {
+        const e = new Error(`${method} ${path} -> HTTP ${res.status}`);
+        e.status = res.status;
+        throw e;
+    }
     return res.json();
 }
 
@@ -119,9 +132,15 @@ async function loadLinksFromAPI(logUser) {
     const { tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist } = getFilterList();
     console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
 
+    // Abort the in-flight fetches if the user navigates away.
+    const controller = new AbortController();
+    const onUnload = () => controller.abort();
+    window.addEventListener('beforeunload', onUnload, { once: true });
+
     let linkCount = 0;
     try {
         apiLinks = await apiCall('/getLinks', {
+            signal: controller.signal,
             params: {
                 platform: 'desktop',
                 logUser: logUser ? 1 : 0,
@@ -136,6 +155,7 @@ async function loadLinksFromAPI(logUser) {
         linkCount = apiLinks.length;
 
         apiAllLinks = await apiCall('/getLinks', {
+            signal: controller.signal,
             params: {
                 platform: 'desktop',
                 logUser: 0
@@ -145,12 +165,18 @@ async function loadLinksFromAPI(logUser) {
         document.getElementById('api-status-indicator').classList.add('online');
         linkCount = apiAllLinks.length;
     } catch (error) {
+        if (error.name === 'AbortError') {
+            // Page is navigating away; not a real failure. Don't log or show UI.
+            console.log('Link load aborted due to navigation');
+            return;
+        }
         console.error('Failed to load links from API:', error);
         console.trace('here 2');   // prints "here" + full stack at the call site
         showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
 
         document.getElementById('api-status-indicator').classList.add('offline');
     } finally {
+        window.removeEventListener('beforeunload', onUnload);
         links = apiLinks;
         allLinks = apiAllLinks;
         const successBox = document.getElementById('filter-success');
@@ -243,6 +269,10 @@ async function updateLinkStats(linkUrl, action) {
         console.log(`Synced ${action} for ${linkUrl}:`, result);
         updateStatsDisplay(result);
     } catch (error) {
+        if (error.name === 'AbortError') {
+            console.log(`Sync ${action} for ${linkUrl} aborted due to navigation`);
+            return;
+        }
         console.error(`Failed to sync ${action} for ${linkUrl}:`, error);
         showErrorMessage(action + " action failed due to backend server unreachable: " + error.message);
     }
