@@ -115,7 +115,7 @@ function enableControls() {
 }
 
 async function loadLinksFromAPI(logUser) {
-    console.trace('here');   // prints "here" + full stack at the call site
+    console.trace('here 1');   // prints "here" + full stack at the call site
     const { tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist } = getFilterList();
     console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
 
@@ -146,7 +146,7 @@ async function loadLinksFromAPI(logUser) {
         linkCount = apiAllLinks.length;
     } catch (error) {
         console.error('Failed to load links from API:', error);
-        console.trace('here');   // prints "here" + full stack at the call site
+        console.trace('here 2');   // prints "here" + full stack at the call site
         showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
 
         document.getElementById('api-status-indicator').classList.add('offline');
