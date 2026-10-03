@@ -330,7 +330,7 @@ app.get('/getLinks', async (req, res, next) => {
   const origin = req.headers.origin || "";
 
   // Test delay
-  await new Promise(resolve => setTimeout(resolve, 16000));
+  // await new Promise(resolve => setTimeout(resolve, 16000));
 
   try {
 
