@@ -15,8 +15,6 @@
 
 <body>
     <div class="scroll-progress-bar" id="scrollProgressBar"></div>
-    <!-- API Status Indicator -->
-    <div id="api-status-indicator" class="api-status"></div>
 
     <!-- Settings Icon -->
     <a href="index.html" class="settings-btn" style="text-decoration:none;">⬅️</a>
@@ -51,11 +49,11 @@
                         <br>
                         <span>Allowlist: <input type="text" id="filter-tags-allowlist"
                                 placeholder="e.g. ai, tools, productivity"
-                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(0); }">
+                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(false); }">
                         </span>
                         <span>Blocklist: <input type="text" id="filter-tags-blocklist"
                                 placeholder="e.g. ai, tools, productivity"
-                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(0); }">
+                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(false); }">
                         </span>
                     </div>
 
@@ -65,16 +63,17 @@
                         <br>
                         <span>Allowlist: <input type="text" id="filter-urls-allowlist"
                                 placeholder="e.g. www.google.com www.example.com"
-                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(0); }">
+                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(false); }">
                         </span>
                         <span>Blocklist: <input type="text" id="filter-urls-blocklist"
                                 placeholder="e.g. www.google.com www.example.com"
-                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(0); }">
+                                onkeydown="if (event.key === 'Enter') { event.preventDefault(); loadLinksFromAPI(false); }">
                         </span>
                     </div>
                 </div>
                 <div class="filter-row">
-                    <button id="apply-tag-filter-btn" class="btn" onclick="loadLinksFromAPI(0)">Apply Filter</button>
+                    <button id="apply-tag-filter-btn" class="btn" onclick="loadLinksFromAPI(false)">Apply
+                        Filter</button>
                 </div>
             </div>
 

@@ -83,9 +83,6 @@ async function loadIndividualFilter() {
     if (!container) return;
 
     try {
-        const allLinks = await apiCall('/getLinks', {
-            params: { platform: 'desktop', logUser: 0 }
-        });
         allLinks.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
 
         const blockedSet = new Set(individualBlockedUrls);
@@ -139,7 +136,6 @@ async function loadIndividualFilter() {
                     }
                 }
                 saveSettings();
-                loadLinksFromAPI(0);
                 updateSelectAllState();
             });
 
@@ -201,7 +197,6 @@ async function loadIndividualFilter() {
             }
 
             saveSettings();
-            loadLinksFromAPI(0);
             updateSelectAllState();
         });
 
@@ -221,7 +216,6 @@ function onFilterModeChange() {
     if (mode === 'individual') {
         loadIndividualFilter();
     }
-    loadLinksFromAPI(0);
     updateProgressBar();
 }
 

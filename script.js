@@ -3,7 +3,10 @@
 
 // script.js
 // Global variables
-let links = []; // Current list of links loaded from API or static fallback
+let links = STATIC.SAMPLE_LINKS; // Filtered list of links loaded from static fallback or API
+let allLinks = STATIC.SAMPLE_LINKS; // Current list of alllinks loaded from static fallback or API
+let apiLinks; // temporary storage for API call.
+let apiAllLinks; // temporary storage for API call.
 let linkHistory = []; // History of visited link objects (preserved across list updates)
 let currentIndex = -1; // Index of current link in linkHistory (not in links)
 let visitedLinks = new Set(); // URLs of links already visited this session (Set ensures uniqueness)
@@ -91,8 +94,10 @@ function initializeApp() {
     loadSettings();
     enableControls();
 
-    loadStaticLinks();
-    loadLinksFromAPI(1);
+    // Only fetch links when the main page's UI is actually present
+    if (document.getElementById('current-site-info')) {
+        loadLinksFromAPI(true);
+    }
 }
 
 
@@ -111,40 +116,44 @@ function enableControls() {
     }
 }
 
-async function loadStaticLinks() {
-    if (STATIC.SAMPLE_LINKS && STATIC.SAMPLE_LINKS.length > 0) {
-        links = STATIC.SAMPLE_LINKS;
-        console.log(`Loaded ${links.length} links from static.js fallback`);
-    } else {
-        showErrorMessage('No static links available. Please check your static.js file.');
-    }
-}
-
 async function loadLinksFromAPI(logUser) {
+    console.trace('here');   // prints "here" + full stack at the call site
     const { tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist } = getFilterList();
     console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
 
     let linkCount = 0;
     try {
-        links = await apiCall('/getLinks', {
+        apiLinks = await apiCall('/getLinks', {
             params: {
                 platform: 'desktop',
-                logUser: logUser,
+                logUser: logUser ? 1 : 0,
                 tagsAllowlist: tagsAllowlist.join(','),
                 tagsBlocklist: tagsBlocklist.join(','),
                 urlsAllowlist: urlsAllowlist.join(' '),
                 urlsBlocklist: urlsBlocklist.join(' ')
             }
         });
-        console.log(`Loaded ${links.length} links from API.`);
+        console.log(`Loaded ${apiLinks.length} apiLinks from API.`);
         document.getElementById('api-status-indicator').classList.add('online');
-        linkCount = links.length;
+        linkCount = apiLinks.length;
+
+        apiAllLinks = await apiCall('/getLinks', {
+            params: {
+                platform: 'desktop',
+                logUser: 0
+            }
+        });
+        console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
+        document.getElementById('api-status-indicator').classList.add('online');
+        linkCount = apiAllLinks.length;
     } catch (error) {
         console.error('Failed to load links from API:', error);
         showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
 
         document.getElementById('api-status-indicator').classList.add('offline');
     } finally {
+        links = apiLinks;
+        allLinks = apiAllLinks;
         const successBox = document.getElementById('filter-success');
         if (successBox) {
             if (tagsAllowlist.length > 0 || tagsBlocklist.length > 0 || urlsAllowlist.length > 0 || urlsBlocklist.length > 0) {
