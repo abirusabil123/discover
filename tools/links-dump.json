@@ -40,7 +40,7 @@
       "optional",
       "user-submitted"
     ],
-    "views": 181,
+    "views": 182,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 45,
+    "views": 46,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -809,7 +809,7 @@
       "daily",
       "news"
     ],
-    "views": 137,
+    "views": 138,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -870,7 +870,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 134,
+    "views": 136,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1232,16 +1232,16 @@
   {
     "url": "https://rubberduckdebugging.com/",
     "name": "Rubber Duck Debugging 🦆",
-    "description": "In a pinch a coworker might be able to substitute for the duck, however, it is often preferred to confide mistakes to the duck instead of your coworker.Well, we have LLMs now. Anyways better to talk to ourselves in the head or pray to Allah directly. We need to be careful of talking to a rubber duck as it might look crazy or shirk.",
+    "description": "In a pinch a coworker might be able to substitute for the duck, however, it is often preferred to confide mistakes to the duck instead of your coworker. Well, we have LLMs now. Anyways better to talk to ourselves in the head or pray to Allah directly. We need to be careful of talking to a rubber duck as it might look crazy or shirk. \"And your Lord says, \"Call upon Me; I will respond to you.\" Indeed, those who disdain My worship will enter Hell [rendered] contemptible.\" - Surah Ghafir Ayat 60 (Sahih International)",
     "tags": [
       "coding"
     ],
     "views": 0,
     "likesMobile": 0,
-    "dislikesMobile": 1000,
+    "dislikesMobile": 0,
     "likesDesktop": 0,
-    "dislikesDesktop": 1000,
-    "reviewStatus": 1
+    "dislikesDesktop": 0,
+    "reviewStatus": 0
   },
   {
     "url": "https://safirnews.in/",
@@ -1252,7 +1252,7 @@
       "positive",
       "daily"
     ],
-    "views": 85,
+    "views": 86,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1540,7 +1540,7 @@
       "daily",
       "positive"
     ],
-    "views": 47,
+    "views": 48,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2182,7 +2182,7 @@
       "social",
       "media"
     ],
-    "views": 233,
+    "views": 234,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2263,7 +2263,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 126,
+    "views": 127,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2327,7 +2327,7 @@
       "positive",
       "daily"
     ],
-    "views": 157,
+    "views": 158,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 5,

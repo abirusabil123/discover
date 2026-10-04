@@ -10,7 +10,7 @@ object StaticLinks {
             url = "https://4chan.org/",
             description = "Free speech social media platform. NSFW.",
             tags = listOf("positive", "daily", "optional", "user-submitted"),
-            views = 181,
+            views = 182,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("daily", "positive", "learning"),
-            views = 45,
+            views = 46,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -230,7 +230,7 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("positive", "daily", "news"),
-            views = 137,
+            views = 138,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -260,7 +260,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media. Refreshing and suprisingly positive content hinting at a simple feed algorithm.",
             tags = listOf("positive", "daily", "twitteralternative", "socialmedia"),
-            views = 134,
+            views = 136,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -430,7 +430,7 @@ object StaticLinks {
             url = "https://safirnews.in/",
             description = "Indian news website.",
             tags = listOf("news", "positive", "daily"),
-            views = 85,
+            views = 86,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -520,7 +520,7 @@ object StaticLinks {
             url = "https://unsplash.com/illustrations",
             description = "Free stock vector illustrations. Powered by creators everywhere.",
             tags = listOf("daily", "positive"),
-            views = 47,
+            views = 48,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -800,7 +800,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 233,
+            views = 234,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -840,7 +840,7 @@ object StaticLinks {
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
             tags = listOf("positive", "daily", "daily-mobile", "tiktok", "videos"),
-            views = 126,
+            views = 127,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -880,7 +880,7 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=jxLsiOflofk",
             description = "How to perform 2 Raka'at (2 Unit) namaz to help in praying Jumma farz namaz.",
             tags = listOf("user-submitted", "positive", "daily"),
-            views = 157,
+            views = 158,
             likesMobile = 7,
             dislikesMobile = 0
         )

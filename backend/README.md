@@ -39,6 +39,10 @@ curl https://backenddiscover.duckdns.org:8443/health
 docker compose exec db mysql -u root -ppassword mydatabase -e "DROP TABLE IF EXISTS linksBackup; RENAME TABLE links TO linksBackup;"
 cat db/init.sql | docker compose exec -T db mysql -u root -ppassword mydatabase
 ```
+or just run 
+```bash
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover/tools$ ./../backend/scripts/reinitDb.sh 
+```
 
 ### 4. Get SQL data directly
 ```bash

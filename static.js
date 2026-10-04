@@ -44,7 +44,7 @@ const STATIC = {
                 "optional",
                 "user-submitted"
             ],
-            "views": 181,
+            "views": 182,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 45,
+            "views": 46,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -702,7 +702,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 137,
+            "views": 138,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -759,7 +759,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 134,
+            "views": 136,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1072,7 +1072,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 85,
+            "views": 86,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1313,7 +1313,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 47,
+            "views": 48,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1838,7 +1838,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 233,
+            "views": 234,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1914,7 +1914,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 126,
+            "views": 127,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1974,7 +1974,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 157,
+            "views": 158,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,
