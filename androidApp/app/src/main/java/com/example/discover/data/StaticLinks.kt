@@ -70,7 +70,7 @@ object StaticLinks {
             url = "https://clickclickclick.click/",
             description = "Commentary on your website activity.",
             tags = listOf("positive"),
-            views = 0,
+            views = 1,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -290,7 +290,7 @@ object StaticLinks {
             url = "https://namazein.com/fatiha-ka-tarika/",
             description = "How to do fatiha follow through guide.",
             tags = listOf("user-submitted"),
-            views = 101,
+            views = 102,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -630,7 +630,7 @@ object StaticLinks {
             url = "https://www.diffchecker.com/",
             description = "Find the difference between two text files.",
             tags = listOf("positive"),
-            views = 1,
+            views = 2,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -858,9 +858,9 @@ object StaticLinks {
         Link(
             name = "YouTube",
             url = "https://www.youtube.com/",
-            description = "Video sharing social media platform.",
-            tags = listOf("video", "positive"),
-            views = 29,
+            description = "Video sharing social media platform. The main page has a non personalized recommendation algorithm feed which can be activated by moving to shorts and then back to the home page. The content on the non personalized recommendation algorithm YouTube feed really blew my mind in quality and I consider this my biggest win and validation of my approach.",
+            tags = listOf("daily", "video", "positive"),
+            views = 52,
             likesMobile = 0,
             dislikesMobile = 0
         ),

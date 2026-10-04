@@ -215,7 +215,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -780,7 +780,7 @@ const STATIC = {
             "tags": [
                 "user-submitted"
             ],
-            "views": 101,
+            "views": 102,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -1509,7 +1509,7 @@ const STATIC = {
             "tags": [
                 "positive"
             ],
-            "views": 1,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1898,12 +1898,13 @@ const STATIC = {
         {
             "name": "YouTube",
             "url": "https://www.youtube.com/",
-            "description": "Video sharing social media platform.",
+            "description": "Video sharing social media platform. The main page has a non personalized recommendation algorithm feed which can be activated by moving to shorts and then back to the home page. The content on the non personalized recommendation algorithm YouTube feed really blew my mind in quality and I consider this my biggest win and validation of my approach.",
             "tags": [
+                "daily",
                 "video",
                 "positive"
             ],
-            "views": 29,
+            "views": 52,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
