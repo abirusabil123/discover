@@ -49,6 +49,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.discover.ui.theme.PrimaryGreen
 import com.example.discover.ui.theme.SurfaceDark
 import com.example.discover.viewmodel.DiscoverViewModel
+import kotlinx.coroutines.delay
+import kotlin.time.Duration.Companion.milliseconds
 
 class MediaExtractor {
     var onExtracted: ((String, String) -> Unit)? = null
@@ -81,6 +83,7 @@ fun WebViewArea(
     var lastTouchX by remember { mutableFloatStateOf(0f) }
     var lastTouchY by remember { mutableFloatStateOf(0f) }
     val density = LocalDensity.current
+    var warmUpTarget by remember { mutableStateOf<String?>(null) }
 
     mediaExtractor.onExtracted = { url, type ->
         webView.post {
@@ -117,7 +120,31 @@ fun WebViewArea(
                 Toast.makeText(context, "No PDF app found." + e.message, Toast.LENGTH_SHORT).show()
             }
         }
-        if (webView.url != targetUrl) {
+        if (targetUrl.contains("youtube.com") && !targetUrl.contains("/shorts")) {
+            warmUpTarget = targetUrl
+            webView.loadUrl("https://m.youtube.com/shorts/")
+
+            // Give YouTube's SPA time to prefetch the home feed in the background.
+            // ~10s is empirically the minimum on Chrome 109 emulator.
+            delay(10000L.milliseconds)
+
+            webView.evaluateJavascript(
+                """(function() {
+            if (location.pathname === '/') return 'already-home';
+            try {
+                history.pushState({}, '', '/');
+                window.dispatchEvent(new PopStateEvent('popstate', { state: {} }));
+                document.dispatchEvent(new CustomEvent('yt-navigate-start'));
+                document.dispatchEvent(new CustomEvent('yt-navigate-finish'));
+                return 'pushed:' + location.pathname;
+            } catch (e) {
+                return 'err:' + e.message;
+            }
+        })();"""
+            ) { result ->
+                android.util.Log.d("YT-WARMUP", "nav result: $result")
+            }
+        } else if (webView.url != targetUrl) {
             webView.loadUrl(targetUrl)
         }
     }
@@ -181,6 +208,13 @@ fun WebViewArea(
                         // This captures the final URL after any redirects.
                         url?.let { onUrlChanged(it) }
 
+                        if (warmUpTarget != null && url?.contains("youtube.com") == true && !url.contains(
+                                "/shorts"
+                            )
+                        ) {
+                            warmUpTarget = null
+                            webView.postDelayed({ webView.clearHistory() }, 500L)
+                        }
                         // The WebView has finished a draw pass, so it's safe to make it visible.
                         if (isWebViewLoading) {
                             viewModel.onWebViewPageVisible()
