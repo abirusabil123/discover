@@ -37,7 +37,7 @@ async function apiCall(
     return res.json();
 }
 
-async function logFrontendError(message, level = 'error') {
+async function logFrontendError(message, level = 'error', stack = null) {
     if (pageAbort.signal.aborted) return;
     try {
         await apiCall('/log-error', {
@@ -46,6 +46,7 @@ async function logFrontendError(message, level = 'error') {
                 source: 'frontend',
                 level: level,
                 message: message,
+                stack: stack || (new Error().stack || null),
                 user_agent: navigator.userAgent
             }
         });

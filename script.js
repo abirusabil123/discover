@@ -148,7 +148,7 @@ function showErrorMessage(message) {
     `;
 
     document.body.appendChild(errorDiv);
-    logFrontendError(message, 'error');
+    logFrontendError(message);
 }
 
 async function updateLinkStats(linkUrl, action) {
@@ -513,7 +513,7 @@ function showModalError(message) {
         // Scroll to error message
         errorDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-    logFrontendError(message, 'error');
+    logFrontendError(message);
 }
 
 function hideModalError() {
@@ -657,5 +657,5 @@ window.addEventListener('error', (event) => {
     logFrontendError(`${event.message} at ${event.filename}:${event.lineno}`);
 });
 window.addEventListener('unhandledrejection', (event) => {
-    logFrontendError(`Unhandled promise rejection: ${event.reason}`);
+    logFrontendError(`Unhandled promise rejection: ${event.reason}`, 'error', event.reason?.stack);
 });
