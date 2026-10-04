@@ -5,7 +5,7 @@ let individualBlockedUrls = [];
 const DEFAULT_SETTINGS = {
     filterMode: 'lists',
     lists: {
-        tagsAllowlist: 'daily',
+        tagsAllowlist: 'daily,daily-desktop',
         tagsBlocklist: 'daily-mobile,optional',
         urlsAllowlist: '',
         urlsBlocklist: ''

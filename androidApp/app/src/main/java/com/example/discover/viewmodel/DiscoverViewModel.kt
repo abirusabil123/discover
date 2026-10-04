@@ -71,9 +71,9 @@ class DiscoverViewModel(
     private val _timeStats = MutableStateFlow(TimeStats(0, 0, 0, 0, 0, 0, 0))
     val timeStats: StateFlow<TimeStats> = _timeStats.asStateFlow()
 
-    // Persistent Settings Filter State - Default to "positive, daily" for tagsAllowlist
+    // Persistent Settings Filter State - Default to "daily, daily-mobile" for tagsAllowlist
     val tagsAllowlist =
-        MutableStateFlow(prefs.getString("tags_allow", "positive, daily") ?: "positive, daily")
+        MutableStateFlow(prefs.getString("tags_allow", "daily, daily-mobile") ?: "daily, daily-mobile")
     val tagsBlocklist = MutableStateFlow(prefs.getString("tags_block", "optional, daily-desktop") ?: "optional, daily-desktop")
     val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
     val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
@@ -127,7 +127,7 @@ class DiscoverViewModel(
     }
 
     fun resetToDefaults() {
-        tagsAllowlist.value = "positive, daily"
+        tagsAllowlist.value = "daily, daily-mobile"
         tagsBlocklist.value = "optional, daily-desktop"
         urlsAllowlist.value = ""
         urlsBlocklist.value = ""
