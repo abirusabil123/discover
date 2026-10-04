@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 50,
+            "views": 52,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 121,
+            "views": 122,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -695,7 +695,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 142,
+            "views": 144,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -752,7 +752,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 140,
+            "views": 141,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -888,7 +888,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 106,
+            "views": 108,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -904,7 +904,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 290,
+            "views": 292,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -933,8 +933,8 @@ const STATIC = {
                 "daily",
                 "social-media"
             ],
-            "views": 0,
-            "likesMobile": 0,
+            "views": 2,
+            "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
@@ -963,7 +963,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 298,
+            "views": 300,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1093,7 +1093,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 91,
+            "views": 93,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1320,7 +1320,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 436,
+            "views": 438,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1334,7 +1334,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 51,
+            "views": 53,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1419,7 +1419,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 309,
+            "views": 311,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1436,7 +1436,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 178,
+            "views": 179,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1540,7 +1540,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 123,
+            "views": 125,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1613,7 +1613,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 48,
+            "views": 50,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1843,7 +1843,7 @@ const STATIC = {
                 "beautiful",
                 "daily"
             ],
-            "views": 203,
+            "views": 205,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1859,7 +1859,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 238,
+            "views": 240,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1875,9 +1875,24 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 235,
+            "views": 236,
             "likesMobile": 3,
             "dislikesMobile": 1,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "WhatIsMyBrowser.com",
+            "url": "https://www.whatismybrowser.com/",
+            "description": "Find out what websites know about you.",
+            "tags": [
+                "daily",
+                "learning",
+                "positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
         },
@@ -1904,7 +1919,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 126,
+            "views": 127,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1913,13 +1928,13 @@ const STATIC = {
         {
             "name": "YouTube",
             "url": "https://www.youtube.com/",
-            "description": "Video sharing social media platform. The main page has a non personalized recommendation algorithm feed which can be activated by moving to shorts and then back to the home page. The content on the non personalized recommendation algorithm YouTube feed really blew my mind in quality and I consider this my biggest win and validation of my approach.",
+            "description": "Video sharing social media platform. The main page has a non personalized recommendation algorithm feed which can be activated by moving to shorts and then back to the home page.",
             "tags": [
                 "daily",
                 "video",
                 "positive"
             ],
-            "views": 57,
+            "views": 59,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1957,7 +1972,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 128,
+            "views": 130,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2017,7 +2032,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 162,
+            "views": 164,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,
