@@ -136,7 +136,7 @@ fun DiscoverScreen(
                     true  // DOM storage (localStorage, sessionStorage) needed for some websites to load
                 // Use a generic user agent to avoid fingerprinting
                 userAgentString =
-                    "Mozilla/5.0 (Linux; Android 10; K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.000 Mobile Safari/537.36"
+                    "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
 
                 // Load static HTML with CURRENT stats
                 val initialHtml = """
