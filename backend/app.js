@@ -384,7 +384,7 @@ app.get('/getLinks', async (req, res, next) => {
 
     let filtered = parsed.filter(w => {
       if (tagsAllowlistArray.length > 0) {
-        const hasAllowedTag = tagsAllowlistArray.every(t => w.tags.includes(t));
+        const hasAllowedTag = tagsAllowlistArray.some(t => w.tags.includes(t));
         if (!hasAllowedTag) return false;
       }
       if (tagsBlocklistArray.length > 0) {
