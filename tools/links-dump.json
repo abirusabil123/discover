@@ -154,6 +154,21 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://arxiv.org/",
+    "name": "arXiv",
+    "description": "Publish your papers online without peer review.",
+    "tags": [
+      "papers",
+      "publish"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
     "url": "https://asoftmurmur.com/",
     "name": "A Soft Murmur",
     "description": "Mix ambient sounds (rain, waves) for focus",
@@ -1241,7 +1256,7 @@
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
-    "reviewStatus": 0
+    "reviewStatus": 1
   },
   {
     "url": "https://safirnews.in/",
