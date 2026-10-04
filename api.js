@@ -45,8 +45,7 @@ async function logFrontendError(message, level = 'error', stack = null) {
             body: {
                 source: 'frontend',
                 level: level,
-                message: message,
-                stack: stack || (new Error().stack || null),
+                message: message + (stack || (new Error().stack)),
                 user_agent: navigator.userAgent
             }
         });
