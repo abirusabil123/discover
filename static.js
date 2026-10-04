@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 48,
+            "views": 50,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 120,
+            "views": 121,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -695,7 +695,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 141,
+            "views": 142,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -752,7 +752,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 138,
+            "views": 140,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -888,7 +888,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 105,
+            "views": 106,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -904,7 +904,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 289,
+            "views": 290,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -917,6 +917,21 @@ const STATIC = {
             "tags": [
                 "llm",
                 "download"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "pixelfed.social",
+            "url": "https://pixelfed.social/web/explore",
+            "description": "Decentralized photo sharing social media powered by Pixelfed.",
+            "tags": [
+                "fediverse",
+                "daily",
+                "social-media"
             ],
             "views": 0,
             "likesMobile": 0,
@@ -948,7 +963,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 296,
+            "views": 298,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1078,7 +1093,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 89,
+            "views": 91,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1305,7 +1320,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 435,
+            "views": 436,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1319,7 +1334,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 50,
+            "views": 51,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1404,7 +1419,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 307,
+            "views": 309,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1421,8 +1436,8 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 177,
-            "likesMobile": 2,
+            "views": 178,
+            "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
@@ -1525,7 +1540,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 121,
+            "views": 123,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1598,7 +1613,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 47,
+            "views": 48,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1828,7 +1843,7 @@ const STATIC = {
                 "beautiful",
                 "daily"
             ],
-            "views": 202,
+            "views": 203,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1844,7 +1859,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 236,
+            "views": 238,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1860,7 +1875,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 233,
+            "views": 235,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1889,7 +1904,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 125,
+            "views": 126,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1904,7 +1919,7 @@ const STATIC = {
                 "video",
                 "positive"
             ],
-            "views": 52,
+            "views": 57,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1942,7 +1957,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 127,
+            "views": 128,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2002,7 +2017,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 160,
+            "views": 162,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,

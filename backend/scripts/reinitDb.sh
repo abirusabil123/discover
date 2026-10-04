@@ -15,6 +15,11 @@ INIT_SQL="db/init.sql"
 
 echo "▶ Running from: $PROJECT_ROOT"
 
+# Regenerate static link files (init.sql, static.js, StaticLinks.kt)
+TOOLS_DIR="$PROJECT_ROOT/../tools"
+echo "▶ Regenerating static link files..."
+(cd "$TOOLS_DIR" && node recreate-static-links.js)
+
 echo "▶ Backing up 'links' table..."
 docker compose exec "$DB_SERVICE" mysql -u "$DB_USER" -p"$DB_PASS" "$DB_NAME" \
   -e "DROP TABLE IF EXISTS linksBackup; RENAME TABLE links TO linksBackup;"
