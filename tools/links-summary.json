@@ -5,7 +5,7 @@
   },
   "analysis": {
     "total": 150,
-    "filteredMobile": 60,
+    "filteredMobile": 58,
     "filteredDesktop": 13,
     "blockedMobileUrls": [
       "http://radio.garden/",
@@ -36,7 +36,6 @@
       "https://libgen.li/",
       "https://littlealchemy2.com/",
       "https://loops.video/",
-      "https://m.youtube.com/feed/subscriptions",
       "https://martinfowler.com/articles/deepseek-papers.html",
       "https://mojapp.in/",
       "https://neal.fun/deep-sea",
@@ -66,7 +65,6 @@
       "https://www.overleaf.com/",
       "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
       "https://www.reddit.com/",
-      "https://www.youtube.com/",
       "https://xkcd.com/"
     ],
     "blockedDesktopUrls": [
@@ -86,26 +84,26 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 81,
+      "0%": 83,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 61
+      "80-100%": 59
     },
     "byVoteCount": {
-      "0 votes": 55,
-      "1-3 votes": 20,
+      "0 votes": 56,
+      "1-3 votes": 21,
       "4-10 votes": 12,
       "11-50 votes": 2,
-      "50+ votes": 61
+      "50+ votes": 59
     }
   },
   "visitors": {
     "byCountry": [
       {
         "country": "",
-        "count": 4504
+        "count": 4536
       },
       {
         "country": "AE",
@@ -247,7 +245,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 218
+        "count": 250
       },
       {
         "month": "202609",
@@ -277,7 +275,7 @@
       },
       {
         "platform": "desktop",
-        "count": 4251
+        "count": 4263
       },
       {
         "platform": "Linux armv81",
@@ -289,7 +287,7 @@
       },
       {
         "platform": "mobile",
-        "count": 367
+        "count": 387
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -323,7 +321,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 6713
+        "count": 6745
       },
       {
         "product": "personal website",
@@ -333,7 +331,7 @@
     "byOrigin": [
       {
         "origin": "",
-        "count": 2468
+        "count": 2488
       },
       {
         "origin": "file://",
@@ -385,7 +383,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1392
+        "count": 1404
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -411,7 +409,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4618
+        "count": 4650
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -445,11 +443,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5220
+        "count": 5232
       },
       {
         "status": "Bot",
-        "count": 1560
+        "count": 1580
       }
     ],
     "byHourOfDay": [
@@ -511,15 +509,15 @@
       },
       {
         "hour": 14,
-        "count": 337
+        "count": 354
       },
       {
         "hour": 15,
-        "count": 479
+        "count": 481
       },
       {
         "hour": 16,
-        "count": 587
+        "count": 600
       },
       {
         "hour": 17,
@@ -577,7 +575,7 @@
       },
       {
         "dow": 6,
-        "count": 2281
+        "count": 2313
       }
     ]
   },

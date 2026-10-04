@@ -687,27 +687,6 @@ const STATIC = {
             "dislikesDesktop": 1
         },
         {
-            "name": "YouTube",
-            "url": "https://m.youtube.com/feed/subscriptions",
-            "description": "The subscriptions feed does not have implicit personalized recommendations.",
-            "tags": [
-                "daily",
-                "daily-desktop",
-                "positive",
-                "video",
-                "social",
-                "good",
-                "dynamic",
-                "regular",
-                "repeat"
-            ],
-            "views": 106,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 4,
-            "dislikesDesktop": 2
-        },
-        {
             "name": "maktoobmedia",
             "url": "https://maktoobmedia.com/",
             "description": "News website",
@@ -1926,9 +1905,30 @@ const STATIC = {
             ],
             "views": 29,
             "likesMobile": 0,
-            "dislikesMobile": 1000,
+            "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/feed/subscriptions",
+            "description": "The subscriptions feed does not have implicit personalized recommendations.",
+            "tags": [
+                "daily",
+                "daily-desktop",
+                "positive",
+                "video",
+                "social",
+                "good",
+                "dynamic",
+                "regular",
+                "repeat"
+            ],
+            "views": 106,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 4,
+            "dislikesDesktop": 2
         },
         {
             "name": "YouTube shorts",

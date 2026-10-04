@@ -660,18 +660,6 @@ VALUES (
         1
     ),
     (
-        'YouTube',
-        'https://m.youtube.com/feed/subscriptions',
-        'The subscriptions feed does not have implicit personalized recommendations.',
-        JSON_ARRAY('daily', 'daily-desktop', 'positive', 'video', 'social', 'good', 'dynamic', 'regular', 'repeat'),
-        106,
-        2,
-        1000,
-        4,
-        2,
-        1
-    ),
-    (
         'maktoobmedia',
         'https://maktoobmedia.com/',
         'News website',
@@ -1770,9 +1758,21 @@ VALUES (
         JSON_ARRAY('video', 'positive'),
         29,
         0,
-        1000,
+        0,
         0,
         1,
+        1
+    ),
+    (
+        'YouTube',
+        'https://www.youtube.com/feed/subscriptions',
+        'The subscriptions feed does not have implicit personalized recommendations.',
+        JSON_ARRAY('daily', 'daily-desktop', 'positive', 'video', 'social', 'good', 'dynamic', 'regular', 'repeat'),
+        106,
+        2,
+        0,
+        4,
+        2,
         1
     ),
     (

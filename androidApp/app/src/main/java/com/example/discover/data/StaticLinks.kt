@@ -856,6 +856,26 @@ object StaticLinks {
         ),
 
         Link(
+            name = "YouTube",
+            url = "https://www.youtube.com/",
+            description = "Video sharing social media platform.",
+            tags = listOf("video", "positive"),
+            views = 29,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "YouTube",
+            url = "https://www.youtube.com/feed/subscriptions",
+            description = "The subscriptions feed does not have implicit personalized recommendations.",
+            tags = listOf("daily", "daily-desktop", "positive", "video", "social", "good", "dynamic", "regular", "repeat"),
+            views = 106,
+            likesMobile = 2,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "YouTube shorts",
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
