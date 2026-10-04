@@ -21,56 +21,9 @@ const LOADING_WAIT = 1000;
 const RESET_DELAY = 2000;
 const SPLASH_DELAY = 60000;
 const RESET_DELAY_LONG = 10000;
-const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
 const MAX_HISTORY_LENGTH = 1024;
 const ENABLE_VIEW_TRACKING = true;
 const ERROR_MESSAGE = 'Unable to connect to the server. Please make sure your local backend is running.';
-
-async function apiCall(path, { method = 'GET', params = null, body = null, signal = null } = {}) {
-    let url = API_BASE_URL + path;
-    if (params) {
-        const qs = new URLSearchParams(params).toString();
-        if (qs) url += '?' + qs;
-    }
-    const init = { method };
-    if (signal) init.signal = signal;
-    if (body !== null) {
-        init.headers = { 'Content-Type': 'application/json' };
-        init.body = JSON.stringify(body);
-    }
-
-    let res;
-    try {
-        res = await fetch(url, init);
-    } catch (err) {
-        // Preserve the original stack; just add request context.
-        err.message = `${method} ${path} failed: ${err.message}`;
-        throw err;
-    }
-    if (!res.ok) {
-        const e = new Error(`${method} ${path} -> HTTP ${res.status}`);
-        e.status = res.status;
-        throw e;
-    }
-    return res.json();
-}
-
-async function logFrontendError(message, level = 'error') {
-    try {
-        await apiCall('/log-error', {
-            method: 'POST',
-            body: {
-                source: 'frontend',
-                level: level,
-                message: message,
-                user_agent: navigator.userAgent
-            }
-        });
-        console.error('Successfully logged frontend error:', message);
-    } catch (error) {
-        console.error('Failed to log frontend error:', message);
-    }
-}
 
 // Initialize the app when the page loads
 document.addEventListener('DOMContentLoaded', function () {
@@ -128,19 +81,14 @@ function enableControls() {
 }
 
 async function loadLinksFromAPI(logUser) {
-    console.trace('here 1');   // prints "here" + full stack at the call site
     const { tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist } = getFilterList();
     console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
 
-    // Abort the in-flight fetches if the user navigates away.
-    const controller = new AbortController();
-    const onUnload = () => controller.abort();
-    window.addEventListener('beforeunload', onUnload, { once: true });
-
+    const apiStatus = document.getElementById('api-status-indicator');
     let linkCount = 0;
+
     try {
         apiLinks = await apiCall('/getLinks', {
-            signal: controller.signal,
             params: {
                 platform: 'desktop',
                 logUser: logUser ? 1 : 0,
@@ -154,47 +102,36 @@ async function loadLinksFromAPI(logUser) {
         linkCount = apiLinks.length;
 
         apiAllLinks = await apiCall('/getLinks', {
-            signal: controller.signal,
-            params: {
-                platform: 'desktop',
-                logUser: 0
-            }
+            params: { platform: 'desktop', logUser: 0 }
         });
         console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
-    } catch (error) {
-        if (error.name === 'AbortError') {
-            // Page is navigating away; not a real failure. Don't log or show UI.
-            console.log('Link load aborted due to navigation');
-            return;
-        }
-        console.error('Failed to load links from API:', error);
-        console.trace('here 2');   // prints "here" + full stack at the call site
-        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
 
-        const apiStatus = document.getElementById('api-status-indicator');
-        if (apiStatus) {
-            apiStatus.classList.add('offline');
-        }
-    } finally {
-        const apiStatus = document.getElementById('api-status-indicator');
-        if (apiStatus) {
-            apiStatus.classList.add('online');
-        }
-        window.removeEventListener('beforeunload', onUnload);
+        // ── success path only ─────────────────────────────
         links = apiLinks;
         allLinks = apiAllLinks;
+        if (apiStatus) apiStatus.classList.add('online');
+
         const successBox = document.getElementById('filter-success');
         if (successBox) {
-            if (tagsAllowlist.length > 0 || tagsBlocklist.length > 0 || urlsAllowlist.length > 0 || urlsBlocklist.length > 0) {
-                successBox.textContent = `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`;
-            } else {
-                successBox.textContent = `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
-            }
+            const hasFilters = tagsAllowlist.length || tagsBlocklist.length ||
+                urlsAllowlist.length || urlsBlocklist.length;
+            successBox.textContent = hasFilters
+                ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
+                : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
         }
+    } catch (error) {
+        if (error.name === 'AbortError') {
+            console.log('Link load aborted due to navigation');
+            return;                                    // finally would still run, but there's no finally now
+        }
+        console.error('Failed to load links from API:', error);
+        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
+        if (apiStatus) apiStatus.classList.add('offline');
     }
 }
 
 function showErrorMessage(message) {
+    if (pageAbort.signal.aborted) return;          // page is going away — stay quiet
     // If an error box already exists, just update the text.
     const existing = document.querySelector('.error-message');
     if (existing) {

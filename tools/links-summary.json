@@ -105,7 +105,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 4451
+        "count": 4472
       },
       {
         "country": "AE",
@@ -169,7 +169,7 @@
       },
       {
         "country": "IN",
-        "count": 141
+        "count": 143
       },
       {
         "country": "IR",
@@ -247,7 +247,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 163
+        "count": 186
       },
       {
         "month": "202609",
@@ -277,7 +277,7 @@
       },
       {
         "platform": "desktop",
-        "count": 4196
+        "count": 4219
       },
       {
         "platform": "Linux armv81",
@@ -323,7 +323,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 6658
+        "count": 6681
       },
       {
         "product": "personal website",
@@ -385,7 +385,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1349
+        "count": 1372
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -411,7 +411,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4563
+        "count": 4586
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -445,7 +445,7 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5165
+        "count": 5188
       },
       {
         "status": "Bot",
@@ -479,7 +479,7 @@
       },
       {
         "hour": 6,
-        "count": 466
+        "count": 489
       },
       {
         "hour": 7,
@@ -577,13 +577,13 @@
       },
       {
         "dow": 6,
-        "count": 2226
+        "count": 2249
       }
     ]
   },
   "errors": {
-    "count": 157,
-    "unresolved": 69,
+    "count": 158,
+    "unresolved": 70,
     "allUnresolvedErrors": [
       {
         "id": 89,
@@ -1272,6 +1272,16 @@
         "level": "error",
         "message": "Unhandled promise rejection: TypeError: can't access property \"classList\", document.getElementById(...) is null",
         "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 158,
+        "timestamp": "2026-10-04T06:53:23.000Z",
+        "source": "frontend",
+        "level": "error",
+        "message": "view action failed due to backend server unreachable: POST /incrementView failed: NetworkError when attempting to fetch resource.",
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0",
         "resolved": 0,
         "resolved_at": null
       }

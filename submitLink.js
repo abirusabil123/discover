@@ -45,37 +45,32 @@ async function submitLink(event) {
             dislikesDesktop: 0
         };
 
-        const response = await fetch(`${API_BASE_URL}/addlink`, {
+        await apiCall('/addlink', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(linkData)
+            body: linkData
         });
 
-        const result = await response.json();
-
-        if (response.ok) {
-            // Success
-            showSuccessMessage('Link submitted for spam review successfully! The link will be live globally after review and approval 🎉');
-            hideAddLinkForm();
-
-            // Reset tags
-            selectedTags = [];
-        } else {
-            // Handle specific error cases
-            if (response.status === 409) {
-                showModalError('This link already exists in the database. Please try a different URL.');
-            } else {
-                showModalError(result.error || 'Failed to add link');
-            }
-        }
+        // Success — apiCall threw if we got here on a non-2xx
+        showSuccessMessage('Link submitted for spam review successfully! The link will be live globally after review and approval 🎉');
+        hideAddLinkForm();
+        selectedTags = [];
 
     } catch (error) {
         console.error('Error submitting link:', error);
-        showModalError('Failed to add link. Please try again.');
+        if (error.name === 'AbortError') {
+            // User navigated away mid-submit — stay quiet.
+            return;
+        }
+        if (error.status === 409) {
+            showModalError('This link already exists in the database. Please try a different URL.');
+        } else if (error.body && error.body.error) {
+            showModalError(error.body.error);
+        } else if (error.status) {
+            showModalError(`Failed to add link (HTTP ${error.status})`);
+        } else {
+            showModalError('Failed to add link. Please try again.');
+        }
     } finally {
-        // Reset button state
         submitBtn.disabled = false;
         submitBtn.classList.remove('btn-loading');
         submitBtn.textContent = originalText;
