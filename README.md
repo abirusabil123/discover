@@ -35,6 +35,11 @@ This is my contribution so you don't use personalized recommendation algorithms 
 
 Let's go back to before 2005, before EdgeRank was released. 
 
+## Review links
+```
+./backend/scripts/reinitDb.sh
+```
+
 ## Run frontend for local testing
 ```
 npx serve . -l 44631

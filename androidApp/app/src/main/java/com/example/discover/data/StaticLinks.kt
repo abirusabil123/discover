@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("daily", "positive", "learning"),
-            views = 54,
+            views = 55,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -60,7 +60,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("positive", "daily"),
-            views = 125,
+            views = 127,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -240,7 +240,7 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("positive", "daily", "news"),
-            views = 149,
+            views = 150,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -350,7 +350,7 @@ object StaticLinks {
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
             tags = listOf("positive", "daily", "palestine", "free"),
-            views = 110,
+            views = 111,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -360,7 +360,7 @@ object StaticLinks {
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 295,
+            views = 296,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -380,7 +380,7 @@ object StaticLinks {
             url = "https://pixelfed.social/web/explore",
             description = "Decentralized photo sharing social media powered by Pixelfed.",
             tags = listOf("fediverse", "daily", "social-media"),
-            views = 7,
+            views = 8,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -390,7 +390,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 305,
+            views = 306,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -460,7 +460,7 @@ object StaticLinks {
             url = "https://safirnews.in/",
             description = "Indian news website.",
             tags = listOf("news", "positive", "daily"),
-            views = 95,
+            views = 96,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -550,7 +550,7 @@ object StaticLinks {
             url = "https://unsplash.com/illustrations",
             description = "Free stock vector illustrations. Powered by creators everywhere.",
             tags = listOf("daily", "positive"),
-            views = 58,
+            views = 59,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -600,7 +600,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("positive", "daily", "curated", "sample"),
-            views = 315,
+            views = 317,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -610,7 +610,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386599316112",
             description = "Short clips from Aljazeera.",
             tags = listOf("aljazeera", "flips", "learning", "positive", "daily"),
-            views = 185,
+            views = 186,
             likesMobile = 3,
             dislikesMobile = 0
         ),
@@ -650,7 +650,7 @@ object StaticLinks {
             url = "https://www.digit.in/",
             description = "Technology magazine.",
             tags = listOf("positive", "daily", "new", "tech"),
-            views = 127,
+            views = 128,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -830,7 +830,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 244,
+            views = 245,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -840,7 +840,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("positive", "daily", "social", "media"),
-            views = 238,
+            views = 239,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -849,8 +849,8 @@ object StaticLinks {
             name = "WhatIsMyBrowser.com",
             url = "https://www.whatismybrowser.com/",
             description = "Find out what websites know about you.",
-            tags = listOf("daily", "learning", "positive"),
-            views = 5,
+            tags = listOf("daily", "daily-desktop", "learning", "positive"),
+            views = 6,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -870,7 +870,7 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("positive", "daily", "learning", "news"),
-            views = 131,
+            views = 133,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -880,7 +880,7 @@ object StaticLinks {
             url = "https://www.youtube.com/",
             description = "Video sharing social media platform. The main page has a non personalized recommendation algorithm feed which can be activated by moving to shorts and then back to the home page.",
             tags = listOf("daily", "video", "positive"),
-            views = 62,
+            views = 63,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -940,7 +940,7 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=jxLsiOflofk",
             description = "How to perform 2 Raka'at (2 Unit) namaz to help in praying Jumma farz namaz.",
             tags = listOf("user-submitted", "positive", "daily"),
-            views = 166,
+            views = 167,
             likesMobile = 7,
             dislikesMobile = 0
         )
