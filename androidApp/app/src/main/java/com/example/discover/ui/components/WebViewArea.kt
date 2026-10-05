@@ -83,7 +83,7 @@ fun WebViewArea(
     var lastTouchX by remember { mutableFloatStateOf(0f) }
     var lastTouchY by remember { mutableFloatStateOf(0f) }
     val density = LocalDensity.current
-    var warmUpTarget by remember { mutableStateOf<String?>(null) }
+    var warmingUpForTarget by remember { mutableStateOf(false) }
 
     mediaExtractor.onExtracted = { url, type ->
         webView.post {
@@ -120,13 +120,13 @@ fun WebViewArea(
                 Toast.makeText(context, "No PDF app found." + e.message, Toast.LENGTH_SHORT).show()
             }
         }
-        if (targetUrl.contains("youtube.com") && !targetUrl.contains("/shorts")) {
-            warmUpTarget = targetUrl
+        if (targetUrl == "https://www.youtube.com/") {
+            warmingUpForTarget = true
             webView.loadUrl("https://m.youtube.com/shorts/")
 
             // Give YouTube's SPA time to prefetch the home feed in the background.
-            // ~10s is empirically the minimum on Chrome 109 emulator.
-            delay(10000L.milliseconds)
+            // ~8s is empirically the minimum on Chrome 109 emulator.
+            delay(8000L.milliseconds)
 
             webView.evaluateJavascript(
                 """(function() {
@@ -208,11 +208,8 @@ fun WebViewArea(
                         // This captures the final URL after any redirects.
                         url?.let { onUrlChanged(it) }
 
-                        if (warmUpTarget != null && url?.contains("youtube.com") == true && !url.contains(
-                                "/shorts"
-                            )
-                        ) {
-                            warmUpTarget = null
+                        if (warmingUpForTarget) {
+                            warmingUpForTarget = false
                             webView.postDelayed({ webView.clearHistory() }, 500L)
                         }
                         // The WebView has finished a draw pass, so it's safe to make it visible.
