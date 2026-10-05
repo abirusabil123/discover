@@ -290,7 +290,8 @@ fun WebViewArea(
     if (window.__discoverCookieDenier) return;
     window.__discoverCookieDenier = true;
 
-    var denySelectors = [
+        var denySelectors = [
+        '[aria-label*="close" i]',
         '#onetrust-reject-all-handler',
         '#CybotCookiebotDialogBodyButtonDecline',
         '.qc-cmp2-summary-buttons button[mode="secondary"]',
