@@ -2,7 +2,7 @@
 /* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
 
 // tools/recreate-files.js
-import LINKS_TO_KEEP from './links-dump-to-keep.json' assert { type: 'json' };
+import LINKS_TO_KEEP from './links-dump.json' assert { type: 'json' };
 import { fileURLToPath } from 'url';
 import path from 'path';
 import fs from 'fs';
@@ -247,7 +247,7 @@ function main() {
         process.exit(1);
     }
 
-    console.log(`📦 Found ${LINKS_TO_KEEP.length} links in links-dump-to-keep.json (incl. reviewStatus 0)`);
+    console.log(`📦 Found ${LINKS_TO_KEEP.length} links in links-dump.json (incl. reviewStatus 0)`);
     const approvedLinks = LINKS_TO_KEEP.filter(site => site.reviewStatus === 1);
     approvedLinks.sort((a, b) => (a.url || '').localeCompare(b.url || ''));
     console.log(`📦 Found ${approvedLinks.length} approved links in static-links.js`);
