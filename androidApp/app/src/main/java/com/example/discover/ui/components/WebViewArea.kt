@@ -290,7 +290,21 @@ fun WebViewArea(
     if (window.__discoverCookieDenier) return;
     window.__discoverCookieDenier = true;
 
-        var denySelectors = [
+    // ── Force-hide intrusive modals ──────────────────────────
+    if (!document.getElementById('__discover_hide_modals')) {
+        var style = document.createElement('style');
+        style.id = '__discover_hide_modals';
+        style.textContent = [
+            '#newsletterModal { display: none !important; }',
+            '.modal-backdrop { display: none !important; }',
+            'body.modal-open { overflow: auto !important; }'
+//            '.modal.show { display: none !important; }', // hide all modals
+        ].join('\n');
+        (document.head || document.documentElement).appendChild(style);
+    }
+
+    // ── Existing cookie/banner logic ─────────────────────────
+    var denySelectors = [
         '[aria-label*="close" i]',
         '#onetrust-reject-all-handler',
         '#CybotCookiebotDialogBodyButtonDecline',

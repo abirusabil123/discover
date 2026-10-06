@@ -44,7 +44,7 @@ const STATIC = {
                 "optional",
                 "user-submitted"
             ],
-            "views": 182,
+            "views": 183,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 55,
+            "views": 59,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 127,
+            "views": 130,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -695,7 +695,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 150,
+            "views": 153,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -752,7 +752,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 147,
+            "views": 150,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -840,7 +840,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 361,
+            "views": 362,
             "likesMobile": 41,
             "dislikesMobile": 4,
             "likesDesktop": 18,
@@ -879,6 +879,20 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "openverse",
+            "url": "https://openverse.org/",
+            "description": "Get free CC0 and other licensed media.",
+            "tags": [
+                "media",
+                "cc0"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "palestine.com",
             "url": "https://palestine.com/",
             "description": "The website https://palestine.com/.",
@@ -888,7 +902,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 111,
+            "views": 115,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -904,7 +918,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 296,
+            "views": 298,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -933,7 +947,7 @@ const STATIC = {
                 "daily",
                 "social-media"
             ],
-            "views": 8,
+            "views": 12,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -963,7 +977,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 306,
+            "views": 309,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1093,7 +1107,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 96,
+            "views": 99,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1136,6 +1150,19 @@ const STATIC = {
                 "positive",
                 "book",
                 "learning"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "creativecommons",
+            "url": "https://search.creativecommons.org/",
+            "description": "Get free and licensed media.",
+            "tags": [
+                "media"
             ],
             "views": 0,
             "likesMobile": 0,
@@ -1320,7 +1347,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 441,
+            "views": 445,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1334,7 +1361,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 59,
+            "views": 62,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1419,7 +1446,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 317,
+            "views": 320,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1436,7 +1463,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 186,
+            "views": 191,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1540,7 +1567,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 128,
+            "views": 130,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1613,7 +1640,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 53,
+            "views": 57,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1843,7 +1870,7 @@ const STATIC = {
                 "beautiful",
                 "daily"
             ],
-            "views": 208,
+            "views": 214,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1859,7 +1886,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 245,
+            "views": 248,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1875,7 +1902,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 239,
+            "views": 243,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1920,7 +1947,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 133,
+            "views": 136,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1935,7 +1962,7 @@ const STATIC = {
                 "video",
                 "positive"
             ],
-            "views": 63,
+            "views": 69,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1973,7 +2000,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 136,
+            "views": 140,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2001,8 +2028,8 @@ const STATIC = {
                 "daily",
                 "optional"
             ],
-            "views": 1,
-            "likesMobile": 0,
+            "views": 2,
+            "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
@@ -2018,7 +2045,7 @@ const STATIC = {
                 "daily",
                 "optional"
             ],
-            "views": 123,
+            "views": 124,
             "likesMobile": 1,
             "dislikesMobile": 2,
             "likesDesktop": 2,
@@ -2033,7 +2060,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 167,
+            "views": 170,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,
