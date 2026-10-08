@@ -112,7 +112,7 @@ VALUES (
         'https://alternativeto.net/',
         'AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.',
         JSON_ARRAY('daily', 'positive', 'learning'),
-        59,
+        60,
         0,
         0,
         0,
@@ -208,7 +208,7 @@ VALUES (
         'https://bsky.app/',
         'Social media',
         JSON_ARRAY('positive', 'daily'),
-        131,
+        132,
         1,
         0,
         0,
@@ -1888,7 +1888,7 @@ VALUES (
         'https://www.youtube.com/watch?v=jxLsiOflofk',
         'How to perform 2 Raka''at (2 Unit) namaz to help in praying Jumma farz namaz.',
         JSON_ARRAY('user-submitted', 'positive', 'daily'),
-        170,
+        171,
         7,
         0,
         5,
@@ -1905,6 +1905,18 @@ VALUES (
         1000,
         3,
         1,
+        1
+    ),
+    (
+        '2 Rakat Complete Salah in Real Time',
+        'https://youtu.be/v2gx24YqI68?feature=shared',
+        '2 rakat namaz for jumma farz.',
+        JSON_ARRAY('daily', 'optional'),
+        0,
+        0,
+        0,
+        0,
+        0,
         1
     ) ON DUPLICATE KEY
 UPDATE

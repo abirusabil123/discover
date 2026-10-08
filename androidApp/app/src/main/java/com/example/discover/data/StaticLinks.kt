@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("daily", "positive", "learning"),
-            views = 59,
+            views = 60,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -60,7 +60,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("positive", "daily"),
-            views = 131,
+            views = 132,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -970,8 +970,18 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=jxLsiOflofk",
             description = "How to perform 2 Raka'at (2 Unit) namaz to help in praying Jumma farz namaz.",
             tags = listOf("user-submitted", "positive", "daily"),
-            views = 170,
+            views = 171,
             likesMobile = 7,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "2 Rakat Complete Salah in Real Time",
+            url = "https://youtu.be/v2gx24YqI68?feature=shared",
+            description = "2 rakat namaz for jumma farz.",
+            tags = listOf("daily", "optional"),
+            views = 0,
+            likesMobile = 0,
             dislikesMobile = 0
         )
     )

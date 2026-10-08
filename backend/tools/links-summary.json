@@ -1,10 +1,10 @@
 {
   "metadata": {
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 155
+    "totalLinks": 156
   },
   "analysis": {
-    "total": 155,
+    "total": 156,
     "filteredMobile": 58,
     "filteredDesktop": 13,
     "blockedMobileUrls": [
@@ -84,7 +84,7 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 88,
+      "0%": 89,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
@@ -92,7 +92,7 @@
       "80-100%": 59
     },
     "byVoteCount": {
-      "0 votes": 58,
+      "0 votes": 59,
       "1-3 votes": 24,
       "4-10 votes": 12,
       "11-50 votes": 2,
@@ -103,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 4620
+        "count": 4632
       },
       {
         "country": "AE",
@@ -245,7 +245,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 342
+        "count": 354
       },
       {
         "month": "202609",
@@ -275,7 +275,7 @@
       },
       {
         "platform": "desktop",
-        "count": 4294
+        "count": 4305
       },
       {
         "platform": "Linux armv81",
@@ -287,7 +287,7 @@
       },
       {
         "platform": "mobile",
-        "count": 448
+        "count": 449
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -321,7 +321,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 6837
+        "count": 6849
       },
       {
         "product": "personal website",
@@ -331,7 +331,7 @@
     "byOrigin": [
       {
         "origin": "",
-        "count": 2549
+        "count": 2550
       },
       {
         "origin": "file://",
@@ -383,7 +383,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1435
+        "count": 1446
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -409,7 +409,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4742
+        "count": 4754
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -443,11 +443,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5263
+        "count": 5274
       },
       {
         "status": "Bot",
-        "count": 1641
+        "count": 1642
       }
     ],
     "byHourOfDay": [
@@ -521,11 +521,11 @@
       },
       {
         "hour": 17,
-        "count": 326
+        "count": 335
       },
       {
         "hour": 18,
-        "count": 398
+        "count": 401
       },
       {
         "hour": 19,
@@ -563,7 +563,7 @@
       },
       {
         "dow": 3,
-        "count": 839
+        "count": 851
       },
       {
         "dow": 4,

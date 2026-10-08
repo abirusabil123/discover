@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 59,
+            "views": 60,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 131,
+            "views": 132,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2073,7 +2073,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 170,
+            "views": 171,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -2092,6 +2092,20 @@ const STATIC = {
             "dislikesMobile": 1000,
             "likesDesktop": 3,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "2 Rakat Complete Salah in Real Time",
+            "url": "https://youtu.be/v2gx24YqI68?feature=shared",
+            "description": "2 rakat namaz for jumma farz.",
+            "tags": [
+                "daily",
+                "optional"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         }
     ]
 };
