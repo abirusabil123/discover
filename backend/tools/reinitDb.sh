@@ -15,7 +15,7 @@ INIT_SQL="db/init.sql"
 
 echo "▶ Running from: $PROJECT_ROOT"
 
-TOOLS_DIR="$PROJECT_ROOT/../tools"
+TOOLS_DIR="$PROJECT_ROOT/tools"
 
 # ── 1. Dump current links from API for inspection/editing ──
 echo "▶ Dumping current links from API..."

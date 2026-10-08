@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 
 
-const PROJECT_ROOT = path.join(__dirname, '..');
+const PROJECT_ROOT = path.join(__dirname, '../..');
 
 // --- Helpers ---
 function escapeSQL(str = '') {

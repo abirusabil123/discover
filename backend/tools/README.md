@@ -4,7 +4,7 @@
 
 Run the following command in terminal.
 ```
-discover/tools$ node dump-websites.js
+discover/backend/tools$ node dump-websites.js
 ```
 
 ## Manually approve submitted links regularly
@@ -21,13 +21,13 @@ to
 The static links to update are
 ```  
 Local backend: backend/db/init.sql  
-Tools: tools/static-links.js  
+Tools: backend/tools/static-links.js  
 Link: config.js  
 Android app: androidApp/app/src/main/java/com/example/discover/data/StaticLinks.kt  
 ```
 
 To update all the static links automatically, run
 ```
-cd tools  
+cd backend/tools  
 node recreate-static-links.js  
 ```

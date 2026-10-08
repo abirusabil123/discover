@@ -37,7 +37,7 @@ Let's go back to before 2005, before EdgeRank was released.
 
 ## Review links
 ```
-./backend/scripts/reinitDb.sh
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover$ ./backend/tools/reinitDb.sh
 ```
 
 ## Run frontend for local testing

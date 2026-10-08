@@ -3,7 +3,7 @@ A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically crea
 
 Publicly exposed at https://backenddiscover.duckdns.org:8443 to forward requests to the local Node.js app on port 8090.
 
-The full cron setup and sudoers backup are in `../scripts`.
+The full cron setup and sudoers backup are in `./backend/networking`.
 
 ## 🌐 How it works
 - The Node app listens on 0.0.0.0:8090.
@@ -11,7 +11,7 @@ The full cron setup and sudoers backup are in `../scripts`.
 - Nginx terminates HTTPS on port 8443 and proxies to http://localhost:8090.
 - Because of network_mode: host, all services share the host network – no Docker bridge, no veth bugs.
 
-DNS and TLS are handled by a DuckDNS cron job and acme.sh, both documented in ../scripts/crontab.txt.
+DNS and TLS are handled by a DuckDNS cron job and acme.sh, both documented in `./backend/networking/crontab.txt`.
 
 ## ⚙️ Prerequisites
 - Linux
@@ -41,7 +41,7 @@ cat db/init.sql | docker compose exec -T db mysql -u root -ppassword mydatabase
 ```
 or just run 
 ```bash
-(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover/tools$ ./../backend/scripts/reinitDb.sh 
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover$ ./backend/scripts/reinitDb.sh 
 ```
 
 ### 4. Get SQL data directly
