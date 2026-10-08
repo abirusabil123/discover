@@ -752,7 +752,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 150,
+            "views": 151,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1163,6 +1163,19 @@ const STATIC = {
             "description": "Get free and licensed media.",
             "tags": [
                 "media"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "The people holding up the internet",
+            "url": "https://sheets.works/data-viz/holding-up-the-internet",
+            "description": "The reality of the resilience of open source contributors.",
+            "tags": [
+                "positive"
             ],
             "views": 0,
             "likesMobile": 0,

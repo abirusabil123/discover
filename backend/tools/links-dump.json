@@ -863,7 +863,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 150,
+    "views": 151,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1352,6 +1352,20 @@
     "description": "Get free and licensed media.",
     "tags": [
       "media"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://sheets.works/data-viz/holding-up-the-internet",
+    "name": "The people holding up the internet",
+    "description": "The reality of the resilience of open source contributors.",
+    "tags": [
+      "positive"
     ],
     "views": 0,
     "likesMobile": 0,

@@ -1,4 +1,5 @@
-/* Copyright (c) 2025 Mohammad Sheraj *//* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
+/* Copyright (c) 2025 Mohammad Sheraj */
+/* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
 
 package com.example.discover.data
 
@@ -269,7 +270,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media. Refreshing and suprisingly positive content hinting at a simple feed algorithm.",
             tags = listOf("positive", "daily", "twitteralternative", "socialmedia"),
-            views = 150,
+            views = 151,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -489,6 +490,16 @@ object StaticLinks {
             url = "https://search.creativecommons.org/",
             description = "Get free and licensed media.",
             tags = listOf("media"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "The people holding up the internet",
+            url = "https://sheets.works/data-viz/holding-up-the-internet",
+            description = "The reality of the resilience of open source contributors.",
+            tags = listOf("positive"),
             views = 0,
             likesMobile = 0,
             dislikesMobile = 0
