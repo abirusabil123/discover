@@ -41,7 +41,7 @@ cat db/init.sql | docker compose exec -T db mysql -u root -ppassword mydatabase
 ```
 or just run 
 ```bash
-(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover$ ./backend/scripts/reinitDb.sh 
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover$ ./backend/tools/reinitDb.sh 
 ```
 
 ### 4. Get SQL data directly

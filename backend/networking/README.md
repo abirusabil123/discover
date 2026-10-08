@@ -4,7 +4,7 @@ This deployment uses:
 - DuckDNS (`backenddiscover.duckdns.org`) for dynamic DNS updates.
 - `acme.sh` with ZeroSSL for automatic TLS certificates.
 - Nginx reverse proxy (HTTPS port `8443` → Node.js `8090`).
-- **IP‑change auto‑restart**: `scripts/check-ip-restart-docker.sh` (runs via cron) restarts Docker when the WAN IP changes, fixing iptables rules automatically.
+- **IP‑change auto‑restart**: `networking/check-ip-restart-docker.sh` (runs via cron) restarts Docker when the WAN IP changes, fixing iptables rules automatically.
 
 ## Certificate renewal hook
 
