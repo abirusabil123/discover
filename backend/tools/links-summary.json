@@ -103,11 +103,11 @@
     "byCountry": [
       {
         "country": "",
-        "count": 4632
+        "count": 4658
       },
       {
         "country": "AE",
-        "count": 1
+        "count": 3
       },
       {
         "country": "AT",
@@ -235,7 +235,7 @@
       },
       {
         "country": "US",
-        "count": 1234
+        "count": 1238
       },
       {
         "country": "ZA",
@@ -245,7 +245,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 354
+        "count": 386
       },
       {
         "month": "202609",
@@ -275,7 +275,7 @@
       },
       {
         "platform": "desktop",
-        "count": 4305
+        "count": 4335
       },
       {
         "platform": "Linux armv81",
@@ -287,7 +287,7 @@
       },
       {
         "platform": "mobile",
-        "count": 449
+        "count": 451
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -321,7 +321,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 6849
+        "count": 6881
       },
       {
         "product": "personal website",
@@ -331,7 +331,7 @@
     "byOrigin": [
       {
         "origin": "",
-        "count": 2550
+        "count": 2552
       },
       {
         "origin": "file://",
@@ -383,7 +383,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1446
+        "count": 1476
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -409,7 +409,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4754
+        "count": 4786
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -443,11 +443,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5274
+        "count": 5304
       },
       {
         "status": "Bot",
-        "count": 1642
+        "count": 1644
       }
     ],
     "byHourOfDay": [
@@ -457,7 +457,7 @@
       },
       {
         "hour": 1,
-        "count": 104
+        "count": 106
       },
       {
         "hour": 2,
@@ -473,7 +473,7 @@
       },
       {
         "hour": 5,
-        "count": 1100
+        "count": 1101
       },
       {
         "hour": 6,
@@ -489,7 +489,7 @@
       },
       {
         "hour": 9,
-        "count": 272
+        "count": 276
       },
       {
         "hour": 10,
@@ -501,7 +501,7 @@
       },
       {
         "hour": 12,
-        "count": 274
+        "count": 275
       },
       {
         "hour": 13,
@@ -521,7 +521,7 @@
       },
       {
         "hour": 17,
-        "count": 335
+        "count": 359
       },
       {
         "hour": 18,
@@ -567,7 +567,7 @@
       },
       {
         "dow": 4,
-        "count": 551
+        "count": 583
       },
       {
         "dow": 5,
