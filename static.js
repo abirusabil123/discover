@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 61,
+            "views": 64,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 134,
+            "views": 136,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -695,7 +695,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 156,
+            "views": 159,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -752,7 +752,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 153,
+            "views": 156,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -902,7 +902,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 118,
+            "views": 120,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -918,7 +918,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 302,
+            "views": 305,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -947,7 +947,7 @@ const STATIC = {
                 "daily",
                 "social-media"
             ],
-            "views": 16,
+            "views": 18,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -977,7 +977,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 313,
+            "views": 315,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1107,7 +1107,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 102,
+            "views": 104,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1360,7 +1360,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 447,
+            "views": 450,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1374,7 +1374,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 64,
+            "views": 67,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1459,7 +1459,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 324,
+            "views": 327,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1476,7 +1476,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 194,
+            "views": 196,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1580,7 +1580,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 134,
+            "views": 137,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1621,7 +1621,7 @@ const STATIC = {
             "url": "https://www.fifplay.com/fifa-12/soundtrack/",
             "description": "The great FIFA 12 soundtrack for those who love nostalgia.",
             "tags": [
-                "songs",
+                "music",
                 "fifa",
                 "positive"
             ],
@@ -1629,6 +1629,21 @@ const STATIC = {
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "FIFA 14 soundtrack",
+            "url": "https://www.fifplay.com/fifa-14/soundtrack/",
+            "description": "The FIFA 14 soundtrack which seems more positive than the FIFA 12 soundtrack.",
+            "tags": [
+                "music",
+                "fifa",
+                "positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -1653,7 +1668,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 61,
+            "views": 63,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1883,7 +1898,7 @@ const STATIC = {
                 "beautiful",
                 "daily"
             ],
-            "views": 218,
+            "views": 220,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1899,7 +1914,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 252,
+            "views": 255,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1915,7 +1930,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 245,
+            "views": 247,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1960,7 +1975,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 138,
+            "views": 139,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1975,7 +1990,7 @@ const STATIC = {
                 "video",
                 "positive"
             ],
-            "views": 74,
+            "views": 76,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2013,7 +2028,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 143,
+            "views": 144,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2069,15 +2084,29 @@ const STATIC = {
             "url": "https://www.youtube.com/watch?v=jxLsiOflofk",
             "description": "How to perform 2 Raka'at (2 Unit) namaz to help in praying Jumma farz namaz.",
             "tags": [
-                "user-submitted",
                 "positive",
-                "daily"
+                "daily",
+                "optional"
             ],
-            "views": 173,
+            "views": 175,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "2 Rakat Complete Salah in Real Time",
+            "url": "https://www.youtube.com/watch?v=v2gx24YqI68",
+            "description": "2 Rakat Complete Salah for Jumma with English translation.",
+            "tags": [
+                "positive",
+                "daily"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         },
         {
             "name": "xkcd",

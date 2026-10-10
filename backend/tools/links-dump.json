@@ -85,7 +85,7 @@
       "positive",
       "learning"
     ],
-    "views": 61,
+    "views": 64,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -208,7 +208,7 @@
       "positive",
       "daily"
     ],
-    "views": 134,
+    "views": 136,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -802,7 +802,7 @@
       "daily",
       "news"
     ],
-    "views": 156,
+    "views": 159,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -863,7 +863,7 @@
       "twitteralternative",
       "socialmedia"
     ],
-    "views": 153,
+    "views": 156,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1057,7 +1057,7 @@
       "palestine",
       "free"
     ],
-    "views": 118,
+    "views": 120,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1074,7 +1074,7 @@
       "curated",
       "sample"
     ],
-    "views": 302,
+    "views": 305,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1105,7 +1105,7 @@
       "daily",
       "social-media"
     ],
-    "views": 16,
+    "views": 18,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1137,7 +1137,7 @@
       "curated",
       "sample"
     ],
-    "views": 313,
+    "views": 315,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1276,7 +1276,7 @@
       "positive",
       "daily"
     ],
-    "views": 102,
+    "views": 104,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1577,7 +1577,7 @@
       "curated",
       "sample"
     ],
-    "views": 447,
+    "views": 450,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1592,7 +1592,7 @@
       "daily",
       "positive"
     ],
-    "views": 64,
+    "views": 67,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1683,7 +1683,7 @@
       "curated",
       "sample"
     ],
-    "views": 324,
+    "views": 327,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -1701,7 +1701,7 @@
       "positive",
       "daily"
     ],
-    "views": 194,
+    "views": 196,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1812,7 +1812,7 @@
       "new",
       "tech"
     ],
-    "views": 134,
+    "views": 137,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1921,7 +1921,7 @@
     "name": "FIFA 12 songs",
     "description": "The great FIFA 12 soundtrack for those who love nostalgia.",
     "tags": [
-      "songs",
+      "music",
       "fifa",
       "positive"
     ],
@@ -1929,6 +1929,22 @@
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.fifplay.com/fifa-14/soundtrack/",
+    "name": "FIFA 14 soundtrack",
+    "description": "The FIFA 14 soundtrack which seems more positive than the FIFA 12 soundtrack.",
+    "tags": [
+      "music",
+      "fifa",
+      "positive"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1955,7 +1971,7 @@
       "daily",
       "positive"
     ],
-    "views": 61,
+    "views": 63,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2217,7 +2233,7 @@
       "beautiful",
       "daily"
     ],
-    "views": 218,
+    "views": 220,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -2234,7 +2250,7 @@
       "social",
       "media"
     ],
-    "views": 252,
+    "views": 255,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2251,7 +2267,7 @@
       "social",
       "media"
     ],
-    "views": 245,
+    "views": 247,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 0,
@@ -2299,7 +2315,7 @@
       "learning",
       "news"
     ],
-    "views": 138,
+    "views": 139,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2315,7 +2331,7 @@
       "video",
       "positive"
     ],
-    "views": 74,
+    "views": 76,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2355,7 +2371,7 @@
       "tiktok",
       "videos"
     ],
-    "views": 143,
+    "views": 144,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2415,15 +2431,30 @@
     "name": "How to perform 2 Raka'at (2 Unit) namaz",
     "description": "How to perform 2 Raka'at (2 Unit) namaz to help in praying Jumma farz namaz.",
     "tags": [
-      "user-submitted",
       "positive",
-      "daily"
+      "daily",
+      "optional"
     ],
-    "views": 173,
+    "views": 175,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 5,
     "dislikesDesktop": 1,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=v2gx24YqI68",
+    "name": "2 Rakat Complete Salah in Real Time",
+    "description": "2 Rakat Complete Salah for Jumma with English translation.",
+    "tags": [
+      "positive",
+      "daily"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
