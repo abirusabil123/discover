@@ -1,0 +1,44 @@
+; Zone file for discoverall.space
+; Exported: 2026-10-11
+; Provider: Hostasia (dns1.securedns93.com / dns2.securedns93.com)
+; Panel: https://userpanel.hostasia.in/services/dns/45
+;
+; NOTE: Hostasia's panel is not a standard BIND import — this file is a
+; reference/snapshot for fast manual re-entry, not a direct upload.
+
+$ORIGIN discoverall.space.
+$TTL 14400
+
+; --- SOA / NS (managed by Hostasia, shown for reference only) ---
+@       IN  SOA ns1.securedns93.com. hostmaster.securedns93.com. (
+                2026101101  ; serial (YYYYMMDDnn)
+                3600        ; refresh
+                1800        ; retry
+                604800      ; expire
+                14400 )     ; minimum
+@       IN  NS  dns1.securedns93.com.
+@       IN  NS  dns2.securedns93.com.
+
+; --- GitHub Pages (frontend) ---
+@       IN  A       185.199.108.153
+@       IN  A       185.199.109.153
+@       IN  A       185.199.110.153
+@       IN  A       185.199.111.153
+www     IN  CNAME   discoverall.space.
+
+; --- Backend (home server via DuckDNS) ---
+backend IN  CNAME   backenddiscover.duckdns.org.
+
+; --- Email / SPF / DKIM / DMARC ---
+@       IN  TXT  "v=spf1 ip4:51.83.161.4 ip4:157.90.149.223 +a +mx +ip4:162.55.165.49 ~all"
+_dmarc  IN  TXT  "v=DMARC1; p=none;"
+default._domainkey IN TXT (
+    "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu3o15w4KCfkbq1aXXJl3PK0EVaXEwj+uyDja30t+HDcA0G9TrQ53s0Lfp9xlvCo5KNWV7aO7/73hHJX"
+    "UsC7JTvBtWKlWN63tRkzeXfNg1Yx98Kj19UpFgm8HF9fO5B0BhSjjiWgVWNLr7QXSIV6r1MbF1J/9FhtL2t+igiRFFRFTj6EtvaO7q7aZbciY8cyOUtSXV0SRQPm3lLvfP4oA8z+s8d6"
+    "yBTcst4XHd3EybA4MtJd1O3083skhOEbGv/kGPNNgr79kbQg5Jyl+QQjq6zadd0JNhiwLeeJcDUR/HYZ16TnscUjH5NphHDx7JAgazw4oWHR0NUQ2PFY+NXlqCQIDAQAB;"
+)
+
+; --- Legacy (review before restoring) ---
+ftp                 IN  A    51.83.161.4
+_cpanel-dcv-test-record IN TXT "_cpanel-dcv-test-record=0ZGjvf8k6hBrDF1WruzjGuCumSepJ4jIiFF8TLDxNW0jGnBlEQolTQpWtDFhCEaD"
+_acme-challenge     IN  TXT "B7H70qCZ9GkFB_WVDJSJ38RL1l-2fehPg0pCvS90jdQ"
