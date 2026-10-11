@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 67,
+            "views": 69,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 139,
+            "views": 141,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -695,7 +695,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 162,
+            "views": 163,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -752,7 +752,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 158,
+            "views": 160,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -902,7 +902,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 122,
+            "views": 123,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -918,7 +918,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 308,
+            "views": 309,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -947,7 +947,7 @@ const STATIC = {
                 "daily",
                 "social-media"
             ],
-            "views": 21,
+            "views": 23,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -977,7 +977,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 316,
+            "views": 318,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1107,7 +1107,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 107,
+            "views": 108,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1360,7 +1360,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 452,
+            "views": 454,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1374,7 +1374,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 68,
+            "views": 70,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1459,7 +1459,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 329,
+            "views": 330,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1476,7 +1476,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 198,
+            "views": 199,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1580,7 +1580,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 141,
+            "views": 142,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1898,7 +1898,7 @@ const STATIC = {
                 "beautiful",
                 "daily"
             ],
-            "views": 222,
+            "views": 223,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1914,7 +1914,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 257,
+            "views": 259,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1930,7 +1930,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 249,
+            "views": 251,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1990,7 +1990,7 @@ const STATIC = {
                 "video",
                 "positive"
             ],
-            "views": 79,
+            "views": 81,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2028,7 +2028,7 @@ const STATIC = {
                 "tiktok",
                 "videos"
             ],
-            "views": 145,
+            "views": 146,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2058,6 +2058,20 @@ const STATIC = {
             ],
             "views": 2,
             "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Portugal.The Man - Got It All [Official Music Video]",
+            "url": "https://www.youtube.com/watch?v=7J8d18ZkXE8",
+            "description": "The anthem for the Occupy Wall Street movement.",
+            "tags": [
+                "music",
+                "positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
@@ -2102,7 +2116,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 1,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
