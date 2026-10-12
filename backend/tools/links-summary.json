@@ -103,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 4705
+        "count": 4717
       },
       {
         "country": "AE",
@@ -167,7 +167,7 @@
       },
       {
         "country": "IN",
-        "count": 151
+        "count": 163
       },
       {
         "country": "IR",
@@ -203,7 +203,7 @@
       },
       {
         "country": "NL",
-        "count": 54
+        "count": 56
       },
       {
         "country": "PL",
@@ -235,7 +235,7 @@
       },
       {
         "country": "US",
-        "count": 1238
+        "count": 1248
       },
       {
         "country": "ZA",
@@ -245,7 +245,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 435
+        "count": 471
       },
       {
         "month": "202609",
@@ -275,19 +275,31 @@
       },
       {
         "platform": "desktop",
-        "count": 4372
+        "count": 4387
       },
       {
         "platform": "Linux armv81",
-        "count": 14
+        "count": 15
+      },
+      {
+        "platform": "Linux armv81 discover-website",
+        "count": 10
       },
       {
         "platform": "Linux x86_64",
         "count": 3
       },
       {
+        "platform": "Linux x86_64 discover-website",
+        "count": 2
+      },
+      {
+        "platform": "Linux x86_64discover-website",
+        "count": 2
+      },
+      {
         "platform": "mobile",
-        "count": 463
+        "count": 469
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -321,17 +333,17 @@
       },
       {
         "product": "discover-backend",
-        "count": 6930
+        "count": 6965
       },
       {
         "product": "personal website",
-        "count": 7
+        "count": 8
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 2564
+        "count": 2570
       },
       {
         "origin": "file://",
@@ -339,7 +351,7 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 110
+        "count": 118
       },
       {
         "origin": "http://localhost:44631",
@@ -347,7 +359,7 @@
       },
       {
         "origin": "https://abirusabil123.github.io",
-        "count": 21
+        "count": 22
       },
       {
         "origin": "https://abirusabil123.github.io/",
@@ -383,7 +395,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1511
+        "count": 1532
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -397,7 +409,7 @@
     "byPath": [
       {
         "path": "/",
-        "count": 2107
+        "count": 2108
       },
       {
         "path": "/addlink",
@@ -409,7 +421,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4835
+        "count": 4870
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -443,11 +455,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5341
+        "count": 5371
       },
       {
         "status": "Bot",
-        "count": 1656
+        "count": 1662
       }
     ],
     "byHourOfDay": [
@@ -477,11 +489,11 @@
       },
       {
         "hour": 6,
-        "count": 497
+        "count": 498
       },
       {
         "hour": 7,
-        "count": 325
+        "count": 326
       },
       {
         "hour": 8,
@@ -489,15 +501,15 @@
       },
       {
         "hour": 9,
-        "count": 279
+        "count": 280
       },
       {
         "hour": 10,
-        "count": 191
+        "count": 192
       },
       {
         "hour": 11,
-        "count": 172
+        "count": 182
       },
       {
         "hour": 12,
@@ -509,23 +521,23 @@
       },
       {
         "hour": 14,
-        "count": 372
+        "count": 374
       },
       {
         "hour": 15,
-        "count": 483
+        "count": 495
       },
       {
         "hour": 16,
-        "count": 603
+        "count": 605
       },
       {
         "hour": 17,
-        "count": 366
+        "count": 371
       },
       {
         "hour": 18,
-        "count": 404
+        "count": 405
       },
       {
         "hour": 19,
@@ -551,7 +563,7 @@
     "byDayOfWeek": [
       {
         "dow": 0,
-        "count": 1126
+        "count": 1154
       },
       {
         "dow": 1,
@@ -575,7 +587,7 @@
       },
       {
         "dow": 6,
-        "count": 2378
+        "count": 2386
       }
     ]
   },

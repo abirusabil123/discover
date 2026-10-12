@@ -72,7 +72,7 @@ const STATIC = {
                 "positive",
                 "learning"
             ],
-            "views": 69,
+            "views": 72,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 141,
+            "views": 145,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -234,7 +234,7 @@ const STATIC = {
                 "daily",
                 "daily-desktop"
             ],
-            "views": 165,
+            "views": 167,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -680,7 +680,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 183,
+            "views": 185,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -695,7 +695,7 @@ const STATIC = {
                 "daily",
                 "news"
             ],
-            "views": 163,
+            "views": 167,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -752,7 +752,7 @@ const STATIC = {
                 "twitteralternative",
                 "socialmedia"
             ],
-            "views": 160,
+            "views": 164,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -902,7 +902,7 @@ const STATIC = {
                 "palestine",
                 "free"
             ],
-            "views": 123,
+            "views": 125,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -918,7 +918,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 309,
+            "views": 312,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -947,7 +947,7 @@ const STATIC = {
                 "daily",
                 "social-media"
             ],
-            "views": 23,
+            "views": 26,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -977,7 +977,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 318,
+            "views": 323,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1107,7 +1107,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 108,
+            "views": 111,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1303,7 +1303,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 135,
+            "views": 137,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -1360,7 +1360,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 454,
+            "views": 458,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1374,7 +1374,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 70,
+            "views": 73,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1417,7 +1417,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 77,
+            "views": 79,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -1459,7 +1459,7 @@ const STATIC = {
                 "curated",
                 "sample"
             ],
-            "views": 330,
+            "views": 333,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1476,7 +1476,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 199,
+            "views": 204,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1580,7 +1580,7 @@ const STATIC = {
                 "new",
                 "tech"
             ],
-            "views": 142,
+            "views": 144,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1668,7 +1668,7 @@ const STATIC = {
                 "daily",
                 "positive"
             ],
-            "views": 66,
+            "views": 68,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1880,7 +1880,7 @@ const STATIC = {
                 "daily-desktop",
                 "social-media"
             ],
-            "views": 28,
+            "views": 30,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
@@ -1898,7 +1898,7 @@ const STATIC = {
                 "beautiful",
                 "daily"
             ],
-            "views": 223,
+            "views": 227,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1914,7 +1914,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 259,
+            "views": 262,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1930,7 +1930,7 @@ const STATIC = {
                 "social",
                 "media"
             ],
-            "views": 251,
+            "views": 254,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1946,7 +1946,7 @@ const STATIC = {
                 "learning",
                 "positive"
             ],
-            "views": 8,
+            "views": 10,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1975,7 +1975,7 @@ const STATIC = {
                 "learning",
                 "news"
             ],
-            "views": 141,
+            "views": 143,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1990,7 +1990,7 @@ const STATIC = {
                 "video",
                 "positive"
             ],
-            "views": 81,
+            "views": 84,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2011,7 +2011,7 @@ const STATIC = {
                 "regular",
                 "repeat"
             ],
-            "views": 107,
+            "views": 109,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -2070,10 +2070,10 @@ const STATIC = {
                 "music",
                 "positive"
             ],
-            "views": 0,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -2116,7 +2116,7 @@ const STATIC = {
                 "positive",
                 "daily"
             ],
-            "views": 2,
+            "views": 6,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
