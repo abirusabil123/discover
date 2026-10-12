@@ -86,11 +86,12 @@ async function loadLinksFromAPI(logUser) {
 
     const apiStatus = document.getElementById('api-status-indicator');
     let linkCount = 0;
+    const websitePlatform = navigator.platform + ' discover-website';
 
     try {
         apiLinks = await apiCall('/getLinks', {
             params: {
-                platform: 'desktop',
+                platform: websitePlatform,
                 logUser: logUser ? 1 : 0,
                 tagsAllowlist: tagsAllowlist.join(','),
                 tagsBlocklist: tagsBlocklist.join(','),
@@ -102,7 +103,7 @@ async function loadLinksFromAPI(logUser) {
         linkCount = apiLinks.length;
 
         apiAllLinks = await apiCall('/getLinks', {
-            params: { platform: 'desktop', logUser: 0 }
+            params: { platform: websitePlatform, logUser: 0 }
         });
         console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
 
