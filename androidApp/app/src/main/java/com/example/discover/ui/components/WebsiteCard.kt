@@ -55,7 +55,7 @@ fun LinkCard(
 
             // Tags
             Text(
-                text = "Hashtags: " + link.tags.toString(),
+                text = link.tags.toString(),
                 style = MaterialTheme.typography.bodyMedium,
                 color = TextSecondary,
                 fontSize = 12.sp
