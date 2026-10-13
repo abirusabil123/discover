@@ -91,24 +91,24 @@
             <form id="add-link-form" onsubmit="submitLink(event)">
                 <div class="form-group">
                     <label for="link-name">Link Name *</label>
-                    <input type="text" id="link-name" name="name" required placeholder="e.g., GitHub">
+                    <input type="text" id="link-name" name="name" required placeholder="Example: GitHub">
                 </div>
                 <div class="form-group">
                     <label for="link-url">Link URL *</label>
-                    <input type="text" id="link-url" name="url" required placeholder="https://www.github.com">
+                    <input type="text" id="link-url" name="url" required placeholder="Example: https://www.github.com">
                 </div>
                 <div class="form-group">
-                    <label for="link-description">Description *</label>
-                    <textarea id="link-description" name="description" required
-                        placeholder="Brief description of the link..." rows="3"></textarea>
+                    <label for="add-link-description">Description *</label>
+                    <textarea id="add-link-description" name="description" required
+                        placeholder="Brief description of the link." rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="add-link-hashtags">Tags</label>
+                    <label for="add-link-hashtags">Hashtags</label>
                     <div class="tags-input-container">
-                        <input type="text" id="add-link-hashtags" placeholder="Type a tag and press Enter or comma">
+                        <input type="text" id="add-link-hashtags" placeholder="Example: #art #positive #inspiring">
                         <div id="tags-display" class="tags-display"></div>
                     </div>
-                    <small class="form-text">Add multiple tags separated by commas.</small>
+                    <small class="form-text">Add space seperated hashtags.</small>
                 </div>
                 <div class="form-actions">
                     <button type="button" class="btn btn-secondary" onclick="hideAddLinkForm()">Cancel</button>

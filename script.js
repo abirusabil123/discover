@@ -11,7 +11,6 @@ let linkHistory = []; // History of visited link objects (preserved across list 
 let currentIndex = -1; // Index of current link in linkHistory (not in links)
 let visitedLinks = new Set(); // URLs of links already visited this session (Set ensures uniqueness)
 let currentLinkUrl = null; // URL of the currently displayed link (used for stats actions)
-let selectedTags = []; // Tags selected in the add-link form
 const userActions = new Map(); // Tracks user actions in session per link URL to prevent duplicate server calls
 
 const UI_ANIMATION_DELAY = 10;
@@ -383,7 +382,7 @@ function updateCurrentSiteInfo(link) {
     }
     // Add tags as a separate element
     const tags = document.getElementById('link-hashtags');
-    tags.innerHTML = link.tags.map(t => `<span class="hashtag">${t}</span>`).join(' ');
+    tags.innerHTML = link.tags.join(' ');
 
 
     // Show stats and reset button states
@@ -410,9 +409,6 @@ function showAddLinkForm() {
 
     // Clear any existing error messages
     hideModalError();
-
-    // Clear any existing tags
-    selectedTags = [];
 
     // Add custom validation listeners
     addCustomValidation();
@@ -495,9 +491,6 @@ function hideAddLinkForm() {
 
     // Reset form
     document.getElementById('add-link-form').reset();
-
-    // Reset tags
-    selectedTags = [];
 
     // Clear any error messages
     hideModalError();

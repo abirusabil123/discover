@@ -29,7 +29,8 @@ async function submitLink(event) {
     submitBtn.textContent = 'Adding...';
 
     const tagsInput = document.getElementById('add-link-hashtags');
-    selectedTags = tagsInput.value.split(",")
+    let selectedTags = tagsInput.value
+        .split(/[\s,]+/)          // split on spaces and/or commas
         .map(tag => tag.trim().replace(/\s+/g, "")) // remove internal spaces
         .filter(tag => tag.length > 0);
 
