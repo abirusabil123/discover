@@ -103,7 +103,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 4717
+        "count": 4748
       },
       {
         "country": "AE",
@@ -167,7 +167,7 @@
       },
       {
         "country": "IN",
-        "count": 163
+        "count": 164
       },
       {
         "country": "IR",
@@ -245,7 +245,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 471
+        "count": 503
       },
       {
         "month": "202609",
@@ -283,7 +283,7 @@
       },
       {
         "platform": "Linux armv81 discover-website",
-        "count": 10
+        "count": 25
       },
       {
         "platform": "Linux x86_64",
@@ -291,7 +291,7 @@
       },
       {
         "platform": "Linux x86_64 discover-website",
-        "count": 2
+        "count": 16
       },
       {
         "platform": "Linux x86_64discover-website",
@@ -299,7 +299,7 @@
       },
       {
         "platform": "mobile",
-        "count": 469
+        "count": 472
       },
       {
         "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
@@ -333,7 +333,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 6965
+        "count": 6997
       },
       {
         "product": "personal website",
@@ -343,7 +343,7 @@
     "byOrigin": [
       {
         "origin": "",
-        "count": 2570
+        "count": 2573
       },
       {
         "origin": "file://",
@@ -355,7 +355,7 @@
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2744
+        "count": 2758
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -395,7 +395,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1532
+        "count": 1547
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -421,7 +421,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 4870
+        "count": 4902
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -455,11 +455,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5371
+        "count": 5400
       },
       {
         "status": "Bot",
-        "count": 1662
+        "count": 1665
       }
     ],
     "byHourOfDay": [
@@ -513,7 +513,7 @@
       },
       {
         "hour": 12,
-        "count": 276
+        "count": 299
       },
       {
         "hour": 13,
@@ -525,19 +525,19 @@
       },
       {
         "hour": 15,
-        "count": 495
+        "count": 499
       },
       {
         "hour": 16,
-        "count": 605
+        "count": 607
       },
       {
         "hour": 17,
-        "count": 371
+        "count": 372
       },
       {
         "hour": 18,
-        "count": 405
+        "count": 407
       },
       {
         "hour": 19,
@@ -563,11 +563,11 @@
     "byDayOfWeek": [
       {
         "dow": 0,
-        "count": 1154
+        "count": 1163
       },
       {
         "dow": 1,
-        "count": 649
+        "count": 672
       },
       {
         "dow": 2,
