@@ -383,7 +383,7 @@ function updateCurrentSiteInfo(link) {
     }
     // Add tags as a separate element
     const tags = document.getElementById('link-tags');
-    tags.textContent = `Tags: [${link.tags.join(', ')}]`;
+    tags.textContent = `Hashtags: ${link.tags.join(' ')}`;
 
 
     // Show stats and reset button states
