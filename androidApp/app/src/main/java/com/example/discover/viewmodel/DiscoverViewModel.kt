@@ -72,9 +72,12 @@ class DiscoverViewModel(
     val timeStats: StateFlow<TimeStats> = _timeStats.asStateFlow()
 
     // Persistent Settings Filter State - Default to "daily, daily-mobile" for tagsAllowlist
-    val tagsAllowlist =
-        MutableStateFlow(prefs.getString("tags_allow", "daily, daily-mobile") ?: "daily, daily-mobile")
-    val tagsBlocklist = MutableStateFlow(prefs.getString("tags_block", "optional, daily-desktop") ?: "optional, daily-desktop")
+    val tagsAllowlist = MutableStateFlow(
+        prefs.getString("tags_allow", "#daily #daily-mobile") ?: "#daily #daily-mobile"
+    )
+    val tagsBlocklist = MutableStateFlow(
+        prefs.getString("tags_block", "#optional #daily-desktop") ?: "#optional #daily-desktop"
+    )
     val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
     val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
 
@@ -84,6 +87,9 @@ class DiscoverViewModel(
     init {
         loadTimeStats()
     }
+
+    private fun parseTags(input: String): List<String> =
+        input.split(Regex("[\\s,]+")).map { it.trim() }.filter { it.isNotEmpty() }
 
     fun setReadOnlyMode(enabled: Boolean) {
         readOnlyModeEnabled.value = enabled
@@ -127,8 +133,8 @@ class DiscoverViewModel(
     }
 
     fun resetToDefaults() {
-        tagsAllowlist.value = "daily, daily-mobile"
-        tagsBlocklist.value = "optional, daily-desktop"
+        tagsAllowlist.value = "#daily #daily-mobile"
+        tagsBlocklist.value = "#optional #daily-desktop"
         urlsAllowlist.value = ""
         urlsBlocklist.value = ""
         _toastMessage.value = "Settings reset: Filters cleared"
@@ -138,10 +144,8 @@ class DiscoverViewModel(
     private fun updateLinksInBackground(logUser: Int) {
         viewModelScope.launch {
             try {
-                val tagsAllow =
-                    tagsAllowlist.value.split(",").map { it.trim() }.filter { it.isNotEmpty() }
-                val tagsBlock =
-                    tagsBlocklist.value.split(",").map { it.trim() }.filter { it.isNotEmpty() }
+                val tagsAllow = parseTags(tagsAllowlist.value)
+                val tagsBlock = parseTags(tagsBlocklist.value)
                 val urlsAllow =
                     urlsAllowlist.value.split(" ").map { it.trim() }.filter { it.isNotEmpty() }
                 val urlsBlock =
