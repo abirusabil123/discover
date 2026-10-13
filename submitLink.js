@@ -28,7 +28,7 @@ async function submitLink(event) {
     submitBtn.classList.add('btn-loading');
     submitBtn.textContent = 'Adding...';
 
-    const tagsInput = document.getElementById('add-link-tags');
+    const tagsInput = document.getElementById('add-link-hashtags');
     selectedTags = tagsInput.value.split(",")
         .map(tag => tag.trim().replace(/\s+/g, "")) // remove internal spaces
         .filter(tag => tag.length > 0);

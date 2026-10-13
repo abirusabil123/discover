@@ -144,8 +144,10 @@ body {
 }
 
 /* Style for the description text */
-.link-tags {
-    color: #888;
+.link-hashtags {
+    font-weight: bold;
+    margin-right: 6px;
+    color: white;
     text-align: center;
     word-break: break-word;
 }

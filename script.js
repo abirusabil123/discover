@@ -382,8 +382,8 @@ function updateCurrentSiteInfo(link) {
         description.textContent = link.description;
     }
     // Add tags as a separate element
-    const tags = document.getElementById('link-tags');
-    tags.textContent = `Hashtags: ${link.tags.join(' ')}`;
+    const tags = document.getElementById('link-hashtags');
+    tags.innerHTML = link.tags.map(t => `<span class="hashtag">${t}</span>`).join(' ');
 
 
     // Show stats and reset button states
