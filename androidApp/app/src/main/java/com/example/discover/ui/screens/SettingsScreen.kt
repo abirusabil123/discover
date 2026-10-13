@@ -97,7 +97,7 @@ fun SettingsScreen(
             Spacer(modifier = Modifier.height(Spacing.medium))
 
             Text(
-                text = "Filter by Tags (comma separated):",
+                text = "Filter by Hashtags (space separated):",
                 style = MaterialTheme.typography.titleMedium,
                 color = TextPrimary,
                 modifier = Modifier.fillMaxWidth(),

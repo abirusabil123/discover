@@ -5,8 +5,8 @@ let individualBlockedUrls = [];
 const DEFAULT_SETTINGS = {
     filterMode: 'lists',
     lists: {
-        tagsAllowlist: '#daily,#daily-desktop',
-        tagsBlocklist: '#daily-mobile,#optional',
+        tagsAllowlist: '#daily #daily-desktop',
+        tagsBlocklist: '#daily-mobile #optional',
         urlsAllowlist: '',
         urlsBlocklist: ''
     },
@@ -15,6 +15,10 @@ const DEFAULT_SETTINGS = {
     },
     splashEnabled: false,
 };
+
+function parseTags(str) {
+    return str.split(/[\s,]+/).map(t => t.trim()).filter(Boolean);
+}
 
 function getStoredSettings() {
     try {
@@ -36,8 +40,6 @@ function getFilterList() {
     const urlsInputBlocklist = document.getElementById('filter-urls-blocklist');
 
     if (tagsInputAllowlist) {
-        saveSettings();
-
         const mode = document.querySelector('input[name="filter-mode"]:checked')?.value || 'lists';
         if (mode === 'individual') {
             return {
@@ -50,8 +52,8 @@ function getFilterList() {
 
         // list mode
         return {
-            tagsAllowlist: tagsInputAllowlist.value.split(',').map(t => t.trim()).filter(Boolean),
-            tagsBlocklist: tagsInputBlocklist.value.split(',').map(t => t.trim()).filter(Boolean),
+            tagsAllowlist: parseTags(tagsInputAllowlist.value),
+            tagsBlocklist: parseTags(tagsInputBlocklist.value),
             urlsAllowlist: urlsInputAllowlist.value.split(' ').map(t => t.trim()).filter(Boolean),
             urlsBlocklist: urlsInputBlocklist.value.split(' ').map(t => t.trim()).filter(Boolean)
         };
@@ -70,8 +72,8 @@ function getFilterList() {
         // list mode
         const lists = settings.lists;
         return {
-            tagsAllowlist: lists.tagsAllowlist.split(',').map(t => t.trim()).filter(Boolean),
-            tagsBlocklist: lists.tagsBlocklist.split(',').map(t => t.trim()).filter(Boolean),
+            tagsAllowlist: parseTags(lists.tagsAllowlist),
+            tagsBlocklist: parseTags(lists.tagsBlocklist),
             urlsAllowlist: lists.urlsAllowlist.split(' ').map(t => t.trim()).filter(Boolean),
             urlsBlocklist: lists.urlsBlocklist.split(' ').map(t => t.trim()).filter(Boolean)
         };
