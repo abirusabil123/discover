@@ -611,10 +611,10 @@ document.addEventListener('keydown', function (event) {
             event.preventDefault();
             location.href = 'settings.html';
             break;
-        case 'd':
-            event.preventDefault();
-            location.href = 'dashboard.html';
-            break;
+        // case 'd':
+        //     event.preventDefault();
+        //     location.href = 'dashboard.html';
+        //     break;
     }
 });
 
