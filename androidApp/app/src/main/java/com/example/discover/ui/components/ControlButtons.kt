@@ -2,17 +2,33 @@
 
 package com.example.discover.ui.components
 
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
-import com.example.discover.ui.theme.*
+import androidx.compose.ui.text.style.TextAlign
+import com.example.discover.ui.theme.PrimaryGreenDark
+import com.example.discover.ui.theme.Spacing
+import com.example.discover.ui.theme.SuccessColor
+import com.example.discover.ui.theme.SurfaceDark
+import com.example.discover.ui.theme.TextPrimary
 
 // --- Using Approximation ---
 private val APPROX_SINGLE_CONTROL_BUTTON_WIDTH =
-    Spacing.small * 12 // Adjusted estimate based on "⬅️ Previous" or "🎲 Random"
+    Spacing.small * 12 // Adjusted estimate based on "⬅️ Previous" or "I'm Feeling Lucky"
 private val MIN_INTER_BUTTON_SPACING_ROW = Spacing.small
 private const val NUMBER_OF_MAIN_CONTROL_BUTTONS = 3
 
@@ -90,7 +106,11 @@ private fun PreviousButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
             horizontal = Spacing.small, vertical = Spacing.medium
         ), modifier = modifier
     ) {
-        Text("⬅️Previous", fontSize = MaterialTheme.typography.labelMedium.fontSize)
+        Text(
+            "⬅️Previous",
+            textAlign = TextAlign.Center,
+            fontSize = MaterialTheme.typography.labelMedium.fontSize
+        )
     }
 }
 
@@ -103,7 +123,11 @@ private fun RandomButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
             horizontal = Spacing.small, vertical = Spacing.medium
         ), modifier = modifier
     ) {
-        Text("🎲Random", fontSize = MaterialTheme.typography.labelMedium.fontSize)
+        Text(
+            "I'm Feeling Lucky",
+            textAlign = TextAlign.Center,
+            fontSize = MaterialTheme.typography.labelMedium.fontSize
+        )
     }
 }
 
@@ -116,6 +140,10 @@ private fun NextButton(onClick: () -> Unit, modifier: Modifier = Modifier) {
             horizontal = Spacing.small, vertical = Spacing.medium
         ), modifier = modifier
     ) {
-        Text("Next➡️", fontSize = MaterialTheme.typography.labelMedium.fontSize)
+        Text(
+            "Next➡️",
+            textAlign = TextAlign.Center,
+            fontSize = MaterialTheme.typography.labelMedium.fontSize
+        )
     }
 }

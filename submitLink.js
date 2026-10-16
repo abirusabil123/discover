@@ -1,0 +1,79 @@
+/* Copyright (c) 2025 Mohammad Sheraj */
+/* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
+
+async function submitLink(event) {
+    event.preventDefault();
+
+    // Clear any existing errors
+    hideModalError();
+    clearAllInputErrors();
+
+    // Check if form is valid
+    const form = event.target;
+    if (!form.checkValidity()) {
+        // Trigger validation for the first invalid field
+        const firstInvalid = form.querySelector(':invalid');
+        if (firstInvalid) {
+            firstInvalid.focus();
+            handleInvalidInput({ target: firstInvalid, preventDefault: () => { } });
+        }
+        return;
+    }
+
+    const submitBtn = document.getElementById('submit-btn');
+    const originalText = submitBtn.textContent;
+
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.classList.add('btn-loading');
+    submitBtn.textContent = 'Adding...';
+
+    const tagsInput = document.getElementById('add-link-hashtags');
+    let selectedTags = tagsInput.value
+        .split(/[\s,]+/)          // split on spaces and/or commas
+        .map(tag => tag.trim().replace(/\s+/g, "")) // remove internal spaces
+        .filter(tag => tag.length > 0);
+
+    try {
+        const formData = new FormData(event.target);
+        const linkData = {
+            name: formData.get('name'),
+            url: normalizeUrl(formData.get('url')),
+            description: formData.get('description'),
+            tags: selectedTags.length > 0 ? selectedTags : ['user-submitted'],
+            views: 0,
+            likesDesktop: 0,
+            dislikesDesktop: 0
+        };
+
+        await apiCall('/addlink', {
+            method: 'POST',
+            body: linkData
+        });
+
+        // Success — apiCall threw if we got here on a non-2xx
+        showSuccessMessage('Link submitted for spam review successfully! The link will be live globally after review and approval 🎉');
+        hideAddLinkForm();
+        selectedTags = [];
+
+    } catch (error) {
+        console.error('Error submitting link:', error);
+        if (error.name === 'AbortError') {
+            // User navigated away mid-submit — stay quiet.
+            return;
+        }
+        if (error.status === 409) {
+            showModalError('This link already exists in the database. Please try a different URL.');
+        } else if (error.body && error.body.error) {
+            showModalError(error.body.error);
+        } else if (error.status) {
+            showModalError(`Failed to add link (HTTP ${error.status})`);
+        } else {
+            showModalError('Failed to add link. Please try again.');
+        }
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('btn-loading');
+        submitBtn.textContent = originalText;
+    }
+}

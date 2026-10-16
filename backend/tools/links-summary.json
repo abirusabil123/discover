@@ -1,0 +1,607 @@
+{
+  "metadata": {
+    "apiUrl": "https://backenddiscover.duckdns.org:8443",
+    "totalLinks": 158
+  },
+  "analysis": {
+    "total": 158,
+    "filteredMobile": 58,
+    "filteredDesktop": 13,
+    "blockedMobileUrls": [
+      "http://radio.garden/",
+      "https://10minutemail.com/",
+      "https://abirusabil123.github.io/",
+      "https://annas-archive.org/",
+      "https://annas-archive.se/",
+      "https://app.diagrams.net/",
+      "https://archive.org/",
+      "https://asoftmurmur.com/",
+      "https://canon.com/",
+      "https://chat.deepseek.com/",
+      "https://codenames.game/",
+      "https://coffitivity.com/",
+      "https://crowdparty.app/",
+      "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
+      "https://dontevenreply.com/",
+      "https://easywaytoquran.com/4-qul-in-islam-2/",
+      "https://github.com/alex/what-happens-when",
+      "https://github.com/pllk/cphb/",
+      "https://godbolt.org/",
+      "https://hashnode.com/",
+      "https://hashnode.com/featured",
+      "https://hashnode.com/recent",
+      "https://huggingface.co/spaces/hesamation/primer-llm-embedding",
+      "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
+      "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
+      "https://libgen.li/",
+      "https://littlealchemy2.com/",
+      "https://loops.video/",
+      "https://martinfowler.com/articles/deepseek-papers.html",
+      "https://mojapp.in/",
+      "https://neal.fun/deep-sea",
+      "https://nitter.net/",
+      "https://play-cs.com/",
+      "https://quickdraw.withgoogle.com/",
+      "https://reverser.dev/linux-kernel-explorer",
+      "https://sci-hub.se/",
+      "https://sci-net.xyz/",
+      "https://screamintothevoid.com/",
+      "https://skribbl.io/",
+      "https://sony.com/",
+      "https://stellarium-web.org/",
+      "https://tails.net/",
+      "https://theuselessweb.com/",
+      "https://thisissand.com/",
+      "https://twitter.com/",
+      "https://window-swap.com/",
+      "https://www.boredbutton.com/",
+      "https://www.connectedpapers.com/",
+      "https://www.deepseek.com/en",
+      "https://www.example.com/",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+      "https://www.kaggle.com/",
+      "https://www.overleaf.com/",
+      "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
+      "https://www.reddit.com/",
+      "https://xkcd.com/"
+    ],
+    "blockedDesktopUrls": [
+      "https://abirusabil123.github.io/",
+      "https://canon.com/",
+      "https://easywaytoquran.com/4-qul-in-islam-2/",
+      "https://loops.video/",
+      "https://mojapp.in/",
+      "https://nitter.net/",
+      "https://sci-net.xyz/",
+      "https://twitter.com/",
+      "https://www.example.com/",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+      "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF"
+    ],
+    "byReason": {},
+    "byScore": {
+      "0%": 91,
+      "1-25%": 6,
+      "26-50%": 1,
+      "51-75%": 1,
+      "76-79%": 0,
+      "80-100%": 59
+    },
+    "byVoteCount": {
+      "0 votes": 61,
+      "1-3 votes": 24,
+      "4-10 votes": 12,
+      "11-50 votes": 2,
+      "50+ votes": 59
+    }
+  },
+  "visitors": {
+    "byCountry": [
+      {
+        "country": "",
+        "count": 4883
+      },
+      {
+        "country": "AE",
+        "count": 3
+      },
+      {
+        "country": "AT",
+        "count": 5
+      },
+      {
+        "country": "AU",
+        "count": 6
+      },
+      {
+        "country": "BA",
+        "count": 8
+      },
+      {
+        "country": "BE",
+        "count": 14
+      },
+      {
+        "country": "BG",
+        "count": 129
+      },
+      {
+        "country": "CA",
+        "count": 199
+      },
+      {
+        "country": "CN",
+        "count": 74
+      },
+      {
+        "country": "DE",
+        "count": 37
+      },
+      {
+        "country": "EE",
+        "count": 4
+      },
+      {
+        "country": "FI",
+        "count": 2
+      },
+      {
+        "country": "FR",
+        "count": 6
+      },
+      {
+        "country": "GB",
+        "count": 67
+      },
+      {
+        "country": "HK",
+        "count": 30
+      },
+      {
+        "country": "ID",
+        "count": 1
+      },
+      {
+        "country": "IN",
+        "count": 164
+      },
+      {
+        "country": "IR",
+        "count": 41
+      },
+      {
+        "country": "JP",
+        "count": 32
+      },
+      {
+        "country": "KG",
+        "count": 1
+      },
+      {
+        "country": "KR",
+        "count": 3
+      },
+      {
+        "country": "MD",
+        "count": 1
+      },
+      {
+        "country": "MN",
+        "count": 2
+      },
+      {
+        "country": "MY",
+        "count": 30
+      },
+      {
+        "country": "NG",
+        "count": 2
+      },
+      {
+        "country": "NL",
+        "count": 56
+      },
+      {
+        "country": "PL",
+        "count": 1
+      },
+      {
+        "country": "RO",
+        "count": 13
+      },
+      {
+        "country": "RU",
+        "count": 17
+      },
+      {
+        "country": "SC",
+        "count": 4
+      },
+      {
+        "country": "SG",
+        "count": 60
+      },
+      {
+        "country": "SK",
+        "count": 1
+      },
+      {
+        "country": "TR",
+        "count": 30
+      },
+      {
+        "country": "US",
+        "count": 1248
+      },
+      {
+        "country": "ZA",
+        "count": 30
+      }
+    ],
+    "byMonth": [
+      {
+        "month": "202610",
+        "count": 642
+      },
+      {
+        "month": "202609",
+        "count": 2908
+      },
+      {
+        "month": "202608",
+        "count": 2060
+      },
+      {
+        "month": "202607",
+        "count": 758
+      },
+      {
+        "month": "202606",
+        "count": 607
+      },
+      {
+        "month": "202605",
+        "count": 229
+      }
+    ],
+    "byPlatform": [
+      {
+        "platform": "",
+        "count": 2095
+      },
+      {
+        "platform": "desktop",
+        "count": 4387
+      },
+      {
+        "platform": "discover-android",
+        "count": 25
+      },
+      {
+        "platform": "Linux armv81",
+        "count": 15
+      },
+      {
+        "platform": "Linux armv81 discover-website",
+        "count": 43
+      },
+      {
+        "platform": "Linux x86_64",
+        "count": 3
+      },
+      {
+        "platform": "Linux x86_64 discover-website",
+        "count": 110
+      },
+      {
+        "platform": "Linux x86_64discover-website",
+        "count": 2
+      },
+      {
+        "platform": "MacIntel discover-website",
+        "count": 2
+      },
+      {
+        "platform": "mobile",
+        "count": 472
+      },
+      {
+        "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
+        "count": 7
+      },
+      {
+        "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
+        "count": 22
+      },
+      {
+        "platform": "Mozilla/5.0 (Linux; Android 9; VirtualBox) AppleWe",
+        "count": 2
+      },
+      {
+        "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0",
+        "count": 2
+      },
+      {
+        "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb",
+        "count": 13
+      },
+      {
+        "platform": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+        "count": 4
+      }
+    ],
+    "byProduct": [
+      {
+        "product": "abirusabil123.github.io",
+        "count": 60
+      },
+      {
+        "product": "discover-backend",
+        "count": 7136
+      },
+      {
+        "product": "personal website",
+        "count": 8
+      }
+    ],
+    "byOrigin": [
+      {
+        "origin": "",
+        "count": 2598
+      },
+      {
+        "origin": "file://",
+        "count": 4
+      },
+      {
+        "origin": "http://discoverall.space",
+        "count": 126
+      },
+      {
+        "origin": "http://localhost:44631",
+        "count": 2842
+      },
+      {
+        "origin": "https://abirusabil123.github.io",
+        "count": 22
+      },
+      {
+        "origin": "https://abirusabil123.github.io/",
+        "count": 9
+      },
+      {
+        "origin": "https://abirusabil123.github.io/art.html",
+        "count": 5
+      },
+      {
+        "origin": "https://abirusabil123.github.io/index.html",
+        "count": 2
+      },
+      {
+        "origin": "https://abirusabil123.github.io/products.html",
+        "count": 4
+      },
+      {
+        "origin": "https://abirusabil123.github.io/shayaris.html",
+        "count": 5
+      },
+      {
+        "origin": "https://abirusabil123.github.io/sketches.html",
+        "count": 7
+      },
+      {
+        "origin": "https://abirusabil123.github.io/work-life.html",
+        "count": 7
+      },
+      {
+        "origin": "https://bing.com/",
+        "count": 1
+      },
+      {
+        "origin": "https://discoverall.space",
+        "count": 1569
+      },
+      {
+        "origin": "https://www.linkedin.com/",
+        "count": 2
+      },
+      {
+        "origin": "null",
+        "count": 1
+      }
+    ],
+    "byPath": [
+      {
+        "path": "/",
+        "count": 2108
+      },
+      {
+        "path": "/addlink",
+        "count": 12
+      },
+      {
+        "path": "/art.html",
+        "count": 4
+      },
+      {
+        "path": "/getLinks",
+        "count": 5041
+      },
+      {
+        "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
+        "count": 3
+      },
+      {
+        "path": "/home/zeitgeist/Documents/github/abirusabil123.github.io/index.html",
+        "count": 1
+      },
+      {
+        "path": "/index.html",
+        "count": 4
+      },
+      {
+        "path": "/products.html",
+        "count": 10
+      },
+      {
+        "path": "/shayaris.html",
+        "count": 8
+      },
+      {
+        "path": "/sketches.html",
+        "count": 6
+      },
+      {
+        "path": "/work-life.html",
+        "count": 7
+      }
+    ],
+    "byBotStatus": [
+      {
+        "status": "Human",
+        "count": 5514
+      },
+      {
+        "status": "Bot",
+        "count": 1690
+      }
+    ],
+    "byHourOfDay": [
+      {
+        "hour": 0,
+        "count": 127
+      },
+      {
+        "hour": 1,
+        "count": 106
+      },
+      {
+        "hour": 2,
+        "count": 110
+      },
+      {
+        "hour": 3,
+        "count": 153
+      },
+      {
+        "hour": 4,
+        "count": 232
+      },
+      {
+        "hour": 5,
+        "count": 1102
+      },
+      {
+        "hour": 6,
+        "count": 499
+      },
+      {
+        "hour": 7,
+        "count": 327
+      },
+      {
+        "hour": 8,
+        "count": 392
+      },
+      {
+        "hour": 9,
+        "count": 281
+      },
+      {
+        "hour": 10,
+        "count": 192
+      },
+      {
+        "hour": 11,
+        "count": 185
+      },
+      {
+        "hour": 12,
+        "count": 300
+      },
+      {
+        "hour": 13,
+        "count": 361
+      },
+      {
+        "hour": 14,
+        "count": 435
+      },
+      {
+        "hour": 15,
+        "count": 562
+      },
+      {
+        "hour": 16,
+        "count": 610
+      },
+      {
+        "hour": 17,
+        "count": 373
+      },
+      {
+        "hour": 18,
+        "count": 408
+      },
+      {
+        "hour": 19,
+        "count": 123
+      },
+      {
+        "hour": 20,
+        "count": 95
+      },
+      {
+        "hour": 21,
+        "count": 91
+      },
+      {
+        "hour": 22,
+        "count": 68
+      },
+      {
+        "hour": 23,
+        "count": 72
+      }
+    ],
+    "byDayOfWeek": [
+      {
+        "dow": 0,
+        "count": 1163
+      },
+      {
+        "dow": 1,
+        "count": 798
+      },
+      {
+        "dow": 2,
+        "count": 748
+      },
+      {
+        "dow": 3,
+        "count": 859
+      },
+      {
+        "dow": 4,
+        "count": 590
+      },
+      {
+        "dow": 5,
+        "count": 660
+      },
+      {
+        "dow": 6,
+        "count": 2386
+      }
+    ]
+  },
+  "errors": {
+    "count": 169,
+    "unresolved": 0,
+    "allUnresolvedErrors": []
+  }
+}

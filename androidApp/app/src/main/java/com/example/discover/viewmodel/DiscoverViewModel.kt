@@ -2,10 +2,16 @@
 
 package com.example.discover.viewmodel
 
-// import android.content.Context // No longer directly needed in constructor
-// import android.widget.Toast // Remove this, ViewModel won't show Toasts directly
 import android.app.Application
+import android.app.DownloadManager
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
+import android.os.Environment
 import android.util.Log
+import android.webkit.MimeTypeMap
+import androidx.core.content.edit
+import androidx.core.net.toUri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.discover.data.Link
@@ -20,21 +26,19 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+private const val TAG = "DiscoverViewModel"
+
 // Enum to represent user interaction
 enum class UserInteractionState {
     NONE, LIKED, DISLIKED
 }
 
 class DiscoverViewModel(
-    application: Application // Change to Application
-) : AndroidViewModel(application) { // Extend AndroidViewModel
-    private companion object {
-        private const val TAG = "DiscoverViewModel"
-    }
-
+    application: Application
+) : AndroidViewModel(application) {
     private val apiService = ApiService()
+    private val prefs = application.getSharedPreferences("settings_prefs", Context.MODE_PRIVATE)
 
-    // ... (all your existing StateFlows for UI data remain the same)
     private val _links = MutableStateFlow<List<Link>>(emptyList())
     val links: StateFlow<List<Link>> = _links.asStateFlow()
 
@@ -67,8 +71,29 @@ class DiscoverViewModel(
     private val _timeStats = MutableStateFlow(TimeStats(0, 0, 0, 0, 0, 0, 0))
     val timeStats: StateFlow<TimeStats> = _timeStats.asStateFlow()
 
+    // Persistent Settings Filter State - Default to "daily, daily-mobile" for tagsAllowlist
+    val tagsAllowlist = MutableStateFlow(
+        prefs.getString("tags_allow", "#daily #daily-mobile") ?: "#daily #daily-mobile"
+    )
+    val tagsBlocklist = MutableStateFlow(
+        prefs.getString("tags_block", "#optional #daily-desktop") ?: "#optional #daily-desktop"
+    )
+    val urlsAllowlist = MutableStateFlow(prefs.getString("urls_allow", "") ?: "")
+    val urlsBlocklist = MutableStateFlow(prefs.getString("urls_block", "") ?: "")
+
+    // Persistent read‑only mode (default ON)
+    val readOnlyModeEnabled = MutableStateFlow(prefs.getBoolean("read_only_mode", true))
+
     init {
         loadTimeStats()
+    }
+
+    private fun parseTags(input: String): List<String> =
+        input.split(Regex("[\\s,]+")).map { it.trim() }.filter { it.isNotEmpty() }
+
+    fun setReadOnlyMode(enabled: Boolean) {
+        readOnlyModeEnabled.value = enabled
+        prefs.edit { putBoolean("read_only_mode", enabled) }
     }
 
     // Call when app becomes visible
@@ -97,27 +122,54 @@ class DiscoverViewModel(
         Log.d(TAG, "End Start with fastest data")
     }
 
-    private fun updateLinksInBackground() {
+    fun applyFilters() {
+        prefs.edit {
+            putString("tags_allow", tagsAllowlist.value)
+            putString("tags_block", tagsBlocklist.value)
+            putString("urls_allow", urlsAllowlist.value)
+            putString("urls_block", urlsBlocklist.value)
+        }
+        updateLinksInBackground(0)
+    }
+
+    fun resetToDefaults() {
+        tagsAllowlist.value = "#daily #daily-mobile"
+        tagsBlocklist.value = "#optional #daily-desktop"
+        urlsAllowlist.value = ""
+        urlsBlocklist.value = ""
+        _toastMessage.value = "Settings reset: Filters cleared"
+        applyFilters()
+    }
+
+    private fun updateLinksInBackground(logUser: Int) {
         viewModelScope.launch {
             try {
-                val linksList = apiService.getLinks()
+                val tagsAllow = parseTags(tagsAllowlist.value)
+                val tagsBlock = parseTags(tagsBlocklist.value)
+                val urlsAllow =
+                    urlsAllowlist.value.split(" ").map { it.trim() }.filter { it.isNotEmpty() }
+                val urlsBlock =
+                    urlsBlocklist.value.split(" ").map { it.trim() }.filter { it.isNotEmpty() }
+
+                val linksList =
+                    apiService.getLinks(tagsAllow, tagsBlock, urlsAllow, urlsBlock, logUser)
                 if (linksList.isNotEmpty()) {
                     _isApiAvailable.value = 1
-                    Log.d(
-                        TAG,
-                        "API returned ${linksList.size} items. First item from API before assigning: URL=${linksList.firstOrNull()?.url}, Name=${linksList.firstOrNull()?.name}"
-                    )
-                    // Update the main list of links
                     _links.value = linksList
-                    Log.d(
-                        TAG,
-                        "_links.value updated. Size: ${_links.value.size}. First item URL: ${_links.value.firstOrNull()?.url}, Name: ${_links.value.firstOrNull()?.name}"
-                    )
+
+                    if (tagsAllow.isNotEmpty() || tagsBlock.isNotEmpty() || urlsAllow.isNotEmpty() || urlsBlock.isNotEmpty()) {
+                        _toastMessage.value = "✅ Filter applied: ${linksList.size} links found"
+                    } else {
+                        _toastMessage.value = "✅ Filters cleared: ${linksList.size} links found"
+                    }
                 } else {
                     _isApiAvailable.value = -1
+                    _toastMessage.value = "No links found for the applied filters"
+                    _links.value = emptyList()
                 }
             } catch (e: Exception) {
                 _isApiAvailable.value = -1
+                _toastMessage.value = "❌ Failed to update links"
                 e.printStackTrace()
             }
         }
@@ -202,7 +254,7 @@ class DiscoverViewModel(
     fun onWebViewPageVisible() {
         _isWebViewLoading.value = false
         startWithFastestData()
-        updateLinksInBackground()
+        updateLinksInBackground(1)
     }
 
     fun likeLink() {
@@ -317,8 +369,7 @@ class DiscoverViewModel(
     fun addLink(name: String, url: String, description: String, tags: List<String>) {
         viewModelScope.launch {
             val request = Link(name = name, url = url, description = description, tags = tags)
-            val result = apiService.addLink(request)
-            val message = when (result) {
+            val message = when (val result = apiService.addLink(request)) {
                 is AddLinkResult.Success -> {
                     hideAddLinkDialog() // Hide dialog on success
                     "Link submitted for spam review successfully! The link will be live globally after review and approval 🎉"
@@ -335,5 +386,43 @@ class DiscoverViewModel(
     // Call this from the UI after the toast is shown
     fun toastMessageShown() {
         _toastMessage.value = null
+    }
+
+    fun copyToClipboard(text: String) {
+        val clipboard =
+            getApplication<Application>().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clip = ClipData.newPlainText("Discover Link", text)
+        clipboard.setPrimaryClip(clip)
+        _toastMessage.value = "Link copied to clipboard"
+    }
+
+    fun downloadMedia(url: String, userAgent: String) {
+        try {
+            val request = DownloadManager.Request(url.toUri())
+            request.addRequestHeader("User-Agent", userAgent)
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+
+            // Extract file name from URL or use a default
+            var fileName =
+                url.substringAfterLast("/").substringBefore("?").ifEmpty { "downloaded_file" }
+
+            // Ensure file has an extension
+            if (!fileName.contains(".")) {
+                val ext = MimeTypeMap.getFileExtensionFromUrl(url)
+                if (ext.isNotEmpty()) {
+                    fileName = "$fileName.$ext"
+                }
+            }
+
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName)
+
+            val downloadManager =
+                getApplication<Application>().getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+            downloadManager.enqueue(request)
+            _toastMessage.value = "Download started..."
+        } catch (e: Exception) {
+            _toastMessage.value = "Download failed: ${e.message}"
+            e.printStackTrace()
+        }
     }
 }

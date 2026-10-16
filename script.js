@@ -3,44 +3,26 @@
 
 // script.js
 // Global variables
-let links = [];
-let currentIndex = -1;
-let linkHistory = [];
-let visitedLinks = [];
-let isLoading = false;
-let currentLinkUrl = null;
-let selectedTags = [];
-const userActions = new Map();
+let links = STATIC.SAMPLE_LINKS; // Filtered list of links loaded from static fallback or API
+let allLinks = STATIC.SAMPLE_LINKS; // Current list of alllinks loaded from static fallback or API
+let apiLinks; // temporary storage for API call.
+let apiAllLinks; // temporary storage for API call.
+let linkHistory = []; // History of visited link objects (preserved across list updates)
+let currentIndex = -1; // Index of current link in linkHistory (not in links)
+let visitedLinks = new Set(); // URLs of links already visited this session (Set ensures uniqueness)
+let currentLinkUrl = null; // URL of the currently displayed link (used for stats actions)
+const userActions = new Map(); // Tracks user actions in session per link URL to prevent duplicate server calls
 
 const UI_ANIMATION_DELAY = 10;
 const FOCUS_DELAY = 100;
+const SPLASH_WAIT = 800;
+const LOADING_WAIT = 1000;
 const RESET_DELAY = 2000;
+const SPLASH_DELAY = 60000;
 const RESET_DELAY_LONG = 10000;
-
-const API_BASE_URL = 'https://backenddiscover.duckdns.org:8443';
-const API_TIMEOUT = 3000;
-const ENABLE_FALLBACK = true;
+const MAX_HISTORY_LENGTH = 1024;
 const ENABLE_VIEW_TRACKING = true;
 const ERROR_MESSAGE = 'Unable to connect to the server. Please make sure your local backend is running.';
-
-// Add at top of script.js after constants
-async function logFrontendError(message, level = 'error') {
-    try {
-        await fetch(`${API_BASE_URL}/log-error`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                source: 'frontend',
-                level: level,
-                message: message,
-                user_agent: navigator.userAgent
-            })
-        });
-        console.error('Successfully logged frontend error:', message);
-    } catch (error) {
-        console.error('Failed to log frontend error:', message);
-    }
-}
 
 // Initialize the app when the page loads
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,91 +31,107 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initializeApp() {
-    console.log('Initializing app...');
-    console.log('Using API mode');
-    loadLinksFromAPI();
-}
+    console.log('Initializing app splash...');
+    const splash = document.getElementById('splash');
+    if (splash && !splash.classList.contains('splash-off')) {
+        const countdownEl = document.getElementById('splash-countdown');
+        let remaining = Math.round(SPLASH_DELAY / 1000);
+        if (countdownEl) countdownEl.textContent = remaining;
 
-async function loadLinksFromAPI(tagsAllowlist = [], tagsBlocklist = [], urlsAllowlist = [], urlsBlocklist = []) {
-    try {
-        isLoading = true;
+        const countdownInterval = setInterval(() => {
+            remaining--;
+            if (countdownEl) countdownEl.textContent = remaining;
+            if (remaining <= 0) clearInterval(countdownInterval);
+        }, 1000);
 
-        const query = `&tagsAllowlist=${encodeURIComponent(tagsAllowlist.join(','))}&tagsBlocklist=${encodeURIComponent(tagsBlocklist.join(','))}&urlsAllowlist=${encodeURIComponent(urlsAllowlist.join(' '))}&urlsBlocklist=${encodeURIComponent(urlsBlocklist.join(' '))}`;
-        const response = await fetch(`${API_BASE_URL}/getLinks?platform=desktop${query}`);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        links = await response.json();
-        console.log(`Loaded ${links.length} links from API.`);
-
-        enableControls();
-        document.getElementById('api-status-indicator').classList.add('online');
-
-        // ✅ Return the count so it can be shown in the success message
-        return links.length;
-    } catch (error) {
-        console.error('Failed to load links from API:', error);
-        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Fallback to static list.");
-
-        if (ENABLE_FALLBACK) loadStaticLinks();
-
-        document.getElementById('api-status-indicator').classList.add('offline');
-        return 0;
-    } finally {
-        isLoading = false;
+        let splashTimer;
+        const hideSplash = () => {
+            clearTimeout(splashTimer);
+            clearInterval(countdownInterval);
+            splash.removeEventListener('click', hideSplash);
+            splash.classList.add('splash-hide');
+            setTimeout(() => splash.classList.add('splash-off'), SPLASH_WAIT);
+        };
+        splashTimer = setTimeout(hideSplash, SPLASH_DELAY);
+        splash.addEventListener('click', hideSplash);
     }
-}
+    console.log('Initializing app...');
+    loadSettings();
+    enableControls();
 
-async function loadStaticLinks() {
-    if (STATIC.SAMPLE_LINKS && STATIC.SAMPLE_LINKS.length > 0) {
-        links = STATIC.SAMPLE_LINKS;
-        console.log(`Loaded ${links.length} links from static.js fallback`);
-        enableControls();
-    } else {
-        showErrorMessage('No static links available. Please check your static.js file.');
+    // Only fetch links when the main page's UI is actually present
+    if (document.getElementById('current-site-info')) {
+        loadLinksFromAPI(true);
     }
 }
 
 function enableControls() {
     console.log('enableControls called');
 
-    // Hide loading animation
-    const loadingAnimation = document.getElementById('loading-animation');
     const controlButtons = document.getElementById('control-buttons');
-
-    if (loadingAnimation) {
-        loadingAnimation.style.display = 'none';
-        console.log('Loading animation hidden');
-    }
-
     // Show control buttons with animation
     if (controlButtons) {
         controlButtons.style.display = 'flex';
-        console.log('Control buttons container shown');
-
+        controlButtons.style.visibility = 'visible';
         // Trigger animation after a brief delay
-        setTimeout(() => {
-            controlButtons.classList.add('show');
-            console.log('Control buttons animation triggered');
-        }, UI_ANIMATION_DELAY);
-    }
-
-    // Enable only the control buttons (not modal buttons)
-    if (controlButtons) {
-        const buttons = controlButtons.querySelectorAll('.btn');
-        console.log('Found control buttons:', buttons.length);
-
-        buttons.forEach((btn, index) => {
-            btn.disabled = false;
-            console.log(`Control button ${index} enabled:`, btn.textContent);
-        });
+        controlButtons.classList.add('show');
+        console.log('Control buttons animation triggered');
     }
 }
 
+async function loadLinksFromAPI(logUser) {
+    const { tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist } = getFilterList();
+    console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
+
+    const apiStatus = document.getElementById('api-status-indicator');
+    let linkCount = 0;
+    const websitePlatform = navigator.platform + ' discover-website';
+
+    try {
+        apiLinks = await apiCall('/getLinks', {
+            params: {
+                platform: websitePlatform,
+                logUser: logUser ? 1 : 0,
+                tagsAllowlist: tagsAllowlist.join(','),
+                tagsBlocklist: tagsBlocklist.join(','),
+                urlsAllowlist: urlsAllowlist.join(' '),
+                urlsBlocklist: urlsBlocklist.join(' ')
+            }
+        });
+        console.log(`Loaded ${apiLinks.length} apiLinks from API.`);
+        linkCount = apiLinks.length;
+
+        apiAllLinks = await apiCall('/getLinks', {
+            params: { platform: websitePlatform, logUser: 0 }
+        });
+        console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
+
+        // ── success path only ─────────────────────────────
+        links = apiLinks;
+        allLinks = apiAllLinks;
+        if (apiStatus) apiStatus.classList.add('online');
+
+        const successBox = document.getElementById('filter-success');
+        if (successBox) {
+            const hasFilters = tagsAllowlist.length || tagsBlocklist.length ||
+                urlsAllowlist.length || urlsBlocklist.length;
+            successBox.textContent = hasFilters
+                ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
+                : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
+        }
+    } catch (error) {
+        if (error.name === 'AbortError') {
+            console.log('Link load aborted due to navigation');
+            return;                                    // finally would still run, but there's no finally now
+        }
+        console.error('Failed to load links from API:', error);
+        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
+        if (apiStatus) apiStatus.classList.add('offline');
+    }
+}
 
 function showErrorMessage(message) {
+    if (pageAbort.signal.aborted) return;          // page is going away — stay quiet
     // If an error box already exists, just update the text.
     const existing = document.querySelector('.error-message');
     if (existing) {
@@ -150,10 +148,8 @@ function showErrorMessage(message) {
     `;
 
     document.body.appendChild(errorDiv);
-    logFrontendError(message, 'error');
+    logFrontendError(message);
 }
-
-
 
 async function updateLinkStats(linkUrl, action) {
     if (!ENABLE_VIEW_TRACKING) {
@@ -168,7 +164,7 @@ async function updateLinkStats(linkUrl, action) {
     }
 
     // Find the link to get its URL
-    const link = links.find(w => w.url === linkUrl);
+    const link = links.find(w => w.url === linkUrl) || linkHistory.find(w => w.url === linkUrl);
     if (!link) {
         console.error(`Link not found with url: ${linkUrl}`);
         return;
@@ -207,27 +203,19 @@ async function updateLinkStats(linkUrl, action) {
 
     // Sync with server in the background
     try {
-        const response = await fetch(`${API_BASE_URL}/incrementView?url=${encodeURIComponent(link.url)}&action=${action}`, {
-            method: 'POST'
+        const result = await apiCall('/incrementView', {
+            method: 'POST',
+            params: { url: link.url, action: action }
         });
-
-        if (response.ok) {
-            const result = await response.json();
-            console.log(`Synced ${action} for ${linkUrl}:`, result);
-
-            // Update UI with actual server response (in case there were any server-side adjustments)
-            updateStatsDisplay(result);
-
-        } else {
-            console.error(`Failed to sync ${action} for ${linkUrl}:`, response.status);
-            // Optionally revert the optimistic update on error
-            // For now, we'll keep the optimistic update for better UX
-        }
+        console.log(`Synced ${action} for ${linkUrl}:`, result);
+        updateStatsDisplay(result);
     } catch (error) {
+        if (error.name === 'AbortError') {
+            console.log(`Sync ${action} for ${linkUrl} aborted due to navigation`);
+            return;
+        }
         console.error(`Failed to sync ${action} for ${linkUrl}:`, error);
         showErrorMessage(action + " action failed due to backend server unreachable: " + error.message);
-        // Optionally revert the optimistic update on error
-        // For now, we'll keep the optimistic update for better UX
     }
 }
 
@@ -285,36 +273,32 @@ function dislikesDesktopLink() {
 
 function loadRandomLink() {
     console.log('loadRandomLink called');
-    console.log('isLoading:', isLoading);
     console.log('links.length:', links.length);
     console.log('visitedLinks:', visitedLinks);
 
-    if (isLoading || links.length === 0) {
-        console.log('Cannot load random link - loading or no links');
+    if (links.length === 0) {
+        console.log('Cannot load random link - no links');
         return;
     }
 
     // Get a random link that hasn't been visited yet
-    const unvisitedLinks = links.filter((_, index) => !visitedLinks.includes(index));
+    const unvisitedLinks = links.filter(link => !visitedLinks.has(link.url));
     console.log('unvisitedLinks.length:', unvisitedLinks.length);
 
     if (unvisitedLinks.length === 0) {
         // All links have been visited, reset
         console.log('All links visited, resetting...');
-        visitedLinks = [];
-        linkHistory = [];
-        currentIndex = -1;
-        setTimeout(loadRandomLink, RESET_DELAY);
+        visitedLinks.clear();
+        loadRandomLink();
         return;
     }
 
     const randomIndex = Math.floor(Math.random() * unvisitedLinks.length);
     const link = unvisitedLinks[randomIndex];
-    const originalIndex = links.indexOf(link);
 
-    console.log('Selected random link:', link.name, 'at index:', originalIndex);
+    console.log('Selected random link:', link.name);
 
-    loadLink(originalIndex);
+    loadLink(link);
 }
 
 function loadNextLink() {
@@ -325,54 +309,50 @@ function loadNextLink() {
 
     if (currentIndex < linkHistory.length - 1) {
         currentIndex++;
-        const linkIndex = linkHistory[currentIndex];
-        loadLink(linkIndex, false);
+        const link = linkHistory[currentIndex];
+        loadLink(link, false);
     } else {
         loadRandomLink();
     }
 }
 
 function loadPreviousLink() {
+    console.log('loadPreviousLink() called');
     if (linkHistory.length === 0 || currentIndex <= 0) {
+        console.log('linkHistory.length', linkHistory.length, ' currentIndex', currentIndex);
         return;
     }
 
     currentIndex--;
-    const linkIndex = linkHistory[currentIndex];
-    loadLink(linkIndex, false);
+    const link = linkHistory[currentIndex];
+    loadLink(link, false);
 }
 
-function loadLink(index, addToHistory = true) {
-    console.log('loadLink called with index:', index, 'addToHistory:', addToHistory);
-
-    // Validate index and link
-    if (index < 0 || index >= links.length) {
-        console.error('Invalid link index:', index);
-        return;
-    }
-
-    const link = links[index];
+function loadLink(link, addToHistory = true) {
+    console.log('loadLink called with link:', link, 'addToHistory:', addToHistory);
     if (!link) {
-        console.error('Link not found at index:', index);
+        console.error('Link is null');
         return;
     }
-
     console.log('Link to load:', link);
 
     if (addToHistory) {
         // Add to history if it's a new link
         if (currentIndex < linkHistory.length - 1) {
-            // Remove any forward history if we're going back and then to a new site
+            // Remove any forward history if we're going back and then to a new random site
             linkHistory = linkHistory.slice(0, currentIndex + 1);
         }
-        linkHistory.push(index);
+        linkHistory.push(link);
+        // Limit history to fixed items to prevent unbounded growth
+        if (linkHistory.length > MAX_HISTORY_LENGTH) {
+            const excess = linkHistory.length - MAX_HISTORY_LENGTH;
+            linkHistory = linkHistory.slice(excess);
+        }
         currentIndex = linkHistory.length - 1;
     }
 
     // Mark as visited
-    if (!visitedLinks.includes(index)) {
-        visitedLinks.push(index);
-    }
+    visitedLinks.add(link.url);
 
     // Track the current link url for stats
     currentLinkUrl = link.url;
@@ -382,24 +362,8 @@ function loadLink(index, addToHistory = true) {
 
     // Optimistically increment views immediately
     if (link.url && ENABLE_VIEW_TRACKING) {
-        const viewsElement = document.getElementById('views-count');
-        if (viewsElement) {
-            const currentViews = parseInt(viewsElement.textContent) || 0;
-            viewsElement.textContent = currentViews + 1;
-
-            // Sync with server in the background
-            updateLinkStats(link.url, 'view');
-        }
+        updateLinkStats(link.url, 'view');
     }
-
-    // Open the link in a new window/tab
-    let urlToOpen = link.url;
-    if (!/^https?:\/\//i.test(urlToOpen)) {
-        urlToOpen = 'https://' + urlToOpen;
-    }
-
-    console.log('Opening link:', urlToOpen);
-    window.open(urlToOpen, '_blank');
 }
 
 function updateCurrentSiteInfo(link) {
@@ -409,7 +373,7 @@ function updateCurrentSiteInfo(link) {
     const dislikesDesktopBtn = document.getElementById('dislikesDesktop-btn');
 
     linkElement.href = link.url;
-    linkElement.textContent = `${link.name} - ${link.url}`;
+    linkElement.textContent = `${link.name} - ${link.url} - (Space)`;
 
     // Add description as a separate element
     const description = document.getElementById('link-description');
@@ -417,8 +381,8 @@ function updateCurrentSiteInfo(link) {
         description.textContent = link.description;
     }
     // Add tags as a separate element
-    const tags = document.getElementById('link-tags');
-    tags.textContent = `Tags: [${link.tags.join(', ')}]`;
+    const tags = document.getElementById('link-hashtags');
+    tags.innerHTML = link.tags.join(' ');
 
 
     // Show stats and reset button states
@@ -445,9 +409,6 @@ function showAddLinkForm() {
 
     // Clear any existing error messages
     hideModalError();
-
-    // Clear any existing tags
-    selectedTags = [];
 
     // Add custom validation listeners
     addCustomValidation();
@@ -531,9 +492,6 @@ function hideAddLinkForm() {
     // Reset form
     document.getElementById('add-link-form').reset();
 
-    // Reset tags
-    selectedTags = [];
-
     // Clear any error messages
     hideModalError();
 }
@@ -549,7 +507,7 @@ function showModalError(message) {
         // Scroll to error message
         errorDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-    logFrontendError(message, 'error');
+    logFrontendError(message);
 }
 
 function hideModalError() {
@@ -567,87 +525,6 @@ function normalizeUrl(url) {
         return 'https://' + url;
     }
     return url;
-}
-
-async function submitLink(event) {
-    event.preventDefault();
-
-    // Clear any existing errors
-    hideModalError();
-    clearAllInputErrors();
-
-    // Check if form is valid
-    const form = event.target;
-    if (!form.checkValidity()) {
-        // Trigger validation for the first invalid field
-        const firstInvalid = form.querySelector(':invalid');
-        if (firstInvalid) {
-            firstInvalid.focus();
-            handleInvalidInput({ target: firstInvalid, preventDefault: () => { } });
-        }
-        return;
-    }
-
-    const submitBtn = document.getElementById('submit-btn');
-    const originalText = submitBtn.textContent;
-
-    // Show loading state
-    submitBtn.disabled = true;
-    submitBtn.classList.add('btn-loading');
-    submitBtn.textContent = 'Adding...';
-
-    const tagsInput = document.getElementById('add-link-tags');
-    selectedTags = tagsInput.value.split(",")
-        .map(tag => tag.trim().replace(/\s+/g, "")) // remove internal spaces
-        .filter(tag => tag.length > 0);
-
-    try {
-        const formData = new FormData(event.target);
-        const linkData = {
-            name: formData.get('name'),
-            url: normalizeUrl(formData.get('url')),
-            description: formData.get('description'),
-            tags: selectedTags.length > 0 ? selectedTags : ['user-submitted'],
-            views: 0,
-            likesDesktop: 0,
-            dislikesDesktop: 0
-        };
-
-        const response = await fetch(`${API_BASE_URL}/addlink`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(linkData)
-        });
-
-        const result = await response.json();
-
-        if (response.ok) {
-            // Success
-            showSuccessMessage('Link submitted for spam review successfully! The link will be live globally after review and approval 🎉');
-            hideAddLinkForm();
-
-            // Reset tags
-            selectedTags = [];
-        } else {
-            // Handle specific error cases
-            if (response.status === 409) {
-                showModalError('This link already exists in the database. Please try a different URL.');
-            } else {
-                showModalError(result.error || 'Failed to add link');
-            }
-        }
-
-    } catch (error) {
-        console.error('Error submitting link:', error);
-        showModalError('Failed to add link. Please try again.');
-    } finally {
-        // Reset button state
-        submitBtn.disabled = false;
-        submitBtn.classList.remove('btn-loading');
-        submitBtn.textContent = originalText;
-    }
 }
 
 function showSuccessMessage(message) {
@@ -674,6 +551,13 @@ function showSuccessMessage(message) {
     }, RESET_DELAY_LONG);
 }
 
+function openCurrentLinkInNewTab() {
+    console.log('Opening link:', currentLinkUrl);
+    if (currentLinkUrl != null) {
+        window.open(currentLinkUrl, '_blank');
+    }
+}
+
 // Close modal when clicking outside
 document.addEventListener('click', function (event) {
     const modal = document.getElementById('add-link-modal');
@@ -692,7 +576,22 @@ document.addEventListener('keydown', function (event) {
         return;
     }
 
+    if (location.pathname.endsWith('settings') || location.pathname.endsWith('settings.html')) {
+        if (event.key == 's') {
+            location.href = 'index.html';
+        }
+        return;
+    }
+
     switch (event.key) {
+        case 'l':
+            event.preventDefault();
+            loadRandomLink();
+            openCurrentLinkInNewTab();
+            break;
+        case ' ':
+            openCurrentLinkInNewTab();
+            break;
         case 'ArrowRight':
             event.preventDefault();
             loadNextLink();
@@ -701,21 +600,42 @@ document.addEventListener('keydown', function (event) {
             event.preventDefault();
             loadPreviousLink();
             break;
-        case ' ':
+        case 's':
             event.preventDefault();
-            loadRandomLink();
+            location.href = 'settings.html';
             break;
-        case 'Escape':
-            const modal = document.getElementById('add-link-modal');
-            if (modal.style.display === 'flex') {
-                hideAddLinkForm();
-            }
+        // case 'd':
+        //     event.preventDefault();
+        //     location.href = 'dashboard.html';
+        //     break;
     }
 });
 
+// Scroll progress bar start
+const progressBar = document.getElementById('scrollProgressBar');
+function updateProgressBar() {
+    const scrollTop = window.scrollY;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = window.innerHeight;
+    const maxScroll = scrollHeight - clientHeight;
+    // If page is not scrollable, show full green bar
+    if (maxScroll <= 0) {
+        progressBar.style.width = '100%';
+        return;
+    }
+    let scrollPercent = (Math.ceil(scrollTop) / Math.floor(maxScroll)) * 100;
+    scrollPercent = Math.min(Math.ceil(scrollPercent), 100);
+    progressBar.style.width = scrollPercent + '%';
+}
+// Run on load and on scroll
+window.addEventListener('scroll', updateProgressBar);
+window.addEventListener('resize', updateProgressBar);
+window.addEventListener('load', updateProgressBar);
+// Scroll progress bar end
+
 // Add some fun Easter eggs
 let clickCount = 0;
-document.querySelector('.header h1').addEventListener('click', function () {
+document.querySelector('.header h1')?.addEventListener('click', function () {
     clickCount++;
     if (clickCount === 5) {
         this.textContent = '🎉 You found the secret! 🎉';
@@ -726,70 +646,10 @@ document.querySelector('.header h1').addEventListener('click', function () {
     }
 });
 
-
-// Settings screen toggle
-document.getElementById('settings-toggle').addEventListener('click', () => {
-    const settingsScreen = document.getElementById('settings-screen');
-    const btn = document.getElementById('settings-toggle');
-
-    if (settingsScreen.style.display === 'none') {
-        settingsScreen.style.display = 'flex';
-        btn.textContent = '⬅️';
-    } else {
-        settingsScreen.style.display = 'none';
-        btn.textContent = '⚙️';
-    }
-});
-
-async function applyTagsUrlsFilter() {
-    const tagsInputAllowlist = document.getElementById('filter-tags-allowlist');
-    const tagsInputBlocklist = document.getElementById('filter-tags-blocklist');
-    const urlsInputAllowlist = document.getElementById('filter-urls-allowlist');
-    const urlsInputBlocklist = document.getElementById('filter-urls-blocklist');
-    const successBox = document.getElementById('filter-success');
-
-    const tagsAllowlist = tagsInputAllowlist.value
-        .split(',')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-    const tagsBlocklist = tagsInputBlocklist.value
-        .split(',')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-
-    const urlsAllowlist = urlsInputAllowlist.value
-        .split(' ')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-    const urlsBlocklist = urlsInputBlocklist.value
-        .split(' ')
-        .map(t => t.trim())
-        .filter(t => t.length > 0);
-
-    console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
-
-    // ✅ Wait for API and get link count
-    const linkCount = await loadLinksFromAPI(tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist);
-
-    if (tagsAllowlist.length > 0 || tagsBlocklist.length > 0 || urlsAllowlist.length > 0 || urlsBlocklist.length > 0) {
-        successBox.textContent = `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`;
-    } else {
-        successBox.textContent = `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
-    }
-
-    successBox.style.display = 'inline-block';
-
-    // Auto-hide after 3 seconds
-    setTimeout(() => {
-        successBox.style.display = 'none';
-    }, 3000);
-}
-
 // Add at end of script.js
 window.addEventListener('error', (event) => {
     logFrontendError(`${event.message} at ${event.filename}:${event.lineno}`);
 });
-
 window.addEventListener('unhandledrejection', (event) => {
-    logFrontendError(`Unhandled promise rejection: ${event.reason}`);
+    logFrontendError(`Unhandled promise rejection: ${event.reason}`, 'error', event.reason?.stack);
 });

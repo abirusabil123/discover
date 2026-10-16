@@ -2,7 +2,7 @@
 /* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
 
 // tools/recreate-files.js
-import LINKS_TO_KEEP from './links-dump-to-keep.json' assert { type: 'json' };
+import LINKS_TO_KEEP from './links-dump.json' assert { type: 'json' };
 import { fileURLToPath } from 'url';
 import path from 'path';
 import fs from 'fs';
@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 
 
-const PROJECT_ROOT = path.join(__dirname, '..');
+const PROJECT_ROOT = path.join(__dirname, '../..');
 
 // --- Helpers ---
 function escapeSQL(str = '') {
@@ -55,6 +55,7 @@ function generateInitSQL(links) {
     const header = `-- Copyright (c) 2025 Mohammad Sheraj
 -- Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details.
 
+SET NAMES utf8mb4;
 CREATE TABLE IF NOT EXISTS visitors (
     id INT PRIMARY KEY AUTO_INCREMENT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -129,7 +130,11 @@ VALUES `;
     }).join(',\n    ');
 
     const content = `${header}${values} ON DUPLICATE KEY
-UPDATE url = url;`;
+UPDATE
+    name = VALUES(name),
+    description = VALUES(description),
+    tags = VALUES(tags),
+    reviewStatus = VALUES(reviewStatus);`;
     fs.mkdirSync(path.dirname(sqlPath), { recursive: true });
     fs.writeFileSync(sqlPath, content);
     console.log(`✅ init.sql regenerated (${links.length} entries)\n`);
@@ -142,6 +147,7 @@ function generateConfigJS(links) {
 
     const sampleLinks = links
         .filter(site => !needToIgnore(site.likesDesktop, site.dislikesDesktop))
+        // .filter(site => site.tags && site.tags.includes('positive'))
         .map((site, index) => ({
             name: site.name,
             url: site.url,
@@ -194,6 +200,8 @@ function generateKotlin(links) {
 
     const kotlinEntries = links
         .filter(site => !needToIgnore(site.likesMobile, site.dislikesMobile))
+        // .filter(site => site.tags && site.tags.includes('positive') && site.tags.includes('daily'))
+        // .filter(site => site.tags && !site.tags.includes('optional'))
         .map((site, i) => {
             const name = escapeKotlin(site.name || '');
             const url = escapeKotlin(site.url || '');
@@ -239,12 +247,12 @@ function main() {
         process.exit(1);
     }
 
-    console.log(`📦 Found ${LINKS_TO_KEEP.length} links in static-links.js`);
+    console.log(`📦 Found ${LINKS_TO_KEEP.length} links in links-dump.json (incl. reviewStatus 0)`);
     const approvedLinks = LINKS_TO_KEEP.filter(site => site.reviewStatus === 1);
     approvedLinks.sort((a, b) => (a.url || '').localeCompare(b.url || ''));
     console.log(`📦 Found ${approvedLinks.length} approved links in static-links.js`);
 
-    generateInitSQL(approvedLinks);
+    generateInitSQL(LINKS_TO_KEEP);
     generateConfigJS(approvedLinks);
     generateKotlin(approvedLinks);
     console.log('🎉 All files successfully regenerated!\n');

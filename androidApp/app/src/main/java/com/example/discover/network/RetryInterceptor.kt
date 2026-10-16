@@ -8,15 +8,11 @@ import okhttp3.Response
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
+private const val TAG = "RetryInterceptor"
 class RetryInterceptor(
     private val initialDelayMillis: Long = 1500, // Initial delay 1.5 seconds
     private val factor: Double = 2.0 // Unlimited retries with exponential backoff to avoid transient errors.
 ) : Interceptor {
-
-    private companion object {
-        private const val TAG = "RetryInterceptor"
-    }
-
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
         var response: Response? = null

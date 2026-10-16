@@ -1,11 +1,24 @@
 # 🌏 Local Backend Setup
-A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically creating the database and inserting sample data on first run.
+A containerized Node.js (v18, Alpine) backend with MySQL 8.0, automatically creating the database and inserting sample data on first run. Uses host networking (no Docker bridge) for maximum reliability.
 
 Publicly exposed at https://backenddiscover.duckdns.org:8443 to forward requests to the local Node.js app on port 8090.
 
+The full cron setup and sudoers backup are in `./backend/networking`.
+
+## 🌐 How it works
+- The Node app listens on 0.0.0.0:8090.
+- MySQL listens on 0.0.0.0:3306.
+- Nginx terminates HTTPS on port 8443 and proxies to http://localhost:8090.
+- Because of network_mode: host, all services share the host network – no Docker bridge, no veth bugs.
+
+DNS and TLS are handled by a DuckDNS cron job and acme.sh, both documented in `./backend/networking/crontab.txt`.
+
 ## ⚙️ Prerequisites
-- Docker
-- Docker Compose
+- Linux
+- Docker engine
+
+Ensure to use docker engine on Linux and not use docker desktop to preserve request ip addresses.
+The problem with docker desktop is that it uses a VM that hides request ip addresses.
 
 ## 🚀 Quick Start
 
@@ -17,19 +30,27 @@ docker compose up -d --build
 
 ### 2. Verify it's working
 ```bash
-curl http://https://backenddiscover.duckdns.org:8443/getLinksDesktop
-curl http://https://backenddiscover.duckdns.org:8443/health
+curl https://backenddiscover.duckdns.org:8443/getLinksDesktop
+curl https://backenddiscover.duckdns.org:8443/health
 ```
 
 ### 3. Reinitialize the links database
-
-docker compose exec db mysql -u root -ppassword mydatabase -e "DROP TABLE links;"
+```bash
+docker compose exec db mysql -u root -ppassword mydatabase -e "DROP TABLE IF EXISTS linksBackup; RENAME TABLE links TO linksBackup;"
 cat db/init.sql | docker compose exec -T db mysql -u root -ppassword mydatabase
+```
+or just run 
+```bash
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover$ ./backend/tools/reinitDb.sh 
+```
 
 ### 4. Get SQL data directly
-Run in the `backend-db-1` docker container `Exec`.
-```
-sh-5.1# mysql -u root -p
+```bash
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover/backend$ docker ps | grep mysql
+0feab0ee6e8a   mysql:8.0      "docker-entrypoint.s…"   6 days ago      Up 4 days (healthy)   3306/tcp, 33060/tcp             backend-db-1
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover/backend$ docker exec -it 0feab0ee6e8a mysql -u root -p
+<or>
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover/backend$ docker compose exec db mysql -u root -p
 # password is password
 mysql> SHOW DATABASES;
 mysql> USE mydatabase
@@ -37,12 +58,38 @@ mysql> SELECT * FROM visitors ORDER BY timestamp DESC;
 mysql> SELECT * FROM visitors WHERE country NOT IN ('IN') ORDER BY timestamp DESC;
 ```
 
+### 5. Get logs
+```bash
+docker compose logs -f
+
+docker compose logs -f app
+docker compose logs db
+```
+
+### 6. Update packages
+```bash
+npm outdated
+npm update
+docker compose up -d --build
+```
+
+## 7. Mark errors as resolved
+Run the following curl command.
+```
+curl -X PUT http://localhost:8090/errors/<error id>/resolve
+```
+Or run in backend folder.
+```
+docker exec -it backend-db-1 mysql -u root -ppassword mydatabase -e "UPDATE errors SET resolved = 1, resolved_at = NOW() WHERE resolved = 0;"
+```
+
+## 8. How to run tests
+```bash
+docker compose exec app node --test test/
+```
+
 ## 🔧 Management Commands
 ```bash
-# View logs
-docker compose logs app
-docker compose logs db
-
 # Stop containers
 docker compose down
 
@@ -57,7 +104,4 @@ docker compose up -d --build
 
 # Restart containers
 docker compose restart
-
-# Always use docker desktop
-docker context use desktop-linux
 ```

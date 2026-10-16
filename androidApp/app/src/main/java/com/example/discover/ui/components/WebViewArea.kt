@@ -6,7 +6,9 @@ import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Bitmap
+import android.view.MotionEvent
 import android.view.View
+import android.webkit.JavascriptInterface
 import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
@@ -22,17 +24,24 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.net.toUri
@@ -40,12 +49,24 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.discover.ui.theme.PrimaryGreen
 import com.example.discover.ui.theme.SurfaceDark
 import com.example.discover.viewmodel.DiscoverViewModel
+import kotlinx.coroutines.delay
+import kotlin.time.Duration.Companion.milliseconds
 
-@SuppressLint("SetJavaScriptEnabled", "QueryPermissionsNeeded")
+class MediaExtractor {
+    var onExtracted: ((String, String) -> Unit)? = null
+
+    @JavascriptInterface
+    fun onMediaExtracted(url: String, type: String) {
+        onExtracted?.invoke(url, type)
+    }
+}
+
+@SuppressLint("ClickableViewAccessibility")
 @Composable
 fun WebViewArea(
     viewModel: DiscoverViewModel,
     webView: WebView,
+    mediaExtractor: MediaExtractor,
     url: String?,
     onUrlChanged: (String) -> Unit,
     onCloseArea: () -> Unit,
@@ -54,6 +75,25 @@ fun WebViewArea(
     val isWebViewLoading by viewModel.isWebViewLoading.collectAsStateWithLifecycle()
     var webViewProgress by remember { mutableIntStateOf(0) }
     val context = LocalContext.current
+
+    var menuExpanded by remember { mutableStateOf(false) }
+    var menuUrl by remember { mutableStateOf("") }
+    var menuType by remember { mutableIntStateOf(0) }
+    var isExtractedVideo by remember { mutableStateOf(false) }
+    var lastTouchX by remember { mutableFloatStateOf(0f) }
+    var lastTouchY by remember { mutableFloatStateOf(0f) }
+    val density = LocalDensity.current
+    var warmingUpForTarget by remember { mutableStateOf(false) }
+
+    mediaExtractor.onExtracted = { url, type ->
+        webView.post {
+            menuUrl = url
+            isExtractedVideo = type == "video"
+            menuType =
+                if (type == "video") WebView.HitTestResult.UNKNOWN_TYPE else WebView.HitTestResult.IMAGE_TYPE
+            menuExpanded = true
+        }
+    }
 
     LaunchedEffect(webView, url) {
         val targetUrl = url ?: "about:blank"
@@ -65,7 +105,7 @@ fun WebViewArea(
 <html>
 <body style='background:black;color:white;margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;'>
     <h1>Opening PDF...</h1>
-    <p>$fileName</p>
+    <p>${fileName}</p>
 </body>
 </html>""".trimIndent()
                 webView.loadData(htmlData, "text/html", "UTF-8")
@@ -80,7 +120,31 @@ fun WebViewArea(
                 Toast.makeText(context, "No PDF app found." + e.message, Toast.LENGTH_SHORT).show()
             }
         }
-        if (webView.url != targetUrl) {
+        if (targetUrl == "https://www.youtube.com/") {
+            warmingUpForTarget = true
+            webView.loadUrl("https://m.youtube.com/shorts/")
+
+            // Give YouTube's SPA time to prefetch the home feed in the background.
+            // ~8s is empirically the minimum on Chrome 109 emulator.
+            delay(8000L.milliseconds)
+
+            webView.evaluateJavascript(
+                """(function() {
+            if (location.pathname === '/') return 'already-home';
+            try {
+                history.pushState({}, '', '/');
+                window.dispatchEvent(new PopStateEvent('popstate', { state: {} }));
+                document.dispatchEvent(new CustomEvent('yt-navigate-start'));
+                document.dispatchEvent(new CustomEvent('yt-navigate-finish'));
+                return 'pushed:' + location.pathname;
+            } catch (e) {
+                return 'err:' + e.message;
+            }
+        })();"""
+            ) { result ->
+                android.util.Log.d("YT-WARMUP", "nav result: $result")
+            }
+        } else if (webView.url != targetUrl) {
             webView.loadUrl(targetUrl)
         }
     }
@@ -109,69 +173,331 @@ fun WebViewArea(
             }
         }
 
-        // The AndroidView now simply PLACES the existing WebView.
-        AndroidView(factory = { webView }, modifier = Modifier.fillMaxSize(), update = { view ->
-            // The update block ensures the clients are correctly set.
-            view.webChromeClient = object : WebChromeClient() {
-                override fun onProgressChanged(v: WebView?, newProgress: Int) {
-                    if (!isWebViewLoading || webView.url != "about:blank") {
-                        webViewProgress = newProgress
-                    }
-                }
-
-                override fun onReceivedTitle(view: WebView?, title: String?) {
-                    super.onReceivedTitle(view, title)
-                    // onReceivedTitle is a very reliable callback that fires after most
-                    // navigation events, including those via JavaScript's History API.
-                    // We use it as a trigger to ask the WebView for its current URL.
-                    view?.url?.let { currentUrl ->
-                        onUrlChanged(currentUrl)
-                    }
-                }
-            }
-            view.webViewClient = object : WebViewClient() {
-                override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
-                    super.onPageStarted(view, url, favicon)
-                    // Report the URL as soon as navigation starts.
-                    // This is good for immediate feedback.
-                    url?.let { onUrlChanged(it) }
-                }
-
-                override fun onPageFinished(view: WebView?, url: String?) {
-                    super.onPageFinished(view, url)
-                    // Also report the URL when the page finishes loading.
-                    // This captures the final URL after any redirects.
-                    url?.let { onUrlChanged(it) }
-
-                    // The WebView has finished a draw pass, so it's safe to make it visible.
-                    if (isWebViewLoading) {
-                        viewModel.onWebViewPageVisible()
-                        // Flicker is very annoying. It was better before.
-                        webView.visibility = View.VISIBLE
-                        webView.setBackgroundColor(Color.White.toArgb())
-                    }
-                }
-
-                override fun shouldOverrideUrlLoading(
-                    view: WebView?, request: WebResourceRequest?
-                ): Boolean {
-                    val requestedUrl = request?.url ?: return false
-                    if (requestedUrl.scheme != "http" && requestedUrl.scheme != "https") {
-                        try {
-                            context.startActivity(Intent(Intent.ACTION_VIEW, requestedUrl))
-                            return true
-                        } catch (e: ActivityNotFoundException) {
-                            e.printStackTrace()
-                            Toast.makeText(
-                                context, "No app found to open this URL.", Toast.LENGTH_SHORT
-                            ).show()
-                            return true
+        Box(modifier = Modifier.fillMaxSize()) {
+            // The AndroidView now simply PLACES the existing WebView.
+            AndroidView(factory = { webView }, modifier = Modifier.fillMaxSize(), update = { view ->
+                // The update block ensures the clients are correctly set.
+                view.webChromeClient = object : WebChromeClient() {
+                    override fun onProgressChanged(v: WebView?, newProgress: Int) {
+                        if (!isWebViewLoading || webView.url != "about:blank") {
+                            webViewProgress = newProgress
                         }
                     }
-                    return false
+
+                    override fun onReceivedTitle(view: WebView?, title: String?) {
+                        super.onReceivedTitle(view, title)
+                        // onReceivedTitle is a very reliable callback that fires after most
+                        // navigation events, including those via JavaScript's History API.
+                        // We use it as a trigger to ask the WebView for its current URL.
+                        view?.url?.let { currentUrl ->
+                            onUrlChanged(currentUrl)
+                        }
+                    }
+                }
+                view.webViewClient = object : WebViewClient() {
+                    override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
+                        super.onPageStarted(view, url, favicon)
+                        // Report the URL as soon as navigation starts.
+                        // This is good for immediate feedback.
+                        url?.let { onUrlChanged(it) }
+                    }
+
+                    override fun onPageFinished(view: WebView?, url: String?) {
+                        super.onPageFinished(view, url)
+                        // Also report the URL when the page finishes loading.
+                        // This captures the final URL after any redirects.
+                        url?.let { onUrlChanged(it) }
+
+                        if (warmingUpForTarget) {
+                            warmingUpForTarget = false
+                            webView.postDelayed({ webView.clearHistory() }, 500L)
+                        }
+                        // The WebView has finished a draw pass, so it's safe to make it visible.
+                        if (isWebViewLoading) {
+                            viewModel.onWebViewPageVisible()
+                            // Flicker is very annoying. It was better before.
+                            webView.visibility = View.VISIBLE
+                            webView.setBackgroundColor(Color.White.toArgb())
+                        }
+
+                        // Apply read‑only mode if enabled
+                        if (viewModel.readOnlyModeEnabled.value) {
+                            view?.evaluateJavascript(
+                                """(function() {
+    function makeReadOnly(root) {
+        var inputs = root.querySelectorAll('input, textarea, select');
+        for (var i = 0; i < inputs.length; i++) {
+            var el = inputs[i];
+            if (el.type === 'search') continue;
+            if (el.type === 'file') {
+                el.disabled = true;
+            } else if (el.type === 'checkbox' || el.type === 'radio') {
+                el.addEventListener('click', function(e){ e.preventDefault(); });
+            } else {
+                el.setAttribute('readonly', 'readonly');
+                el.addEventListener('focus', function(){ this.blur(); });
+            }
+        }
+        var editables = root.querySelectorAll('[contenteditable="true"]');
+        for (var j = 0; j < editables.length; j++) {
+            editables[j].setAttribute('contenteditable', 'false');
+        }
+        var forms = root.querySelectorAll('form');
+        for (var k = 0; k < forms.length; k++) {
+            var form = forms[k];
+            var hasSearch = form.querySelector('input[type="search"]');
+            if (hasSearch) continue;
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }, true);
+        }
+    }
+
+    // Apply to main document immediately
+    makeReadOnly(document);
+
+    // Watch for dynamically added elements
+    new MutationObserver(function(mutations) {
+        for (var m = 0; m < mutations.length; m++) {
+            var addedNodes = mutations[m].addedNodes;
+            for (var n = 0; n < addedNodes.length; n++) {
+                var node = addedNodes[n];
+                if (node.nodeType === 1) {
+                    makeReadOnly(node);         // the element itself
+                    // also process its children
+                    makeReadOnly(node.querySelectorAll ? node : document.createDocumentFragment());
                 }
             }
-        })
+        }
+    }).observe(document.documentElement, { childList: true, subtree: true });
+
+    // Attempt to apply to same‑origin iframes (won't work for cross‑origin)
+    var iframes = document.querySelectorAll('iframe');
+    for (var f = 0; f < iframes.length; f++) {
+        try {
+            var iframeDoc = iframes[f].contentDocument || iframes[f].contentWindow.document;
+            if (iframeDoc) makeReadOnly(iframeDoc);
+        } catch (e) { /* cross‑origin, ignore */ }
+    }
+})();""", null
+                            )
+                        }
+                        // Auto-dismiss cookie consent banners (deny preferred, accept as last resort)
+                        view?.evaluateJavascript(
+                            """(function() {
+    if (window.__discoverCookieDenier) return;
+    window.__discoverCookieDenier = true;
+
+    // ── Force-hide intrusive modals ──────────────────────────
+    if (!document.getElementById('__discover_hide_modals')) {
+        var style = document.createElement('style');
+        style.id = '__discover_hide_modals';
+        style.textContent = [
+            '#newsletterModal { display: none !important; }',
+            '.modal-backdrop { display: none !important; }',
+            'body.modal-open { overflow: auto !important; }'
+//            '.modal.show { display: none !important; }', // hide all modals
+        ].join('\n');
+        (document.head || document.documentElement).appendChild(style);
+    }
+
+    // ── Existing cookie/banner logic ─────────────────────────
+    var denySelectors = [
+        '[aria-label*="close" i]',
+        '#onetrust-reject-all-handler',
+        '#CybotCookiebotDialogBodyButtonDecline',
+        '.qc-cmp2-summary-buttons button[mode="secondary"]',
+        '.cmplz-deny',
+        '.cc-deny',
+        '[data-testid="reject-all"]',
+        '[aria-label*="reject" i]',
+        '[aria-label*="decline" i]',
+        '[id*="reject" i]',
+        '[class*="reject" i]'
+    ];
+
+    var acceptSelectors = [
+        '#onetrust-accept-btn-handler',
+        '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll',
+        '.qc-cmp2-summary-buttons button[mode="primary"]',
+        '.cmplz-accept',
+        '.cc-allow',
+        '[data-testid="accept-all"]',
+        '[aria-label*="accept" i]',
+        '[id*="accept" i]'
+    ];
+
+    var denyWords = /^(reject(\s+all)?|decline(\s+all)?|deny(\s+all)?|refuse|disagree|no,?\s*thanks|not\s+now|only\s+necessary(\s+cookies)?|necessary\s+only|essential\s+only|i\s+do\s+not\s+accept)$/i;
+    var acceptWords = /^(accept(\s+all)?|allow(\s+all)?|agree|ok(ay)?|got\s+it|i\s+understand|understood|continue|yes,?\s*i\s*agree)$/i;
+
+    function isVisible(el) {
+        var r = el.getBoundingClientRect();
+        return r.width > 0 && r.height > 0;
+    }
+
+    // Collect all roots: document + every open shadow root (recursively)
+    function collectRoots(root, out) {
+        out.push(root);
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT, null);
+        while (walker.nextNode()) {
+            var n = walker.currentNode;
+            if (n.shadowRoot) collectRoots(n.shadowRoot, out);
+        }
+    }
+
+    function clickFirst(roots, selectors) {
+        for (var r = 0; r < roots.length; r++) {
+            for (var i = 0; i < selectors.length; i++) {
+                var el = roots[r].querySelector(selectors[i]);
+                if (el && isVisible(el)) { el.click(); return true; }
+            }
+        }
+        return false;
+    }
+
+    function clickByText(roots, re) {
+        for (var r = 0; r < roots.length; r++) {
+            var buttons = roots[r].querySelectorAll('button, a[role="button"], [role="button"]');
+            for (var j = 0; j < buttons.length; j++) {
+                var b = buttons[j];
+                if (!isVisible(b)) continue;
+                var text = (b.innerText || b.textContent || '').trim();
+                if (re.test(text)) { b.click(); return true; }
+            }
+        }
+        return false;
+    }
+
+    function tryClick() {
+        var roots = [];
+        collectRoots(document, roots);
+        if (clickFirst(roots, denySelectors)) return true;
+        if (clickByText(roots, denyWords)) return true;
+        if (clickFirst(roots, acceptSelectors)) return true;
+        if (clickByText(roots, acceptWords)) return true;
+        return false;
+    }
+
+    // Run once now, then again on every DOM mutation (no timeout).
+    tryClick();
+    new MutationObserver(function() { tryClick(); })
+        .observe(document.documentElement, { childList: true, subtree: true });
+})();""", null
+                        )
+                    }
+
+                    override fun shouldOverrideUrlLoading(
+                        view: WebView?, request: WebResourceRequest?
+                    ): Boolean {
+                        val requestedUrl = request?.url ?: return false
+                        if (requestedUrl.scheme != "http" && requestedUrl.scheme != "https") {
+                            try {
+                                context.startActivity(Intent(Intent.ACTION_VIEW, requestedUrl))
+                                return true
+                            } catch (e: ActivityNotFoundException) {
+                                e.printStackTrace()
+                                Toast.makeText(
+                                    context, "No app found to open this URL.", Toast.LENGTH_SHORT
+                                ).show()
+                                return true
+                            }
+                        }
+                        return false
+                    }
+                }
+
+                view.setOnTouchListener { v, event ->
+                    if (event.action == MotionEvent.ACTION_DOWN) {
+                        lastTouchX = event.x
+                        lastTouchY = event.y
+                    }
+                    v.performClick()
+                    false
+                }
+
+                view.setOnLongClickListener {
+                    val result = view.hitTestResult
+                    val type = result.type
+                    val extra = result.extra
+
+                    if (extra != null && (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE || type == WebView.HitTestResult.SRC_ANCHOR_TYPE)) {
+                        menuUrl = extra
+                        menuType = type
+                        isExtractedVideo = false
+                        menuExpanded = true
+                        return@setOnLongClickListener true
+                    }
+
+                    // Try Universal Extraction via JS
+                    val script = """
+                        (function() {
+                            var x = $lastTouchX / window.devicePixelRatio;
+                            var y = $lastTouchY / window.devicePixelRatio;
+                            var el = document.elementFromPoint(x, y);
+                            if (!el) return;
+                            
+                            function findMedia(e) {
+                                if (!e) return null;
+                                if (e.tagName === 'IMG') return { url: e.src, type: 'image' };
+                                if (e.tagName === 'VIDEO') return { url: e.src || e.currentSrc, type: 'video' };
+                                if (e.style && e.style.backgroundImage) {
+                                    var bg = e.style.backgroundImage;
+                                    var url = bg.match(/url\(["']?([^"']*)["']?\)/);
+                                    if (url) return { url: url[1], type: 'image' };
+                                }
+                                return findMedia(e.parentElement);
+                            }
+                            
+                            var media = findMedia(el);
+                            if (media && media.url) {
+                                MediaExtractor.onMediaExtracted(media.url, media.type);
+                            }
+                        })();
+                    """.trimIndent()
+                    view.evaluateJavascript(script, null)
+
+                    false
+                }
+            })
+
+            DropdownMenu(
+                expanded = menuExpanded,
+                onDismissRequest = { menuExpanded = false },
+                offset = with(density) { DpOffset(lastTouchX.toDp(), lastTouchY.toDp()) }) {
+                val isImage =
+                    menuType == WebView.HitTestResult.IMAGE_TYPE || menuType == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE
+                val isLink =
+                    menuType == WebView.HitTestResult.SRC_ANCHOR_TYPE || menuType == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE
+                val isVideo = isExtractedVideo || menuUrl.lowercase().let {
+                    it.endsWith(".mp4") || it.endsWith(".webm") || it.endsWith(".ogg") || it.endsWith(
+                        ".mkv"
+                    ) || it.endsWith(".m4v") || it.endsWith(".3gp")
+                }
+
+                if (isImage) {
+                    DropdownMenuItem(text = { Text("Save Image") }, onClick = {
+                        viewModel.downloadMedia(menuUrl, webView.settings.userAgentString)
+                        menuExpanded = false
+                    })
+                }
+
+                if (isVideo) {
+                    DropdownMenuItem(text = { Text("Save Video") }, onClick = {
+                        viewModel.downloadMedia(menuUrl, webView.settings.userAgentString)
+                        menuExpanded = false
+                    })
+                }
+
+                if (isLink) {
+                    DropdownMenuItem(text = { Text("Copy Link") }, onClick = {
+                        viewModel.copyToClipboard(menuUrl)
+                        menuExpanded = false
+                    })
+                }
+            }
+        }
     }
 
     BackHandler(enabled = true) {

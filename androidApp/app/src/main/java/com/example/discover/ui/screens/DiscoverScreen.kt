@@ -12,10 +12,12 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
@@ -24,6 +26,10 @@ import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -45,6 +51,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.discover.ui.components.AddLinkDialog
 import com.example.discover.ui.components.ControlButtons
 import com.example.discover.ui.components.LinkCard
+import com.example.discover.ui.components.MediaExtractor
 import com.example.discover.ui.components.TopDiscoverBar
 import com.example.discover.ui.components.WebViewArea
 import com.example.discover.ui.theme.BackgroundDark
@@ -60,7 +67,7 @@ fun formatTime(ms: Long): String {
     else "${ms / 3600000}h ${(ms % 3600000) / 60000}m"
 }
 
-@SuppressLint("SetJavaScriptEnabled")
+@SuppressLint("JavascriptInterface", "SetJavaScriptEnabled")
 @Composable
 fun DiscoverScreen(
     viewModel: DiscoverViewModel
@@ -86,44 +93,50 @@ fun DiscoverScreen(
     val yearlyTime = formatTime(timeStats.yearly)
     val totalTime = formatTime(timeStats.total)
 
+    var showSettings by remember { mutableStateOf(false) }
+    val mediaExtractor = remember { MediaExtractor() }
+
     val webView = remember {
         WebView(context).apply {
             // Apply all settings here. They will persist for the lifetime of the WebView.
+
+            // Disable JavaScript interfaces that could be used for tracking
+            removeJavascriptInterface("accessibility")
+            removeJavascriptInterface("accessibilityTraversal")
+            addJavascriptInterface(mediaExtractor, "MediaExtractor")
+            // 🔒 Privacy: Block third-party cookies
+            android.webkit.CookieManager.getInstance().setAcceptThirdPartyCookies(this, false)
             settings.apply {
+                // Clear state
+                clearHistory()
+                clearFormData()
+                // 🔒 Clear any existing data on creation
+                android.webkit.CookieManager.getInstance().removeAllCookies(null)
+                android.webkit.WebStorage.getInstance().deleteAllData()
+                // Privacy settings
+                allowFileAccess = false
+                allowContentAccess = false
+                // Disable location
+                setGeolocationEnabled(false)
+                // Disable all storage and persistence
+                // We don't want to disable cache to make our app faster.
+//                cacheMode = WebSettings.LOAD_NO_CACHE
+
 //                setLayerType(View.LAYER_TYPE_SOFTWARE, null)
                 setBackgroundColor(Color.Transparent.toArgb())
                 visibility = View.GONE
                 javaScriptEnabled = true
                 loadWithOverviewMode = true
                 useWideViewPort = true
-                setSupportZoom(true)
                 builtInZoomControls = true
                 displayZoomControls = false
                 javaScriptCanOpenWindowsAutomatically = false
-                mediaPlaybackRequiresUserGesture = true
-
-                // Disable all storage and persistence
-                // We don't want to disable cache to make our app faster.
-//                cacheMode = WebSettings.LOAD_NO_CACHE
-
-                // Modern Android uses these settings
-                domStorageEnabled = false  // Disable DOM storage (localStorage, sessionStorage)
-                databaseEnabled = false     // Disable WebSQL
-                savePassword = false
-                saveFormData = false
-
-                // Privacy settings
-                allowFileAccess = false
-                allowContentAccess = false
-                allowFileAccessFromFileURLs = false
-                allowUniversalAccessFromFileURLs = false
-
-                // Disable location
-                setGeolocationEnabled(false)
-
+                mediaPlaybackRequiresUserGesture = false
+                domStorageEnabled =
+                    true  // DOM storage (localStorage, sessionStorage) needed for some websites to load
                 // Use a generic user agent to avoid fingerprinting
                 userAgentString =
-                    "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.210 Mobile Safari/537.36"
+                    "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
 
                 // Load static HTML with CURRENT stats
                 val initialHtml = """
@@ -133,7 +146,7 @@ fun DiscoverScreen(
                 <meta name="viewport" content="width=device-width">
                 <style>
                     body {
-                        padding: 20px;
+                        padding: 1rem;
                         background: #0F0F0F;
                     }
                     .container {
@@ -204,9 +217,6 @@ fun DiscoverScreen(
                     null, initialHtml, "text/html", "UTF-8", null
                 )
             }
-            // Disable JavaScript interfaces that could be used for tracking
-            removeJavascriptInterface("accessibility")
-            removeJavascriptInterface("accessibilityTraversal")
         }
     }
 
@@ -240,6 +250,7 @@ fun DiscoverScreen(
             WebViewArea(
                 viewModel = viewModel,
                 webView = webView,
+                mediaExtractor = mediaExtractor,
                 url = initialWebViewUrl,
                 onUrlChanged = { newUrl ->
                     liveWebViewUrl = newUrl
@@ -256,26 +267,6 @@ fun DiscoverScreen(
                     .background(BackgroundDark)
             ) {
                 val statusBarPadding = WindowInsets.statusBars.asPaddingValues()
-
-                // --- ADDITION: Status Indicator Light ---
-                var indicatorColor = Color.Yellow
-                if (isApiAvailable == 1) {
-                    indicatorColor = Color.Green
-                } else if (isApiAvailable == -1) {
-                    indicatorColor = Color.Red
-                }
-
-                Box(
-                    modifier = Modifier
-                        // CORRECT: .align() is now a child of the parent Box scope
-                        .align(Alignment.TopEnd) // Changed to TopEnd to match the original likely intent
-                        .padding(
-                            top = statusBarPadding.calculateTopPadding() + Spacing.small,
-                            end = Spacing.medium
-                        ) // Add padding for positioning
-                        .size(12.dp)
-                        .background(color = indicatorColor, shape = CircleShape)
-                )
 
                 Column(
                     modifier = Modifier
@@ -327,6 +318,44 @@ fun DiscoverScreen(
                     }
                 }
 
+                // --- Symmetrical Header Bar ---
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = statusBarPadding.calculateTopPadding())
+                        .padding(horizontal = Spacing.small),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    // Settings Icon (Top Left)
+                    IconButton(onClick = { showSettings = true }) {
+                        Icon(
+                            imageVector = Icons.Default.Settings,
+                            contentDescription = "Settings",
+                            tint = TextSecondary
+                        )
+                    }
+
+                    // Status Indicator Light (Top Right)
+                    var indicatorColor = Color.Yellow
+                    if (isApiAvailable == 1) {
+                        indicatorColor = Color.Green
+                    } else if (isApiAvailable == -1) {
+                        indicatorColor = Color.Red
+                    }
+
+                    // We wrap the circle in a Box of the same size as IconButton to ensure symmetry
+                    Box(
+                        modifier = Modifier.size(48.dp), contentAlignment = Alignment.Center
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .size(12.dp)
+                                .background(color = indicatorColor, shape = CircleShape)
+                        )
+                    }
+                }
+
                 // Add link dialog - positioned within the Box to overlay content
                 if (showAddLinkDialog) {
                     AddLinkDialog(
@@ -334,6 +363,15 @@ fun DiscoverScreen(
                         onAddLink = { name, url, description, tags ->
                             viewModel.addLink(name, url, description, tags)
                         })
+                }
+
+                // Settings Screen Overlay
+                if (showSettings) {
+                    SettingsScreen(
+                        onBack = { showSettings = false },
+                        viewModel = viewModel,
+                        statusBarPadding = statusBarPadding
+                    )
                 }
             }
         }

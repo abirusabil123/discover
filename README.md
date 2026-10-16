@@ -6,6 +6,11 @@ We host the backend locally using reproducible containers. We also have a fronte
 <img src="image1.png" alt="drawing" width="200rem"/>
 <img src="image2.png" alt="drawing" width="200rem"/>
 <img src="image3.png" alt="drawing" width="200rem"/>
+<img src="image4.jpg" alt="drawing" width="200rem"/>
+<img src="image5.jpg" alt="drawing" width="200rem"/>
+<img src="image5.jpg" alt="drawing" width="200rem"/>
+<img src="image6.png" alt="drawing"/>
+<img src="image7.png" alt="drawing"/>
 
 ## Avoid Implicit Personalized Recommendation Algorithms
 
@@ -30,14 +35,14 @@ This is my contribution so you don't use personalized recommendation algorithms 
 
 Let's go back to before 2005, before EdgeRank was released. 
 
+## Review links
+```
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover$ ./backend/tools/reinitDb.sh
+```
+
 ## Run frontend for local testing
 ```
 npx serve . -l 44631
-```
-
-## Format code in VS Codium  
-```
-Ctrl+Shift+I
 ```
 
 ## Add LICENSE header to new file

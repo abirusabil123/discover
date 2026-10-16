@@ -4,10 +4,10 @@
 services:
   app:
     build: ./
-    # ports:
-    #   - "8090:8090"  # HTTP endpoint
+    network_mode: host                 # ← added
+    # remove ports and networks sections
     environment:
-      - DB_HOST=db
+      - DB_HOST=localhost              # ← changed from "db"
       - DB_USER=root
       - DB_PASSWORD=password
       - DB_NAME=mydatabase
@@ -16,10 +16,11 @@ services:
       db:
         condition: service_healthy
     restart: unless-stopped
-    networks:
-      - backend-network
+
   db:
     image: mysql:8.0
+    network_mode: host                 # ← added
+    # remove networks section
     environment:
       MYSQL_ROOT_PASSWORD: "password"
       MYSQL_DATABASE: "mydatabase"
@@ -31,22 +32,19 @@ services:
       test: ["CMD-SHELL", "mysqladmin ping -h localhost -p$MYSQL_ROOT_PASSWORD"]
       interval: 5s
       retries: 10
-    networks:
-      - backend-network
+
   nginx:
     image: nginx:alpine
-    ports:
-      - "8443:443"
+    network_mode: host                 # ← added
+    # remove ports mapping (now listens directly on host 8443)
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - /home/zeitgeist/.acme.sh/backenddiscover.duckdns.org_ecc:/etc/nginx/ssl:ro
-    networks:
-      - backend-network
+    # remove networks section
     depends_on:
       - app
     restart: unless-stopped
-networks:
-  backend-network:
-    driver: bridge
+
+# remove networks: section entirely
 volumes:
   mysql_data:
