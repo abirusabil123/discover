@@ -585,7 +585,7 @@ const STATIC = {
         {
             "name": "Interview Ready - System Design",
             "url": "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
-            "description": "Best System Design course. You can ignore the other courses by interviewready as they have low quality.",
+            "description": "Best System Design course. You can ignore the other courses by interviewready as they have low rigor.",
             "tags": [
                 "#systemdesign",
                 "#course",

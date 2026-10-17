@@ -578,7 +578,7 @@ VALUES (
     (
         'Interview Ready - System Design',
         'https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters',
-        'Best System Design course. You can ignore the other courses by interviewready as they have low quality.',
+        'Best System Design course. You can ignore the other courses by interviewready as they have low rigor.',
         JSON_ARRAY('#systemdesign', '#course', '#learning'),
         12,
         0,

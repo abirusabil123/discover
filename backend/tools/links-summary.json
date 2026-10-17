@@ -6,7 +6,7 @@
   "analysis": {
     "total": 158,
     "filteredMobile": 58,
-    "filteredDesktop": 13,
+    "filteredDesktop": 14,
     "blockedMobileUrls": [
       "http://radio.garden/",
       "https://10minutemail.com/",
@@ -71,6 +71,7 @@
       "https://abirusabil123.github.io/",
       "https://canon.com/",
       "https://easywaytoquran.com/4-qul-in-islam-2/",
+      "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
       "https://loops.video/",
       "https://mojapp.in/",
       "https://nitter.net/",
