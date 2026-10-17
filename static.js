@@ -44,7 +44,7 @@ const STATIC = {
                 "#optional",
                 "#user-submitted"
             ],
-            "views": 185,
+            "views": 186,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -583,25 +583,9 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
-            "name": "Interview Ready",
-            "url": "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
-            "description": "Artificial Intelligence (AI) engineering course.",
-            "tags": [
-                "#learning",
-                "#code",
-                "#ai",
-                "#course"
-            ],
-            "views": 32,
-            "likesMobile": 0,
-            "dislikesMobile": 1000,
-            "likesDesktop": 5,
-            "dislikesDesktop": 2
-        },
-        {
             "name": "Interview Ready - System Design",
             "url": "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
-            "description": "Best System Design course.",
+            "description": "Best System Design course. You can ignore the other courses by interviewready as they have low quality.",
             "tags": [
                 "#systemdesign",
                 "#course",
@@ -752,7 +736,7 @@ const STATIC = {
                 "#twitteralternative",
                 "#socialmedia"
             ],
-            "views": 173,
+            "views": 176,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -840,7 +824,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 365,
+            "views": 366,
             "likesMobile": 41,
             "dislikesMobile": 4,
             "likesDesktop": 18,
@@ -902,7 +886,7 @@ const STATIC = {
                 "#palestine",
                 "#free"
             ],
-            "views": 134,
+            "views": 136,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -947,7 +931,7 @@ const STATIC = {
                 "#daily",
                 "#social-media"
             ],
-            "views": 33,
+            "views": 34,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -977,7 +961,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 329,
+            "views": 330,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1347,7 +1331,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 466,
+            "views": 467,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1361,7 +1345,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 79,
+            "views": 80,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1446,7 +1430,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 341,
+            "views": 342,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -1655,7 +1639,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 72,
+            "views": 73,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1885,7 +1869,7 @@ const STATIC = {
                 "#beautiful",
                 "#daily"
             ],
-            "views": 237,
+            "views": 238,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1962,7 +1946,7 @@ const STATIC = {
                 "#learning",
                 "#news"
             ],
-            "views": 155,
+            "views": 156,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2015,7 +1999,7 @@ const STATIC = {
                 "#tiktok",
                 "#videos"
             ],
-            "views": 150,
+            "views": 152,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2043,7 +2027,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 4,
+            "views": 5,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2074,7 +2058,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 127,
+            "views": 129,
             "likesMobile": 1,
             "dislikesMobile": 2,
             "likesDesktop": 2,
@@ -2089,7 +2073,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 178,
+            "views": 179,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -2103,7 +2087,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 10,
+            "views": 11,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2131,7 +2115,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 5,
+            "views": 7,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,

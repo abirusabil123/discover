@@ -40,7 +40,7 @@
       "#optional",
       "#user-submitted"
     ],
-    "views": 185,
+    "views": 186,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -442,7 +442,7 @@
       "#islam",
       "#learning"
     ],
-    "views": 159,
+    "views": 160,
     "likesMobile": 1,
     "dislikesMobile": 1000,
     "likesDesktop": 2,
@@ -669,7 +669,7 @@
   {
     "url": "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
     "name": "Interview Ready",
-    "description": "Artificial Intelligence (AI) engineering course.",
+    "description": "Artificial Intelligence (AI) engineering course by interviewready. Not much technical depth so can ignore.",
     "tags": [
       "#learning",
       "#code",
@@ -680,13 +680,13 @@
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 5,
-    "dislikesDesktop": 2,
+    "dislikesDesktop": 1000,
     "reviewStatus": 1
   },
   {
     "url": "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
     "name": "Interview Ready - System Design",
-    "description": "Best System Design course.",
+    "description": "Best System Design course. You can ignore the other courses by interviewready as they have low quality.",
     "tags": [
       "#systemdesign",
       "#course",
@@ -863,7 +863,7 @@
       "#twitteralternative",
       "#socialmedia"
     ],
-    "views": 173,
+    "views": 176,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -977,7 +977,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 365,
+    "views": 366,
     "likesMobile": 41,
     "dislikesMobile": 4,
     "likesDesktop": 18,
@@ -1057,7 +1057,7 @@
       "#palestine",
       "#free"
     ],
-    "views": 134,
+    "views": 136,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1105,7 +1105,7 @@
       "#daily",
       "#social-media"
     ],
-    "views": 33,
+    "views": 34,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1137,7 +1137,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 329,
+    "views": 330,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1563,7 +1563,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 466,
+    "views": 467,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1578,7 +1578,7 @@
       "#daily",
       "#positive"
     ],
-    "views": 79,
+    "views": 80,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -1669,7 +1669,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 341,
+    "views": 342,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -1957,7 +1957,7 @@
       "#daily",
       "#positive"
     ],
-    "views": 72,
+    "views": 73,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2219,7 +2219,7 @@
       "#beautiful",
       "#daily"
     ],
-    "views": 237,
+    "views": 238,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -2301,7 +2301,7 @@
       "#learning",
       "#news"
     ],
-    "views": 155,
+    "views": 156,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2357,7 +2357,7 @@
       "#tiktok",
       "#videos"
     ],
-    "views": 150,
+    "views": 152,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2387,7 +2387,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 4,
+    "views": 5,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2420,7 +2420,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 127,
+    "views": 129,
     "likesMobile": 1,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -2436,7 +2436,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 178,
+    "views": 179,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -2451,7 +2451,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 10,
+    "views": 11,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2481,7 +2481,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 5,
+    "views": 7,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
