@@ -388,20 +388,7 @@ const STATIC = {
                 "#health",
                 "#brain"
             ],
-            "views": 0,
-            "likesMobile": 0,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Enriqueta Martí",
-            "url": "https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD",
-            "description": "The Jeffrey Edward Epstein of Europe.",
-            "tags": [
-                "#history"
-            ],
-            "views": 0,
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1784,7 +1771,7 @@ const STATIC = {
                 "#brain",
                 "#alcohol"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1955,7 +1942,7 @@ const STATIC = {
                 "#health",
                 "#alcohol"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,

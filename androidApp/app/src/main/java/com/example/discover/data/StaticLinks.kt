@@ -140,17 +140,7 @@ object StaticLinks {
             url = "https://edition.cnn.com/2022/03/04/health/alcohol-brain-shrinkage-wellness/",
             description = "Effect of long term alcohol compared to effect of short term alcohol consumption.",
             tags = listOf("#alcohol", "#health", "#brain"),
-            views = 0,
-            likesMobile = 0,
-            dislikesMobile = 0
-        ),
-
-        Link(
-            name = "Enriqueta Martí",
-            url = "https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD",
-            description = "The Jeffrey Edward Epstein of Europe.",
-            tags = listOf("#history"),
-            views = 0,
+            views = 2,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -820,7 +810,7 @@ object StaticLinks {
             url = "https://www.nature.com/articles/s41467-022-28735-5",
             description = "Heavy alcohol consumption has been associated with brain atrophy, neuronal loss, andpoorer white matter fiber integrity. However, there is conflicting evidence on whether light-to-moderate alcohol consumption shows similar negative associations with brain structure.To address this, we examine the associations between alcohol intake and brain structureusing multimodal imaging data from 36,678 generally healthy middle-aged and older adultsfrom the UK Biobank, controlling for numerous potential confounds. Consistent with priorliterature, we find negative associations between alcohol intake and brain macrostructure andmicrostructure. Specifically, alcohol intake is negatively associated with global brain volumemeasures, regional gray matter volumes, and white matter microstructure. Here, we showthat the negative associations between alcohol intake and brain macrostructure and micro-structure are already apparent in individuals consuming an average of only one to two dailyalcohol units, and become stronger as alcohol intake increases.",
             tags = listOf("#health", "#brain", "#alcohol"),
-            views = 0,
+            views = 1,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -910,7 +900,7 @@ object StaticLinks {
             url = "https://www.researchgate.net/publication/236180730_Alcohol-Related_Neurodegeneration_and_Recovery_Mechanisms_From_Animal_Models",
             description = "Human studies have found alcoholics to have a smaller brain size than moderate drinkers; however, thesestudies are complicated by many uncontrollable factors, including timing and amount of alcohol use. Animalexperiments, which can control many factors, have established that alcohol can cause damage to brain cells(i.e., neurons), which results in their loss of structure or function (i.e., neurodegeneration) in multiple brainregions, similar to the damage found in human alcoholics. In addition, animal studies indicate that inhibitionof the creation of neurons (i.e., neurogenesis) and other braincell genesis contributes to alcoholicneurodegeneration. Animal studies also suggest that neurodegeneration changes cognition, contributing toalcohol use disorders. Risk factors such as adolescent age and genetic predisposition toward alcoholconsumption worsen neurodegeneration. Mild impairment of executive functions similar to that found inhumans occurs in animals following binge alcohol treatment. Thus, animal studies suggest that heavy alcoholuse contributes to neurodegeneration and the progressive loss of control over drinking. Despite the negativeconsequences of heavy drinking, there is hope of recovery with abstinence, which in animal models canresult in neural stemcell proliferation and the formation of new neurons and other brain cells, indicative ofbrain growth.",
             tags = listOf("#research", "#health", "#alcohol"),
-            views = 0,
+            views = 1,
             likesMobile = 0,
             dislikesMobile = 0
         ),

@@ -458,7 +458,7 @@
       "#health",
       "#brain"
     ],
-    "views": 0,
+    "views": 2,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -472,11 +472,11 @@
     "tags": [
       "#history"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
-    "dislikesMobile": 0,
+    "dislikesMobile": 1000,
     "likesDesktop": 0,
-    "dislikesDesktop": 0,
+    "dislikesDesktop": 1000,
     "reviewStatus": 1
   },
   {
@@ -2112,7 +2112,7 @@
       "#brain",
       "#alcohol"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2311,7 +2311,7 @@
       "#health",
       "#alcohol"
     ],
-    "views": 0,
+    "views": 1,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,

@@ -104,7 +104,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 5356
+        "count": 5364
       },
       {
         "country": "AE",
@@ -250,7 +250,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 1128
+        "count": 1136
       },
       {
         "month": "202609",
@@ -280,7 +280,7 @@
       },
       {
         "platform": "desktop",
-        "count": 4390
+        "count": 4398
       },
       {
         "platform": "discover-android",
@@ -350,7 +350,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 7622
+        "count": 7630
       },
       {
         "product": "personal website",
@@ -412,7 +412,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1770
+        "count": 1778
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -438,7 +438,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 5527
+        "count": 5535
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -472,7 +472,7 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5994
+        "count": 6002
       },
       {
         "status": "Bot",
@@ -542,11 +542,11 @@
       },
       {
         "hour": 15,
-        "count": 607
+        "count": 613
       },
       {
         "hour": 16,
-        "count": 618
+        "count": 620
       },
       {
         "hour": 17,
@@ -604,7 +604,7 @@
       },
       {
         "dow": 6,
-        "count": 2505
+        "count": 2513
       }
     ]
   },
