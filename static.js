@@ -1105,7 +1105,7 @@ const STATIC = {
                 "#kernel",
                 "#positive"
             ],
-            "views": 10,
+            "views": 11,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 2,

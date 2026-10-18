@@ -1036,7 +1036,7 @@ VALUES (
         'https://reverser.dev/linux-kernel-explorer',
         'A portal to study the Linux Kernel.',
         JSON_ARRAY('#linux', '#kernel', '#positive'),
-        10,
+        11,
         0,
         1000,
         2,
