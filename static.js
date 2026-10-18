@@ -72,7 +72,7 @@ const STATIC = {
                 "#positive",
                 "#learning"
             ],
-            "views": 81,
+            "views": 82,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 153,
+            "views": 154,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -234,7 +234,7 @@ const STATIC = {
                 "#daily",
                 "#daily-desktop"
             ],
-            "views": 174,
+            "views": 175,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -372,6 +372,34 @@ const STATIC = {
             "description": "Check if a website is down for others too.",
             "tags": [
                 "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Just one drink per day can shrink your brain, study says",
+            "url": "https://edition.cnn.com/2022/03/04/health/alcohol-brain-shrinkage-wellness/",
+            "description": "Effect of long term alcohol compared to effect of short term alcohol consumption.",
+            "tags": [
+                "#alcohol",
+                "#health",
+                "#brain"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Enriqueta Martí",
+            "url": "https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD",
+            "description": "The Jeffrey Edward Epstein of Europe.",
+            "tags": [
+                "#history"
             ],
             "views": 0,
             "likesMobile": 0,
@@ -664,7 +692,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 191,
+            "views": 192,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -679,7 +707,7 @@ const STATIC = {
                 "#daily",
                 "#news"
             ],
-            "views": 180,
+            "views": 181,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -736,7 +764,7 @@ const STATIC = {
                 "#twitteralternative",
                 "#socialmedia"
             ],
-            "views": 180,
+            "views": 181,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -900,7 +928,7 @@ const STATIC = {
                 "#palestine",
                 "#free"
             ],
-            "views": 139,
+            "views": 140,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -916,7 +944,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 323,
+            "views": 324,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -945,7 +973,7 @@ const STATIC = {
                 "#daily",
                 "#social-media"
             ],
-            "views": 39,
+            "views": 40,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -975,7 +1003,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 332,
+            "views": 333,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1105,7 +1133,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 125,
+            "views": 126,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1288,7 +1316,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 144,
+            "views": 145,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -1345,7 +1373,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 469,
+            "views": 470,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1359,7 +1387,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 84,
+            "views": 85,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1402,7 +1430,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 85,
+            "views": 86,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -1444,7 +1472,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 349,
+            "views": 350,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 6,
@@ -1461,7 +1489,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 217,
+            "views": 218,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1565,7 +1593,7 @@ const STATIC = {
                 "#new",
                 "#tech"
             ],
-            "views": 155,
+            "views": 156,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1653,7 +1681,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 78,
+            "views": 79,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1745,6 +1773,21 @@ const STATIC = {
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Associations between alcohol consumption and gray and white matter volumes in the UK Biobank",
+            "url": "https://www.nature.com/articles/s41467-022-28735-5",
+            "description": "Heavy alcohol consumption has been associated with brain atrophy, neuronal loss, andpoorer white matter fiber integrity. However, there is conflicting evidence on whether light-to-moderate alcohol consumption shows similar negative associations with brain structure.To address this, we examine the associations between alcohol intake and brain structureusing multimodal imaging data from 36,678 generally healthy middle-aged and older adultsfrom the UK Biobank, controlling for numerous potential confounds. Consistent with priorliterature, we find negative associations between alcohol intake and brain macrostructure andmicrostructure. Specifically, alcohol intake is negatively associated with global brain volumemeasures, regional gray matter volumes, and white matter microstructure. Here, we showthat the negative associations between alcohol intake and brain macrostructure and micro-structure are already apparent in individuals consuming an average of only one to two dailyalcohol units, and become stronger as alcohol intake increases.",
+            "tags": [
+                "#health",
+                "#brain",
+                "#alcohol"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -1879,7 +1922,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#social-media"
             ],
-            "views": 36,
+            "views": 37,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
@@ -1904,6 +1947,21 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "Alcohol Related Neurodegeneration and Recovery",
+            "url": "https://www.researchgate.net/publication/236180730_Alcohol-Related_Neurodegeneration_and_Recovery_Mechanisms_From_Animal_Models",
+            "description": "Human studies have found alcoholics to have a smaller brain size than moderate drinkers; however, thesestudies are complicated by many uncontrollable factors, including timing and amount of alcohol use. Animalexperiments, which can control many factors, have established that alcohol can cause damage to brain cells(i.e., neurons), which results in their loss of structure or function (i.e., neurodegeneration) in multiple brainregions, similar to the damage found in human alcoholics. In addition, animal studies indicate that inhibitionof the creation of neurons (i.e., neurogenesis) and other braincell genesis contributes to alcoholicneurodegeneration. Animal studies also suggest that neurodegeneration changes cognition, contributing toalcohol use disorders. Risk factors such as adolescent age and genetic predisposition toward alcoholconsumption worsen neurodegeneration. Mild impairment of executive functions similar to that found inhumans occurs in animals following binge alcohol treatment. Thus, animal studies suggest that heavy alcoholuse contributes to neurodegeneration and the progressive loss of control over drinking. Despite the negativeconsequences of heavy drinking, there is hope of recovery with abstinence, which in animal models canresult in neural stemcell proliferation and the formation of new neurons and other brain cells, indicative ofbrain growth.",
+            "tags": [
+                "#research",
+                "#health",
+                "#alcohol"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "Blind",
             "url": "https://www.teamblind.com/",
             "description": "Social media.",
@@ -1913,7 +1971,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 277,
+            "views": 278,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1929,7 +1987,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 264,
+            "views": 265,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1945,7 +2003,7 @@ const STATIC = {
                 "#learning",
                 "#positive"
             ],
-            "views": 19,
+            "views": 20,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1974,7 +2032,7 @@ const STATIC = {
                 "#learning",
                 "#news"
             ],
-            "views": 162,
+            "views": 163,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1989,7 +2047,7 @@ const STATIC = {
                 "#video",
                 "#positive"
             ],
-            "views": 101,
+            "views": 102,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2010,7 +2068,7 @@ const STATIC = {
                 "#regular",
                 "#repeat"
             ],
-            "views": 119,
+            "views": 120,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -2115,7 +2173,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 13,
+            "views": 14,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
