@@ -115,7 +115,7 @@ async function updateLinks(logUser) {
         const apiStatus = document.getElementById('api-status-indicator');
         try {
             apiAllLinks = await apiCall('/getLinks', {
-                params: { platform: 'desktop', logUser: logUser ? 1 : 0 }
+                params: { platform: navigator.platform + ' discover-website', logUser: logUser ? 1 : 0 }
             });
             console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
             if (apiStatus) {

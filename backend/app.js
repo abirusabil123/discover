@@ -404,8 +404,8 @@ app.get('/getLinks', async (req, res, next) => {
 
       if (reviewStatusEnable != "1" && w.reviewStatus === 0) return false;
 
-      if (platform === "desktop" && needToIgnore(w.likesDesktop, w.dislikesDesktop)) return false;
-      if (platform === "mobile" && needToIgnore(w.likesMobile, w.dislikesMobile)) return false;
+      if (platform != "discoverAndroid" && needToIgnore(w.likesDesktop, w.dislikesDesktop)) return false;
+      if (platform === "discoverAndroid" && needToIgnore(w.likesMobile, w.dislikesMobile)) return false;
 
       return true;
     });
