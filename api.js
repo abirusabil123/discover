@@ -58,53 +58,74 @@ async function logFrontendError(message, level = 'error', stack = null) {
     }
 }
 
+function filterAllLinks(filters) {
+    console.log(
+        'Applying tags filter:', filters.tagsAllowlist, filters.tagsBlocklist,
+        '\nApplying urls filter:', filters.urlsAllowlist, filters.urlsBlocklist
+    );
+
+    return allLinks.filter(link => {
+        // Allowlist: must contain at least one allowed tag
+        if (filters.tagsAllowlist.length > 0 &&
+            !filters.tagsAllowlist.some(t => link.tags.includes(t))) {
+            return false;
+        }
+        // Blocklist: must not contain any blocked tag
+        if (filters.tagsBlocklist.length > 0 &&
+            filters.tagsBlocklist.some(t => link.tags.includes(t))) {
+            return false;
+        }
+        // Blocklist: URL must not be blocked
+        if (filters.urlsBlocklist.length > 0 &&
+            filters.urlsBlocklist.includes(link.url)) {
+            return false;
+        }
+        // Allowlist: URL must be in the allow list (when one is set)
+        if (filters.urlsAllowlist.length > 0 &&
+            !filters.urlsAllowlist.includes(link.url)) {
+            return false;
+        }
+
+        return true;
+    });
+}
+
 async function updateLinks(logUser) {
-    const { tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist } = getFilterList();
-    console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
+    const filters = getFilterList();
+    apiLinks = filterAllLinks(filters);
+    links = apiLinks;
+    console.log(`Filtered ${links.length} from ${allLinks.length}.`);
+
+    const successBox = document.getElementById('filter-success');
+    if (successBox) {
+        const hasFilters = filters.tagsAllowlist.length ||
+            filters.tagsBlocklist.length ||
+            filters.urlsAllowlist.length ||
+            filters.urlsBlocklist.length;
+        linkCount = apiLinks.length;
+        successBox.textContent = hasFilters
+            ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
+            : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
+    }
 
     const apiStatus = document.getElementById('api-status-indicator');
-    let linkCount = 0;
-    const websitePlatform = navigator.platform + ' discover-website';
-
     try {
-        apiLinks = await apiCall('/getLinks', {
-            params: {
-                platform: websitePlatform,
-                logUser: logUser ? 1 : 0,
-                tagsAllowlist: tagsAllowlist.join(','),
-                tagsBlocklist: tagsBlocklist.join(','),
-                urlsAllowlist: urlsAllowlist.join(' '),
-                urlsBlocklist: urlsBlocklist.join(' ')
-            }
-        });
-        console.log(`Loaded ${apiLinks.length} apiLinks from API.`);
-        linkCount = apiLinks.length;
-
         apiAllLinks = await apiCall('/getLinks', {
-            params: { platform: websitePlatform, logUser: 0 }
+            params: { platform: navigator.platform + ' discover-website', logUser: logUser ? 1 : 0 }
         });
         console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
-
-        // ── success path only ─────────────────────────────
-        links = apiLinks;
-        allLinks = apiAllLinks;
-        if (apiStatus) apiStatus.classList.add('online');
-
-        const successBox = document.getElementById('filter-success');
-        if (successBox) {
-            const hasFilters = tagsAllowlist.length || tagsBlocklist.length ||
-                urlsAllowlist.length || urlsBlocklist.length;
-            successBox.textContent = hasFilters
-                ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
-                : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
+        if (apiStatus) {
+            apiStatus.classList.add('online');
         }
+        allLinks = apiAllLinks;
     } catch (error) {
         if (error.name === 'AbortError') {
             console.log('Link load aborted due to navigation');
-            return;                                    // finally would still run, but there's no finally now
+            return;
         }
         console.error('Failed to load links from API:', error);
-        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
-        if (apiStatus) apiStatus.classList.add('offline');
+        if (apiStatus) {
+            apiStatus.classList.add('offline');
+        }
     }
 }
