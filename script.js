@@ -164,7 +164,12 @@ async function updateLinkStats(linkUrl, action) {
             return;
         }
         console.error(`Failed to sync ${action} for ${linkUrl}:`, error);
-        showErrorMessage(action + " action failed due to backend server unreachable: " + error.message);
+
+        const apiStatus = document.getElementById('api-status-indicator');
+        const isOnline = apiStatus?.classList.contains('online') ?? true;
+        if (isOnline) {
+            showErrorMessage(action + " action failed due to backend server unreachable: " + error.message);
+        }
     }
 }
 
