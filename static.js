@@ -72,7 +72,7 @@ const STATIC = {
                 "#positive",
                 "#learning"
             ],
-            "views": 80,
+            "views": 81,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 152,
+            "views": 153,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -234,7 +234,7 @@ const STATIC = {
                 "#daily",
                 "#daily-desktop"
             ],
-            "views": 173,
+            "views": 174,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -664,7 +664,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 189,
+            "views": 191,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -679,7 +679,7 @@ const STATIC = {
                 "#daily",
                 "#news"
             ],
-            "views": 179,
+            "views": 180,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -736,7 +736,7 @@ const STATIC = {
                 "#twitteralternative",
                 "#socialmedia"
             ],
-            "views": 178,
+            "views": 180,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -900,10 +900,10 @@ const STATIC = {
                 "#palestine",
                 "#free"
             ],
-            "views": 138,
+            "views": 139,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 1,
+            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
@@ -916,7 +916,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 322,
+            "views": 323,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -945,10 +945,10 @@ const STATIC = {
                 "#daily",
                 "#social-media"
             ],
-            "views": 38,
+            "views": 39,
             "likesMobile": 1,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -975,7 +975,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 331,
+            "views": 332,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1105,7 +1105,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 124,
+            "views": 125,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1288,7 +1288,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 143,
+            "views": 144,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -1345,7 +1345,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 468,
+            "views": 469,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1359,11 +1359,11 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 82,
+            "views": 84,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
         },
         {
             "name": "Internet Archive - Wayback Machine",
@@ -1402,7 +1402,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 84,
+            "views": 85,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -1444,7 +1444,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 348,
+            "views": 349,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 6,
@@ -1461,7 +1461,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 216,
+            "views": 217,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1565,7 +1565,7 @@ const STATIC = {
                 "#new",
                 "#tech"
             ],
-            "views": 153,
+            "views": 155,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1653,7 +1653,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 77,
+            "views": 78,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1762,6 +1762,20 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "Nikon",
+            "url": "https://www.nikon.com/",
+            "description": "Technology company.",
+            "tags": [
+                "#tech",
+                "#company"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "Nissan",
             "url": "https://www.nissan-global.com/EN/",
             "description": "Car company",
@@ -1865,7 +1879,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#social-media"
             ],
-            "views": 34,
+            "views": 36,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
@@ -1883,7 +1897,7 @@ const STATIC = {
                 "#beautiful",
                 "#daily"
             ],
-            "views": 241,
+            "views": 242,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1899,7 +1913,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 276,
+            "views": 277,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1915,7 +1929,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 263,
+            "views": 264,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1931,7 +1945,7 @@ const STATIC = {
                 "#learning",
                 "#positive"
             ],
-            "views": 18,
+            "views": 19,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1960,7 +1974,7 @@ const STATIC = {
                 "#learning",
                 "#news"
             ],
-            "views": 161,
+            "views": 162,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1975,7 +1989,7 @@ const STATIC = {
                 "#video",
                 "#positive"
             ],
-            "views": 100,
+            "views": 101,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1996,7 +2010,7 @@ const STATIC = {
                 "#regular",
                 "#repeat"
             ],
-            "views": 118,
+            "views": 119,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -2101,7 +2115,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 12,
+            "views": 13,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
