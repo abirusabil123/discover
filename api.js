@@ -91,6 +91,30 @@ function filterAllLinks(filters) {
 }
 
 async function updateLinks(logUser) {
+    if (logUser) {
+        const apiStatus = document.getElementById('api-status-indicator');
+        try {
+            apiAllLinks = await apiCall('/getLinks', {
+                params: { platform: navigator.platform + ' discover-website', logUser: logUser ? 1 : 0 }
+            });
+            console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
+            if (apiStatus) {
+                apiStatus.classList.add('online');
+            }
+            allLinks = apiAllLinks;
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                console.log('Link load aborted due to navigation');
+                return;
+            }
+            console.error('Failed to load links from API:', error);
+            if (apiStatus) {
+                apiStatus.classList.add('offline');
+            }
+        }
+    }
+
+
     const filters = getFilterList();
     apiLinks = filterAllLinks(filters);
     links = apiLinks;
@@ -106,26 +130,5 @@ async function updateLinks(logUser) {
         successBox.textContent = hasFilters
             ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
             : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
-    }
-
-    const apiStatus = document.getElementById('api-status-indicator');
-    try {
-        apiAllLinks = await apiCall('/getLinks', {
-            params: { platform: navigator.platform + ' discover-website', logUser: logUser ? 1 : 0 }
-        });
-        console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
-        if (apiStatus) {
-            apiStatus.classList.add('online');
-        }
-        allLinks = apiAllLinks;
-    } catch (error) {
-        if (error.name === 'AbortError') {
-            console.log('Link load aborted due to navigation');
-            return;
-        }
-        console.error('Failed to load links from API:', error);
-        if (apiStatus) {
-            apiStatus.classList.add('offline');
-        }
     }
 }
