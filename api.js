@@ -86,8 +86,28 @@ function filterAllLinks(filters) {
             return false;
         }
 
+        if (link?.reviewStatus === 0) {
+            return false;
+        }
+        if (needToIgnore(link.likesDesktop, link.dislikesDesktop)) {
+            return false;
+        }
+
         return true;
     });
+}
+
+
+// Filtering criteria
+function needToIgnore(likes, dislikes) {
+    const total = likes + dislikes;
+    // If less votes, consider it okay
+    if (total <= 3) {
+        return false;
+    }
+    const undesirable_score = dislikes / Math.max(total, 1);
+
+    return undesirable_score > 0.8;
 }
 
 async function updateLinks(logUser) {
@@ -95,7 +115,7 @@ async function updateLinks(logUser) {
         const apiStatus = document.getElementById('api-status-indicator');
         try {
             apiAllLinks = await apiCall('/getLinks', {
-                params: { platform: navigator.platform + ' discover-website', logUser: logUser ? 1 : 0 }
+                params: { platform: 'desktop', logUser: logUser ? 1 : 0 }
             });
             console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
             if (apiStatus) {

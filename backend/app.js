@@ -128,13 +128,13 @@ async function logError(err, req, res, next) {
 }
 
 // Filtering criteria
-function needToIgnore(likesMobile, dislikesMobile) {
-  const total = likesMobile + dislikesMobile;
+function needToIgnore(likes, dislikes) {
+  const total = likes + dislikes;
   // If less votes, consider it okay
   if (total <= 3) {
     return false;
   }
-  const undesirable_score = dislikesMobile / Math.max(total, 1);
+  const undesirable_score = dislikes / Math.max(total, 1);
 
   return undesirable_score > 0.8;
 }
