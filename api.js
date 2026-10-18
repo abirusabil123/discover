@@ -57,3 +57,54 @@ async function logFrontendError(message, level = 'error', stack = null) {
         console.error('Failed to log frontend error:', message);
     }
 }
+
+async function updateLinks(logUser) {
+    const { tagsAllowlist, tagsBlocklist, urlsAllowlist, urlsBlocklist } = getFilterList();
+    console.log('Applying tags filter:', tagsAllowlist, tagsBlocklist, '\nApplying urls filter:', urlsAllowlist, urlsBlocklist);
+
+    const apiStatus = document.getElementById('api-status-indicator');
+    let linkCount = 0;
+    const websitePlatform = navigator.platform + ' discover-website';
+
+    try {
+        apiLinks = await apiCall('/getLinks', {
+            params: {
+                platform: websitePlatform,
+                logUser: logUser ? 1 : 0,
+                tagsAllowlist: tagsAllowlist.join(','),
+                tagsBlocklist: tagsBlocklist.join(','),
+                urlsAllowlist: urlsAllowlist.join(' '),
+                urlsBlocklist: urlsBlocklist.join(' ')
+            }
+        });
+        console.log(`Loaded ${apiLinks.length} apiLinks from API.`);
+        linkCount = apiLinks.length;
+
+        apiAllLinks = await apiCall('/getLinks', {
+            params: { platform: websitePlatform, logUser: 0 }
+        });
+        console.log(`Loaded ${apiAllLinks.length} apiAllLinks from API.`);
+
+        // ── success path only ─────────────────────────────
+        links = apiLinks;
+        allLinks = apiAllLinks;
+        if (apiStatus) apiStatus.classList.add('online');
+
+        const successBox = document.getElementById('filter-success');
+        if (successBox) {
+            const hasFilters = tagsAllowlist.length || tagsBlocklist.length ||
+                urlsAllowlist.length || urlsBlocklist.length;
+            successBox.textContent = hasFilters
+                ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
+                : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
+        }
+    } catch (error) {
+        if (error.name === 'AbortError') {
+            console.log('Link load aborted due to navigation');
+            return;                                    // finally would still run, but there's no finally now
+        }
+        console.error('Failed to load links from API:', error);
+        showErrorMessage("Failed to load links from API.<br>Cannot reach backend server: " + error + "<br>Using static list as fallback.");
+        if (apiStatus) apiStatus.classList.add('offline');
+    }
+}
