@@ -33,7 +33,6 @@ const WALLPAPERS = [
     'wallpapers/ut7loem37k861-4276150870.jpg'
 ];
 
-const minuteBucket = Math.floor(Date.now() / 60000);
-const chosen = WALLPAPERS[minuteBucket % WALLPAPERS.length];
+const chosen = WALLPAPERS[Math.floor(Math.random() * WALLPAPERS.length)];
 document.body.style.backgroundImage =
     `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("${chosen}")`;
