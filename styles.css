@@ -198,6 +198,15 @@ body {
     color: white;
 }
 
+/* Grey out and disable vote buttons whenever the API is known to be offline */
+body:has(#api-status-indicator.offline) #likesDesktop-btn,
+body:has(#api-status-indicator.offline) #dislikesDesktop-btn {
+    opacity: 0.4;
+    filter: grayscale(1);
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .direction-btn {
     width: 12rem;
 }
