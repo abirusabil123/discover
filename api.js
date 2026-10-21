@@ -58,13 +58,14 @@ async function logFrontendError(message, level = 'error', stack = null) {
     }
 }
 
-function filterAllLinks(filters) {
+function filterAllLinks() {
+    const filters = getFilterList();
     console.log(
         'Applying tags filter:', filters.tagsAllowlist, filters.tagsBlocklist,
         '\nApplying urls filter:', filters.urlsAllowlist, filters.urlsBlocklist
     );
 
-    return allLinks.filter(link => {
+    apiLinks = allLinks.filter(link => {
         // Allowlist: must contain at least one allowed tag
         if (filters.tagsAllowlist.length > 0 &&
             !filters.tagsAllowlist.some(t => link.tags.includes(t))) {
@@ -95,6 +96,21 @@ function filterAllLinks(filters) {
 
         return true;
     });
+
+    links = apiLinks;
+    console.log(`Filtered ${links.length} from ${allLinks.length}.`);
+
+    const successBox = document.getElementById('filter-success');
+    if (successBox) {
+        const hasFilters = filters.tagsAllowlist.length ||
+            filters.tagsBlocklist.length ||
+            filters.urlsAllowlist.length ||
+            filters.urlsBlocklist.length;
+        linkCount = apiLinks.length;
+        successBox.textContent = hasFilters
+            ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
+            : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
+    }
 }
 
 
@@ -111,6 +127,7 @@ function needToIgnore(likes, dislikes) {
 }
 
 async function updateLinks(logUser) {
+    filterAllLinks();
     if (logUser) {
         const apiStatus = document.getElementById('api-status-indicator');
         try {
@@ -122,6 +139,7 @@ async function updateLinks(logUser) {
                 apiStatus.classList.add('online');
             }
             allLinks = apiAllLinks;
+            filterAllLinks();
         } catch (error) {
             if (error.name === 'AbortError') {
                 console.log('Link load aborted due to navigation');
@@ -132,23 +150,5 @@ async function updateLinks(logUser) {
                 apiStatus.classList.add('offline');
             }
         }
-    }
-
-
-    const filters = getFilterList();
-    apiLinks = filterAllLinks(filters);
-    links = apiLinks;
-    console.log(`Filtered ${links.length} from ${allLinks.length}.`);
-
-    const successBox = document.getElementById('filter-success');
-    if (successBox) {
-        const hasFilters = filters.tagsAllowlist.length ||
-            filters.tagsBlocklist.length ||
-            filters.urlsAllowlist.length ||
-            filters.urlsBlocklist.length;
-        linkCount = apiLinks.length;
-        successBox.textContent = hasFilters
-            ? `✅ Filter applied: ${linkCount} link${linkCount !== 1 ? 's' : ''} found`
-            : `✅ Showing all ${linkCount} link${linkCount !== 1 ? 's' : ''}`;
     }
 }
