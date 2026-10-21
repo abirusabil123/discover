@@ -13,7 +13,10 @@ function getFilterList() {
     const urlsInputAllowlist = document.getElementById('filter-urls-allowlist');
     const urlsInputBlocklist = document.getElementById('filter-urls-blocklist');
 
-    if (tagsInputAllowlist) {
+    if (tagsInputAllowlist && tagsInputBlocklist && urlsInputAllowlist && urlsInputBlocklist) {
+
+        saveSettings();
+
         const mode = document.querySelector('input[name="filter-mode"]:checked')?.value || 'lists';
         if (mode === 'individual') {
             return {
