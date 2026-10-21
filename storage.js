@@ -50,6 +50,7 @@ function saveSettings() {
 }
 
 function applySettings() {
+    console.log('applySettings start.');
     try {
         const settings = getStoredSettings();
         const mode = settings.filterMode;
@@ -67,10 +68,10 @@ function applySettings() {
         const filterUrlsAllowlist = document.getElementById('filter-urls-allowlist')
         const filterUrlsBlocklist = document.getElementById('filter-urls-blocklist')
         if (filterTagsAllowlist && filterTagsBlocklist && filterUrlsAllowlist && filterUrlsBlocklist) {
-            document.getElementById('filter-tags-allowlist').value = lists.tagsAllowlist;
-            document.getElementById('filter-tags-blocklist').value = lists.tagsBlocklist;
-            document.getElementById('filter-urls-allowlist').value = lists.urlsAllowlist;
-            document.getElementById('filter-urls-blocklist').value = lists.urlsBlocklist;
+            filterTagsAllowlist.value = lists.tagsAllowlist;
+            filterTagsBlocklist.value = lists.tagsBlocklist;
+            filterUrlsAllowlist.value = lists.urlsAllowlist;
+            filterUrlsBlocklist.value = lists.urlsBlocklist;
 
             populateFilterModePage();
         }
