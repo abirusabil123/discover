@@ -10,6 +10,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #0f0f0f;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -31,12 +35,6 @@ body {
     color: white;
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-weight: 300;
-}
-
-.header p {
-    color: #888;
-    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -78,66 +76,23 @@ body {
     color: #666;
 }
 
-.current-site {
-    width: 100%;
-    max-width: 50rem;
-    padding: 1rem;
-    text-align: center;
-}
-
-.current-site h3 {
-    color: #888;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.0625rem;
-}
-
-.current-site a {
-    color: #888;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
-    transition: all 0.2s ease;
-    word-break: break-word;
-}
-
-.current-site a:hover {
-    color: #888;
-    text-decoration: none;
-}
-
-/* Style for the link box container */
 .link-box {
     display: block;
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-radius: 0.5rem;
+    text-align: center;
     background: rgba(74, 222, 128, 0.2);
-    transition: all 0.2s ease;
     box-sizing: border-box;
 }
 
-.link-box:hover {
-    transform: translateY(-0.0625rem);
-}
-
-/* Style for when a link is actually loaded */
-.current-site a[href]:not([href="#"]):not([href=""]) {
-    color: #4ade80;
-    text-decoration: underline;
-    display: block;
-}
-
-.current-site a[href]:not([href="#"]):not([href=""]):hover {
+#current-site-link {
     color: white;
+    font-weight: bold;
 }
 
 /* Style for the description text */
 .link-description {
-    color: #AAA;
     text-align: center;
     word-break: break-word;
 }
@@ -182,15 +137,6 @@ body {
     color: #4ade80;
     margin-bottom: 0.125rem;
 }
-
-.stat-label {
-    font-size: 1rem;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.03125rem;
-}
-
-/* Action Buttons - now integrated into stats row */
 
 .action-btn {
     background: #333;
@@ -250,6 +196,15 @@ body {
 .dislikes-btn.disliked {
     background: #dc2626;
     color: white;
+}
+
+/* Grey out and disable vote buttons whenever the API is known to be offline */
+body:has(#api-status-indicator.offline) #likesDesktop-btn,
+body:has(#api-status-indicator.offline) #dislikesDesktop-btn {
+    opacity: 0.4;
+    filter: grayscale(1);
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 .direction-btn {
@@ -567,11 +522,7 @@ body {
 }
 
 .success-text {
-    color: green;
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
+    color: white;
 }
 
 @keyframes fadeIn {
@@ -855,10 +806,6 @@ body {
         padding: 1rem;
     }
 
-    .current-site {
-        padding: 1rem;
-    }
-
     .stats-row {
         gap: 0.5rem;
         flex-direction: column;
@@ -883,11 +830,6 @@ body {
         display: block;
         width: 100%;
         padding: 1rem 1rem;
-    }
-
-    .current-site a {
-        font-size: 1rem;
-        line-height: 1.5;
     }
 
     .link-description {

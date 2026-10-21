@@ -30,7 +30,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("#daily", "#positive", "#learning"),
-            views = 78,
+            views = 83,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -60,7 +60,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("#positive", "#daily"),
-            views = 151,
+            views = 155,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -80,7 +80,7 @@ object StaticLinks {
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
             tags = listOf("#positive", "#code", "#learning", "#fun", "#poetic", "#daily", "#daily-desktop"),
-            views = 170,
+            views = 175,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -131,6 +131,16 @@ object StaticLinks {
             description = "Check if a website is down for others too.",
             tags = listOf("#positive"),
             views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Just one drink per day can shrink your brain, study says",
+            url = "https://edition.cnn.com/2022/03/04/health/alcohol-brain-shrinkage-wellness/",
+            description = "Effect of long term alcohol compared to effect of short term alcohol consumption.",
+            tags = listOf("#alcohol", "#health", "#brain"),
+            views = 3,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -240,7 +250,7 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("#positive", "#daily", "#news"),
-            views = 175,
+            views = 182,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -270,7 +280,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media. Refreshing and suprisingly positive content hinting at a simple feed algorithm.",
             tags = listOf("#positive", "#daily", "#twitteralternative", "#socialmedia"),
-            views = 176,
+            views = 182,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -313,6 +323,16 @@ object StaticLinks {
             views = 201,
             likesMobile = 3,
             dislikesMobile = 1
+        ),
+
+        Link(
+            name = "Neal.fun",
+            url = "https://neal.fun/",
+            description = "Interesting web games.",
+            tags = listOf("#positive", "#games"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
         ),
 
         Link(
@@ -360,7 +380,7 @@ object StaticLinks {
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
             tags = listOf("#positive", "#daily", "#palestine", "#free"),
-            views = 136,
+            views = 141,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -370,7 +390,7 @@ object StaticLinks {
             url = "https://patatap.com/",
             description = "Turn your keyboard into a sound machine with colorful animations",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 319,
+            views = 325,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -390,7 +410,7 @@ object StaticLinks {
             url = "https://pixelfed.social/web/explore",
             description = "Decentralized photo sharing social media powered by Pixelfed.",
             tags = listOf("#fediverse", "#daily", "#social-media"),
-            views = 34,
+            views = 41,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -400,7 +420,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 330,
+            views = 334,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -470,7 +490,7 @@ object StaticLinks {
             url = "https://safirnews.in/",
             description = "Indian news website.",
             tags = listOf("#news", "#positive", "#daily"),
-            views = 119,
+            views = 127,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -560,7 +580,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers.",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 467,
+            views = 472,
             likesMobile = 56,
             dislikesMobile = 4
         ),
@@ -570,7 +590,7 @@ object StaticLinks {
             url = "https://unsplash.com/illustrations",
             description = "Free stock vector illustrations. Powered by creators everywhere.",
             tags = listOf("#daily", "#positive"),
-            views = 80,
+            views = 86,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -620,7 +640,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 342,
+            views = 351,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -630,7 +650,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386599316112",
             description = "Short clips from Aljazeera.",
             tags = listOf("#aljazeera", "#flips", "#learning", "#positive", "#daily"),
-            views = 211,
+            views = 219,
             likesMobile = 3,
             dislikesMobile = 0
         ),
@@ -670,7 +690,7 @@ object StaticLinks {
             url = "https://www.digit.in/",
             description = "Technology magazine.",
             tags = listOf("#positive", "#daily", "#new", "#tech"),
-            views = 150,
+            views = 158,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -730,7 +750,7 @@ object StaticLinks {
             url = "https://www.justwatch.com/",
             description = "What's trending in streaming OTT (over the top) entertainment.",
             tags = listOf("#daily", "#positive"),
-            views = 73,
+            views = 80,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -786,12 +806,32 @@ object StaticLinks {
         ),
 
         Link(
+            name = "Associations between alcohol consumption and gray and white matter volumes in the UK Biobank",
+            url = "https://www.nature.com/articles/s41467-022-28735-5",
+            description = "Heavy alcohol consumption has been associated with brain atrophy, neuronal loss, andpoorer white matter fiber integrity. However, there is conflicting evidence on whether light-to-moderate alcohol consumption shows similar negative associations with brain structure.To address this, we examine the associations between alcohol intake and brain structureusing multimodal imaging data from 36,678 generally healthy middle-aged and older adultsfrom the UK Biobank, controlling for numerous potential confounds. Consistent with priorliterature, we find negative associations between alcohol intake and brain macrostructure andmicrostructure. Specifically, alcohol intake is negatively associated with global brain volumemeasures, regional gray matter volumes, and white matter microstructure. Here, we showthat the negative associations between alcohol intake and brain macrostructure and micro-structure are already apparent in individuals consuming an average of only one to two dailyalcohol units, and become stronger as alcohol intake increases.",
+            tags = listOf("#health", "#brain", "#alcohol"),
+            views = 1,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "How hate drove a Muslim flower-seller to death in a Maharashtra village",
             url = "https://www.newslaundry.com/2025/11/10/how-hate-drove-a-muslim-flower-seller-to-death-in-a-maharashtra-village",
             description = "Intolerance news.",
             tags = listOf("#learning", "#news"),
             views = 63,
             likesMobile = 5,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Nikon",
+            url = "https://www.nikon.com/",
+            description = "Technology company.",
+            tags = listOf("#tech", "#company"),
+            views = 0,
+            likesMobile = 0,
             dislikesMobile = 0
         ),
 
@@ -810,7 +850,7 @@ object StaticLinks {
             url = "https://www.oneplus.com/",
             description = "Phone company",
             tags = listOf("#phone", "#phonecompany", "#mobilephonecompany", "#poetic"),
-            views = 93,
+            views = 94,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -850,8 +890,18 @@ object StaticLinks {
             url = "https://www.rekhta.org/tags/famous-shayari/couplets",
             description = "Ponder and it might help clear blockers in the mind.",
             tags = listOf("#positive", "#shayaris", "#cool", "#poetic", "#beautiful", "#daily"),
-            views = 238,
+            views = 244,
             likesMobile = 1,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Alcohol Related Neurodegeneration and Recovery",
+            url = "https://www.researchgate.net/publication/236180730_Alcohol-Related_Neurodegeneration_and_Recovery_Mechanisms_From_Animal_Models",
+            description = "Human studies have found alcoholics to have a smaller brain size than moderate drinkers; however, thesestudies are complicated by many uncontrollable factors, including timing and amount of alcohol use. Animalexperiments, which can control many factors, have established that alcohol can cause damage to brain cells(i.e., neurons), which results in their loss of structure or function (i.e., neurodegeneration) in multiple brainregions, similar to the damage found in human alcoholics. In addition, animal studies indicate that inhibitionof the creation of neurons (i.e., neurogenesis) and other braincell genesis contributes to alcoholicneurodegeneration. Animal studies also suggest that neurodegeneration changes cognition, contributing toalcohol use disorders. Risk factors such as adolescent age and genetic predisposition toward alcoholconsumption worsen neurodegeneration. Mild impairment of executive functions similar to that found inhumans occurs in animals following binge alcohol treatment. Thus, animal studies suggest that heavy alcoholuse contributes to neurodegeneration and the progressive loss of control over drinking. Despite the negativeconsequences of heavy drinking, there is hope of recovery with abstinence, which in animal models canresult in neural stemcell proliferation and the formation of new neurons and other brain cells, indicative ofbrain growth.",
+            tags = listOf("#research", "#health", "#alcohol"),
+            views = 1,
+            likesMobile = 0,
             dislikesMobile = 0
         ),
 
@@ -860,7 +910,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("#positive", "#daily", "#social", "#media"),
-            views = 273,
+            views = 280,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -870,7 +920,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("#positive", "#daily", "#social", "#media"),
-            views = 260,
+            views = 266,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -880,7 +930,7 @@ object StaticLinks {
             url = "https://www.whatismybrowser.com/",
             description = "Find out what websites know about you.",
             tags = listOf("#daily", "#daily-desktop", "#learning", "#positive"),
-            views = 14,
+            views = 20,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -900,7 +950,7 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("#positive", "#daily", "#learning", "#news"),
-            views = 156,
+            views = 165,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -910,7 +960,7 @@ object StaticLinks {
             url = "https://www.youtube.com/",
             description = "Video sharing social media platform. The main page has a non personalized recommendation algorithm feed which can be activated by moving to shorts and then back to the home page.",
             tags = listOf("#daily", "#video", "#positive"),
-            views = 92,
+            views = 103,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -920,7 +970,7 @@ object StaticLinks {
             url = "https://www.youtube.com/feed/subscriptions",
             description = "The subscriptions feed does not have implicit personalized recommendations.",
             tags = listOf("#daily", "#daily-desktop", "#positive", "#video", "#social", "#good", "#dynamic", "#regular", "#repeat"),
-            views = 112,
+            views = 120,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -930,7 +980,7 @@ object StaticLinks {
             url = "https://www.youtube.com/shorts/",
             description = "Short form YouTube videos in TikTok style.",
             tags = listOf("#positive", "#daily", "#daily-mobile", "#tiktok", "#videos"),
-            views = 152,
+            views = 153,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -986,11 +1036,31 @@ object StaticLinks {
         ),
 
         Link(
+            name = "Banksy Painting in West Bank, Palestine (2005)",
+            url = "https://www.youtube.com/watch?v=KJBach_xRLw",
+            description = "Rare footage of the secretive graffiti artist Banksy painting live with his distinctive stencil method.",
+            tags = listOf("#art", "#graffiti", "#banksy"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
+            name = "Graffiti, including the works of Banksy,  on the Israeli West Bank Barrier Wall in Bethlehem, Palestinian Territories.",
+            url = "https://www.youtube.com/watch?v=USdMEBMQw_w",
+            description = "West Bank Palestine Barrier Separation Wall Graffiti, Including Some Works By Banksy.",
+            tags = listOf("#art", "#palestine", "#graffiti"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "2 Rakat Complete Salah in Real Time",
             url = "https://www.youtube.com/watch?v=v2gx24YqI68",
             description = "2 Rakat Complete Salah for Jumma with English translation.",
             tags = listOf("#positive", "#daily"),
-            views = 11,
+            views = 15,
             likesMobile = 0,
             dislikesMobile = 0
         ),

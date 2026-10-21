@@ -53,7 +53,7 @@ class ApiService {
         urlsBlocklist: List<String> = emptyList(),
         logUser: Int
     ): List<Link> = withContext(Dispatchers.IO) {
-        val queryParams = StringBuilder("platform=discover-android&logUser=$logUser")
+        val queryParams = StringBuilder("platform=discoverAndroid&logUser=$logUser")
         if (tagsAllowlist.isNotEmpty()) queryParams.append(
             "&tagsAllowlist=${
                 URLEncoder.encode(

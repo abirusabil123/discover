@@ -1,12 +1,12 @@
 {
   "metadata": {
     "apiUrl": "https://backenddiscover.duckdns.org:8443",
-    "totalLinks": 158
+    "totalLinks": 166
   },
   "analysis": {
-    "total": 158,
-    "filteredMobile": 58,
-    "filteredDesktop": 14,
+    "total": 166,
+    "filteredMobile": 59,
+    "filteredDesktop": 15,
     "blockedMobileUrls": [
       "http://radio.garden/",
       "https://10minutemail.com/",
@@ -24,6 +24,7 @@
       "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
       "https://dontevenreply.com/",
       "https://easywaytoquran.com/4-qul-in-islam-2/",
+      "https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD",
       "https://github.com/alex/what-happens-when",
       "https://github.com/pllk/cphb/",
       "https://godbolt.org/",
@@ -71,6 +72,7 @@
       "https://abirusabil123.github.io/",
       "https://canon.com/",
       "https://easywaytoquran.com/4-qul-in-islam-2/",
+      "https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD",
       "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
       "https://loops.video/",
       "https://mojapp.in/",
@@ -85,26 +87,26 @@
     ],
     "byReason": {},
     "byScore": {
-      "0%": 91,
+      "0%": 98,
       "1-25%": 6,
       "26-50%": 1,
       "51-75%": 1,
       "76-79%": 0,
-      "80-100%": 59
+      "80-100%": 60
     },
     "byVoteCount": {
-      "0 votes": 61,
+      "0 votes": 68,
       "1-3 votes": 24,
       "4-10 votes": 12,
       "11-50 votes": 2,
-      "50+ votes": 59
+      "50+ votes": 60
     }
   },
   "visitors": {
     "byCountry": [
       {
         "country": "",
-        "count": 4887
+        "count": 5382
       },
       {
         "country": "AE",
@@ -131,12 +133,16 @@
         "count": 129
       },
       {
+        "country": "BR",
+        "count": 2
+      },
+      {
         "country": "CA",
         "count": 199
       },
       {
         "country": "CN",
-        "count": 74
+        "count": 76
       },
       {
         "country": "DE",
@@ -152,7 +158,7 @@
       },
       {
         "country": "FR",
-        "count": 6
+        "count": 7
       },
       {
         "country": "GB",
@@ -168,7 +174,7 @@
       },
       {
         "country": "IN",
-        "count": 164
+        "count": 171
       },
       {
         "country": "IR",
@@ -176,7 +182,7 @@
       },
       {
         "country": "JP",
-        "count": 32
+        "count": 34
       },
       {
         "country": "KG",
@@ -236,7 +242,7 @@
       },
       {
         "country": "US",
-        "count": 1248
+        "count": 1249
       },
       {
         "country": "ZA",
@@ -246,7 +252,7 @@
     "byMonth": [
       {
         "month": "202610",
-        "count": 646
+        "count": 1156
       },
       {
         "month": "202609",
@@ -276,11 +282,23 @@
       },
       {
         "platform": "desktop",
-        "count": 4387
+        "count": 4400
       },
       {
         "platform": "discover-android",
-        "count": 29
+        "count": 30
+      },
+      {
+        "platform": "discoverAndroid",
+        "count": 3
+      },
+      {
+        "platform": "discoverWebsite Linux armv81",
+        "count": 12
+      },
+      {
+        "platform": "discoverWebsite Linux x86_64",
+        "count": 3
       },
       {
         "platform": "Linux armv81",
@@ -288,7 +306,7 @@
       },
       {
         "platform": "Linux armv81 discover-website",
-        "count": 43
+        "count": 121
       },
       {
         "platform": "Linux x86_64",
@@ -296,7 +314,7 @@
       },
       {
         "platform": "Linux x86_64 discover-website",
-        "count": 110
+        "count": 509
       },
       {
         "platform": "Linux x86_64discover-website",
@@ -333,6 +351,10 @@
       {
         "platform": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
         "count": 4
+      },
+      {
+        "platform": "Win32 discover-website",
+        "count": 1
       }
     ],
     "byProduct": [
@@ -342,7 +364,7 @@
       },
       {
         "product": "discover-backend",
-        "count": 7140
+        "count": 7650
       },
       {
         "product": "personal website",
@@ -352,7 +374,7 @@
     "byOrigin": [
       {
         "origin": "",
-        "count": 2602
+        "count": 2606
       },
       {
         "origin": "file://",
@@ -360,11 +382,11 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 126
+        "count": 138
       },
       {
         "origin": "http://localhost:44631",
-        "count": 2842
+        "count": 3109
       },
       {
         "origin": "https://abirusabil123.github.io",
@@ -404,7 +426,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 1569
+        "count": 1795
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -412,7 +434,7 @@
       },
       {
         "origin": "null",
-        "count": 1
+        "count": 2
       }
     ],
     "byPath": [
@@ -430,7 +452,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 5045
+        "count": 5555
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -464,11 +486,11 @@
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 5514
+        "count": 6019
       },
       {
         "status": "Bot",
-        "count": 1694
+        "count": 1699
       }
     ],
     "byHourOfDay": [
@@ -478,7 +500,7 @@
       },
       {
         "hour": 1,
-        "count": 106
+        "count": 111
       },
       {
         "hour": 2,
@@ -498,63 +520,63 @@
       },
       {
         "hour": 6,
-        "count": 499
+        "count": 504
       },
       {
         "hour": 7,
-        "count": 327
+        "count": 345
       },
       {
         "hour": 8,
-        "count": 392
+        "count": 414
       },
       {
         "hour": 9,
-        "count": 281
+        "count": 284
       },
       {
         "hour": 10,
-        "count": 193
+        "count": 213
       },
       {
         "hour": 11,
-        "count": 185
+        "count": 189
       },
       {
         "hour": 12,
-        "count": 300
+        "count": 301
       },
       {
         "hour": 13,
-        "count": 361
+        "count": 366
       },
       {
         "hour": 14,
-        "count": 435
+        "count": 438
       },
       {
         "hour": 15,
-        "count": 562
+        "count": 613
       },
       {
         "hour": 16,
-        "count": 612
+        "count": 621
       },
       {
         "hour": 17,
-        "count": 373
+        "count": 618
       },
       {
         "hour": 18,
-        "count": 409
+        "count": 467
       },
       {
         "hour": 19,
-        "count": 123
+        "count": 164
       },
       {
         "hour": 20,
-        "count": 95
+        "count": 115
       },
       {
         "hour": 21,
@@ -572,7 +594,7 @@
     "byDayOfWeek": [
       {
         "dow": 0,
-        "count": 1163
+        "count": 1176
       },
       {
         "dow": 1,
@@ -592,16 +614,16 @@
       },
       {
         "dow": 5,
-        "count": 660
+        "count": 1023
       },
       {
         "dow": 6,
-        "count": 2386
+        "count": 2520
       }
     ]
   },
   "errors": {
-    "count": 169,
+    "count": 204,
     "unresolved": 0,
     "allUnresolvedErrors": []
   }

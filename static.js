@@ -72,7 +72,7 @@ const STATIC = {
                 "#positive",
                 "#learning"
             ],
-            "views": 78,
+            "views": 83,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -187,7 +187,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 151,
+            "views": 155,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -234,7 +234,7 @@ const STATIC = {
                 "#daily",
                 "#daily-desktop"
             ],
-            "views": 170,
+            "views": 175,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -374,6 +374,21 @@ const STATIC = {
                 "#positive"
             ],
             "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Just one drink per day can shrink your brain, study says",
+            "url": "https://edition.cnn.com/2022/03/04/health/alcohol-brain-shrinkage-wellness/",
+            "description": "Effect of long term alcohol compared to effect of short term alcohol consumption.",
+            "tags": [
+                "#alcohol",
+                "#health",
+                "#brain"
+            ],
+            "views": 3,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -664,7 +679,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 187,
+            "views": 192,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -679,7 +694,7 @@ const STATIC = {
                 "#daily",
                 "#news"
             ],
-            "views": 175,
+            "views": 182,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -736,7 +751,7 @@ const STATIC = {
                 "#twitteralternative",
                 "#socialmedia"
             ],
-            "views": 176,
+            "views": 182,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -796,6 +811,20 @@ const STATIC = {
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Neal.fun",
+            "url": "https://neal.fun/",
+            "description": "Interesting web games.",
+            "tags": [
+                "#positive",
+                "#games"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -886,10 +915,10 @@ const STATIC = {
                 "#palestine",
                 "#free"
             ],
-            "views": 136,
+            "views": 141,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 1,
+            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
@@ -902,7 +931,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 319,
+            "views": 325,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -931,10 +960,10 @@ const STATIC = {
                 "#daily",
                 "#social-media"
             ],
-            "views": 34,
+            "views": 41,
             "likesMobile": 1,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -961,7 +990,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 330,
+            "views": 334,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1063,7 +1092,7 @@ const STATIC = {
                 "#kernel",
                 "#positive"
             ],
-            "views": 10,
+            "views": 11,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 2,
@@ -1091,7 +1120,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 119,
+            "views": 127,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1274,7 +1303,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 139,
+            "views": 145,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -1331,7 +1360,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 467,
+            "views": 472,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1345,11 +1374,11 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 80,
+            "views": 86,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
         },
         {
             "name": "Internet Archive - Wayback Machine",
@@ -1388,7 +1417,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 83,
+            "views": 86,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -1430,10 +1459,10 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 342,
+            "views": 351,
             "likesMobile": 8,
             "dislikesMobile": 0,
-            "likesDesktop": 5,
+            "likesDesktop": 6,
             "dislikesDesktop": 0
         },
         {
@@ -1447,7 +1476,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 211,
+            "views": 219,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1551,7 +1580,7 @@ const STATIC = {
                 "#new",
                 "#tech"
             ],
-            "views": 150,
+            "views": 158,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1639,7 +1668,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 73,
+            "views": 80,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1734,6 +1763,21 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "Associations between alcohol consumption and gray and white matter volumes in the UK Biobank",
+            "url": "https://www.nature.com/articles/s41467-022-28735-5",
+            "description": "Heavy alcohol consumption has been associated with brain atrophy, neuronal loss, andpoorer white matter fiber integrity. However, there is conflicting evidence on whether light-to-moderate alcohol consumption shows similar negative associations with brain structure.To address this, we examine the associations between alcohol intake and brain structureusing multimodal imaging data from 36,678 generally healthy middle-aged and older adultsfrom the UK Biobank, controlling for numerous potential confounds. Consistent with priorliterature, we find negative associations between alcohol intake and brain macrostructure andmicrostructure. Specifically, alcohol intake is negatively associated with global brain volumemeasures, regional gray matter volumes, and white matter microstructure. Here, we showthat the negative associations between alcohol intake and brain macrostructure and micro-structure are already apparent in individuals consuming an average of only one to two dailyalcohol units, and become stronger as alcohol intake increases.",
+            "tags": [
+                "#health",
+                "#brain",
+                "#alcohol"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "How hate drove a Muslim flower-seller to death in a Maharashtra village",
             "url": "https://www.newslaundry.com/2025/11/10/how-hate-drove-a-muslim-flower-seller-to-death-in-a-maharashtra-village",
             "description": "Intolerance news.",
@@ -1745,6 +1789,20 @@ const STATIC = {
             "likesMobile": 5,
             "dislikesMobile": 0,
             "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Nikon",
+            "url": "https://www.nikon.com/",
+            "description": "Technology company.",
+            "tags": [
+                "#tech",
+                "#company"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -1771,7 +1829,7 @@ const STATIC = {
                 "#mobilephonecompany",
                 "#poetic"
             ],
-            "views": 93,
+            "views": 94,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1851,7 +1909,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#social-media"
             ],
-            "views": 31,
+            "views": 37,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
@@ -1869,10 +1927,25 @@ const STATIC = {
                 "#beautiful",
                 "#daily"
             ],
-            "views": 238,
+            "views": 244,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Alcohol Related Neurodegeneration and Recovery",
+            "url": "https://www.researchgate.net/publication/236180730_Alcohol-Related_Neurodegeneration_and_Recovery_Mechanisms_From_Animal_Models",
+            "description": "Human studies have found alcoholics to have a smaller brain size than moderate drinkers; however, thesestudies are complicated by many uncontrollable factors, including timing and amount of alcohol use. Animalexperiments, which can control many factors, have established that alcohol can cause damage to brain cells(i.e., neurons), which results in their loss of structure or function (i.e., neurodegeneration) in multiple brainregions, similar to the damage found in human alcoholics. In addition, animal studies indicate that inhibitionof the creation of neurons (i.e., neurogenesis) and other braincell genesis contributes to alcoholicneurodegeneration. Animal studies also suggest that neurodegeneration changes cognition, contributing toalcohol use disorders. Risk factors such as adolescent age and genetic predisposition toward alcoholconsumption worsen neurodegeneration. Mild impairment of executive functions similar to that found inhumans occurs in animals following binge alcohol treatment. Thus, animal studies suggest that heavy alcoholuse contributes to neurodegeneration and the progressive loss of control over drinking. Despite the negativeconsequences of heavy drinking, there is hope of recovery with abstinence, which in animal models canresult in neural stemcell proliferation and the formation of new neurons and other brain cells, indicative ofbrain growth.",
+            "tags": [
+                "#research",
+                "#health",
+                "#alcohol"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -1885,7 +1958,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 273,
+            "views": 280,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1901,7 +1974,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 260,
+            "views": 266,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1917,7 +1990,7 @@ const STATIC = {
                 "#learning",
                 "#positive"
             ],
-            "views": 14,
+            "views": 20,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1946,7 +2019,7 @@ const STATIC = {
                 "#learning",
                 "#news"
             ],
-            "views": 156,
+            "views": 165,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1961,7 +2034,7 @@ const STATIC = {
                 "#video",
                 "#positive"
             ],
-            "views": 92,
+            "views": 103,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1982,7 +2055,7 @@ const STATIC = {
                 "#regular",
                 "#repeat"
             ],
-            "views": 112,
+            "views": 120,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -1999,7 +2072,7 @@ const STATIC = {
                 "#tiktok",
                 "#videos"
             ],
-            "views": 152,
+            "views": 153,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2080,6 +2153,36 @@ const STATIC = {
             "dislikesDesktop": 1
         },
         {
+            "name": "Banksy Painting in West Bank, Palestine (2005)",
+            "url": "https://www.youtube.com/watch?v=KJBach_xRLw",
+            "description": "Rare footage of the secretive graffiti artist Banksy painting live with his distinctive stencil method.",
+            "tags": [
+                "#art",
+                "#graffiti",
+                "#banksy"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Graffiti, including the works of Banksy,  on the Israeli West Bank Barrier Wall in Bethlehem, Palestinian Territories.",
+            "url": "https://www.youtube.com/watch?v=USdMEBMQw_w",
+            "description": "West Bank Palestine Barrier Separation Wall Graffiti, Including Some Works By Banksy.",
+            "tags": [
+                "#art",
+                "#palestine",
+                "#graffiti"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "2 Rakat Complete Salah in Real Time",
             "url": "https://www.youtube.com/watch?v=v2gx24YqI68",
             "description": "2 Rakat Complete Salah for Jumma with English translation.",
@@ -2087,10 +2190,10 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 11,
+            "views": 15,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
