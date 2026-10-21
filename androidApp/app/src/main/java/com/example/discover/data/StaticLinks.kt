@@ -60,7 +60,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("#positive", "#daily"),
-            views = 155,
+            views = 156,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -80,7 +80,7 @@ object StaticLinks {
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
             tags = listOf("#positive", "#code", "#learning", "#fun", "#poetic", "#daily", "#daily-desktop"),
-            views = 175,
+            views = 178,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -250,7 +250,7 @@ object StaticLinks {
             url = "https://maktoobmedia.com/",
             description = "News website",
             tags = listOf("#positive", "#daily", "#news"),
-            views = 182,
+            views = 184,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -380,7 +380,7 @@ object StaticLinks {
             url = "https://palestine.com/",
             description = "The website https://palestine.com/.",
             tags = listOf("#positive", "#daily", "#palestine", "#free"),
-            views = 141,
+            views = 143,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -410,7 +410,7 @@ object StaticLinks {
             url = "https://pixelfed.social/web/explore",
             description = "Decentralized photo sharing social media powered by Pixelfed.",
             tags = listOf("#fediverse", "#daily", "#social-media"),
-            views = 41,
+            views = 43,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -420,7 +420,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 334,
+            views = 336,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -490,7 +490,7 @@ object StaticLinks {
             url = "https://safirnews.in/",
             description = "Indian news website.",
             tags = listOf("#news", "#positive", "#daily"),
-            views = 127,
+            views = 129,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -580,7 +580,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers.",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 472,
+            views = 473,
             likesMobile = 56,
             dislikesMobile = 4
         ),
@@ -640,7 +640,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/",
             description = "International news and current affairs network",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 351,
+            views = 353,
             likesMobile = 8,
             dislikesMobile = 0
         ),
@@ -650,7 +650,7 @@ object StaticLinks {
             url = "https://www.aljazeera.com/#flips-6386599316112",
             description = "Short clips from Aljazeera.",
             tags = listOf("#aljazeera", "#flips", "#learning", "#positive", "#daily"),
-            views = 219,
+            views = 220,
             likesMobile = 3,
             dislikesMobile = 0
         ),
@@ -750,7 +750,7 @@ object StaticLinks {
             url = "https://www.justwatch.com/",
             description = "What's trending in streaming OTT (over the top) entertainment.",
             tags = listOf("#daily", "#positive"),
-            views = 80,
+            views = 82,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -896,6 +896,16 @@ object StaticLinks {
         ),
 
         Link(
+            name = "the reporters' collective",
+            url = "https://www.reporters-collective.in/",
+            description = "The reporters’ collective is a deep-dive journalism collaborative that reports on issues of public interest.",
+            tags = listOf("#news", "#journalism", "#daily"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "Alcohol Related Neurodegeneration and Recovery",
             url = "https://www.researchgate.net/publication/236180730_Alcohol-Related_Neurodegeneration_and_Recovery_Mechanisms_From_Animal_Models",
             description = "Human studies have found alcoholics to have a smaller brain size than moderate drinkers; however, thesestudies are complicated by many uncontrollable factors, including timing and amount of alcohol use. Animalexperiments, which can control many factors, have established that alcohol can cause damage to brain cells(i.e., neurons), which results in their loss of structure or function (i.e., neurodegeneration) in multiple brainregions, similar to the damage found in human alcoholics. In addition, animal studies indicate that inhibitionof the creation of neurons (i.e., neurogenesis) and other braincell genesis contributes to alcoholicneurodegeneration. Animal studies also suggest that neurodegeneration changes cognition, contributing toalcohol use disorders. Risk factors such as adolescent age and genetic predisposition toward alcoholconsumption worsen neurodegeneration. Mild impairment of executive functions similar to that found inhumans occurs in animals following binge alcohol treatment. Thus, animal studies suggest that heavy alcoholuse contributes to neurodegeneration and the progressive loss of control over drinking. Despite the negativeconsequences of heavy drinking, there is hope of recovery with abstinence, which in animal models canresult in neural stemcell proliferation and the formation of new neurons and other brain cells, indicative ofbrain growth.",
@@ -910,7 +920,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("#positive", "#daily", "#social", "#media"),
-            views = 280,
+            views = 282,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -920,7 +930,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("#positive", "#daily", "#social", "#media"),
-            views = 266,
+            views = 267,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -930,7 +940,7 @@ object StaticLinks {
             url = "https://www.whatismybrowser.com/",
             description = "Find out what websites know about you.",
             tags = listOf("#daily", "#daily-desktop", "#learning", "#positive"),
-            views = 20,
+            views = 22,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -950,7 +960,7 @@ object StaticLinks {
             url = "https://www.wsws.org/",
             description = "News site",
             tags = listOf("#positive", "#daily", "#learning", "#news"),
-            views = 165,
+            views = 167,
             likesMobile = 4,
             dislikesMobile = 0
         ),
@@ -970,7 +980,7 @@ object StaticLinks {
             url = "https://www.youtube.com/feed/subscriptions",
             description = "The subscriptions feed does not have implicit personalized recommendations.",
             tags = listOf("#daily", "#daily-desktop", "#positive", "#video", "#social", "#good", "#dynamic", "#regular", "#repeat"),
-            views = 120,
+            views = 122,
             likesMobile = 2,
             dislikesMobile = 0
         ),
@@ -1060,7 +1070,7 @@ object StaticLinks {
             url = "https://www.youtube.com/watch?v=v2gx24YqI68",
             description = "2 Rakat Complete Salah for Jumma with English translation.",
             tags = listOf("#positive", "#daily"),
-            views = 15,
+            views = 17,
             likesMobile = 0,
             dislikesMobile = 0
         ),

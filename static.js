@@ -187,7 +187,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 155,
+            "views": 156,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -234,10 +234,10 @@ const STATIC = {
                 "#daily",
                 "#daily-desktop"
             ],
-            "views": 175,
+            "views": 178,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 2,
+            "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
@@ -679,7 +679,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 192,
+            "views": 194,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -694,7 +694,7 @@ const STATIC = {
                 "#daily",
                 "#news"
             ],
-            "views": 182,
+            "views": 184,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -915,7 +915,7 @@ const STATIC = {
                 "#palestine",
                 "#free"
             ],
-            "views": 141,
+            "views": 143,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -960,7 +960,7 @@ const STATIC = {
                 "#daily",
                 "#social-media"
             ],
-            "views": 41,
+            "views": 43,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -990,7 +990,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 334,
+            "views": 336,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1120,7 +1120,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 127,
+            "views": 129,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1303,7 +1303,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 145,
+            "views": 148,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -1360,7 +1360,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 472,
+            "views": 473,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1417,7 +1417,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 86,
+            "views": 88,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 4,
@@ -1459,7 +1459,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 351,
+            "views": 353,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 6,
@@ -1476,7 +1476,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 219,
+            "views": 220,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1668,7 +1668,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 80,
+            "views": 82,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1909,7 +1909,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#social-media"
             ],
-            "views": 37,
+            "views": 40,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
@@ -1931,6 +1931,21 @@ const STATIC = {
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "the reporters' collective",
+            "url": "https://www.reporters-collective.in/",
+            "description": "The reporters’ collective is a deep-dive journalism collaborative that reports on issues of public interest.",
+            "tags": [
+                "#news",
+                "#journalism",
+                "#daily"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -1958,7 +1973,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 280,
+            "views": 282,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1974,7 +1989,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 266,
+            "views": 267,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 0,
@@ -1990,7 +2005,7 @@ const STATIC = {
                 "#learning",
                 "#positive"
             ],
-            "views": 20,
+            "views": 22,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2019,7 +2034,7 @@ const STATIC = {
                 "#learning",
                 "#news"
             ],
-            "views": 165,
+            "views": 167,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2055,7 +2070,7 @@ const STATIC = {
                 "#regular",
                 "#repeat"
             ],
-            "views": 120,
+            "views": 122,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -2190,7 +2205,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 15,
+            "views": 17,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
