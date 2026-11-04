@@ -164,3 +164,66 @@ test('malformed date ignored', () => {
     assert.equal(whereClause, "WHERE country <> ''");
     assert.deepEqual(params, []);
 });
+
+/* ---------------- non-raw product / path ---------------- */
+
+test('product filter (non-raw)', () => {
+    const { whereClause, params } = buildVisitorWhere({ bot: 'all', product: 'discoverWebsite' });
+    assert.equal(whereClause, "WHERE country <> '' AND product = ?");
+    assert.deepEqual(params, ['discoverWebsite']);
+});
+
+test('product=(unknown) → empty-string equality', () => {
+    const { whereClause, params } = buildVisitorWhere({ bot: 'all', product: '(unknown)' });
+    assert.equal(whereClause, "WHERE country <> '' AND product = ''");
+    assert.deepEqual(params, []);
+});
+
+test('path filter (non-raw)', () => {
+    const { whereClause, params } = buildVisitorWhere({ bot: 'all', path: '/getLinks' });
+    assert.equal(whereClause, "WHERE country <> '' AND path = ?");
+    assert.deepEqual(params, ['/getLinks']);
+});
+
+test('path=(unknown) → empty-string equality', () => {
+    const { whereClause, params } = buildVisitorWhere({ bot: 'all', path: '(unknown)' });
+    assert.equal(whereClause, "WHERE country <> '' AND path = ''");
+    assert.deepEqual(params, []);
+});
+
+test('product + path combined (non-raw)', () => {
+    const { whereClause, params } = buildVisitorWhere({
+        bot: 'all', product: 'discoverWebsite', path: '/getLinks'
+    });
+    assert.equal(whereClause, "WHERE country <> '' AND product = ? AND path = ?");
+    assert.deepEqual(params, ['discoverWebsite', '/getLinks']);
+});
+
+/* ---------------- raw mode product / path ---------------- */
+
+test('raw=1 + product → product filter only', () => {
+    const { whereClause, params } = buildVisitorWhere({ raw: '1', product: 'discoverWebsite' });
+    assert.equal(whereClause, 'WHERE product = ?');
+    assert.deepEqual(params, ['discoverWebsite']);
+});
+
+test('raw=1 + path → path filter only', () => {
+    const { whereClause, params } = buildVisitorWhere({ raw: '1', path: '/getLinks' });
+    assert.equal(whereClause, 'WHERE path = ?');
+    assert.deepEqual(params, ['/getLinks']);
+});
+
+/* ---------------- full-order guard ---------------- */
+
+test('all filters → stable order bot/country/month/date/platform/product/path', () => {
+    const { whereClause, params } = buildVisitorWhere({
+        bot: '0', country: 'IN', month: '202601', date: '2026-01-15',
+        platform: 'desktop', product: 'discoverWebsite', path: '/getLinks'
+    });
+    assert.equal(
+        whereClause,
+        'WHERE bot = ? AND country = ? AND DATE_FORMAT(timestamp, "%Y%m") = ? '
+        + 'AND DATE(timestamp) = ? AND platform = ? AND product = ? AND path = ?'
+    );
+    assert.deepEqual(params, [0, 'IN', '202601', '2026-01-15', 'desktop', 'discoverWebsite', '/getLinks']);
+});
