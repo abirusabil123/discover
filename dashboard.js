@@ -7,6 +7,8 @@ const els = {
     country: document.getElementById('f-country'),
     date: document.getElementById('f-date'),
     platform: document.getElementById('f-platform'),
+    product: document.getElementById('f-product'),
+    path: document.getElementById('f-path'),
     bot: document.getElementById('f-bot'),
     status: document.getElementById('status'),
 };
@@ -17,6 +19,8 @@ function buildQuery() {
     if (els.country.value !== 'all') p.set('country', els.country.value);
     if (els.date.value) p.set('date', els.date.value);
     if (els.platform.value !== 'all') p.set('platform', els.platform.value);
+    if (els.product.value !== 'all') p.set('product', els.product.value);
+    if (els.path.value !== 'all') p.set('path', els.path.value);
     return p.toString();
 }
 
@@ -90,8 +94,10 @@ async function refresh() {
     // keepCurrent=true preserves the user's selection when it is still present.
     fillSelect(els.country, data.byCountry.map(r => r.country), true);
     fillSelect(els.platform, data.byPlatform.map(r => r.platform), true);
+    fillSelect(els.product, data.byProduct.map(r => r.product), true);
+    fillSelect(els.path, data.byPath.map(r => r.path), true);
 
-    const topCountries = topN(data.byCountry, r => r.country, r => r.count, 16);
+    const topCountries = topN(data.byCountry, r => r.country, r => r.count, 8);
     makeOrUpdate('c-country', 'bar',
         topCountries.map(r => r.country || '(unknown)'),
         topCountries.map(r => r.count));
@@ -105,6 +111,16 @@ async function refresh() {
     makeOrUpdate('c-platform', 'bar',
         topPlat.map(r => (r.platform || '(unknown)').slice(0, 32)),
         topPlat.map(r => r.count));
+
+    const topProduct = topN(data.byProduct, r => r.product, r => r.count, 8);
+    makeOrUpdate('c-product', 'bar',
+        topProduct.map(r => (r.product || '(unknown)').slice(0, 32)),
+        topProduct.map(r => r.count));
+
+    const topPath = topN(data.byPath, r => r.path, r => r.count, 8);
+    makeOrUpdate('c-path', 'bar',
+        topPath.map(r => (r.path || '(unknown)').slice(0, 32)),
+        topPath.map(r => r.count));
 
     makeOrUpdate('c-bot', 'pie',
         data.byBotStatus.map(r => r.status),
@@ -122,7 +138,7 @@ async function refresh() {
     makeOrUpdate('c-day', 'bar', dayLabels, dayLabels.map((_, i) => dayMap.get(i) || 0));
 }
 
-[els.country, els.date, els.platform, els.bot].forEach(el =>
+[els.country, els.date, els.platform, els.product, els.path, els.bot].forEach(el =>
     el.addEventListener('change', () => refresh()));
 
 document.addEventListener('keydown', (e) => {

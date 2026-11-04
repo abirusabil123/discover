@@ -2,7 +2,7 @@
 /* Discover is licensed under India PSL v1. You can use this software according to the terms and conditions of the India PSL v1. You may obtain a copy of India PSL v1 at: https://github.com/abirusabil123/discover/blob/main/IndiaPSL1 THIS SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. See the India PSL v1 for more details. */
 
 // tools/recreate-files.js
-import LINKS_TO_KEEP from './links-dump.json' assert { type: 'json' };
+import LINKS_TO_KEEP from './links-dump.json' with { type: 'json' };
 import { fileURLToPath } from 'url';
 import path from 'path';
 import fs from 'fs';
@@ -64,7 +64,8 @@ CREATE TABLE IF NOT EXISTS visitors (
     origin VARCHAR(500),
     platform VARCHAR(50),
     path VARCHAR(255),
-    product VARCHAR(255)
+    product VARCHAR(255),
+    bot TINYINT(1) NOT NULL DEFAULT 0
 );
 CREATE TABLE IF NOT EXISTS errors (
     id INT PRIMARY KEY AUTO_INCREMENT,

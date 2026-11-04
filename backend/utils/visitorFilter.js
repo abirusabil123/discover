@@ -8,18 +8,21 @@
  *   country  – country code, or "all" to ignore
  *   month    – YYYYMM, or "all" to ignore
  *   platform – platform string, or "all" to ignore
+ *   product  – product string, or "all" to ignore          // ➕
+ *   path     – path string, or "all" to ignore             // ➕
  *   bot      – "0" humans, "1" bots, "all" both, undefined → legacy default (humans only)
+ *   date     – YYYY-MM-DD exact-day match
  *   from     – YYYY-MM-DD inclusive lower bound on timestamp (not yet wired)
  *   to       – YYYY-MM-DD inclusive upper bound on timestamp (not yet wired)
  *   raw      – "1" disables all *implicit* default guards (legacy bot=0, country<>'').
- *              Explicit filters (country, month, platform, bot=0/1) are still honoured.
+ *              Explicit filters (country, month, platform, product, path, bot=0/1) are still honoured.
  *
  * Returns { whereClause, params }
  *   whereClause is "" or "WHERE ... AND ..."
  *   params      is an array matching the ? placeholders in order
  */
 function buildVisitorWhere(query) {
-    const { country, month, platform, bot, date, raw } = query || {};
+    const { country, month, platform, product, path, bot, date, raw } = query || {};
     const isRaw = raw === '1';
     const conditions = [];
     const params = [];
@@ -64,6 +67,22 @@ function buildVisitorWhere(query) {
     } else if (platform && platform !== 'all') {
         conditions.push('platform = ?');
         params.push(platform);
+    }
+
+    // Product handling
+    if (product === '(unknown)') {
+        conditions.push("product = ''");
+    } else if (product && product !== 'all') {
+        conditions.push('product = ?');
+        params.push(product);
+    }
+
+    // Path handling
+    if (path === '(unknown)') {
+        conditions.push("path = ''");
+    } else if (path && path !== 'all') {
+        conditions.push('path = ?');
+        params.push(path);
     }
 
     const whereClause = conditions.length > 0 ? 'WHERE ' + conditions.join(' AND ') : '';
