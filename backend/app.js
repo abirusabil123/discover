@@ -324,7 +324,7 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 
 // Get all links
 app.get('/getLinks', async (req, res, next) => {
-  const { platform, reviewStatusEnable, logUser, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
+  const { platform, product, reviewStatusEnable, logUser, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
 
   const user_agent = req.headers['user-agent'] || "";
   const origin = req.headers.origin || "";
@@ -344,7 +344,7 @@ app.get('/getLinks', async (req, res, next) => {
         origin || "",
         platform || "",
         '/getLinks',
-        'discover-backend',
+        product || "",
         tempIsBot || false
       );
     }
@@ -404,8 +404,8 @@ app.get('/getLinks', async (req, res, next) => {
 
       if (reviewStatusEnable != "1" && w.reviewStatus === 0) return false;
 
-      if (platform?.startsWith("discoverWebsite") && needToIgnore(w.likesDesktop, w.dislikesDesktop)) return false;
-      if (platform === "discoverAndroid" && needToIgnore(w.likesMobile, w.dislikesMobile)) return false;
+      if (product === "discoverWebsite" && needToIgnore(w.likesDesktop, w.dislikesDesktop)) return false;
+      if (product === "discoverAndroid" && needToIgnore(w.likesMobile, w.dislikesMobile)) return false;
 
       return true;
     });
