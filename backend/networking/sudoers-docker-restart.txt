@@ -1,0 +1,1 @@
+zeitgeist ALL=(root) NOPASSWD: /bin/systemctl restart docker

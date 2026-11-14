@@ -1,18 +1,22 @@
-# 🌏 Discover - Open source no implicit personalized recommendation algorithm social media
+# 🌏 Discover - Open source no personalized recommendation algorithm social media
 A modern web application that helps you discover amazing links.  
-Features include random link loading, view tracking, likes/dislikes functionality, and the ability to add new links.  
-We host the backend locally using reproducible containers.
+Features include random link loading, app usage tracking, likes/dislikes functionality, and the ability to add new links.  
+We host the backend locally using reproducible containers. We have a frontend only fallback to maintain availability.
 
-<img src="image.png" alt="drawing" width="200rem"/>
+<img src="image2.png" alt="drawing" width="200rem"/>
+<img src="image3.png" alt="drawing" width="200rem"/>
+<img src="image1.png" alt="drawing" width="200rem"/>
+<img src="image6.png" alt="drawing"/>
+<img src="image7.png" alt="drawing"/>
 
 ## Avoid Implicit Personalized Recommendation Algorithms
 
-A social media link with no personalized recommendation algorithms. So no more echo chamber radicalization.
+A social media with no personalized recommendation algorithms. So no more echo chamber radicalization.
 
 There are two ways to end personalized recommendation algorithms:
 
 1. Block user data. No user data means no user personalization.
-2. No recommendation algorithm. User data is not used for implicit (without user choice like in subscriptions) personalization.
+2. No recommendation algorithm. User data is not used for personalization.
 
 Any of the two is sufficient. My discover link does both.
 
@@ -22,18 +26,28 @@ Discover something new everyday. Good mood and learning ahead!
 
 It is like tiktok for web links.
 
-Completely self reliant and you can share links with the whole world, upvote them, downvote them, and it shows all counts including visits. To prevent abuse, bad links are automatically removed if they get many downvotes that are more than 80% of total votes.
+Completely self reliant and you can share links with the whole world, upvote them, downvote them, and it shows these counts including visits. To prevent abuse, bad links are automatically removed if they get many downvotes that are more than 80% of total votes.
 
 This is my contribution so you don't use personalized recommendation algorithms social media. They cause echo chamber radicalization.
 
 Let's go back to before 2005, before EdgeRank was released. 
+
+## Review links
+```
+(base) zeitgeist@zeitgeist-myai:~/Documents/github/discover$ ./backend/tools/reinitDb.sh
+```
 
 ## Run frontend for local testing
 ```
 npx serve . -l 44631
 ```
 
-## Format code in VS Codium  
+## Add LICENSE header to new file
 ```
-Ctrl+Shift+I
+python addLicenseHeader.py
 ```
+
+# Learnings
+
+1. The successful point of reference for the UI is StumbleUpon. If we just show the links without opening the links in previous and next buttons, the experience is not relaxing and fun for the user. We need to open the links on every previous, I'm feeling lucky, and next button presses. This will make the user explore the new content in every link and get encouragement to continue his/her exploration.
+2. We need to add the support for the user to browse his/her submitted but not yet approved links as well in local storage and an option to download all the user submitted links from local storage in csv format. (WIP)

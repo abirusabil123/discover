@@ -1,18 +1,44 @@
+/* Copyright (c) [2026] [Mohammad Sheraj] */
+/* [Discover] is licensed under India PubL v1. */
+/* You can use this software according to the terms and conditions of the India PubL v1. */
+/* You may obtain a copy of India PubL v1 at: */
+/*          https://github.com/abirusabil123/discover/blob/main/IndiaPubL1 */
+/* THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, */
+/* EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, */
+/* MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. */
+/* See the India PubL v1 for more details. */
+
 const express = require('express');
 const mysql = require('mysql2/promise');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 const path = require('path');
+const geoip = require('geoip-lite');
+const isbotModule = require('isbot');
+const isbot = typeof isbotModule === 'function' ? isbotModule : (isbotModule.isbot || isbotModule.default);
+const { buildVisitorWhere } = require('./utils/visitorFilter');
 
-// Configure Express to trust proxies (important for Docker + Cloudflare)
+// Add this near the top after requiring geoip-lite
+function getCountryFromRequest(req) {
+  const ip1 = req.ip;
+  const ip2 = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress;
+  const geo = geoip.lookup(ip1 || ip2);
+  const country = geo?.country;
+  console.log(`ip1 ${ip1} ip2 ${ip2} geo ${geo} country ${country}`);
+
+  return country;
+}
+
+// Configure Express to trust proxies
 app.set('trust proxy', 1);
 
 // IP based rate limiting
 const apiLimiter = rateLimit({
   windowMs: 1 * 60 * 1000, // 1 minute
   max: 100, // limit each IP to 100 requests per windowMs
+  trustProxy: true,
   message: {
     status: 429,
     error: 'Too many requests, please try again later.'
@@ -31,8 +57,9 @@ const voteLimiter = rateLimit({
   },
   keyGenerator: (req, res, next) => {
     // Combine IP + link identifier (url)
-    const ip = req.ip || req.headers['x-forwarded-for'] || 'unknown';
-    const linkUrl = req.query.url || 'unknown';
+    const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
+      req.ip || "";
+    const linkUrl = req.query.url || "";
     return `${ip}_${linkUrl}`;
   },
   standardHeaders: true,
@@ -45,7 +72,8 @@ const dbConfig = {
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || 'password',
   database: process.env.DB_NAME || 'mydatabase',
-  multipleStatements: true // Allow multiple SQL statements
+  multipleStatements: true,
+  charset: 'utf8mb4'
 };
 
 // Middleware
@@ -54,12 +82,17 @@ app.use(apiLimiter);
 
 // Cors
 app.use(cors({
-  origin: ['https://discoverall.space', 'http://localhost:44631', 'https://abirusabil123.github.io']
+  origin: [
+    'https://discoverall.space',
+    'http://localhost:44631', // Local testing endpoint might not be required.
+    'https://abirusabil123.github.io',
+    'https://backenddiscover.duckdns.org:8443'
+  ]
 }));
 
 async function logErrorToDB(errorData) {
   try {
-    const { source = 'unknown', level = 'error', message, user_agent = null } = errorData;
+    const { source = "", level = 'error', message, user_agent = null } = errorData;
 
     if (!message) {
       throw new Error('Message is required for error logging');
@@ -102,19 +135,19 @@ async function logError(err, req, res, next) {
 }
 
 // Filtering criteria
-function needToIgnore(likesMobile, dislikesMobile) {
-  const total = likesMobile + dislikesMobile;
+function needToIgnore(likes, dislikes) {
+  const total = likes + dislikes;
   // If less votes, consider it okay
   if (total <= 3) {
     return false;
   }
-  const undesirable_score = dislikesMobile / Math.max(total, 1);
+  const undesirable_score = dislikes / Math.max(total, 1);
 
   return undesirable_score > 0.8;
 }
 
 app.get('/favicon.ico', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'favicon.ico'));
+  res.sendFile(path.join(__dirname, 'favicon.ico'));
 });
 
 // POST endpoint to log errors
@@ -200,68 +233,74 @@ app.put('/errors/:id/resolve', async (req, res, next) => {
 // GET visitors analytics
 app.get('/visitors-analytics', async (req, res, next) => {
   try {
+    const { whereClause, params } = buildVisitorWhere(req.query);
+    console.log(`[visitors-analytics] where="${whereClause}" params=${JSON.stringify(params)}`);
+
     const connection = await mysql.createConnection(dbConfig);
 
-    // Get visitors by country
     const [byCountry] = await connection.execute(
-      'SELECT country, COUNT(*) as count FROM visitors GROUP BY country ORDER BY country ASC'
+      `SELECT country, COUNT(*) as count FROM visitors ${whereClause} GROUP BY country ORDER BY country ASC`,
+      params
     );
-
-    // Get visitors by YYYYMM (keep chronological order)
     const [byMonth] = await connection.execute(
-      'SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors GROUP BY month ORDER BY month DESC'
+      `SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors ${whereClause} GROUP BY month ORDER BY month DESC`,
+      params
     );
-
-    // Get visitors by platform
     const [byPlatform] = await connection.execute(
-      'SELECT platform, COUNT(*) as count FROM visitors GROUP BY platform ORDER BY platform ASC'
+      `SELECT platform, COUNT(*) as count FROM visitors ${whereClause} GROUP BY platform ORDER BY platform ASC`,
+      params
     );
-
-    // Get visitors by product
     const [byProduct] = await connection.execute(
-      'SELECT product, COUNT(*) as count FROM visitors GROUP BY product ORDER BY product ASC'
+      `SELECT product, COUNT(*) as count FROM visitors ${whereClause} GROUP BY product ORDER BY product ASC`,
+      params
     );
-
-    // Get visitors by origin
     const [byOrigin] = await connection.execute(
-      'SELECT origin, COUNT(*) as count FROM visitors GROUP BY origin ORDER BY origin ASC'
+      `SELECT origin, COUNT(*) as count FROM visitors ${whereClause} GROUP BY origin ORDER BY origin ASC`,
+      params
     );
-
-    // Get visitors by path
     const [byPath] = await connection.execute(
-      'SELECT path, COUNT(*) as count FROM visitors GROUP BY path ORDER BY path ASC'
+      `SELECT path, COUNT(*) as count FROM visitors ${whereClause} GROUP BY path ORDER BY path ASC`,
+      params
     );
+    const [byBotStatus] = await connection.execute(
+      `SELECT CASE WHEN bot = 1 THEN 'Bot' ELSE 'Human' END AS status, COUNT(*) as count FROM visitors ${whereClause} GROUP BY bot ORDER BY bot`,
+      params
+    );
+    const [byHourOfDay] = await connection.execute(
+      `SELECT HOUR(timestamp) as hour, COUNT(*) as count FROM visitors ${whereClause} GROUP BY hour ORDER BY hour ASC`,
+      params
+    );
+    const [byDayOfWeek] = await connection.execute(
+      `SELECT WEEKDAY(timestamp) as dow, COUNT(*) as count FROM visitors ${whereClause} GROUP BY dow ORDER BY dow ASC`,
+      params
+    );
+
     await connection.end();
-
-    res.json({
-      byCountry,
-      byMonth,
-      byPlatform,
-      byProduct,
-      byOrigin,
-      byPath
-    });
-
+    res.json({ byCountry, byMonth, byPlatform, byProduct, byOrigin, byPath, byBotStatus, byHourOfDay, byDayOfWeek });
   } catch (error) {
     console.error('Get visitors analytics error:', error);
     res.status(500).json({ error: 'Failed to fetch analytics' });
   }
 });
 
-async function logVisitorToDB(visitorData) {
+async function logVisitorToDB(country, user_agent, origin, platform, path, product, bot) {
   try {
-    const { country = 'unknown', user_agent = 'unknown', origin = 'direct', platform = 'unknown', path = 'unknown', product = 'unknown' } = visitorData;
+    // Validate required parameters
+    if (country == null || user_agent == null || origin == null || platform == null || path == null || product == null || bot == null) {
+      throw new Error('Missing required parameters for logVisitorToDB');
+    }
 
     const connection = await mysql.createConnection(dbConfig);
     const [result] = await connection.execute(
-      'INSERT INTO visitors (country, user_agent, origin, platform, path, product) VALUES (?, ?, ?, ?, ?, ?)', // 6 placeholders
+      'INSERT INTO visitors (country, user_agent, origin, platform, path, product, bot) VALUES (?, ?, ?, ?, ?, ?, ?)', // 7 placeholders
       [
         country.substring(0, 10),
         user_agent.substring(0, 1000),
         origin.substring(0, 500),
         platform.substring(0, 50),
         path.substring(0, 255),
-        product.substring(0, 255)
+        product.substring(0, 255),
+        bot ? 1 : 0
       ]
     );
     await connection.end();
@@ -271,13 +310,18 @@ async function logVisitorToDB(visitorData) {
     return { success: false, error: dbError.message };
   }
 }
+
 // Add GET endpoint for image beacon
 app.get('/api/log-visitor-pixel', async (req, res) => {
-  const country = req.headers['cf-ipcountry'] || 'unknown';
   const { user_agent, origin, platform, path, product } = req.query;
 
   // Log to database (same as before)
-  await logVisitorToDB({ country, user_agent, origin, platform, path, product });
+  var tempCountry = getCountryFromRequest(req);
+  var tempIsBot = isbot(user_agent);
+  console.log(`tempIsBot ${tempIsBot}`);
+  await logVisitorToDB(
+    tempCountry || "", user_agent || "", origin || "", platform || "", path || "", product || "", tempIsBot || false
+  );
 
   // Return 1x1 transparent pixel
   res.setHeader('Content-Type', 'image/gif');
@@ -287,31 +331,45 @@ app.get('/api/log-visitor-pixel', async (req, res) => {
 
 // Get all links
 app.get('/getLinks', async (req, res, next) => {
-  const { platform, reviewStatusEnable, tagsAllowlist, tagsBlocklist } = req.query;
-  const country = req.headers['cf-ipcountry'] || req.headers['x-country'] || 'Unknown';
-  const userAgent = req.headers['user-agent'] || 'Unknown';
-  const origin = req.headers.origin || 'direct';
+  const { platform, product, reviewStatusEnable, logUser, tagsAllowlist, urlsBlocklist, urlsAllowlist, tagsBlocklist } = req.query;
 
-  if (!reviewStatusEnable) {
-    await logVisitorToDB({
-      country: country,
-      user_agent: userAgent,
-      origin: origin,
-      platform: platform,
-      path: '/getLinks',
-      product: 'discover-backend'
-    });
-  }
+  const user_agent = req.headers['user-agent'] || "";
+  const origin = req.headers.origin || "";
+
+  // Test delay
+  // await new Promise(resolve => setTimeout(resolve, 16000));
 
   try {
+
+    if (logUser && !reviewStatusEnable) {
+      var tempCountry = getCountryFromRequest(req);
+      var tempIsBot = isbot(user_agent);
+      console.log(`tempIsBot ${tempIsBot}`);
+      await logVisitorToDB(
+        tempCountry || "",
+        user_agent || "",
+        origin || "",
+        platform || "",
+        '/getLinks',
+        product || "",
+        tempIsBot || false
+      );
+    }
 
     const tagsAllowlistArray = (tagsAllowlist || "")
       .split(",")
       .map(t => t.trim())
       .filter(Boolean);
-
     const tagsBlocklistArray = (tagsBlocklist || "")
       .split(",")
+      .map(t => t.trim())
+      .filter(Boolean);
+    const urlsAllowlistArray = (urlsAllowlist || "")
+      .split(" ")
+      .map(t => t.trim())
+      .filter(Boolean);
+    const urlsBlocklistArray = (urlsBlocklist || "")
+      .split(" ")
       .map(t => t.trim())
       .filter(Boolean);
 
@@ -332,16 +390,29 @@ app.get('/getLinks', async (req, res, next) => {
     });
 
     let filtered = parsed.filter(w => {
-      const hasAllow = tagsAllowlistArray.length === 0 || w.tags.some(t => tagsAllowlistArray.includes(t));
-      const hasBlock = tagsBlocklistArray.length > 0 && w.tags.some(t => tagsBlocklistArray.includes(t));
-
-      if (!hasAllow) return false;
-      if (hasBlock) return false;
+      if (tagsAllowlistArray.length > 0) {
+        const hasAllowedTag = tagsAllowlistArray.some(t => w.tags.includes(t));
+        if (!hasAllowedTag) return false;
+      }
+      if (tagsBlocklistArray.length > 0) {
+        const hasBlockedTag = tagsBlocklistArray.some(t => w.tags.includes(t));
+        if (hasBlockedTag) return false;
+      }
+      if (urlsBlocklistArray.length > 0) {
+        if (urlsBlocklistArray.includes(w.url)) {
+          return false;
+        }
+      }
+      if (urlsAllowlistArray.length > 0) {
+        if (!urlsAllowlistArray.includes(w.url)) {
+          return false;
+        }
+      }
 
       if (reviewStatusEnable != "1" && w.reviewStatus === 0) return false;
 
-      if (platform === "desktop" && needToIgnore(w.likesDesktop, w.dislikesDesktop)) return false;
-      if (platform === "mobile" && needToIgnore(w.likesMobile, w.dislikesMobile)) return false;
+      if (product === "discoverWebsite" && needToIgnore(w.likesDesktop, w.dislikesDesktop)) return false;
+      if (product === "discoverAndroid" && needToIgnore(w.likesMobile, w.dislikesMobile)) return false;
 
       return true;
     });
@@ -356,6 +427,9 @@ app.get('/getLinks', async (req, res, next) => {
 app.post('/incrementView', voteLimiter, async (req, res, next) => {
   try {
     const { url, action } = req.query;
+
+    // Test delay
+    // await new Promise(resolve => setTimeout(resolve, 6000));
 
     if (!url) {
       return res.status(400).json({ error: 'URL parameter is required' });
@@ -474,6 +548,7 @@ app.post('/removeLink', voteLimiter, async (req, res, next) => {
 // Add new link
 app.post('/addlink', apiLimiter, async (req, res, next) => {
   try {
+    // API code
     let { name, url, description, tags, views, likesMobile, dislikesMobile, likesDesktop, dislikesDesktop } = req.body;
 
     // Remove all types of newlines (including \r)
@@ -483,7 +558,6 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
     tags = tags
       .map(tag => tag.trim())
       .map(tag => tag.replace(/[\r\n]+/g, '')) // Remove special characters
-      .map(tag => tag.toLowerCase()) // Convert to lowercase
       .filter((tag, index, array) => array.indexOf(tag) === index); // Remove duplicates
 
     if (!name || !url || !description) {
@@ -537,7 +611,7 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
     await connection.end();
 
     res.json({
-      message: 'Link submitted for spam review successfully! The link will be live globally after review approval 🎉',
+      message: 'Link submitted for spam review successfully! The link will be live globally after review and approval 🎉',
       name,
       url,
       description,
@@ -565,6 +639,7 @@ app.get('/health', async (req, res, next) => {
 // Default route
 app.get('/', async (req, res, next) => {
   try {
+    // Routing
     const connection = await mysql.createConnection(dbConfig);
     const [rows] = await connection.execute('SELECT COUNT(*) as count FROM links');
     await connection.end();
@@ -590,6 +665,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal Server Error' });
 });
 
-app.listen(3000, '0.0.0.0', () => {
-  console.log('Server running on port 3000');
+app.listen(process.env.PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${process.env.PORT}`);
 });

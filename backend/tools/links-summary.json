@@ -1,0 +1,699 @@
+{
+  "metadata": {
+    "apiUrl": "https://backenddiscover.duckdns.org:8443",
+    "totalLinks": 170
+  },
+  "analysis": {
+    "total": 170,
+    "filteredMobile": 59,
+    "filteredDesktop": 15,
+    "blockedMobileUrls": [
+      "http://radio.garden/",
+      "https://10minutemail.com/",
+      "https://abirusabil123.github.io/",
+      "https://annas-archive.org/",
+      "https://annas-archive.se/",
+      "https://app.diagrams.net/",
+      "https://archive.org/",
+      "https://asoftmurmur.com/",
+      "https://canon.com/",
+      "https://chat.deepseek.com/",
+      "https://codenames.game/",
+      "https://coffitivity.com/",
+      "https://crowdparty.app/",
+      "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
+      "https://dontevenreply.com/",
+      "https://easywaytoquran.com/4-qul-in-islam-2/",
+      "https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD",
+      "https://github.com/alex/what-happens-when",
+      "https://github.com/pllk/cphb/",
+      "https://godbolt.org/",
+      "https://hashnode.com/",
+      "https://hashnode.com/featured",
+      "https://hashnode.com/recent",
+      "https://huggingface.co/spaces/hesamation/primer-llm-embedding",
+      "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
+      "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
+      "https://libgen.li/",
+      "https://littlealchemy2.com/",
+      "https://loops.video/",
+      "https://martinfowler.com/articles/deepseek-papers.html",
+      "https://mojapp.in/",
+      "https://neal.fun/deep-sea",
+      "https://nitter.net/",
+      "https://play-cs.com/",
+      "https://quickdraw.withgoogle.com/",
+      "https://reverser.dev/linux-kernel-explorer",
+      "https://sci-hub.se/",
+      "https://sci-net.xyz/",
+      "https://screamintothevoid.com/",
+      "https://skribbl.io/",
+      "https://sony.com/",
+      "https://stellarium-web.org/",
+      "https://tails.net/",
+      "https://theuselessweb.com/",
+      "https://thisissand.com/",
+      "https://twitter.com/",
+      "https://window-swap.com/",
+      "https://www.boredbutton.com/",
+      "https://www.connectedpapers.com/",
+      "https://www.deepseek.com/en",
+      "https://www.example.com/",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+      "https://www.kaggle.com/",
+      "https://www.overleaf.com/",
+      "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
+      "https://www.reddit.com/",
+      "https://xkcd.com/"
+    ],
+    "blockedDesktopUrls": [
+      "https://abirusabil123.github.io/",
+      "https://canon.com/",
+      "https://easywaytoquran.com/4-qul-in-islam-2/",
+      "https://en.wikipedia.org/wiki/Enriqueta_Mart%C3%AD",
+      "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
+      "https://loops.video/",
+      "https://mojapp.in/",
+      "https://nitter.net/",
+      "https://sci-net.xyz/",
+      "https://twitter.com/",
+      "https://www.example.com/",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings",
+      "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF"
+    ],
+    "byReason": {},
+    "byScore": {
+      "0%": 102,
+      "1-25%": 6,
+      "26-50%": 1,
+      "51-75%": 1,
+      "76-79%": 0,
+      "80-100%": 60
+    },
+    "byVoteCount": {
+      "0 votes": 72,
+      "1-3 votes": 24,
+      "4-10 votes": 12,
+      "11-50 votes": 2,
+      "50+ votes": 60
+    }
+  },
+  "visitors": {
+    "byCountry": [
+      {
+        "country": "",
+        "count": 5790
+      },
+      {
+        "country": "AE",
+        "count": 3
+      },
+      {
+        "country": "AT",
+        "count": 5
+      },
+      {
+        "country": "AU",
+        "count": 7
+      },
+      {
+        "country": "BA",
+        "count": 8
+      },
+      {
+        "country": "BE",
+        "count": 14
+      },
+      {
+        "country": "BG",
+        "count": 129
+      },
+      {
+        "country": "BR",
+        "count": 2
+      },
+      {
+        "country": "CA",
+        "count": 199
+      },
+      {
+        "country": "CN",
+        "count": 76
+      },
+      {
+        "country": "DE",
+        "count": 37
+      },
+      {
+        "country": "EE",
+        "count": 4
+      },
+      {
+        "country": "FI",
+        "count": 2
+      },
+      {
+        "country": "FR",
+        "count": 7
+      },
+      {
+        "country": "GB",
+        "count": 67
+      },
+      {
+        "country": "HK",
+        "count": 31
+      },
+      {
+        "country": "ID",
+        "count": 1
+      },
+      {
+        "country": "IN",
+        "count": 207
+      },
+      {
+        "country": "IR",
+        "count": 41
+      },
+      {
+        "country": "JP",
+        "count": 34
+      },
+      {
+        "country": "KG",
+        "count": 1
+      },
+      {
+        "country": "KR",
+        "count": 3
+      },
+      {
+        "country": "MD",
+        "count": 1
+      },
+      {
+        "country": "MN",
+        "count": 2
+      },
+      {
+        "country": "MY",
+        "count": 30
+      },
+      {
+        "country": "NG",
+        "count": 2
+      },
+      {
+        "country": "NL",
+        "count": 56
+      },
+      {
+        "country": "PL",
+        "count": 1
+      },
+      {
+        "country": "PT",
+        "count": 1
+      },
+      {
+        "country": "RO",
+        "count": 13
+      },
+      {
+        "country": "RU",
+        "count": 17
+      },
+      {
+        "country": "SC",
+        "count": 4
+      },
+      {
+        "country": "SG",
+        "count": 60
+      },
+      {
+        "country": "SK",
+        "count": 1
+      },
+      {
+        "country": "TR",
+        "count": 30
+      },
+      {
+        "country": "US",
+        "count": 1259
+      },
+      {
+        "country": "ZA",
+        "count": 30
+      }
+    ],
+    "byMonth": [
+      {
+        "month": "202611",
+        "count": 113
+      },
+      {
+        "month": "202610",
+        "count": 1500
+      },
+      {
+        "month": "202609",
+        "count": 2908
+      },
+      {
+        "month": "202608",
+        "count": 2060
+      },
+      {
+        "month": "202607",
+        "count": 758
+      },
+      {
+        "month": "202606",
+        "count": 607
+      },
+      {
+        "month": "202605",
+        "count": 229
+      }
+    ],
+    "byPlatform": [
+      {
+        "platform": "",
+        "count": 2095
+      },
+      {
+        "platform": "Android",
+        "count": 2
+      },
+      {
+        "platform": "desktop",
+        "count": 4400
+      },
+      {
+        "platform": "discover-android",
+        "count": 30
+      },
+      {
+        "platform": "discoverAndroid",
+        "count": 7
+      },
+      {
+        "platform": "discoverWebsite Linux armv81",
+        "count": 138
+      },
+      {
+        "platform": "discoverWebsite Linux armv8l",
+        "count": 3
+      },
+      {
+        "platform": "discoverWebsite Linux x86_64",
+        "count": 229
+      },
+      {
+        "platform": "Linux armv81",
+        "count": 47
+      },
+      {
+        "platform": "Linux armv81 discover-website",
+        "count": 121
+      },
+      {
+        "platform": "Linux armv81 personal-website",
+        "count": 1
+      },
+      {
+        "platform": "Linux x86_64",
+        "count": 58
+      },
+      {
+        "platform": "Linux x86_64 discover-website",
+        "count": 509
+      },
+      {
+        "platform": "Linux x86_64discover-website",
+        "count": 2
+      },
+      {
+        "platform": "MacIntel discover-website",
+        "count": 2
+      },
+      {
+        "platform": "mobile",
+        "count": 472
+      },
+      {
+        "platform": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537",
+        "count": 7
+      },
+      {
+        "platform": "Mozilla/5.0 (Linux; Android 11; Page) AppleWebKit/",
+        "count": 22
+      },
+      {
+        "platform": "Mozilla/5.0 (Linux; Android 9; VirtualBox) AppleWe",
+        "count": 2
+      },
+      {
+        "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0",
+        "count": 2
+      },
+      {
+        "platform": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb",
+        "count": 13
+      },
+      {
+        "platform": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+        "count": 4
+      },
+      {
+        "platform": "personalWebsite Linux armv81",
+        "count": 2
+      },
+      {
+        "platform": "Win32",
+        "count": 3
+      },
+      {
+        "platform": "Win32 discover-website",
+        "count": 1
+      },
+      {
+        "platform": "Win32 personal-website",
+        "count": 3
+      }
+    ],
+    "byProduct": [
+      {
+        "product": "abirusabil123.github.io",
+        "count": 60
+      },
+      {
+        "product": "discover-backend",
+        "count": 8009
+      },
+      {
+        "product": "discoverAndroid",
+        "count": 2
+      },
+      {
+        "product": "discoverWebsite ",
+        "count": 75
+      },
+      {
+        "product": "personal website",
+        "count": 8
+      },
+      {
+        "product": "personal-website",
+        "count": 4
+      },
+      {
+        "product": "personalWebsite",
+        "count": 17
+      }
+    ],
+    "byOrigin": [
+      {
+        "origin": "",
+        "count": 2612
+      },
+      {
+        "origin": "file://",
+        "count": 4
+      },
+      {
+        "origin": "http://discoverall.space",
+        "count": 144
+      },
+      {
+        "origin": "http://localhost:44631",
+        "count": 3141
+      },
+      {
+        "origin": "https://abirusabil123.github.io",
+        "count": 29
+      },
+      {
+        "origin": "https://abirusabil123.github.io/",
+        "count": 11
+      },
+      {
+        "origin": "https://abirusabil123.github.io/art.html",
+        "count": 12
+      },
+      {
+        "origin": "https://abirusabil123.github.io/index.html",
+        "count": 3
+      },
+      {
+        "origin": "https://abirusabil123.github.io/products.html",
+        "count": 4
+      },
+      {
+        "origin": "https://abirusabil123.github.io/shayaris.html",
+        "count": 6
+      },
+      {
+        "origin": "https://abirusabil123.github.io/sketches.html",
+        "count": 9
+      },
+      {
+        "origin": "https://abirusabil123.github.io/work-life.html",
+        "count": 7
+      },
+      {
+        "origin": "https://bing.com/",
+        "count": 1
+      },
+      {
+        "origin": "https://discoverall.space",
+        "count": 2187
+      },
+      {
+        "origin": "https://www.linkedin.com/",
+        "count": 3
+      },
+      {
+        "origin": "null",
+        "count": 2
+      }
+    ],
+    "byPath": [
+      {
+        "path": "/",
+        "count": 2116
+      },
+      {
+        "path": "/addlink",
+        "count": 12
+      },
+      {
+        "path": "/art.html",
+        "count": 5
+      },
+      {
+        "path": "/getLinks",
+        "count": 5991
+      },
+      {
+        "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
+        "count": 3
+      },
+      {
+        "path": "/home/zeitgeist/Documents/github/abirusabil123.github.io/index.html",
+        "count": 1
+      },
+      {
+        "path": "/index.html",
+        "count": 11
+      },
+      {
+        "path": "/products.html",
+        "count": 11
+      },
+      {
+        "path": "/shayaris.html",
+        "count": 10
+      },
+      {
+        "path": "/sketches.html",
+        "count": 6
+      },
+      {
+        "path": "/work-life.html",
+        "count": 9
+      }
+    ],
+    "byBotStatus": [
+      {
+        "status": "Human",
+        "count": 6462
+      },
+      {
+        "status": "Bot",
+        "count": 1713
+      }
+    ],
+    "byHourOfDay": [
+      {
+        "hour": 0,
+        "count": 127
+      },
+      {
+        "hour": 1,
+        "count": 112
+      },
+      {
+        "hour": 2,
+        "count": 110
+      },
+      {
+        "hour": 3,
+        "count": 167
+      },
+      {
+        "hour": 4,
+        "count": 238
+      },
+      {
+        "hour": 5,
+        "count": 1115
+      },
+      {
+        "hour": 6,
+        "count": 515
+      },
+      {
+        "hour": 7,
+        "count": 507
+      },
+      {
+        "hour": 8,
+        "count": 445
+      },
+      {
+        "hour": 9,
+        "count": 293
+      },
+      {
+        "hour": 10,
+        "count": 219
+      },
+      {
+        "hour": 11,
+        "count": 202
+      },
+      {
+        "hour": 12,
+        "count": 337
+      },
+      {
+        "hour": 13,
+        "count": 394
+      },
+      {
+        "hour": 14,
+        "count": 497
+      },
+      {
+        "hour": 15,
+        "count": 613
+      },
+      {
+        "hour": 16,
+        "count": 635
+      },
+      {
+        "hour": 17,
+        "count": 631
+      },
+      {
+        "hour": 18,
+        "count": 499
+      },
+      {
+        "hour": 19,
+        "count": 170
+      },
+      {
+        "hour": 20,
+        "count": 115
+      },
+      {
+        "hour": 21,
+        "count": 94
+      },
+      {
+        "hour": 22,
+        "count": 68
+      },
+      {
+        "hour": 23,
+        "count": 72
+      }
+    ],
+    "byDayOfWeek": [
+      {
+        "dow": 0,
+        "count": 1182
+      },
+      {
+        "dow": 1,
+        "count": 827
+      },
+      {
+        "dow": 2,
+        "count": 1065
+      },
+      {
+        "dow": 3,
+        "count": 905
+      },
+      {
+        "dow": 4,
+        "count": 620
+      },
+      {
+        "dow": 5,
+        "count": 1031
+      },
+      {
+        "dow": 6,
+        "count": 2545
+      }
+    ]
+  },
+  "errors": {
+    "count": 206,
+    "unresolved": 2,
+    "allUnresolvedErrors": [
+      {
+        "id": 205,
+        "timestamp": "2026-10-30T13:28:39.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "415: unsupported content encoding \"br\" (POST /)",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36 Node2Shell/1.0.0",
+        "resolved": 0,
+        "resolved_at": null
+      },
+      {
+        "id": 206,
+        "timestamp": "2026-10-30T13:28:39.000Z",
+        "source": "backend",
+        "level": "warning",
+        "message": "415: unsupported content encoding \"br\" (POST /)",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36 Node2Shell/1.0.0",
+        "resolved": 0,
+        "resolved_at": null
+      }
+    ]
+  }
+}

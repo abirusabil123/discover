@@ -1,0 +1,3 @@
+- Added: Upvotes and downvotes
+- Added: User usage time tracking.
+- Fixed: Smoothness issues

@@ -1,3 +1,5 @@
+/* Copyright (c) [2026] [Mohammad Sheraj] *//* [Discover] is licensed under India PubL v1. *//* You can use this software according to the terms and conditions of the India PubL v1. *//* You may obtain a copy of India PubL v1 at: *//*          https://github.com/abirusabil123/discover/blob/main/IndiaPubL1 *//* THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, *//* EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, *//* MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. *//* See the India PubL v1 for more details. */
+
 package com.example.discover.network
 
 import android.util.Log
@@ -6,15 +8,11 @@ import okhttp3.Response
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
+private const val TAG = "RetryInterceptor"
 class RetryInterceptor(
     private val initialDelayMillis: Long = 1500, // Initial delay 1.5 seconds
     private val factor: Double = 2.0 // Unlimited retries with exponential backoff to avoid transient errors.
 ) : Interceptor {
-
-    private companion object {
-        private const val TAG = "RetryInterceptor"
-    }
-
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
         var response: Response? = null

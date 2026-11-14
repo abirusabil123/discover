@@ -1,13 +1,24 @@
+# Copyright (c) [2026] [Mohammad Sheraj]
+# [Discover] is licensed under India PubL v1.
+# You can use this software according to the terms and conditions of the India PubL v1.
+# You may obtain a copy of India PubL v1 at:
+#          https://github.com/abirusabil123/discover/blob/main/IndiaPubL1
+# THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+# EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+# MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+# See the India PubL v1 for more details.
+
 services:
   app:
     build: ./
-    ports:
-      - "3000:3000"
+    network_mode: host                 # ← added
+    # remove ports and networks sections
     environment:
-      - DB_HOST=db
+      - DB_HOST=localhost              # ← changed from "db"
       - DB_USER=root
       - DB_PASSWORD=password
       - DB_NAME=mydatabase
+      - PORT=8090
     depends_on:
       db:
         condition: service_healthy
@@ -15,6 +26,8 @@ services:
 
   db:
     image: mysql:8.0
+    network_mode: host                 # ← added
+    # remove networks section
     environment:
       MYSQL_ROOT_PASSWORD: "password"
       MYSQL_DATABASE: "mydatabase"
@@ -27,15 +40,18 @@ services:
       interval: 5s
       retries: 10
 
-  cloudflared:
-    image: cloudflare/cloudflared:latest
-    restart: unless-stopped
-    command: tunnel run
+  nginx:
+    image: nginx:alpine
+    network_mode: host                 # ← added
+    # remove ports mapping (now listens directly on host 8443)
     volumes:
-      - ./cloudflared/config.yml:/etc/cloudflared/config.yml
-      - ./cloudflared/6a9960c7-1fe2-4565-a583-6a0a3cd16d31.json:/etc/cloudflared/6a9960c7-1fe2-4565-a583-6a0a3cd16d31.json
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - /home/zeitgeist/.acme.sh/backenddiscover.duckdns.org_ecc:/etc/nginx/ssl:ro
+    # remove networks section
     depends_on:
       - app
+    restart: unless-stopped
 
+# remove networks: section entirely
 volumes:
   mysql_data:

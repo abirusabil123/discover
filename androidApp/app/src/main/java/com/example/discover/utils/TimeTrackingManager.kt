@@ -1,3 +1,5 @@
+/* Copyright (c) [2026] [Mohammad Sheraj] *//* [Discover] is licensed under India PubL v1. *//* You can use this software according to the terms and conditions of the India PubL v1. *//* You may obtain a copy of India PubL v1 at: *//*          https://github.com/abirusabil123/discover/blob/main/IndiaPubL1 *//* THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, *//* EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, *//* MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. *//* See the India PubL v1 for more details. */
+
 package com.example.discover.utils
 
 import android.content.Context
@@ -5,18 +7,14 @@ import android.content.SharedPreferences
 import java.util.Calendar
 import androidx.core.content.edit
 
+private const val PREFS_NAME = "time_tracking_prefs"
+private const val KEY_TOTAL_TIME = "total_time_ms"
+private const val KEY_LAST_START_TIME = "last_start_time"
+private const val KEY_DAILY_TIME = "daily_time_"
+private const val KEY_WEEKLY_TIME = "weekly_time_"
+private const val KEY_MONTHLY_TIME = "monthly_time_"
+private const val KEY_YEARLY_TIME = "yearly_time_"
 class TimeTrackingManager(context: Context) {
-
-    companion object {
-        private const val PREFS_NAME = "time_tracking_prefs"
-        private const val KEY_TOTAL_TIME = "total_time_ms"
-        private const val KEY_LAST_START_TIME = "last_start_time"
-        private const val KEY_DAILY_TIME = "daily_time_"
-        private const val KEY_WEEKLY_TIME = "weekly_time_"
-        private const val KEY_MONTHLY_TIME = "monthly_time_"
-        private const val KEY_YEARLY_TIME = "yearly_time_"
-    }
-
     private val prefs: SharedPreferences =
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
@@ -83,6 +81,13 @@ class TimeTrackingManager(context: Context) {
 
         val currentWeekKey =
             "${KEY_WEEKLY_TIME}${calendar.get(Calendar.YEAR)}${calendar.get(Calendar.WEEK_OF_YEAR)}"
+
+        // Get previousWeek
+        calendar.add(Calendar.WEEK_OF_YEAR, -1) // Subtract one week
+        val previousWeekKey =
+            "${KEY_WEEKLY_TIME}${calendar.get(Calendar.YEAR)}${calendar.get(Calendar.WEEK_OF_YEAR)}"
+        calendar.add(Calendar.WEEK_OF_YEAR, 1)
+
         val currentMonthKey =
             "${KEY_MONTHLY_TIME}${calendar.get(Calendar.YEAR)}${calendar.get(Calendar.MONTH)}"
         val currentYearKey = "${KEY_YEARLY_TIME}${calendar.get(Calendar.YEAR)}"
@@ -91,6 +96,7 @@ class TimeTrackingManager(context: Context) {
             daily = prefs.getLong(currentDayKey, 0L),
             yesterday = prefs.getLong(yesterdayDayKey, 0L),
             weekly = prefs.getLong(currentWeekKey, 0L),
+            previousWeek = prefs.getLong(previousWeekKey, 0L),
             monthly = prefs.getLong(currentMonthKey, 0L),
             yearly = prefs.getLong(currentYearKey, 0L),
             total = prefs.getLong(KEY_TOTAL_TIME, 0L),
@@ -103,6 +109,7 @@ data class TimeStats(
     val daily: Long,
     val yesterday: Long,
     val weekly: Long,
+    val previousWeek: Long,
     val monthly: Long,
     val yearly: Long,
     val total: Long,

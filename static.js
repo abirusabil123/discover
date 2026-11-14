@@ -1,161 +1,86 @@
+/* Copyright (c) [2026] [Mohammad Sheraj] */
+/* [Discover] is licensed under India PubL v1. */
+/* You can use this software according to the terms and conditions of the India PubL v1. */
+/* You may obtain a copy of India PubL v1 at: */
+/*          https://github.com/abirusabil123/discover/blob/main/IndiaPubL1 */
+/* THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, */
+/* EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, */
+/* MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE. */
+/* See the India PubL v1 for more details. */
+
 // static.js
 const STATIC = {
     // Auto-generated sample links
     SAMPLE_LINKS: [
         {
+            "name": "Radio Garden",
+            "url": "http://radio.garden/",
+            "description": "Listen to live radio stations across the globe",
+            "tags": [
+                "#positive",
+                "#curated",
+                "#sample"
+            ],
+            "views": 60,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 4,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "10 Minute Mail",
             "url": "https://10minutemail.com/",
             "description": "Disposable email for spam-free signups",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample"
             ],
-            "views": 64,
+            "views": 72,
             "likesMobile": 2,
             "dislikesMobile": 1000,
-            "likesDesktop": 1,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "12 Rules for Life - Jordan Bernt Peterson",
-            "url": "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/Extract_12%20Rules%20for%20Life.PDF",
-            "description": "The bridge between European ideas and Islam. Beyond Order: 12 More Rules for Life is also a required read after this book. Jordan Bernt Peterson almost reached Islam with pure logic which is remarkable. The difference can be seen in his Rule 8 of \"tell the truth, or atleast don't lie\" and the holy Quran's 'do not mix truth with falsehood, nor knowingly conceal the truth' - Surah Al-Baqarah (2:42). The Quran is much more strict and rewarding.",
-            "tags": [
-                "book",
-                "learning",
-                "12rulesforlife"
-            ],
-            "views": 22,
-            "likesMobile": 2,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
+            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
             "name": "4chan",
             "url": "https://4chan.org/",
-            "description": "Free speech social media platform.",
+            "description": "Free speech social media platform. NSFW.",
             "tags": [
-                "user-submitted"
+                "#positive",
+                "#daily",
+                "#optional",
+                "#user-submitted"
             ],
-            "views": 46,
+            "views": 187,
             "likesMobile": 1,
-            "dislikesMobile": 0,
-            "likesDesktop": 2,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "A Soft Murmur",
-            "url": "https://asoftmurmur.com/",
-            "description": "Mix ambient sounds (rain, waves) for focus",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 65,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 2,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "abirusabil123",
-            "url": "https://abirusabil123.github.io/",
-            "description": "The personal link of the creator of this project",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 87,
-            "likesMobile": 4,
-            "dislikesMobile": 0,
-            "likesDesktop": 2,
-            "dislikesDesktop": 1
-        },
-        {
-            "name": "Al Jazeera",
-            "url": "https://www.aljazeera.com/",
-            "description": "International news and current affairs network",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 122,
-            "likesMobile": 8,
-            "dislikesMobile": 0,
-            "likesDesktop": 4,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Aljazeera flips",
-            "url": "https://www.aljazeera.com/#flips-6386599316112",
-            "description": "Short clips from Aljazeera.",
-            "tags": [
-                "aljazeera",
-                "flips",
-                "learning"
-            ],
-            "views": 17,
-            "likesMobile": 1,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Aljazeera flips",
-            "url": "https://www.aljazeera.com/#flips-6386609485112",
-            "description": "Short clips from Aljazeera.",
-            "tags": [
-                "aljazeera",
-                "flips",
-                "learning"
-            ],
-            "views": 9,
-            "likesMobile": 1,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Aljazeera flips",
-            "url": "https://www.aljazeera.com/#flips",
-            "description": "Aljazeera flips",
-            "tags": [
-                "aljazeeraflips",
-                "aljazeera",
-                "flips",
-                "learning"
-            ],
-            "views": 30,
-            "likesMobile": 1,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Andher Nagri Chaupat Raja : Bharatendu Harishchandra",
-            "url": "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
-            "description": "Short play on the British rule in India",
-            "tags": [
-                "user-submitted"
-            ],
-            "views": 49,
-            "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
-            "name": "Anna's archive",
-            "url": "https://annas-archive.se/",
-            "description": "Open library.",
+            "name": "9gag",
+            "url": "https://9gag.com/",
+            "description": "Memes website.",
             "tags": [
-                "open",
-                "library",
-                "books"
+                "#positive"
             ],
-            "views": 27,
-            "likesMobile": 1,
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "alternative to",
+            "url": "https://alternativeto.net/",
+            "description": "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
+            "tags": [
+                "#daily",
+                "#positive",
+                "#learning"
+            ],
+            "views": 90,
+            "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
             "dislikesDesktop": 1
@@ -165,127 +90,128 @@ const STATIC = {
             "url": "https://annas-archive.org/",
             "description": "Open library",
             "tags": [
-                "open",
-                "library",
-                "learning"
-            ],
-            "views": 7,
-            "likesMobile": 0,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Blind",
-            "url": "https://www.teamblind.com/",
-            "description": "Social media.",
-            "tags": [
-                "social",
-                "media"
-            ],
-            "views": 40,
-            "likesMobile": 0,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Blind recent sort",
-            "url": "https://www.teamblind.com/?sort=id",
-            "description": "Social media.",
-            "tags": [
-                "social",
-                "media"
-            ],
-            "views": 45,
-            "likesMobile": 3,
-            "dislikesMobile": 0,
-            "likesDesktop": 0,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Bored Button",
-            "url": "https://www.boredbutton.com/",
-            "description": "Collection of random fun links and games",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 49,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 1,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "BYD",
-            "url": "https://www.byd.com/",
-            "description": "Electric car company.",
-            "tags": [
-                "car",
-                "electric",
-                "company"
-            ],
-            "views": 46,
-            "likesMobile": 5,
-            "dislikesMobile": 0,
-            "likesDesktop": 2,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Codeforces",
-            "url": "https://codeforces.com/problemset",
-            "description": "The top competitive programming platform.",
-            "tags": [
-                "code",
-                "learning",
-                "fun",
-                "poetic"
-            ],
-            "views": 61,
-            "likesMobile": 0,
-            "dislikesMobile": 0,
-            "likesDesktop": 2,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Competitive Programmer's Handbook",
-            "url": "https://github.com/pllk/cphb/",
-            "description": "Best competitive programming book.",
-            "tags": [
-                "user-submitted"
-            ],
-            "views": 11,
-            "likesMobile": 0,
-            "dislikesMobile": 1000,
-            "likesDesktop": 2,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Compiler Explorer",
-            "url": "https://godbolt.org/",
-            "description": "Test different computer programming language compilers.",
-            "tags": [
-                "user-submitted"
+                "#open",
+                "#library",
+                "#learning"
             ],
             "views": 15,
             "likesMobile": 0,
             "dislikesMobile": 1000,
-            "likesDesktop": 4,
+            "likesDesktop": 0,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "Anna's archive",
+            "url": "https://annas-archive.se/",
+            "description": "Open library.",
+            "tags": [
+                "#open",
+                "#library",
+                "#books"
+            ],
+            "views": 40,
+            "likesMobile": 1,
+            "dislikesMobile": 1000,
+            "likesDesktop": 1,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "draw.io",
+            "url": "https://app.diagrams.net/",
+            "description": "Diagram making software which includes UML diagrams in software engineering.",
+            "tags": [
+                "#user-submitted"
+            ],
+            "views": 15,
+            "likesMobile": 0,
+            "dislikesMobile": 1000,
+            "likesDesktop": 7,
             "dislikesDesktop": 0
         },
         {
-            "name": "Connected Papers",
-            "url": "https://www.connectedpapers.com/",
-            "description": "Visual tool to explore academic research connections",
+            "name": "Internet Archive",
+            "url": "https://archive.org/",
+            "description": "Digital library of free & borrowable books, movies, music & Wayback Machine",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample"
             ],
-            "views": 78,
+            "views": 69,
+            "likesMobile": 4,
+            "dislikesMobile": 1000,
+            "likesDesktop": 5,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "arXiv",
+            "url": "https://arxiv.org/",
+            "description": "Publish your papers online without peer review.",
+            "tags": [
+                "#papers",
+                "#publish"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "A Soft Murmur",
+            "url": "https://asoftmurmur.com/",
+            "description": "Mix ambient sounds (rain, waves) for focus",
+            "tags": [
+                "#positive",
+                "#curated",
+                "#sample"
+            ],
+            "views": 82,
             "likesMobile": 2,
             "dislikesMobile": 1000,
-            "likesDesktop": 10,
+            "likesDesktop": 3,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "AtCoder",
+            "url": "https://atcoder.jp/",
+            "description": "Competitive coding platform from Japan.",
+            "tags": [
+                "#competitiveCoding",
+                "#japan"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Software build systems",
+            "url": "https://bazel.build/basics",
+            "description": "The best guide on how software build systems work and their evolution. Bazel is the best build system by Google offering 0.5 second incremental build times using functional programming concepts.",
+            "tags": [
+                "#curated",
+                "#sample",
+                "#positive"
+            ],
+            "views": 186,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 5,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "Bluesky",
+            "url": "https://bsky.app/",
+            "description": "Social media",
+            "tags": [
+                "#positive",
+                "#daily"
+            ],
+            "views": 166,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
@@ -293,80 +219,46 @@ const STATIC = {
             "url": "https://chat.deepseek.com/",
             "description": "Cutting edge open weight open research LLM.",
             "tags": [
-                "curated",
-                "sample"
+                "#positive",
+                "#curated",
+                "#sample"
             ],
-            "views": 69,
+            "views": 80,
             "likesMobile": 2,
             "dislikesMobile": 1000,
-            "likesDesktop": 2,
+            "likesDesktop": 4,
             "dislikesDesktop": 0
         },
         {
-            "name": "DeepSeek",
-            "url": "https://www.deepseek.com/en",
-            "description": "AI research and development company",
+            "name": "clickclickclick",
+            "url": "https://clickclickclick.click/",
+            "description": "Commentary on your website activity.",
             "tags": [
-                "curated",
-                "sample"
+                "#positive"
             ],
-            "views": 73,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 1,
-            "dislikesDesktop": 1
-        },
-        {
-            "name": "Don't Even Reply",
-            "url": "https://dontevenreply.com/",
-            "description": "Hilarious fictional email exchanges",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 88,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 9,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "draw.io",
-            "url": "https://app.diagrams.net/",
-            "description": "Diagram making software which includes UML diagrams in software engineering.",
-            "tags": [
-                "user-submitted"
-            ],
-            "views": 10,
-            "likesMobile": 0,
-            "dislikesMobile": 1000,
-            "likesDesktop": 7,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Fatiha ka tarika",
-            "url": "https://namazein.com/fatiha-ka-tarika/",
-            "description": "How to do fatiha follow through guide.",
-            "tags": [
-                "user-submitted"
-            ],
-            "views": 39,
-            "likesMobile": 1,
-            "dislikesMobile": 0,
-            "likesDesktop": 2,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "GeeksforGeeks",
-            "url": "https://www.geeksforgeeks.org/",
-            "description": "Computer Science learning platform.",
-            "tags": [
-                "user-submitted"
-            ],
-            "views": 35,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 1,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Codeforces",
+            "url": "https://codeforces.com/problemset",
+            "description": "The top competitive programming platform.",
+            "tags": [
+                "#positive",
+                "#code",
+                "#learning",
+                "#fun",
+                "#poetic",
+                "#daily",
+                "#daily-desktop"
+            ],
+            "views": 192,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
@@ -374,11 +266,51 @@ const STATIC = {
             "url": "https://codenames.game/",
             "description": "Group online puzzle game.",
             "tags": [
-                "user-submitted"
+                "#user-submitted",
+                "#positive"
             ],
-            "views": 2,
+            "views": 7,
             "likesMobile": 0,
             "dislikesMobile": 1000,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "coffitivity",
+            "url": "https://coffitivity.com/",
+            "description": "Work while listening to coffee shop ambient sounds.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 1000,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "copychar",
+            "url": "https://copychar.cc/",
+            "description": "Browse and copy characters.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "crontab guru",
+            "url": "https://crontab.guru/",
+            "description": "The quick and simple editor for cron schedule expressions by Cronitor.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
         },
@@ -387,94 +319,110 @@ const STATIC = {
             "url": "https://crowdparty.app/",
             "description": "Group online trivia game.",
             "tags": [
-                "user-submitted"
+                "#user-submitted",
+                "#positive"
             ],
-            "views": 5,
+            "views": 14,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
-            "name": "Hacker News",
-            "url": "https://news.ycombinator.com/",
-            "description": "Social news link focusing on computer science and entrepreneurship",
+            "name": "The Longest Blockchain",
+            "url": "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
+            "description": "Interesting perspective on blockchain strength",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample",
+                "#positive"
             ],
-            "views": 184,
-            "likesMobile": 41,
-            "dislikesMobile": 3,
-            "likesDesktop": 18,
+            "views": 72,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
-            "name": "hashnode",
-            "url": "https://hashnode.com/featured",
-            "description": "Developer blog platform.",
+            "name": "Android training courses from Google",
+            "url": "https://developer.android.com/courses",
+            "description": "Whether a new developer, just new to Android, or an experienced professional, grow your skills with training created by Google's Android development experts.",
             "tags": [
-                "user-submitted"
+                "#daily",
+                "#daily-desktop",
+                "#optional"
             ],
-            "views": 35,
-            "likesMobile": 4,
-            "dislikesMobile": 0,
-            "likesDesktop": 1,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Hashnode recent",
-            "url": "https://hashnode.com/recent",
-            "description": "Blogging platform.",
-            "tags": [
-                "tech",
-                "blog",
-                "learning"
-            ],
-            "views": 20,
+            "views": 17,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
-            "name": "High Scalability",
-            "url": "https://highscalability.com/",
-            "description": "System Design Blogs",
+            "name": "12 Rules for Life - Jordan Bernt Peterson",
+            "url": "https://dn710101.ca.archive.org/0/items/DIOXIN-KILLS/12_rules_of_life_-_Jordan_Peterson.pdf",
+            "description": "The bridge between European ideas and Islam. Beyond Order: 12 More Rules for Life is also a required read after this book. Jordan Bernt Peterson almost reached Islam with pure logic which is remarkable. The difference can be seen in his Rule 8 of \"tell the truth, or atleast don't lie\" and the holy Quran's 'do not mix truth with falsehood, nor knowingly conceal the truth' - Surah Al-Baqarah (2:42). The Quran is much more strict and rewarding.",
             "tags": [
-                "user-submitted"
+                "#book",
+                "#positive"
             ],
-            "views": 40,
-            "likesMobile": 1,
+            "views": 18,
+            "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
-            "name": "Honda",
-            "url": "https://honda.com/",
-            "description": "Hardware company.",
+            "name": "Don't Even Reply",
+            "url": "https://dontevenreply.com/",
+            "description": "Hilarious fictional email exchanges",
             "tags": [
-                "brilliant",
-                "good",
-                "pretty",
-                "poetic"
+                "#curated",
+                "#sample",
+                "#positive"
             ],
-            "views": 56,
-            "likesMobile": 5,
+            "views": 96,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 9,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "downforeveryoneorjustme",
+            "url": "https://downforeveryoneorjustme.com/",
+            "description": "Check if a website is down for others too.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 1,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
-            "name": "How hate drove a Muslim flower-seller to death in a Maharashtra village",
-            "url": "https://www.newslaundry.com/2025/11/10/how-hate-drove-a-muslim-flower-seller-to-death-in-a-maharashtra-village",
-            "description": "Intolerance news.",
+            "name": "Just one drink per day can shrink your brain, study says",
+            "url": "https://edition.cnn.com/2022/03/04/health/alcohol-brain-shrinkage-wellness/",
+            "description": "Effect of long term alcohol compared to effect of short term alcohol consumption.",
             "tags": [
-                "learning",
-                "news"
+                "#alcohol",
+                "#health",
+                "#brain"
             ],
-            "views": 0,
+            "views": 3,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "excalidraw",
+            "url": "https://excalidraw.com/",
+            "description": "Make design diagrams in your browser.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 2,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -485,130 +433,173 @@ const STATIC = {
             "url": "https://github.com/alex/what-happens-when",
             "description": "An attempt to answer the age old interview question - What happens when you type google.com into your browser and press enter? This page explains how the computer systems work together.",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample",
+                "#positive"
             ],
-            "views": 94,
+            "views": 99,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 5,
             "dislikesDesktop": 0
         },
         {
-            "name": "Internet Archive",
-            "url": "https://archive.org/",
-            "description": "Digital library of free & borrowable books, movies, music & Wayback Machine",
+            "name": "Competitive Programmer's Handbook",
+            "url": "https://github.com/pllk/cphb/",
+            "description": "Best competitive programming book.",
             "tags": [
-                "curated",
-                "sample"
+                "#user-submitted",
+                "#positive"
             ],
-            "views": 63,
-            "likesMobile": 4,
-            "dislikesMobile": 1000,
-            "likesDesktop": 5,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Interview Ready",
-            "url": "https://interviewready.io/learn/ai-engineering/who-is-this-course-for/course-intro",
-            "description": "Best backend engineering course.",
-            "tags": [
-                "learning",
-                "code",
-                "backend",
-                "course"
-            ],
-            "views": 28,
+            "views": 20,
             "likesMobile": 0,
             "dislikesMobile": 1000,
-            "likesDesktop": 5,
-            "dislikesDesktop": 2
+            "likesDesktop": 3,
+            "dislikesDesktop": 0
         },
         {
-            "name": "Interview Ready - System Design",
-            "url": "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
-            "description": "Best System Design course.",
+            "name": "Compiler Explorer",
+            "url": "https://godbolt.org/",
+            "description": "Test different computer programming language compilers.",
             "tags": [
-                "systemdesign",
-                "course",
-                "learning"
+                "#user-submitted",
+                "#positive"
             ],
-            "views": 6,
+            "views": 19,
             "likesMobile": 0,
-            "dislikesMobile": 1001,
-            "likesDesktop": 1,
+            "dislikesMobile": 1000,
+            "likesDesktop": 4,
             "dislikesDesktop": 0
         },
         {
-            "name": "Kaggle",
-            "url": "https://www.kaggle.com/",
-            "description": "Participate in AI competitions.",
+            "name": "Hashnode",
+            "url": "https://hashnode.com/",
+            "description": "Developer blog platform.",
             "tags": [
-                "ai",
-                "participate",
-                "compete",
-                "learning"
+                "#positive",
+                "#learning",
+                "#blog",
+                "#platform"
             ],
-            "views": 14,
+            "views": 12,
             "likesMobile": 0,
-            "dislikesMobile": 2002,
-            "likesDesktop": 1,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "lg",
-            "url": "https://lg.com/",
-            "description": "lg",
-            "tags": [
-                "wesome",
-                "wesome,gorgeous"
-            ],
-            "views": 57,
-            "likesMobile": 3,
-            "dislikesMobile": 0,
-            "likesDesktop": 1,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Library Genesis",
-            "url": "https://libgen.li/",
-            "description": "Massive digital library of books, articles, and media",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 65,
-            "likesMobile": 4,
             "dislikesMobile": 1000,
             "likesDesktop": 2,
             "dislikesDesktop": 1
         },
         {
-            "name": "Linux Kernel Explorer",
-            "url": "https://reverser.dev/linux-kernel-explorer",
-            "description": "A portal to study the Linux Kernel.",
+            "name": "hashnode",
+            "url": "https://hashnode.com/featured",
+            "description": "Developer blog platform.",
             "tags": [
-                "linux",
-                "kernel"
+                "#positive",
+                "#user-submitted"
             ],
-            "views": 3,
+            "views": 74,
+            "likesMobile": 4,
+            "dislikesMobile": 1000,
+            "likesDesktop": 2,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Hashnode recent",
+            "url": "https://hashnode.com/recent",
+            "description": "Blogging platform.",
+            "tags": [
+                "#positive",
+                "#tech",
+                "#blog",
+                "#learning"
+            ],
+            "views": 62,
             "likesMobile": 0,
-            "dislikesMobile": 1001,
+            "dislikesMobile": 3000,
+            "likesDesktop": 0,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "High Scalability",
+            "url": "https://highscalability.com/",
+            "description": "System Design Blogs",
+            "tags": [
+                "#positive",
+                "#user-submitted"
+            ],
+            "views": 138,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 2,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Andher Nagri Chaupat Raja : Bharatendu Harishchandra",
+            "url": "https://hindi-kavita.com/HindiAndherNagriBharatenduHarishchandra.php",
+            "description": "Short play on the British rule in India",
+            "tags": [
+                "#user-submitted",
+                "#positive"
+            ],
+            "views": 124,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 4,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "History can't hide",
+            "url": "https://historycanthide.substack.com/",
+            "description": "I'm Kahlil Greene, better known as the Gen Z Historian. My work uncovering hidden histories has earned me recognition as a Peabody Award winner, a TIME100 content creator, a two-time Emmy nominee, a Forbes 30 Under 30 honoree, and a member of Variety's Power of Young Hollywood list. Across TikTok, Instagram, and LinkedIn, I've built a platform of ~1 million followers and 50 million views, using digital media to make history engaging, accessible, and relevant.",
+            "tags": [
+                "#history",
+                "#learning",
+                "#positive"
+            ],
+            "views": 2,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Honda",
+            "url": "https://honda.com/",
+            "description": "Hardware company.",
+            "tags": [
+                "#brilliant",
+                "#good",
+                "#pretty",
+                "#poetic"
+            ],
+            "views": 130,
+            "likesMobile": 5,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "htmlcolorcodes",
+            "url": "https://htmlcolorcodes.com/",
+            "description": "Pick color codes.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
-            "name": "Little Alchemy 2",
-            "url": "https://littlealchemy2.com/",
-            "description": "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
+            "name": "littlealchemy2",
+            "url": "https://https//littlealchemy2.com/",
+            "description": "Mix items to create new items.",
             "tags": [
-                "curated",
-                "sample"
+                "#reset"
             ],
-            "views": 121,
-            "likesMobile": 2,
+            "views": 1,
+            "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 1,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -616,29 +607,175 @@ const STATIC = {
             "url": "https://huggingface.co/spaces/hesamation/primer-llm-embedding",
             "description": "LLM Embeddings Explained: A Visual and Intuitive Guide",
             "tags": [
-                "llm",
-                "ai",
-                "explained"
+                "#llm",
+                "#ai",
+                "#explained",
+                "#positive"
             ],
-            "views": 5,
+            "views": 13,
             "likesMobile": 0,
-            "dislikesMobile": 1001,
+            "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
-            "name": "MediaTek",
-            "url": "https://www.mediatek.com/",
-            "description": "Silicon chips company.",
+            "name": "Interview Ready - System Design",
+            "url": "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
+            "description": "Best System Design course. You can ignore the other courses by interviewready as they have low rigor.",
             "tags": [
-                "silicon",
-                "chips",
-                "company"
+                "#systemdesign",
+                "#course",
+                "#learning"
             ],
-            "views": 41,
-            "likesMobile": 2,
+            "views": 12,
+            "likesMobile": 0,
+            "dislikesMobile": 1000,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "learnislam4free",
+            "url": "https://learnislam4free.org/",
+            "description": "Free Islamic books and ebooks.",
+            "tags": [
+                "#learning",
+                "#positive"
+            ],
+            "views": 2,
+            "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 4,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "learn x in y minutes",
+            "url": "https://learnxinyminutes.com/",
+            "description": "Learn programming languages quickly.",
+            "tags": [
+                "#positive",
+                "#learning"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "lg",
+            "url": "https://lg.com/",
+            "description": "lg",
+            "tags": [
+                "#wesome",
+                "wesome,gorgeous"
+            ],
+            "views": 117,
+            "likesMobile": 3,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Library Genesis",
+            "url": "https://libgen.li/",
+            "description": "Massive digital library of books, articles, and media",
+            "tags": [
+                "#curated",
+                "#sample"
+            ],
+            "views": 70,
+            "likesMobile": 4,
+            "dislikesMobile": 1000,
+            "likesDesktop": 2,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Little Alchemy 2",
+            "url": "https://littlealchemy2.com/",
+            "description": "Combine elements to discover new objects (e.g., Earth + Fire = Lava)",
+            "tags": [
+                "#daily",
+                "#daily-desktop",
+                "#positive",
+                "#curated",
+                "#sample"
+            ],
+            "views": 202,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "maktoobmedia",
+            "url": "https://maktoobmedia.com/",
+            "description": "News website",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#news"
+            ],
+            "views": 198,
+            "likesMobile": 4,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Muslim rickshaw puller assaulted, partially buried in sand, set on fire by Hindutva men in Agartala",
+            "url": "https://maktoobmedia.com/india/muslim-rickshaw-puller-assaulted-partially-buried-in-sand-set-on-fire-by-hindutva-men-in-agartala/",
+            "description": "Intolerance and hate crime.",
+            "tags": [
+                "#learning",
+                "#intolerance"
+            ],
+            "views": 49,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Muslim woman dies after mob violence led by village head's son in Bihar's Madhubani",
+            "url": "https://maktoobmedia.com/india/muslim-woman-dies-after-mob-violence-led-by-village-heads-son-in-bihars-madhubani/",
+            "description": "Hate crime",
+            "tags": [
+                "#news"
+            ],
+            "views": 18,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "The DeepSeek Series: A Technical Overview",
+            "url": "https://martinfowler.com/articles/deepseek-papers.html",
+            "description": "This article provides an overview of the DeepSeek papers, highlighting three main arcs in this research: a focus on improving cost and memory efficiency, the use of HPC Co-Design to train large models on limited hardware, and the development of emergent reasoning from large-scale reinforcement learning.",
+            "tags": [
+                "#user-submitted",
+                "#positive"
+            ],
+            "views": 35,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Mastodon",
+            "url": "https://mastodon.social/explore",
+            "description": "Decentralized social media. Refreshing and suprisingly positive content hinting at a simple feed algorithm.",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#twitteralternative",
+                "#socialmedia"
+            ],
+            "views": 190,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -646,27 +783,40 @@ const STATIC = {
             "url": "https://msi.com/",
             "description": "Computer motherboard company.",
             "tags": [
-                "computer",
-                "motherboard",
-                "company"
+                "#computer",
+                "#motherboard",
+                "#company"
             ],
-            "views": 47,
+            "views": 116,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
-            "name": "Muslim Prayer - How to perform 2 Raka'at (2 Units) of prayer",
-            "url": "https://www.youtube.com/watch?v=jxLsiOflofk",
-            "description": "Muslim Prayer - How to perform 2 Raka'at (2 Units) of prayer to help in praying Jumma farz namaz.",
+            "name": "Fatiha ka tarika",
+            "url": "https://namazein.com/fatiha-ka-tarika/",
+            "description": "How to do fatiha follow through guide.",
             "tags": [
-                "user-submitted"
+                "#user-submitted"
             ],
-            "views": 45,
-            "likesMobile": 7,
+            "views": 102,
+            "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 2,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Native land",
+            "url": "https://native-land.ca/maps/native-land",
+            "description": "Global map of colonized lands.",
+            "tags": [
+                "#map"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -674,88 +824,122 @@ const STATIC = {
             "url": "https://ncase.me/",
             "description": "Interactive simulations about trust and human behavior",
             "tags": [
-                "curated",
-                "sample"
+                "#positive",
+                "#curated",
+                "#sample"
             ],
-            "views": 113,
+            "views": 201,
             "likesMobile": 3,
-            "dislikesMobile": 0,
+            "dislikesMobile": 1,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
-            "name": "Nissan",
-            "url": "https://www.nissan-global.com/EN/",
-            "description": "Car company",
+            "name": "Neal.fun",
+            "url": "https://neal.fun/",
+            "description": "Interesting web games.",
             "tags": [
-                "car",
-                "company"
+                "#positive",
+                "#games"
             ],
-            "views": 50,
-            "likesMobile": 2,
-            "dislikesMobile": 0,
-            "likesDesktop": 1,
-            "dislikesDesktop": 1
-        },
-        {
-            "name": "OnePlus",
-            "url": "https://www.oneplus.com/",
-            "description": "Phone company",
-            "tags": [
-                "phone",
-                "phonecompany",
-                "mobilephonecompany",
-                "poetic"
-            ],
-            "views": 36,
-            "likesMobile": 1,
+            "views": 0,
+            "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
-            "name": "Oppo",
-            "url": "https://www.oppo.com/",
-            "description": "Mobile phone company.",
+            "name": "The Deep Sea",
+            "url": "https://neal.fun/deep-sea",
+            "description": "Interactive dive into ocean depths with fascinating facts",
             "tags": [
-                "mobile",
-                "mobile phone",
-                "company",
-                "mobilephonecompany",
-                "poetic"
+                "#curated",
+                "#sample",
+                "#positive"
             ],
-            "views": 37,
-            "likesMobile": 0,
-            "dislikesMobile": 2,
-            "likesDesktop": 2,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "Overleaf",
-            "url": "https://www.overleaf.com/",
-            "description": "Online LaTeX editor with real-time collaboration",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 48,
+            "views": 78,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
-            "name": "Pal Pal",
-            "url": "https://www.youtube.com/watch?v=8of5w7RgcTc",
-            "description": "Contemplative popular music in Urdu.",
+            "name": "Hacker News",
+            "url": "https://news.ycombinator.com/",
+            "description": "Social news link focusing on computer science and entrepreneurship. Kind of weird comments probably lots of bots.",
             "tags": [
-                "urdu",
-                "music"
+                "#positive",
+                "#daily",
+                "#optional",
+                "#curated",
+                "#sample"
             ],
-            "views": 26,
-            "likesMobile": 1,
+            "views": 370,
+            "likesMobile": 41,
+            "dislikesMobile": 4,
+            "likesDesktop": 18,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Islamic lunar calendar 12 months",
+            "url": "https://ocmic.org.uk/12-islamic-months/",
+            "description": "The Islamic calendar is moon based compared to the sun based Gregorian calendar.The lunar year is approximately 354 days long which is shorter than the solar year of approximately 365 days.",
+            "tags": [
+                "#positive",
+                "#good",
+                "#calendar",
+                "#lunar",
+                "#islam"
+            ],
+            "views": 4,
+            "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "MIT -  Mathematics for Computer Science",
+            "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/pages/syllabus/",
+            "description": "Welcome to MIT 6.042! In this course, we'll teach you some mathematics that we think you'll find useful in your study of computer science.",
+            "tags": [
+                "#daily",
+                "#daily-desktop",
+                "#optional"
+            ],
+            "views": 19,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "openverse",
+            "url": "https://openverse.org/",
+            "description": "Get free CC0 and other licensed media.",
+            "tags": [
+                "#media",
+                "#cc0"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "palestine.com",
+            "url": "https://palestine.com/",
+            "description": "The website https://palestine.com/.",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#palestine",
+                "#free"
+            ],
+            "views": 154,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 2,
             "dislikesDesktop": 0
         },
         {
@@ -763,13 +947,44 @@ const STATIC = {
             "url": "https://patatap.com/",
             "description": "Turn your keyboard into a sound machine with colorful animations",
             "tags": [
-                "curated",
-                "sample"
+                "#positive",
+                "#daily",
+                "#curated",
+                "#sample"
             ],
-            "views": 112,
+            "views": 334,
             "likesMobile": 4,
             "dislikesMobile": 0,
-            "likesDesktop": 3,
+            "likesDesktop": 4,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "pirateface",
+            "url": "https://pirateface.co/",
+            "description": "Turn AI into torrents that live forever. Open models - LLMs, image, audio, datasets - as 🧲 magnet links that can never be taken down. No single owner or point of failure.",
+            "tags": [
+                "#llm",
+                "#download"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "pixelfed.social",
+            "url": "https://pixelfed.social/web/explore",
+            "description": "Decentralized photo sharing social media powered by Pixelfed.",
+            "tags": [
+                "#fediverse",
+                "#daily",
+                "#social-media"
+            ],
+            "views": 52,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -777,10 +992,10 @@ const STATIC = {
             "url": "https://play-cs.com/",
             "description": "Play classic CS 1.6 online without downloading",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample"
             ],
-            "views": 49,
+            "views": 52,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -791,100 +1006,144 @@ const STATIC = {
             "url": "https://pointerpointer.com/",
             "description": "Photos of people pointing at your cursor wherever you move it",
             "tags": [
-                "curated",
-                "sample"
+                "#positive",
+                "#daily",
+                "#curated",
+                "#sample"
             ],
-            "views": 106,
+            "views": 346,
             "likesMobile": 4,
-            "dislikesMobile": 0,
-            "likesDesktop": 2,
-            "dislikesDesktop": 1
-        },
-        {
-            "name": "Product Hunt",
-            "url": "https://www.producthunt.com/",
-            "description": "Platform for sharing and discovering new products",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 157,
-            "likesMobile": 30,
-            "dislikesMobile": 3,
-            "likesDesktop": 16,
-            "dislikesDesktop": 0
+            "dislikesMobile": 1,
+            "likesDesktop": 4,
+            "dislikesDesktop": 2
         },
         {
             "name": "Project Euler",
             "url": "https://projecteuler.net/",
             "description": "Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.",
             "tags": [
-                "math",
-                "cs",
-                "coding"
+                "#math",
+                "#cs",
+                "#coding",
+                "#positive"
             ],
-            "views": 46,
+            "views": 121,
             "likesMobile": 5,
             "dislikesMobile": 0,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
+            "name": "Project Euler Archives",
+            "url": "https://projecteuler.net/archives",
+            "description": "Math and Computer Science puzzles.",
+            "tags": [
+                "#positive",
+                "#learning"
+            ],
+            "views": 31,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "The Pudding",
+            "url": "https://pudding.cool/",
+            "description": "Visual essays that explain ideas with data and visuals",
+            "tags": [
+                "#positive",
+                "#curated",
+                "#sample"
+            ],
+            "views": 208,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 3,
+            "dislikesDesktop": 1
+        },
+        {
             "name": "Quick, Draw!",
             "url": "https://quickdraw.withgoogle.com/",
             "description": "AI game that guesses your doodles",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample",
+                "#positive"
             ],
-            "views": 62,
+            "views": 67,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
-            "name": "Radio Garden",
-            "url": "http://radio.garden/",
-            "description": "Listen to live radio stations across the globe",
+            "name": "radio garden",
+            "url": "https://radio.garden/",
+            "description": "Listen to live radio from around the globe.",
             "tags": [
-                "curated",
-                "sample"
+                "#positive"
             ],
-            "views": 50,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 3,
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
-            "name": "Rekhta famous shayaris",
-            "url": "https://www.rekhta.org/tags/famous-shayari/couplets",
-            "description": "Ponder and it might help clear blockers in the mind.",
+            "name": "refactoring guru",
+            "url": "https://refactoring.guru/",
+            "description": "Learn software design patterns.",
             "tags": [
-                "shayaris",
-                "cool",
-                "poetic",
-                "beautiful"
+                "#learning",
+                "#positive"
             ],
-            "views": 54,
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Linux Kernel Explorer",
+            "url": "https://reverser.dev/linux-kernel-explorer",
+            "description": "A portal to study the Linux Kernel.",
+            "tags": [
+                "#linux",
+                "#kernel",
+                "#positive"
+            ],
+            "views": 11,
+            "likesMobile": 0,
+            "dislikesMobile": 1000,
+            "likesDesktop": 2,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Rubber Duck Debugging 🦆",
+            "url": "https://rubberduckdebugging.com/",
+            "description": "In a pinch a coworker might be able to substitute for the duck, however, it is often preferred to confide mistakes to the duck instead of your coworker. Well, we have LLMs now. Anyways better to talk to ourselves in the head or pray to Allah directly. We need to be careful of talking to a rubber duck as it might look crazy or shirk. \"And your Lord says, \"Call upon Me; I will respond to you.\" Indeed, those who disdain My worship will enter Hell [rendered] contemptible.\" - Surah Ghafir Ayat 60 (Sahih International)",
+            "tags": [
+                "#coding"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "safirnews",
+            "url": "https://safirnews.in/",
+            "description": "Indian news website.",
+            "tags": [
+                "#news",
+                "#positive",
+                "#daily"
+            ],
+            "views": 144,
             "likesMobile": 1,
             "dislikesMobile": 0,
-            "likesDesktop": 3,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "sci net.",
-            "url": "https://sci-net.xyz/",
-            "description": "Open scientific papers submitted by paper authors.",
-            "tags": [
-                "science",
-                "research",
-                "cool"
-            ],
-            "views": 42,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
@@ -893,66 +1152,121 @@ const STATIC = {
             "url": "https://sci-hub.se/",
             "description": "Removing barriers in the way of science by providing free access to research papers",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample"
             ],
-            "views": 42,
+            "views": 48,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
             "name": "Scream Into the Void",
             "url": "https://screamintothevoid.com/",
             "description": "Type your frustrations and hear a scream",
             "tags": [
-                "curated",
-                "sample"
+                "#positive",
+                "#curated",
+                "#sample"
             ],
-            "views": 66,
+            "views": 77,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "Who really wrote the lines ‘If there is Paradise on earth, it is this, it is this, it is this’?",
+            "url": "https://scroll.in/article/942273/who-really-wrote-the-lines-if-there-is-paradise-on-earth-it-is-this-it-is-this-it-is-this",
+            "description": "Paradise on Earth - Delhi.",
+            "tags": [
+                "#positive",
+                "#book",
+                "#learning"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "creativecommons",
+            "url": "https://search.creativecommons.org/",
+            "description": "Get free and licensed media.",
+            "tags": [
+                "#media"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "The people holding up the internet",
+            "url": "https://sheets.works/data-viz/holding-up-the-internet",
+            "description": "The reality of the resilience of open source contributors.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         },
         {
             "name": "skribbl.io",
             "url": "https://skribbl.io/",
             "description": "Free multiplayer drawing and guessing game",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample",
+                "#positive"
             ],
-            "views": 45,
+            "views": 52,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
-            "name": "Software build systems",
-            "url": "https://bazel.build/basics",
-            "description": "The best guide on how software build systems work and their evolution. Bazel is the best build system by Google offering 0.5 second incremental build times using functional programming concepts.",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 119,
-            "likesMobile": 2,
-            "dislikesMobile": 0,
-            "likesDesktop": 5,
-            "dislikesDesktop": 1
-        },
-        {
             "name": "Sony",
             "url": "https://sony.com/",
             "description": "Tech giant.",
             "tags": [],
-            "views": 31,
+            "views": 40,
             "likesMobile": 1,
             "dislikesMobile": 1000,
             "likesDesktop": 5,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "stackedit",
+            "url": "https://stackedit.io/app#",
+            "description": "Online markdown editor.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 3,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "stars",
+            "url": "https://stars.chromeexperiments.com/",
+            "description": "Browse stars on the browser.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 3,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -960,13 +1274,27 @@ const STATIC = {
             "url": "https://stellarium-web.org/",
             "description": "Real-time 3D simulation of space with planetarium view",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample",
+                "#positive"
             ],
-            "views": 58,
+            "views": 64,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "The senior engineer death spiral",
+            "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/",
+            "description": "A blog post on how being senior is more about helping others.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -974,125 +1302,963 @@ const STATIC = {
             "url": "https://tails.net/",
             "description": "Secure OS.",
             "tags": [
-                "secure",
-                "os",
-                "privacy"
+                "#secure",
+                "#os",
+                "#privacy",
+                "#positive"
             ],
-            "views": 6,
+            "views": 11,
             "likesMobile": 3,
-            "dislikesMobile": 1002,
-            "likesDesktop": 6,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "The Deep Sea",
-            "url": "https://neal.fun/deep-sea",
-            "description": "Interactive dive into ocean depths with fascinating facts",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 72,
-            "likesMobile": 2,
             "dislikesMobile": 1000,
-            "likesDesktop": 1,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "The DeepSeek Series: A Technical Overview",
-            "url": "https://martinfowler.com/articles/deepseek-papers.html",
-            "description": "This article provides an overview of the DeepSeek papers, highlighting three main arcs in this research: a focus on improving cost and memory efficiency, the use of HPC Co-Design to train large models on limited hardware, and the development of emergent reasoning from large-scale reinforcement learning.",
-            "tags": [
-                "user-submitted"
-            ],
-            "views": 32,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 1,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "The Longest Blockchain",
-            "url": "https://cryptoservices.github.io/blockchain/consensus/2019/05/21/bitcoin-length-weight-confusion.html",
-            "description": "Interesting perspective on blockchain strength",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 68,
-            "likesMobile": 2,
-            "dislikesMobile": 1000,
-            "likesDesktop": 3,
-            "dislikesDesktop": 0
-        },
-        {
-            "name": "The Pudding",
-            "url": "https://pudding.cool/",
-            "description": "Visual essays that explain ideas with data and visuals",
-            "tags": [
-                "curated",
-                "sample"
-            ],
-            "views": 109,
-            "likesMobile": 2,
-            "dislikesMobile": 0,
-            "likesDesktop": 3,
-            "dislikesDesktop": 0
+            "likesDesktop": 7,
+            "dislikesDesktop": 1
         },
         {
             "name": "The Useless Web",
             "url": "https://theuselessweb.com/",
             "description": "Random fun and bizarre links with one click",
             "tags": [
-                "curated",
-                "sample"
+                "#daily",
+                "#daily-desktop",
+                "#positive",
+                "#curated",
+                "#sample"
             ],
-            "views": 100,
+            "views": 153,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
             "name": "This Is Sand",
             "url": "https://thisissand.com/",
             "description": "Digital sand art creator",
             "tags": [
-                "curated",
-                "sample"
+                "#positive",
+                "#curated",
+                "#sample"
             ],
-            "views": 73,
+            "views": 82,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
             "dislikesDesktop": 0
         },
         {
+            "name": "tohtml",
+            "url": "https://tohtml.com/",
+            "description": "Online syntax highlighting for the masses!",
+            "tags": [
+                "#positive"
+            ],
+            "views": 3,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "PaP - The Passive Aggressive Password Machine",
+            "url": "https://trypap.com/",
+            "description": "Its simple really, you enter a password...any password and the PaP Machine will be honest* about your passwords strength.* Honest like a lawyer, or your cold hearted X.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 2,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "Unsplash",
             "url": "https://unsplash.com/",
-            "description": "Beautiful, free images gifted by the world's most generous community of photographers",
+            "description": "Beautiful, free images gifted by the world's most generous community of photographers.",
             "tags": [
-                "curated",
-                "sample"
+                "#positive",
+                "#daily",
+                "#curated",
+                "#sample"
             ],
-            "views": 235,
-            "likesMobile": 54,
+            "views": 486,
+            "likesMobile": 56,
             "dislikesMobile": 4,
-            "likesDesktop": 26,
+            "likesDesktop": 28,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Unsplash illustrations",
+            "url": "https://unsplash.com/illustrations",
+            "description": "Free stock vector illustrations. Powered by creators everywhere.",
+            "tags": [
+                "#daily",
+                "#positive"
+            ],
+            "views": 95,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Internet Archive - Wayback Machine",
+            "url": "https://web.archive.org/",
+            "description": "Explore more than 1 trillion web pages saved over time.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 2,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "What every Browser knows about you",
+            "url": "https://webkay.robinlinus.com/",
+            "description": "Insightful website on what every Browser knows about you on just visit. You can also upload an image to see what the image metadata is telling.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 2,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
             "name": "Window Swap",
             "url": "https://window-swap.com/",
-            "description": "See the view from someone else's window around the world",
+            "description": "See the view from someone else's window around the world.",
             "tags": [
-                "curated",
-                "sample"
+                "#daily",
+                "#daily-desktop",
+                "#positive",
+                "#curated",
+                "#sample"
+            ],
+            "views": 100,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 5,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "1point3acres English",
+            "url": "https://www.1point3acres.com/en",
+            "description": "Most Influential Chinese Community in North America.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 2,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "1point3acres interview",
+            "url": "https://www.1point3acres.com/interview",
+            "description": "Interview website of 1point3acres.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Al Jazeera",
+            "url": "https://www.aljazeera.com/",
+            "description": "International news and current affairs network",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#curated",
+                "#sample"
+            ],
+            "views": 359,
+            "likesMobile": 8,
+            "dislikesMobile": 0,
+            "likesDesktop": 6,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Aljazeera flips",
+            "url": "https://www.aljazeera.com/#flips-6386599316112",
+            "description": "Short clips from Aljazeera.",
+            "tags": [
+                "#aljazeera",
+                "#flips",
+                "#learning",
+                "#positive",
+                "#daily"
+            ],
+            "views": 232,
+            "likesMobile": 3,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Aljazeera flips",
+            "url": "https://www.aljazeera.com/#flips-6386609485112",
+            "description": "Short clips from Aljazeera.",
+            "tags": [
+                "#aljazeera",
+                "#flips",
+                "#learning",
+                "#positive"
+            ],
+            "views": 81,
+            "likesMobile": 1,
+            "dislikesMobile": 1,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Bored Button",
+            "url": "https://www.boredbutton.com/",
+            "description": "Collection of random fun links and games",
+            "tags": [
+                "#positive",
+                "#curated",
+                "#sample"
+            ],
+            "views": 60,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "BYD",
+            "url": "https://www.byd.com/",
+            "description": "Electric car company.",
+            "tags": [
+                "#car",
+                "#electric",
+                "#company"
+            ],
+            "views": 106,
+            "likesMobile": 5,
+            "dislikesMobile": 0,
+            "likesDesktop": 2,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "CodeChef",
+            "url": "https://www.codechef.com/",
+            "description": "Competitive coding platform from India.",
+            "tags": [
+                "#competitiveCoding"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Connected Papers",
+            "url": "https://www.connectedpapers.com/",
+            "description": "Visual tool to explore academic research connections",
+            "tags": [
+                "#curated",
+                "#sample",
+                "#positive"
+            ],
+            "views": 83,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 10,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "DeepSeek",
+            "url": "https://www.deepseek.com/en",
+            "description": "AI research and development company",
+            "tags": [
+                "#curated",
+                "#sample"
+            ],
+            "views": 78,
+            "likesMobile": 2,
+            "dislikesMobile": 1000,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "diffchecker",
+            "url": "https://www.diffchecker.com/",
+            "description": "Find the difference between two text files.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 2,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Digit",
+            "url": "https://www.digit.in/",
+            "description": "Technology magazine.",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#new",
+                "#tech"
+            ],
+            "views": 165,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 2,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "equal earth",
+            "url": "https://www.equal-earth.com/",
+            "description": "A map based on the Equal Earth map projection. The Equal Earth Wall Map is for schools, organizations, or anyone who needs a map showing countries and continents at their true sizes relative to each other. Africa appears 14 times larger than Greenland as it actually is.",
+            "tags": [
+                "#positive",
+                "#learning"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "ethicalconsumer",
+            "url": "https://www.ethicalconsumer.org/",
+            "description": "Learn more about the global brands.",
+            "tags": [
+                "#buy",
+                "#brands",
+                "#ethics",
+                "#positive"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "FIFA 12 songs",
+            "url": "https://www.fifplay.com/fifa-12/soundtrack/",
+            "description": "The great FIFA 12 soundtrack for those who love nostalgia.",
+            "tags": [
+                "#music",
+                "#fifa",
+                "#positive"
+            ],
+            "views": 18,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "FIFA 14 soundtrack",
+            "url": "https://www.fifplay.com/fifa-14/soundtrack/",
+            "description": "The FIFA 14 soundtrack which seems more positive than the FIFA 12 soundtrack.",
+            "tags": [
+                "#music",
+                "#fifa",
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/",
+            "description": "Computer Science learning platform.",
+            "tags": [
+                "#user-submitted",
+                "#positive"
+            ],
+            "views": 98,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "justwatch",
+            "url": "https://www.justwatch.com/",
+            "description": "What's trending in streaming OTT (over the top) entertainment.",
+            "tags": [
+                "#daily",
+                "#positive"
+            ],
+            "views": 98,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "JSON Web Token (JWT) Debugger",
+            "url": "https://www.jwt.io/",
+            "description": "Decode, verify, and generate JSON Web Tokens, which are an open, industry standard RFC 7519 method for representing claims securely between two parties.",
+            "tags": [
+                "#positive",
+                "#learning"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Kaggle",
+            "url": "https://www.kaggle.com/",
+            "description": "Participate in AI competitions.",
+            "tags": [
+                "#ai",
+                "#participate",
+                "#compete",
+                "#learning",
+                "#positive",
+                "#daily",
+                "#daily-desktop",
+                "#optional"
+            ],
+            "views": 34,
+            "likesMobile": 0,
+            "dislikesMobile": 1000,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "khanacademy",
+            "url": "https://www.khanacademy.org/",
+            "description": "Free educational content website.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Khanacademy personal-finance",
+            "url": "https://www.khanacademy.org/college-careers-more/personal-finance",
+            "description": "Course on personal-finance by Khanacademy.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "LLM Torrents",
+            "url": "https://www.llmtorrents.com/",
+            "description": "A catalog of open-weight models with a plain answer to the question that matters: will this model run on your hardware?",
+            "tags": [
+                "#learning",
+                "#positive",
+                "#llm",
+                "#opensource"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "lofi cafe",
+            "url": "https://www.lofi.cafe/",
+            "description": "Listen to lofi cafe music.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "MediaTek",
+            "url": "https://www.mediatek.com/",
+            "description": "Silicon chips company.",
+            "tags": [
+                "#silicon",
+                "#chips",
+                "#company"
+            ],
+            "views": 103,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 4,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Associations between alcohol consumption and gray and white matter volumes in the UK Biobank",
+            "url": "https://www.nature.com/articles/s41467-022-28735-5",
+            "description": "Heavy alcohol consumption has been associated with brain atrophy, neuronal loss, andpoorer white matter fiber integrity. However, there is conflicting evidence on whether light-to-moderate alcohol consumption shows similar negative associations with brain structure.To address this, we examine the associations between alcohol intake and brain structureusing multimodal imaging data from 36,678 generally healthy middle-aged and older adultsfrom the UK Biobank, controlling for numerous potential confounds. Consistent with priorliterature, we find negative associations between alcohol intake and brain macrostructure andmicrostructure. Specifically, alcohol intake is negatively associated with global brain volumemeasures, regional gray matter volumes, and white matter microstructure. Here, we showthat the negative associations between alcohol intake and brain macrostructure and micro-structure are already apparent in individuals consuming an average of only one to two dailyalcohol units, and become stronger as alcohol intake increases.",
+            "tags": [
+                "#health",
+                "#brain",
+                "#alcohol"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "How hate drove a Muslim flower-seller to death in a Maharashtra village",
+            "url": "https://www.newslaundry.com/2025/11/10/how-hate-drove-a-muslim-flower-seller-to-death-in-a-maharashtra-village",
+            "description": "Intolerance news.",
+            "tags": [
+                "#learning",
+                "#news"
+            ],
+            "views": 63,
+            "likesMobile": 5,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Nikon",
+            "url": "https://www.nikon.com/",
+            "description": "Technology company.",
+            "tags": [
+                "#tech",
+                "#company"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Nissan",
+            "url": "https://www.nissan-global.com/EN/",
+            "description": "Car company",
+            "tags": [
+                "#car",
+                "#company"
+            ],
+            "views": 107,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "OnePlus",
+            "url": "https://www.oneplus.com/",
+            "description": "Phone company",
+            "tags": [
+                "#phone",
+                "#phonecompany",
+                "#mobilephonecompany",
+                "#poetic"
+            ],
+            "views": 95,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Oppo",
+            "url": "https://www.oppo.com/",
+            "description": "Mobile phone company.",
+            "tags": [
+                "#mobile",
+                "mobile phone",
+                "#company",
+                "#mobilephonecompany",
+                "#poetic"
+            ],
+            "views": 89,
+            "likesMobile": 0,
+            "dislikesMobile": 2,
+            "likesDesktop": 2,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Overleaf",
+            "url": "https://www.overleaf.com/",
+            "description": "Online LaTeX editor with real-time collaboration",
+            "tags": [
+                "#curated",
+                "#sample",
+                "#positive"
             ],
             "views": 53,
             "likesMobile": 2,
             "dislikesMobile": 1000,
+            "likesDesktop": 2,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Product Hunt",
+            "url": "https://www.producthunt.com/",
+            "description": "Platform for sharing and discovering new products",
+            "tags": [
+                "#positive",
+                "#curated",
+                "#sample"
+            ],
+            "views": 271,
+            "likesMobile": 31,
+            "dislikesMobile": 3,
+            "likesDesktop": 16,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "The Scandal That Never HappenedNever Happened ",
+            "url": "https://www.propublica.org/article/louisiana-judges-ignored-prisoners-petitions-without-review-fifth-circuit?utm_campaign=propublica-sprout&utm_content=1783206006",
+            "description": "Years ago, the all-white judges of a Louisiana appellate court decided, in secret, to systematically ignore petitions filed by prisoners, most of them Black, who claimed they had been unjustly convicted.This is the story of a horrendous injustice and the three people who tried to expose it. It begins with a suicide note.",
+            "tags": [
+                "#positive",
+                "#law",
+                "#usa",
+                "#injustice",
+                "#incompetence",
+                "#evil"
+            ],
+            "views": 2,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/",
+            "description": "Online forum which allows read only use on desktop without logging in.",
+            "tags": [
+                "#daily",
+                "#daily-desktop",
+                "#social-media"
+            ],
+            "views": 53,
+            "likesMobile": 0,
+            "dislikesMobile": 1000,
+            "likesDesktop": 0,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "Rekhta famous shayaris",
+            "url": "https://www.rekhta.org/tags/famous-shayari/couplets",
+            "description": "Ponder and it might help clear blockers in the mind.",
+            "tags": [
+                "#positive",
+                "#shayaris",
+                "#cool",
+                "#poetic",
+                "#beautiful",
+                "#daily"
+            ],
+            "views": 251,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
             "likesDesktop": 4,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "the reporters' collective",
+            "url": "https://www.reporters-collective.in/",
+            "description": "The reporters’ collective is a deep-dive journalism collaborative that reports on issues of public interest.",
+            "tags": [
+                "#news",
+                "#journalism",
+                "#daily"
+            ],
+            "views": 13,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Alcohol Related Neurodegeneration and Recovery",
+            "url": "https://www.researchgate.net/publication/236180730_Alcohol-Related_Neurodegeneration_and_Recovery_Mechanisms_From_Animal_Models",
+            "description": "Human studies have found alcoholics to have a smaller brain size than moderate drinkers; however, thesestudies are complicated by many uncontrollable factors, including timing and amount of alcohol use. Animalexperiments, which can control many factors, have established that alcohol can cause damage to brain cells(i.e., neurons), which results in their loss of structure or function (i.e., neurodegeneration) in multiple brainregions, similar to the damage found in human alcoholics. In addition, animal studies indicate that inhibitionof the creation of neurons (i.e., neurogenesis) and other braincell genesis contributes to alcoholicneurodegeneration. Animal studies also suggest that neurodegeneration changes cognition, contributing toalcohol use disorders. Risk factors such as adolescent age and genetic predisposition toward alcoholconsumption worsen neurodegeneration. Mild impairment of executive functions similar to that found inhumans occurs in animals following binge alcohol treatment. Thus, animal studies suggest that heavy alcoholuse contributes to neurodegeneration and the progressive loss of control over drinking. Despite the negativeconsequences of heavy drinking, there is hope of recovery with abstinence, which in animal models canresult in neural stemcell proliferation and the formation of new neurons and other brain cells, indicative ofbrain growth.",
+            "tags": [
+                "#research",
+                "#health",
+                "#alcohol"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Blind",
+            "url": "https://www.teamblind.com/",
+            "description": "Social media.",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#social",
+                "#media"
+            ],
+            "views": 295,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Blind recent sort",
+            "url": "https://www.teamblind.com/?sort=id",
+            "description": "Social media.",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#social",
+                "#media"
+            ],
+            "views": 277,
+            "likesMobile": 3,
+            "dislikesMobile": 1,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "WhatIsMyBrowser.com",
+            "url": "https://www.whatismybrowser.com/",
+            "description": "Find out what websites know about you.",
+            "tags": [
+                "#daily",
+                "#daily-desktop",
+                "#learning",
+                "#positive"
+            ],
+            "views": 31,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "worldtimebuddy",
+            "url": "https://www.worldtimebuddy.com/",
+            "description": "Compare time around the world.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "World Socialist Web Site",
+            "url": "https://www.wsws.org/",
+            "description": "News site",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#learning",
+                "#news"
+            ],
+            "views": 176,
+            "likesMobile": 4,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/",
+            "description": "Video sharing social media platform. The main page has a non personalized recommendation algorithm feed which can be activated by moving to shorts and then back to the home page.",
+            "tags": [
+                "#daily",
+                "#video",
+                "#positive"
+            ],
+            "views": 116,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/feed/subscriptions",
+            "description": "The subscriptions feed does not have implicit personalized recommendations.",
+            "tags": [
+                "#daily",
+                "#daily-desktop",
+                "#positive",
+                "#video",
+                "#social",
+                "#good",
+                "#dynamic",
+                "#regular",
+                "#repeat"
+            ],
+            "views": 130,
+            "likesMobile": 2,
+            "dislikesMobile": 0,
+            "likesDesktop": 4,
+            "dislikesDesktop": 2
+        },
+        {
+            "name": "YouTube shorts",
+            "url": "https://www.youtube.com/shorts/",
+            "description": "Short form YouTube videos in TikTok style.",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#daily-mobile",
+                "#tiktok",
+                "#videos"
+            ],
+            "views": 154,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Veritasium",
+            "url": "https://www.youtube.com/user/1veritasium",
+            "description": "Physics trivia videos.",
+            "tags": [
+                "#positive"
+            ],
+            "views": 1,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Sammy Obeid YouTube",
+            "url": "https://www.youtube.com/user/SammyKObeid",
+            "description": "Palestinian comedian.",
+            "tags": [
+                "#youtube",
+                "#daily",
+                "#optional"
+            ],
+            "views": 7,
+            "likesMobile": 1,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Portugal.The Man - Got It All [Official Music Video]",
+            "url": "https://www.youtube.com/watch?v=7J8d18ZkXE8",
+            "description": "The anthem for the Occupy Wall Street movement.",
+            "tags": [
+                "#music",
+                "#positive"
+            ],
+            "views": 3,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Pal Pal",
+            "url": "https://www.youtube.com/watch?v=8of5w7RgcTc",
+            "description": "Contemplative popular music in Urdu.",
+            "tags": [
+                "#urdu",
+                "#music",
+                "#positive",
+                "#daily",
+                "#optional"
+            ],
+            "views": 131,
+            "likesMobile": 1,
+            "dislikesMobile": 2,
+            "likesDesktop": 2,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "How to perform 2 Raka'at (2 Unit) namaz",
+            "url": "https://www.youtube.com/watch?v=jxLsiOflofk",
+            "description": "How to perform 2 Raka'at (2 Unit) namaz to help in praying Jumma farz namaz.",
+            "tags": [
+                "#positive",
+                "#daily",
+                "#optional"
+            ],
+            "views": 182,
+            "likesMobile": 7,
+            "dislikesMobile": 0,
+            "likesDesktop": 5,
+            "dislikesDesktop": 1
+        },
+        {
+            "name": "Banksy Painting in West Bank, Palestine (2005)",
+            "url": "https://www.youtube.com/watch?v=KJBach_xRLw",
+            "description": "Rare footage of the secretive graffiti artist Banksy painting live with his distinctive stencil method.",
+            "tags": [
+                "#art",
+                "#graffiti",
+                "#banksy"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Graffiti, including the works of Banksy,  on the Israeli West Bank Barrier Wall in Bethlehem, Palestinian Territories.",
+            "url": "https://www.youtube.com/watch?v=USdMEBMQw_w",
+            "description": "West Bank Palestine Barrier Separation Wall Graffiti, Including Some Works By Banksy.",
+            "tags": [
+                "#art",
+                "#palestine",
+                "#graffiti"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "2 Rakat Complete Salah in Real Time",
+            "url": "https://www.youtube.com/watch?v=v2gx24YqI68",
+            "description": "2 Rakat Complete Salah for Jumma with English translation.",
+            "tags": [
+                "#positive",
+                "#daily"
+            ],
+            "views": 27,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -1100,32 +2266,28 @@ const STATIC = {
             "url": "https://xkcd.com/",
             "description": "A webcomic of romance, sarcasm, math, and language",
             "tags": [
-                "curated",
-                "sample"
+                "#curated",
+                "#sample"
             ],
-            "views": 62,
+            "views": 68,
             "likesMobile": 12,
-            "dislikesMobile": 6000,
+            "dislikesMobile": 1000,
             "likesDesktop": 3,
-            "dislikesDesktop": 0
+            "dislikesDesktop": 1
         },
         {
-            "name": "YouTube",
-            "url": "https://m.youtube.com/feed/subscriptions",
-            "description": "The subscriptions feed does not have implicit personalized recommendations.",
+            "name": "2 Rakat Complete Salah in Real Time",
+            "url": "https://youtu.be/v2gx24YqI68?feature=shared",
+            "description": "2 rakat namaz for jumma farz.",
             "tags": [
-                "video",
-                "social",
-                "good",
-                "dynamic",
-                "regular",
-                "repeat"
+                "#daily",
+                "#optional"
             ],
-            "views": 41,
-            "likesMobile": 2,
+            "views": 7,
+            "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 4,
-            "dislikesDesktop": 1
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         }
     ]
 };
