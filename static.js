@@ -79,7 +79,7 @@ const STATIC = {
                 "#positive",
                 "#learning"
             ],
-            "views": 90,
+            "views": 91,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -179,7 +179,7 @@ const STATIC = {
                 "#competitiveCoding",
                 "#japan"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -208,7 +208,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 166,
+            "views": 169,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -255,7 +255,7 @@ const STATIC = {
                 "#daily",
                 "#daily-desktop"
             ],
-            "views": 192,
+            "views": 193,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -619,6 +619,20 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "Logical fallacies",
+            "url": "https://i.4cdn.org/pol/1745605148004265.png",
+            "description": "A poster of common logical fallacies with their explanation.",
+            "tags": [
+                "#logic",
+                "#learning"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "Interview Ready - System Design",
             "url": "https://interviewready.io/learn/system-design-course/how-do-i-use-this-course/what-do-we-offer?tab=chapters",
             "description": "Best System Design course. You can ignore the other courses by interviewready as they have low rigor.",
@@ -700,7 +714,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 202,
+            "views": 203,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -772,7 +786,7 @@ const STATIC = {
                 "#twitteralternative",
                 "#socialmedia"
             ],
-            "views": 190,
+            "views": 192,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -874,7 +888,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 370,
+            "views": 371,
             "likesMobile": 41,
             "dislikesMobile": 4,
             "likesDesktop": 18,
@@ -1011,7 +1025,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 346,
+            "views": 347,
             "likesMobile": 4,
             "dislikesMobile": 1,
             "likesDesktop": 4,
@@ -1381,7 +1395,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 486,
+            "views": 487,
             "likesMobile": 56,
             "dislikesMobile": 4,
             "likesDesktop": 28,
@@ -1395,7 +1409,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 95,
+            "views": 98,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1556,7 +1570,7 @@ const STATIC = {
             "tags": [
                 "#competitiveCoding"
             ],
-            "views": 0,
+            "views": 1,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -1736,7 +1750,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#optional"
             ],
-            "views": 34,
+            "views": 36,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -1959,7 +1973,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#social-media"
             ],
-            "views": 53,
+            "views": 54,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 0,
@@ -2039,7 +2053,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 277,
+            "views": 278,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 1,
@@ -2276,6 +2290,20 @@ const STATIC = {
             "dislikesDesktop": 1
         },
         {
+            "name": "Your bias is",
+            "url": "https://yourbias.is/",
+            "description": "Learn about cognitive biases.",
+            "tags": [
+                "#biases",
+                "#learning"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "2 Rakat Complete Salah in Real Time",
             "url": "https://youtu.be/v2gx24YqI68?feature=shared",
             "description": "2 rakat namaz for jumma farz.",
@@ -2283,7 +2311,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 7,
+            "views": 8,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,

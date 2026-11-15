@@ -29,7 +29,7 @@ object StaticLinks {
             url = "https://alternativeto.net/",
             description = "AlternativeTo is a crowd-sourced and free site that helps you find better apps and services.",
             tags = listOf("#daily", "#positive", "#learning"),
-            views = 90,
+            views = 91,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -49,7 +49,7 @@ object StaticLinks {
             url = "https://atcoder.jp/",
             description = "Competitive coding platform from Japan.",
             tags = listOf("#competitiveCoding", "#japan"),
-            views = 0,
+            views = 1,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -69,7 +69,7 @@ object StaticLinks {
             url = "https://bsky.app/",
             description = "Social media",
             tags = listOf("#positive", "#daily"),
-            views = 166,
+            views = 169,
             likesMobile = 1,
             dislikesMobile = 0
         ),
@@ -89,7 +89,7 @@ object StaticLinks {
             url = "https://codeforces.com/problemset",
             description = "The top competitive programming platform.",
             tags = listOf("#positive", "#code", "#learning", "#fun", "#poetic", "#daily", "#daily-desktop"),
-            views = 192,
+            views = 193,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -225,6 +225,16 @@ object StaticLinks {
         ),
 
         Link(
+            name = "Logical fallacies",
+            url = "https://i.4cdn.org/pol/1745605148004265.png",
+            description = "A poster of common logical fallacies with their explanation.",
+            tags = listOf("#logic", "#learning"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "learnislam4free",
             url = "https://learnislam4free.org/",
             description = "Free Islamic books and ebooks.",
@@ -289,7 +299,7 @@ object StaticLinks {
             url = "https://mastodon.social/explore",
             description = "Decentralized social media. Refreshing and suprisingly positive content hinting at a simple feed algorithm.",
             tags = listOf("#positive", "#daily", "#twitteralternative", "#socialmedia"),
-            views = 190,
+            views = 192,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -349,7 +359,7 @@ object StaticLinks {
             url = "https://news.ycombinator.com/",
             description = "Social news link focusing on computer science and entrepreneurship. Kind of weird comments probably lots of bots.",
             tags = listOf("#positive", "#daily", "#optional", "#curated", "#sample"),
-            views = 370,
+            views = 371,
             likesMobile = 41,
             dislikesMobile = 4
         ),
@@ -429,7 +439,7 @@ object StaticLinks {
             url = "https://pointerpointer.com/",
             description = "Photos of people pointing at your cursor wherever you move it",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 346,
+            views = 347,
             likesMobile = 4,
             dislikesMobile = 1
         ),
@@ -589,7 +599,7 @@ object StaticLinks {
             url = "https://unsplash.com/",
             description = "Beautiful, free images gifted by the world's most generous community of photographers.",
             tags = listOf("#positive", "#daily", "#curated", "#sample"),
-            views = 486,
+            views = 487,
             likesMobile = 56,
             dislikesMobile = 4
         ),
@@ -599,7 +609,7 @@ object StaticLinks {
             url = "https://unsplash.com/illustrations",
             description = "Free stock vector illustrations. Powered by creators everywhere.",
             tags = listOf("#daily", "#positive"),
-            views = 95,
+            views = 98,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -689,7 +699,7 @@ object StaticLinks {
             url = "https://www.codechef.com/",
             description = "Competitive coding platform from India.",
             tags = listOf("#competitiveCoding"),
-            views = 0,
+            views = 1,
             likesMobile = 0,
             dislikesMobile = 0
         ),
@@ -959,7 +969,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/?sort=id",
             description = "Social media.",
             tags = listOf("#positive", "#daily", "#social", "#media"),
-            views = 277,
+            views = 278,
             likesMobile = 3,
             dislikesMobile = 1
         ),
@@ -1105,11 +1115,21 @@ object StaticLinks {
         ),
 
         Link(
+            name = "Your bias is",
+            url = "https://yourbias.is/",
+            description = "Learn about cognitive biases.",
+            tags = listOf("#biases", "#learning"),
+            views = 0,
+            likesMobile = 0,
+            dislikesMobile = 0
+        ),
+
+        Link(
             name = "2 Rakat Complete Salah in Real Time",
             url = "https://youtu.be/v2gx24YqI68?feature=shared",
             description = "2 rakat namaz for jumma farz.",
             tags = listOf("#daily", "#optional"),
-            views = 7,
+            views = 8,
             likesMobile = 0,
             dislikesMobile = 0
         )
