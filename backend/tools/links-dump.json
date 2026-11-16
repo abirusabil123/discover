@@ -85,7 +85,7 @@
       "#positive",
       "#learning"
     ],
-    "views": 91,
+    "views": 92,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -218,7 +218,7 @@
   {
     "url": "https://bsky.app/",
     "name": "Bluesky",
-    "description": "Social media",
+    "description": "Social media. The content is extremely USA specific.",
     "tags": [
       "#positive",
       "#daily"
@@ -290,7 +290,7 @@
       "#daily",
       "#daily-desktop"
     ],
-    "views": 193,
+    "views": 194,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -1052,10 +1052,10 @@
       "#curated",
       "#sample"
     ],
-    "views": 371,
+    "views": 373,
     "likesMobile": 41,
     "dislikesMobile": 4,
-    "likesDesktop": 18,
+    "likesDesktop": 19,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1100,7 +1100,7 @@
       "#daily-desktop",
       "#optional"
     ],
-    "views": 19,
+    "views": 20,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1132,7 +1132,7 @@
       "#palestine",
       "#free"
     ],
-    "views": 154,
+    "views": 155,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -1149,7 +1149,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 334,
+    "views": 335,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1351,7 +1351,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 144,
+    "views": 145,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1638,7 +1638,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 487,
+    "views": 488,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1653,7 +1653,7 @@
       "#daily",
       "#positive"
     ],
-    "views": 98,
+    "views": 100,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1762,7 +1762,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 232,
+    "views": 233,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2356,7 +2356,7 @@
       "#beautiful",
       "#daily"
     ],
-    "views": 251,
+    "views": 252,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -2422,7 +2422,7 @@
       "#social",
       "#media"
     ],
-    "views": 278,
+    "views": 279,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 1,
@@ -2470,7 +2470,7 @@
       "#learning",
       "#news"
     ],
-    "views": 176,
+    "views": 179,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2508,7 +2508,7 @@
       "#regular",
       "#repeat"
     ],
-    "views": 130,
+    "views": 131,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -2589,7 +2589,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 131,
+    "views": 132,
     "likesMobile": 1,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -2697,7 +2697,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 8,
+    "views": 9,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
