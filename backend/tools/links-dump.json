@@ -40,7 +40,7 @@
       "#optional",
       "#user-submitted"
     ],
-    "views": 187,
+    "views": 188,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -85,7 +85,7 @@
       "#positive",
       "#learning"
     ],
-    "views": 92,
+    "views": 93,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -223,7 +223,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 169,
+    "views": 170,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -290,7 +290,7 @@
       "#daily",
       "#daily-desktop"
     ],
-    "views": 194,
+    "views": 197,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -394,7 +394,7 @@
       "#daily-desktop",
       "#optional"
     ],
-    "views": 17,
+    "views": 18,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -760,6 +760,21 @@
     "reviewStatus": 1
   },
   {
+    "url": "https://islamtics.com/category/quotes/",
+    "name": "Islamtics Islamic quotes",
+    "description": "Browse the islamtics archive of Islamic quotes and short reminders from the Quran, hadith, and Islamic tradition — reflections to nourish the heart and remember Allah every day. There is a search feature as well for image quotes.",
+    "tags": [
+      "#islam",
+      "#learning"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
+    "reviewStatus": 0
+  },
+  {
     "url": "https://learnislam4free.org/",
     "name": "learnislam4free",
     "description": "Free Islamic books and ebooks.",
@@ -830,7 +845,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 203,
+    "views": 205,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -862,10 +877,10 @@
       "#daily",
       "#news"
     ],
-    "views": 198,
+    "views": 200,
     "likesMobile": 4,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -923,7 +938,7 @@
       "#twitteralternative",
       "#socialmedia"
     ],
-    "views": 192,
+    "views": 193,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1052,11 +1067,11 @@
       "#curated",
       "#sample"
     ],
-    "views": 373,
+    "views": 377,
     "likesMobile": 41,
     "dislikesMobile": 4,
     "likesDesktop": 19,
-    "dislikesDesktop": 0,
+    "dislikesDesktop": 1,
     "reviewStatus": 1
   },
   {
@@ -1100,7 +1115,7 @@
       "#daily-desktop",
       "#optional"
     ],
-    "views": 20,
+    "views": 23,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1132,7 +1147,7 @@
       "#palestine",
       "#free"
     ],
-    "views": 155,
+    "views": 156,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -1149,7 +1164,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 335,
+    "views": 337,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -1180,10 +1195,10 @@
       "#daily",
       "#social-media"
     ],
-    "views": 52,
+    "views": 54,
     "likesMobile": 1,
     "dislikesMobile": 0,
-    "likesDesktop": 1,
+    "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1212,7 +1227,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 347,
+    "views": 349,
     "likesMobile": 4,
     "dislikesMobile": 1,
     "likesDesktop": 4,
@@ -1351,7 +1366,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 145,
+    "views": 147,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1563,7 +1578,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 153,
+    "views": 157,
     "likesMobile": 3,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -1638,7 +1653,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 488,
+    "views": 489,
     "likesMobile": 56,
     "dislikesMobile": 4,
     "likesDesktop": 28,
@@ -1653,7 +1668,7 @@
       "#daily",
       "#positive"
     ],
-    "views": 100,
+    "views": 104,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1699,7 +1714,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 100,
+    "views": 103,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 5,
@@ -1744,7 +1759,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 359,
+    "views": 360,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 6,
@@ -1762,10 +1777,10 @@
       "#positive",
       "#daily"
     ],
-    "views": 233,
+    "views": 235,
     "likesMobile": 3,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1887,10 +1902,10 @@
       "#new",
       "#tech"
     ],
-    "views": 165,
+    "views": 167,
     "likesMobile": 0,
     "dislikesMobile": 0,
-    "likesDesktop": 2,
+    "likesDesktop": 3,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -2046,7 +2061,7 @@
       "#daily",
       "#positive"
     ],
-    "views": 98,
+    "views": 101,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2082,7 +2097,7 @@
       "#daily-desktop",
       "#optional"
     ],
-    "views": 36,
+    "views": 37,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -2337,10 +2352,10 @@
       "#daily-desktop",
       "#social-media"
     ],
-    "views": 54,
+    "views": 57,
     "likesMobile": 0,
     "dislikesMobile": 1000,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 2,
     "reviewStatus": 1
   },
@@ -2356,7 +2371,7 @@
       "#beautiful",
       "#daily"
     ],
-    "views": 252,
+    "views": 255,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -2372,7 +2387,7 @@
       "#journalism",
       "#daily"
     ],
-    "views": 13,
+    "views": 16,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2405,7 +2420,7 @@
       "#social",
       "#media"
     ],
-    "views": 295,
+    "views": 297,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2422,10 +2437,10 @@
       "#social",
       "#media"
     ],
-    "views": 279,
+    "views": 282,
     "likesMobile": 3,
     "dislikesMobile": 1,
-    "likesDesktop": 1,
+    "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -2439,7 +2454,7 @@
       "#learning",
       "#positive"
     ],
-    "views": 31,
+    "views": 32,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2470,7 +2485,7 @@
       "#learning",
       "#news"
     ],
-    "views": 179,
+    "views": 181,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2486,7 +2501,7 @@
       "#video",
       "#positive"
     ],
-    "views": 116,
+    "views": 118,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2508,7 +2523,7 @@
       "#regular",
       "#repeat"
     ],
-    "views": 131,
+    "views": 135,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -2589,7 +2604,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 132,
+    "views": 135,
     "likesMobile": 1,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -2605,7 +2620,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 182,
+    "views": 183,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -2652,10 +2667,10 @@
       "#positive",
       "#daily"
     ],
-    "views": 27,
+    "views": 31,
     "likesMobile": 0,
     "dislikesMobile": 0,
-    "likesDesktop": 1,
+    "likesDesktop": 2,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
