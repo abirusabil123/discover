@@ -646,7 +646,7 @@ VALUES (
     (
         'Islamtics Islamic quotes',
         'https://islamtics.com/category/quotes/',
-        'Browse the islamtics archive of Islamic quotes and short reminders from the Quran, hadith, and Islamic tradition — reflections to nourish the heart and remember Allah every day.',
+        'Browse the islamtics archive of Islamic quotes and short reminders from the Quran, hadith, and Islamic tradition — reflections to nourish the heart and remember Allah every day. There is a search feature as well for image quotes.',
         JSON_ARRAY('#islam', '#learning'),
         0,
         0,
