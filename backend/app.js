@@ -113,25 +113,21 @@ async function logErrorToDB(errorData) {
 }
 
 // Error logging middleware
-async function logError(err, req, res, next) {
-  const statusCode = err.status || res.statusCode || 500;
+async function logError(error, req, res, next) {
+  const statusCode = error.status || res.statusCode || 500;
   const isClientError = statusCode >= 400 && statusCode < 500;
 
   try {
     await logErrorToDB({
       source: 'backend',
       level: isClientError ? 'warning' : 'error',
-      message: `${statusCode}: ${err.message || 'Client error'} (${req.method} ${req.path})`,
+      message: `${statusCode}: ${error.message || 'Client error'} (${req.method} ${req.path})`,
       user_agent: req.headers['user-agent']
     });
   } catch (dbError) {
     console.error('Failed to log error:', dbError);
   }
-
-  // Only call next for server errors (let client errors send response)
-  if (!isClientError) {
-    next(err);
-  }
+  next(error);
 }
 
 // Filtering criteria
@@ -662,7 +658,9 @@ app.get('/', async (req, res, next) => {
 
 app.use(logError);
 app.use((err, req, res, next) => {
-  res.status(500).json({ error: 'Internal Server Error' });
+  const status = err.status || err.statusCode || 500;
+  const message = err.message || 'Internal Server Error';
+  res.status(status).json({ error: message });
 });
 
 app.listen(process.env.PORT, '0.0.0.0', () => {
