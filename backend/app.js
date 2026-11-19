@@ -176,16 +176,14 @@ app.post('/log-error', async (req, res, next) => {
 // GET endpoint to retrieve errors
 app.get('/errors', async (req, res, next) => {
   try {
-    const { limit = 100, resolved } = req.query;
+    const limit = parseInt(req.query.limit, 10) || 100; // Explicitly cast to integer
+    const resolved = req.query.resolved === 'true' ? 1 : 0;
 
     let query = 'SELECT * FROM errors';
     const params = [];
 
-    if (resolved !== undefined) {
-      query += ' WHERE resolved = ?';
-      params.push(resolved === 'true' ? 1 : 0); // Fix: Convert boolean to number
-    }
-
+    query += ' WHERE resolved = ?';
+    params.push(resolved);
     query += ' ORDER BY timestamp DESC LIMIT ?';
     params.push(limit);
 
@@ -531,7 +529,8 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
     name = name?.replace(/[\r\n]+/g, '') || name;
     url = url?.replace(/[\r\n]+/g, '') || url;
     description = description?.replace(/[\r\n]+/g, '') || description;
-    tags = tags
+    const tagsArr = Array.isArray(tags) ? tags : []
+    tags = tagsArr
       .map(tag => tag.trim())
       .map(tag => tag.replace(/[\r\n]+/g, '')) // Remove special characters
       .filter((tag, index, array) => array.indexOf(tag) === index); // Remove duplicates
