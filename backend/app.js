@@ -66,15 +66,17 @@ const voteLimiter = rateLimit({
   legacyHeaders: false
 });
 
-// Database connection
-const dbConfig = {
+const pool = mysql.createPool({
   host: process.env.DB_HOST || 'db',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || 'password',
   database: process.env.DB_NAME || 'mydatabase',
-  multipleStatements: true,
+  waitForConnections: true,
+  connectionLimit: 16, // Adjust based on your needs
+  queueLimit: 0,
+  multipleStatements: false,
   charset: 'utf8mb4'
-};
+});
 
 // Middleware
 app.use(express.json());
@@ -98,12 +100,10 @@ async function logErrorToDB(errorData) {
       throw new Error('Message is required for error logging');
     }
 
-    const connection = await mysql.createConnection(dbConfig);
-    const [result] = await connection.execute(
+    const [result] = await pool.execute(
       'INSERT INTO errors (source, level, message, user_agent) VALUES (?, ?, ?, ?)',
       [source, level, message, user_agent]
     );
-    await connection.end();
 
     return { success: true, id: result.insertId };
   } catch (dbError) {
@@ -177,7 +177,6 @@ app.post('/log-error', async (req, res, next) => {
 app.get('/errors', async (req, res, next) => {
   try {
     const { limit = 100, resolved } = req.query;
-    const connection = await mysql.createConnection(dbConfig);
 
     let query = 'SELECT * FROM errors';
     const params = [];
@@ -190,8 +189,7 @@ app.get('/errors', async (req, res, next) => {
     query += ' ORDER BY timestamp DESC LIMIT ?';
     params.push(limit);
 
-    const [rows] = await connection.execute(query, params);
-    await connection.end();
+    const [rows] = await pool.execute(query, params);
 
     res.json(rows);
 
@@ -205,14 +203,11 @@ app.get('/errors', async (req, res, next) => {
 app.put('/errors/:id/resolve', async (req, res, next) => {
   try {
     const { id } = req.params;
-    const connection = await mysql.createConnection(dbConfig);
 
-    const [result] = await connection.execute(
+    const [result] = await pool.execute(
       'UPDATE errors SET resolved = TRUE, resolved_at = CURRENT_TIMESTAMP WHERE id = ?',
       [id]
     );
-
-    await connection.end();
 
     if (result.affectedRows === 0) {
       return res.status(404).json({ error: 'Error not found' });
@@ -232,46 +227,43 @@ app.get('/visitors-analytics', async (req, res, next) => {
     const { whereClause, params } = buildVisitorWhere(req.query);
     console.log(`[visitors-analytics] where="${whereClause}" params=${JSON.stringify(params)}`);
 
-    const connection = await mysql.createConnection(dbConfig);
-
-    const [byCountry] = await connection.execute(
+    const [byCountry] = await pool.execute(
       `SELECT country, COUNT(*) as count FROM visitors ${whereClause} GROUP BY country ORDER BY country ASC`,
       params
     );
-    const [byMonth] = await connection.execute(
+    const [byMonth] = await pool.execute(
       `SELECT DATE_FORMAT(timestamp, "%Y%m") as month, COUNT(*) as count FROM visitors ${whereClause} GROUP BY month ORDER BY month DESC`,
       params
     );
-    const [byPlatform] = await connection.execute(
+    const [byPlatform] = await pool.execute(
       `SELECT platform, COUNT(*) as count FROM visitors ${whereClause} GROUP BY platform ORDER BY platform ASC`,
       params
     );
-    const [byProduct] = await connection.execute(
+    const [byProduct] = await pool.execute(
       `SELECT product, COUNT(*) as count FROM visitors ${whereClause} GROUP BY product ORDER BY product ASC`,
       params
     );
-    const [byOrigin] = await connection.execute(
+    const [byOrigin] = await pool.execute(
       `SELECT origin, COUNT(*) as count FROM visitors ${whereClause} GROUP BY origin ORDER BY origin ASC`,
       params
     );
-    const [byPath] = await connection.execute(
+    const [byPath] = await pool.execute(
       `SELECT path, COUNT(*) as count FROM visitors ${whereClause} GROUP BY path ORDER BY path ASC`,
       params
     );
-    const [byBotStatus] = await connection.execute(
+    const [byBotStatus] = await pool.execute(
       `SELECT CASE WHEN bot = 1 THEN 'Bot' ELSE 'Human' END AS status, COUNT(*) as count FROM visitors ${whereClause} GROUP BY bot ORDER BY bot`,
       params
     );
-    const [byHourOfDay] = await connection.execute(
+    const [byHourOfDay] = await pool.execute(
       `SELECT HOUR(timestamp) as hour, COUNT(*) as count FROM visitors ${whereClause} GROUP BY hour ORDER BY hour ASC`,
       params
     );
-    const [byDayOfWeek] = await connection.execute(
+    const [byDayOfWeek] = await pool.execute(
       `SELECT WEEKDAY(timestamp) as dow, COUNT(*) as count FROM visitors ${whereClause} GROUP BY dow ORDER BY dow ASC`,
       params
     );
 
-    await connection.end();
     res.json({ byCountry, byMonth, byPlatform, byProduct, byOrigin, byPath, byBotStatus, byHourOfDay, byDayOfWeek });
   } catch (error) {
     console.error('Get visitors analytics error:', error);
@@ -286,8 +278,7 @@ async function logVisitorToDB(country, user_agent, origin, platform, path, produ
       throw new Error('Missing required parameters for logVisitorToDB');
     }
 
-    const connection = await mysql.createConnection(dbConfig);
-    const [result] = await connection.execute(
+    const [result] = await pool.execute(
       'INSERT INTO visitors (country, user_agent, origin, platform, path, product, bot) VALUES (?, ?, ?, ?, ?, ?, ?)', // 7 placeholders
       [
         country.substring(0, 10),
@@ -299,7 +290,7 @@ async function logVisitorToDB(country, user_agent, origin, platform, path, produ
         bot ? 1 : 0
       ]
     );
-    await connection.end();
+
     return { success: true, id: result.insertId };
   } catch (dbError) {
     console.error('Failed to log visitor:', dbError);
@@ -369,9 +360,7 @@ app.get('/getLinks', async (req, res, next) => {
       .map(t => t.trim())
       .filter(Boolean);
 
-    const connection = await mysql.createConnection(dbConfig);
-    const [rows] = await connection.execute('SELECT * FROM links ORDER BY name');
-    await connection.end();
+    const [rows] = await pool.execute('SELECT * FROM links ORDER BY name');
 
     const parsed = rows.map(w => {
       try {
@@ -431,7 +420,6 @@ app.post('/incrementView', voteLimiter, async (req, res, next) => {
       return res.status(400).json({ error: 'URL parameter is required' });
     }
 
-    const connection = await mysql.createConnection(dbConfig);
     let query;
     let params;
 
@@ -472,16 +460,12 @@ app.post('/incrementView', voteLimiter, async (req, res, next) => {
     query = `UPDATE links SET ${fieldToUpdate} WHERE url = ?`;
     params = [url];
 
-    const [result] = await connection.execute(query, params);
+    const [result] = await pool.execute(query, params);
 
     // Check if update affected any rows
     if (result.affectedRows === 0) {
-      await connection.end();
       return res.status(404).json({ success: false, error: 'Link not found' });
     }
-
-    await connection.end();
-
 
     res.json({
       success: true,
@@ -501,7 +485,6 @@ app.post('/removeLink', voteLimiter, async (req, res, next) => {
       return res.status(400).json({ error: 'URL parameter is required' });
     }
 
-    const connection = await mysql.createConnection(dbConfig);
     let query;
     let params;
 
@@ -521,15 +504,12 @@ app.post('/removeLink', voteLimiter, async (req, res, next) => {
     query = `UPDATE links SET ${fieldToUpdate} WHERE url = ?`;
     params = [url];
 
-    const [result] = await connection.execute(query, params);
+    const [result] = await pool.execute(query, params);
 
     // Check if update affected any rows
     if (result.affectedRows === 0) {
-      await connection.end();
       return res.status(404).json({ success: false, error: 'Link not found' });
     }
-
-    await connection.end();
 
     res.json({
       success: true,
@@ -585,26 +565,21 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
 
     /////////////////////////////////////////////////
 
-    const connection = await mysql.createConnection(dbConfig);
-
     // Check if link already exists
-    const [existing] = await connection.execute(
+    const [existing] = await pool.execute(
       'SELECT url FROM links WHERE url = ?',
       [url]
     );
 
     if (existing.length > 0) {
-      await connection.end();
       return res.status(409).json({ error: 'Link already exists' });
     }
 
     // Insert new link
-    const [result] = await connection.execute(
+    const [result] = await pool.execute(
       'INSERT INTO links (name, url, description, tags, views, likesMobile, dislikesMobile, likesDesktop, dislikesDesktop, reviewStatus) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
       [name, url, description, tags, views || 0, likesMobile || 0, dislikesMobile || 0, likesDesktop || 0, dislikesDesktop || 0, 0]
     );
-
-    await connection.end();
 
     res.json({
       message: 'Link submitted for spam review successfully! The link will be live globally after review and approval 🎉',
@@ -622,11 +597,9 @@ app.post('/addlink', apiLimiter, async (req, res, next) => {
 // Health check endpoint
 app.get('/health', async (req, res, next) => {
   try {
-    const connection = await mysql.createConnection(dbConfig);
-    await connection.execute('SELECT 1');
-    await connection.end();
+    await pool.execute('SELECT 1');
 
-    res.json({ status: 'OK', message: 'Database connection successful' });
+    res.json({ status: 'OK', message: 'Database pool execute successful' });
   } catch (error) {
     next(error);
   }
@@ -636,9 +609,7 @@ app.get('/health', async (req, res, next) => {
 app.get('/', async (req, res, next) => {
   try {
     // Routing
-    const connection = await mysql.createConnection(dbConfig);
-    const [rows] = await connection.execute('SELECT COUNT(*) as count FROM links');
-    await connection.end();
+    const [rows] = await pool.execute('SELECT COUNT(*) as count FROM links');
 
     res.json({
       message: 'Discover Backend API',
