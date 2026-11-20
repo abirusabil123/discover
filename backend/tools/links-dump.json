@@ -40,7 +40,7 @@
       "#optional",
       "#user-submitted"
     ],
-    "views": 188,
+    "views": 189,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -223,7 +223,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 170,
+    "views": 171,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -290,7 +290,7 @@
       "#daily",
       "#daily-desktop"
     ],
-    "views": 197,
+    "views": 199,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -394,7 +394,7 @@
       "#daily-desktop",
       "#optional"
     ],
-    "views": 18,
+    "views": 19,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -772,7 +772,7 @@
     "dislikesMobile": 0,
     "likesDesktop": 0,
     "dislikesDesktop": 0,
-    "reviewStatus": 0
+    "reviewStatus": 1
   },
   {
     "url": "https://learnislam4free.org/",
@@ -845,11 +845,27 @@
       "#curated",
       "#sample"
     ],
-    "views": 205,
+    "views": 209,
     "likesMobile": 2,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
     "dislikesDesktop": 1,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://llmsizer.com/",
+    "name": "llmsizer",
+    "description": "Find out which local LLMs can run on your hardware.",
+    "tags": [
+      "#localLlm",
+      "#llm",
+      "#coding"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
+    "dislikesDesktop": 0,
     "reviewStatus": 1
   },
   {
@@ -877,7 +893,7 @@
       "#daily",
       "#news"
     ],
-    "views": 200,
+    "views": 202,
     "likesMobile": 4,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -938,7 +954,7 @@
       "#twitteralternative",
       "#socialmedia"
     ],
-    "views": 193,
+    "views": 195,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1115,10 +1131,26 @@
       "#daily-desktop",
       "#optional"
     ],
-    "views": 23,
+    "views": 25,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
+    "dislikesDesktop": 0,
+    "reviewStatus": 1
+  },
+  {
+    "url": "https://ollama.com/",
+    "name": "Ollama",
+    "description": "Run LLMs locally with the llama.cpp backend and the CLI frontend of your choice like GitHub copilot like `ollama launch copilot`. Ollama is the most popular way to build with open models.",
+    "tags": [
+      "#localLlm",
+      "#llm",
+      "#coding"
+    ],
+    "views": 0,
+    "likesMobile": 0,
+    "dislikesMobile": 0,
+    "likesDesktop": 0,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -1147,7 +1179,7 @@
       "#palestine",
       "#free"
     ],
-    "views": 156,
+    "views": 159,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -1366,7 +1398,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 147,
+    "views": 148,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1578,7 +1610,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 157,
+    "views": 158,
     "likesMobile": 3,
     "dislikesMobile": 1000,
     "likesDesktop": 3,
@@ -1668,7 +1700,7 @@
       "#daily",
       "#positive"
     ],
-    "views": 104,
+    "views": 105,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1759,7 +1791,7 @@
       "#curated",
       "#sample"
     ],
-    "views": 360,
+    "views": 361,
     "likesMobile": 8,
     "dislikesMobile": 0,
     "likesDesktop": 6,
@@ -1777,7 +1809,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 235,
+    "views": 238,
     "likesMobile": 3,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -1902,7 +1934,7 @@
       "#new",
       "#tech"
     ],
-    "views": 167,
+    "views": 169,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 3,
@@ -2061,7 +2093,7 @@
       "#daily",
       "#positive"
     ],
-    "views": 101,
+    "views": 102,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2352,7 +2384,7 @@
       "#daily-desktop",
       "#social-media"
     ],
-    "views": 57,
+    "views": 58,
     "likesMobile": 0,
     "dislikesMobile": 1000,
     "likesDesktop": 1,
@@ -2371,7 +2403,7 @@
       "#beautiful",
       "#daily"
     ],
-    "views": 255,
+    "views": 256,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -2387,7 +2419,7 @@
       "#journalism",
       "#daily"
     ],
-    "views": 16,
+    "views": 20,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 1,
@@ -2420,10 +2452,10 @@
       "#social",
       "#media"
     ],
-    "views": 297,
+    "views": 302,
     "likesMobile": 0,
     "dislikesMobile": 0,
-    "likesDesktop": 0,
+    "likesDesktop": 1,
     "dislikesDesktop": 0,
     "reviewStatus": 1
   },
@@ -2437,7 +2469,7 @@
       "#social",
       "#media"
     ],
-    "views": 282,
+    "views": 286,
     "likesMobile": 3,
     "dislikesMobile": 1,
     "likesDesktop": 2,
@@ -2454,7 +2486,7 @@
       "#learning",
       "#positive"
     ],
-    "views": 32,
+    "views": 34,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2501,7 +2533,7 @@
       "#video",
       "#positive"
     ],
-    "views": 118,
+    "views": 123,
     "likesMobile": 1,
     "dislikesMobile": 0,
     "likesDesktop": 0,
@@ -2523,7 +2555,7 @@
       "#regular",
       "#repeat"
     ],
-    "views": 135,
+    "views": 136,
     "likesMobile": 2,
     "dislikesMobile": 0,
     "likesDesktop": 4,
@@ -2604,7 +2636,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 135,
+    "views": 136,
     "likesMobile": 1,
     "dislikesMobile": 2,
     "likesDesktop": 2,
@@ -2620,7 +2652,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 183,
+    "views": 184,
     "likesMobile": 7,
     "dislikesMobile": 0,
     "likesDesktop": 5,
@@ -2667,7 +2699,7 @@
       "#positive",
       "#daily"
     ],
-    "views": 31,
+    "views": 33,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 2,
@@ -2712,7 +2744,7 @@
       "#daily",
       "#optional"
     ],
-    "views": 9,
+    "views": 11,
     "likesMobile": 0,
     "dislikesMobile": 0,
     "likesDesktop": 0,

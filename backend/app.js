@@ -176,7 +176,7 @@ app.post('/log-error', async (req, res, next) => {
 // GET endpoint to retrieve errors
 app.get('/errors', async (req, res, next) => {
   try {
-    const limit = parseInt(req.query.limit, 10) || 100; // Explicitly cast to integer
+    const limit = parseInt(req.query.limit, 10) || 1000000; // Explicitly cast to integer
     const resolved = req.query.resolved === 'true' ? 1 : 0;
 
     let query = 'SELECT * FROM errors';

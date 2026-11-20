@@ -51,7 +51,7 @@ const STATIC = {
                 "#optional",
                 "#user-submitted"
             ],
-            "views": 188,
+            "views": 189,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -208,7 +208,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 170,
+            "views": 171,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -255,7 +255,7 @@ const STATIC = {
                 "#daily",
                 "#daily-desktop"
             ],
-            "views": 197,
+            "views": 199,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -352,7 +352,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#optional"
             ],
-            "views": 18,
+            "views": 19,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -648,6 +648,20 @@ const STATIC = {
             "dislikesDesktop": 0
         },
         {
+            "name": "Islamtics Islamic quotes",
+            "url": "https://islamtics.com/category/quotes/",
+            "description": "Browse the islamtics archive of Islamic quotes and short reminders from the Quran, hadith, and Islamic tradition — reflections to nourish the heart and remember Allah every day. There is a search feature as well for image quotes.",
+            "tags": [
+                "#islam",
+                "#learning"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
+        },
+        {
             "name": "learnislam4free",
             "url": "https://learnislam4free.org/",
             "description": "Free Islamic books and ebooks.",
@@ -714,11 +728,26 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 205,
+            "views": 209,
             "likesMobile": 2,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
             "dislikesDesktop": 1
+        },
+        {
+            "name": "llmsizer",
+            "url": "https://llmsizer.com/",
+            "description": "Find out which local LLMs can run on your hardware.",
+            "tags": [
+                "#localLlm",
+                "#llm",
+                "#coding"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
+            "dislikesDesktop": 0
         },
         {
             "name": "maktoobmedia",
@@ -729,7 +758,7 @@ const STATIC = {
                 "#daily",
                 "#news"
             ],
-            "views": 200,
+            "views": 202,
             "likesMobile": 4,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -786,7 +815,7 @@ const STATIC = {
                 "#twitteralternative",
                 "#socialmedia"
             ],
-            "views": 193,
+            "views": 195,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -920,10 +949,25 @@ const STATIC = {
                 "#daily-desktop",
                 "#optional"
             ],
-            "views": 23,
+            "views": 25,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
+            "dislikesDesktop": 0
+        },
+        {
+            "name": "Ollama",
+            "url": "https://ollama.com/",
+            "description": "Run LLMs locally with the llama.cpp backend and the CLI frontend of your choice like GitHub copilot like `ollama launch copilot`. Ollama is the most popular way to build with open models.",
+            "tags": [
+                "#localLlm",
+                "#llm",
+                "#coding"
+            ],
+            "views": 0,
+            "likesMobile": 0,
+            "dislikesMobile": 0,
+            "likesDesktop": 0,
             "dislikesDesktop": 0
         },
         {
@@ -950,7 +994,7 @@ const STATIC = {
                 "#palestine",
                 "#free"
             ],
-            "views": 156,
+            "views": 159,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -1155,7 +1199,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 147,
+            "views": 148,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1338,7 +1382,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 157,
+            "views": 158,
             "likesMobile": 3,
             "dislikesMobile": 1000,
             "likesDesktop": 3,
@@ -1409,7 +1453,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 104,
+            "views": 105,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1494,7 +1538,7 @@ const STATIC = {
                 "#curated",
                 "#sample"
             ],
-            "views": 360,
+            "views": 361,
             "likesMobile": 8,
             "dislikesMobile": 0,
             "likesDesktop": 6,
@@ -1511,7 +1555,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 235,
+            "views": 238,
             "likesMobile": 3,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1628,7 +1672,7 @@ const STATIC = {
                 "#new",
                 "#tech"
             ],
-            "views": 167,
+            "views": 169,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 3,
@@ -1716,7 +1760,7 @@ const STATIC = {
                 "#daily",
                 "#positive"
             ],
-            "views": 101,
+            "views": 102,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -1973,7 +2017,7 @@ const STATIC = {
                 "#daily-desktop",
                 "#social-media"
             ],
-            "views": 57,
+            "views": 58,
             "likesMobile": 0,
             "dislikesMobile": 1000,
             "likesDesktop": 1,
@@ -1991,7 +2035,7 @@ const STATIC = {
                 "#beautiful",
                 "#daily"
             ],
-            "views": 255,
+            "views": 256,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -2006,7 +2050,7 @@ const STATIC = {
                 "#journalism",
                 "#daily"
             ],
-            "views": 16,
+            "views": 20,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 1,
@@ -2037,10 +2081,10 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 297,
+            "views": 302,
             "likesMobile": 0,
             "dislikesMobile": 0,
-            "likesDesktop": 0,
+            "likesDesktop": 1,
             "dislikesDesktop": 0
         },
         {
@@ -2053,7 +2097,7 @@ const STATIC = {
                 "#social",
                 "#media"
             ],
-            "views": 282,
+            "views": 286,
             "likesMobile": 3,
             "dislikesMobile": 1,
             "likesDesktop": 2,
@@ -2069,7 +2113,7 @@ const STATIC = {
                 "#learning",
                 "#positive"
             ],
-            "views": 32,
+            "views": 34,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2113,7 +2157,7 @@ const STATIC = {
                 "#video",
                 "#positive"
             ],
-            "views": 118,
+            "views": 123,
             "likesMobile": 1,
             "dislikesMobile": 0,
             "likesDesktop": 0,
@@ -2134,7 +2178,7 @@ const STATIC = {
                 "#regular",
                 "#repeat"
             ],
-            "views": 135,
+            "views": 136,
             "likesMobile": 2,
             "dislikesMobile": 0,
             "likesDesktop": 4,
@@ -2210,7 +2254,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 135,
+            "views": 136,
             "likesMobile": 1,
             "dislikesMobile": 2,
             "likesDesktop": 2,
@@ -2225,7 +2269,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 183,
+            "views": 184,
             "likesMobile": 7,
             "dislikesMobile": 0,
             "likesDesktop": 5,
@@ -2269,7 +2313,7 @@ const STATIC = {
                 "#positive",
                 "#daily"
             ],
-            "views": 31,
+            "views": 33,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 2,
@@ -2311,7 +2355,7 @@ const STATIC = {
                 "#daily",
                 "#optional"
             ],
-            "views": 9,
+            "views": 11,
             "likesMobile": 0,
             "dislikesMobile": 0,
             "likesDesktop": 0,

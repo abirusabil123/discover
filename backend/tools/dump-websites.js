@@ -165,15 +165,18 @@ async function saveToFile(data) {
         // Get errors from API
         let errorsData = { count: 0, unresolved: 0, allUnresolvedErrors: [] };
         try {
-            const response = await fetch(`${API_BASE_URL}/errors?limit=1000`);
-            if (response.ok) {
-                const errors = await response.json();
-                errorsData = {
-                    count: errors.length,
-                    unresolved: errors.filter(e => !e.resolved).length,
-                    allUnresolvedErrors: errors.filter(e => !e.resolved).sort((a, b) => a.id - b.id)
-                };
-            }
+            const [unresolvedRes, resolvedRes] = await Promise.all([
+                fetch(`${API_BASE_URL}/errors?resolved=false`),
+                fetch(`${API_BASE_URL}/errors?resolved=true`),
+            ]);
+            const unresolved = await unresolvedRes.json();
+            const resolved = await resolvedRes.json();
+            errorsData = {
+                total: unresolved.length + resolved.length,   // 206
+                unresolved: unresolved.length,                // 0
+                resolved: resolved.length,                    // 206
+                allUnresolvedErrors: unresolved.sort((a, b) => a.id - b.id),
+            };
         } catch (error) {
             console.warn('⚠️ Could not fetch errors:', error.message);
         }
