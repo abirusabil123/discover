@@ -117,7 +117,9 @@ function errorDateStr(err) {
     return String(err.timestamp).slice(0, 10);
 }
 
-function fillUsageData(usageData) {
+async function fillUsageData() {
+    const usageData = await fetchUsageData();
+
     // Always rebuild the option lists so they only contain populated categories.
     // keepCurrent=true preserves the user's selection when it is still present.
     fillSelect(els.country, usageData.byCountry.map(r => r.country), true);
@@ -175,7 +177,9 @@ function fillUsageData(usageData) {
     makeOrUpdate('c-day', 'bar', dayLabels, dayLabels.map((_, i) => dayMap.get(i) || 0));
 }
 
-function fillErrorsData(errorsData) {
+async function fillErrorsData() {
+    const errorsData = await fetchErrorsData();
+
     const selectedDate = els.date.value; // '' or 'YYYY-MM-DD'
     const filtered = selectedDate
         ? errorsData.filter(e => errorDateStr(e) === selectedDate)
@@ -187,16 +191,8 @@ function fillErrorsData(errorsData) {
 
 async function refresh() {
     els.status.textContent = 'Loading…';
-    const [usageData, errorsData] = await Promise.all([
-        fetchUsageData(),
-        fetchErrorsData(),
-    ]);
-    if (usageData) {
-        fillUsageData(usageData);
-    }
-    if (errorsData) {
-        fillErrorsData(errorsData);
-    }
+    await fillUsageData();
+    await fillErrorsData();
     els.status.textContent = 'Ready';
 }
 
