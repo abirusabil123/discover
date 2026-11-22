@@ -90,7 +90,7 @@ function makeOrUpdate(id, type, labels, data, extra = {}) {
 
 async function fetchUsageData() {
     try {
-        return apiCall(`/visitors-analytics?${buildQuery()}`);
+        return await apiCall(`/visitors-analytics?${buildQuery()}`);
     } catch (e) {
         if (e.name === 'AbortError') return null;   // navigating away
         els.status.textContent = `Error: ${e.message}`;
@@ -101,8 +101,7 @@ async function fetchUsageData() {
 async function fetchErrorsData() {
     try {
         // No params → returns all unresolved errors (resolved = 0 by default)
-        const res = apiCall('/errors');
-        return Array.isArray(res) ? res : [];
+        return await apiCall('/errors');
     } catch (e) {
         if (e.name === 'AbortError') return null;
         console.warn('Failed to fetch unresolved errors:', e.message);
@@ -119,6 +118,9 @@ function errorDateStr(err) {
 
 async function fillUsageData() {
     const usageData = await fetchUsageData();
+    if (!usageData) {
+        return;
+    }
 
     // Always rebuild the option lists so they only contain populated categories.
     // keepCurrent=true preserves the user's selection when it is still present.
@@ -179,6 +181,9 @@ async function fillUsageData() {
 
 async function fillErrorsData() {
     const errorsData = await fetchErrorsData();
+    if (!errorsData) {
+        return;
+    }
 
     const selectedDate = els.date.value; // '' or 'YYYY-MM-DD'
     const filtered = selectedDate
@@ -191,8 +196,7 @@ async function fillErrorsData() {
 
 async function refresh() {
     els.status.textContent = 'Loading…';
-    await fillUsageData();
-    await fillErrorsData();
+    await Promise.all([fillUsageData(), fillErrorsData()]);
     els.status.textContent = 'Ready';
 }
 
