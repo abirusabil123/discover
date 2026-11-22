@@ -105,7 +105,7 @@ async function fetchErrorsData() {
     } catch (e) {
         if (e.name === 'AbortError') return null;
         console.warn('Failed to fetch unresolved errors:', e.message);
-        return [];
+        return null;   // ← null instead of [] so the guard fires and keeps the last value
     }
 }
 
@@ -197,7 +197,9 @@ async function fillErrorsData() {
 async function refresh() {
     els.status.textContent = 'Loading…';
     await Promise.all([fillUsageData(), fillErrorsData()]);
-    els.status.textContent = 'Ready';
+    if (els.status.textContent === 'Loading…') {
+        els.status.textContent = 'Ready';
+    }
 }
 
 [els.country, els.date, els.platform, els.product, els.path, els.origin, els.bot].forEach(el =>
