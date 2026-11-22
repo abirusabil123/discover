@@ -19,6 +19,7 @@ const els = {
     origin: document.getElementById('f-origin'),
     bot: document.getElementById('f-bot'),
     status: document.getElementById('status'),
+    errorsStat: document.getElementById('errors-count'),
 };
 
 function buildQuery() {
@@ -82,75 +83,113 @@ function makeOrUpdate(id, type, labels, data, extra = {}) {
     }
 }
 
-async function fetchData() {
-    els.status.textContent = 'Loading…';
+async function fetchUsageData() {
     try {
-        return await apiCall(`/visitors-analytics?${buildQuery()}`);
+        return apiCall(`/visitors-analytics?${buildQuery()}`);
     } catch (e) {
         if (e.name === 'AbortError') return null;   // navigating away
         els.status.textContent = `Error: ${e.message}`;
         return null;
-    } finally {
-        if (els.status.textContent === 'Loading…') els.status.textContent = 'Ready';
     }
 }
 
-async function refresh() {
-    const data = await fetchData();
-    if (!data) return;
+async function fetchErrorsData() {
+    try {
+        // No params → returns all unresolved errors (resolved = 0 by default)
+        const res = apiCall('/errors');
+        return Array.isArray(res) ? res : [];
+    } catch (e) {
+        if (e.name === 'AbortError') return null;
+        console.warn('Failed to fetch unresolved errors:', e.message);
+        return [];
+    }
+}
 
+// Extract "YYYY-MM-DD" from a timestamp, tolerant of both ISO
+// ("2026-11-20T01:56:35.000Z") and MySQL-style ("2026-11-20 01:56:35") strings.
+function errorDateStr(err) {
+    if (!err || !err.timestamp) return '';
+    return String(err.timestamp).slice(0, 10);
+}
+
+function fillUsageData(usageData) {
     // Always rebuild the option lists so they only contain populated categories.
     // keepCurrent=true preserves the user's selection when it is still present.
-    fillSelect(els.country, data.byCountry.map(r => r.country), true);
-    fillSelect(els.platform, data.byPlatform.map(r => r.platform), true);
-    fillSelect(els.product, data.byProduct.map(r => r.product), true);
-    fillSelect(els.path, data.byPath.map(r => r.path), true);
-    fillSelect(els.origin, data.byOrigin.map(r => r.origin), true);
+    fillSelect(els.country, usageData.byCountry.map(r => r.country), true);
+    fillSelect(els.platform, usageData.byPlatform.map(r => r.platform), true);
+    fillSelect(els.product, usageData.byProduct.map(r => r.product), true);
+    fillSelect(els.path, usageData.byPath.map(r => r.path), true);
+    fillSelect(els.origin, usageData.byOrigin.map(r => r.origin), true);
 
-    const topCountries = topN(data.byCountry, r => r.country, r => r.count, 8);
+    const topCountries = topN(usageData.byCountry, r => r.country, r => r.count, 8);
     makeOrUpdate('c-country', 'bar',
         topCountries.map(r => r.country || '(unknown)'),
         topCountries.map(r => r.count));
 
-    const months = [...data.byMonth].sort((a, b) => String(a.month).localeCompare(String(b.month)));
+    const months = [...usageData.byMonth].sort((a, b) => String(a.month).localeCompare(String(b.month)));
     makeOrUpdate('c-month', 'line',
         months.map(r => r.month),
         months.map(r => r.count));
 
-    const topPlat = topN(data.byPlatform, r => r.platform, r => r.count, 8);
+    const topPlat = topN(usageData.byPlatform, r => r.platform, r => r.count, 8);
     makeOrUpdate('c-platform', 'bar',
         topPlat.map(r => (r.platform || '(unknown)').slice(0, 32)),
         topPlat.map(r => r.count));
 
-    const topProduct = topN(data.byProduct, r => r.product, r => r.count, 8);
+    const topProduct = topN(usageData.byProduct, r => r.product, r => r.count, 8);
     makeOrUpdate('c-product', 'bar',
         topProduct.map(r => (r.product || '(unknown)').slice(0, 32)),
         topProduct.map(r => r.count));
 
-    const topPath = topN(data.byPath, r => r.path, r => r.count, 8);
+    const topPath = topN(usageData.byPath, r => r.path, r => r.count, 8);
     makeOrUpdate('c-path', 'bar',
         topPath.map(r => (r.path || '(unknown)').slice(0, 32)),
         topPath.map(r => r.count));
 
-    const topOrigin = topN(data.byOrigin, r => r.origin, r => r.count, 8);
+    const topOrigin = topN(usageData.byOrigin, r => r.origin, r => r.count, 8);
     makeOrUpdate('c-origin', 'bar',
         topOrigin.map(r => (r.origin || '(unknown)').slice(0, 32)),
         topOrigin.map(r => r.count));
 
     makeOrUpdate('c-bot', 'pie',
-        data.byBotStatus.map(r => r.status),
-        data.byBotStatus.map(r => r.count),
+        usageData.byBotStatus.map(r => r.status),
+        usageData.byBotStatus.map(r => r.count),
         { color: ['green', 'rgba(239,68,68,0.7)'] });
 
     // Visitors per hour of day (0-23), with empty hours filled as 0
-    const hourMap = new Map(data.byHourOfDay.map(r => [Number(r.hour), r.count]));
+    const hourMap = new Map(usageData.byHourOfDay.map(r => [Number(r.hour), r.count]));
     const hourLabels = Array.from({ length: 24 }, (_, i) => String(i).padStart(2, '0'));
     const hourData = hourLabels.map((_, i) => hourMap.get(i) || 0);
     makeOrUpdate('c-hour', 'bar', hourLabels, hourData);
 
     const dayLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-    const dayMap = new Map(data.byDayOfWeek.map(r => [Number(r.dow), r.count]));
+    const dayMap = new Map(usageData.byDayOfWeek.map(r => [Number(r.dow), r.count]));
     makeOrUpdate('c-day', 'bar', dayLabels, dayLabels.map((_, i) => dayMap.get(i) || 0));
+}
+
+function fillErrorsData(errorsData) {
+    const selectedDate = els.date.value; // '' or 'YYYY-MM-DD'
+    const filtered = selectedDate
+        ? errorsData.filter(e => errorDateStr(e) === selectedDate)
+        : errorsData;
+
+    els.errorsStat.textContent = filtered.length;
+    els.errorsStat.style.color = filtered.length === 0 ? 'green' : 'red';
+}
+
+async function refresh() {
+    els.status.textContent = 'Loading…';
+    const [usageData, errorsData] = await Promise.all([
+        fetchUsageData(),
+        fetchErrorsData(),
+    ]);
+    if (usageData) {
+        fillUsageData(usageData);
+    }
+    if (errorsData) {
+        fillErrorsData(errorsData);
+    }
+    els.status.textContent = 'Ready';
 }
 
 [els.country, els.date, els.platform, els.product, els.path, els.origin, els.bot].forEach(el =>
