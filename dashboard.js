@@ -16,6 +16,7 @@ const els = {
     platform: document.getElementById('f-platform'),
     product: document.getElementById('f-product'),
     path: document.getElementById('f-path'),
+    origin: document.getElementById('f-origin'),
     bot: document.getElementById('f-bot'),
     status: document.getElementById('status'),
 };
@@ -28,6 +29,7 @@ function buildQuery() {
     if (els.platform.value !== 'all') p.set('platform', els.platform.value);
     if (els.product.value !== 'all') p.set('product', els.product.value);
     if (els.path.value !== 'all') p.set('path', els.path.value);
+    if (els.origin.value !== 'all') p.set('origin', els.origin.value);
     return p.toString();
 }
 
@@ -103,6 +105,7 @@ async function refresh() {
     fillSelect(els.platform, data.byPlatform.map(r => r.platform), true);
     fillSelect(els.product, data.byProduct.map(r => r.product), true);
     fillSelect(els.path, data.byPath.map(r => r.path), true);
+    fillSelect(els.origin, data.byOrigin.map(r => r.origin), true);
 
     const topCountries = topN(data.byCountry, r => r.country, r => r.count, 8);
     makeOrUpdate('c-country', 'bar',
@@ -129,6 +132,11 @@ async function refresh() {
         topPath.map(r => (r.path || '(unknown)').slice(0, 32)),
         topPath.map(r => r.count));
 
+    const topOrigin = topN(data.byOrigin, r => r.origin, r => r.count, 8);
+    makeOrUpdate('c-origin', 'bar',
+        topOrigin.map(r => (r.origin || '(unknown)').slice(0, 32)),
+        topOrigin.map(r => r.count));
+
     makeOrUpdate('c-bot', 'pie',
         data.byBotStatus.map(r => r.status),
         data.byBotStatus.map(r => r.count),
@@ -145,7 +153,7 @@ async function refresh() {
     makeOrUpdate('c-day', 'bar', dayLabels, dayLabels.map((_, i) => dayMap.get(i) || 0));
 }
 
-[els.country, els.date, els.platform, els.product, els.path, els.bot].forEach(el =>
+[els.country, els.date, els.platform, els.product, els.path, els.origin, els.bot].forEach(el =>
     el.addEventListener('change', () => refresh()));
 
 document.addEventListener('keydown', (e) => {

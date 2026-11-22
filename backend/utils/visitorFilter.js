@@ -15,8 +15,9 @@
  *   country  – country code, or "all" to ignore
  *   month    – YYYYMM, or "all" to ignore
  *   platform – platform string, or "all" to ignore
- *   product  – product string, or "all" to ignore          // ➕
- *   path     – path string, or "all" to ignore             // ➕
+ *   product  – product string, or "all" to ignore
+ *   path     – path string, or "all" to ignore
+ *   origin   – referer/origin string, or "all" to ignore
  *   bot      – "0" humans, "1" bots, "all" both, undefined → legacy default (humans only)
  *   date     – YYYY-MM-DD exact-day match
  *   from     – YYYY-MM-DD inclusive lower bound on timestamp (not yet wired)
@@ -29,7 +30,7 @@
  *   params      is an array matching the ? placeholders in order
  */
 function buildVisitorWhere(query) {
-    const { country, month, platform, product, path, bot, date, raw } = query || {};
+    const { country, month, platform, product, path, origin, bot, date, raw } = query || {};
     const isRaw = raw === '1';
     const conditions = [];
     const params = [];
@@ -90,6 +91,14 @@ function buildVisitorWhere(query) {
     } else if (path && path !== 'all') {
         conditions.push('path = ?');
         params.push(path);
+    }
+
+    // Origin handling
+    if (origin === '(unknown)') {
+        conditions.push("origin = ''");
+    } else if (origin && origin !== 'all') {
+        conditions.push('origin = ?');
+        params.push(origin);
     }
 
     const whereClause = conditions.length > 0 ? 'WHERE ' + conditions.join(' AND ') : '';
