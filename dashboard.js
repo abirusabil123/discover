@@ -49,7 +49,7 @@ function fillSelect(select, values, keepCurrent) {
     }
 }
 
-function topN(arr, keyFn, valFn, n) {
+function topN(arr, valFn, n) {
     return [...arr].sort((a, b) => valFn(b) - valFn(a)).slice(0, n);
 }
 
@@ -101,7 +101,11 @@ async function fetchUsageData() {
 async function fetchErrorsData() {
     try {
         // No params → returns all unresolved errors (resolved = 0 by default)
-        return await apiCall('/errors');
+        const res = await apiCall('/errors');
+        if (!Array.isArray(res)) {
+            throw new Error("Failed to get errors Array");
+        }
+        return res;
     } catch (e) {
         if (e.name === 'AbortError') return null;
         console.warn('Failed to fetch unresolved errors:', e.message);
@@ -130,7 +134,7 @@ async function fillUsageData() {
     fillSelect(els.path, usageData.byPath.map(r => r.path), true);
     fillSelect(els.origin, usageData.byOrigin.map(r => r.origin), true);
 
-    const topCountries = topN(usageData.byCountry, r => r.country, r => r.count, 8);
+    const topCountries = topN(usageData.byCountry, r => r.count, 8);
     makeOrUpdate('c-country', 'bar',
         topCountries.map(r => r.country || '(unknown)'),
         topCountries.map(r => r.count));
@@ -140,22 +144,22 @@ async function fillUsageData() {
         months.map(r => r.month),
         months.map(r => r.count));
 
-    const topPlat = topN(usageData.byPlatform, r => r.platform, r => r.count, 8);
+    const topPlat = topN(usageData.byPlatform, r => r.count, 8);
     makeOrUpdate('c-platform', 'bar',
         topPlat.map(r => (r.platform || '(unknown)').slice(0, 32)),
         topPlat.map(r => r.count));
 
-    const topProduct = topN(usageData.byProduct, r => r.product, r => r.count, 8);
+    const topProduct = topN(usageData.byProduct, r => r.count, 8);
     makeOrUpdate('c-product', 'bar',
         topProduct.map(r => (r.product || '(unknown)').slice(0, 32)),
         topProduct.map(r => r.count));
 
-    const topPath = topN(usageData.byPath, r => r.path, r => r.count, 8);
+    const topPath = topN(usageData.byPath, r => r.count, 8);
     makeOrUpdate('c-path', 'bar',
         topPath.map(r => (r.path || '(unknown)').slice(0, 32)),
         topPath.map(r => r.count));
 
-    const topOrigin = topN(usageData.byOrigin, r => r.origin, r => r.count, 8);
+    const topOrigin = topN(usageData.byOrigin, r => r.count, 8);
     makeOrUpdate('c-origin', 'bar',
         topOrigin.map(r => (r.origin || '(unknown)').slice(0, 32)),
         topOrigin.map(r => r.count));
