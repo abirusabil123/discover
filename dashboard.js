@@ -55,9 +55,14 @@ function topN(arr, keyFn, valFn, n) {
 
 function makeOrUpdate(id, type, labels, data, extra = {}) {
     const ctx = document.getElementById(id).getContext('2d');
+    const bg = extra.colorFn
+        ? labels.map(extra.colorFn)
+        : 'green';
+
     if (CHARTS[id]) {
         CHARTS[id].data.labels = labels;
         CHARTS[id].data.datasets[0].data = data;
+        CHARTS[id].data.datasets[0].backgroundColor = bg;
         CHARTS[id].update();
     } else {
         CHARTS[id] = new Chart(ctx, {
@@ -66,7 +71,7 @@ function makeOrUpdate(id, type, labels, data, extra = {}) {
                 labels,
                 datasets: [{
                     data,
-                    backgroundColor: extra.color || 'green',
+                    backgroundColor: bg,
                     borderColor: 'white',
                     borderWidth: 1,
                 }],
@@ -154,7 +159,10 @@ function fillUsageData(usageData) {
     makeOrUpdate('c-bot', 'pie',
         usageData.byBotStatus.map(r => r.status),
         usageData.byBotStatus.map(r => r.count),
-        { color: ['green', 'rgba(239,68,68,0.7)'] });
+        {
+            colorFn: (label) =>
+                label === 'Bot' ? 'rgba(239,68,68,0.7)' : 'green'
+        });
 
     // Visitors per hour of day (0-23), with empty hours filled as 0
     const hourMap = new Map(usageData.byHourOfDay.map(r => [Number(r.hour), r.count]));
