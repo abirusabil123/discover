@@ -106,7 +106,7 @@
     "byCountry": [
       {
         "country": "",
-        "count": 5852
+        "count": 5932
       },
       {
         "country": "AE",
@@ -173,8 +173,12 @@
         "count": 1
       },
       {
+        "country": "IE",
+        "count": 2
+      },
+      {
         "country": "IN",
-        "count": 216
+        "count": 226
       },
       {
         "country": "IR",
@@ -246,7 +250,7 @@
       },
       {
         "country": "US",
-        "count": 1274
+        "count": 1282
       },
       {
         "country": "ZA",
@@ -256,7 +260,7 @@
     "byMonth": [
       {
         "month": "202611",
-        "count": 204
+        "count": 304
       },
       {
         "month": "202610",
@@ -290,7 +294,7 @@
       },
       {
         "platform": "Android",
-        "count": 3
+        "count": 4
       },
       {
         "platform": "desktop",
@@ -322,7 +326,7 @@
       },
       {
         "platform": "Linux armv81",
-        "count": 84
+        "count": 102
       },
       {
         "platform": "Linux armv81 discover-website",
@@ -334,11 +338,11 @@
       },
       {
         "platform": "Linux armv8l",
-        "count": 2
+        "count": 4
       },
       {
         "platform": "Linux x86_64",
-        "count": 97
+        "count": 173
       },
       {
         "platform": "Linux x86_64 discover-website",
@@ -386,7 +390,7 @@
       },
       {
         "platform": "Win32",
-        "count": 13
+        "count": 16
       },
       {
         "platform": "Win32 discover-website",
@@ -408,11 +412,11 @@
       },
       {
         "product": "discoverAndroid",
-        "count": 3
+        "count": 4
       },
       {
         "product": "discoverWebsite",
-        "count": 52
+        "count": 147
       },
       {
         "product": "discoverWebsite ",
@@ -428,13 +432,13 @@
       },
       {
         "product": "personalWebsite",
-        "count": 17
+        "count": 21
       }
     ],
     "byOrigin": [
       {
         "origin": "",
-        "count": 2615
+        "count": 2617
       },
       {
         "origin": "file://",
@@ -442,19 +446,19 @@
       },
       {
         "origin": "http://discoverall.space",
-        "count": 146
+        "count": 153
       },
       {
         "origin": "http://localhost:44631",
-        "count": 3143
+        "count": 3185
       },
       {
         "origin": "https://abirusabil123.github.io",
-        "count": 29
+        "count": 31
       },
       {
         "origin": "https://abirusabil123.github.io/",
-        "count": 11
+        "count": 13
       },
       {
         "origin": "https://abirusabil123.github.io/art.html",
@@ -486,7 +490,7 @@
       },
       {
         "origin": "https://discoverall.space",
-        "count": 2271
+        "count": 2316
       },
       {
         "origin": "https://www.linkedin.com/",
@@ -500,7 +504,7 @@
     "byPath": [
       {
         "path": "/",
-        "count": 2116
+        "count": 2118
       },
       {
         "path": "/addlink",
@@ -512,7 +516,7 @@
       },
       {
         "path": "/getLinks",
-        "count": 6082
+        "count": 6178
       },
       {
         "path": "/home/abirusabil/Documents/github/abirusabil123.github.io/products.html",
@@ -540,17 +544,17 @@
       },
       {
         "path": "/work-life.html",
-        "count": 9
+        "count": 11
       }
     ],
     "byBotStatus": [
       {
         "status": "Human",
-        "count": 6547
+        "count": 6639
       },
       {
         "status": "Bot",
-        "count": 1719
+        "count": 1727
       }
     ],
     "byHourOfDay": [
@@ -560,23 +564,23 @@
       },
       {
         "hour": 1,
-        "count": 115
+        "count": 117
       },
       {
         "hour": 2,
-        "count": 115
+        "count": 118
       },
       {
         "hour": 3,
-        "count": 173
+        "count": 175
       },
       {
         "hour": 4,
-        "count": 241
+        "count": 245
       },
       {
         "hour": 5,
-        "count": 1117
+        "count": 1123
       },
       {
         "hour": 6,
@@ -588,35 +592,35 @@
       },
       {
         "hour": 8,
-        "count": 447
+        "count": 449
       },
       {
         "hour": 9,
-        "count": 298
+        "count": 304
       },
       {
         "hour": 10,
-        "count": 221
+        "count": 223
       },
       {
         "hour": 11,
-        "count": 208
+        "count": 211
       },
       {
         "hour": 12,
-        "count": 356
+        "count": 388
       },
       {
         "hour": 13,
-        "count": 407
+        "count": 437
       },
       {
         "hour": 14,
-        "count": 497
+        "count": 498
       },
       {
         "hour": 15,
-        "count": 617
+        "count": 623
       },
       {
         "hour": 16,
@@ -648,17 +652,17 @@
       },
       {
         "hour": 23,
-        "count": 72
+        "count": 73
       }
     ],
     "byDayOfWeek": [
       {
         "dow": 0,
-        "count": 1191
+        "count": 1203
       },
       {
         "dow": 1,
-        "count": 845
+        "count": 912
       },
       {
         "dow": 2,
@@ -670,15 +674,15 @@
       },
       {
         "dow": 4,
-        "count": 633
+        "count": 639
       },
       {
         "dow": 5,
-        "count": 1036
+        "count": 1042
       },
       {
         "dow": 6,
-        "count": 2574
+        "count": 2583
       }
     ]
   },
