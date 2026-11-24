@@ -1932,7 +1932,7 @@ VALUES (
         'https://www.teamblind.com/',
         'Social media.',
         JSON_ARRAY('#positive', '#daily', '#social', '#media'),
-        302,
+        303,
         0,
         0,
         1,

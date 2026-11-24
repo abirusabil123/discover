@@ -989,7 +989,7 @@ object StaticLinks {
             url = "https://www.teamblind.com/",
             description = "Social media.",
             tags = listOf("#positive", "#daily", "#social", "#media"),
-            views = 302,
+            views = 303,
             likesMobile = 0,
             dislikesMobile = 0
         ),
