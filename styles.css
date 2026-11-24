@@ -83,6 +83,11 @@ body {
     color: #666;
 }
 
+.guidance {
+    color: green;
+    background-color: whitesmoke;
+}
+
 .link-box {
     display: block;
     width: 37.25rem;
