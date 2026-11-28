@@ -13,6 +13,8 @@ The full cron setup and sudoers backup are in `./backend/networking`.
 
 DNS and TLS are handled by a DuckDNS cron job and acme.sh, both documented in `./backend/networking/crontab.txt`.
 
+With DuckDNS we can support a no paid domain setup with an optional GitHub Pages frontend.
+
 ## ⚙️ Prerequisites
 - Linux
 - Docker engine
@@ -30,7 +32,7 @@ docker compose up -d --build
 
 ### 2. Verify it's working
 ```bash
-curl https://backenddiscover.duckdns.org:8443/getLinksDesktop
+curl https://backenddiscover.duckdns.org:8443/getLinks
 curl https://backenddiscover.duckdns.org:8443/health
 ```
 
