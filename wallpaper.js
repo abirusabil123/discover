@@ -19,11 +19,11 @@ const WALLPAPERS = [
     'wallpapers/8.jpg',
     'wallpapers/9.jpg',
     'wallpapers/10.jpg',
-    'wallpapers/11.gif',
+    'wallpapers/11.jpg',
     'wallpapers/12.jpg',
     'wallpapers/13.jpg',
     'wallpapers/14.jpg',
-    'wallpapers/15.jpg',
+    'wallpapers/15.png',
     'wallpapers/16.jpg',
     'wallpapers/17.webp',
     'wallpapers/18.jpg',
@@ -71,7 +71,9 @@ const WALLPAPERS = [
     'wallpapers/60.jpg',
     'wallpapers/61.jpg',
     'wallpapers/62.jpg',
-    'wallpapers/63.jpg'
+    'wallpapers/63.jpg',
+    'wallpapers/64.jpg',
+    'wallpapers/65.jpeg'
 ];
 
 const chosen = WALLPAPERS[Math.floor(Math.random() * WALLPAPERS.length)];
