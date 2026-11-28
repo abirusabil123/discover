@@ -633,6 +633,6 @@ app.use((err, req, res, next) => {
   res.status(status).json({ error: message });
 });
 
-app.listen(process.env.PORT, '0.0.0.0', () => {
+app.listen(process.env.PORT, 'localhost', () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });

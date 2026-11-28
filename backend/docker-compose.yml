@@ -11,10 +11,9 @@
 services:
   app:
     build: ./
-    network_mode: host                 # ← added
-    # remove ports and networks sections
+    network_mode: host
     environment:
-      - DB_HOST=localhost              # ← changed from "db"
+      - DB_HOST=localhost
       - DB_USER=root
       - DB_PASSWORD=password
       - DB_NAME=mydatabase
@@ -26,8 +25,8 @@ services:
 
   db:
     image: mysql:8.0
-    network_mode: host                 # ← added
-    # remove networks section
+    network_mode: host
+    command: [--bind-address=localhost, --mysqlx=0]
     environment:
       MYSQL_ROOT_PASSWORD: "password"
       MYSQL_DATABASE: "mydatabase"
@@ -42,16 +41,13 @@ services:
 
   nginx:
     image: nginx:alpine
-    network_mode: host                 # ← added
-    # remove ports mapping (now listens directly on host 8443)
+    network_mode: host
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - /home/zeitgeist/.acme.sh/backenddiscover.duckdns.org_ecc:/etc/nginx/ssl:ro
-    # remove networks section
     depends_on:
       - app
     restart: unless-stopped
 
-# remove networks: section entirely
 volumes:
   mysql_data:
