@@ -21,5 +21,5 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-*/5 * * * * curl -ks "https://www.duckdns.org/update?domains=backenddiscover&token=784b4fd2-132b-414f-8ba9-feddad85e7b9&ip=" >> /home/zeitgeist/duckdns.log 2>&1
+*/5 * * * * echo "$(date -Iseconds) $(curl -ks "https://www.duckdns.org/update?domains=backenddiscover&token=$(cat $HOME/.config/duckdns/token)&ip=")" >> $HOME/duckdns.log 2>&1
 35 18 * * * "/home/zeitgeist/.acme.sh"/acme.sh --cron --home "/home/zeitgeist/.acme.sh" >> /home/zeitgeist/.acme.sh/acme-renew.log 2>&1
