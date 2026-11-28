@@ -43,7 +43,7 @@ const WALLPAPERS = [
     'wallpapers/32.jpg',
     'wallpapers/33.jpg',
     'wallpapers/34.jpg',
-    'wallpapers/35.jpeg',
+    'wallpapers/35.jpg',
     'wallpapers/36.jpg',
     'wallpapers/37.jpg',
     'wallpapers/38.jpg',
@@ -73,7 +73,7 @@ const WALLPAPERS = [
     'wallpapers/62.jpg',
     'wallpapers/63.jpg',
     'wallpapers/64.jpg',
-    'wallpapers/65.jpeg'
+    'wallpapers/65.jpg'
 ];
 
 const chosen = WALLPAPERS[Math.floor(Math.random() * WALLPAPERS.length)];
